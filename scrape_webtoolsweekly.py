@@ -150,8 +150,14 @@ def scrape_webtoolsweekly():
             issue_title = issue_title.replace('\n', ' ').replace('\r', ' ')
             safe_issue_title = re.sub(r'[^\w\s-]', '', issue_title).strip().replace(' ', '_')
             
-            # Create output file with site title and issue title in the filename
-            summary_file = os.path.join(outputs_dir, f"{safe_title}_{safe_issue_title}_summary.md")  # Markdown 格式
+            # 只创建文件名，不包含路径 - 路径将在 extract_links_and_summarize 函数中添加
+            summary_file = f"{safe_title}_{safe_issue_title}_summary.md"  # Markdown 格式
+            
+            # 创建保存目录
+            outputs_dir = "outputs"
+            if not os.path.exists(outputs_dir):
+                os.makedirs(outputs_dir)
+                print(f"创建输出目录：{outputs_dir}")
             
             # If the URL is relative, make it absolute
             if link_url and not link_url.startswith('http'):

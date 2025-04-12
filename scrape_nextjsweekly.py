@@ -163,12 +163,19 @@ def scrape_nextjsweekly():
                     # Parse the HTML content of the linked page
                     link_soup = BeautifulSoup(link_response.text, 'html.parser')
                     
-                    # 根据要求，查找 class 为"news"的 div 下的 a 标签
-                    news_div = link_soup.find('div', class_='news')
+                    # 根据要求，查找所有 class 为"news"的 div 下的 a 标签
+                    news_divs = link_soup.find_all('div', class_='news')
                     
-                    if news_div:
-                        news_links = news_div.find_all('a', href=True)
-                        print(f"Found {len(news_links)} links in the news section")
+                    if news_divs:
+                        # 创建一个列表来存储所有新闻链接
+                        all_news_links = []
+                        
+                        # 遍历每个 news div，收集所有 a 标签
+                        for news_div in news_divs:
+                            links = news_div.find_all('a', href=True)
+                            all_news_links.extend(links)
+                            
+                        print(f"Found {len(all_news_links)} links in {len(news_divs)} news sections")
                         
                         # 使用自定义的提取方式处理这些链接
                         extract_links_and_summarize(
@@ -180,7 +187,7 @@ def scrape_nextjsweekly():
                             base_url="https://nextjsweekly.com",
                             fetch_content_func=fetch_page_content,
                             use_patterns=False,  # 不使用模式匹配，使用已提取的链接
-                            pre_filtered_links=news_links  # 传递已提取的新闻链接
+                            pre_filtered_links=all_news_links  # 传递收集到的所有新闻链接
                         )
                     else:
                         print("No 'news' div found on the page.")
