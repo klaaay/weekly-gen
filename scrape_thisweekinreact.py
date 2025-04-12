@@ -7,6 +7,7 @@ from urllib.parse import urlparse, urljoin
 from openai import OpenAI
 from dotenv import load_dotenv
 from utils.deepseek_api import translate_title_to_chinese, summarize_with_deepseek
+from utils.extract_links_and_summarize import extract_links_and_summarize
 
 # 加载.env 文件中的环境变量
 load_dotenv()
@@ -119,41 +120,85 @@ def scrape_thisweekinreact():
     print(f"Using proxy: http://127.0.0.1:7897")
     print(f"Fetching content from: {url}")
     
-    # 直接获取网页内容
-    result = fetch_page_content(url, headers, proxies)
-    
-    if result:
-        # 提取标题和内容
-        title = result["title"]
-        chinese_title = result["chinese_title"]
-        content = result["content"]
-        summary = result["summary"]
+    try:
+        # 获取主页内容
+        response = requests.get(url, headers=headers, proxies=proxies, allow_redirects=True)
         
-        # 创建安全的文件名
-        safe_title = "thisweekinreact"
-        
-        # 创建输出文件
-        content_file = os.path.join(outputs_dir, f"{safe_title}_content.txt")
-        summary_file = os.path.join(outputs_dir, f"{safe_title}_summary.md")
-        
-        # 保存内容到文件
-        with open(content_file, 'w', encoding='utf-8') as f:
-            f.write(f"Title: {title}\n")
-            f.write(f"Chinese Title: {chinese_title}\n")
-            f.write(f"URL: {url}\n\n")
-            f.write(content)
-        
-        # 保存摘要到 Markdown 文件
-        with open(summary_file, 'w', encoding='utf-8') as f:
-            f.write(f"# {chinese_title}\n\n")
-            f.write(f"**原标题**: {title}\n\n")
-            f.write(f"**链接**: {url}\n\n")
-            f.write(f"## 摘要\n\n{summary}\n")
-        
-        print(f"内容已保存到：{content_file}")
-        print(f"摘要已保存到：{summary_file}")
-    else:
-        print("获取网页内容失败")
+        if response.status_code == 200:
+            # 解析 HTML
+            soup = BeautifulSoup(response.text, 'html.parser')
+            
+            # 创建安全的文件名
+            safe_title = "thisweekinreact"
+                
+            # 创建主页输出文件
+            summary_file = os.path.join(outputs_dir, f"{safe_title}_summary.md")
+            
+            print(f"主页摘要已保存到：{summary_file}")
+            
+            # 1. 查找第一个以 /newsletter/数字 格式的链接
+            newsletter_link = soup.find('a', href=re.compile(r'^/newsletter/\d+$'))
+            
+            if newsletter_link and 'href' in newsletter_link.attrs:
+                newsletter_url = newsletter_link['href']
+                
+                # 确保链接是绝对路径
+                if not newsletter_url.startswith('http'):
+                    newsletter_url = f"https://thisweekinreact.com{newsletter_url}"
+                
+                print(f"\n找到 newsletter 链接：{newsletter_url}")
+                print(f"获取 newsletter 页面内容...")
+                
+                # 2. 获取这个 newsletter 页面的内容
+                newsletter_response = requests.get(newsletter_url, headers=headers, proxies=proxies, allow_redirects=True)
+                
+                if newsletter_response.status_code == 200:
+                    # 解析 newsletter 页面
+                    newsletter_soup = BeautifulSoup(newsletter_response.text, 'html.parser')
+                    
+                    print("\n开始提取文章链接并生成摘要...")
+                    
+                    # 3. 从 newsletter 页面找到所有没有 class 属性且 target="_blank" 的链接
+                    filtered_links = newsletter_soup.select('a:not([class])[target="_blank"]')
+                    print(f"\n在 newsletter 页面找到 {len(filtered_links)} 个符合条件的链接")
+                    
+                    # 4. 使用预先筛选好的链接集合
+                    extract_links_and_summarize(
+                        soup=newsletter_soup,  # 传递 newsletter 页面的 soup 对象
+                        headers=headers,
+                        proxies=proxies,
+                        summary_file=summary_file,
+                        summary_title_prefix="thisweekinreact",
+                        base_url="https://thisweekinreact.com",
+                        fetch_content_func=fetch_page_content,
+                        use_patterns=False,  # 不使用模式匹配
+                        pre_filtered_links=filtered_links  # 使用预先筛选好的链接
+                    )
+                    
+                    print(f"\n文章总结已保存到：{os.path.join(outputs_dir, summary_file)}")
+                else:
+                    print(f"获取 newsletter 页面失败，状态码：{newsletter_response.status_code}")
+            else:
+                print("\n未找到以 /newsletter/数字 格式的链接")
+                # print("尝试直接从主页提取文章链接...")
+                
+                # 如果找不到 newsletter 链接，则尝试直接从主页提取链接
+                # extract_links_and_summarize(
+                #     soup=soup,
+                #     headers=headers,
+                #     proxies=proxies,
+                #     summary_file=summary_file,
+                #     summary_title_prefix="thisweekinreact",
+                #     base_url="https://thisweekinreact.com",
+                #     fetch_content_func=fetch_page_content,
+                #     use_patterns=False  # 不使用模式匹配
+                # )
+                
+                # print(f"\n文章总结已保存到：{os.path.join(outputs_dir, summary_file)}")
+        else:
+            print(f"获取页面失败，状态码：{response.status_code}")
+    except Exception as e:
+        print(f"发生错误：{str(e)}")
 
 if __name__ == "__main__":
     scrape_thisweekinreact() 
