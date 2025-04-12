@@ -3,13 +3,17 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import os
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin
+from openai import OpenAI
 from dotenv import load_dotenv
-from utils.deepseek_api import translate_title_to_chinese, summarize_with_deepseek
 from utils.extract_links_and_summarize import extract_links_and_summarize
+from utils.deepseek_api import translate_title_to_chinese, summarize_with_deepseek
 
 # 加载.env 文件中的环境变量
 load_dotenv()
+
+# 初始化 OpenAI 客户端，指向 DeepSeek API
+client = OpenAI(api_key=os.getenv("DEEPSEEK_API_KEY"), base_url=os.getenv("DEEPSEEK_BASE_URL"))
 
 def fetch_page_content(url, headers, proxies):
     """Fetch content from a URL, following redirects."""
@@ -92,14 +96,14 @@ def fetch_page_content(url, headers, proxies):
             "summary": f"无法总结：获取内容时出错 - {str(e)}"
         }
 
-def scrape_javascriptweekly():
+def scrape_reactdigest():
     # 确保 outputs 文件夹存在
     outputs_dir = "outputs"
     if not os.path.exists(outputs_dir):
         os.makedirs(outputs_dir)
         print(f"创建输出目录：{outputs_dir}")
         
-    url = "https://javascriptweekly.com/issues"
+    url = "https://reactdigest.net/"
     
     # Add headers to mimic a browser request
     headers = {
@@ -122,68 +126,62 @@ def scrape_javascriptweekly():
         soup = BeautifulSoup(response.text, 'html.parser')
         
         # Extract title
-        title = soup.find('h1')
-        if title:
-            site_title = title.text.strip()
-            print(f"Title: {site_title}\n")
-            # Sanitize title for filename
-            safe_title = re.sub(r'[^\w\s-]', '', site_title).strip().replace(' ', '_')
-        else:
-            site_title = "Javascript Weekly"
-            safe_title = "javascriptweekly"
+        site_title = "React Digest"
+        safe_title = "reactdigest"
+        print(f"Title: {site_title}\n")
         
-        # Create output files with title in the filename (now handled by extract_links_and_summarize)
+        # Create output files with title in the filename
+        content_file = os.path.join(outputs_dir, f"{safe_title}_content.txt")
+        summary_file = os.path.join(outputs_dir, f"{safe_title}_summary.md")  # Markdown 格式
         
-        # Find the first issue link - looking for links with href="issues/*" and text containing "Issue #"
-        issue_link = soup.find('a', href=re.compile(r'^issues/\d+$'), string=re.compile(r'Issue #\d+'))
+        # 查找文本内容包含 "one weekly email" 的 a 标签
+        weekly_email_link = soup.find('a', string=re.compile(r'one weekly email', re.IGNORECASE))
         
-        if issue_link and 'href' in issue_link.attrs:
-            link_url = issue_link['href']
-            issue_title = issue_link.text
-            print(f"Found issue link: {issue_link.text} - {link_url}")
+        if weekly_email_link:
+            # 获取链接
+            link_url = weekly_email_link['href'] if 'href' in weekly_email_link.attrs else None
+            link_text = weekly_email_link.text.strip()
+            print(f"Found weekly email link: {link_text} - {link_url}")
             
-            # Sanitize issue title for filename
-            safe_issue_title = re.sub(r'[^\w\s-]', '', issue_title).strip().replace(' ', '_')
+            # Sanitize link text for filename
+            safe_link_text = re.sub(r'[^\w\s-]', '', link_text).strip().replace(' ', '_')
             
-            # Create output file with site title and issue title in the filename
-            summary_file = f"{safe_title}_{safe_issue_title}_summary.md"  # Markdown 格式
+            # Create output file with site title and link text in the filename
+            summary_file = os.path.join(outputs_dir, f"{safe_title}_{safe_link_text}_summary.md")  # Markdown 格式
             
             # If the URL is relative, make it absolute
-            if not link_url.startswith('http'):
-                link_url = f"https://javascriptweekly.com/{link_url}"
+            if link_url and not link_url.startswith('http'):
+                link_url = urljoin("https://reactdigest.net/", link_url)
             
-            # Send GET request to the linked page
-            print(f"Fetching content from: {link_url}")
-            link_response = requests.get(link_url, headers=headers, proxies=proxies)
-            
-            # Check if the request was successful
-            if link_response.status_code == 200:
-                # Parse the HTML content of the linked page
-                link_soup = BeautifulSoup(link_response.text, 'html.parser')
+            if link_url:
+                # Send GET request to the linked page
+                print(f"Fetching content from: {link_url}")
+                link_response = requests.get(link_url, headers=headers, proxies=proxies)
                 
-                # 定义链接匹配模式
-                link_patterns = [
-                    re.compile(r'^https://javascriptweekly\.com/link'),  # 绝对 URL 模式
-                    re.compile(r'^/link')                          # 相对 URL 模式
-                ]
-                
-                # 使用提取的函数来处理链接
-                extract_links_and_summarize(
-                    soup=link_soup,
-                    link_patterns=link_patterns,
-                    headers=headers,
-                    proxies=proxies,
-                    summary_file=summary_file,
-                    summary_title_prefix=f"javascriptweekly",
-                    base_url="https://javascriptweekly.com",
-                    fetch_content_func=fetch_page_content
-                )
+                # Check if the request was successful
+                if link_response.status_code == 200:
+                    # Parse the HTML content of the linked page
+                    link_soup = BeautifulSoup(link_response.text, 'html.parser')
+                    
+                    # 使用提取链接方式处理这些链接
+                    extract_links_and_summarize(
+                        soup=link_soup,
+                        headers=headers,
+                        proxies=proxies,
+                        summary_file=summary_file,
+                        summary_title_prefix="reactdigest",
+                        base_url="https://reactdigest.net",
+                        fetch_content_func=fetch_page_content,
+                        use_patterns=False  # 不使用模式匹配
+                    )
+                else:
+                    print(f"Failed to retrieve the linked page. Status code: {link_response.status_code}")
             else:
-                print(f"Failed to retrieve the linked page. Status code: {link_response.status_code}")
+                print("The weekly email link does not contain a valid URL.")
         else:
-            print("No issue links matching the pattern found on the page.")
+            print("No 'one weekly email' link found on the page.")
     else:
         print(f"Failed to retrieve the page. Status code: {response.status_code}")
 
 if __name__ == "__main__":
-    scrape_javascriptweekly() 
+    scrape_reactdigest() 

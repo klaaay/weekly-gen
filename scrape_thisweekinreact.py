@@ -3,13 +3,16 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import os
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin
+from openai import OpenAI
 from dotenv import load_dotenv
 from utils.deepseek_api import translate_title_to_chinese, summarize_with_deepseek
-from utils.extract_links_and_summarize import extract_links_and_summarize
 
 # 加载.env 文件中的环境变量
 load_dotenv()
+
+# 初始化 OpenAI 客户端，指向 DeepSeek API
+client = OpenAI(api_key=os.getenv("DEEPSEEK_API_KEY"), base_url=os.getenv("DEEPSEEK_BASE_URL"))
 
 def fetch_page_content(url, headers, proxies):
     """Fetch content from a URL, following redirects."""
@@ -92,14 +95,14 @@ def fetch_page_content(url, headers, proxies):
             "summary": f"无法总结：获取内容时出错 - {str(e)}"
         }
 
-def scrape_javascriptweekly():
+def scrape_thisweekinreact():
     # 确保 outputs 文件夹存在
     outputs_dir = "outputs"
     if not os.path.exists(outputs_dir):
         os.makedirs(outputs_dir)
         print(f"创建输出目录：{outputs_dir}")
         
-    url = "https://javascriptweekly.com/issues"
+    url = "https://thisweekinreact.com/newsletter"
     
     # Add headers to mimic a browser request
     headers = {
@@ -114,76 +117,43 @@ def scrape_javascriptweekly():
     
     # Send GET request to the URL
     print(f"Using proxy: http://127.0.0.1:7897")
-    response = requests.get(url, headers=headers, proxies=proxies)
+    print(f"Fetching content from: {url}")
     
-    # Check if the request was successful
-    if response.status_code == 200:
-        # Parse the HTML content
-        soup = BeautifulSoup(response.text, 'html.parser')
+    # 直接获取网页内容
+    result = fetch_page_content(url, headers, proxies)
+    
+    if result:
+        # 提取标题和内容
+        title = result["title"]
+        chinese_title = result["chinese_title"]
+        content = result["content"]
+        summary = result["summary"]
         
-        # Extract title
-        title = soup.find('h1')
-        if title:
-            site_title = title.text.strip()
-            print(f"Title: {site_title}\n")
-            # Sanitize title for filename
-            safe_title = re.sub(r'[^\w\s-]', '', site_title).strip().replace(' ', '_')
-        else:
-            site_title = "Javascript Weekly"
-            safe_title = "javascriptweekly"
+        # 创建安全的文件名
+        safe_title = "thisweekinreact"
         
-        # Create output files with title in the filename (now handled by extract_links_and_summarize)
+        # 创建输出文件
+        content_file = os.path.join(outputs_dir, f"{safe_title}_content.txt")
+        summary_file = os.path.join(outputs_dir, f"{safe_title}_summary.md")
         
-        # Find the first issue link - looking for links with href="issues/*" and text containing "Issue #"
-        issue_link = soup.find('a', href=re.compile(r'^issues/\d+$'), string=re.compile(r'Issue #\d+'))
+        # 保存内容到文件
+        with open(content_file, 'w', encoding='utf-8') as f:
+            f.write(f"Title: {title}\n")
+            f.write(f"Chinese Title: {chinese_title}\n")
+            f.write(f"URL: {url}\n\n")
+            f.write(content)
         
-        if issue_link and 'href' in issue_link.attrs:
-            link_url = issue_link['href']
-            issue_title = issue_link.text
-            print(f"Found issue link: {issue_link.text} - {link_url}")
-            
-            # Sanitize issue title for filename
-            safe_issue_title = re.sub(r'[^\w\s-]', '', issue_title).strip().replace(' ', '_')
-            
-            # Create output file with site title and issue title in the filename
-            summary_file = f"{safe_title}_{safe_issue_title}_summary.md"  # Markdown 格式
-            
-            # If the URL is relative, make it absolute
-            if not link_url.startswith('http'):
-                link_url = f"https://javascriptweekly.com/{link_url}"
-            
-            # Send GET request to the linked page
-            print(f"Fetching content from: {link_url}")
-            link_response = requests.get(link_url, headers=headers, proxies=proxies)
-            
-            # Check if the request was successful
-            if link_response.status_code == 200:
-                # Parse the HTML content of the linked page
-                link_soup = BeautifulSoup(link_response.text, 'html.parser')
-                
-                # 定义链接匹配模式
-                link_patterns = [
-                    re.compile(r'^https://javascriptweekly\.com/link'),  # 绝对 URL 模式
-                    re.compile(r'^/link')                          # 相对 URL 模式
-                ]
-                
-                # 使用提取的函数来处理链接
-                extract_links_and_summarize(
-                    soup=link_soup,
-                    link_patterns=link_patterns,
-                    headers=headers,
-                    proxies=proxies,
-                    summary_file=summary_file,
-                    summary_title_prefix=f"javascriptweekly",
-                    base_url="https://javascriptweekly.com",
-                    fetch_content_func=fetch_page_content
-                )
-            else:
-                print(f"Failed to retrieve the linked page. Status code: {link_response.status_code}")
-        else:
-            print("No issue links matching the pattern found on the page.")
+        # 保存摘要到 Markdown 文件
+        with open(summary_file, 'w', encoding='utf-8') as f:
+            f.write(f"# {chinese_title}\n\n")
+            f.write(f"**原标题**: {title}\n\n")
+            f.write(f"**链接**: {url}\n\n")
+            f.write(f"## 摘要\n\n{summary}\n")
+        
+        print(f"内容已保存到：{content_file}")
+        print(f"摘要已保存到：{summary_file}")
     else:
-        print(f"Failed to retrieve the page. Status code: {response.status_code}")
+        print("获取网页内容失败")
 
 if __name__ == "__main__":
-    scrape_javascriptweekly() 
+    scrape_thisweekinreact() 

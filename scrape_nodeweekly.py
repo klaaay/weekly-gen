@@ -97,11 +97,11 @@ def fetch_page_content(url, headers, proxies):
         }
 
 def scrape_nodeweekly():
-    # 确保outputs文件夹存在
+    # 确保 outputs 文件夹存在
     outputs_dir = "outputs"
     if not os.path.exists(outputs_dir):
         os.makedirs(outputs_dir)
-        print(f"创建输出目录: {outputs_dir}")
+        print(f"创建输出目录：{outputs_dir}")
         
     url = "https://nodeweekly.com/issues"
     
@@ -170,8 +170,8 @@ def scrape_nodeweekly():
                 
                 # 定义链接匹配模式
                 link_patterns = [
-                    re.compile(r'^https://nodeweekly\.com/link'),  # 绝对URL模式
-                    re.compile(r'^/link')                          # 相对URL模式
+                    re.compile(r'^https://nodeweekly\.com/link'),  # 绝对 URL 模式
+                    re.compile(r'^/link')                          # 相对 URL 模式
                 ]
                 
                 # 使用提取的函数来处理链接
