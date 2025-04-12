@@ -1,0 +1,164 @@
+#!/usr/bin/env python3
+import requests
+from bs4 import BeautifulSoup
+import re
+import os
+from typing import List, Dict, Any, Optional, Tuple, Pattern
+from datetime import datetime
+
+def extract_links_and_summarize(
+    soup: BeautifulSoup, 
+    link_patterns: List[Pattern], 
+    headers: Dict[str, str], 
+    proxies: Dict[str, str], 
+    summary_file: str = None,
+    summary_title_prefix: str = "",
+    base_url: str = None,
+    fetch_content_func = None
+) -> List[Dict[str, Any]]:
+    """
+    从BeautifulSoup对象中提取符合指定模式的链接，获取这些链接的内容并生成总结
+    
+    参数:
+        soup: BeautifulSoup对象，包含要处理的HTML内容
+        link_patterns: 正则表达式模式列表，用于匹配链接
+        headers: HTTP请求头
+        proxies: 代理设置
+        summary_file: 可选，保存总结的文件路径
+        summary_title_prefix: 可选，摘要文件标题前缀
+        base_url: 可选，用于将相对URL转换为绝对URL的基础URL
+        fetch_content_func: 可选，获取内容的函数，如果为None则使用内部默认函数
+        
+    返回:
+        已处理的文章数据列表
+    """
+    
+    # 确保outputs文件夹存在
+    outputs_dir = "outputs"
+    if not os.path.exists(outputs_dir):
+        os.makedirs(outputs_dir)
+        print(f"创建输出目录: {outputs_dir}")
+    
+    # 如果提供了summary_file，添加日期前缀和输出目录
+    if summary_file:
+        # 获取当前日期并格式化为YYYY-MM-DD
+        current_date = datetime.now().strftime("%Y-%m-%d")
+        # 添加日期和前缀到文件名，并放入outputs文件夹
+        summary_file = os.path.join(outputs_dir, f"{summary_title_prefix}_{current_date}_{summary_file}")
+        print(f"总结将保存到文件: {summary_file}")
+    
+    # 存储处理过的文章数据
+    processed_articles_data = []
+    
+    # 尝试每个链接模式，直到找到匹配项
+    matched_links = []
+    for pattern in link_patterns:
+        links = soup.find_all('a', href=pattern)
+        if links:
+            matched_links = links
+            print(f"\n找到 {len(links)} 个符合模式 {pattern.pattern} 的链接:")
+            break
+    
+    if matched_links:
+        # 记录成功获取的文章数
+        processed_articles = 0
+        
+        for link in matched_links:
+            if 'href' in link.attrs:
+                link_text = link.text.strip()
+                link_url = link['href']
+                
+                # 跳过空文本的链接
+                if not link_text:
+                    continue
+                    
+                # 避免重复处理相同的链接
+                if processed_articles > 0 and link_url in [l['href'] for l in matched_links[:processed_articles]]:
+                    continue
+                
+                # 确保URL是绝对路径
+                if base_url and link_url.startswith('/'):
+                    link_url = f"{base_url}{link_url}"
+                    
+                print(f"链接文本: {link_text}")
+                print(f"链接URL: {link_url}")
+                print("获取此链接的内容...")
+                
+                # 获取链接内容
+                if fetch_content_func:
+                    article_data = fetch_content_func(link_url, headers, proxies)
+                else:
+                    # 如果没有提供内容获取函数，则跳过内容获取
+                    article_data = {
+                        "url": link_url,
+                        "title": link_text,
+                        "chinese_title": link_text,
+                        "summary": "未提供内容获取函数"
+                    }
+                
+                # 保存处理过的文章数据
+                processed_articles_data.append(article_data)
+                
+                # 如果提供了summary_file，则写入总结
+                if summary_file:
+                    # 构建文章总结
+                    article_summary = f"## [{link_text}]({article_data['url']})\n\n"
+                    article_summary += f"**原文标题**: [{article_data['title']}]({article_data['url']})\n\n"
+                    article_summary += f"**中文标题**: {article_data['chinese_title']}\n\n"
+                    article_summary += f"{article_data['summary']}\n\n"
+                    article_summary += f"---\n\n"  # 使用 Markdown 分隔符
+                    
+                    # 写入到文件
+                    with open(summary_file, 'a', encoding='utf-8') as summary_f:
+                        summary_f.write(article_summary)
+                
+                processed_articles += 1
+                print(f"文章 {processed_articles} 已写入总结文件")
+                print("---")
+        
+        if summary_file:
+            print(f"\n所有 {processed_articles} 篇文章总结已保存到 {summary_file}")
+    else:
+        print("\n没有找到符合指定模式的链接。")
+    
+    return processed_articles_data
+
+# 使用示例:
+"""
+# 使用方法:
+from extract_links_and_summarize import extract_links_and_summarize
+from bs4 import BeautifulSoup
+import re
+import requests
+
+# 设置请求头和代理
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+}
+proxies = {
+    'http': 'http://127.0.0.1:7897',
+    'https': 'http://127.0.0.1:7897'
+}
+
+# 获取页面内容
+response = requests.get("https://nodeweekly.com/issues/123", headers=headers, proxies=proxies)
+soup = BeautifulSoup(response.text, 'html.parser')
+
+# 定义链接匹配模式
+link_patterns = [
+    re.compile(r'^https://nodeweekly\.com/link'),  # 绝对URL模式
+    re.compile(r'^/link')                          # 相对URL模式
+]
+
+# 从页面中提取链接并生成总结
+articles = extract_links_and_summarize(
+    soup=soup,
+    link_patterns=link_patterns,
+    headers=headers,
+    proxies=proxies,
+    summary_file="nodeweekly_summary.md",
+    summary_title_prefix="nodeweekly",
+    base_url="https://nodeweekly.com",
+    fetch_content_func=fetch_page_content  # 需要提供获取内容的函数
+)
+""" 

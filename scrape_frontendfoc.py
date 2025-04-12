@@ -6,14 +6,64 @@ import os
 from urllib.parse import urlparse
 from openai import OpenAI
 from dotenv import load_dotenv
-from utils.extract_links_and_summarize import extract_links_and_summarize
-from utils.deepseek_api import translate_title_to_chinese, summarize_with_deepseek
 
 # 加载.env 文件中的环境变量
 load_dotenv()
 
 # 初始化 OpenAI 客户端，指向 DeepSeek API
 client = OpenAI(api_key=os.getenv("DEEPSEEK_API_KEY"), base_url=os.getenv("DEEPSEEK_BASE_URL"))
+
+def translate_title_to_chinese(title):
+    """使用 DeepSeek API 将标题翻译为中文"""
+    try:
+        # 构建翻译提示词
+        prompt = f"Please translate the following title to Chinese (simplified). Only return the translated title, no explanations: \"{title}\""
+        
+        # 调用 API
+        response = client.chat.completions.create(
+            model="deepseek-chat",
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant that translates English to Chinese."},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.3,
+            max_tokens=200
+        )
+        
+        # 返回翻译内容
+        translated_title = response.choices[0].message.content.strip()
+        print(f"  Translated title: {translated_title}")
+        return translated_title
+    except Exception as e:
+        print(f"  Translation failed: {str(e)}")
+        return title  # 如果翻译失败，返回原标题
+
+def summarize_with_deepseek(content):
+    """使用 DeepSeek API 总结文章内容"""
+    try:
+        # 构建提示词
+        prompt = f"""Your output should use the following template:
+
+overview summary
+- Emoji Bulletpoint
+
+Please summarize the text I provide by creating a concise list of bullet points. Ensure that the bullet points are formatted using the "-" symbol. Include key points and essential information to capture the essence of the article effectively. Pick a suitable emoji for every bullet point. Add an overview summary without summary title of the article at the top.Your response should be in ZH. Use the following content: {content}"""
+        
+        # 调用 API
+        response = client.chat.completions.create(
+            model="deepseek-chat",
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant that summarizes content."},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.5,
+            max_tokens=8000
+        )
+        
+        # 返回总结内容
+        return response.choices[0].message.content
+    except Exception as e:
+        return f"总结失败：{str(e)}"
 
 def fetch_page_content(url, headers, proxies):
     """Fetch content from a URL, following redirects."""
@@ -96,14 +146,8 @@ def fetch_page_content(url, headers, proxies):
             "summary": f"无法总结：获取内容时出错 - {str(e)}"
         }
 
-def scrape_nodeweekly():
-    # 确保outputs文件夹存在
-    outputs_dir = "outputs"
-    if not os.path.exists(outputs_dir):
-        os.makedirs(outputs_dir)
-        print(f"创建输出目录: {outputs_dir}")
-        
-    url = "https://nodeweekly.com/issues"
+def scrape_frontendfoc():
+    url = "https://frontendfoc.us/issues"
     
     # Add headers to mimic a browser request
     headers = {
@@ -133,12 +177,12 @@ def scrape_nodeweekly():
             # Sanitize title for filename
             safe_title = re.sub(r'[^\w\s-]', '', site_title).strip().replace(' ', '_')
         else:
-            site_title = "Node Weekly"
-            safe_title = "nodeweekly"
+            site_title = "Frontend Weekly"
+            safe_title = "frontendfoc"
         
         # Create output files with title in the filename
-        content_file = os.path.join(outputs_dir, f"{safe_title}_content.txt")
-        summary_file = os.path.join(outputs_dir, f"{safe_title}_summary.md")  # Markdown 格式
+        content_file = f"{safe_title}_content.txt"
+        summary_file = f"{safe_title}_summary.md"  # Markdown 格式
         
         # Find the first issue link - looking for links with href="issues/*" and text containing "Issue #"
         issue_link = soup.find('a', href=re.compile(r'^issues/\d+$'), string=re.compile(r'Issue #\d+'))
@@ -156,7 +200,7 @@ def scrape_nodeweekly():
             
             # If the URL is relative, make it absolute
             if not link_url.startswith('http'):
-                link_url = f"https://nodeweekly.com/{link_url}"
+                link_url = f"https://frontendfoc.us/{link_url}"
             
             # Send GET request to the linked page
             print(f"Fetching content from: {link_url}")
@@ -164,27 +208,72 @@ def scrape_nodeweekly():
             
             # Check if the request was successful
             if link_response.status_code == 200:
+                # Save issue title and URL to content collection
+                
+                # 以追加模式打开文件
+                with open(summary_file, 'a', encoding='utf-8') as summary_f:
+                    # 写入网站标题、期刊标题和 URL
+                    summary_f.write(f"# {site_title} - {issue_title} 文章总结\n\n")
                 
                 # Parse the HTML content of the linked page
                 link_soup = BeautifulSoup(link_response.text, 'html.parser')
                 
-                # 定义链接匹配模式
-                link_patterns = [
-                    re.compile(r'^https://nodeweekly\.com/link'),  # 绝对URL模式
-                    re.compile(r'^/link')                          # 相对URL模式
-                ]
+                # Find all <a> tags with href starting with "https://frontendfoc.us/link"
+                frontendfoc_links = link_soup.find_all('a', href=re.compile(r'^https://frontendfoc\.us/link'))
                 
-                # 使用提取的函数来处理链接
-                extract_links_and_summarize(
-                    soup=link_soup,
-                    link_patterns=link_patterns,
-                    headers=headers,
-                    proxies=proxies,
-                    summary_file=summary_file,
-                    summary_title_prefix="nodeweekly",
-                    base_url="https://nodeweekly.com",
-                    fetch_content_func=fetch_page_content
-                )
+                # If no https links found, try relative links
+                if not frontendfoc_links:
+                    # Find links that start with "/link"
+                    frontendfoc_links = link_soup.find_all('a', href=re.compile(r'^/link'))
+                
+                if frontendfoc_links:
+                    print(f"\nFound {len(frontendfoc_links)} links with frontendfoc.us/link pattern:")
+                    
+                    # 记录成功获取的文章数
+                    processed_articles = 0
+                    
+                    for link in frontendfoc_links:
+                        if 'href' in link.attrs:
+                            link_text = link.text.strip()
+                            link_url = link['href']
+                            
+                            # 跳过空文本的链接
+                            if not link_text:
+                                continue
+                                
+                            # 避免重复处理相同的链接
+                            if processed_articles > 0 and link_url in [l['href'] for l in frontendfoc_links[:processed_articles]]:
+                                continue
+                            
+                            # Make sure URL is absolute
+                            if link_url.startswith('/'):
+                                link_url = f"https://frontendfoc.us{link_url}"
+                                
+                            print(f"Link text: {link_text}")
+                            print(f"Link URL: {link_url}")
+                            print("Fetching content from this link...")
+                            
+                            # Fetch content from the linked URL
+                            article_data = fetch_page_content(link_url, headers, proxies)
+                            
+                            # 构建文章总结
+                            article_summary = f"## [{link_text}]({article_data['url']})\n\n"
+                            article_summary += f"**原文标题**: [{article_data['title']}]({article_data['url']})\n\n"
+                            article_summary += f"**中文标题**: {article_data['chinese_title']}\n\n"
+                            article_summary += f"{article_data['summary']}\n\n"
+                            article_summary += f"---\n\n"  # 使用 Markdown 分隔符
+                            
+                            # 写入到文件
+                            with open(summary_file, 'a', encoding='utf-8') as summary_f:
+                                summary_f.write(article_summary)
+                            
+                            processed_articles += 1
+                            print(f"Article {processed_articles} has been written to the summary file")
+                            print("---")
+                    
+                    print(f"\nAll {processed_articles} article summaries have been saved to {summary_file}")
+                else:
+                    print("\nNo links with frontendfoc.us/link pattern found on the page.")
             else:
                 print(f"Failed to retrieve the linked page. Status code: {link_response.status_code}")
         else:
@@ -193,4 +282,4 @@ def scrape_nodeweekly():
         print(f"Failed to retrieve the page. Status code: {response.status_code}")
 
 if __name__ == "__main__":
-    scrape_nodeweekly() 
+    scrape_frontendfoc() 
