@@ -55,10 +55,10 @@ def extract_links_and_summarize(
         if summary_file.startswith('outputs/'):
             # 如果已经包含 outputs 路径，只需添加日期和前缀
             base_name = os.path.basename(summary_file)
-            summary_file = os.path.join(outputs_dir, f"{summary_title_prefix}_{current_date}_{base_name}")
+            summary_file = os.path.join(outputs_dir, f"{current_date}_{summary_title_prefix}_{base_name}")
         else:
             # 添加日期和前缀到文件名，并放入 outputs 文件夹
-            summary_file = os.path.join(outputs_dir, f"{summary_title_prefix}_{current_date}_{summary_file}")
+            summary_file = os.path.join(outputs_dir, f"{current_date}_{summary_title_prefix}_{summary_file}")
         
         print(f"总结将保存到文件：{summary_file}")
     
