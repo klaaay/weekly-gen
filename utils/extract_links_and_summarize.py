@@ -131,9 +131,8 @@ def extract_links_and_summarize(
                 # 如果提供了 summary_file，则写入总结
                 if summary_file:
                     # 构建文章总结
-                    article_summary = f"## [{link_text}]({article_data['url']})\n\n"
+                    article_summary = f"### [{article_data['chinese_title']}]({article_data['url']})\n\n"
                     article_summary += f"**原文标题**: [{article_data['title']}]({article_data['url']})\n\n"
-                    article_summary += f"**中文标题**: {article_data['chinese_title']}\n\n"
                     article_summary += f"{article_data['summary']}\n\n"
                     article_summary += f"---\n\n"  # 使用 Markdown 分隔符
                     
