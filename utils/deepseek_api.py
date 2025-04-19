@@ -13,7 +13,7 @@ def translate_title_to_chinese(title):
     """使用 DeepSeek API 将标题翻译为中文"""
     try:
         # 构建翻译提示词
-        prompt = f"Please translate the following title to Chinese (simplified). Only return the translated title, no explanations: \"{title}\""
+        prompt = f"Please translate the following title to Chinese (simplified). Only return the translated title, no explanations: {title}"
         
         # 调用 API
         response = client.chat.completions.create(
