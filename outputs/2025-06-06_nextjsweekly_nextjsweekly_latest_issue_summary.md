@@ -72,21 +72,16 @@ React Server Components（RSC）是一种编程范式，通过扩展模块系统
 
 **原文标题**: [Trigger.dev v4 beta | Trigger.dev](https://trigger.dev/blog/v4-beta-launch/?ref=nextjsweekly)
 
-Trigger.dev 发布了 v4 beta 版本，包含多项性能改进和新功能，升级过程简单快捷。
+Trigger.dev 发布了一系列公告、客户案例和技术文章，展示了其平台在自动化、AI 代理和任务部署方面的应用。
 
-- 🚀 **性能提升**：引入 Run Engine 2，显著优化性能，包括热启动功能，启动时间缩短至 100-300 毫秒。  
-- 🎨 **全新仪表盘**：重新设计仪表盘，环境成为核心概念，导航更快速、清晰，支持组织图标选择。  
-- ⏳ **等待点功能**：新增 Waitpoint 原语，支持运行暂停直到条件满足，适用于“人工介入”场景。  
-- 🔄 **幂等性支持**：为 triggerAndWait 和 batchTriggerAndWait 等函数添加幂等性键，避免重复工作。  
-- ⏱ **时间等待优化**：支持幂等性键和仪表盘跳过功能，提升测试效率。  
-- 📊 **运行优先级**：可为运行设置优先级，确保关键任务优先执行。  
-- ⏸ **队列管理**：新增环境暂停功能，可暂停或恢复队列，应对紧急情况。  
-- 🔧 **中间件和生命周期钩子**：改进中间件系统，新增 locals 和生命周期钩子，简化数据库连接管理等任务。  
-- 🖥 **内置 MCP 服务器**：CLI 支持 MCP 服务器，便于本地调试和触发任务。  
-- 🌍 **多区域支持**：计划在 GA 版本中增加欧洲和亚洲等更多工作区域。  
-- 🏠 **自托管支持**：正在开发支持多工作服务器的自托管指南，包括 Kubernetes 和 Helm 图表。  
-- 🔗 **私有服务访问**：未来将支持静态 IP 和白名单功能，便于访问私有服务。  
-- 📚 **升级简单**：大多数项目只需 5 分钟即可从 v3 升级，详情参见升级指南。
+- 🚀 2025 年 4 月 9 日：Trigger.dev v4 beta 版本发布，由 CEO Matt Aitken 宣布  
+- 🔒 2025 年 5 月 27 日：客户案例——Lewis Carhart 分享如何利用 AI 代理自动化安全合规  
+- 🎥 2025 年 4 月 15 日：客户案例——Max Sidebotham 介绍 Icon 如何用 Trigger.dev 革新视频广告创作  
+- ✍️ 2025 年 3 月 27 日：技术文章——James Ritchie 撰写关于如何编写优秀的 Cursor Rules  
+- 🤖 2025 年 3 月 4 日：客户案例——Sam Wright 讲述 Trigger.dev 如何驱动 Huntr 的内部 AI 代理  
+- 🎓 2025 年 2 月 12 日：客户案例——Ben Duggan 分享 MagicSchool AI 如何用 Trigger.dev 开发洞察  
+- 🛠️ 2025 年 2 月 6 日：技术文章——James Ritchie 探讨如何用 Trigger.dev 构建高效的 AI 代理  
+- ⏱️ 宣传语：3 分钟内即可构建并部署首个任务，立即开始使用
 
 ---
 
@@ -94,18 +89,17 @@ Trigger.dev 发布了 v4 beta 版本，包含多项性能改进和新功能，�
 
 **原文标题**: [Composing Server and Client Components: The Modern React's Superpower | Epic React by Kent C. Dodds](https://www.epicreact.dev/composing-server-and-client-components-the-modern-reacts-superpower-08yn9)
 
-现代 React 的服务器组件与客户端组件组合模式彻底改变了传统网页开发的繁琐方式，实现了无缝集成与高效开发。
+现代 React 通过服务器组件和客户端组件的组合，实现了无缝的 UI 构建方式，避免了传统开发中的脚本标签混乱和数据传递问题，同时提升了性能和开发体验。
 
-- 🕰️ 传统开发方式：依赖脚本标签手动连接服务器渲染的 HTML 与客户端 JS，存在加载顺序和全局变量管理问题。  
-- 🔄 React 服务器组件革新：服务器组件处理数据获取与静态渲染，客户端组件专注交互性，二者可直接嵌套组合。  
-- 🧩 核心优势：  
-  - 🚫 消除脚本标签间接性：组件自动关联，无需手动绑定。  
-  - 📦 封装性：各组件独立管理数据与状态，避免属性透传。  
-- ⚡ 性能提升：仅客户端组件需 JS，减少传输体积，支持流式渲染与 Suspense 加载状态。  
-- 🛠️ 实际案例：在太空船搜索应用中，服务器组件获取数据，客户端组件实时处理搜索，交互流畅无手动注入。  
-- 🔍 新旧对比：传统方式脆弱难扩展，RSC 模式封装性强、可组合且健壮。  
-- 🎯 额外好处：服务器组件支持按需数据获取，彻底解决属性透传问题。  
-- 📚 学习推荐：通过 EpicReact.dev 工作坊深入实践 RSC 技术。
+- 🕰️ 传统开发方式依赖脚本标签和全局变量，难以维护和扩展。
+- 🔄 React 服务器组件（RSCs）允许服务器和客户端组件混合使用，各自发挥优势。
+- 🧩 服务器组件负责数据获取和静态渲染，客户端组件处理交互和状态管理。
+- 🚀 优势包括：无需手动连接脚本、组件封装性更好、性能更优（仅发送必要的 JS 代码）。
+- 🌊 支持流式渲染和 Suspense，提升用户体验。
+- 🛠️ 实际案例：在 EpicReact.dev 工作坊中，通过服务器组件获取数据，客户端组件处理搜索交互。
+- 🔄 新旧对比：RSCs 避免了 DOM 操作、手动数据传递和复杂的 hydration 过程。
+- 🎯 解决了 React 中常见的 prop drilling 问题，数据可以直接在需要的地方获取。
+- 📚 推荐通过 EpicReact.dev 的服务器组件工作坊深入学习。
 
 ---
 
@@ -113,20 +107,22 @@ Trigger.dev 发布了 v4 beta 版本，包含多项性能改进和新功能，�
 
 **原文标题**: [The simplest way to add Google sign-in to your Next.js app ✍️ - Tom Dekan](https://tomdekan.com/articles/google-sign-in-nextjs)
 
-本文介绍了如何在 Next.js 应用中集成 Google 登录功能，使用 Prisma ORM 和 BetterAuth 工具，并提供了详细的步骤和代码示例。
+本文介绍了如何在 Next.js 应用中集成 Google 登录功能，使用 Prisma ORM 和 BetterAuth 工具实现自托管认证。
 
-- 🚀 **项目搭建**：使用`create-next-app`初始化项目，配置 TypeScript、Tailwind 等。
-- 🔧 **依赖安装**：安装 BetterAuth 和 Prisma 相关依赖，用于处理用户认证和数据库操作。
-- 🔑 **环境变量配置**：设置 Google OAuth 的客户端 ID 和密钥，以及数据库连接信息。
-- 🛠 **数据库设置**：使用 PostgreSQL 存储用户会话，通过 Prisma 进行数据库管理。
-- 🔄 **Google OAuth 配置**：在 Google Cloud Console 中创建 OAuth 客户端 ID 和密钥，配置回调 URL。
-- 📝 **Prisma 初始化**：生成 Prisma 客户端并连接 BetterAuth，创建必要的数据库模型。
-- 🖥 **前端实现**：创建登录页面、仪表盘页面和登出按钮，使用 Framer Motion 添加动画效果。
-- 🔒 **中间件保护**：通过中间件确保只有登录用户才能访问受保护的路由。
-- 🚀 **本地测试**：运行开发服务器，测试 Google 登录功能。
-- 🌐 **部署准备**：提供部署到 Vercel 的关键步骤，包括环境变量配置和 Google OAuth 回调 URL 更新。
-
-通过本文的指导，开发者可以快速在 Next.js 应用中实现 Google 登录功能，并掌握自托管认证的核心流程。
+- 🚀 **项目初始化**：使用`npx create-next-app`创建 Next.js 项目，并配置 TypeScript、Tailwind 等。
+- 📦 **依赖安装**：添加`better-auth`和`prisma`相关依赖，用于认证和数据库管理。
+- 🔑 **环境变量配置**：设置`BETTER_AUTH_SECRET`、Google OAuth 的`CLIENT_ID`和`CLIENT_SECRET`，以及数据库连接字符串。
+- 🛠 **数据库设置**：安装 PostgreSQL 并创建用户和数据库，更新`.env`文件中的`DATABASE_URL`。
+- 🔄 **Prisma 初始化**：运行`npx prisma init`初始化 Prisma，并生成客户端代码。
+- 🔗 **BetterAuth 连接**：创建`auth.ts`文件，配置 BetterAuth 实例并连接到 Prisma 数据库。
+- 📝 **生成 Prisma Schema**：使用 CLI 工具生成必要的认证模型，并运行迁移。
+- 🌐 **Next.js 路由配置**：创建 API 路由处理认证请求，并设置客户端包装器。
+- 🖥 **登录页面**：创建登录页面，使用 Google OAuth 进行认证。
+- 🏠 **受保护页面**：创建仪表盘页面，仅允许已认证用户访问。
+- 🔒 **全局中间件**：使用中间件检查用户认证状态，未认证用户重定向到登录页。
+- 🎨 **界面优化**：使用 Framer Motion 和 Tailwind 优化登录和主页的 UI。
+- 🚦 **本地测试**：运行开发服务器测试登录功能。
+- 🚀 **部署准备**：提供部署到 Vercel 的关键步骤，包括环境变量和回调 URL 的更新。
 
 ---
 
