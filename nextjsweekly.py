@@ -134,8 +134,8 @@ def scrape_nextjsweekly():
         content_file = os.path.join(outputs_dir, f"{safe_title}_content.txt")
         summary_file = os.path.join(outputs_dir, f"{safe_title}_summary.md")  # Markdown 格式
         
-        # 根据要求，查找文本内容是"latest issue"的 a 标签
-        latest_issue_link = soup.find('a', string=re.compile(r'latest issue', re.IGNORECASE))
+        # 根据要求，查找第一个 href 是"/issues/数字"格式的 a 标签
+        latest_issue_link = soup.find('a', href=lambda x: x and re.match(r'^/issues/\d+$', x))
         
         if latest_issue_link:
             # 获取最新一期的链接
