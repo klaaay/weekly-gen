@@ -1,39 +1,39 @@
-### [Node周刊第589期：2025年8月5日](https://nodeweekly.com/issues/589)
+### [Node 周刊第 589 期：2025 年 8 月 5 日](https://nodeweekly.com/issues/589)
 
 **原文标题**: [Node Weekly Issue 589: August 5, 2025](https://nodeweekly.com/issues/589)
 
 概述总结  
-本期内容涵盖了多个技术更新和工具发布，包括V8性能优化、Node.js新版本特性、TypeScript 5.9发布、以及多个开发者工具的更新。此外，还提到了Deno与Oracle的商标争议、Vite生态的最新动态，以及开发者对未来主流语言的预测。  
+本期内容涵盖了多个技术更新和工具发布，包括 V8 性能优化、Node.js 新版本特性、TypeScript 5.9 发布、以及多个开发者工具的更新。此外，还提到了 Deno 与 Oracle 的商标争议、Vite 生态的最新动态，以及开发者对未来主流语言的预测。  
 
-- 🌟 V8团队优化了`JSON.stringify`，性能提升超过两倍，适用于API响应和缓存等常见任务。  
-- 🚀 Node.js v24.5.0发布，支持OpenSSL 3.5和未标记的`--experimental-wasm-modules`，并改进了代理支持。  
-- 🤖 CodeRabbit推出免费的AI代码审查工具，支持VS Code、Cursor和Windsurf，提供逐行审查和一键修复功能。  
-- 📜 TypeScript 5.9发布，支持`import defer`和新的`--module node20`选项，并预告了TypeScript 6.0的过渡计划。  
-- 🔍 Node.js v22.18（LTS）默认启用类型剥离/TypeScript支持，使`node app.ts`成为现实。  
-- 🛠 pnpm 10.14新增对JavaScript运行时安装的支持，可自动下载并固定Node.js、Deno或Bun版本。  
-- 📊 Dependency Cruiser 17发布，提供依赖关系可视化功能，支持查看Chalk、Yarn和React等流行项目的依赖图。  
-- ⚡ Express Slow Down 3.0发布，用于减缓重复请求，适用于公共API和密码重置等端点。  
-- 📢 Deno团队发布视频总结与Oracle的JavaScript™商标争议，并呼吁Oracle“释放JavaScript”。  
-- 🔮 有开发者预测Rust、Python和TypeScript将成为未来主导的三大语言。  
-- 🏖 编辑团队下周休假，下一期将于8月19日发布。
+- 🌟 V8 团队优化了`JSON.stringify`，性能提升超过两倍，适用于 API 响应和缓存等常见任务。  
+- 🚀 Node.js v24.5.0 发布，支持 OpenSSL 3.5 和未标记的`--experimental-wasm-modules`，并改进了代理支持。  
+- 🤖 CodeRabbit 推出免费的 AI 代码审查工具，支持 VS Code、Cursor 和 Windsurf，提供逐行审查和一键修复功能。  
+- 📜 TypeScript 5.9 发布，支持`import defer`和新的`--module node20`选项，并预告了 TypeScript 6.0 的过渡计划。  
+- 🔍 Node.js v22.18（LTS）默认启用类型剥离/TypeScript 支持，使`node app.ts`成为现实。  
+- 🛠 pnpm 10.14 新增对 JavaScript 运行时安装的支持，可自动下载并固定 Node.js、Deno 或 Bun 版本。  
+- 📊 Dependency Cruiser 17 发布，提供依赖关系可视化功能，支持查看 Chalk、Yarn 和 React 等流行项目的依赖图。  
+- ⚡ Express Slow Down 3.0 发布，用于减缓重复请求，适用于公共 API 和密码重置等端点。  
+- 📢 Deno 团队发布视频总结与 Oracle 的 JavaScript™商标争议，并呼吁 Oracle“释放 JavaScript”。  
+- 🔮 有开发者预测 Rust、Python 和 TypeScript 将成为未来主导的三大语言。  
+- 🏖 编辑团队下周休假，下一期将于 8 月 19 日发布。
 
 ---
 
-### [我们如何让JSON.stringify的速度提升两倍以上 · V8引擎](https://v8.dev/blog/json-stringify)
+### [我们如何让 JSON.stringify 的速度提升两倍以上 · V8 引擎](https://v8.dev/blog/json-stringify)
 
 **原文标题**: [How we made JSON.stringify more than twice as fast · V8](https://v8.dev/blog/json-stringify)
 
-V8引擎团队通过一系列技术优化使JSON.stringify的性能提升了两倍以上，显著提升了网络应用的数据序列化效率。优化包括引入无副作用快速路径、改进字符串处理、利用SIMD加速字符转义检测、优化数字转字符串算法及内存管理策略，同时保持对复杂场景的兼容性。
+V8 引擎团队通过一系列技术优化使 JSON.stringify 的性能提升了两倍以上，显著提升了网络应用的数据序列化效率。优化包括引入无副作用快速路径、改进字符串处理、利用 SIMD 加速字符转义检测、优化数字转字符串算法及内存管理策略，同时保持对复杂场景的兼容性。
 
-- 🚀 **性能翻倍**：V8引擎优化使JSON.stringify速度提升两倍以上，提升网络请求和数据存储效率。  
+- 🚀 **性能翻倍**：V8 引擎优化使 JSON.stringify 速度提升两倍以上，提升网络请求和数据存储效率。  
 - 🛤️ **无副作用快速路径**：新增快速路径确保序列化无副作用时使用高效实现，跳过昂贵检查。  
 - 🔤 **字符串处理优化**：针对单字节和双字节字符串分别编译专用序列化器，提升处理效率。  
-- ⚡ **SIMD加速转义检测**：利用SIMD指令和SWAR技术快速扫描字符串中的转义字符，大幅提升处理速度。  
+- ⚡ **SIMD 加速转义检测**：利用 SIMD 指令和 SWAR 技术快速扫描字符串中的转义字符，大幅提升处理速度。  
 - 🏷️ **隐藏类标记**：通过标记对象的隐藏类，避免重复检查属性，进一步加速序列化。  
-- 🔢 **数字转字符串算法升级**：用Dragonbox算法替换Grisu3，提升所有数字转字符串操作的性能。  
+- 🔢 **数字转字符串算法升级**：用 Dragonbox 算法替换 Grisu3，提升所有数字转字符串操作的性能。  
 - 🧩 **分段缓冲区优化**：使用分段内存管理替代连续缓冲区，减少内存分配和复制开销。  
-- ⚠️ **限制条件**：快速路径需满足无replacer/space参数、简单数据对象、无索引属性等条件，否则回退到通用序列化器。  
-- 🌍 **广泛适用**：优化适用于大多数常见场景，如API响应和缓存数据序列化，Chrome 138及以上版本已支持。
+- ⚠️ **限制条件**：快速路径需满足无 replacer/space 参数、简单数据对象、无索引属性等条件，否则回退到通用序列化器。  
+- 🌍 **广泛适用**：优化适用于大多数常见场景，如 API 响应和缓存数据序列化，Chrome 138 及以上版本已支持。
 
 ---
 
@@ -43,13 +43,13 @@ V8引擎团队通过一系列技术优化使JSON.stringify的性能提升了两�
 
 Node.js v24.5.0（Current）版本发布，包含多项重要更新和功能改进。
 
-- 🔒 升级至OpenSSL 3.5.1，支持至2030年4月，Node.js 24支持至2028年4月。
-- 🚀 取消`--experimental-wasm-modules`标志，支持WebAssembly模块的源阶段和实例阶段导入。
+- 🔒 升级至 OpenSSL 3.5.1，支持至 2030 年 4 月，Node.js 24 支持至 2028 年 4 月。
+- 🚀 取消`--experimental-wasm-modules`标志，支持 WebAssembly 模块的源阶段和实例阶段导入。
 - 🌐 `node:http`和`node:https`新增内置代理支持，可通过环境变量配置全局代理。
-- 📜 新增`node:tls`模块的`setDefaultCACertificates()` API，动态配置默认CA证书。
-- ⚡ 其他显著变更包括：DNS支持最大超时、网络模块更新阻止列表、Worker添加Web Locks API等。
-- 🔧 多项修复和改进，涵盖CLI、模块系统、测试工具等。
-- 📦 提供多平台安装包和二进制文件下载，包括Windows、macOS、Linux等。
+- 📜 新增`node:tls`模块的`setDefaultCACertificates()` API，动态配置默认 CA 证书。
+- ⚡ 其他显著变更包括：DNS 支持最大超时、网络模块更新阻止列表、Worker 添加 Web Locks API 等。
+- 🔧 多项修复和改进，涵盖 CLI、模块系统、测试工具等。
+- 📦 提供多平台安装包和二进制文件下载，包括 Windows、macOS、Linux 等。
 
 ---
 
@@ -59,7 +59,7 @@ Node.js v24.5.0（Current）版本发布，包含多项重要更新和功能改�
 
 TypeScript 5.9 正式发布，带来了多项新特性和优化，包括更简洁的 `tsconfig.json` 初始化、支持 `import defer` 语法、新增 `--module node20` 选项，以及编辑器体验的改进等。
 
-- 🚀 **TypeScript 5.9 发布** - 2025年8月1日发布，包含多项新功能和优化。
+- 🚀 **TypeScript 5.9 发布** - 2025 年 8 月 1 日发布，包含多项新功能和优化。
 - 🛠️ **更简洁的 `tsc --init`** - 生成的 `tsconfig.json` 更精简，默认启用常用配置（如 `strict: true` 和 `moduleDetection: force`）。
 - ⏳ **支持 `import defer`** - 延迟模块执行，直到首次访问导出成员，适用于条件加载和高开销初始化场景。
 - 📦 **新增 `--module node20`** - 稳定支持 Node.js v20 的模块行为，隐含 `--target es2023`。
@@ -97,7 +97,7 @@ TypeScript 5.9 正式发布，带来多项新功能和优化，包括更简洁�
 
 TypeScript 5.9 正式发布，带来多项新特性和优化，包括更简洁的 `tsconfig.json` 初始化、支持 `import defer` 语法、新增 `--module node20` 选项等，同时改进了 DOM API 的文档提示和编辑器悬停功能。
 
-- 🎉 **TypeScript 5.9 发布** - 2025年8月1日发布，包含多项新功能和优化。
+- 🎉 **TypeScript 5.9 发布** - 2025 年 8 月 1 日发布，包含多项新功能和优化。
 - 🛠️ **更简洁的 `tsc --init`** - 生成的 `tsconfig.json` 更精简，减少冗余配置，默认启用常用选项如 `strict` 和 `jsx`。
 - 📦 **支持 `import defer`** - 新增语法允许延迟加载模块，优化启动性能和条件加载。
 - 🔧 **新增 `--module node20`** - 提供稳定的 Node.js v20 行为支持，默认目标为 `es2023`。
@@ -110,21 +110,21 @@ TypeScript 5.9 正式发布，带来多项新特性和优化，包括更简洁�
 
 ---
 
-### [10倍速的TypeScript - TypeScript](https://devblogs.microsoft.com/typescript/typescript-native-port/)
+### [10 倍速的 TypeScript - TypeScript](https://devblogs.microsoft.com/typescript/typescript-native-port/)
 
 **原文标题**: [A 10x Faster TypeScript - TypeScript](https://devblogs.microsoft.com/typescript/typescript-native-port/)
 
-TypeScript 团队宣布将推出原生版本编译器，性能提升高达10倍，显著减少编辑器启动和构建时间，并降低内存占用。预计2025年中发布预览版，年底完成功能开发。
+TypeScript 团队宣布将推出原生版本编译器，性能提升高达 10 倍，显著减少编辑器启动和构建时间，并降低内存占用。预计 2025 年中发布预览版，年底完成功能开发。
 
-- 🚀 TypeScript 将推出原生编译器，性能提升10倍，大幅优化编辑器启动和构建时间  
-- ⏱️ 原生版本预计2025年中发布预览版，年底完成全部功能开发  
-- 💻 编辑器加载时间提升8倍，内存使用减少约50%  
-- 📊 测试显示多个流行代码库构建速度提升9-13倍  
-- 🔧 将迁移至语言服务器协议(LSP)，提升与其他语言的兼容性  
-- 🛠️ 提供Go代码仓库供开发者提前体验  
-- 📅 TypeScript 6.x仍将维护，原生版本将作为TypeScript 7.0发布  
-- 🤖 性能提升为AI工具集成提供更好基础  
-- 💬 团队将在社区开展AMA活动，分享更多细节
+- 🚀 TypeScript 将推出原生编译器，性能提升 10 倍，大幅优化编辑器启动和构建时间  
+- ⏱️ 原生版本预计 2025 年中发布预览版，年底完成全部功能开发  
+- 💻 编辑器加载时间提升 8 倍，内存使用减少约 50%  
+- 📊 测试显示多个流行代码库构建速度提升 9-13 倍  
+- 🔧 将迁移至语言服务器协议 (LSP)，提升与其他语言的兼容性  
+- 🛠️ 提供 Go 代码仓库供开发者提前体验  
+- 📅 TypeScript 6.x 仍将维护，原生版本将作为 TypeScript 7.0 发布  
+- 🤖 性能提升为 AI 工具集成提供更好基础  
+- 💬 团队将在社区开展 AMA 活动，分享更多细节
 
 ---
 
@@ -132,17 +132,17 @@ TypeScript 团队宣布将推出原生版本编译器，性能提升高达10倍�
 
 **原文标题**: [npm trusted publishing with OIDC is generally available - GitHub Changelog](https://github.blog/changelog/2025-07-31-npm-trusted-publishing-with-oidc-is-generally-available/)
 
-npm可信发布功能正式推出，通过OIDC实现CI/CD工作流的安全身份验证，减少长期令牌管理需求。
+npm 可信发布功能正式推出，通过 OIDC 实现 CI/CD 工作流的安全身份验证，减少长期令牌管理需求。
 
-- 🔒 无需npm令牌发布包：支持通过GitHub Actions或GitLab CI/CD工作流使用OIDC认证发布。  
-- 🛡️ 消除令牌风险：避免CI/CD环境中令牌存储、轮换或泄露问题。  
+- 🔒 无需 npm 令牌发布包：支持通过 GitHub Actions 或 GitLab CI/CD工作流使用OIDC认证发布。  
+- 🛡️ 消除令牌风险：避免 CI/CD 环境中令牌存储、轮换或泄露问题。  
 - 🔐 加密信任机制：每次发布使用短期、工作流专属凭证，不可复用或外泄。  
 - 📜 自动生成来源证明：默认附带包构建来源的加密证明，无需手动添加`--provenance`参数。  
-- 🌐 适用场景：支持所有npm公私包（含作用域/非作用域包）、GitHub托管运行器及GitLab共享运行器。  
+- 🌐 适用场景：支持所有 npm 公私包（含作用域/非作用域包）、GitHub 托管运行器及 GitLab 共享运行器。  
 - ⚠️ 限制：私有源码仓库暂不支持来源证明功能。  
-- 🛠️ 配置步骤：在npmjs.com设置信任发布者（指定仓库/工作流文件等），更新工作流权限即可直接发布。  
+- 🛠️ 配置步骤：在 npmjs.com 设置信任发布者（指定仓库/工作流文件等），更新工作流权限即可直接发布。  
 - 📌 可选项：通过环境变量或配置文件显式关闭来源证明功能。  
-- 🚀 未来计划：扩展CI/CD提供商支持及自托管运行器功能。
+- 🚀 未来计划：扩展 CI/CD 提供商支持及自托管运行器功能。
 
 ---
 
@@ -167,19 +167,19 @@ Npkill 是一个 CLI 工具，用于查找并删除计算机上分散的 node_mo
 
 ---
 
-### [npkill的未来：超越node_modules](https://imzaldih.com/en/post/npkill-future-beyond-node-modules/)
+### [npkill 的未来：超越 node_modules](https://imzaldih.com/en/post/npkill-future-beyond-node-modules/)
 
 **原文标题**: [The Future of npkill: Beyond node_modules](https://imzaldih.com/en/post/npkill-future-beyond-node-modules/)
 
-npkill v1.0即将发布，核心将作为公共API开放，可能带来重大变革，包括推出网页版工具。同时，开发者考虑扩展其功能，使其不仅限于Node生态，而是服务于更多开发者。  
+npkill v1.0 即将发布，核心将作为公共 API 开放，可能带来重大变革，包括推出网页版工具。同时，开发者考虑扩展其功能，使其不仅限于 Node 生态，而是服务于更多开发者。  
 
-- 🚀 **npkill v1.0即将发布**：核心将作为公共API开放，带来更多可能性，包括网页版工具。  
-- 💡 **扩展功能构想**：通过预定义配置文件（profiles）支持多种语言（如Python、Java、Rust等），使其成为通用开发工具。  
-- 📂 **预定义配置文件示例**：例如Python的`__pycache__`、Java的`build`、Unity的`Library`等，帮助开发者快速清理无用文件。  
-- 🤔 **身份与进化的矛盾**：npkill的核心价值是处理`node_modules`，扩展功能是否会稀释其独特性？  
-- ⏳ **关键决策时机**：v1.0的发布是引入重大变革的合适时机，否则可能错失机会。  
-- 💬 **征求反馈**：开发者鼓励用户参与讨论，决定npkill的未来方向。  
-- 🔗 **相关链接**：npkill官网、代码仓库、项目支持等资源。
+- 🚀 **npkill v1.0 即将发布**：核心将作为公共 API 开放，带来更多可能性，包括网页版工具。  
+- 💡 **扩展功能构想**：通过预定义配置文件（profiles）支持多种语言（如 Python、Java、Rust 等），使其成为通用开发工具。  
+- 📂 **预定义配置文件示例**：例如 Python 的`__pycache__`、Java 的`build`、Unity 的`Library`等，帮助开发者快速清理无用文件。  
+- 🤔 **身份与进化的矛盾**：npkill 的核心价值是处理`node_modules`，扩展功能是否会稀释其独特性？  
+- ⏳ **关键决策时机**：v1.0 的发布是引入重大变革的合适时机，否则可能错失机会。  
+- 💬 **征求反馈**：开发者鼓励用户参与讨论，决定 npkill 的未来方向。  
+- 🔗 **相关链接**：npkill 官网、代码仓库、项目支持等资源。
 
 ---
 
@@ -187,13 +187,13 @@ npkill v1.0即将发布，核心将作为公共API开放，可能带来重大变
 
 **原文标题**: [No title found](https://x.com/izs/status/1950986951227744564)
 
-当前浏览器未启用JavaScript，导致无法正常使用x.com平台。建议启用JavaScript或切换至支持的浏览器，详情可查看帮助中心。若问题仍存在，可能是隐私扩展导致，请尝试禁用后重新加载。
+当前浏览器未启用 JavaScript，导致无法正常使用 x.com 平台。建议启用 JavaScript 或切换至支持的浏览器，详情可查看帮助中心。若问题仍存在，可能是隐私扩展导致，请尝试禁用后重新加载。
 
-- 🚫 JavaScript未启用：检测到浏览器禁用了JavaScript，需启用或更换支持浏览器。  
+- 🚫 JavaScript 未启用：检测到浏览器禁用了 JavaScript，需启用或更换支持浏览器。  
 - 🌐 支持浏览器列表：可在帮助中心查询兼容的浏览器信息。  
 - 🔄 操作建议：尝试重新加载页面或检查问题是否解决。  
 - 🛡️ 隐私扩展干扰：部分隐私保护插件可能导致异常，建议临时禁用后重试。  
-- 📜 相关链接：页脚包含服务条款、隐私政策、Cookie政策及版权信息（© 2025 X Corp）。
+- 📜 相关链接：页脚包含服务条款、隐私政策、Cookie 政策及版权信息（© 2025 X Corp）。
 
 ---
 
@@ -203,9 +203,9 @@ npkill v1.0即将发布，核心将作为公共API开放，可能带来重大变
 
 Isaac Z. Schlueter，现居加州奥克兰，拥有丰富的技术行业工作经历，并积极参与多个开源项目和个人创作。
 
-- 🏢 **工作经历**：自2024年2月起在vlt technology inc.工作，此前经历包括Tier.run、GitHub、npm, Inc.、Joyent等多家知名公司。
-- 🛠 **参与项目**：主要贡献于npm和Node.js，并开发了测试工具node-tap。
-- 💻 **代码与写作**：在GitHub上开源代码，撰写博客（长文）、Reddit（中篇）和Bluesky（短文）。
+- 🏢 **工作经历**：自 2024 年 2 月起在 vlt technology inc.工作，此前经历包括 Tier.run、GitHub、npm, Inc.、Joyent 等多家知名公司。
+- 🛠 **参与项目**：主要贡献于 npm 和 Node.js，并开发了测试工具 node-tap。
+- 💻 **代码与写作**：在 GitHub 上开源代码，撰写博客（长文）、Reddit（中篇）和 Bluesky（短文）。
 - 🎓 **教育背景**：曾就读于南康涅狄格州立大学，学习数学、计算机科学、物理和哲学，未获得学位；另在伯克利城市学院学习手语。
 
 ---
@@ -214,41 +214,41 @@ Isaac Z. Schlueter，现居加州奥克兰，拥有丰富的技术行业工作�
 
 **原文标题**: [vlt /vÅlt/](https://www.vlt.sh/)
 
-一款名为vlt的新型JavaScript包管理器及无服务器注册表正式亮相，由npm创始人Isaac Schlueter及原npm团队核心成员开发，旨在革新JavaScript包管理生态，提供更高效、安全的开发与分发体验。
+一款名为 vlt 的新型 JavaScript 包管理器及无服务器注册表正式亮相，由 npm 创始人 Isaac Schlueter 及原 npm 团队核心成员开发，旨在革新 JavaScript 包管理生态，提供更高效、安全的开发与分发体验。
 
-- 🚀 **vlt发布**：推出全新JavaScript包管理器和无服务器注册表，致力于提升包管理效率与安全性。  
-- 💡 **强大团队**：npm创始人Isaac Schlueter及原班人马加盟，技术背景深厚。  
-- 🔧 **功能亮点**：支持开发、运行、分发、发现及安全管控，提供熟悉的命令行工具（如`vlt [command]`）和GUI界面。  
+- 🚀 **vlt 发布**：推出全新 JavaScript 包管理器和无服务器注册表，致力于提升包管理效率与安全性。  
+- 💡 **强大团队**：npm 创始人 Isaac Schlueter 及原班人马加盟，技术背景深厚。  
+- 🔧 **功能亮点**：支持开发、运行、分发、发现及安全管控，提供熟悉的命令行工具（如`vlt [command]`）和 GUI 界面。  
 - 🌐 **无服务器注册表**：支持自定义包和私有代码的安全分发，免除企业级高额费用。  
-- 📢 **行业反响**：开发者社区高度关注，认为其填补了npm的创新停滞，可能成为未来主流工具。  
+- 📢 **行业反响**：开发者社区高度关注，认为其填补了 npm 的创新停滞，可能成为未来主流工具。  
 - 🔗 **资源链接**：官网[vlt.sh](https://vlt.sh)提供安装指南（`npm i -g vlt`）及文档。  
 - 🔍 **特色功能**：查询语法（如`vlt view`）获好评，精准性优于现有方案。  
-- 🎤 **活动亮相**：在#NodeConfEU大会首发，Socket博客深度报道其6个月开发成果。
+- 🎤 **活动亮相**：在#NodeConfEU 大会首发，Socket 博客深度报道其 6 个月开发成果。
 
 ---
 
-### [2025年现代Node.js模式](https://kashw1n.com/blog/nodejs-2025/)
+### [2025 年现代 Node.js 模式](https://kashw1n.com/blog/nodejs-2025/)
 
 **原文标题**: [Modern Node.js Patterns for 2025](https://kashw1n.com/blog/nodejs-2025/)
 
-Node.js 在2025年经历了显著变革，从回调式CommonJS发展为基于ESM和Web标准的现代化开发模式，强调减少依赖、提升开发体验和性能优化。
+Node.js 在 2025 年经历了显著变革，从回调式 CommonJS 发展为基于 ESM 和 Web 标准的现代化开发模式，强调减少依赖、提升开发体验和性能优化。
 
-- 📦 **模块系统**：ESM成为新标准，支持`node:`前缀明确核心模块，替代CommonJS的`require`语法  
-- ⏱️ **顶层Await**：简化异步初始化代码，无需IIFE包装  
-- 🌐 **内置Web API**：原生集成Fetch API和AbortController，替代axios等HTTP库  
-- 🧪 **内置测试工具**：无需Jest/Mocha，直接使用`node:test`进行单元测试和覆盖率统计  
-- 🔄 **高级异步模式**：结合Promise.all并行处理、AsyncIterators事件流处理  
-- 🌊 **现代化流处理**：支持Web Streams互通，`pipeline`提供自动错误处理  
-- 🧵 **Worker线程**：通过`worker_threads`实现CPU密集型任务并行处理  
+- 📦 **模块系统**：ESM 成为新标准，支持`node:`前缀明确核心模块，替代 CommonJS 的`require`语法  
+- ⏱️ **顶层 Await**：简化异步初始化代码，无需 IIFE 包装  
+- 🌐 **内置 Web API**：原生集成 Fetch API 和 AbortController，替代 axios 等 HTTP 库  
+- 🧪 **内置测试工具**：无需 Jest/Mocha，直接使用`node:test`进行单元测试和覆盖率统计  
+- 🔄 **高级异步模式**：结合 Promise.all 并行处理、AsyncIterators 事件流处理  
+- 🌊 **现代化流处理**：支持 Web Streams 互通，`pipeline`提供自动错误处理  
+- 🧵 **Worker 线程**：通过`worker_threads`实现 CPU 密集型任务并行处理  
 - 🛠️ **开发体验优化**：内置`--watch`热更新、`--env-file`环境变量加载  
 - 🔒 **安全增强**：实验性权限模型限制文件/网络访问  
-- 📊 **性能监控**：`perf_hooks`内置APM功能，替代基础监控工具  
+- 📊 **性能监控**：`perf_hooks`内置 APM 功能，替代基础监控工具  
 - 📦 **应用分发**：实验性单文件打包（SEA）简化部署  
-- 🐞 **结构化错误处理**：扩展Error类实现上下文丰富的诊断信息  
-- 🗺️ **模块解析**：Import Maps优化内部模块引用路径  
+- 🐞 **结构化错误处理**：扩展 Error 类实现上下文丰富的诊断信息  
+- 🗺️ **模块解析**：Import Maps 优化内部模块引用路径  
 - 🧩 **动态导入**：按需加载代码适配不同环境  
 
-关键趋势：拥抱Web标准、减少第三方依赖、强化开发者体验与安全管控，同时保持向后兼容。
+关键趋势：拥抱 Web 标准、减少第三方依赖、强化开发者体验与安全管控，同时保持向后兼容。
 
 ---
 
@@ -276,24 +276,24 @@ Node.js v22.18.0 (LTS) 版本发布，包含多项重要更新和优化。
 
 **原文标题**: [pnpm 10.14 | pnpm](https://pnpm.io/blog/releases/10.14)
 
-pnpm 10.14版本引入了对JavaScript运行时安装的支持，并包含多项新功能和错误修复。
+pnpm 10.14 版本引入了对 JavaScript 运行时安装的支持，并包含多项新功能和错误修复。
 
-- 🚀 新增支持在`devEngines.runtime`中声明Node.js、Deno或Bun，pnpm会自动下载并固定版本  
+- 🚀 新增支持在`devEngines.runtime`中声明 Node.js、Deno 或 Bun，pnpm 会自动下载并固定版本  
 - 🔧 示例配置：在`package.json`中指定运行时名称、版本范围和失败处理方式（目前仅支持`download`）  
 - 🔒 工作原理：`pnpm install`解析版本范围并保存精确版本和校验和到锁文件，确保环境一致性  
 - 🌟 优势：支持多运行时（Deno、Bun）、版本范围、锁文件存储，且支持工作区多项目不同运行时  
 - 📌 当前限制：运行时暂仅本地安装，未来版本将改进为共享计算机位置  
-- 🔗 相关PR：#9755  
+- 🔗 相关 PR：#9755  
 
 **其他新功能**  
-- ⚙️ 新增`--cpu`、`--libc`和`--os` CLI选项，支持自定义`supportedArchitectures` (#7510)  
+- ⚙️ 新增`--cpu`、`--libc`和`--os` CLI 选项，支持自定义`supportedArchitectures` (#7510)  
 
 **错误修复**  
-- 🐛 修复`pnpm add`下载与`libc`不匹配包的问题，并验证Node.js文件完整性 (#9750)  
-- 🛠️ 改进`dlx`解析CLI标志的灵活性 (#9719)  
-- 🧹 修正`pnpm install --prod`未移除提升的dev依赖问题 (#9782)  
-- 🔄 修复本地tarball内容变更后未重新链接的边界情况  
-- 📂 解决含peer依赖的本地tarball变更后锁文件状态误判问题  
+- 🐛 修复`pnpm add`下载与`libc`不匹配包的问题，并验证 Node.js 文件完整性 (#9750)  
+- 🛠️ 改进`dlx`解析 CLI 标志的灵活性 (#9719)  
+- 🧹 修正`pnpm install --prod`未移除提升的 dev 依赖问题 (#9782)  
+- 🔄 修复本地 tarball 内容变更后未重新链接的边界情况  
+- 📂 解决含 peer 依赖的本地 tarball 变更后锁文件状态误判问题  
 
 标签：版本发布
 
@@ -303,17 +303,17 @@ pnpm 10.14版本引入了对JavaScript运行时安装的支持，并包含多项
 
 **原文标题**: [Sign Up - Auth0](https://auth0.com/signup?utm_source=nodeweekly&utm_campaign=global_mult_mult_all_ciam-dev_dg-plg_auth0_native_nodeweekly_newsletter_aud_NodeWeekly-Q3-Newsletter_utm2&utm_medium=cpc&utm_id=aNKKZ00000003C04AI)
 
-注册页面提供多种国家和登录方式选项，并强调Auth0的认证服务优势。
+注册页面提供多种国家和登录方式选项，并强调 Auth0 的认证服务优势。
 
 - 🌍 提供全球国家选择列表，包括美国、加拿大、中国等  
 - ✉️ 需要填写邮箱和国家信息进行注册  
-- 🔑 支持多种登录方式：GitHub、Google、Microsoft账号  
-- ⚡ 强调Auth0服务的优势：简化认证流程，节省开发时间  
-- 🛡️ 提供安全保护功能：暴力破解防护、可疑IP限制  
-- 🆓 免费套餐包含每月2.5万活跃用户和无限制登录  
+- 🔑 支持多种登录方式：GitHub、Google、Microsoft 账号  
+- ⚡ 强调 Auth0 服务的优势：简化认证流程，节省开发时间  
+- 🛡️ 提供安全保护功能：暴力破解防护、可疑 IP 限制  
+- 🆓 免费套餐包含每月 2.5 万活跃用户和无限制登录  
 - 🛠️ 面向开发者，提供可定制的无代码登录流程  
-- 📜 用户需同意Self Service PSS和隐私政策才能继续  
-- ©️ 页面底部显示版权信息，归属Okta公司2025年
+- 📜 用户需同意 Self Service PSS 和隐私政策才能继续  
+- ©️ 页面底部显示版权信息，归属 Okta 公司 2025 年
 
 ---
 
@@ -350,39 +350,39 @@ Dependency-cruiser 是一个用于验证和可视化 JavaScript、TypeScript、C
 
 ---
 
-### [GitHub - stanNthe5/pgline: 用TypeScript编写的最快PostgreSQL JS驱动](https://github.com/stanNthe5/pgline)
+### [GitHub - stanNthe5/pgline: 用 TypeScript 编写的最快 PostgreSQL JS 驱动](https://github.com/stanNthe5/pgline)
 
 **原文标题**: [GitHub - stanNthe5/pgline: The fastest PostgreSQL JS driver written in TypeScript](https://github.com/stanNthe5/pgline)
 
-pgline是一个用TypeScript编写的高性能PostgreSQL Node.js驱动，支持Pipeline模式，在并发查询中表现卓越，速度和数据库CPU使用率均优于其他驱动。
+pgline 是一个用 TypeScript 编写的高性能 PostgreSQL Node.js 驱动，支持 Pipeline 模式，在并发查询中表现卓越，速度和数据库 CPU 使用率均优于其他驱动。
 
-- 🚀 **高性能** - 在基准测试中，pgline的Wall time和CPU time均优于Bun sql、postgresjs和node-postgres。
-- 📊 **基准测试结果** - 100k查询测试中，pgline的Wall time为847.06 ms，CPU time为1522.07 ms，CPU使用率29.95%。
-- 🔧 **安装简单** - 通过npm安装：`npm i pgline`。
+- 🚀 **高性能** - 在基准测试中，pgline 的 Wall time 和 CPU time 均优于 Bun sql、postgresjs 和 node-postgres。
+- 📊 **基准测试结果** - 100k 查询测试中，pgline 的 Wall time 为 847.06 ms，CPU time 为 1522.07 ms，CPU 使用率 29.95%。
+- 🔧 **安装简单** - 通过 npm 安装：`npm i pgline`。
 - 📝 **使用示例** - 支持连接查询和事务处理，代码简洁易用。
-- 🔄 **Pipeline模式** - 完全实现Pipeline模式，提升并发查询性能。
-- 📜 **MIT许可证** - 开源项目，使用灵活。
-- ⚡ **TypeScript编写** - 代码质量高，类型安全。
+- 🔄 **Pipeline 模式** - 完全实现 Pipeline 模式，提升并发查询性能。
+- 📜 **MIT 许可证** - 开源项目，使用灵活。
+- ⚡ **TypeScript 编写** - 代码质量高，类型安全。
 
 ---
 
-### [GitHub - stanNthe5/pgline: 使用TypeScript编写的最快PostgreSQL JS驱动](https://github.com/stanNthe5/pgline?tab=readme-ov-file#benchmark)
+### [GitHub - stanNthe5/pgline: 使用 TypeScript 编写的最快 PostgreSQL JS 驱动](https://github.com/stanNthe5/pgline?tab=readme-ov-file#benchmark)
 
 **原文标题**: [GitHub - stanNthe5/pgline: The fastest PostgreSQL JS driver written in TypeScript](https://github.com/stanNthe5/pgline?tab=readme-ov-file#benchmark)
 
-pgline是一个用TypeScript编写的高性能PostgreSQL Node.js驱动，支持Pipeline模式，具有出色的并发查询性能和低数据库CPU使用率。
+pgline 是一个用 TypeScript 编写的高性能 PostgreSQL Node.js 驱动，支持 Pipeline 模式，具有出色的并发查询性能和低数据库 CPU 使用率。
 
-- 🚀 **高性能**：在基准测试中，pgline表现优于Bun sql、postgresjs和node-postgres，具有更快的速度和更低的CPU使用率。
-- 📦 **安装简单**：通过npm安装即可使用，命令为`npm i pgline`。
+- 🚀 **高性能**：在基准测试中，pgline 表现优于 Bun sql、postgresjs 和 node-postgres，具有更快的速度和更低的 CPU 使用率。
+- 📦 **安装简单**：通过 npm 安装即可使用，命令为`npm i pgline`。
 - 🔧 **使用方便**：支持连接查询和事务处理，代码示例清晰。
-- ⚡ **Pipeline模式**：完全实现Pipeline模式，优化了查询性能。
-- 📊 **基准测试**：在100k查询的测试中，pgline的墙时间和CPU时间均优于其他驱动。
-- 📜 **MIT许可**：项目采用MIT许可证，开放源代码。
-- 🌐 **TypeScript编写**：100%使用TypeScript编写，类型安全。
+- ⚡ **Pipeline 模式**：完全实现 Pipeline 模式，优化了查询性能。
+- 📊 **基准测试**：在 100k 查询的测试中，pgline 的墙时间和 CPU 时间均优于其他驱动。
+- 📜 **MIT 许可**：项目采用 MIT 许可证，开放源代码。
+- 🌐 **TypeScript 编写**：100% 使用 TypeScript 编写，类型安全。
 
 ---
 
-### [GitHub - express-rate-limit/express-slow-down: 减缓重复请求；可作为express-rate-limit的替代（或补充）方案](https://github.com/express-rate-limit/express-slow-down)
+### [GitHub - express-rate-limit/express-slow-down: 减缓重复请求；可作为 express-rate-limit 的替代（或补充）方案](https://github.com/express-rate-limit/express-slow-down)
 
 **原文标题**: [GitHub - express-rate-limit/express-slow-down: Slow down repeated requests; use as an alternative (or addition) to express-rate-limit](https://github.com/express-rate-limit/express-slow-down)
 
@@ -478,23 +478,23 @@ Node.js 的 Redis 客户端库 node-redis 的概述和关键信息。
 
 ---
 
-### [GitHub - donatj/CsvToMarkdownTable: 简易JavaScript/Node.js CSV转Markdown表格转换器](https://github.com/donatj/CsvToMarkdownTable)
+### [GitHub - donatj/CsvToMarkdownTable: 简易 JavaScript/Node.js CSV 转 Markdown 表格转换器](https://github.com/donatj/CsvToMarkdownTable)
 
 **原文标题**: [GitHub - donatj/CsvToMarkdownTable: Simple JavaScript/Node.js CSV to Markdown Table Converter](https://github.com/donatj/CsvToMarkdownTable)
 
-一个简单的JavaScript/Node.js工具，用于将CSV转换为Markdown表格，支持多种使用方式和环境。
+一个简单的 JavaScript/Node.js 工具，用于将 CSV 转换为 Markdown 表格，支持多种使用方式和环境。
 
 - 📌 **项目名称**: CsvToMarkdownTable  
-- 🚀 **功能**: 将CSV数据转换为Markdown表格格式  
+- 🚀 **功能**: 将 CSV 数据转换为 Markdown 表格格式  
 - 🌍 **支持环境**: 浏览器、Node.js（CommonJS/ES Modules）、TypeScript  
 - 📦 **安装方式**: `npm install csv-to-markdown-table`  
-- 🔧 **CLI工具**: 支持全局安装和使用，可自定义分隔符和表头  
-- 📂 **多种格式**: 提供UMD、ESM、CJS等多种分发格式  
+- 🔧 **CLI 工具**: 支持全局安装和使用，可自定义分隔符和表头  
+- 📂 **多种格式**: 提供 UMD、ESM、CJS 等多种分发格式  
 - 📜 **许可证**: MIT  
 - ⭐ **受欢迎程度**: 295 stars, 46 forks  
 - 🔄 **实时示例**: 提供在线演示和交互式输入  
-- 📄 **文档**: 详细README和多种使用示例  
-- 🛠 **构建系统**: 最新版本v1.6.0更新了构建系统  
+- 📄 **文档**: 详细 README 和多种使用示例  
+- 🛠 **构建系统**: 最新版本 v1.6.0 更新了构建系统  
 - 💡 **特点**: 无需外部库，轻量且易用
 
 ---
@@ -503,20 +503,20 @@ Node.js 的 Redis 客户端库 node-redis 的概述和关键信息。
 
 **原文标题**: [GitHub - openai/openai-node: Official JavaScript / TypeScript library for the OpenAI API](https://github.com/openai/openai-node)
 
-OpenAI官方提供的JavaScript/TypeScript库，用于访问OpenAI REST API，支持多种功能和高级配置。
+OpenAI 官方提供的 JavaScript/TypeScript 库，用于访问 OpenAI REST API，支持多种功能和高级配置。
 
-- 🚀 **官方库**：OpenAI提供的JavaScript/TypeScript库，用于访问OpenAI REST API。
-- 📦 **安装方式**：支持npm和JSR安装，适用于Node.js、Deno等环境。
-- 💡 **主要功能**：支持文本生成、文件上传、实时API（WebSocket）、错误处理等。
-- 🔄 **流式响应**：支持Server Sent Events (SSE)实现流式响应。
-- 📄 **文件上传**：支持多种文件上传方式，包括Node.js的`fs.ReadStream`和Web的`File` API。
-- 🔒 **Webhook验证**：提供验证和解析Webhook请求的方法，确保安全性。
-- ⚠️ **错误处理**：支持多种API错误类型，如`BadRequestError`、`RateLimitError`等。
-- 🔄 **自动重试**：默认对连接错误、超时等自动重试2次，可配置。
-- ⏱️ **超时设置**：默认请求超时为10分钟，可自定义。
-- 🌐 **Azure支持**：提供`AzureOpenAI`类支持Microsoft Azure OpenAI服务。
-- 📊 **高级用法**：支持自定义fetch客户端、代理配置、日志记录等。
-- ❓ **常见问题**：支持语义化版本控制，要求TypeScript >= 4.9，兼容多种运行时环境。
+- 🚀 **官方库**：OpenAI 提供的 JavaScript/TypeScript 库，用于访问 OpenAI REST API。
+- 📦 **安装方式**：支持 npm 和 JSR 安装，适用于 Node.js、Deno 等环境。
+- 💡 **主要功能**：支持文本生成、文件上传、实时 API（WebSocket）、错误处理等。
+- 🔄 **流式响应**：支持 Server Sent Events (SSE) 实现流式响应。
+- 📄 **文件上传**：支持多种文件上传方式，包括 Node.js 的`fs.ReadStream`和 Web 的`File` API。
+- 🔒 **Webhook 验证**：提供验证和解析 Webhook 请求的方法，确保安全性。
+- ⚠️ **错误处理**：支持多种 API 错误类型，如`BadRequestError`、`RateLimitError`等。
+- 🔄 **自动重试**：默认对连接错误、超时等自动重试 2 次，可配置。
+- ⏱️ **超时设置**：默认请求超时为 10 分钟，可自定义。
+- 🌐 **Azure 支持**：提供`AzureOpenAI`类支持 Microsoft Azure OpenAI 服务。
+- 📊 **高级用法**：支持自定义 fetch 客户端、代理配置、日志记录等。
+- ❓ **常见问题**：支持语义化版本控制，要求 TypeScript >= 4.9，兼容多种运行时环境。
 - 🤝 **贡献指南**：欢迎开发者参与贡献，提供详细的文档支持。
 
 ---
@@ -526,14 +526,14 @@ OpenAI官方提供的JavaScript/TypeScript库，用于访问OpenAI REST API，�
 **原文标题**: [Release 8.17.0 · Automattic/mongoose · GitHub](https://github.com/Automattic/mongoose/releases/tag/8.17.0)
 
 overview summary  
-页面显示加载错误，提示用户重新加载；展示了Mongoose库的GitHub仓库界面，包括版本8.17.0的发布信息、功能更新及社区互动。  
+页面显示加载错误，提示用户重新加载；展示了 Mongoose 库的 GitHub 仓库界面，包括版本 8.17.0 的发布信息、功能更新及社区互动。  
 
 - 🔄 **加载错误** - 页面多次提示“Uh oh! There was an error while loading”，需用户手动重新加载。  
-- 🏷️ **版本发布** - 最新版本8.17.0于2025年7月30日发布，包含21次提交至master分支。  
-- ✨ **功能更新** - 升级MongoDB至6.18.0、公开Schema条件处理器、优化类型推断（如鉴别器类型和版本键控制）。  
-- 📦 **类型改进** - 新增Schema的options属性支持、静态defaultOptions及DocumentArray的schemaOptions。  
-- 👥 **社区互动** - 3用户点赞（👍）、1用户爱心（❤️）反应，显示版本发布的社区反馈。  
-- 🔍 **导航选项** - 页面提供代码、议题、安全等常规GitHub仓库导航功能，但部分内容加载失败。
+- 🏷️ **版本发布** - 最新版本 8.17.0 于 2025 年 7 月 30 日发布，包含 21 次提交至 master 分支。  
+- ✨ **功能更新** - 升级 MongoDB 至 6.18.0、公开 Schema 条件处理器、优化类型推断（如鉴别器类型和版本键控制）。  
+- 📦 **类型改进** - 新增 Schema 的 options 属性支持、静态 defaultOptions 及 DocumentArray 的 schemaOptions。  
+- 👥 **社区互动** - 3 用户点赞（👍）、1 用户爱心（❤️）反应，显示版本发布的社区反馈。  
+- 🔍 **导航选项** - 页面提供代码、议题、安全等常规 GitHub 仓库导航功能，但部分内容加载失败。
 
 ---
 
@@ -541,13 +541,13 @@ overview summary
 
 **原文标题**: [Release v7.7.0 · inversify/InversifyJS · GitHub](https://github.com/inversify/InversifyJS/releases/tag/v7.7.0)
 
-InversifyJS 是一个轻量级的控制反转（IoC）容器，用于JavaScript和Node.js应用，最新版本v7.7.0包含多项新增和改进功能。
+InversifyJS 是一个轻量级的控制反转（IoC）容器，用于 JavaScript 和 Node.js 应用，最新版本 v7.7.0 包含多项新增和改进功能。
 
 - 🆕 **新增类型**：添加了`Bind`、`IsBound`、`OnActivation`、`OnDeactivation`、`Rebind`、`RebindSync`、`Unbind`和`UnbindSync`类型。  
 - 🔄 **功能改进**：更新了`BindOnFluentSyntaxImplementation.onDeactivation`，使其在非单例作用域绑定时抛出错误。  
 - 🛠 **修复优化**：改进了`ServiceResolutionManager`和`Container`，确保在计算属性重置后正确管理绑定和子容器。  
-- 📅 **发布信息**：版本v7.7.0由notaphplover于7月31日发布，包含3次提交至master分支。  
-- 🔒 **安全签名**：提交使用GitHub验证签名（GPG密钥ID: B5690EEEBB952194）。
+- 📅 **发布信息**：版本 v7.7.0 由 notaphplover 于 7 月 31 日发布，包含 3 次提交至 master 分支。  
+- 🔒 **安全签名**：提交使用 GitHub 验证签名（GPG 密钥 ID: B5690EEEBB952194）。
 
 ---
 
@@ -555,25 +555,25 @@ InversifyJS 是一个轻量级的控制反转（IoC）容器，用于JavaScript�
 
 **原文标题**: [Release v7.13.0 · nodejs/undici · GitHub](https://github.com/nodejs/undici/releases/tag/v7.13.0)
 
-Undici项目在GitHub上的最新动态与版本v7.13.0的更新内容  
+Undici 项目在 GitHub 上的最新动态与版本 v7.13.0 的更新内容  
 
-- 🚀 **版本发布**：v7.13.0于7月31日发布，包含4个提交至主分支。  
+- 🚀 **版本发布**：v7.13.0 于 7 月 31 日发布，包含 4 个提交至主分支。  
 - 🔧 **功能改进**：  
-  - MockAgent新增`ignoreTrailingSlash`选项支持（#4344）。  
-  - ProxyAgent优化HTTP->HTTP代理连接的Curl-like行为（#4340）。  
-  - 新增`SnapshotAgent`用于HTTP请求记录与回放（#4270）。  
+  - MockAgent 新增`ignoreTrailingSlash`选项支持（#4344）。  
+  - ProxyAgent 优化 HTTP->HTTP 代理连接的 Curl-like 行为（#4340）。  
+  - 新增`SnapshotAgent`用于 HTTP 请求记录与回放（#4270）。  
 - 🐛 **问题修复**：  
   - 修复重定向循环检测（#4361）。  
   - 移除已弃用的`maxRedirections`类型选项（#4363）。  
   - 拦截器处理预检网络错误（#4354）。  
 - 📚 **文档调整**：  
-  - 澄清GC警告说明，建议但不强制消费响应体（#4364）。  
-  - 改进JSDoc注释（#4351）。  
+  - 澄清 GC 警告说明，建议但不强制消费响应体（#4364）。  
+  - 改进 JSDoc 注释（#4351）。  
 - 🛠 **其他变更**：  
   - 移除`node:buffer`导入（#4362）。  
-  - 跳过Windows下Node.js 20的测试（#4353）。  
-- 👋 **新贡献者**：欢迎@lisez首次提交（#4344）。  
-- 🔗 **完整日志**：查看v7.12.0到v7.13.0的详细变更。
+  - 跳过 Windows 下 Node.js 20 的测试（#4353）。  
+- 👋 **新贡献者**：欢迎@lisez 首次提交（#4344）。  
+- 🔗 **完整日志**：查看 v7.12.0 到 v7.13.0 的详细变更。
 
 ---
 
@@ -598,16 +598,16 @@ Chalk 是一个用于终端字符串样式的高性能、无依赖的 JavaScript
 
 **原文标题**: [noblox.js Home](https://noblox.js.org/)
 
-一个用于与Roblox API交互的Node.js封装库，基于roblox-js分支开发。
+一个用于与 Roblox API 交互的 Node.js 封装库，基于 roblox-js 分支开发。
 
 - 📦 **关于**  
-  noblox.js是一个开源的Roblox API封装库，基于JavaScript（兼容TypeScript），支持通过NodeJS执行Roblox网站操作，常用于游戏脚本或Discord工具开发。
+  noblox.js 是一个开源的 Roblox API 封装库，基于 JavaScript（兼容 TypeScript），支持通过 NodeJS 执行 Roblox 网站操作，常用于游戏脚本或 Discord 工具开发。
 
 - ⚙️ **前置条件**  
-  需安装Node.js® v18.18或更高版本。
+  需安装 Node.js® v18.18 或更高版本。
 
 - 📥 **安装**  
-  通过npm或yarn安装：  
+  通过 npm 或 yarn 安装：  
   `npm install noblox.js` 或 `yarn add noblox.js`；全局安装可加 `-g` 参数。
 
 - 📚 **文档**  
@@ -620,18 +620,18 @@ Chalk 是一个用于终端字符串样式的高性能、无依赖的 JavaScript
   3. 使用`async/await`编写代码，调用前需通过`setCookie()`认证。
 
 - 🔒 **安全建议**  
-  避免硬编码cookie，推荐使用`dotenv`存储环境变量，建议使用机器人专用账号。
+  避免硬编码 cookie，推荐使用`dotenv`存储环境变量，建议使用机器人专用账号。
 
 - ❌ **常见问题**  
   - 未登录错误：确保先`await setCookie()`；  
-  - 角色ID错误：区分`rankId`与`rolesetId`；  
+  - 角色 ID 错误：区分`rankId`与`rolesetId`；  
   - 权限错误：检查账号是否有手动操作的权限。
 
 - 👏 **致谢**  
-  主要贡献者包括suufi、sentanos（原始作者）、Neztore等，文档由popeeyy和edward协助完成。
+  主要贡献者包括 suufi、sentanos（原始作者）、Neztore 等，文档由 popeeyy 和 edward 协助完成。
 
 - 📜 **许可证**  
-  采用MIT许可证。
+  采用 MIT 许可证。
 
 ---
 
@@ -655,7 +655,7 @@ node-gtk 是一个通过 GObject 自省实现的 NodeJS GTK+ 绑定库，支持�
 
 ---
 
-### [GitHub - honojs/node-server: Hono的Node.js服务器](https://github.com/honojs/node-server)
+### [GitHub - honojs/node-server: Hono 的 Node.js 服务器](https://github.com/honojs/node-server)
 
 **原文标题**: [GitHub - honojs/node-server: Node.js Server for Hono](https://github.com/honojs/node-server)
 
@@ -678,18 +678,18 @@ Hono.js 的 Node.js 适配器，允许在 Node.js 环境中运行 Hono 应用，
 
 **原文标题**: [Our fight with Oracle is getting crazy... - YouTube](https://www.youtube.com/watch?v=_tGwOv3scKw)
 
-关于YouTube的相关信息与链接  
-- 📢 关于：了解YouTube的基本信息  
+关于 YouTube 的相关信息与链接  
+- 📢 关于：了解 YouTube 的基本信息  
 - 🗞️ 媒体：查看新闻稿和公告  
 - ©️ 版权：版权相关信息和政策  
 - 📩 联系我们：提供联系方式  
 - 🎨 创作者：创作者资源和工具  
 - 💼 广告：广告合作与推广选项  
-- 💻 开发者：开发者工具和API信息  
+- 💻 开发者：开发者工具和 API 信息  
 - 📜 条款：使用条款和条件  
 - 🔒 隐私：隐私政策和数据保护  
 - ⚖️ 政策与安全：平台规则与安全措施  
-- 🔧 YouTube工作原理：平台运作机制  
+- 🔧 YouTube 工作原理：平台运作机制  
 - 🧪 测试新功能：体验最新功能  
 - © 2025 Google LLC：版权归属声明
 
@@ -700,36 +700,36 @@ Hono.js 的 Node.js 适配器，允许在 Node.js 环境中运行 Hono 应用，
 **原文标题**: [JavaScript™](https://javascript.tm/)
 
 概述：  
-这封公开信呼吁Oracle放弃对“JavaScript”商标的控制权，认为该商标因长期未使用且已成为通用术语而应被认定为废弃。信中列举了法律依据、历史背景及现状，并号召开发者联署支持，甚至考虑通过法律途径撤销商标。
+这封公开信呼吁 Oracle 放弃对“JavaScript”商标的控制权，认为该商标因长期未使用且已成为通用术语而应被认定为废弃。信中列举了法律依据、历史背景及现状，并号召开发者联署支持，甚至考虑通过法律途径撤销商标。
 
-- 🏷️ Oracle持有“JavaScript”商标，但从未真正使用或推出相关产品，仅因收购Sun Microsystems而继承。  
-- ⏳ 根据美国法律，商标若连续三年未使用或成为通用术语，可视为废弃。JavaScript符合这两项条件。  
-- 📜 JavaScript由Netscape与Sun合作开发，现已成为独立语言，与Oracle无关，但商标权仍被其保留。  
-- 🔍 Oracle近年提交的商标使用证据牵强（如引用Node.js和非核心产品JET），不符合“真实商业使用”要求。  
-- 🌐 “JavaScript”已被全球开发者广泛用作通用术语，Oracle却未行使商标权，进一步证明其废弃性。  
-- 🚫 商标所有权导致混乱，如社区组织被迫避免使用“JavaScript”命名（如JSConf而非JavaScript Conference）。  
-- ✍️ 信中呼吁Oracle主动放弃商标，否则将向美国专利商标局（USPTO）提交撤销申请，并征集联署和法律援助。  
-- 📢 开发者可通过签名或邮件（companies@javascript.tm）支持，律师可联系lawyers@javascript.tm提供帮助。
+- 🏷️ Oracle 持有“JavaScript”商标，但从未真正使用或推出相关产品，仅因收购 Sun Microsystems 而继承。  
+- ⏳ 根据美国法律，商标若连续三年未使用或成为通用术语，可视为废弃。JavaScript 符合这两项条件。  
+- 📜 JavaScript 由 Netscape 与 Sun 合作开发，现已成为独立语言，与 Oracle 无关，但商标权仍被其保留。  
+- 🔍 Oracle 近年提交的商标使用证据牵强（如引用 Node.js 和非核心产品 JET），不符合“真实商业使用”要求。  
+- 🌐 “JavaScript”已被全球开发者广泛用作通用术语，Oracle 却未行使商标权，进一步证明其废弃性。  
+- 🚫 商标所有权导致混乱，如社区组织被迫避免使用“JavaScript”命名（如 JSConf 而非 JavaScript Conference）。  
+- ✍️ 信中呼吁 Oracle 主动放弃商标，否则将向美国专利商标局（USPTO）提交撤销申请，并征集联署和法律援助。  
+- 📢 开发者可通过签名或邮件（companies@javascript.tm）支持，律师可联系 lawyers@javascript.tm 提供帮助。
 
 ---
 
-### [ViteLand 最新动态：2025年7月回顾 | VoidZero](https://voidzero.dev/posts/whats-new-jul-2025)
+### [ViteLand 最新动态：2025 年 7 月回顾 | VoidZero](https://voidzero.dev/posts/whats-new-jul-2025)
 
 **原文标题**: [What’s New in ViteLand: July 2025 Recap | VoidZero](https://voidzero.dev/posts/whats-new-jul-2025)
 
-ViteLand 2025年7月更新内容回顾，涵盖Vite、Vitest、Oxc、Rolldown等项目动态及社区新闻，包括Vite+的预告、性能优化、新功能发布及社区合作案例。
+ViteLand 2025 年 7 月更新内容回顾，涵盖 Vite、Vitest、Oxc、Rolldown 等项目动态及社区新闻，包括 Vite+ 的预告、性能优化、新功能发布及社区合作案例。
 
-- 🚀 **Vite+预告**：10月阿姆斯特丹ViteConf将揭晓Vite+细节，主题演讲涵盖下一代工具与开发者体验。  
-- 🎥 **纪录片首映**：Vite纪录片预告发布，讲述Vite背后故事，特邀多框架作者参与。  
-- 📦 **Vite 7发布**：环境API增强，Node.js 18支持终止，仅提供ESM包，周下载量首超Webpack。  
-- ⚡ **Rolldown升级**：支持tsconfig路径解析、Yarn Plug-and-Play，启动时间优化2.1倍。  
-- 🔍 **Oxc新特性**：推出类型感知linting（如`no-floating-promise`）与兼容ESLint的JS自定义规则API。  
-- 🖼️ **Vitest视觉回归测试**：Beta版支持组件截图对比，浏览器模式下载量破百万。  
+- 🚀 **Vite+ 预告**：10 月阿姆斯特丹 ViteConf 将揭晓 Vite+ 细节，主题演讲涵盖下一代工具与开发者体验。  
+- 🎥 **纪录片首映**：Vite 纪录片预告发布，讲述 Vite 背后故事，特邀多框架作者参与。  
+- 📦 **Vite 7 发布**：环境 API 增强，Node.js 18 支持终止，仅提供 ESM 包，周下载量首超 Webpack。  
+- ⚡ **Rolldown 升级**：支持 tsconfig 路径解析、Yarn Plug-and-Play，启动时间优化 2.1 倍。  
+- 🔍 **Oxc 新特性**：推出类型感知 linting（如`no-floating-promise`）与兼容 ESLint 的 JS 自定义规则 API。  
+- 🖼️ **Vitest 视觉回归测试**：Beta 版支持组件截图对比，浏览器模式下载量破百万。  
 - 🌍 **社区动态**：  
-  - napi-rs v3发布，安全性提升；Linear迁移至Rolldown，构建时间从13秒降至7秒。  
-  - 多家团队（Posthog、Vercube等）转用Oxlint，速度提升5-33倍。  
-  - Angular、Vue Router等探索Rolldown与Oxlint集成，优化构建与CI效率。  
-- 📅 **活动预告**：ViteConf线下会议10月举行，汇聚Bolt.new、Netlify等业界领袖。
+  - napi-rs v3 发布，安全性提升；Linear 迁移至 Rolldown，构建时间从 13 秒降至 7 秒。  
+  - 多家团队（Posthog、Vercube 等）转用 Oxlint，速度提升 5-33 倍。  
+  - Angular、Vue Router 等探索 Rolldown 与 Oxlint 集成，优化构建与 CI 效率。  
+- 📅 **活动预告**：ViteConf 线下会议 10 月举行，汇聚 Bolt.new、Netlify 等业界领袖。
 
 ---
 
@@ -737,38 +737,38 @@ ViteLand 2025年7月更新内容回顾，涵盖Vite、Vitest、Oxc、Rolldown等
 
 **原文标题**: [Compile Svelte 5 in your head | Tan Li Hau](https://lihautan.com/compile-svelte-5-in-your-head)
 
-本文介绍了Svelte 5的编译原理和核心概念，通过对比原生DOM操作与Svelte编译后的代码，深入解析了其优化机制和响应式系统的实现方式。
+本文介绍了 Svelte 5 的编译原理和核心概念，通过对比原生 DOM 操作与 Svelte 编译后的代码，深入解析了其优化机制和响应式系统的实现方式。
 
-- 🚀 **背景与目标**：文章基于Svelte 5的新特性（如runes、细粒度响应式），重写了5年前针对Svelte 3的旧文，旨在帮助开发者理解其编译逻辑。  
-- 🛠️ **原生DOM基础**：通过创建元素、更新文本节点、事件监听等原生操作示例，铺垫框架的底层原理。  
-- 📦 **模板优化**：Svelte利用`<template>`元素克隆DOM结构，结合`nextSibling`和`firstChild`定位节点，提升性能。  
+- 🚀 **背景与目标**：文章基于 Svelte 5 的新特性（如 runes、细粒度响应式），重写了 5 年前针对 Svelte 3 的旧文，旨在帮助开发者理解其编译逻辑。  
+- 🛠️ **原生 DOM 基础**：通过创建元素、更新文本节点、事件监听等原生操作示例，铺垫框架的底层原理。  
+- 📦 **模板优化**：Svelte 利用`<template>`元素克隆 DOM 结构，结合`nextSibling`和`firstChild`定位节点，提升性能。  
 - ⚡ **事件委托**：通过父元素统一监听子元素事件（如`click`），减少重复注册，优化内存和性能。  
-- ✨ **Svelte语法示例**：展示基础组件、样式绑定、响应式状态（`$state`）和事件处理（`onclick`）的写法。  
+- ✨ **Svelte 语法示例**：展示基础组件、样式绑定、响应式状态（`$state`）和事件处理（`onclick`）的写法。  
 - 🔧 **编译过程拆解**：  
   - 静态模板通过`from_html`转换为可克隆的模板函数。  
   - 动态内容（如`{name}`）被提取，通过`template_effect`与信号（`$.state`）联动更新。  
   - 事件监听器通过`__click`属性和全局委托（`$.delegate`）高效绑定。  
-- 🔄 **响应式核心**：信号（`$.get`/`$.set`）与效果（`template_effect`）实现状态变化自动更新DOM。  
-- 📚 **延伸学习**：推荐阅读信号机制文章，并提供了作者在CityJS的演讲链接供进一步探索。
+- 🔄 **响应式核心**：信号（`$.get`/`$.set`）与效果（`template_effect`）实现状态变化自动更新 DOM。  
+- 📚 **延伸学习**：推荐阅读信号机制文章，并提供了作者在 CityJS 的演讲链接供进一步探索。
 
 ---
 
-### [Rust、Python与TypeScript：新三巨头·初探](https://smallcultfollowing.com/babysteps/blog/2025/07/31/rs-py-ts-trifecta/)
+### [Rust、Python 与 TypeScript：新三巨头·初探](https://smallcultfollowing.com/babysteps/blog/2025/07/31/rs-py-ts-trifecta/)
 
 **原文标题**: [Rust, Python, and TypeScript: the new trifecta · baby steps](https://smallcultfollowing.com/babysteps/blog/2025/07/31/rs-py-ts-trifecta/)
 
-Rust、Python和TypeScript将成为未来主导的编程语言（移动市场除外），AI编程的普及使语言选择更基于其核心优势而非个人偏好。这三种语言在静态类型、依赖管理和生态系统方面表现突出，适合不同场景。
+Rust、Python 和 TypeScript 将成为未来主导的编程语言（移动市场除外），AI 编程的普及使语言选择更基于其核心优势而非个人偏好。这三种语言在静态类型、依赖管理和生态系统方面表现突出，适合不同场景。
 
 - 🦀 Rust：适用于系统软件和高效率需求场景，强大的类型系统能提前捕获错误，生成高性能代码。  
-- 🐍 Python：拥有丰富的数学和数值计算库，适合实验和原型设计，结合mypy和pydantic可实现强类型。  
-- 🌐 TypeScript：原生支持浏览器和Web开发，类型系统有助于复杂前端项目的维护。  
-- 🤖 AI编程推动“面向思想的编程”：开发者更像架构师，专注于设计目标和关键逻辑，AI工具处理具体实现。  
-- 📦 生态系统至关重要：Rust的cargo、TypeScript的npm和Python的uv等包管理器简化了依赖管理，加速开发。  
-- 🛠️ 类型系统对AI协作尤为重要：高级类型（如Rust枚举和TypeScript接口）能约束AI输出，减少上下文遗忘导致的错误。  
-- 💡 错误提示与引导更关键：清晰的编译错误信息帮助AI快速修正问题，而语法细节的重要性相对降低。  
-- 🚀 低门槛的高效开发：AI工具使“首席工程师”式的工作方式更普及，但新手仍需培养设计判断力。  
+- 🐍 Python：拥有丰富的数学和数值计算库，适合实验和原型设计，结合 mypy 和 pydantic 可实现强类型。  
+- 🌐 TypeScript：原生支持浏览器和 Web 开发，类型系统有助于复杂前端项目的维护。  
+- 🤖 AI 编程推动“面向思想的编程”：开发者更像架构师，专注于设计目标和关键逻辑，AI 工具处理具体实现。  
+- 📦 生态系统至关重要：Rust 的 cargo、TypeScript 的 npm 和 Python 的 uv 等包管理器简化了依赖管理，加速开发。  
+- 🛠️ 类型系统对 AI 协作尤为重要：高级类型（如 Rust 枚举和 TypeScript 接口）能约束 AI 输出，减少上下文遗忘导致的错误。  
+- 💡 错误提示与引导更关键：清晰的编译错误信息帮助 AI 快速修正问题，而语法细节的重要性相对降低。  
+- 🚀 低门槛的高效开发：AI 工具使“首席工程师”式的工作方式更普及，但新手仍需培养设计判断力。  
 
-（注：最后两段关于家庭树应用和Exchange服务器的个人轶事未纳入摘要，因其与核心论点关联较弱。）
+（注：最后两段关于家庭树应用和 Exchange 服务器的个人轶事未纳入摘要，因其与核心论点关联较弱。）
 
 ---
 
