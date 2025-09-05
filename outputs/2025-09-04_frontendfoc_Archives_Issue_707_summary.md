@@ -129,10 +129,10 @@ Google Chrome 是一款轻量级、界面简洁的测试版浏览器，性能表
 
 **原文标题**: [A proposal for inline LLM instructions in HTML based on llms.txt - Vercel](https://vercel.com/blog/a-proposal-for-inline-llm-instructions-in-html)
 
-Vercel 提出在 HTML 中使用<script type="text/llms.txt">标签内嵌 AI 指令的新方案，旨在让 LLM 智能体直接获取页面访问指引，无需依赖外部文档或预配置知识。
+Vercel 提出在 HTML 中使用`text/llms.txt`标签内嵌 AI 指令的新方案，旨在让 LLM 智能体直接获取页面访问指引，无需依赖外部文档或预配置知识。
 
 - 🚀 通过 401 错误页面向 AI 智能体提供 Vercel 身份验证绕过指南
-- 📝 采用<script type="text/llms.txt">标签格式，浏览器会忽略但 LLM 能识别
+- 📝 采用`text/llms.txt`标签格式，浏览器会忽略但 LLM 能识别
 - 🔗 基于现有 llms.txt 标准，专为网页内容与 AI 交互设计
 - 🛡️ 解决受保护部署页面阻碍编程助手（如 Cursor/Devin）访问的问题
 - ⚡ 已投入生产环境，支持通过 MCP 服务器函数或令牌方式实现认证绕过
