@@ -328,7 +328,7 @@ React 19 实验性功能 Activity 组件允许通过 mode 属性控制子组件�
 
 - 🧩 React 的 Children API 提供五种方法（map、forEach、count、only、toArray）用于处理非标准结构的 children 属性
 - 🔄 cloneElement 可克隆 React 元素并合并新属性，常用于动态添加 props
-- 🧱 复合组件模式通过 Children.map 和 cloneElement 实现类似<select>与<option>的协作组件
+- 🧱 复合组件模式通过 Children.map 和 cloneElement 实现类似`<select>`与`<option>`的协作组件
 - ⚠️ Children 工具仅能处理直接子元素，无法识别组件渲染后的嵌套内容
 - 🚫 cloneElement 存在嵌套限制，只能向直接子组件传递属性
 - 💡 渲染属性模式通过函数参数显式传递 JSX，提供更灵活的组件组合方式
