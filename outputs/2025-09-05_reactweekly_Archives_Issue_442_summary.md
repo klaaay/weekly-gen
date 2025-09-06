@@ -1,48 +1,48 @@
-### [React 动态 第442期：2025年9月3日](https://react.statuscode.com/issues/442)
+### [React 动态 第 442 期：2025 年 9 月 3 日](https://react.statuscode.com/issues/442)
 
 **原文标题**: [React Status Issue 442: September 3, 2025](https://react.statuscode.com/issues/442)
 
-React Status 第442期聚焦于React生态系统的最新动态、工具更新及行业活动，涵盖无框架使用React Server Components的方法、AI辅助编程工具、性能优化库以及多项会议信息。
+React Status 第 442 期聚焦于 React 生态系统的最新动态、工具更新及行业活动，涵盖无框架使用 React Server Components 的方法、AI 辅助编程工具、性能优化库以及多项会议信息。
 
-- ⚛️ 无需Next.js即可使用React Server Components的工具发布
-- 🤖 AI辅助编程工具Cursor和Claude Code可提升开发效率
-- 🚀 react-window 2.0发布，专为高效渲染大型列表设计
-- 📅 多项React全球会议将于10-11月举行（西班牙、意大利、印度等地）
-- 🎛️ React 19的Activity特性可维持隐藏组件状态并预加载数据
+- ⚛️ 无需 Next.js 即可使用 React Server Components 的工具发布
+- 🤖 AI 辅助编程工具 Cursor 和 Claude Code 可提升开发效率
+- 🚀 react-window 2.0 发布，专为高效渲染大型列表设计
+- 📅 多项 React 全球会议将于 10-11 月举行（西班牙、意大利、印度等地）
+- 🎛️ React 19 的 Activity 特性可维持隐藏组件状态并预加载数据
 - 📚 多篇技术文章涵盖样式方案、仪表盘构建与状态管理
-- 🛠️ 日期选择组件DayPicker 9.9、Redux Toolkit 2.9等工具重大更新
-- 🔗 React on Rails 15支持服务端渲染与React Server Components
-- 📦 轻量级JSON可视化组件与QR码生成组件等新库发布
-- 🌐 TypeScript 6.0拟默认开启严格模式，Vite生态工具链更新
+- 🛠️ 日期选择组件 DayPicker 9.9、Redux Toolkit 2.9 等工具重大更新
+- 🔗 React on Rails 15 支持服务端渲染与 React Server Components
+- 📦 轻量级 JSON 可视化组件与 QR 码生成组件等新库发布
+- 🌐 TypeScript 6.0 拟默认开启严格模式，Vite 生态工具链更新
 
 ---
 
-### [无框架下的React服务器组件支持](https://krasimirtsonev.com/blog/article/vanilla-react-server-components-with-no-framework)
+### [无框架下的 React 服务器组件支持](https://krasimirtsonev.com/blog/article/vanilla-react-server-components-with-no-framework)
 
 **原文标题**: [React Server Components support without a framework](https://krasimirtsonev.com/blog/article/vanilla-react-server-components-with-no-framework)
 
-作者在ReactSummit与Vercel团队交流后，为解决在不使用Next.js框架的情况下使用React服务端组件（RSC）的难题，开发了开源工具Forket。该工具通过代码分离和运行时协作机制，实现了框架无关的RSC支持。
-- 🛠️ 开发背景：因迁移成本无法使用Next.js，但希望实现RSC功能，发现现有方案不完善后自主开发
+作者在 ReactSummit 与 Vercel 团队交流后，为解决在不使用 Next.js 框架的情况下使用 React 服务端组件（RSC）的难题，开发了开源工具 Forket。该工具通过代码分离和运行时协作机制，实现了框架无关的 RSC 支持。
+- 🛠️ 开发背景：因迁移成本无法使用 Next.js，但希望实现 RSC 功能，发现现有方案不完善后自主开发
 - 🔄 核心机制：构建代码依赖图，将代码拆分为服务端和客户端版本，分别处理序列化和服务端动作替换
 - 🌐 运行时协作：通过特殊模板标记和全局函数调用，实现服务端与客户端之间的数据流和组件水合
-- ⚙️ 使用方式：配置文件指定源码和输出目录，通过CLI或API处理代码，并在HTTP服务器中集成特定端点
-- 🚀 框架无关：设计为预处理工具，可与Webpack、Vite等现有构建工具并行使用，不依赖特定技术栈
+- ⚙️ 使用方式：配置文件指定源码和输出目录，通过 CLI 或 API 处理代码，并在 HTTP 服务器中集成特定端点
+- 🚀 框架无关：设计为预处理工具，可与 Webpack、Vite 等现有构建工具并行使用，不依赖特定技术栈
 
 ---
 
-### [Waku：极简React框架](https://waku.gg/)
+### [Waku：极简 React 框架](https://waku.gg/)
 
 **原文标题**: [Waku, the minimal React framework](https://waku.gg/)
 
-Waku是一个极简的React框架，专为中小型项目设计，支持服务端组件和客户端组件的混合渲染模式，提供文件式路由、API路由和服务器动作等特性，适用于营销网站、轻量电商等场景。
+Waku 是一个极简的 React 框架，专为中小型项目设计，支持服务端组件和客户端组件的混合渲染模式，提供文件式路由、API 路由和服务器动作等特性，适用于营销网站、轻量电商等场景。
 
-- 🚀 专为中小型React项目设计，支持服务端组件与客户端组件混合渲染
-- 📁 基于文件系统的路由系统，支持静态生成(SSG)和服务器渲染(SSR)
-- 🔄 提供API路由和服务器动作(Server Actions)两种数据交互方式
+- 🚀 专为中小型 React 项目设计，支持服务端组件与客户端组件混合渲染
+- 📁 基于文件系统的路由系统，支持静态生成 (SSG) 和服务器渲染 (SSR)
+- 🔄 提供 API 路由和服务器动作 (Server Actions) 两种数据交互方式
 - 🎨 内置元数据管理、样式方案和静态资源处理
-- 🌐 支持多平台部署(Vercel/Netlify/Cloudflare等)
-- ⚠️ 目前处于开发阶段，API可能发生破坏性变更
-- 🤝 欢迎社区贡献，提供GitHub讨论区和Discord交流频道
+- 🌐 支持多平台部署 (Vercel/Netlify/Cloudflare 等)
+- ⚠️ 目前处于开发阶段，API 可能发生破坏性变更
+- 🤝 欢迎社区贡献，提供 GitHub 讨论区和 Discord 交流频道
 
 ---
 
@@ -83,28 +83,28 @@ TanStack Virtual 是一个无头虚拟化库，专为高效处理大规模可滚
 
 **原文标题**: [Introducing the JSX Specification – React Blog](https://legacy.reactjs.org/blog/2014/09/03/introducing-the-jsx-specification.html)
 
-Facebook正式发布独立于React的JSX语法规范草案，旨在为转译器和语法高亮工具提供统一参考标准。
+Facebook 正式发布独立于 React 的 JSX 语法规范草案，旨在为转译器和语法高亮工具提供统一参考标准。
 
-- 🏢 Facebook长期内部使用JSX，早于React时期已用于原生DOM节点创建
-- 🌐 JSX现已衍生出多种实现方案，React版本仅为其中之一
-- 📜 新规范独立于React语义，纯语法标准确保兼容性和新版本实现便利
-- 🔗 规范草案发布于https://facebook.github.io/jsx/ 供开发者查阅
-- ⚠️ 明确声明非ECMAScript标准化提案，仅作为工具链参考文档
-- 📝 欢迎通过Issue或Pull Request提交反馈意见
+- 🏢 Facebook 长期内部使用 JSX，早于 React 时期已用于原生 DOM 节点创建
+- 🌐 JSX 现已衍生出多种实现方案，React 版本仅为其中之一
+- 📜 新规范独立于 React 语义，纯语法标准确保兼容性和新版本实现便利
+- 🔗 规范草案发布于 https://facebook.github.io/jsx/ 供开发者查阅
+- ⚠️ 明确声明非 ECMAScript 标准化提案，仅作为工具链参考文档
+- 📝 欢迎通过 Issue 或 Pull Request 提交反馈意见
 
 ---
 
-### [重混新构想：V3版将弃用React，转向Preact分支 - InfoQ](https://www.infoq.com/news/2025/08/remix-run-v3-drops-react/)
+### [重混新构想：V3 版将弃用 React，转向 Preact 分支 - InfoQ](https://www.infoq.com/news/2025/08/remix-run-v3-drops-react/)
 
 **原文标题**: [Remix Reimagined: V3 Will Drop React for a Fork of Preact - InfoQ](https://www.infoq.com/news/2025/08/remix-run-v3-drops-react/)
 
-Remix团队宣布正在开发v3版本，将放弃React转而采用Preact分支，以掌握全栈控制权并减少关键依赖。新版本遵循四大原则：模型优先开发、优先使用Web API、运行时优于构建步骤、避免依赖。开发者社区反应两极，部分人赞赏其革新精神，部分人质疑模型优先原则受Shopify影响。预览版尚未发布，进展将在Remix Jam会议公布。
+Remix 团队宣布正在开发 v3 版本，将放弃 React 转而采用 Preact 分支，以掌握全栈控制权并减少关键依赖。新版本遵循四大原则：模型优先开发、优先使用 Web API、运行时优于构建步骤、避免依赖。开发者社区反应两极，部分人赞赏其革新精神，部分人质疑模型优先原则受 Shopify 影响。预览版尚未发布，进展将在 Remix Jam 会议公布。
 
-- 🚀 Remix v3将用Preact分支替代React，实现全栈自主控制  
-- 🧩 新版本四大原则：模型优先/Web API优先/轻构建/去依赖化  
-- 🌐 开发者评价分化：有人赞赏革新勇气，有人质疑AI优先策略  
-- 🏢 Shopify收购背景引发对"模型优先"原则的猜测  
-- 📅 预览版未发布，进展将通过Remix Jam会议同步
+- 🚀 Remix v3 将用 Preact 分支替代 React，实现全栈自主控制  
+- 🧩 新版本四大原则：模型优先/Web API 优先/轻构建/去依赖化  
+- 🌐 开发者评价分化：有人赞赏革新勇气，有人质疑 AI 优先策略  
+- 🏢 Shopify 收购背景引发对"模型优先"原则的猜测  
+- 📅 预览版未发布，进展将通过 Remix Jam 会议同步
 
 ---
 
@@ -112,51 +112,51 @@ Remix团队宣布正在开发v3版本，将放弃React转而采用Preact分支�
 
 **原文标题**: [Preact](https://preactjs.com/)
 
-Preact是一个轻量级JavaScript库，提供与React相同的现代API，但体积更小性能更高，适合构建高效Web应用。
+Preact 是一个轻量级 JavaScript 库，提供与 React 相同的现代 API，但体积更小性能更高，适合构建高效 Web 应用。
 
-- 🚀 仅3kB大小，提供与React相同的API和虚拟DOM功能
-- ⚡ 高性能虚拟DOM库，自动批量更新并针对性能优化
-- 🎯 接近原生DOM，无需转译即可直接在浏览器中使用
-- 📦 微小体积使应用代码成为主体，减少JavaScript负载
-- 🔌 通过preact/compat兼容React生态系统组件
-- 💡 支持标准HTML属性如class和for，提升开发效率
+- 🚀 仅 3kB 大小，提供与 React 相同的 API 和虚拟 DOM 功能
+- ⚡ 高性能虚拟 DOM 库，自动批量更新并针对性能优化
+- 🎯 接近原生 DOM，无需转译即可直接在浏览器中使用
+- 📦 微小体积使应用代码成为主体，减少 JavaScript 负载
+- 🔌 通过 preact/compat 兼容 React 生态系统组件
+- 💡 支持标准 HTML 属性如 class 和 for，提升开发效率
 - 🌍 可嵌入性和便携性强，适合构建局部应用或部件
-- 🛠️ 提供实时示例和REPL环境，支持快速上手和开发
+- 🛠️ 提供实时示例和 REPL 环境，支持快速上手和开发
 
 ---
 
-### [React Alicante 2025 - 西班牙国际React.js大会](https://reactalicante.es/)
+### [React Alicante 2025 - 西班牙国际 React.js 大会](https://reactalicante.es/)
 
 **原文标题**: [React Alicante 2025 - The international React.js conference in Spain](https://reactalicante.es/)
 
-2025年10月2日至4日在西班牙阿利坎特举办的React Alicante国际会议，聚焦React和React Native技术，包含主题演讲、研讨会及交流活动。
+2025 年 10 月 2 日至 4 日在西班牙阿利坎特举办的 React Alicante 国际会议，聚焦 React 和 React Native 技术，包含主题演讲、研讨会及交流活动。
 
-- 🗓️ 会议时间：2025年10月2日至4日，包含1天研讨会和2天主题演讲
+- 🗓️ 会议时间：2025 年 10 月 2 日至 4 日，包含 1 天研讨会和 2 天主题演讲
 - 🌍 会议地点：西班牙阿利坎特，欧洲阳光最充足的城市之一
-- ⚛️ 会议主题：React和React Native技术交流与学习
-- 🎤 演讲阵容：32位国际演讲嘉宾，涵盖前端开发、设计系统、性能优化等话题
-- 🔧 研讨会：10场工作坊，内容包括TypeScript、GraphQL、React内部机制、可访问性等实践主题
-- 👥 参与规模：600名现场参会者及远程观众
-- 💻 技术热点：涵盖React 19、AI代理、WebAssembly、React Native性能优化等前沿话题
+- ⚛️ 会议主题：React 和 React Native 技术交流与学习
+- 🎤 演讲阵容：32 位国际演讲嘉宾，涵盖前端开发、设计系统、性能优化等话题
+- 🔧 研讨会：10 场工作坊，内容包括 TypeScript、GraphQL、React 内部机制、可访问性等实践主题
+- 👥 参与规模：600 名现场参会者及远程观众
+- 💻 技术热点：涵盖 React 19、AI 代理、WebAssembly、React Native 性能优化等前沿话题
 - 🤝 赞助机会：提供铂金、金、银、铜四个等级的赞助方案
-- ✈️ 交通便利：阿利坎特机场连接119个目的地，也可通过巴伦西亚或马德里中转抵达
+- ✈️ 交通便利：阿利坎特机场连接 119 个目的地，也可通过巴伦西亚或马德里中转抵达
 
 ---
 
-### [Reactjsday - Reactjs大会](https://www.reactjsday.it/)
+### [Reactjsday - Reactjs 大会](https://www.reactjsday.it/)
 
 **原文标题**: [
 		reactjsday - Reactjsday	](https://www.reactjsday.it/)
 
-意大利React大会reactjsday将于2025年10月16日在维罗纳举办，现已公布首批演讲嘉宾阵容并开放早鸟票购买。
+意大利 React 大会 reactjsday 将于 2025 年 10 月 16 日在维罗纳举办，现已公布首批演讲嘉宾阵容并开放早鸟票购买。
 
 - 🎫 会议门票即将涨价，建议尽早购票
-- ⚛️ 涵盖React服务端组件、状态管理等前沿技术话题  
+- ⚛️ 涵盖 React 服务端组件、状态管理等前沿技术话题  
 - 🌍 面向从新手到资深开发者的全层级参会者
-- 🗣️ 已公布Amira Shawky等12位国际演讲嘉宾
+- 🗣️ 已公布 Amira Shawky 等 12 位国际演讲嘉宾
 - 🏛️ 会场设在维罗纳圣马可酒店并提供完整活动支持
-- 💼 现有Umana/Workwave等多家白金及黄金赞助商
-- 📧 可通过订阅邮件获取CFP和门票发售等重要通知
+- 💼 现有 Umana/Workwave 等多家白金及黄金赞助商
+- 📧 可通过订阅邮件获取 CFP 和门票发售等重要通知
 
 ---
 
@@ -164,50 +164,50 @@ Preact是一个轻量级JavaScript库，提供与React相同的现代API，但�
 
 **原文标题**: [No title found](https://www.reactindia.io/)
 
-React India 2025是印度最大的React开发者国际会议，采用线上线下混合模式举办，为全球React开发者提供交流、学习和建立联系的重要平台。
+React India 2025 是印度最大的 React 开发者国际会议，采用线上线下混合模式举办，为全球 React 开发者提供交流、学习和建立联系的重要平台。
 
-- 🗓️ 会议日期：2025年10月15日（线上会议日）、30日（工作坊日）和10月31日至11月1日（果阿现场会议）
-- 🌍 参与规模：现场800+名开发者，线上3000+名全球开发者
-- 🎤 演讲阵容：35+位顶尖前端演讲者，包括来自JioHotstar、Tata 1mg等公司的专家
+- 🗓️ 会议日期：2025 年 10 月 15 日（线上会议日）、30 日（工作坊日）和 10 月 31 日至 11 月 1 日（果阿现场会议）
+- 🌍 参与规模：现场 800+ 名开发者，线上 3000+ 名全球开发者
+- 🎤 演讲阵容：35+ 位顶尖前端演讲者，包括来自 JioHotstar、Tata 1mg 等公司的专家
 - 💻 活动形式：包含技术讲座、工作坊和社交活动
-- 🏖️ 会议地点：果阿Planet Hollywood海滩度假村（现场会议）
+- 🏖️ 会议地点：果阿 Planet Hollywood 海滩度假村（现场会议）
 - 🤝 赞助机会：开放会议赞助，联系[email protected]
-- 📢 议题征集：邀请React社区提交演讲提案
+- 📢 议题征集：邀请 React 社区提交演讲提案
 - 👶 特色服务：提供儿童看护服务，方便家庭参会者
 - 🏨 住宿推荐：组委会提供酒店推荐建议
 - 🌟 往届口碑：往届参会者高度评价会议质量和社区氛围
 
 ---
 
-### [React Summit 美国站——全美规模最大的React技术大会](https://reactsummit.us/)
+### [React Summit 美国站——全美规模最大的 React 技术大会](https://reactsummit.us/)
 
 **原文标题**: [React Summit US – The Biggest React Conference in the US](https://reactsummit.us/)
 
-美国最大的React技术峰会React Summit将于2025年11月18日-21日在纽约举办，采用线上线下混合模式，包含前沿技术分享、深度研讨会和社交活动。
+美国最大的 React 技术峰会 React Summit 将于 2025 年 11 月 18 日 -21 日在纽约举办，采用线上线下混合模式，包含前沿技术分享、深度研讨会和社交活动。
 
-- 🗽 全球最大React会议：800人线下参与+万人远程参会，50+行业专家分享最新技术动态
-- 🌉 独特场地体验：自由科学中心西半球最大天文馆演讲+曼哈顿景观渡轮社交+全美最大React派对
-- 🤖 四大深度专题：AI工程实践/智能编程辅助/技术领导力成长/全栈开发未来，含OpenAI等核心团队分享
-- 🎟️ 多元参与方式：线下票990美元起含实体福利，远程票190美元起，Multipass套票19欧元/月畅享多会议
-- ⚛️ 技术前沿覆盖：React 19、React编译器、服务器组件、Next.js、TypeScript等核心框架深度解析
-- 🛠️ 免费实践工作坊：AI工程指南、Cursor全栈开发、Web组件融合等7场实战培训
-- 🌍 国际讲师阵容：Meta、Vercel、Netflix、Google等机构专家，包含《React Query》作者Tanner Linsley等重磅嘉宾
+- 🗽 全球最大 React 会议：800 人线下参与 + 万人远程参会，50+ 行业专家分享最新技术动态
+- 🌉 独特场地体验：自由科学中心西半球最大天文馆演讲 + 曼哈顿景观渡轮社交 + 全美最大 React 派对
+- 🤖 四大深度专题：AI 工程实践/智能编程辅助/技术领导力成长/全栈开发未来，含 OpenAI 等核心团队分享
+- 🎟️ 多元参与方式：线下票 990 美元起含实体福利，远程票 190 美元起，Multipass 套票 19 欧元/月畅享多会议
+- ⚛️ 技术前沿覆盖：React 19、React 编译器、服务器组件、Next.js、TypeScript 等核心框架深度解析
+- 🛠️ 免费实践工作坊：AI 工程指南、Cursor 全栈开发、Web 组件融合等 7 场实战培训
+- 🌍 国际讲师阵容：Meta、Vercel、Netflix、Google 等机构专家，包含《React Query》作者 Tanner Linsley 等重磅嘉宾
 
 ---
 
-### [伦敦React大会：2025年11月28日与12月1日](https://reactadvanced.com/)
+### [伦敦 React 大会：2025 年 11 月 28 日与 12 月 1 日](https://reactadvanced.com/)
 
 **原文标题**: [React Conference In London, Nov 28 & Dec 1, 2025](https://reactadvanced.com/)
 
-React Advanced Conference 是一个专注于React和Web开发的年度技术会议，提供线上线下混合参与模式，涵盖全栈工程、AI辅助编程、组织AI应用及职业发展等深度专题，汇聚行业顶尖演讲者和实践工作坊。
+React Advanced Conference 是一个专注于 React 和 Web 开发的年度技术会议，提供线上线下混合参与模式，涵盖全栈工程、AI 辅助编程、组织 AI 应用及职业发展等深度专题，汇聚行业顶尖演讲者和实践工作坊。
 
-- 🗓️ 会议时间：2025年11月28日伦敦线下+线上，2026年3月24日多伦多，另设12月1-2日全球线上日
+- 🗓️ 会议时间：2025 年 11 月 28 日伦敦线下 + 线上，2026 年 3 月 24 日多伦多，另设 12 月 1-2 日全球线上日
 - 🌐 参与方式：支持线下（伦敦场地）与远程同步参与，包含互动社交和研讨会
-- 🎤 演讲阵容：50+位行业专家，包括核心开源项目贡献者和资深工程师
-- ⚡ 专题内容：全栈工程实践、AI代理与辅助编程、企业AI应用、高级工程师成长路径
-- 🛠️ 实践工作坊：5+免费远程研讨会与付费深度工作坊，涵盖React新特性、AI开发与DevOps等
-- 💻 技术焦点：React 19、服务器组件、React编译器、微前端、TypeScript、Kubernetes集成等
-- 🎟️ 票务选项：提供混合参与、纯远程、组合票（含TechLead会议）及Multipass订阅套餐
+- 🎤 演讲阵容：50+ 位行业专家，包括核心开源项目贡献者和资深工程师
+- ⚡ 专题内容：全栈工程实践、AI 代理与辅助编程、企业 AI 应用、高级工程师成长路径
+- 🛠️ 实践工作坊：5+ 免费远程研讨会与付费深度工作坊，涵盖 React 新特性、AI 开发与 DevOps 等
+- 💻 技术焦点：React 19、服务器组件、React 编译器、微前端、TypeScript、Kubernetes 集成等
+- 🎟️ 票务选项：提供混合参与、纯远程、组合票（含 TechLead 会议）及 Multipass 订阅套餐
 - 🌍 社区支持：提供多样性奖学金、企业赞助机会及个人免费票获取渠道
 
 ---
@@ -216,10 +216,10 @@ React Advanced Conference 是一个专注于React和Web开发的年度技术会�
 
 **原文标题**: [Using Activity with Suspenseful data | simeonGriggs.dev](https://www.simeongriggs.dev/use-the-activity-boundary-to-hide-suspenseful-components)
 
-React 19实验性功能Activity组件允许通过mode属性控制子组件显隐，隐藏时保持状态但卸载副作用，并继续以低优先级预加载Suspense数据，适用于子组件自主控制可见性且需维持状态或预加载的场景。
+React 19 实验性功能 Activity 组件允许通过 mode 属性控制子组件显隐，隐藏时保持状态但卸载副作用，并继续以低优先级预加载 Suspense 数据，适用于子组件自主控制可见性且需维持状态或预加载的场景。
 
-- 🎛️ Activity组件通过mode属性控制子组件显隐，隐藏时卸载副作用但保持状态
-- ⚡ 隐藏组件仍以低优先级预加载Suspense数据，提升再次显示时的性能
+- 🎛️ Activity 组件通过 mode 属性控制子组件显隐，隐藏时卸载副作用但保持状态
+- ⚡ 隐藏组件仍以低优先级预加载 Suspense 数据，提升再次显示时的性能
 - 🎯 解决父组件掌握过滤条件但子组件掌握可见性数据的渲染矛盾
 - 🔄 替代方案（父组件过滤或全量查询）会导致组件卸载重置状态，且丧失预加载优势
 - 📊 特别适用于复杂表格、音频播放器等需要维持局部状态和资源控制的场景
@@ -230,65 +230,65 @@ React 19实验性功能Activity组件允许通过mode属性控制子组件显隐
 
 **原文标题**: [<Activity> – React](https://react.dev/reference/react/Activity)
 
-React的Activity组件是一个实验性功能，用于隐藏和恢复UI及其内部状态，通过保留DOM和状态来优化用户体验和性能。
+React 的 Activity 组件是一个实验性功能，用于隐藏和恢复 UI 及其内部状态，通过保留 DOM 和状态来优化用户体验和性能。
 
-- 🧪 Activity是React的实验性功能，需使用实验版本包，不建议在生产环境使用
-- 🎭 通过mode属性控制子组件的显示（visible）或隐藏（hidden），隐藏时应用display: none并清理Effects
-- 💾 隐藏时保留组件状态和DOM，再次显示时恢复状态，避免重新初始化
+- 🧪 Activity 是 React 的实验性功能，需使用实验版本包，不建议在生产环境使用
+- 🎭 通过 mode 属性控制子组件的显示（visible）或隐藏（hidden），隐藏时应用 display: none 并清理 Effects
+- 💾 隐藏时保留组件状态和 DOM，再次显示时恢复状态，避免重新初始化
 - ⚡ 支持预渲染隐藏内容，提前加载代码和数据，减少可见时的加载时间
 - 🔧 可用于优化选择性水合作用，提高页面交互响应速度
-- ⚠️ 隐藏组件可能保留DOM副作用（如视频播放），需手动添加清理逻辑
-- 🚫 隐藏时组件的Effects不会运行，依赖Effects的组件需调整清理方式
+- ⚠️ 隐藏组件可能保留 DOM 副作用（如视频播放），需手动添加清理逻辑
+- 🚫 隐藏时组件的 Effects 不会运行，依赖 Effects 的组件需调整清理方式
 
 ---
 
-### [React组件样式终极指南](https://www.telerik.com/blogs/ultimate-guide-styling-react-components)
+### [React 组件样式终极指南](https://www.telerik.com/blogs/ultimate-guide-styling-react-components)
 
 **原文标题**: [
 	The Ultimate Guide to Styling React Components
 ](https://www.telerik.com/blogs/ultimate-guide-styling-react-components)
 
-本文概述了React组件样式化的多种方法，包括styled-components、CSS Modules、Tailwind CSS以及KendoReact组件库，并强调了选择合适样式方案对用户体验和代码可维护性的重要性。
+本文概述了 React 组件样式化的多种方法，包括 styled-components、CSS Modules、Tailwind CSS 以及 KendoReact 组件库，并强调了选择合适样式方案对用户体验和代码可维护性的重要性。
 
-- 🎨 styled-components通过CSS-in-JS实现动态样式，支持基于props的样式调整和状态伪类
-- 🧩 CSS Modules提供局部作用域CSS，避免全局命名冲突，需构建工具支持
-- ⚡ Tailwind CSS采用工具类优先，加速开发并确保设计一致性
-- 🌐 KendoReact提供企业级UI组件，内置主题和复杂功能如数据网格
-- 🎭 主题设置推荐使用CSS变量或Context API实现全局一致性和动态切换
+- 🎨 styled-components 通过 CSS-in-JS 实现动态样式，支持基于 props 的样式调整和状态伪类
+- 🧩 CSS Modules 提供局部作用域 CSS，避免全局命名冲突，需构建工具支持
+- ⚡ Tailwind CSS 采用工具类优先，加速开发并确保设计一致性
+- 🌐 KendoReact 提供企业级 UI 组件，内置主题和复杂功能如数据网格
+- 🎭 主题设置推荐使用 CSS 变量或 Context API 实现全局一致性和动态切换
 - 📏 最佳实践包括设计令牌统一、组件组合、性能优化和可访问性考虑
 
 ---
 
-### [使用React和Wijmo构建销售仪表板](https://developer.mescius.com/blogs/how-to-build-a-sales-dashboard-with-react)
+### [使用 React 和 Wijmo 构建销售仪表板](https://developer.mescius.com/blogs/how-to-build-a-sales-dashboard-with-react)
 
 **原文标题**: [How to Build a Sales Dashboard with React | Wijmo](https://developer.mescius.com/blogs/how-to-build-a-sales-dashboard-with-react)
 
-本教程详细介绍了如何使用React和Wijmo组件库构建动态销售仪表盘，通过可视化数据帮助管理者快速掌握销售绩效。
+本教程详细介绍了如何使用 React 和 Wijmo 组件库构建动态销售仪表盘，通过可视化数据帮助管理者快速掌握销售绩效。
 
-- 📊 使用Wijmo企业级UI控件（FlexGrid/FlexChart/FlexPie/RadialGauge）实现数据可视化
-- ⚡ 结合React和Bootstrap快速构建响应式仪表盘界面
-- 📱 通过StackBlitz在线平台提供完整可运行的示例代码
+- 📊 使用 Wijmo 企业级 UI 控件（FlexGrid/FlexChart/FlexPie/RadialGauge）实现数据可视化
+- ⚡ 结合 React 和 Bootstrap 快速构建响应式仪表盘界面
+- 📱 通过 StackBlitz 在线平台提供完整可运行的示例代码
 - 🎯 包含四种核心组件：径向仪表盘（今日销售额）、柱状图（国家销售分布）、饼图（销售员业绩）和数据网格（交易明细）
 - 🔧 采用函数式组件开发模式，支持动态数据绑定和自定义样式配置
-- 💡 强调Wijmo内置React封装优势，无需复杂DOM操作即可直接使用图表组件
+- 💡 强调 Wijmo 内置 React 封装优势，无需复杂 DOM 操作即可直接使用图表组件
 - 🌐 最终成果支持跨设备响应式显示，可直接作为企业级仪表盘开发模板
 
 ---
 
-### [Web应用程序的JavaScript UI组件 | Wijmo](https://developer.mescius.com/wijmo)
+### [Web 应用程序的 JavaScript UI 组件 | Wijmo](https://developer.mescius.com/wijmo)
 
 **原文标题**: [JavaScript UI Components for Web Applications | Wijmo](https://developer.mescius.com/wijmo)
 
-Wijmo是一个轻量级、高性能的JavaScript UI组件库，采用TypeScript构建，无需外部依赖，支持主流前端框架，提供数据网格、图表、地图等交互式控件，可快速构建企业级Web应用。
+Wijmo 是一个轻量级、高性能的 JavaScript UI 组件库，采用 TypeScript 构建，无需外部依赖，支持主流前端框架，提供数据网格、图表、地图等交互式控件，可快速构建企业级 Web 应用。
 
-- 📊 提供行业领先的JavaScript数据网格FlexGrid，内置排序/分组/编辑等Excel式功能
-- 📈 包含80+图表类型的FlexChart，支持从折线图到金融图表的全面数据可视化
-- 🌍 配备FlexMap地图控件，支持气泡图/散点图/区域统计地图等多种地理数据展示
+- 📊 提供行业领先的 JavaScript 数据网格 FlexGrid，内置排序/分组/编辑等 Excel 式功能
+- 📈 包含 80+ 图表类型的 FlexChart，支持从折线图到金融图表的全面数据可视化
+- 🌍 配备 FlexMap 地图控件，支持气泡图/散点图/区域统计地图等多种地理数据展示
 - 🔢 提供专业输入控件集，含自动完成/颜色选择器/日期时间/多选等多样化输入组件
-- ⚡ 支持OLAP多维数据分析，可毫秒级处理千行数据且无需服务端依赖
+- ⚡ 支持 OLAP 多维数据分析，可毫秒级处理千行数据且无需服务端依赖
 - 🎯 提供多框架支持（Angular/React/Vue），包含可拖拽定制的动态仪表板演示项目
-- 📦 采用开发者许可模式，支持永久部署权限和OEM商业授权方案
-- 🏆 获微软、汤森路透等企业认可，具有10年以上持续迭代的成熟产品历史
+- 📦 采用开发者许可模式，支持永久部署权限和 OEM 商业授权方案
+- 🏆 获微软、汤森路透等企业认可，具有 10 年以上持续迭代的成熟产品历史
 
 ---
 
@@ -296,46 +296,46 @@ Wijmo是一个轻量级、高性能的JavaScript UI组件库，采用TypeScript�
 
 **原文标题**: [Next.js Is Infuriating - Dominik's Blog](https://blog.meca.sh/3lxoty3shjc2z?auth_completed=true)
 
-作者分享在Next.js中配置生产环境日志的挫败经历，指出框架设计缺陷导致开发效率低下，并对比SvelteKit提出批评。
+作者分享在 Next.js 中配置生产环境日志的挫败经历，指出框架设计缺陷导致开发效率低下，并对比 SvelteKit 提出批评。
 
-- 😠 作者因Next.js的日志配置问题感到愤怒，决定撰写博客宣泄情绪
-- 🐛 Next.js默认只在开发环境启用日志，生产环境需自行配置且过程复杂
-- 🤦 中间件功能设计存在严重缺陷：仅支持4个参数传递且无法链式调用
-- 🔄 尝试使用AsyncLocalStorage实现请求追踪时遭遇运行时兼容性问题
-- 📝 最终被迫通过请求头传递requestId的迂回方案实现基础日志功能
-- 🚫 自定义服务器方案同样失效，AsyncLocalStorage在页面组件中无法获取
-- ⚖️ 对比SvelteKit的locals设计，批评Next.js缺乏合理的上下文传递机制
-- 🐢 指责Next.js团队对GitHub issues响应迟缓，大量问题多年未解决
-- 💔 总结表示不再愿意使用Next.js，认为其存在大量边界案例和设计缺陷
+- 😠 作者因 Next.js 的日志配置问题感到愤怒，决定撰写博客宣泄情绪
+- 🐛 Next.js 默认只在开发环境启用日志，生产环境需自行配置且过程复杂
+- 🤦 中间件功能设计存在严重缺陷：仅支持 4 个参数传递且无法链式调用
+- 🔄 尝试使用 AsyncLocalStorage 实现请求追踪时遭遇运行时兼容性问题
+- 📝 最终被迫通过请求头传递 requestId 的迂回方案实现基础日志功能
+- 🚫 自定义服务器方案同样失效，AsyncLocalStorage 在页面组件中无法获取
+- ⚖️ 对比 SvelteKit 的 locals 设计，批评 Next.js 缺乏合理的上下文传递机制
+- 🐢 指责 Next.js 团队对 GitHub issues 响应迟缓，大量问题多年未解决
+- 💔 总结表示不再愿意使用 Next.js，认为其存在大量边界案例和设计缺陷
 
 ---
 
-### [同步应用内SQLite为Expo应用带来的优势](https://expo.dev/blog/what-synced-in-app-sqlite-brings-to-expo-apps)
+### [同步应用内 SQLite 为 Expo 应用带来的优势](https://expo.dev/blog/what-synced-in-app-sqlite-brings-to-expo-apps)
 
 **原文标题**: [What synced in-app SQLite brings to Expo apps](https://expo.dev/blog/what-synced-in-app-sqlite-brings-to-expo-apps)
 
-该文本是Expo公司网站的页脚导航部分，列出了产品服务、资源链接、公司信息和法律条款等结构化内容。
+该文本是 Expo 公司网站的页脚导航部分，列出了产品服务、资源链接、公司信息和法律条款等结构化内容。
 
-- 📱 产品服务（EAS、Expo CLI、Expo Go等开发工具）
+- 📱 产品服务（EAS、Expo CLI、Expo Go 等开发工具）
 - 📚 资源中心（文档、博客、更新日志和社区支持）
 - 🏢 公司信息（主页、定价、招聘和品牌资料）
 - ⚖️ 法律条款（隐私政策、服务条款和安全合规声明）
-- ©️ 版权信息（650 Industries公司2025年版权所有）
+- ©️ 版权信息（650 Industries 公司 2025 年版权所有）
 
 ---
 
-### [从服务器状态推导客户端状态 | TkDodo的博客](https://tkdodo.eu/blog/deriving-client-state-from-server-state)
+### [从服务器状态推导客户端状态 | TkDodo 的博客](https://tkdodo.eu/blog/deriving-client-state-from-server-state)
 
 **原文标题**: [Deriving Client State from Server State | TkDodo's blog](https://tkdodo.eu/blog/deriving-client-state-from-server-state)
 
-本文讨论了在React应用中如何通过派生状态而非手动同步来保持客户端状态与服务器状态的一致性，以避免使用useEffect带来的复杂性和潜在问题。
+本文讨论了在 React 应用中如何通过派生状态而非手动同步来保持客户端状态与服务器状态的一致性，以避免使用 useEffect 带来的复杂性和潜在问题。
 
-- 🛠️ 使用useEffect手动同步客户端与服务器状态存在维护成本和潜在bug，例如当服务器数据更新时需手动清除无效的选中用户ID。
-- 💡 提出派生状态方案：直接基于服务器数据（用户列表）和当前选中ID动态计算有效状态，无需修改原始存储值。
+- 🛠️ 使用 useEffect 手动同步客户端与服务器状态存在维护成本和潜在 bug，例如当服务器数据更新时需手动清除无效的选中用户 ID。
+- 💡 提出派生状态方案：直接基于服务器数据（用户列表）和当前选中 ID 动态计算有效状态，无需修改原始存储值。
 - ✅ 派生方案优势：代码更简洁、支持状态自动恢复（如用户重新添加）、可灵活扩展（如添加有效性校验标志）。
-- ⚠️ 注意事项：需通过自定义Hook统一获取派生值，避免直接读取原始存储导致状态不一致。
-- 📝 扩展案例：表单默认值填充场景中，派生状态（如`derivedSelection = selection ?? data?.[0]`）可替代useEffect，避免覆盖用户已选值。
-- 🔁 通用性：该方法适用于Zustand、Redux或useState等任何客户端状态管理工具，核心思想是将服务器状态作为数据源进行派生计算。
+- ⚠️ 注意事项：需通过自定义 Hook 统一获取派生值，避免直接读取原始存储导致状态不一致。
+- 📝 扩展案例：表单默认值填充场景中，派生状态（如`derivedSelection = selection ?? data?.[0]`）可替代 useEffect，避免覆盖用户已选值。
+- 🔁 通用性：该方法适用于 Zustand、Redux 或 useState 等任何客户端状态管理工具，核心思想是将服务器状态作为数据源进行派生计算。
 
 ---
 
@@ -363,17 +363,17 @@ DayPicker 是一个用于创建日期选择器、日历和日期输入框的 Rea
 
 **原文标题**: [GitHub - gpbl/react-day-picker: DayPicker is a customizable date picker component for React. Add date pickers, calendars, and date inputs to your web applications.](https://github.com/gpbl/react-day-picker)
 
-这是一个用于React的日期选择器组件库，提供高度可定制的日历和日期选择功能。
+这是一个用于 React 的日期选择器组件库，提供高度可定制的日历和日期选择功能。
 
 - 📅 支持多种日期选择模式：单选、多选、日期范围及自定义选择
-- 🎨 采用极简设计风格，可通过CSS或CSS框架轻松自定义样式
+- 🎨 采用极简设计风格，可通过 CSS 或 CSS 框架轻松自定义样式
 - 🌍 支持多语言本地化和时区设置，包括波斯历和广播日历
-- ♿ 符合WCAG 2.1 AA无障碍访问标准
+- ♿ 符合 WCAG 2.1 AA 无障碍访问标准
 - ⚙️ 提供可自定义组件以扩展渲染元素
 - 🔤 易于与输入字段集成使用
-- 📦 基于TypeScript开发，使用date-fns进行日期操作和格式化
-- 📊 项目获得6.6k星标和762次fork，被441k+项目使用
-- 📝 采用MIT开源许可证，支持React 16.8及以上版本
+- 📦 基于 TypeScript 开发，使用 date-fns 进行日期操作和格式化
+- 📊 项目获得 6.6k 星标和 762 次 fork，被 441k+ 项目使用
+- 📝 采用 MIT 开源许可证，支持 React 16.8 及以上版本
 
 ---
 
@@ -381,15 +381,15 @@ DayPicker 是一个用于创建日期选择器、日历和日期输入框的 Rea
 
 **原文标题**: [Release v2.9.0 · reduxjs/redux-toolkit · GitHub](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.9.0)
 
-Redux Toolkit v2.9.0 版本发布，重点优化性能并新增功能，包括RTK查询性能提升、自动中止信号处理、新增构建器方法及多项问题修复。
+Redux Toolkit v2.9.0 版本发布，重点优化性能并新增功能，包括 RTK 查询性能提升、自动中止信号处理、新增构建器方法及多项问题修复。
 
-- 🚀 RTK查询性能大幅优化：重构订阅和轮询系统，改用Map结构提升效率，解决大量订阅导致的性能问题
-- ⚡ 新增自动中止机制：缓存条目移除时自动中止进行中的请求，需配合baseQuery处理AbortSignal
-- 🛠️ 新增builder.addAsyncThunk方法：支持在extraReducers中处理异步thunk的特定状态（pending/fulfilled/rejected/settled）
-- 🐛 修复transformResponse错误：解决无限查询中非查询场景误执行转换的问题
-- 📦 新增skipSchemaValidation选项：支持跳过特定或全部schema验证以提升性能
-- 🔧 类型系统增强：导出WritableDraft类型，新增RawResultType端点类型字段
-- 📊 改进订阅管理：重构内部数据结构，修复extractRehydrationInfo处理逻辑
+- 🚀 RTK 查询性能大幅优化：重构订阅和轮询系统，改用 Map 结构提升效率，解决大量订阅导致的性能问题
+- ⚡ 新增自动中止机制：缓存条目移除时自动中止进行中的请求，需配合 baseQuery 处理 AbortSignal
+- 🛠️ 新增 builder.addAsyncThunk 方法：支持在 extraReducers 中处理异步 thunk 的特定状态（pending/fulfilled/rejected/settled）
+- 🐛 修复 transformResponse 错误：解决无限查询中非查询场景误执行转换的问题
+- 📦 新增 skipSchemaValidation 选项：支持跳过特定或全部 schema 验证以提升性能
+- 🔧 类型系统增强：导出 WritableDraft 类型，新增 RawResultType 端点类型字段
+- 📊 改进订阅管理：重构内部数据结构，修复 extractRehydrationInfo 处理逻辑
 
 ---
 
@@ -397,16 +397,16 @@ Redux Toolkit v2.9.0 版本发布，重点优化性能并新增功能，包括RT
 
 **原文标题**: [Sign Up - Auth0](https://auth0.com/signup?utm_source=reactstatus&utm_campaign=global_mult_mult_all_ciam-dev_dg-plg_auth0_native_reactstatus_newsletter_aud_ReactStatus-Q3-Newsletter_utm2&utm_medium=cpc&utm_id=aNKKZ00000003CF4AY)
 
-这是一个关于Auth0身份验证服务的注册页面介绍，提供多种注册方式和全球覆盖的国家选项。
+这是一个关于 Auth0 身份验证服务的注册页面介绍，提供多种注册方式和全球覆盖的国家选项。
 
-- 🌐 支持全球多国用户注册，包含从A到Z的国家/地区列表
+- 🌐 支持全球多国用户注册，包含从 A 到 Z 的国家/地区列表
 - 📧 提供邮箱注册及第三方登录（GitHub/Google/Microsoft）选项
-- 🔐 强调Auth0服务能简化登录流程，让开发者专注于应用开发
-- 🆓 提供免费套餐，包含2.5万月活用户和无限制登录次数
-- 🛡️ 具备暴力破解保护和可疑IP限制等安全功能
+- 🔐 强调 Auth0 服务能简化登录流程，让开发者专注于应用开发
+- 🆓 提供免费套餐，包含 2.5 万月活用户和无限制登录次数
+- 🛡️ 具备暴力破解保护和可疑 IP 限制等安全功能
 - ⚙️ 支持无代码自定义注册/登录流程和社交登录连接
-- 📋 包含渐进式用户画像功能（5个动作和表单）
-- ©️ 由Okta公司提供的2025年版权服务
+- 📋 包含渐进式用户画像功能（5 个动作和表单）
+- ©️ 由 Okta 公司提供的 2025 年版权服务
 
 ---
 
@@ -414,12 +414,12 @@ Redux Toolkit v2.9.0 版本发布，重点优化性能并新增功能，包括RT
 
 **原文标题**: [react_on_rails/docs/release-notes/15.0.0.md at master · shakacode/react_on_rails · GitHub](https://github.com/shakacode/react_on_rails/blob/master/docs/release-notes/15.0.0.md)
 
-这是一个GitHub仓库页面，显示加载错误和基本项目信息。
+这是一个 GitHub 仓库页面，显示加载错误和基本项目信息。
 
 - ⚠️ 页面加载时出现错误，提示需要重新加载
-- 📊 项目拥有5.2k星标和637个fork
-- 🐛 当前有23个未解决的问题和5个拉取请求
-- 🔒 包含代码、议题、安全等标准GitHub功能模块
+- 📊 项目拥有 5.2k 星标和 637 个 fork
+- 🐛 当前有 23 个未解决的问题和 5 个拉取请求
+- 🔒 包含代码、议题、安全等标准 GitHub 功能模块
 - 🔄 需要登录才能更改通知设置
 
 ---
@@ -445,14 +445,14 @@ React on Rails Pro 4.0 发布，全面支持 React 服务端组件（RSC）和�
 
 **原文标题**: [React Server Components Tutorial | Shakacode](https://www.shakacode.com/react-on-rails-pro/docs/react-server-components/tutorial/)
 
-本教程系统性地介绍了如何使用React on Rails Pro学习和应用React Server Components（RSC），从基础概念到高级功能逐步深入。
+本教程系统性地介绍了如何使用 React on Rails Pro 学习和应用 React Server Components（RSC），从基础概念到高级功能逐步深入。
 
-- 🚀 创建无SSR的React服务器组件：学习RSC基础知识，构建基础页面
-- 🌊 添加流式传输和交互性：使用Suspense和客户端组件增强页面功能
+- 🚀 创建无 SSR 的 React 服务器组件：学习 RSC 基础知识，构建基础页面
+- 🌊 添加流式传输和交互性：使用 Suspense 和客户端组件增强页面功能
 - ⚡ 实现服务器端渲染：提升初始页面加载性能
-- 🔍 选择性水合作用：了解React的选择性水合特性及其对页面交互性的优化
-- 🔧 工作原理剖析：深入探索RSC的技术细节和底层机制
-- 📊 渲染流程详解：理解RSC的完整渲染流程，包括捆绑包类型和当前限制
+- 🔍 选择性水合作用：了解 React 的选择性水合特性及其对页面交互性的优化
+- 🔧 工作原理剖析：深入探索 RSC 的技术细节和底层机制
+- 📊 渲染流程详解：理解 RSC 的完整渲染流程，包括捆绑包类型和当前限制
 - 🔄 客户端组件内渲染：学习在客户端组件中渲染服务器组件的方法
 
 ---
@@ -474,20 +474,20 @@ React on Rails 是一个集成 React、Webpack 和 Ruby on Rails 的开源项目
 
 ---
 
-### [GitHub - AnyRoad/react-json-view-lite: React轻量级JSON视图组件](https://github.com/AnyRoad/react-json-view-lite)
+### [GitHub - AnyRoad/react-json-view-lite: React 轻量级 JSON 视图组件](https://github.com/AnyRoad/react-json-view-lite)
 
 **原文标题**: [GitHub - AnyRoad/react-json-view-lite: Lightweight Json view component for React](https://github.com/AnyRoad/react-json-view-lite)
 
-这是一个轻量级的React JSON树形视图组件，专注于大型JSON数据的性能与功能平衡，使用TypeScript编写且无依赖。
+这是一个轻量级的 React JSON 树形视图组件，专注于大型 JSON 数据的性能与功能平衡，使用 TypeScript 编写且无依赖。
 
-- 📦 提供简洁的JSON树形渲染，支持折叠/展开功能
+- 📦 提供简洁的 JSON 树形渲染，支持折叠/展开功能
 - 🎨 内置亮色（defaultStyles）和暗色（darkStyles）两种主题样式
 - ⚡ 性能优异，在基准测试中表现优于多数同类库
-- 🆓 采用MIT开源协议，可免费商用
-- 📏 组件体积小巧，gzip后仅约20KB
-- ♿ 支持无障碍访问（a11y），提供ARIA标签配置
-- 🛠️ 完全使用TypeScript开发，提供完整的类型定义
-- 🌐 提供在线Storybook演示：anyroad.github.io/react-json-view-lite/
+- 🆓 采用 MIT 开源协议，可免费商用
+- 📏 组件体积小巧，gzip 后仅约 20KB
+- ♿ 支持无障碍访问（a11y），提供 ARIA 标签配置
+- 🛠️ 完全使用 TypeScript 开发，提供完整的类型定义
+- 🌐 提供在线 Storybook 演示：anyroad.github.io/react-json-view-lite/
 
 ---
 
@@ -510,15 +510,15 @@ React on Rails 是一个集成 React、Webpack 和 Ruby on Rails 的开源项目
 
 **原文标题**: [GitHub - gcoro/react-qrcode-logo: React + Typescript component to generate a QR Code with custom colors and logo](https://github.com/gcoro/react-qrcode-logo)
 
-这是一个基于React和TypeScript的二维码生成组件库，支持自定义颜色和添加Logo。
+这是一个基于 React 和 TypeScript 的二维码生成组件库，支持自定义颜色和添加 Logo。
 
-- 🎯 提供React组件生成可自定义的二维码，支持颜色、Logo等个性化设置
-- 📦 通过npm安装，兼容React 18及以上版本
+- 🎯 提供 React 组件生成可自定义的二维码，支持颜色、Logo 等个性化设置
+- 📦 通过 npm 安装，兼容 React 18 及以上版本
 - ⚙️ 支持多种配置参数：尺寸、纠错等级、背景色、前景色等
-- 🖼️ 可添加Logo图片并调整透明度、尺寸和内边距
-- 💾 提供下载方法，可将二维码保存为png/jpg/webp格式
-- 🔧 采用MIT开源协议，欢迎贡献代码和提出建议
-- 🌟 项目获得564星标和52个分支，表明社区认可度高
+- 🖼️ 可添加 Logo 图片并调整透明度、尺寸和内边距
+- 💾 提供下载方法，可将二维码保存为 png/jpg/webp 格式
+- 🔧 采用 MIT 开源协议，欢迎贡献代码和提出建议
+- 🌟 项目获得 564 星标和 52 个分支，表明社区认可度高
 
 ---
 
@@ -541,38 +541,38 @@ React Native Reanimated 是一个重新实现的 React Native 动画库，专注
 
 ---
 
-### [GitHub - marmelab/react-admin：基于REST/GraphQL API的单页应用前端框架，采用TypeScript、React和Material Design构建](https://github.com/marmelab/react-admin)
+### [GitHub - marmelab/react-admin：基于REST/GraphQL API 的单页应用前端框架，采用 TypeScript、React 和 Material Design 构建](https://github.com/marmelab/react-admin)
 
 **原文标题**: [GitHub - marmelab/react-admin: A frontend Framework for single-page applications on top of REST/GraphQL APIs, using TypeScript, React and Material Design](https://github.com/marmelab/react-admin)
 
-React-admin是一个基于TypeScript、React和Material Design构建的单页面应用前端框架，专为REST/GraphQL API设计，由marmelab维护并开源。
+React-admin 是一个基于 TypeScript、React 和 Material Design 构建的单页面应用前端框架，专为 REST/GraphQL API 设计，由 marmelab 维护并开源。
 
-- 🚀 后端无关性：支持超过45种适配器，可连接任何REST或GraphQL API
+- 🚀 后端无关性：支持超过 45 种适配器，可连接任何 REST 或 GraphQL API
 - 🧩 功能完备：提供认证、路由、表单、数据网格、搜索过滤等完整构建模块
 - ⭐ 高质量代码：具备无障碍访问、响应式设计、安全性强和可测试性高等特点
-- 💻 优秀开发体验：完整文档、IDE自动补全、类型安全、模块化架构
+- 💻 优秀开发体验：完整文档、IDE 自动补全、类型安全、模块化架构
 - 👑 卓越用户体验：乐观渲染、实时过滤、撤销操作、偏好设置等功能
 - 🛠 完全可定制：允许用自定义组件替换任何内置组件
-- 📦 安装简便：通过npm或yarn即可安装，提供详细教程和示例应用
-- 🌐 社区支持：提供商业支持和社区Discord、StackOverflow交流平台
-- 📄 开源协议：采用MIT许可证，可免费用于商业项目
+- 📦 安装简便：通过 npm 或 yarn 即可安装，提供详细教程和示例应用
+- 🌐 社区支持：提供商业支持和社区 Discord、StackOverflow 交流平台
+- 📄 开源协议：采用 MIT 许可证，可免费用于商业项目
 
 ---
 
-### [GitHub - stripe/react-stripe-js：用于Stripe.js和Stripe Elements的React组件](https://github.com/stripe/react-stripe-js)
+### [GitHub - stripe/react-stripe-js：用于Stripe.js和Stripe Elements 的 React 组件](https://github.com/stripe/react-stripe-js)
 
 **原文标题**: [GitHub - stripe/react-stripe-js: React components for Stripe.js and Stripe Elements](https://github.com/stripe/react-stripe-js)
 
-这是一个用于React的Stripe.js和Stripe Elements组件库，提供支付集成解决方案。
+这是一个用于 React 的 Stripe.js 和 Stripe Elements 组件库，提供支付集成解决方案。
 
-- 🧩 React组件库，用于集成Stripe.js支付功能
-- ⚙️ 支持React v16.8及以上版本
+- 🧩 React 组件库，用于集成 Stripe.js 支付功能
+- ⚙️ 支持 React v16.8 及以上版本
 - 📚 提供完整的文档和代码示例
 - 🔧 支持函数式组件和类组件两种使用方式
-- 🛡️ 包含TypeScript类型声明支持
-- 📦 MIT开源许可证
-- 🌟 GitHub上有1.9k星标和298个fork
-- 🔄 提供从旧版react-stripe-elements迁移的指南
+- 🛡️ 包含 TypeScript 类型声明支持
+- 📦 MIT 开源许可证
+- 🌟 GitHub 上有 1.9k 星标和 298 个 fork
+- 🔄 提供从旧版 react-stripe-elements 迁移的指南
 
 ---
 
@@ -580,13 +580,13 @@ React-admin是一个基于TypeScript、React和Material Design构建的单页面
 
 **原文标题**: [Release v0.37.0 · TypeCellOS/BlockNote · GitHub](https://github.com/TypeCellOS/BlockNote/releases/tag/v0.37.0)
 
-BlockNote发布了v0.37.0版本，主要对@blocknote/shadcn包进行了重大调整，现要求父应用已安装TailwindCSS v4，并移除了自带样式表以更好地继承主题样式。
+BlockNote 发布了 v0.37.0 版本，主要对@blocknote/shadcn 包进行了重大调整，现要求父应用已安装 TailwindCSS v4，并移除了自带样式表以更好地继承主题样式。
 
-- 🚀 功能更新：导出ShadCNComponentsContext (#1965)
+- 🚀 功能更新：导出 ShadCNComponentsContext (#1965)
 - 🛠️ 问题修复：修复空表格单元格输入问题 (#1973)
-- ⚠️ 重大变更：需TailwindCSS v4支持且不再包含ShadCN样式表
+- ⚠️ 重大变更：需 TailwindCSS v4 支持且不再包含 ShadCN 样式表
 - 🎨 样式优化：移除"bn-"前缀并继承父应用主题配置
-- 👥 贡献者：Hector-Zhuang与matthewlipski共同开发
+- 👥 贡献者：Hector-Zhuang 与 matthewlipski 共同开发
 
 ---
 
@@ -594,14 +594,14 @@ BlockNote发布了v0.37.0版本，主要对@blocknote/shadcn包进行了重大�
 
 **原文标题**: [GitHub - vadimdemedes/ink: 🌈 React for interactive command-line apps](https://github.com/vadimdemedes/ink)
 
-Ink是一个基于React的命令行界面（CLI）应用开发库，允许开发者使用React组件和Flexbox布局构建交互式终端应用。
+Ink 是一个基于 React 的命令行界面（CLI）应用开发库，允许开发者使用 React 组件和 Flexbox 布局构建交互式终端应用。
 
-- 🌈 使用React组件模型构建CLI应用，支持所有React特性
-- 📐 集成Yoga布局引擎，提供类似CSS的Flexbox属性
-- 🎨 提供丰富的文本样式和布局组件（如Text、Box、Newline等）
+- 🌈 使用 React 组件模型构建 CLI 应用，支持所有 React 特性
+- 📐 集成 Yoga 布局引擎，提供类似 CSS 的 Flexbox 属性
+- 🎨 提供丰富的文本样式和布局组件（如 Text、Box、Newline 等）
 - ⌨️ 包含用户输入处理钩子（useInput）和焦点管理功能
-- 🔧 支持测试、React Devtools集成和屏幕阅读器无障碍访问
-- 📦 被许多知名项目使用，包括OpenAI Codex、Cloudflare Wrangler和Gatsby等
+- 🔧 支持测试、React Devtools 集成和屏幕阅读器无障碍访问
+- 📦 被许多知名项目使用，包括 OpenAI Codex、Cloudflare Wrangler 和 Gatsby 等
 - 🛠️ 提供丰富的第三方组件生态和示例代码库
 
 ---
@@ -610,14 +610,14 @@ Ink是一个基于React的命令行界面（CLI）应用开发库，允许开发
 
 **原文标题**: [Enable `--strict` by default · Issue #62333 · microsoft/TypeScript · GitHub](https://github.com/microsoft/TypeScript/issues/62333)
 
-TypeScript计划在6.0版本默认启用--strict严格模式，以提升新项目的类型安全体验，同时为现有项目提供迁移方案。
+TypeScript 计划在 6.0 版本默认启用--strict 严格模式，以提升新项目的类型安全体验，同时为现有项目提供迁移方案。
 
-- 🚀 TypeScript 6.0将默认开启--strict模式，包含strictNullChecks等严格类型检查
-- ⚠️ 可能对现有代码造成破坏性变更，但支持通过关闭特定严格选项或全局禁用--strict来适配
+- 🚀 TypeScript 6.0 将默认开启--strict 模式，包含 strictNullChecks 等严格类型检查
+- ⚠️ 可能对现有代码造成破坏性变更，但支持通过关闭特定严格选项或全局禁用--strict 来适配
 - 🔧 编辑器对无配置文件的松散文件（inferred projects）可能维持当前非严格模式
-- 📅 该变更已列入TypeScript 6.0.0里程碑计划，团队承诺推进实施
-- 💡 背景源于多年推荐严格模式，且tsc --init已默认设置strict: true近十年
-- 🌟 社区反应积极，获得140个点赞和73个爱心表情支持
+- 📅 该变更已列入 TypeScript 6.0.0 里程碑计划，团队承诺推进实施
+- 💡 背景源于多年推荐严格模式，且 tsc --init 已默认设置 strict: true 近十年
+- 🌟 社区反应积极，获得 140 个点赞和 73 个爱心表情支持
 
 ---
 
@@ -642,58 +642,58 @@ TypeScript 6.0.0 版本正在积极开发中，包含多项重大变更和功能
 
 ---
 
-### [为什么浏览器会限制JavaScript计时器？ | 解读迹象](https://nolanlawson.com/2025/08/31/why-do-browsers-throttle-javascript-timers/)
+### [为什么浏览器会限制 JavaScript 计时器？ | 解读迹象](https://nolanlawson.com/2025/08/31/why-do-browsers-throttle-javascript-timers/)
 
 **原文标题**: [Why do browsers throttle JavaScript timers? | Read the Tea Leaves](https://nolanlawson.com/2025/08/31/why-do-browsers-throttle-javascript-timers/)
 
-浏览器对JavaScript计时器进行节流以防止滥用，但开发者可通过替代API实现更精确的定时控制。
+浏览器对 JavaScript 计时器进行节流以防止滥用，但开发者可通过替代 API 实现更精确的定时控制。
 
-- ⏱️ `setTimeout(0)` 实际延迟约4毫秒，浏览器为防止滥用而节流
+- ⏱️ `setTimeout(0)` 实际延迟约 4 毫秒，浏览器为防止滥用而节流
 - 🔋 节流策略因设备状态而异，如电池模式或后台标签页延迟更高
 - ⚙️ 作者测试多种替代方案，包括 `MessageChannel` 和 `scheduler.postTask`
 - 📊 基准测试显示 `scheduler.postTask` 性能最佳，几乎无延迟
 - 🤔 浏览器节流源于保护用户与开发者自主控制的权衡
 - 🛠️ 推荐使用 `scheduler.postTask` 并备选 `MessageChannel` 以规避节流
-- ⚠️ 未来可能因API滥用出现新一轮节流，开发者需谨慎选择工具
+- ⚠️ 未来可能因 API 滥用出现新一轮节流，开发者需谨慎选择工具
 
 ---
 
-### [ViteLand 八月新动向：2025年回顾 | VoidZero](https://voidzero.dev/posts/whats-new-aug-2025)
+### [ViteLand 八月新动向：2025 年回顾 | VoidZero](https://voidzero.dev/posts/whats-new-aug-2025)
 
 **原文标题**: [What’s New in ViteLand: August 2025 Recap | VoidZero](https://voidzero.dev/posts/whats-new-aug-2025)
 
-ViteLand 2025年8月更新回顾：涵盖Vite、Vitest、Rolldown、Oxc等工具的重大功能升级与社区动态。
+ViteLand 2025 年 8 月更新回顾：涵盖 Vite、Vitest、Rolldown、Oxc 等工具的重大功能升级与社区动态。
 
-- 🚀 Oxlint推出类型感知linting并支持自定义JS插件，向全面替代ESLint迈进
-- ⚡ Vite正式支持React Server Component，修复安全漏洞并优化插件性能
-- 🧪 Vitest v4测试版新增视觉回归测试，启动速度提升25%
-- 📦 Rolldown默认启用原生插件，强化Tree Shaking并新增tsconfig配置支持
-- 🔧 Oxc优化代码压缩与React样式库编译性能，贡献TypeScript-Go生态改进
-- 📅 VoidZero团队将出席Vue巴黎、ViteConf等全球9场技术会议并发表演讲
-- 🌍 社区案例频出：PLAID构建耗时降97%、GitLab提速43倍、多框架集成Rolldown
-- 🛠️ 生态工具更新：tsup停止维护，tsdown成为新选择；Storybook与Vitest达成合作
+- 🚀 Oxlint 推出类型感知 linting 并支持自定义 JS 插件，向全面替代 ESLint 迈进
+- ⚡ Vite 正式支持 React Server Component，修复安全漏洞并优化插件性能
+- 🧪 Vitest v4 测试版新增视觉回归测试，启动速度提升 25%
+- 📦 Rolldown 默认启用原生插件，强化 Tree Shaking 并新增 tsconfig 配置支持
+- 🔧 Oxc 优化代码压缩与 React 样式库编译性能，贡献 TypeScript-Go 生态改进
+- 📅 VoidZero 团队将出席 Vue 巴黎、ViteConf 等全球 9 场技术会议并发表演讲
+- 🌍 社区案例频出：PLAID 构建耗时降 97%、GitLab 提速 43 倍、多框架集成 Rolldown
+- 🛠️ 生态工具更新：tsup 停止维护，tsdown 成为新选择；Storybook 与 Vitest 达成合作
 
 ---
 
-### [面向JavaScript开发者的精益求精——深入解析](https://overreacted.io/lean-for-javascript-developers/)
+### [面向 JavaScript 开发者的精益求精——深入解析](https://overreacted.io/lean-for-javascript-developers/)
 
 **原文标题**: [Lean for JavaScript Developers — overreacted](https://overreacted.io/lean-for-javascript-developers/)
 
-本文是一篇面向JavaScript开发者的Lean编程语言入门指南，介绍了Lean的基础语法、类型系统、函数定义、代码执行与定理证明等内容。
+本文是一篇面向 JavaScript 开发者的 Lean 编程语言入门指南，介绍了 Lean 的基础语法、类型系统、函数定义、代码执行与定理证明等内容。
 
-- 🎯 作者分享了自己学习Lean的语法入门，强调内容虽不完整但实用
+- 🎯 作者分享了自己学习 Lean 的语法入门，强调内容虽不完整但实用
 - 📝 使用`def`定义变量时需用`:=`而非`=`，类型可自动推断或显式声明
-- 🔢 Lean有`String`、`Nat`（自然数）、`Int`（整数）等内置类型
+- 🔢 Lean 有`String`、`Nat`（自然数）、`Int`（整数）等内置类型
 - ▶️ 通过`#eval`命令或定义`main`函数可执行代码并查看结果
 - ✅ 使用`theorem`和`by`进入策略模式可编写证明，如`unfold`展开定义、`omega`解算术
 - 📚 `open`命令可打开命名空间，简化函数调用（如`IO.println`变`println`）
 - 🧩 函数调用无需括号和逗号，用空格分隔参数，必要时用括号分组表达式
 - 🔧 `let`绑定可在定义内创建局部变量，增强可读性
-- 🧮 函数定义支持多种语法：隐式/显式类型、匿名函数等，类似JS的函数与箭头函数区别
+- 🧮 函数定义支持多种语法：隐式/显式类型、匿名函数等，类似 JS 的函数与箭头函数区别
 - 🌍 定理可参数化（如`(cy : Int) (a : Nat)`）或使用全称量词`∀`，证明适用于所有输入
-- 🔍 隐参数（`{}`）和实例参数（`[]`）由Lean自动推断，`@`前缀可显式查看
-- 💡 推荐Command+点击代码探索实现（如`Nat`为递归定义的枚举）
-- ✨ Lean融合编程与证明，支持复杂数学验证和高效编译（如转C代码），用于学术和工业场景
+- 🔍 隐参数（`{}`）和实例参数（`[]`）由 Lean 自动推断，`@`前缀可显式查看
+- 💡 推荐 Command+ 点击代码探索实现（如`Nat`为递归定义的枚举）
+- ✨ Lean 融合编程与证明，支持复杂数学验证和高效编译（如转 C 代码），用于学术和工业场景
 
 ---
 
@@ -733,21 +733,21 @@ Rspack 1.5 版本发布，带来多项性能优化和新功能，包括实验性
 
 ---
 
-### [Angular 2025夏季更新。作者：延斯·库勒斯、马克·泰克森 | Angular官方 | 2025年8月 | Angular博客](https://blog.angular.dev/angular-summer-update-2025-1987592a0b42?gi=15f13c07ad84)
+### [Angular 2025 夏季更新。作者：延斯·库勒斯、马克·泰克森 | Angular 官方 | 2025 年 8 月 | Angular 博客](https://blog.angular.dev/angular-summer-update-2025-1987592a0b42?gi=15f13c07ad84)
 
 **原文标题**: [Angular Summer Update 2025. Authors: Jens Kuehlers Mark Techson | by Angular | Aug, 2025 | Angular Blog](https://blog.angular.dev/angular-summer-update-2025-1987592a0b42?gi=15f13c07ad84)
 
-Angular 2025夏季更新带来多项重要功能发布和优化，涵盖无zone变更检测、动画增强、AI开发工具集成以及调试体验提升等方面。
+Angular 2025 夏季更新带来多项重要功能发布和优化，涵盖无 zone 变更检测、动画增强、AI 开发工具集成以及调试体验提升等方面。
 
-- 🎉 无zone变更检测正式稳定，可通过provideZonelessChangeDetection配置启用
-- ✨ 新增animate.enter/leave原生动画API，支持CSS动画和第三方动画库
-- 🤖 强化AI开发生态，推出angular.dev/ai资源站和MCP服务器辅助代码生成
-- 🔧 模板编写体验优化：支持@else if别名、Tailwind类名和更宽松的@语法
-- 📊 DevTools新增路由可视化功能和信号依赖图调试工具
-- 🧪 测试改进：TestBed.createComponent支持直接传入绑定对象，无需包装组件
-- 🎪 MatMenu新增上下文菜单功能，NgComponentOutlet支持自定义环境注入器
-- 📚 文档全面升级，新增路由指南并支持TypeScript 5.9
-- 📅 宣布将于2025年9月16日举办Angular AI主题线上活动
+- 🎉 无 zone 变更检测正式稳定，可通过 provideZonelessChangeDetection 配置启用
+- ✨ 新增 animate.enter/leave 原生动画 API，支持 CSS 动画和第三方动画库
+- 🤖 强化 AI 开发生态，推出 angular.dev/ai 资源站和 MCP 服务器辅助代码生成
+- 🔧 模板编写体验优化：支持@else if 别名、Tailwind 类名和更宽松的@语法
+- 📊 DevTools 新增路由可视化功能和信号依赖图调试工具
+- 🧪 测试改进：TestBed.createComponent 支持直接传入绑定对象，无需包装组件
+- 🎪 MatMenu 新增上下文菜单功能，NgComponentOutlet 支持自定义环境注入器
+- 📚 文档全面升级，新增路由指南并支持 TypeScript 5.9
+- 📅 宣布将于 2025 年 9 月 16 日举办 Angular AI 主题线上活动
 
 ---
 
