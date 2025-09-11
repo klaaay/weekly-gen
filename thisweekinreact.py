@@ -8,6 +8,7 @@ from openai import OpenAI
 from dotenv import load_dotenv
 from utils.deepseek_api import translate_title_to_chinese, summarize_with_deepseek
 from utils.extract_links_and_summarize import extract_links_and_summarize
+from utils.last_run_tracker import check_and_skip_if_same_issue, create_issue_info, update_last_run_info
 
 # 加载.env 文件中的环境变量
 load_dotenv()
@@ -141,6 +142,17 @@ def scrape_thisweekinreact():
             
             if newsletter_link and 'href' in newsletter_link.attrs:
                 newsletter_url = newsletter_link['href']
+                
+                # 检查是否与上次抓取的 link_url 相同
+                script_name = os.path.basename(__file__).replace('.py', '')  # 获取脚本名称（不含.py 扩展名）
+                
+                # 如果检测到相同的 link_url，则跳过执行
+                if check_and_skip_if_same_issue(script_name, newsletter_url):
+                    return
+                
+                # 记录上次运行抓取的 newsletter 信息
+                issue_info = create_issue_info(newsletter_link.text.strip() if newsletter_link.text else "Newsletter", newsletter_url, "https://thisweekinreact.com")
+                update_last_run_info(script_name, issue_info)
                 
                 # 确保链接是绝对路径
                 if not newsletter_url.startswith('http'):
