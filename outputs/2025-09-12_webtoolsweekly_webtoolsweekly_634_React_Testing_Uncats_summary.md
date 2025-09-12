@@ -1,11 +1,11 @@
-### [TLDR 简讯 - 5分钟掌握科技动态](https://tldr.tech/signup?utm_source=web-tools-weekly&utm_campaign=web-tools-weekly-trial-campaign&utm_medium=display-ads)
+### [TLDR 简讯 - 5 分钟掌握科技动态](https://tldr.tech/signup?utm_source=web-tools-weekly&utm_campaign=web-tools-weekly-trial-campaign&utm_medium=display-ads)
 
 **原文标题**: [TLDR Newsletter - Keep up with Tech in 5 minutes](https://tldr.tech/signup?utm_source=web-tools-weekly&utm_campaign=web-tools-weekly-trial-campaign&utm_medium=display-ads)
 
-TLDR 是一个每日免费电子邮件服务，提供最重要的科技、科学和编程新闻摘要，旨在让读者在五分钟内了解关键信息，拥有超过125万软件工程师和科技工作者订阅，无垃圾邮件且可一键退订。
+TLDR 是一个每日免费电子邮件服务，提供最重要的科技、科学和编程新闻摘要，旨在让读者在五分钟内了解关键信息，拥有超过 125 万软件工程师和科技工作者订阅，无垃圾邮件且可一键退订。
 - 📧 免费每日邮件提供科技新闻摘要
 - ⏱️ 五分钟快速了解重要科技动态
-- 👨‍💻 超过125万科技从业者订阅使用
+- 👨‍💻 超过 125 万科技从业者订阅使用
 - 🚫 无垃圾邮件且支持一键取消订阅
 
 ---
@@ -17,7 +17,7 @@ TLDR 是一个每日免费电子邮件服务，提供最重要的科技、科学
 TLDR 提供每日最重要的科技新闻摘要，通过电子邮件免费订阅，无垃圾邮件且可随时退订。
 
 - 📧 每日免费邮件推送最重要的科技、科学和编程新闻
-- 👥 已被超过125万软件工程师和科技工作者订阅
+- 👥 已被超过 125 万软件工程师和科技工作者订阅
 - 🔒 无垃圾邮件，一键即可随时取消订阅
 
 ---
@@ -26,15 +26,15 @@ TLDR 提供每日最重要的科技新闻摘要，通过电子邮件免费订阅
 
 **原文标题**: [GitHub - imbhargav5/rooks: Collection of awesome react hooks](https://github.com/imbhargav5/rooks)
 
-这是一个名为Rooks的React Hooks集合库，提供104个独立模块化的自定义Hooks，涵盖动画、浏览器API、事件处理、状态管理等各类功能，采用MIT开源协议。
+这是一个名为 Rooks 的 React Hooks 集合库，提供 104 个独立模块化的自定义 Hooks，涵盖动画、浏览器 API、事件处理、状态管理等各类功能，采用 MIT 开源协议。
 
-- 🎯 提供104个独立Hooks模块，涵盖动画、浏览器API、事件处理等11个分类
-- ⚡ 支持ESM模块系统，包含性能优化类Hooks如防抖和节流功能
-- 📦 可通过npm安装整体包或单独使用独立模块
-- 🌐 包含实验性Hooks（带 suspense 功能）和跨标签通信API
-- 📚 提供完整文档和示例，项目在GitHub获得3.4k星标
-- 👥 拥有85名贡献者，被2.8k+项目使用
-- 🔧 与主流React生态库（如React-use、React Hook Form）形成互补关系
+- 🎯 提供 104 个独立 Hooks 模块，涵盖动画、浏览器 API、事件处理等 11 个分类
+- ⚡ 支持 ESM 模块系统，包含性能优化类 Hooks 如防抖和节流功能
+- 📦 可通过 npm 安装整体包或单独使用独立模块
+- 🌐 包含实验性 Hooks（带 suspense 功能）和跨标签通信 API
+- 📚 提供完整文档和示例，项目在 GitHub 获得 3.4k 星标
+- 👥 拥有 85 名贡献者，被 2.8k+ 项目使用
+- 🔧 与主流 React 生态库（如 React-use、React Hook Form）形成互补关系
 
 ---
 
@@ -42,13 +42,13 @@ TLDR 提供每日最重要的科技新闻摘要，通过电子邮件免费订阅
 
 **原文标题**: [GitHub - Chamesss/multi-select](https://github.com/Chamesss/multi-select)
 
-这是一个名为“multi-select”的开源项目，由Chamesss开发，提供多选组件演示。
+这是一个名为“multi-select”的开源项目，由 Chamesss 开发，提供多选组件演示。
 
-- 🌐 项目托管在GitHub上，可通过multi-select-component-demo.vercel.app访问演示页面
-- ⭐ 获得14个星标，有1个复刻分支，显示了一定的社区关注度
-- 🛠️ 主要使用TypeScript（88.9%）开发，辅以CSS（10.3%）和少量JavaScript（0.8%）
-- 📁 项目结构包含app、components、hooks等标准Next.js目录
-- 🔧 基于Next.js框架构建，使用Tailwind CSS和PostCSS进行样式处理
+- 🌐 项目托管在 GitHub 上，可通过 multi-select-component-demo.vercel.app 访问演示页面
+- ⭐ 获得 14 个星标，有 1 个复刻分支，显示了一定的社区关注度
+- 🛠️ 主要使用 TypeScript（88.9%）开发，辅以 CSS（10.3%）和少量 JavaScript（0.8%）
+- 📁 项目结构包含 app、components、hooks 等标准 Next.js 目录
+- 🔧 基于 Next.js 框架构建，使用 Tailwind CSS 和 PostCSS 进行样式处理
 - ⚠️ 页面加载时出现错误提示，需要重新加载页面
 
 ---
@@ -70,7 +70,7 @@ TLDR 提供每日最重要的科技新闻摘要，通过电子邮件免费订阅
 
 ---
 
-### [Vizzly - UI开发者视觉测试工具](https://vizzly.dev/)
+### [Vizzly - UI 开发者视觉测试工具](https://vizzly.dev/)
 
 **原文标题**: [Vizzly - Visual Testing Tool for UI Developers](https://vizzly.dev/)
 
@@ -78,7 +78,7 @@ TLDR 提供每日最重要的科技新闻摘要，通过电子邮件免费订阅
 
 - 🤖 通过深度学习技术分析医学影像，提升疾病早期诊断准确率
 - 💊 加速新药研发进程，大幅降低临床试验成本和时间周期
-- 🏥 智能问诊系统提供24小时健康咨询服务，缓解医疗资源压力
+- 🏥 智能问诊系统提供 24 小时健康咨询服务，缓解医疗资源压力
 - 📊 利用大数据分析实现个性化治疗方案，提高治疗效果
 - 🔬 手术机器人实现微创精准操作，减少手术风险和恢复时间
 - 🌐 远程医疗平台打破地域限制，使优质医疗资源惠及更多人群
@@ -118,7 +118,7 @@ icomp 是一个用于将 SVG 文件转换为 React 功能组件的工具，提�
 
 ---
 
-### [React表单构建器 | 支持拖拽和JSON架构的表单生成工具](https://builder.coltorapps.com/)
+### [React 表单构建器 | 支持拖拽和 JSON 架构的表单生成工具](https://builder.coltorapps.com/)
 
 **原文标题**: [React Form Builder | Drag and drop form builder with JSON schema form.](https://builder.coltorapps.com/)
 
@@ -157,16 +157,16 @@ Tiptap UI Components 是一个基于 Tiptap 框架的 React 组件库，提供�
 
 **原文标题**: [GitHub - k3nz0/Warka: Your React E-ink Display](https://github.com/k3nz0/Warka)
 
-Warka是一个基于React前端和Python后端的电子墨水屏显示框架，通过ESP32微控制器实现屏幕内容更新。
+Warka 是一个基于 React 前端和 Python 后端的电子墨水屏显示框架，通过 ESP32 微控制器实现屏幕内容更新。
 
-- 🖥️ 框架采用React前端+Python后端+ESP32硬件的三组件架构
-- ⚡ 支持实时数据：股票行情、天气信息、投资组合和Hacker News动态
-- 🖼️ 后端自动截图前端界面并转换为BMP格式供ESP32获取显示
-- 🔧 提供快速开始指南：包含后端配置、前端启动和ESP32刷写步骤
-- 📱 专为电子墨水屏优化：800x480分辨率、黑白高对比度设计
-- 🔄 支持可配置更新频率：股票5分钟、新闻15分钟、天气30分钟
-- 🌐 开源项目：MIT许可证，欢迎社区贡献
-- 💡 硬件要求简单：ESP32开发板+7.5英寸电子墨水屏+转接板
+- 🖥️ 框架采用 React 前端+Python 后端+ESP32 硬件的三组件架构
+- ⚡ 支持实时数据：股票行情、天气信息、投资组合和 Hacker News 动态
+- 🖼️ 后端自动截图前端界面并转换为 BMP 格式供 ESP32 获取显示
+- 🔧 提供快速开始指南：包含后端配置、前端启动和 ESP32 刷写步骤
+- 📱 专为电子墨水屏优化：800x480 分辨率、黑白高对比度设计
+- 🔄 支持可配置更新频率：股票 5 分钟、新闻 15 分钟、天气 30 分钟
+- 🌐 开源项目：MIT 许可证，欢迎社区贡献
+- 💡 硬件要求简单：ESP32 开发板 +7.5 英寸电子墨水屏 + 转接板
 
 ---
 
@@ -176,29 +176,29 @@ Warka是一个基于React前端和Python后端的电子墨水屏显示框架，�
 
 PortNote 是一个用于跟踪和管理端口使用情况的开源工具，帮助用户避免端口冲突并提供清晰的端口使用视图。
 
-- 🌐 提供直观的Web界面，用于添加服务器和虚拟机并记录端口使用情况
+- 🌐 提供直观的 Web 界面，用于添加服务器和虚拟机并记录端口使用情况
 - 🚫 旨在替代电子表格，防止端口分配冲突
 - 📊 包含仪表板、创建功能和随机端口生成器
-- 🐳 通过Docker Compose部署，支持PostgreSQL数据库
-- ⚙️ 技术栈包括Next.js、TypeScript、TailwindCSS、Prisma和PostgreSQL
-- 📜 采用MIT许可证，拥有1k星标和25个分支
-- ❤️ 由CoreControl开发者构建，强调结构和基础设施管理
+- 🐳 通过 Docker Compose 部署，支持 PostgreSQL 数据库
+- ⚙️ 技术栈包括 Next.js、TypeScript、TailwindCSS、Prisma 和 PostgreSQL
+- 📜 采用 MIT 许可证，拥有 1k 星标和 25 个分支
+- ❤️ 由 CoreControl 开发者构建，强调结构和基础设施管理
 
 ---
 
-### [GitHub - alexcanessa/typescript-coverage-report: 生成TypeScript覆盖率报告的Node命令行工具](https://github.com/alexcanessa/typescript-coverage-report)
+### [GitHub - alexcanessa/typescript-coverage-report: 生成 TypeScript 覆盖率报告的 Node 命令行工具](https://github.com/alexcanessa/typescript-coverage-report)
 
 **原文标题**: [GitHub - alexcanessa/typescript-coverage-report: Node command tool to generate TypeScript coverage report](https://github.com/alexcanessa/typescript-coverage-report)
 
-这是一个用于生成TypeScript类型覆盖报告的命令行工具，基于type-coverage数据，提供详细的覆盖率报告和可定制阈值。
+这是一个用于生成 TypeScript 类型覆盖报告的命令行工具，基于 type-coverage 数据，提供详细的覆盖率报告和可定制阈值。
 
-- 📊 生成TypeScript类型覆盖报告，支持设置最低覆盖率阈值（默认80%）
+- 📊 生成 TypeScript 类型覆盖报告，支持设置最低覆盖率阈值（默认 80%）
 - ⚙️ 提供多种配置选项，包括输出目录、严格模式、调试信息和缓存功能
-- 🔧 可通过npm或yarn安装，支持本地项目安装和全局安装
-- 📝 遵循贡献者公约，采用Angular提交消息规范并欢迎emoji提交
-- 🌟 拥有508个star和33个fork，被1000+项目使用
-- 📄 使用MIT许可证开源，由17位贡献者共同维护
-- 🛠️ 主要开发语言为TypeScript（70.8%），支持TypeScript项目配置和文件忽略功能
+- 🔧 可通过 npm 或 yarn 安装，支持本地项目安装和全局安装
+- 📝 遵循贡献者公约，采用 Angular 提交消息规范并欢迎 emoji 提交
+- 🌟 拥有 508 个 star 和 33 个 fork，被 1000+ 项目使用
+- 📄 使用 MIT 许可证开源，由 17 位贡献者共同维护
+- 🛠️ 主要开发语言为 TypeScript（70.8%），支持 TypeScript 项目配置和文件忽略功能
 
 ---
 
@@ -208,15 +208,15 @@ PortNote 是一个用于跟踪和管理端口使用情况的开源工具，帮�
 
 文章概述了人工智能在医疗领域的应用现状与未来趋势，重点讨论了技术突破、实际应用场景和面临的挑战。
 
-- 🤖 AI辅助诊断系统显著提升医学影像分析准确率
+- 🤖 AI 辅助诊断系统显著提升医学影像分析准确率
 - 🧬 基因测序与大数据分析推动个性化医疗发展
 - ⚕️ 手术机器人和虚拟护士改善临床诊疗体验
 - 🔒 数据隐私和算法透明度成为行业关注焦点
-- 🌍 全球医疗资源分配不均问题有望通过AI技术缓解
+- 🌍 全球医疗资源分配不均问题有望通过 AI 技术缓解
 
 ---
 
-### [Chromium浏览器参数编辑器](https://params-editor.isolpro.in/)
+### [Chromium 浏览器参数编辑器](https://params-editor.isolpro.in/)
 
 **原文标题**: [Params Editor for Chromium Browsers](https://params-editor.isolpro.in/)
 
@@ -232,7 +232,7 @@ PortNote 是一个用于跟踪和管理端口使用情况的开源工具，帮�
 
 ---
 
-### [GitHub - surveyjs/react-axe-reporter: React Axe Reporter 是一个用于展示 axe-core（流行的网页可访问性审计工具）测试结果的UI组件。它提供交互式且视觉吸引人的界面，帮助开发者在SurveyJS表单中验证WCAG合规性。](https://github.com/surveyjs/react-axe-reporter)
+### [GitHub - surveyjs/react-axe-reporter: React Axe Reporter 是一个用于展示 axe-core（流行的网页可访问性审计工具）测试结果的 UI 组件。它提供交互式且视觉吸引人的界面，帮助开发者在 SurveyJS 表单中验证 WCAG 合规性。](https://github.com/surveyjs/react-axe-reporter)
 
 **原文标题**: [GitHub - surveyjs/react-axe-reporter: React Axe Reporter is a UI component that displays accessibility testing results from axe-core, a popular tool for auditing web accessibility. It provides an interactive and visually appealing UI to help developers validate WCAG compliance in SurveyJS forms.](https://github.com/surveyjs/react-axe-reporter)
 
@@ -253,13 +253,13 @@ React Axe Reporter 是一个基于 React 的 UI 组件，用于展示 axe-core �
 
 **原文标题**: [Broken-Links Scanner - Browser Extension](https://linkscan.app/)
 
-作者因管理大型网站时频繁遇到失效链接问题，开发了一款专注于内容区块检测的浏览器端工具，既能高效排查链接状态又保障隐私安全，现分享给内容管理者与SEO从业者使用。
+作者因管理大型网站时频繁遇到失效链接问题，开发了一款专注于内容区块检测的浏览器端工具，既能高效排查链接状态又保障隐私安全，现分享给内容管理者与 SEO 从业者使用。
 
 - 🔗 网站存在大量失效链接影响用户体验和搜索引擎排名
 - ⚙️ 现有工具全站扫描效率低且产生冗余报告
 - 🛠️ 自主开发工具可定向检测内容区块并识别重定向链接
 - 🔒 基于浏览器运行不收集数据，确保隐私安全
-- 📈 定期使用能提升SEO效果和网站健康度
+- 📈 定期使用能提升 SEO 效果和网站健康度
 - 🌟 未来计划增加全页面链接检测和无障碍分析功能
 - 💬 开放征集用户反馈与功能建议
 
@@ -284,7 +284,7 @@ be-a11y 是一个基于 Node.js 的命令行工具，用于自动化扫描和报
 
 ---
 
-### [GitHub - Kaliiiiiiiiii-Vinyzu/patchright: 未被检测的Playwright测试与自动化库版本](https://github.com/Kaliiiiiiiiii-Vinyzu/patchright)
+### [GitHub - Kaliiiiiiiiii-Vinyzu/patchright: 未被检测的 Playwright 测试与自动化库版本](https://github.com/Kaliiiiiiiiii-Vinyzu/patchright)
 
 **原文标题**: [GitHub - Kaliiiiiiiiii-Vinyzu/patchright: Undetected version of the Playwright testing and automation library.](https://github.com/Kaliiiiiiiiii-Vinyzu/patchright)
 
@@ -305,13 +305,13 @@ Patchright 是一个基于 Playwright 的无检测版本自动化测试框架，
 
 **原文标题**: [Meco: The #1 newsletter reader | Declutter your inbox](https://meco.app?utm_campaign=3nux)
 
-Meco是一款专为阅读设计的新闻邮件聚合工具，帮助用户将订阅内容从杂乱邮箱转移至专注阅读空间，并提供AI摘要、音频播客等智能功能。
+Meco 是一款专为阅读设计的新闻邮件聚合工具，帮助用户将订阅内容从杂乱邮箱转移至专注阅读空间，并提供 AI 摘要、音频播客等智能功能。
 
-- 📧 支持绑定Gmail/Outlook邮箱或使用专属Meco邮箱快速导入新闻邮件
-- 🎧 每日生成AI语音简报，自动提炼邮件重点内容供随时收听
+- 📧 支持绑定 Gmail/Outlook 邮箱或使用专属 Meco 邮箱快速导入新闻邮件
+- 🎧 每日生成 AI 语音简报，自动提炼邮件重点内容供随时收听
 - 🏷️ 提供智能筛选、分组标记和笔记高亮功能，构建个人知识库
 - 🔍 基于阅读偏好推荐个性化新闻邮件订阅内容
-- 📱 支持iOS/Android/网页多端同步，支持离线阅读
+- 📱 支持 iOS/Android/网页多端同步，支持离线阅读
 - 🚀 具备一键退订、每周精选摘要等效率工具
 - 💡 获行业专家认可，被称为"现代新闻邮件阅读的革命性工具"
 
@@ -321,16 +321,16 @@ Meco是一款专为阅读设计的新闻邮件聚合工具，帮助用户将订�
 
 **原文标题**: [Meco: The #1 newsletter reader | Declutter your inbox](https://meco.app?utm_campaign=3nux)
 
-Meco是一款专为阅读设计的新闻简报聚合工具，帮助用户将订阅内容从杂乱邮箱迁移至专注阅读空间，提升信息获取效率。
+Meco 是一款专为阅读设计的新闻简报聚合工具，帮助用户将订阅内容从杂乱邮箱迁移至专注阅读空间，提升信息获取效率。
 
-- 📧 支持绑定Gmail/Outlook邮箱或创建专属Meco邮箱来集中管理新闻简报
+- 📧 支持绑定 Gmail/Outlook 邮箱或创建专属 Meco 邮箱来集中管理新闻简报
 - 🎯 提供智能筛选与分组功能，精准呈现高相关性内容
-- 🎧 每日生成AI语音简报，支持离线收听与快速概览
+- 🎧 每日生成 AI 语音简报，支持离线收听与快速概览
 - 🔍 基于阅读偏好推荐个性化新闻简报源
 - 📖 内置标注、分类和笔记功能，构建个人知识库
-- 📱 支持iOS/Android/网页多端同步与离线阅读
+- 📱 支持 iOS/Android/网页多端同步与离线阅读
 - ✂️ 一键退订功能简化订阅管理流程
-- 🤖 支持AI文本摘要与每周精选内容推送
+- 🤖 支持 AI 文本摘要与每周精选内容推送
 
 ---
 
@@ -338,14 +338,14 @@ Meco是一款专为阅读设计的新闻简报聚合工具，帮助用户将订�
 
 **原文标题**: [Meco: The #1 newsletter reader | Declutter your inbox](https://meco.app?utm_campaign=3nux)
 
-Meco是一款专为阅读设计的新闻邮件聚合工具，帮助用户将订阅内容从杂乱邮箱转移至专注阅读空间，并提供AI摘要、音频播客等智能功能。
+Meco 是一款专为阅读设计的新闻邮件聚合工具，帮助用户将订阅内容从杂乱邮箱转移至专注阅读空间，并提供 AI 摘要、音频播客等智能功能。
 
-- 📧 支持绑定Gmail/Outlook邮箱或使用专属Meco邮箱快速导入新闻邮件
-- 🎧 每日生成AI语音简报，自动提炼新闻邮件核心内容供随时收听
+- 📧 支持绑定 Gmail/Outlook 邮箱或使用专属 Meco 邮箱快速导入新闻邮件
+- 🎧 每日生成 AI 语音简报，自动提炼新闻邮件核心内容供随时收听
 - 📖 提供智能筛选分组、高亮标注、知识收藏等功能优化阅读体验
 - 🔍 基于兴趣推荐个性化新闻邮件，支持一键退订冗余内容
-- 🌐 支持iOS/Android/网页多端同步，支持离线阅读模式
-- 🤖 具备AI文本摘要、周度精选推送等自动化内容处理功能
+- 🌐 支持 iOS/Android/网页多端同步，支持离线阅读模式
+- 🤖 具备 AI 文本摘要、周度精选推送等自动化内容处理功能
 
 ---
 
@@ -353,15 +353,15 @@ Meco是一款专为阅读设计的新闻邮件聚合工具，帮助用户将订�
 
 **原文标题**: [Formix | Connect Forms to Google Sheets](https://tryformix.vercel.app/)
 
-无缝集成Google表格，无需编程即可创建响应式表单并直接收集提交数据至表格中，提供拖拽式构建、一键连接和安全加密功能。
+无缝集成 Google 表格，无需编程即可创建响应式表单并直接收集提交数据至表格中，提供拖拽式构建、一键连接和安全加密功能。
 
 - 📝 拖拽式表单构建器，支持多种字段类型和自定义样式
-- 🔗 一键连接Google表格，自动匹配列并安全存储数据
+- 🔗 一键连接 Google 表格，自动匹配列并安全存储数据
 - 📱 响应式设计，适配所有设备且支持嵌入任意网站
 - 📊 内置提交数据分析功能，实时跟踪管理数据
 - 🔒 数据加密传输，隐私保护优先
 - 🆓 完全免费使用，无需注册或信用卡
-- ⭐ 用户评价极高，5分钟内即可完成表单与表格对接
+- ⭐ 用户评价极高，5 分钟内即可完成表单与表格对接
 
 ---
 
@@ -400,14 +400,14 @@ Meco是一款专为阅读设计的新闻邮件聚合工具，帮助用户将订�
 
 **原文标题**: [-=:[ WarGames Terminal Fonts ]:=-](https://mw.rat.bz/wgterm/)
 
-本文介绍了Michael Walden基于电影《WarGames》中的终端显示字体制作的复刻字体包，包含多种格式和尺寸的字体文件，适用于不同操作系统和网页使用。
+本文介绍了 Michael Walden 基于电影《WarGames》中的终端显示字体制作的复刻字体包，包含多种格式和尺寸的字体文件，适用于不同操作系统和网页使用。
 
-- 🎬 受电影《WarGames》中的终端显示启发，作者手动转录并补全了95个可打印ASCII字符字体
-- 🖥️ 字体包包含9个系统字体文件（.fon、.otf、.ttf）和6个网页字体文件（.woff、.woff2），分为Normal、Double、Raster三种样式
-- 🔧 使用FontForge等工具制作，解决了OS/2 Version 5的兼容性问题，推荐升级到v2.0版本
-- 🎨 建议搭配特定颜色方案使用（如#8AD2FF前景色/#262324背景色）以还原电影视觉效果
-- 📥 提供v2.0（65KB）和v1.0（50KB）版本下载，支持Windows、macOS和Linux系统
-- ©️ 采用CC BY-NC-SA 4.0许可协议，包含作者自创的未在电影中显示的14个字符
+- 🎬 受电影《WarGames》中的终端显示启发，作者手动转录并补全了 95 个可打印 ASCII 字符字体
+- 🖥️ 字体包包含 9 个系统字体文件（.fon、.otf、.ttf）和 6 个网页字体文件（.woff、.woff2），分为 Normal、Double、Raster 三种样式
+- 🔧 使用 FontForge 等工具制作，解决了 OS/2 Version 5 的兼容性问题，推荐升级到 v2.0 版本
+- 🎨 建议搭配特定颜色方案使用（如#8AD2FF 前景色/#262324 背景色）以还原电影视觉效果
+- 📥 提供 v2.0（65KB）和 v1.0（50KB）版本下载，支持 Windows、macOS 和 Linux 系统
+- ©️ 采用 CC BY-NC-SA 4.0 许可协议，包含作者自创的未在电影中显示的 14 个字符
 - 🌐 附详细电影终端场景文字转录对比和替代字体链接，供爱好者参考
 
 ---
@@ -416,14 +416,14 @@ Meco是一款专为阅读设计的新闻邮件聚合工具，帮助用户将订�
 
 **原文标题**: [Declarative secrets, every environment, any provider | SecretSpec](https://secretspec.dev/)
 
-SecretSpec通过声明式配置分离密钥声明与供给，解决传统密钥管理的耦合问题，提升可移植性和开发体验。
+SecretSpec 通过声明式配置分离密钥声明与供给，解决传统密钥管理的耦合问题，提升可移植性和开发体验。
 
-- 🔐 声明密钥需求：通过secretspec.toml文件定义密钥名称、描述和约束（必填/可选、默认值等），不存储实际密钥值
-- 🌐 多环境配置：支持通过profiles系统为开发/生产等环境设置不同的验证规则和默认值，无需修改代码
-- 🚪 灵活供给源：支持Keyring/.env/OnePassword等多种密钥提供商，运行时动态获取密钥，实现供应商无锁定
-- 📦 无缝迁移：提供CLI工具一键跨供应商迁移密钥，降低运维成本
-- 🦀 类型安全：Rust SDK根据配置生成强类型结构体，实现编译时密钥访问验证
-- 🔧 生态工具链：提供init/check/set等命令行工具，支持从现有.env文件初始化配置
+- 🔐 声明密钥需求：通过 secretspec.toml 文件定义密钥名称、描述和约束（必填/可选、默认值等），不存储实际密钥值
+- 🌐 多环境配置：支持通过 profiles 系统为开发/生产等环境设置不同的验证规则和默认值，无需修改代码
+- 🚪 灵活供给源：支持 Keyring/.env/OnePassword 等多种密钥提供商，运行时动态获取密钥，实现供应商无锁定
+- 📦 无缝迁移：提供 CLI 工具一键跨供应商迁移密钥，降低运维成本
+- 🦀 类型安全：Rust SDK 根据配置生成强类型结构体，实现编译时密钥访问验证
+- 🔧 生态工具链：提供 init/check/set 等命令行工具，支持从现有.env 文件初始化配置
 
 ---
 
@@ -431,10 +431,10 @@ SecretSpec通过声明式配置分离密钥声明与供给，解决传统密钥�
 
 **原文标题**: [ohyaml.wtf](https://www.ohyaml.wtf/)
 
-该应用需要启用JavaScript才能正常运行。
+该应用需要启用 JavaScript 才能正常运行。
 
-- 🚫 无法直接使用：未启用JavaScript时应用无法启动
-- ⚙️ 技术依赖：运行完全依赖JavaScript环境支持
+- 🚫 无法直接使用：未启用 JavaScript 时应用无法启动
+- ⚙️ 技术依赖：运行完全依赖 JavaScript 环境支持
 - 📱 交互需求：应用需要客户端脚本支持实现交互功能
 
 ---
@@ -443,48 +443,48 @@ SecretSpec通过声明式配置分离密钥声明与供给，解决传统密钥�
 
 **原文标题**: [GitHub - ksamirdev/schedy: An open source, self-hostable, ultra-lightweight HTTP task scheduler for the weird and wonderful automation you want.](https://github.com/ksamirdev/schedy)
 
-一个开源、可自托管、超轻量的HTTP任务调度器，专为各种奇特自动化需求设计，支持自定义HTTP请求调度。
+一个开源、可自托管、超轻量的 HTTP 任务调度器，专为各种奇特自动化需求设计，支持自定义 HTTP 请求调度。
 
-- 🚀 支持未来任意时间调度HTTP POST任务，可自定义请求头和多种载荷格式
-- 🪶 超轻量设计：单二进制文件，仅依赖BadgerDB，无外部依赖
-- 🏠 完全自托管：支持Linux/macOS/Windows系统及ARM/x86架构
-- 🔧 提供Docker快速部署方式，支持GitHub Container Registry和Docker Hub
-- 🔒 可选API密钥安全验证，通过X-API-Key头进行认证
-- 📋 简单REST API接口，支持任务创建、列表查看等操作
-- 🌟 开源MIT协议，拥有41个星标和1个分支，社区活跃
+- 🚀 支持未来任意时间调度 HTTP POST 任务，可自定义请求头和多种载荷格式
+- 🪶 超轻量设计：单二进制文件，仅依赖 BadgerDB，无外部依赖
+- 🏠 完全自托管：支持 Linux/macOS/Windows 系统及 ARM/x86 架构
+- 🔧 提供 Docker 快速部署方式，支持 GitHub Container Registry 和 Docker Hub
+- 🔒 可选 API 密钥安全验证，通过 X-API-Key 头进行认证
+- 📋 简单 REST API 接口，支持任务创建、列表查看等操作
+- 🌟 开源 MIT 协议，拥有 41 个星标和 1 个分支，社区活跃
 
 ---
 
-### [Rybbit分析 | Rybbit](https://www.rybbit.io/)
+### [Rybbit 分析 | Rybbit](https://www.rybbit.io/)
 
 **原文标题**: [Rybbit Analytics | Rybbit](https://www.rybbit.io/)
 
-一款开源、轻量级、无Cookie的下一代网站与产品分析工具，提供实时数据、会话回放和用户行为分析，免费额度支持每月10,000次事件跟踪。  
-- 🌐 开源替代方案：可替代Google Analytics，支持无Cookie追踪和隐私合规  
-- 🆓 免费额度：每月前10,000次事件免费，无需绑定信用卡  
+一款开源、轻量级、无 Cookie 的下一代网站与产品分析工具，提供实时数据、会话回放和用户行为分析，免费额度支持每月 10,000 次事件跟踪。  
+- 🌐 开源替代方案：可替代 Google Analytics，支持无 Cookie 追踪和隐私合规  
+- 🆓 免费额度：每月前 10,000 次事件免费，无需绑定信用卡  
 - 📊 实时分析：即时更新数据，显示在线访客动态（如国家、访问页面、行为事件）  
 - ▶️ 会话回放：记录用户完整操作流程，支持点击轨迹和痛点分析  
-- ⚡ 性能监控：监测Core Web Vitals指标（LCP、FID、CLS等）并评分  
+- ⚡ 性能监控：监测 Core Web Vitals 指标（LCP、FID、CLS 等）并评分  
 - 👤 用户画像：追踪用户首次/末次访问时间、会话量、页面浏览历史  
 - 🔍 行为路径分析：可视化用户导航路径（如“首页→商品页→支付”转化漏斗）  
 - 📈 趋势热力图：通过小时/天维度热力图展示用户活跃时段分布  
-- 🎯 事件追踪：支持自定义事件（如按钮点击、表单提交）及AB测试参数记录  
+- 🎯 事件追踪：支持自定义事件（如按钮点击、表单提交）及 AB 测试参数记录  
 - 💡 目标转化：设置并追踪关键目标转化率（如注册、购买、联系支持）  
 - 🔌 快速集成：兼容多平台，支持分钟级部署  
-- 💰 透明定价：免费版支持3个网站，专业版（$19/月起）含无限网站和全功能
+- 💰 透明定价：免费版支持 3 个网站，专业版（$19/月起）含无限网站和全功能
 
 ---
 
-### [联系Web工具周刊](https://webtoolsweekly.com/contact?opt=classifieds)
+### [联系 Web 工具周刊](https://webtoolsweekly.com/contact?opt=classifieds)
 
 **原文标题**: [Contact Web Tools Weekly](https://webtoolsweekly.com/contact?opt=classifieds)
 
-欢迎联系咨询Web Tools Weekly广告合作事宜，可通过指定表单提交广告需求，其他类型咨询可通过社交媒体或邮件沟通。
+欢迎联系咨询 Web Tools Weekly 广告合作事宜，可通过指定表单提交广告需求，其他类型咨询可通过社交媒体或邮件沟通。
 
 - 📋 广告合作需通过官方网站查看《Advertising Plans》并填写专用表单
 - 📩 广告位预订需提供姓名、邮箱、推广链接及具体广告方案
 - 🎯 提供六种广告形式：置顶图文/付费测评/中部图片广告/文本链接组合/分类列表/广告置换
-- ✉️ 非广告类咨询可通过X/Bluesky私信或回复新闻邮件进行沟通
+- ✉️ 非广告类咨询可通过 X/Bluesky 私信或回复新闻邮件进行沟通
 - ⚠️ 广告咨询表单仅接收商业合作需求，其他问询需通过社交渠道处理
 
 ---
@@ -505,23 +505,23 @@ SecretSpec通过声明式配置分离密钥声明与供给，解决传统密钥�
 
 - 📧 每日分析数千篇文章并推送精选内容
 - ✉️ 需验证邮箱地址以确保正常接收
-- 👥 已获得50万+求知用户的高度认可
-- ⭐ 用户评分高达4.9/5星卓越口碑
+- 👥 已获得 50 万 + 求知用户的高度认可
+- ⭐ 用户评分高达 4.9/5 星卓越口碑
 
 ---
 
-### [企业语音AI：语音识别、语音合成与智能代理API | Deepgram](https://deepgram.com/)
+### [企业语音 AI：语音识别、语音合成与智能代理 API | Deepgram](https://deepgram.com/)
 
 **原文标题**: [Enterprise Voice AI: STT, TTS & Agent APIs | Deepgram](https://deepgram.com/)
 
-Nova-3语音AI平台新增三种语言支持，为企业提供高精度、低成本的多语言语音处理解决方案。
+Nova-3 语音 AI 平台新增三种语言支持，为企业提供高精度、低成本的多语言语音处理解决方案。
 
-- 🗣️ 新增多语言支持：Nova-3语音AI平台现已扩展支持三种新语言
-- 🏢 企业级应用：提供语音转文本、文本转语音和语音代理API，受20万+开发者信任
+- 🗣️ 新增多语言支持：Nova-3 语音 AI 平台现已扩展支持三种新语言
+- 🏢 企业级应用：提供语音转文本、文本转语音和语音代理 API，受 20 万 + 开发者信任
 - ⚡ 高性能处理：支持实时和批量处理，提供云端和本地部署方案
-- 💰 免费体验：新用户注册即赠200美元信用额度，无需信用卡
-- 🔧 多功能API：包含语音代理、语音转录、音频智能分析和文本合成四大核心功能
-- 🌐 规模化解诀方案：为企业和初创公司提供安全可靠的大规模语音AI服务
+- 💰 免费体验：新用户注册即赠 200 美元信用额度，无需信用卡
+- 🔧 多功能 API：包含语音代理、语音转录、音频智能分析和文本合成四大核心功能
+- 🌐 规模化解诀方案：为企业和初创公司提供安全可靠的大规模语音 AI 服务
 - 🎯 精准转录：支持实时语音转文本，避免拼写错误和自动校正问题
 - 📊 企业案例：已被全球顶级企业和初创公司采用，提供实际应用场景验证
 
@@ -531,44 +531,44 @@ Nova-3语音AI平台新增三种语言支持，为企业提供高精度、低成
 
 **原文标题**: [Dynatrace | Understand your business like never before](https://www.dynatrace.com/)
 
-Dynatrace作为AI驱动的可观测性平台领导者，通过人工智能技术帮助企业将复杂数据转化为业务优势，提供全方位的监控、安全与业务洞察解决方案。
+Dynatrace 作为 AI 驱动的可观测性平台领导者，通过人工智能技术帮助企业将复杂数据转化为业务优势，提供全方位的监控、安全与业务洞察解决方案。
 
-- 🚀 利用AI驱动的统一可观测性平台实现系统自动化分析与创新
-- ☁️ 提供端到端基础设施监控，支持多云环境与715+技术集成
+- 🚀 利用 AI 驱动的统一可观测性平台实现系统自动化分析与创新
+- ☁️ 提供端到端基础设施监控，支持多云环境与 715+ 技术集成
 - 🔒 集成应用安全与威胁可观测功能，实时防护已知/未知漏洞
 - 📊 通过数字体验监控和日志分析优化用户体验与业务流程
-- 🏆 获评2025年Gartner可观测性平台魔力象限执行能力最高领导者
+- 🏆 获评 2025 年 Gartner 可观测性平台魔力象限执行能力最高领导者
 - 💡 客户案例证实其加速创新、提升代码质量与客户满意度的实效
 - 🌐 提供开放式沙盒环境（Playground）供用户零安装体验平台功能
 
 ---
 
-### [VSCode.Email | 聚焦VS Code应用、新闻与技巧的资讯简报](https://vscode.email/)
+### [VSCode.Email | 聚焦 VS Code 应用、新闻与技巧的资讯简报](https://vscode.email/)
 
 **原文标题**: [VSCode.Email | A Newsletter featuring apps, news, tips, and tricks for VS Code](https://vscode.email/)
 
-一份关于VS Code和IDE的新闻与技巧的订阅服务，提供每周最多一封邮件的更新，已有2031名订阅者加入。  
-- 📧 订阅获取VS Code和IDE相关新闻与技巧  
-- 👥 已有2031位订阅者加入  
+一份关于 VS Code 和 IDE 的新闻与技巧的订阅服务，提供每周最多一封邮件的更新，已有 2031 名订阅者加入。  
+- 📧 订阅获取 VS Code 和 IDE 相关新闻与技巧  
+- 👥 已有 2031 位订阅者加入  
 - ⏰ 每周最多发送一封邮件，无垃圾内容  
-- 🔒 遵循隐私政策，数据由EmailOctopus处理  
+- 🔒 遵循隐私政策，数据由 EmailOctopus 处理  
 - ✅ 订阅即同意服务条款和隐私政策
 
 ---
 
-### [PeachWeb I 无需代码打造惊艳交互式3D网站](https://peachweb.io/)
+### [PeachWeb I 无需代码打造惊艳交互式 3D 网站](https://peachweb.io/)
 
 **原文标题**: [PeachWeb I Stunning Interactive 3D Websites Without Code](https://peachweb.io/)
 
-PeachWeb是一个无代码的WebGL 3D网站构建平台，旨在帮助用户轻松创建交互式3D网站，适用于电商、创意展示和故事叙述等多种场景。
+PeachWeb 是一个无代码的 WebGL 3D 网站构建平台，旨在帮助用户轻松创建交互式 3D 网站，适用于电商、创意展示和故事叙述等多种场景。
 
-- 🚀 无代码构建：无需编程知识，通过拖放工具和关键帧动画制作精美3D网站
+- 🚀 无代码构建：无需编程知识，通过拖放工具和关键帧动画制作精美 3D 网站
 - 🛒 电商优化：创建高交互性产品页面以提升转化率和用户参与度
 - 🎨 创意展示：为创意科技行业和作品集提供突出视觉表现力的解决方案
-- 📖 沉浸式叙事：通过滚动触发3D场景和交互动画增强故事叙述效果
-- 💰 灵活定价：提供专业服务方案，专家制作起价9,000美元
-- 🏆 获奖认可：四次荣获"无代码月度网站"奖，被预测为2025年顶级网页设计趋势
-- 👥 专业支持：提供专家定制服务、教程、模板市场和Discord社区支持
+- 📖 沉浸式叙事：通过滚动触发 3D 场景和交互动画增强故事叙述效果
+- 💰 灵活定价：提供专业服务方案，专家制作起价 9,000 美元
+- 🏆 获奖认可：四次荣获"无代码月度网站"奖，被预测为 2025 年顶级网页设计趋势
+- 👥 专业支持：提供专家定制服务、教程、模板市场和 Discord 社区支持
 - ⚡ 快速交付：采用三步骤流程，最快一周即可完成网站制作
 
 ---
@@ -577,23 +577,23 @@ PeachWeb是一个无代码的WebGL 3D网站构建平台，旨在帮助用户轻�
 
 **原文标题**: [Lovable](https://lovable.dev/)
 
-构建可通过与AI对话来创建应用和网站的可喜爱产品。
+构建可通过与 AI 对话来创建应用和网站的可喜爱产品。
 
-- 💬 通过聊天与AI交互开发应用
+- 💬 通过聊天与 AI 交互开发应用
 - 🌐 支持网站和应用创建功能  
 - ❤️ 注重打造用户喜爱的产品体验
 
 ---
 
-### [Bluesky上的@safety.bsky.app](https://bsky.app/profile/safety.bsky.app/post/3lyjbpivaoc2d)
+### [Bluesky 上的@safety.bsky.app](https://bsky.app/profile/safety.bsky.app/post/3lyjbpivaoc2d)
 
 **原文标题**: [@safety.bsky.app on Bluesky](https://bsky.app/profile/safety.bsky.app/post/3lyjbpivaoc2d)
 
-这是一个关于Blusky社交平台安全准则的声明，强调禁止美化暴力的内容并说明其互动特性。
+这是一个关于 Blusky 社交平台安全准则的声明，强调禁止美化暴力的内容并说明其互动特性。
 
-- 🌐 这是一个高度交互的网络应用，必须启用JavaScript才能使用
-- 📖 可通过bsky.social和atproto.com了解更多关于Bluesky的信息  
-- ⚠️ 美化暴力或伤害行为违反Bluesky社区准则
+- 🌐 这是一个高度交互的网络应用，必须启用 JavaScript 才能使用
+- 📖 可通过 bsky.social 和 atproto.com 了解更多关于 Bluesky 的信息  
+- ⚠️ 美化暴力或伤害行为违反 Bluesky 社区准则
 - 👮 平台会审核举报并对宣扬暴力的内容采取行动
 - 💬 致力于促进健康、开放的对话环境，反对暴力出现在公共讨论中
 
@@ -603,10 +603,10 @@ PeachWeb是一个无代码的WebGL 3D网站构建平台，旨在帮助用户轻�
 
 **原文标题**: [No title found](https://x.com/LouisLazaris)
 
-浏览器检测到JavaScript被禁用，无法正常使用x.com平台，建议启用JavaScript或更换支持的浏览器，也可检查隐私扩展插件是否造成干扰。
+浏览器检测到 JavaScript 被禁用，无法正常使用 x.com 平台，建议启用 JavaScript 或更换支持的浏览器，也可检查隐私扩展插件是否造成干扰。
 
-- 🚫 JavaScript未启用导致功能受限
-- 🌐 建议启用JavaScript或切换至支持的浏览器  
+- 🚫 JavaScript 未启用导致功能受限
+- 🌐 建议启用 JavaScript 或切换至支持的浏览器  
 - 🔧 隐私扩展插件可能引发访问问题
 - 📖 支持浏览器列表详见帮助中心
 - 🔄 提供"重试"操作选项
@@ -617,42 +617,42 @@ PeachWeb是一个无代码的WebGL 3D网站构建平台，旨在帮助用户轻�
 
 **原文标题**: [@louislazaris.com on Bluesky](https://bsky.app/profile/louislazaris.com)
 
-这是一个关于前端开发者Louis Lazaris在Bluesky社交平台上个人简介的摘要，强调其互动性网页应用特性与个人专业链接。
+这是一个关于前端开发者 Louis Lazaris 在 Bluesky 社交平台上个人简介的摘要，强调其互动性网页应用特性与个人专业链接。
 
-- 🌐 这是一个高度交互式的网页应用，需要启用JavaScript才能正常使用
-- 👨‍💻 Louis Lazaris是前端开发者和新闻通讯策划人
-- 📧 主要项目包括Webtools周刊、Tech Productivity、VS Code邮件和个人网站
-- 🎸 额外拥有专门为吉他手设立的YouTube频道Tunejotter
+- 🌐 这是一个高度交互式的网页应用，需要启用 JavaScript 才能正常使用
+- 👨‍💻 Louis Lazaris 是前端开发者和新闻通讯策划人
+- 📧 主要项目包括 Webtools 周刊、Tech Productivity、VS Code 邮件和个人网站
+- 🎸 额外拥有专门为吉他手设立的 YouTube 频道 Tunejotter
 - 🔗 个人数字身份标识符：did:plc:6if43vohxmohxuooa7bkkw5q
-- ℹ️ 可通过bsky.social和atproto.com了解更多关于Bluesky平台的信息
+- ℹ️ 可通过 bsky.social 和 atproto.com 了解更多关于 Bluesky 平台的信息
 
 ---
 
-### [提交工具至Web工具周刊](https://webtoolsweekly.com/submit)
+### [提交工具至 Web 工具周刊](https://webtoolsweekly.com/submit)
 
 **原文标题**: [Submit a Tool to Web Tools Weekly](https://webtoolsweekly.com/submit)
 
-本文邀请前端开发者通过X或Bluesky平台提交实用工具推荐，涵盖多种开发相关资源类型。
+本文邀请前端开发者通过 X 或 Bluesky 平台提交实用工具推荐，涵盖多种开发相关资源类型。
 
-- 📮 可通过X平台私信@LouisLazaris或Bluesky平台@LouisLazaris.com提交工具
-- 🧰 接受提交类型包括库/框架/插件/脚本/Web应用/桌面应用/移动应用/API/编辑器等
+- 📮 可通过 X 平台私信@LouisLazaris 或 Bluesky 平台@LouisLazaris.com 提交工具
+- 🧰 接受提交类型包括库/框架/插件/脚本/Web 应用/桌面应用/移动应用/API/编辑器等
 - 🚫 明确排除文章和教程类内容
 - 📊 生产力工具需提交至独立通讯《Tech Productivity》
 - 👨💻 目标受众为网页开发者、程序员和设计师群体
 
 ---
 
-### [ZaneH钢琴训练器](https://zaneh.itch.io/piano-trainer)
+### [ZaneH 钢琴训练器](https://zaneh.itch.io/piano-trainer)
 
 **原文标题**: [Piano Trainer by ZaneH](https://zaneh.itch.io/piano-trainer)
 
-Piano Trainer是一款跨平台开源工具，帮助用户通过MIDI或QWERTY键盘自主学习钢琴音阶与和弦，提供测验和练习两种模式，支持多语言并内置钢琴音效。
+Piano Trainer 是一款跨平台开源工具，帮助用户通过 MIDI 或 QWERTY 键盘自主学习钢琴音阶与和弦，提供测验和练习两种模式，支持多语言并内置钢琴音效。
 
 - 🎹 提供测验模式（测试五度圈和音调识别）与练习模式（含音阶、和弦、五度互动练习）
 - 🎮 特色功能包含乒乓模式（正反向弹奏音阶）、困难模式（隐藏下一个音符）和随机模式（完成后切换音阶）
 - 🌍 支持多语言（含英语、法语、日语、德语、葡萄牙语和中文）并内置钢琴音效
-- 💻 跨平台兼容Windows、macOS和Linux系统，开源代码采用MIT许可证
-- ⬇️ 可自由定价下载，提供.msi、.dmg和.AppImage三种格式安装文件
+- 💻 跨平台兼容 Windows、macOS 和 Linux 系统，开源代码采用 MIT 许可证
+- ⬇️ 可自由定价下载，提供.msi、.dmg 和.AppImage 三种格式安装文件
 
 ---
 
@@ -660,10 +660,10 @@ Piano Trainer是一款跨平台开源工具，帮助用户通过MIDI或QWERTY键
 
 **原文标题**: [No title found](https://x.com/LouisLazaris)
 
-浏览器检测到JavaScript被禁用，提示用户启用JavaScript或更换支持的浏览器以继续使用x.com，并提供相关帮助链接和故障排除建议。
+浏览器检测到 JavaScript 被禁用，提示用户启用 JavaScript 或更换支持的浏览器以继续使用 x.com，并提供相关帮助链接和故障排除建议。
 
-- 🚫 JavaScript未启用
-- 🌐 建议启用JavaScript或更换浏览器
+- 🚫 JavaScript 未启用
+- 🌐 建议启用 JavaScript 或更换浏览器
 - 🔗 提供帮助中心与政策链接
 - ⚠️ 隐私扩展可能导致问题
 - 🔄 可尝试禁用扩展后重试
