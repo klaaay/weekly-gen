@@ -9,7 +9,7 @@ services:
     container_name: weekly-gen
     restart: unless-stopped
     environment:
-      - TASK_INTERVAL_SECONDS=300
+      - TASK_INTERVAL_SECONDS=3600
       - WORKDIR=/app
       - RUNNING_IN_CONTAINER=1
       - RUN_CMD=python -m src.main -w 8 --all
