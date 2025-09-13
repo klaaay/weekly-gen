@@ -176,6 +176,79 @@ cat last_run_info.json
 - 执行耗时
 - 错误详情
 
+## 服务化与部署（FastAPI + uv + Docker）
+
+- 服务：基于 FastAPI，启动后会在后台每 5 分钟尝试执行 `python main.py -w 8 --all`（避免并发重叠）。
+- 依赖管理：通过 `uv` 按 `pyproject.toml` 同步安装。
+- 日志：运行日志保存至 `outputs/service_logs/`，最近一次运行日志路径会在 `/status` 返回。
+
+### 本地运行（uv）
+
+```bash
+# 同步依赖
+uv sync
+
+# 启动服务（默认 8000 端口）
+uv run uvicorn app.server:app --host 0.0.0.0 --port 8000
+
+# 环境变量可配置间隔（默认 300 秒）
+TASK_INTERVAL_SECONDS=600 uv run uvicorn app.server:app --host 0.0.0.0 --port 8000
+```
+
+接口：
+- `GET /healthz`：健康检查
+- `GET /status`：查看后台任务状态
+- `POST /run-now`：立即触发一次执行（若正在运行会返回 409）
+
+### Docker 运行
+
+```bash
+docker build -t weekly-gen:latest .
+docker run --rm -p 8000:8000 \
+  -e TASK_INTERVAL_SECONDS=300 \
+  -v "$(pwd)/outputs:/app/outputs" \
+  -v "$(pwd)/last_run_info.json:/app/last_run_info.json" \
+  --name weekly-gen weekly-gen:latest
+```
+
+### 打镜像（构建与推送）
+
+使用 Compose（支持自定义镜像名与标签）：
+
+```bash
+# 构建
+IMAGE_NAME=yourrepo/weekly-gen IMAGE_TAG=$(git rev-parse --short HEAD) docker compose build
+
+# 推送（需先登录到对应 Registry）
+IMAGE_NAME=yourrepo/weekly-gen IMAGE_TAG=$(git rev-parse --short HEAD) docker compose push
+```
+
+或使用 Makefile（简化命令）：
+
+```bash
+# 构建
+make build IMAGE_NAME=yourrepo/weekly-gen IMAGE_TAG=$(git rev-parse --short HEAD)
+
+# 推送
+make push IMAGE_NAME=yourrepo/weekly-gen IMAGE_TAG=$(git rev-parse --short HEAD)
+```
+
+### docker-compose 部署
+
+项目已提供 `docker-compose.yml`，默认将容器内的 `/app/outputs` 映射到宿主机 `./outputs`。
+
+```bash
+docker compose up -d --build
+```
+
+> 说明：项目中实际使用的目录为 `outputs/`（复数）。如需与文档中 `output/`（单数）保持一致，请调整 compose 映射或脚本中的输出目录。
+
+### 代理注意事项（容器）
+
+脚本中默认代理为 `127.0.0.1:7897`，在容器内这通常不可用。若需复用宿主机代理：
+- macOS/Windows（Docker Desktop）：可将代理地址改为 `http://host.docker.internal:7897`
+- Linux：请在宿主与容器网络间配置可达地址，或在容器内运行代理
+
 ## 贡献
 
 欢迎提交 Issue 和 Pull Request 来改进这个项目！

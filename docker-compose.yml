@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  weekly-gen:
+    image: ${IMAGE_NAME:-weekly-gen}:${IMAGE_TAG:-latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: weekly-gen
+    restart: unless-stopped
+    environment:
+      - TASK_INTERVAL_SECONDS=300
+      - WORKDIR=/app
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      # Map outputs directory so results/logs persist on host
+      - ./outputs:/app/outputs
+      # Optionally persist the last run info JSON
+      - ./last_run_info.json:/app/last_run_info.json
+      # Optionally make .env available inside the container filesystem
+      - ./.env:/app/.env:ro
