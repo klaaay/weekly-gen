@@ -154,7 +154,10 @@ cat last_run_info.json
 
 ## 注意事项
 
-1. **网络代理**: 脚本默认使用 `127.0.0.1:7897` 代理，请根据需要修改
+1. **网络代理**: 代理逻辑已集中在 `utils/proxy.py`。默认：
+   - 容器内：`http://host.docker.internal:7897`
+   - 容器外：`http://127.0.0.1:7897`
+   可通过环境变量覆盖：`PROXY_URL` 或 `PROXY_HOST`/`PROXY_PORT`/`PROXY_SCHEME`，或标准 `HTTP_PROXY`/`HTTPS_PROXY`。
 2. **API 限制**: 注意 DeepSeek API 的调用频率限制
 3. **超时设置**: 单个脚本执行超时时间为 5 分钟
 4. **错误处理**: 系统具有完善的错误处理和重试机制
@@ -245,9 +248,9 @@ docker compose up -d --build
 
 ### 代理注意事项（容器）
 
-脚本中默认代理为 `127.0.0.1:7897`，在容器内这通常不可用。若需复用宿主机代理：
-- macOS/Windows（Docker Desktop）：可将代理地址改为 `http://host.docker.internal:7897`
-- Linux：请在宿主与容器网络间配置可达地址，或在容器内运行代理
+容器内已通过 compose 添加 `extra_hosts: host.docker.internal:host-gateway`，可直接使用宿主机代理。若需自定义：
+- 设置 `PROXY_URL`（例如：`http://host.docker.internal:7897`）或标准 `HTTP_PROXY`/`HTTPS_PROXY`。
+- Linux 环境若不支持 `host.docker.internal`，请确保 Docker 版本支持 `host-gateway`，或手动配置网络。
 
 ## 贡献
 

@@ -1,0 +1,45 @@
+[start] 2025-09-13T20:16:14.119408+00:00
+[cmd] /app/.venv/bin/python3 main.py -w 8 --all
+[20:16:14] 准备执行 8 个爬虫脚本，最大并发数：8
+[20:16:14] ============================================================
+[20:16:14] 开始执行：Frontend Focus
+Using proxy: http://127.0.0.1:7897[20:16:14] 开始执行：JavaScript Weekly
+
+Using proxy: http://127.0.0.1:7897
+[20:16:14] 开始执行：Next.js Weekly
+Using proxy: http://127.0.0.1:7897[20:16:14] 开始执行：Node Weekly
+
+Using proxy: http://127.0.0.1:7897[20:16:14] 开始执行：React Weekly
+
+Using proxy: http://127.0.0.1:7897
+[20:16:14] 开始执行：React Digest
+[20:16:14] 开始执行：Web Tools Weekly
+Using proxy: http://127.0.0.1:7897
+Using proxy: http://127.0.0.1:7897
+[20:16:14] 开始执行：This Week in React
+Using proxy: http://127.0.0.1:7897
+Fetching content from: https://thisweekinreact.com/newsletter
+发生错误：HTTPSConnectionPool(host='thisweekinreact.com', port=443): Max retries exceeded with url: /newsletter (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xffffa89564e0>: Failed to establish a new connection: [Errno 111] Connection refused')))
+[20:16:14] ✅ This Week in React 执行成功 (耗时：0.00秒)
+[20:16:14] ❌ Frontend Focus 执行失败：HTTPSConnectionPool(host='frontendfoc.us', port=443): Max retries exceeded with url: /issues (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xffffa890bec0>: Failed to establish a new connection: [Errno 111] Connection refused')))
+[20:16:14] ❌ JavaScript Weekly 执行失败：HTTPSConnectionPool(host='javascriptweekly.com', port=443): Max retries exceeded with url: /issues (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xffffa8954650>: Failed to establish a new connection: [Errno 111] Connection refused')))
+[20:16:14] ❌ Node Weekly 执行失败：HTTPSConnectionPool(host='nodeweekly.com', port=443): Max retries exceeded with url: /issues (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xffffa8923770>: Failed to establish a new connection: [Errno 111] Connection refused')))
+[20:16:14] ❌ Next.js Weekly 执行失败：HTTPSConnectionPool(host='nextjsweekly.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xffffa89546b0>: Failed to establish a new connection: [Errno 111] Connection refused')))
+[20:16:14] ❌ Web Tools Weekly 执行失败：HTTPSConnectionPool(host='webtoolsweekly.com', port=443): Max retries exceeded with url: /archive (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xffffa8955ca0>: Failed to establish a new connection: [Errno 111] Connection refused')))
+[20:16:14] ❌ React Digest 执行失败：HTTPSConnectionPool(host='reactdigest.net', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xffffa8955790>: Failed to establish a new connection: [Errno 111] Connection refused')))
+[20:16:14] ❌ React Weekly 执行失败：HTTPSConnectionPool(host='react.statuscode.com', port=443): Max retries exceeded with url: /issues (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xffffa8955b50>: Failed to establish a new connection: [Errno 111] Connection refused')))
+[20:16:14] ============================================================
+[20:16:14] 执行完成！总耗时：0.01秒
+[20:16:14] 成功：1 个，失败：7 个
+[20:16:14] 
+📊 详细结果：
+[20:16:14]   ✅ This Week in React 执行成功 (耗时：0.00秒)
+[20:16:14]   ❌ Frontend Focus 执行失败：HTTPSConnectionPool(host='frontendfoc.us', port=443): Max retries exceeded with url: /issues (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xffffa890bec0>: Failed to establish a new connection: [Errno 111] Connection refused')))
+[20:16:14]   ❌ JavaScript Weekly 执行失败：HTTPSConnectionPool(host='javascriptweekly.com', port=443): Max retries exceeded with url: /issues (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xffffa8954650>: Failed to establish a new connection: [Errno 111] Connection refused')))
+[20:16:14]   ❌ Node Weekly 执行失败：HTTPSConnectionPool(host='nodeweekly.com', port=443): Max retries exceeded with url: /issues (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xffffa8923770>: Failed to establish a new connection: [Errno 111] Connection refused')))
+[20:16:14]   ❌ Next.js Weekly 执行失败：HTTPSConnectionPool(host='nextjsweekly.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xffffa89546b0>: Failed to establish a new connection: [Errno 111] Connection refused')))
+[20:16:14]   ❌ Web Tools Weekly 执行失败：HTTPSConnectionPool(host='webtoolsweekly.com', port=443): Max retries exceeded with url: /archive (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xffffa8955ca0>: Failed to establish a new connection: [Errno 111] Connection refused')))
+[20:16:14]   ❌ React Digest 执行失败：HTTPSConnectionPool(host='reactdigest.net', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xffffa8955790>: Failed to establish a new connection: [Errno 111] Connection refused')))
+[20:16:14]   ❌ React Weekly 执行失败：HTTPSConnectionPool(host='react.statuscode.com', port=443): Max retries exceeded with url: /issues (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xffffa8955b50>: Failed to establish a new connection: [Errno 111] Connection refused')))
+
+[finish] 2025-09-13T20:16:14.513723+00:00 rc=1 duration=0.394s

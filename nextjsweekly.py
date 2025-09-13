@@ -6,6 +6,7 @@ import os
 from urllib.parse import urlparse, urljoin
 from openai import OpenAI
 from dotenv import load_dotenv
+from utils.proxy import get_proxies, proxy_for_log
 from utils.extract_links_and_summarize import extract_links_and_summarize
 from utils.deepseek_api import translate_title_to_chinese, summarize_with_deepseek
 from utils.last_run_tracker import check_and_skip_if_same_issue, create_issue_info, update_last_run_info
@@ -112,13 +113,10 @@ def scrape_nextjsweekly():
     }
     
     # Set up proxy
-    proxies = {
-        'http': 'http://127.0.0.1:7897',
-        'https': 'http://127.0.0.1:7897'
-    }
+    proxies = get_proxies()
     
     # Send GET request to the URL
-    print(f"Using proxy: http://127.0.0.1:7897")
+    print(f"Using proxy: {proxy_for_log()}")
     response = requests.get(url, headers=headers, proxies=proxies)
     
     # Check if the request was successful

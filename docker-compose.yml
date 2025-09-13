@@ -11,10 +11,13 @@ services:
     environment:
       - TASK_INTERVAL_SECONDS=300
       - WORKDIR=/app
+      - RUNNING_IN_CONTAINER=1
     env_file:
       - .env
     ports:
       - "8000:8000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     volumes:
       # Map outputs directory so results/logs persist on host
       - ./outputs:/app/outputs
