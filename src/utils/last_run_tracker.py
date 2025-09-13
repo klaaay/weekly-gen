@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Moved to src/utils (package layout)
 """
 上次运行信息跟踪器
 用于记录和检查各个脚本的上次运行信息，避免重复处理相同的内容

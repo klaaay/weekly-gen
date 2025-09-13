@@ -42,7 +42,8 @@ class JobScheduler:
         self.interval_seconds = interval_seconds
         self.workdir = workdir
         self.log_dir = log_dir
-        self.command = command or [sys.executable, "main.py", "-w", "8", "--all"]
+        # Default to running the module from src
+        self.command = command or [sys.executable, "-m", "src.main", "-w", "8", "--all"]
 
         # internal state
         self._state = RunState()

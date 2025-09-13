@@ -15,10 +15,10 @@ COPY . .
 # Ensure the venv is used by default
 ENV PATH="/app/.venv/bin:$PATH" \
     PYTHONUNBUFFERED=1 \
-    WORKDIR=/app
+    WORKDIR=/app \
+    RUNNING_IN_CONTAINER=1
 
 EXPOSE 8000
 
 # Run the FastAPI app via uv + uvicorn
 CMD ["uv", "run", "uvicorn", "app.server:app", "--host", "0.0.0.0", "--port", "8000"]
-

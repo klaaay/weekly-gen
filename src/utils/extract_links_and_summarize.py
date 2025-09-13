@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Moved to src/utils (package layout)
 import requests
 from bs4 import BeautifulSoup
 import re

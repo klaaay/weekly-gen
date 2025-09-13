@@ -5,10 +5,10 @@ import re
 import os
 from urllib.parse import urlparse
 from dotenv import load_dotenv
-from utils.proxy import get_proxies, proxy_for_log
-from utils.deepseek_api import translate_title_to_chinese, summarize_with_deepseek
-from utils.extract_links_and_summarize import extract_links_and_summarize
-from utils.last_run_tracker import check_and_skip_if_same_issue, create_issue_info, update_last_run_info
+from src.utils.proxy import get_proxies, proxy_for_log
+from src.utils.deepseek_api import translate_title_to_chinese, summarize_with_deepseek
+from src.utils.extract_links_and_summarize import extract_links_and_summarize
+from src.utils.last_run_tracker import check_and_skip_if_same_issue, create_issue_info, update_last_run_info
 
 # 加载.env 文件中的环境变量
 load_dotenv()

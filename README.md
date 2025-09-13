@@ -110,23 +110,28 @@ python javascriptweekly.py
 
 ```
 weekly-gen/
-├── main.py                 # 主入口文件 (并行执行)
-├── run_all.py             # 简化版批量执行器 (顺序执行)
-├── frontendfoc.py         # Frontend Focus 爬虫
-├── javascriptweekly.py    # JavaScript Weekly 爬虫
-├── nextjsweekly.py        # Next.js Weekly 爬虫
-├── nodeweekly.py          # Node Weekly 爬虫
-├── reactweekly.py         # React Weekly 爬虫
-├── reactdigest.py         # React Digest 爬虫
-├── thisweekinreact.py     # This Week in React 爬虫
-├── webtoolsweekly.py      # Web Tools Weekly 爬虫
-├── utils/
-│   ├── last_run_tracker.py    # 运行状态跟踪器
-│   ├── deepseek_api.py        # DeepSeek API 接口
-│   └── extract_links_and_summarize.py  # 链接提取和总结
-├── outputs/               # 输出文件目录
-├── last_run_info.json    # 运行状态记录
-└── README.md             # 说明文档
+├── main.py                 # 兼容入口（委托到 src.main）
+├── src/
+│   ├── __init__.py
+│   ├── main.py             # 主入口（并行执行）
+│   ├── frontendfoc.py      # Frontend Focus 爬虫
+│   ├── javascriptweekly.py # JavaScript Weekly 爬虫
+│   ├── nextjsweekly.py     # Next.js Weekly 爬虫
+│   ├── nodeweekly.py       # Node Weekly 爬虫
+│   ├── reactweekly.py      # React Weekly 爬虫
+│   ├── reactdigest.py      # React Digest 爬虫
+│   ├── thisweekinreact.py  # This Week in React 爬虫
+│   ├── webtoolsweekly.py   # Web Tools Weekly 爬虫
+│   └── utils/
+│       ├── __init__.py
+│       ├── last_run_tracker.py
+│       ├── deepseek_api.py
+│       ├── extract_links_and_summarize.py
+│       └── proxy.py
+├── app/                    # FastAPI 服务与调度器
+├── outputs/                # 输出文件目录
+├── last_run_info.json      # 运行状态记录
+└── README.md               # 说明文档
 ```
 
 ## 使用示例
@@ -154,7 +159,7 @@ cat last_run_info.json
 
 ## 注意事项
 
-1. **网络代理**: 代理逻辑已集中在 `utils/proxy.py`。默认：
+1. **网络代理**: 代理逻辑已集中在 `src/utils/proxy.py`。默认：
    - 容器内：`http://host.docker.internal:7897`
    - 容器外：`http://127.0.0.1:7897`
    可通过环境变量覆盖：`PROXY_URL` 或 `PROXY_HOST`/`PROXY_PORT`/`PROXY_SCHEME`，或标准 `HTTP_PROXY`/`HTTPS_PROXY`。
@@ -191,7 +196,7 @@ cat last_run_info.json
 # 同步依赖
 uv sync
 
-# 启动服务（默认 8000 端口）
+# 启动服务（默认 8000 端口），内部调度执行 src.main
 uv run uvicorn app.server:app --host 0.0.0.0 --port 8000
 
 # 环境变量可配置间隔（默认 300 秒）
@@ -209,6 +214,8 @@ TASK_INTERVAL_SECONDS=600 uv run uvicorn app.server:app --host 0.0.0.0 --port 80
 docker build -t weekly-gen:latest .
 docker run --rm -p 8000:8000 \
   -e TASK_INTERVAL_SECONDS=300 \
+  -e RUN_CMD="python -m src.main -w 8 --all" \
+  -e RUNNING_IN_CONTAINER=1 \
   -v "$(pwd)/outputs:/app/outputs" \
   -v "$(pwd)/last_run_info.json:/app/last_run_info.json" \
   --name weekly-gen weekly-gen:latest

@@ -3,13 +3,13 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import os
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin
 from openai import OpenAI
 from dotenv import load_dotenv
-from utils.proxy import get_proxies, proxy_for_log
-from utils.extract_links_and_summarize import extract_links_and_summarize
-from utils.deepseek_api import translate_title_to_chinese, summarize_with_deepseek
-from utils.last_run_tracker import check_and_skip_if_same_issue, create_issue_info, update_last_run_info
+from src.utils.proxy import get_proxies, proxy_for_log
+from src.utils.extract_links_and_summarize import extract_links_and_summarize
+from src.utils.deepseek_api import translate_title_to_chinese, summarize_with_deepseek
+from src.utils.last_run_tracker import check_and_skip_if_same_issue, create_issue_info, update_last_run_info
 
 # 加载.env 文件中的环境变量
 load_dotenv()
@@ -98,14 +98,14 @@ def fetch_page_content(url, headers, proxies):
             "summary": f"无法总结：获取内容时出错 - {str(e)}"
         }
 
-def scrape_reactweekly():
+def scrape_webtoolsweekly():
     # 确保 outputs 文件夹存在
     outputs_dir = "outputs"
     if not os.path.exists(outputs_dir):
         os.makedirs(outputs_dir)
         print(f"创建输出目录：{outputs_dir}")
         
-    url = "https://react.statuscode.com/issues"
+    url = "https://webtoolsweekly.com/archive"
     
     # Add headers to mimic a browser request
     headers = {
@@ -125,27 +125,25 @@ def scrape_reactweekly():
         soup = BeautifulSoup(response.text, 'html.parser')
         
         # Extract title
-        title = soup.find('h1')
-        if title:
-            site_title = title.text.strip()
-            print(f"Title: {site_title}\n")
-            # Sanitize title for filename
-            safe_title = re.sub(r'[^\w\s-]', '', site_title).strip().replace(' ', '_')
-        else:
-            site_title = "React Weekly"
-            safe_title = "reactweekly"
+        site_title = "Web Tools Weekly"
+        safe_title = "webtoolsweekly"
+        print(f"Title: {site_title}\n")
         
         # Create output files with title in the filename
         content_file = os.path.join(outputs_dir, f"{safe_title}_content.txt")
         summary_file = os.path.join(outputs_dir, f"{safe_title}_summary.md")  # Markdown 格式
         
-        # Find the first issue link - looking for links with href="issues/*" and text containing "Issue #"
-        issue_link = soup.find('a', href=re.compile(r'^issues/\d+$'), string=re.compile(r'Issue #\d+'))
+        # Web Tools Weekly 的结构与 Node Weekly 不同
+        # 我们查找第一个具有期号的链接
+        # 根据网站内容，链接格式可能是 #612 等
+        issue_links = soup.find_all('a', href=re.compile(r'^archives/'))
         
-        if issue_link and 'href' in issue_link.attrs:
-            link_url = issue_link['href']
-            issue_title = issue_link.text
-            print(f"Found issue link: {issue_link.text} - {link_url}")
+        if issue_links and len(issue_links) > 0:
+            # 获取第一个链接（最新一期）
+            issue_link = issue_links[0]
+            link_url = issue_link['href'] if 'href' in issue_link.attrs else None
+            issue_title = issue_link.text.strip()
+            print(f"Found issue link: {issue_title} - {link_url}")
             
             # 检查是否与上次抓取的 link_url 相同
             script_name = os.path.basename(__file__).replace('.py', '')  # 获取脚本名称（不含.py 扩展名）
@@ -155,52 +153,55 @@ def scrape_reactweekly():
                 return
             
             # 记录上次运行抓取的 issue_link 信息
-            issue_info = create_issue_info(issue_title, link_url, "https://reactweekly.com")
+            issue_info = create_issue_info(issue_title, link_url, "https://webtoolsweekly.com")
             update_last_run_info(script_name, issue_info)
             
-            # Sanitize issue title for filename
+            # Sanitize issue title for filename - 确保移除换行符和其他无效字符
+            issue_title = issue_title.replace('\n', ' ').replace('\r', ' ')
             safe_issue_title = re.sub(r'[^\w\s-]', '', issue_title).strip().replace(' ', '_')
             
-            # Create output file with site title and issue title in the filename
+            # 只创建文件名，不包含路径 - 路径将在 extract_links_and_summarize 函数中添加
             summary_file = f"{safe_title}_{safe_issue_title}_summary.md"  # Markdown 格式
             
+            # 创建保存目录
+            outputs_dir = "outputs"
+            if not os.path.exists(outputs_dir):
+                os.makedirs(outputs_dir)
+                print(f"创建输出目录：{outputs_dir}")
+            
             # If the URL is relative, make it absolute
-            if not link_url.startswith('http'):
-                link_url = f"https://react.statuscode.com/{link_url}"
+            if link_url and not link_url.startswith('http'):
+                link_url = urljoin("https://webtoolsweekly.com/", link_url)
             
-            # Send GET request to the linked page
-            print(f"Fetching content from: {link_url}")
-            link_response = requests.get(link_url, headers=headers, proxies=proxies)
-            
-            # Check if the request was successful
-            if link_response.status_code == 200:
+            if link_url:
+                # Send GET request to the linked page
+                print(f"Fetching content from: {link_url}")
+                link_response = requests.get(link_url, headers=headers, proxies=proxies)
                 
-                # Parse the HTML content of the linked page
-                link_soup = BeautifulSoup(link_response.text, 'html.parser')
-                
-                # 定义链接匹配模式
-                link_patterns = [
-                    re.compile(r'^https://react.statuscode\.com/link'),  # 绝对 URL 模式
-                    re.compile(r'^/link')                          # 相对 URL 模式
-                ]
-                
-                # 使用提取的函数来处理链接
-                extract_links_and_summarize(
-                    soup=link_soup,
-                    link_patterns=link_patterns,
-                    headers=headers,
-                    proxies=proxies,
-                    summary_file=summary_file,
-                    summary_title_prefix="reactweekly",
-                    base_url="https://react.statuscode.com",
-                    fetch_content_func=fetch_page_content
-                )
+                # Check if the request was successful
+                if link_response.status_code == 200:
+                    # Parse the HTML content of the linked page
+                    link_soup = BeautifulSoup(link_response.text, 'html.parser')
+                    
+                    # 使用修改后的提取链接方式，直接获取所有链接而不是使用模式匹配
+                    extract_links_and_summarize(
+                        soup=link_soup,
+                        headers=headers,
+                        proxies=proxies,
+                        summary_file=summary_file,
+                        summary_title_prefix="webtoolsweekly",
+                        base_url="https://webtoolsweekly.com",
+                        fetch_content_func=fetch_page_content,
+                        use_patterns=False  # 设置为 False，使用新的提取方式
+                    )
+                else:
+                    print(f"Failed to retrieve the linked page. Status code: {link_response.status_code}")
             else:
-                print(f"Failed to retrieve the linked page. Status code: {link_response.status_code}")
+                print("The issue link does not contain a valid URL.")
         else:
             print("No issue links matching the pattern found on the page.")
     else:
         print(f"Failed to retrieve the page. Status code: {response.status_code}")
 
 if __name__ == "__main__":
-    scrape_reactweekly() 
+    scrape_webtoolsweekly() 

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Moved to src/utils (package layout)
 """Proxy helpers to centralize proxy setup for requests.
 
 Priority order for proxy resolution:
@@ -60,4 +61,3 @@ def get_proxies() -> dict:
 def proxy_for_log() -> str:
     p = get_proxies()
     return p.get("http") or p.get("https") or "<none>"
-

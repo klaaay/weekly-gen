@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Moved to src/utils (package layout)
 import os
 from openai import OpenAI
 from dotenv import load_dotenv

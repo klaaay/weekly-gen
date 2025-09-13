@@ -6,10 +6,10 @@ import os
 from urllib.parse import urlparse, urljoin
 from openai import OpenAI
 from dotenv import load_dotenv
-from utils.proxy import get_proxies, proxy_for_log
-from utils.deepseek_api import translate_title_to_chinese, summarize_with_deepseek
-from utils.extract_links_and_summarize import extract_links_and_summarize
-from utils.last_run_tracker import check_and_skip_if_same_issue, create_issue_info, update_last_run_info
+from src.utils.proxy import get_proxies, proxy_for_log
+from src.utils.extract_links_and_summarize import extract_links_and_summarize
+from src.utils.deepseek_api import translate_title_to_chinese, summarize_with_deepseek
+from src.utils.last_run_tracker import check_and_skip_if_same_issue, create_issue_info, update_last_run_info
 
 # 加载.env 文件中的环境变量
 load_dotenv()
@@ -98,14 +98,14 @@ def fetch_page_content(url, headers, proxies):
             "summary": f"无法总结：获取内容时出错 - {str(e)}"
         }
 
-def scrape_thisweekinreact():
+def scrape_reactdigest():
     # 确保 outputs 文件夹存在
     outputs_dir = "outputs"
     if not os.path.exists(outputs_dir):
         os.makedirs(outputs_dir)
         print(f"创建输出目录：{outputs_dir}")
         
-    url = "https://thisweekinreact.com/newsletter"
+    url = "https://reactdigest.net/"
     
     # Add headers to mimic a browser request
     headers = {
@@ -117,98 +117,81 @@ def scrape_thisweekinreact():
     
     # Send GET request to the URL
     print(f"Using proxy: {proxy_for_log()}")
-    print(f"Fetching content from: {url}")
+    response = requests.get(url, headers=headers, proxies=proxies)
     
-    try:
-        # 获取主页内容
-        response = requests.get(url, headers=headers, proxies=proxies, allow_redirects=True)
+    # Check if the request was successful
+    if response.status_code == 200:
+        # Parse the HTML content
+        soup = BeautifulSoup(response.text, 'html.parser')
         
-        if response.status_code == 200:
-            # 解析 HTML
-            soup = BeautifulSoup(response.text, 'html.parser')
+        # Extract title
+        site_title = "React Digest"
+        safe_title = "reactdigest"
+        print(f"Title: {site_title}\n")
+        
+        # Create output files with title in the filename
+        content_file = os.path.join(outputs_dir, f"{safe_title}_content.txt")
+        summary_file = os.path.join(outputs_dir, f"{safe_title}_summary.md")  # Markdown 格式
+        
+        # 查找文本内容包含 "one weekly email" 的 a 标签
+        weekly_email_link = soup.find('a', string=re.compile(r'one weekly email', re.IGNORECASE))
+        
+        if weekly_email_link:
+            # 获取链接
+            link_url = weekly_email_link['href'] if 'href' in weekly_email_link.attrs else None
+            link_text = weekly_email_link.text.strip()
+            print(f"Found weekly email link: {link_text} - {link_url}")
             
-            # 创建安全的文件名
-            safe_title = "thisweekinreact"
-                
-            # 创建主页输出文件
-            summary_file = os.path.join(outputs_dir, f"{safe_title}_summary.md")
+            # 检查是否与上次抓取的 link_url 相同
+            script_name = os.path.basename(__file__).replace('.py', '')  # 获取脚本名称（不含.py 扩展名）
             
-            print(f"主页摘要已保存到：{summary_file}")
+            # 如果检测到相同的 link_url，则跳过执行
+            if check_and_skip_if_same_issue(script_name, link_url):
+                return
             
-            # 1. 查找第一个以 /newsletter/数字 格式的链接
-            newsletter_link = soup.find('a', href=re.compile(r'^/newsletter/\d+$'))
+            # 记录上次运行抓取的 link 信息
+            issue_info = create_issue_info(link_text, link_url, "https://reactdigest.net")
+            update_last_run_info(script_name, issue_info)
             
-            if newsletter_link and 'href' in newsletter_link.attrs:
-                newsletter_url = newsletter_link['href']
+            # Sanitize link text for filename
+            safe_link_text = re.sub(r'[^\w\s-]', '', link_text).strip().replace(' ', '_')
+            
+            # Create output file with site title and link text in the filename
+            summary_file = os.path.join(outputs_dir, f"{safe_title}_{safe_link_text}_summary.md")  # Markdown 格式
+            
+            # If the URL is relative, make it absolute
+            if link_url and not link_url.startswith('http'):
+                link_url = urljoin("https://reactdigest.net/", link_url)
+            
+            if link_url:
+                # Send GET request to the linked page
+                print(f"Fetching content from: {link_url}")
+                link_response = requests.get(link_url, headers=headers, proxies=proxies)
                 
-                # 检查是否与上次抓取的 link_url 相同
-                script_name = os.path.basename(__file__).replace('.py', '')  # 获取脚本名称（不含.py 扩展名）
-                
-                # 如果检测到相同的 link_url，则跳过执行
-                if check_and_skip_if_same_issue(script_name, newsletter_url):
-                    return
-                
-                # 记录上次运行抓取的 newsletter 信息
-                issue_info = create_issue_info(newsletter_link.text.strip() if newsletter_link.text else "Newsletter", newsletter_url, "https://thisweekinreact.com")
-                update_last_run_info(script_name, issue_info)
-                
-                # 确保链接是绝对路径
-                if not newsletter_url.startswith('http'):
-                    newsletter_url = f"https://thisweekinreact.com{newsletter_url}"
-                
-                print(f"\n找到 newsletter 链接：{newsletter_url}")
-                print(f"获取 newsletter 页面内容...")
-                
-                # 2. 获取这个 newsletter 页面的内容
-                newsletter_response = requests.get(newsletter_url, headers=headers, proxies=proxies, allow_redirects=True)
-                
-                if newsletter_response.status_code == 200:
-                    # 解析 newsletter 页面
-                    newsletter_soup = BeautifulSoup(newsletter_response.text, 'html.parser')
+                # Check if the request was successful
+                if link_response.status_code == 200:
+                    # Parse the HTML content of the linked page
+                    link_soup = BeautifulSoup(link_response.text, 'html.parser')
                     
-                    print("\n开始提取文章链接并生成摘要...")
-                    
-                    # 3. 从 newsletter 页面找到所有没有 class 属性且 target="_blank" 的链接
-                    filtered_links = newsletter_soup.select('a:not([class])[target="_blank"]')
-                    print(f"\n在 newsletter 页面找到 {len(filtered_links)} 个符合条件的链接")
-                    
-                    # 4. 使用预先筛选好的链接集合
+                    # 使用提取链接方式处理这些链接
                     extract_links_and_summarize(
-                        soup=newsletter_soup,  # 传递 newsletter 页面的 soup 对象
+                        soup=link_soup,
                         headers=headers,
                         proxies=proxies,
                         summary_file=summary_file,
-                        summary_title_prefix="thisweekinreact",
-                        base_url="https://thisweekinreact.com",
+                        summary_title_prefix="reactdigest",
+                        base_url="https://reactdigest.net",
                         fetch_content_func=fetch_page_content,
-                        use_patterns=False,  # 不使用模式匹配
-                        pre_filtered_links=filtered_links  # 使用预先筛选好的链接
+                        use_patterns=False  # 不使用模式匹配
                     )
-                    
-                    print(f"\n文章总结已保存到：{os.path.join(outputs_dir, summary_file)}")
                 else:
-                    print(f"获取 newsletter 页面失败，状态码：{newsletter_response.status_code}")
+                    print(f"Failed to retrieve the linked page. Status code: {link_response.status_code}")
             else:
-                print("\n未找到以 /newsletter/数字 格式的链接")
-                # print("尝试直接从主页提取文章链接...")
-                
-                # 如果找不到 newsletter 链接，则尝试直接从主页提取链接
-                # extract_links_and_summarize(
-                #     soup=soup,
-                #     headers=headers,
-                #     proxies=proxies,
-                #     summary_file=summary_file,
-                #     summary_title_prefix="thisweekinreact",
-                #     base_url="https://thisweekinreact.com",
-                #     fetch_content_func=fetch_page_content,
-                #     use_patterns=False  # 不使用模式匹配
-                # )
-                
-                # print(f"\n文章总结已保存到：{os.path.join(outputs_dir, summary_file)}")
+                print("The weekly email link does not contain a valid URL.")
         else:
-            print(f"获取页面失败，状态码：{response.status_code}")
-    except Exception as e:
-        print(f"发生错误：{str(e)}")
+            print("No 'one weekly email' link found on the page.")
+    else:
+        print(f"Failed to retrieve the page. Status code: {response.status_code}")
 
 if __name__ == "__main__":
-    scrape_thisweekinreact() 
+    scrape_reactdigest() 

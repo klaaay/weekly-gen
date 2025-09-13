@@ -2,6 +2,8 @@
 from fastapi import FastAPI, Response, status
 from pydantic import BaseModel
 import os
+import shlex
+import sys
 
 from .scheduler import JobScheduler
 
@@ -22,7 +24,11 @@ def create_app() -> FastAPI:
     interval = int(os.getenv("TASK_INTERVAL_SECONDS", "300"))
     workdir = os.getenv("WORKDIR", ".")
 
-    scheduler = JobScheduler(interval_seconds=interval, workdir=workdir)
+    # Allow overriding the run command via env (string)
+    run_cmd_env = os.getenv("RUN_CMD")
+    run_cmd = shlex.split(run_cmd_env) if run_cmd_env else None
+
+    scheduler = JobScheduler(interval_seconds=interval, workdir=workdir, command=run_cmd)
 
     @app.on_event("startup")
     async def _on_startup() -> None:
@@ -51,4 +57,3 @@ def create_app() -> FastAPI:
 
 
 app = create_app()
-
