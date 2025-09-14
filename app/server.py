@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from fastapi import FastAPI, Response, status
+import asyncio
 from pydantic import BaseModel
 import os
 import shlex
@@ -48,10 +49,12 @@ def create_app() -> FastAPI:
 
     @app.post("/run-now")
     async def run_now():
-        res = await scheduler.run_once()
-        if not res.get("ok"):
-            return Response(content=res.get("message", "already running"), status_code=status.HTTP_409_CONFLICT)
-        return res
+        # No need to await; fire-and-forget if not already running
+        if scheduler.state.running:
+            return Response(content="already running", status_code=status.HTTP_409_CONFLICT)
+        # Trigger the run in background
+        asyncio.create_task(scheduler.run_once())
+        return {"ok": True, "message": "started"}
 
     return app
 
