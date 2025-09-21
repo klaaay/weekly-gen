@@ -1,16 +1,16 @@
-### [JavaScript 周刊第753期：2025年9月19日](https://javascriptweekly.com/issues/753)
+### [JavaScript 周刊第 753 期：2025 年 9 月 19 日](https://javascriptweekly.com/issues/753)
 
 **原文标题**: [JavaScript Weekly Issue 753: September 19, 2025](https://javascriptweekly.com/issues/753)
 
-npm生态系统面临名为“Shai-Hulud”的供应链攻击，涉及数百个恶意软件包窃取开发者令牌；同时出现工具更新、框架发布及社区倡议，如Deno筹款挑战JavaScript商标权，反映了JavaScript生态的安全与创新动态。
+npm 生态系统面临名为“Shai-Hulud”的供应链攻击，涉及数百个恶意软件包窃取开发者令牌；同时出现工具更新、框架发布及社区倡议，如 Deno 筹款挑战 JavaScript 商标权，反映了 JavaScript 生态的安全与创新动态。
 
-- 🐛 npm生态系统遭受“Shai-Hulud”供应链攻击，数百个包被植入恶意代码以窃取开发者令牌和机密信息
-- 🛠️ pnpm 10.16发布新功能，支持延迟依赖更新以防范供应链攻击；多款工具和框架（如Bun、React Router）推出更新
-- ⚖️ Deno发起筹款20万美元，旨在挑战Oracle对JavaScript商标的所有权
-- 🌐 WebAssembly 3.0标准正式发布，增强与JavaScript的互操作性，支持垃圾回收和异常处理等功能
-- 📦 多个JavaScript工具和库更新，包括Expo SDK 54、TypeBox 1.0等，聚焦性能提升和开发体验优化
-- 🔒 文章讨论Fetch流进度测量局限性和TypeScript迁移案例，同时推广Auth0等安全解决方案
-- 💡 社区观点碰撞：React主导地位被指抑制前端创新，而Solid.js等框架引发替代方案讨论
+- 🐛 npm 生态系统遭受“Shai-Hulud”供应链攻击，数百个包被植入恶意代码以窃取开发者令牌和机密信息
+- 🛠️ pnpm 10.16 发布新功能，支持延迟依赖更新以防范供应链攻击；多款工具和框架（如 Bun、React Router）推出更新
+- ⚖️ Deno 发起筹款 20 万美元，旨在挑战 Oracle 对 JavaScript 商标的所有权
+- 🌐 WebAssembly 3.0 标准正式发布，增强与 JavaScript 的互操作性，支持垃圾回收和异常处理等功能
+- 📦 多个 JavaScript 工具和库更新，包括 Expo SDK 54、TypeBox 1.0 等，聚焦性能提升和开发体验优化
+- 🔒 文章讨论 Fetch 流进度测量局限性和 TypeScript 迁移案例，同时推广 Auth0 等安全解决方案
+- 💡 社区观点碰撞：React 主导地位被指抑制前端创新，而 Solid.js 等框架引发替代方案讨论
 - 📚 资源推荐涵盖离线文档、媒体播放器插件系统及版本号探索等实用内容
 
 ---
@@ -43,16 +43,16 @@ npm生态系统面临名为“Shai-Hulud”的供应链攻击，涉及数百个�
 
 **原文标题**: [pnpm 10.16 | pnpm](https://pnpm.io/blog/releases/10.16)
 
-pnpm 10.16版本引入了新的安全设置和高级依赖过滤功能，同时包含多项修复和改进。
+pnpm 10.16 版本引入了新的安全设置和高级依赖过滤功能，同时包含多项修复和改进。
 
-- ⏳ 新增minimumReleaseAge设置，可延迟安装新发布的依赖包以降低安全风险
-- 📋 支持通过minimumReleaseAgeExclude设置排除特定依赖的延迟安装限制
-- 🔍 新增finder函数功能，支持按依赖属性进行高级搜索
-- 📝 finder函数可返回附加信息（如许可证详情）增强输出内容
-- 🐛 修复了Node.js 24下的弃用警告显示问题
-- ⚠️ 对nodeVersion设置增加精确版本号校验
-- 📦 改进pnpm publish命令支持发布.tar.gz格式文件
-- ⌨️ 优化Ctrl-C取消进程时的非零退出码返回机制
+- ⏳ 新增 minimumReleaseAge 设置，可延迟安装新发布的依赖包以降低安全风险
+- 📋 支持通过 minimumReleaseAgeExclude 设置排除特定依赖的延迟安装限制
+- 🔍 新增 finder 函数功能，支持按依赖属性进行高级搜索
+- 📝 finder 函数可返回附加信息（如许可证详情）增强输出内容
+- 🐛 修复了 Node.js 24 下的弃用警告显示问题
+- ⚠️ 对 nodeVersion 设置增加精确版本号校验
+- 📦 改进 pnpm publish 命令支持发布.tar.gz 格式文件
+- ⌨️ 优化 Ctrl-C 取消进程时的非零退出码返回机制
 
 ---
 
@@ -60,63 +60,63 @@ pnpm 10.16版本引入了新的安全设置和高级依赖过滤功能，同时�
 
 **原文标题**: [Mitigating supply chain attacks | pnpm](https://pnpm.io/supply-chain-security)
 
-npm包供应链攻击的缓解措施概述：通过禁用依赖项安装脚本、延迟更新依赖版本、锁定依赖文件等方式降低恶意软件安装风险。
+npm 包供应链攻击的缓解措施概述：通过禁用依赖项安装脚本、延迟更新依赖版本、锁定依赖文件等方式降低恶意软件安装风险。
 
-- 🛡️ pnpm v10默认禁用依赖项的postinstall脚本自动执行，防止恶意代码立即运行
-- ⚠️ 可通过dangerouslyAllowAllBuilds设置全局重新启用，但建议仅显式信任特定依赖
-- ⏰ 使用minimumReleaseAge设置延迟安装新版本（如1440分钟=24小时），利用恶意软件通常被快速发现的特点
-- 🔒 始终使用lockfile锁定依赖版本并提交到代码仓库，避免意外更新
-- 🔍 推荐使用Socket、Snyk、Aikido等工具早期检测被篡改的软件包
+- 🛡️ pnpm v10 默认禁用依赖项的 postinstall 脚本自动执行，防止恶意代码立即运行
+- ⚠️ 可通过 dangerouslyAllowAllBuilds 设置全局重新启用，但建议仅显式信任特定依赖
+- ⏰ 使用 minimumReleaseAge 设置延迟安装新版本（如 1440 分钟=24 小时），利用恶意软件通常被快速发现的特点
+- 🔒 始终使用 lockfile 锁定依赖版本并提交到代码仓库，避免意外更新
+- 🔍 推荐使用 Socket、Snyk、Aikido 等工具早期检测被篡改的软件包
 
 ---
 
-### [糟糕，又来了……关于NPM供应链攻击的思考 - 现代Web开发教程](https://tane.dev/2025/09/oh-no-not-again...-a-meditation-on-npm-supply-chain-attacks/)
+### [糟糕，又来了……关于 NPM 供应链攻击的思考 - 现代 Web 开发教程](https://tane.dev/2025/09/oh-no-not-again...-a-meditation-on-npm-supply-chain-attacks/)
 
 **原文标题**: [Oh no, not again... a meditation on NPM supply chain attacks - Development tutorials for modern web development](https://tane.dev/2025/09/oh-no-not-again...-a-meditation-on-npm-supply-chain-attacks/)
 
-作者回顾了NPM供应链攻击的历史与现状，指出微软在收购NPM后未能有效解决安全问题，并警告当前软件生态存在严重脆弱性。
+作者回顾了 NPM 供应链攻击的历史与现状，指出微软在收购 NPM 后未能有效解决安全问题，并警告当前软件生态存在严重脆弱性。
 
-- 🚨 微软因长期忽视NPM安全漏洞被视作威胁源
-- 📦 NPM成为恶意软件传播的主要渠道，攻击目标从加密货币扩展到核心凭证
-- 🌐 以IE浏览器历史类比微软对安全问题的放任态度
-- ⚠️ 2017年已发现npx工具和postinstall脚本的安全风险
-- 💸 微软通过收购GitHub掌控NPM生态但未加强安全措施
-- 🤖 AI技术可能被用于制造更复杂的供应链攻击
+- 🚨 微软因长期忽视 NPM 安全漏洞被视作威胁源
+- 📦 NPM 成为恶意软件传播的主要渠道，攻击目标从加密货币扩展到核心凭证
+- 🌐 以 IE 浏览器历史类比微软对安全问题的放任态度
+- ⚠️ 2017 年已发现 npx 工具和 postinstall 脚本的安全风险
+- 💸 微软通过收购 GitHub 掌控 NPM 生态但未加强安全措施
+- 🤖 AI 技术可能被用于制造更复杂的供应链攻击
 - 🔐 呼吁企业重新评估软件供应链安全性
 
 ---
 
-### [不会发生的JavaScript更美好未来](https://drewdevault.com/2025/09/17/2025-09-17-An-impossible-future-for-JS.html)
+### [不会发生的 JavaScript 更美好未来](https://drewdevault.com/2025/09/17/2025-09-17-An-impossible-future-for-JS.html)
 
 **原文标题**: [A better future for JavaScript that won't happen](https://drewdevault.com/2025/09/17/2025-09-17-An-impossible-future-for-JS.html)
 
-在经历了史上最大规模供应链攻击后，JavaScript生态系统可能迎来反思与变革的契机，但现实更可能延续既有模式。
+在经历了史上最大规模供应链攻击后，JavaScript 生态系统可能迎来反思与变革的契机，但现实更可能延续既有模式。
 
 - 🚨 供应链攻击暴露依赖管理机制存在根本性设计缺陷
 - ⚠️ 长期存在的微库依赖树结构被指存在安全隐患
 - 🌐 业界呼吁建立基于信任关系的软件分发体系
-- 📚 期待谷歌和Mozilla推动JavaScript标准库开发
+- 📚 期待谷歌和 Mozilla 推动 JavaScript 标准库开发
 - 🔄 建议整合微库为具有完整功能的大型软件包
-- 💰 呼吁微软等巨头投入资源重构npm包管理体系
-- 🔐 建议采用Linux发行版的包管理安全实践
-- ⚠️ 警告PyPI/RubyGems等生态存在同样风险
+- 💰 呼吁微软等巨头投入资源重构 npm 包管理体系
+- 🔐 建议采用 Linux 发行版的包管理安全实践
+- ⚠️ 警告 PyPI/RubyGems 等生态存在同样风险
 - 📉 预测实际变革有限，仅会有象征性安全措施
 - 🔁 指出软件行业数十年未从安全事件中吸取教训
 
 ---
 
-### [助力Deno筹集20万美元，让JavaScript摆脱Oracle束缚](https://deno.com/blog/javascript-tm-gofundme)
+### [助力 Deno 筹集 20 万美元，让 JavaScript 摆脱 Oracle 束缚](https://deno.com/blog/javascript-tm-gofundme)
 
 **原文标题**: [Help Us Raise $200k to Free JavaScript from Oracle | Deno](https://deno.com/blog/javascript-tm-gofundme)
 
-Deno组织发起法律行动，旨在通过美国专利商标局撤销Oracle对"JavaScript"商标的所有权，目前进入关键证据收集阶段，并发起众筹以支付诉讼费用。
+Deno 组织发起法律行动，旨在通过美国专利商标局撤销 Oracle 对"JavaScript"商标的所有权，目前进入关键证据收集阶段，并发起众筹以支付诉讼费用。
 
 - 🚨 已向美国专利商标局提交撤销商标申请，案件进入关键证据发现阶段
-- 💸 发起20万美元众筹，用于支付专家证人、法律文件及市场调研等诉讼成本
-- ⚖️ 核心论点为"JavaScript"已成为通用术语，Oracle与语言发展无关却滥用商标权
-- 📜 若败诉，Oracle将永久获得商标权，恐开创有害先例
+- 💸 发起 20 万美元众筹，用于支付专家证人、法律文件及市场调研等诉讼成本
+- ⚖️ 核心论点为"JavaScript"已成为通用术语，Oracle 与语言发展无关却滥用商标权
+- 📜 若败诉，Oracle 将永久获得商标权，恐开创有害先例
 - 🌐 胜诉将使"JavaScript"成为公共领域词汇，保障开发者自由使用
-- 🔄 剩余资金将捐赠给OpenJS基金会，不会流向Deno组织自身
+- 🔄 剩余资金将捐赠给 OpenJS 基金会，不会流向 Deno 组织自身
 - ✍️ 呼吁开发者阅读请愿书并通过捐款/转发支持维权行动
 
 ---
@@ -128,13 +128,13 @@ Deno组织发起法律行动，旨在通过美国专利商标局撤销Oracle对"
 使用“JavaScript”一词描述工作、产品或会议可能面临法律风险，因为甲骨文公司声称拥有该商标权，尽管其并非创造者或维护者。美国法律规定通用名称不可被垄断，此案旨在保护开发者自由使用该语言的权利。
 
 - 🚨 使用“JavaScript”一词可能涉及法律风险，因甲骨文持有其商标权
-- 📜 甲骨文通过收购Sun公司获得商标，但未参与语言开发与维护
+- 📜 甲骨文通过收购 Sun 公司获得商标，但未参与语言开发与维护
 - ⚖️ 美国法律明确规定通用术语和已被放弃的商标不可被私有化
-- 🌍 本案关乎全球开发者、教育机构和企业能否自由使用JavaScript
-- 💰 需要筹集20万美元用于法律取证阶段，包括公众意见调查
+- 🌍 本案关乎全球开发者、教育机构和企业能否自由使用 JavaScript
+- 💰 需要筹集 20 万美元用于法律取证阶段，包括公众意见调查
 - 📮 剩余资金将全额捐赠给电子前沿基金会（EFF）
-- 🤝 可通过捐款、签署公开信或社交媒体传播#FreeJavaScript参与支持
-- 🦕 倡议方Deno公司作为JavaScript运行时开发商发起此公益诉讼
+- 🤝 可通过捐款、签署公开信或社交媒体传播#FreeJavaScript 参与支持
+- 🦕 倡议方 Deno 公司作为 JavaScript 运行时开发商发起此公益诉讼
 
 ---
 
@@ -144,34 +144,34 @@ Deno组织发起法律行动，旨在通过美国专利商标局撤销Oracle对"
 
 WebAssembly 3.0 标准正式发布，带来多项重大功能更新，显著提升了对高级编程语言的支持，并已在主流浏览器中开始部署。
 
-- 🚀 64位地址空间：内存和表格现支持i64地址类型，理论寻址空间达16艾字节，非Web生态可处理更大型应用
+- 🚀 64 位地址空间：内存和表格现支持 i64 地址类型，理论寻址空间达 16 艾字节，非 Web 生态可处理更大型应用
 - 🔗 多内存支持：单个模块可声明和访问多个内存空间，支持直接数据拷贝，提升静态链接工具兼容性
-- ♻️ 垃圾回收机制：新增GC功能，支持结构体/数组类型的内存自动管理，为多语言编译提供底层基础
-- 🧩 类型化引用：扩展类型系统支持精确堆值描述，新增call_ref指令实现无运行时检查的安全间接调用
+- ♻️ 垃圾回收机制：新增 GC 功能，支持结构体/数组类型的内存自动管理，为多语言编译提供底层基础
+- 🧩 类型化引用：扩展类型系统支持精确堆值描述，新增 call_ref 指令实现无运行时检查的安全间接调用
 - 🔁 尾调用优化：支持静态和动态函数尾调用，节省栈空间，满足函数式语言等场景需求
 - 🚨 异常处理：新增原生异常处理机制，支持带标签的异常抛出和捕获，提升编译效率和跨平台一致性
-- ⚡ 宽松向量指令：新增松弛型SIMD指令变体，允许在边缘情况下实现硬件优化行为
+- ⚡ 宽松向量指令：新增松弛型 SIMD 指令变体，允许在边缘情况下实现硬件优化行为
 - 🎯 确定性执行模式：为浮点运算和松弛指令指定确定性行为，满足区块链等场景的可重现需求
 - 📝 自定义注解语法：文本格式新增通用注解语法，支持人类可读的自定义元数据表达
-- 🌐 JS字符串内置库：JS API扩展支持在Wasm中直接操作JavaScript字符串值
-- 📅 工具链升级：首次采用SpecTec工具链生成标准，提升规范可靠性
-- 🌍 多语言支持：Java/OCaml/Scala等新语言利用GC特性实现Wasm编译目标
-- 🖥️ 生态支持：已登陆主流浏览器，独立引擎（如Wasmtime）支持持续推进
+- 🌐 JS 字符串内置库：JS API 扩展支持在 Wasm 中直接操作 JavaScript 字符串值
+- 📅 工具链升级：首次采用 SpecTec 工具链生成标准，提升规范可靠性
+- 🌍 多语言支持：Java/OCaml/Scala 等新语言利用 GC 特性实现 Wasm 编译目标
+- 🖥️ 生态支持：已登陆主流浏览器，独立引擎（如 Wasmtime）支持持续推进
 
 ---
 
-### [Evan You 2025访谈：谷歌、Vue、Vite、Nuxt、Next、Vercel与VoidZero - YouTube](https://www.youtube.com/watch?v=FS0Ds0nIC8E)
+### [Evan You 2025 访谈：谷歌、Vue、Vite、Nuxt、Next、Vercel 与 VoidZero - YouTube](https://www.youtube.com/watch?v=FS0Ds0nIC8E)
 
 **原文标题**: [Evan You 2025 Interview: Google, Vue, Vite, Nuxt, Next, Vercel & VoidZero - YouTube](https://www.youtube.com/watch?v=FS0Ds0nIC8E)
 
-YouTube平台提供了全面的用户支持与资源，涵盖服务条款、创作者支持及功能更新等方面。  
+YouTube 平台提供了全面的用户支持与资源，涵盖服务条款、创作者支持及功能更新等方面。  
 - 📄 关于平台介绍与基本信息  
 - 📢 媒体与新闻相关资源  
 - ©️ 版权政策与法律信息  
 - 📞 用户联系与客服渠道  
 - 🎬 创作者专属工具与支持  
 - 💼 广告合作与商业机会  
-- 👨‍💻 开发者资源与API信息  
+- 👨‍💻 开发者资源与 API 信息  
 - 📑 服务条款与使用规范  
 - 🔒 隐私保护与数据政策  
 - ⚖️ 平台安全与政策指南  
@@ -180,15 +180,15 @@ YouTube平台提供了全面的用户支持与资源，涵盖服务条款、创�
 
 ---
 
-### [VoidZero | 下一代Web开发工具集](https://voidzero.dev/)
+### [VoidZero | 下一代 Web 开发工具集](https://voidzero.dev/)
 
 **原文标题**: [VoidZero | Next Generation Tooling for the Web](https://voidzero.dev/)
 
-下一代JavaScript工具链应具备统一性、高性能、可组合性和运行时无关性，通过标准化技术栈和原生级性能优化提升开发体验。
-- 🌐 统一性：采用相同AST解析器和模块交互机制，消除不一致性并减少重复解析成本
+下一代 JavaScript 工具链应具备统一性、高性能、可组合性和运行时无关性，通过标准化技术栈和原生级性能优化提升开发体验。
+- 🌐 统一性：采用相同 AST 解析器和模块交互机制，消除不一致性并减少重复解析成本
 - ⚡ 高性能：基础组件采用原生编译语言编写，从底层设计追求极致运行效率
 - 🧩 可组合性：每个工具链组件都可独立使用，提供高度定制化的构建模块
-- 🔄 运行时无关：核心工具链不耦合特定JavaScript运行时，确保跨环境一致性
+- 🔄 运行时无关：核心工具链不耦合特定 JavaScript 运行时，确保跨环境一致性
 
 ---
 
@@ -204,7 +204,7 @@ Andromeda 是一个基于 Rust 构建的现代、快速且安全的 JavaScript �
 - 🔧 内置完整工具链（LSP、REPL、格式化、打包等）
 - 🌐 完全兼容 WinterTC Web 标准
 - 🔒 安全沙箱执行环境和权限控制
-- 📊 低内存占用（约12MB），启动时间低于10ms
+- 📊 低内存占用（约 12MB），启动时间低于 10ms
 - 🖥️ 支持多平台（Linux、macOS、Windows）
 - 📦 内置 SQLite 数据库和加密 API
 - 🎯 适用于图形可视化、高性能脚本、Web 服务和科学计算
@@ -227,18 +227,18 @@ Ion.js 是一个基于 Rust 的 JavaScript 运行时，专为在 Rust 程序中�
 
 ---
 
-### [Webflow捐赠15万美元支持Astro的开源使命 | Astro](https://astro.build/blog/webflow-official-partner/)
+### [Webflow 捐赠 15 万美元支持 Astro 的开源使命 | Astro](https://astro.build/blog/webflow-official-partner/)
 
 **原文标题**: [Webflow Donates $150,000 to Support Astro’s Open Source Mission | Astro](https://astro.build/blog/webflow-official-partner/)
 
-Webflow宣布向Astro开源项目捐赠15万美元并达成技术合作，双方将共同推动AI应用开发与无代码平台的深度融合。
+Webflow 宣布向 Astro 开源项目捐赠 15 万美元并达成技术合作，双方将共同推动 AI 应用开发与无代码平台的深度融合。
 
-- 💰 Webflow向Astro开源项目捐赠15万美元用于长期维护
-- 🤝 Webflow选择Astro作为其AI应用生成功能的核心技术
-- 🌐 Webflow Cloud平台已支持通过Astro构建动态网站体验
-- ⚡ AI生成的Web应用将全部采用Astro框架，确保性能优势
+- 💰 Webflow 向 Astro 开源项目捐赠 15 万美元用于长期维护
+- 🤝 Webflow 选择 Astro 作为其 AI 应用生成功能的核心技术
+- 🌐 Webflow Cloud 平台已支持通过 Astro 构建动态网站体验
+- ⚡ AI 生成的 Web 应用将全部采用 Astro 框架，确保性能优势
 - 🚀 合作将结合可视化建站与代码开发，拓展创意可能性
-- 🔧 开发者可通过Webflow AI测试版构建Astro组件和应用
+- 🔧 开发者可通过 Webflow AI 测试版构建 Astro 组件和应用
 - 📈 资金将直接投入开源项目，保障可持续发展
 
 ---
@@ -270,19 +270,19 @@ Safari 26.0 引入了大量新功能和改进，包括 CSS 锚点定位、滚动
 
 Bun 最新版本带来多项安装方式优化、异步堆栈追踪增强、性能提升及兼容性改进，涵盖运行时、打包器、数据库支持和工具链更新。
 
-- 🚀 新增多种Bun安装方式，包括curl、npm、PowerShell、scoop、brew和docker
-- 🐛 异步堆栈追踪现在包含完整异步调用帧，调试async/await更便捷
-- ⚡ postMessage和structuredClone对纯值对象提速最高达240倍
-- 🛠️ 新增Bun.YAML.stringify方法，支持JavaScript对象转YAML格式
-- 💻 修复TTY交互支持，正确处理/dev/tty流和事件循环引用
-- 🗄️ Bun.SQL增强：MySQL适配器支持affectedRows、lastInsertRowid和TLS连接
-- 📦 打包器优化：自动移除无效new关键字、压缩typeof检查、新增onEnd钩子
-- ⚙️ 新增jsxSideEffects选项，确保带副作用的JSX组件不被误删
-- 📊 实现Node.js兼容的perf_hooks.monitorEventLoopDelay()事件循环监控
-- 🔌 WebSocket客户端现支持RFC 6455子协议协商和自定义头部覆盖
-- 🧩 Redis客户端支持数据库编号直连和新增hget()命令
-- 🔧 修复大量Node.js兼容性问题，涵盖N-API、crypto、buffer等模块
-- 🐞 解决打包器、运行时、Shell和安装工具的多项稳定性问题
+- 🚀 新增多种 Bun 安装方式，包括 curl、npm、PowerShell、scoop、brew 和 docker
+- 🐛 异步堆栈追踪现在包含完整异步调用帧，调试 async/await 更便捷
+- ⚡ postMessage 和 structuredClone 对纯值对象提速最高达 240 倍
+- 🛠️ 新增 Bun.YAML.stringify 方法，支持 JavaScript 对象转 YAML 格式
+- 💻 修复 TTY 交互支持，正确处理/dev/tty 流和事件循环引用
+- 🗄️ Bun.SQL 增强：MySQL 适配器支持 affectedRows、lastInsertRowid 和 TLS 连接
+- 📦 打包器优化：自动移除无效 new 关键字、压缩 typeof 检查、新增 onEnd 钩子
+- ⚙️ 新增 jsxSideEffects 选项，确保带副作用的 JSX 组件不被误删
+- 📊 实现 Node.js 兼容的 perf_hooks.monitorEventLoopDelay() 事件循环监控
+- 🔌 WebSocket 客户端现支持 RFC 6455 子协议协商和自定义头部覆盖
+- 🧩 Redis 客户端支持数据库编号直连和新增 hget() 命令
+- 🔧 修复大量 Node.js 兼容性问题，涵盖 N-API、crypto、buffer 等模块
+- 🐞 解决打包器、运行时、Shell 和安装工具的多项稳定性问题
 
 ---
 
@@ -290,14 +290,14 @@ Bun 最新版本带来多项安装方式优化、异步堆栈追踪增强、性�
 
 **原文标题**: [Middleware in React Router | Remix](https://remix.run/blog/middleware)
 
-React Router 7.9.0版本通过future.v8_middleware标志正式稳定了中间件功能，解决了嵌套路由中数据加载并行执行导致的逻辑顺序和短路问题，并引入了单次请求架构优化性能。
+React Router 7.9.0 版本通过 future.v8_middleware 标志正式稳定了中间件功能，解决了嵌套路由中数据加载并行执行导致的逻辑顺序和短路问题，并引入了单次请求架构优化性能。
 
-- 🎉 React Router 7.9.0稳定版支持中间件功能，通过future.v8_middleware标志启用
+- 🎉 React Router 7.9.0 稳定版支持中间件功能，通过 future.v8_middleware 标志启用
 - 🔄 解决了嵌套路由中父/子加载器并行执行时无法共享数据或短路的问题
-- ⚡ 单次请求（Single Fetch）架构合并并行HTTP请求，优化服务器渲染应用性能
-- 🛠️ 提供类型安全的Context API，改进数据传递和类型支持
-- 📚 常见用例包括认证检查、请求日志、404重定向和响应头设置
-- 🔗 社区已有实用中间件库（如remix-utils），官方提供详细文档和示例
+- ⚡ 单次请求（Single Fetch）架构合并并行 HTTP 请求，优化服务器渲染应用性能
+- 🛠️ 提供类型安全的 Context API，改进数据传递和类型支持
+- 📚 常见用例包括认证检查、请求日志、404 重定向和响应头设置
+- 🔗 社区已有实用中间件库（如 remix-utils），官方提供详细文档和示例
 
 ---
 
@@ -305,29 +305,29 @@ React Router 7.9.0版本通过future.v8_middleware标志正式稳定了中间件
 
 **原文标题**: [Fetch streams are great, but not for measuring upload/download progress - JakeArchibald.com](https://jakearchibald.com/2025/fetch-streams-not-for-progress/)
 
-Fetch流虽然有助于并行处理数据，但不适合用于准确测量上传/下载进度，使用不当可能导致浏览器实现问题，目前推荐使用XHR监测进度，未来可能有专用API。
+Fetch 流虽然有助于并行处理数据，但不适合用于准确测量上传/下载进度，使用不当可能导致浏览器实现问题，目前推荐使用 XHR 监测进度，未来可能有专用 API。
 
-- 🚫 Fetch流不适合测量上传/下载进度，数据可能因编码压缩导致计算偏差
-- 📦 响应流支持分块处理数据，但Content-Length与解码后数据量不匹配
-- ⬆️ 请求流可实现并行处理与上传（如视频转码+传输），但无法反映真实网络传输进度
+- 🚫 Fetch 流不适合测量上传/下载进度，数据可能因编码压缩导致计算偏差
+- 📦 响应流支持分块处理数据，但 Content-Length 与解码后数据量不匹配
+- ⬆️ 请求流可实现并行处理与上传（如视频转码 + 传输），但无法反映真实网络传输进度
 - ⚠️ 错误使用流测量进度可能限制浏览器未来性能优化空间
-- 📊 当前推荐使用XMLHttpRequest的onprogress事件监测进度
-- 🔮 Igalia团队正在开发Fetch专用进度事件API，未来将弥补功能缺失
-- 📋 开发者可通过调查反馈对请求流功能的兴趣（Interop 2026提案）
+- 📊 当前推荐使用 XMLHttpRequest 的 onprogress 事件监测进度
+- 🔮 Igalia 团队正在开发 Fetch 专用进度事件 API，未来将弥补功能缺失
+- 📋 开发者可通过调查反馈对请求流功能的兴趣（Interop 2026 提案）
 
 ---
 
-### [告别TypeScript。我们依然爱你，TypeScript | 作者：Chander Ramesh | 2025年9月 | Motion工程博客](https://engineering.usemotion.com/moving-off-of-typescript-e7bb1f3ad091?gi=d7e517bb57b4)
+### [告别 TypeScript。我们依然爱你，TypeScript | 作者：Chander Ramesh | 2025 年 9 月 | Motion 工程博客](https://engineering.usemotion.com/moving-off-of-typescript-e7bb1f3ad091?gi=d7e517bb57b4)
 
 **原文标题**: [Moving off of TypeScript. We Love You, TypeScript | by Chander Ramesh | Sep, 2025 | Motion Engineering Blog](https://engineering.usemotion.com/moving-off-of-typescript-e7bb1f3ad091?gi=d7e517bb57b4)
 
 Motion公司分享了从TypeScript迁移到C#的决策过程，强调了对TypeScript的感激但出于技术需求转向更成熟的企业级语言。
 
-- 🚀 TypeScript曾助力快速迭代和全栈开发，但大型代码库出现性能瓶颈和工具链问题
+- 🚀 TypeScript 曾助力快速迭代和全栈开发，但大型代码库出现性能瓶颈和工具链问题
 - ⚠️ 面临移动端兼容性、编译速度慢、第三方库依赖等痛点
-- 🛡️ 选择C#因Entity Framework等成熟ORM、强类型安全和稳定运行时
-- 🤖 AI编程支持更好，编译器严格性和文档规范提升代码生成质量
-- 🌍 .NET生态虽非最流行但足够成熟，适合企业级CRUD应用开发
+- 🛡️ 选择C#因Entity Framework 等成熟 ORM、强类型安全和稳定运行时
+- 🤖 AI 编程支持更好，编译器严格性和文档规范提升代码生成质量
+- 🌍 .NET 生态虽非最流行但足够成熟，适合企业级 CRUD 应用开发
 - 🔄 语言相似性降低迁移成本，最终追求"无聊但可靠"的技术方案
 
 ---
@@ -336,13 +336,13 @@ Motion公司分享了从TypeScript迁移到C#的决策过程，强调了对TypeS
 
 **原文标题**: [Sign Up - Auth0](https://auth0.com/signup?onboard_app=genai&ocid=7014z000001NyoxAAC-aPA4z0000008OZeGAM?utm_source=jsweekly&utm_campaign=amer_mult_mult_all_ciam-dev_dg-plg_auth0_native_jsweekly_newsletter_aud_JSWeeklyNewsletter-Q3_utm2&utm_medium=cpc&utm_id=aNKKZ000000047Q4AQ)
 
-这是一个用户注册界面，提供多种注册方式和全球国家/地区选择，并强调通过Auth for GenAI服务实现安全认证功能。
+这是一个用户注册界面，提供多种注册方式和全球国家/地区选择，并强调通过 Auth for GenAI 服务实现安全认证功能。
 
 - 📧 需要输入邮箱和选择国家/地区进行注册
 - 🌍 提供全球所有国家/地区的完整选择列表
 - 🔐 支持第三方账号登录（GitHub/Google/Microsoft）
 - ⚠️ 注册需同意服务条款和隐私政策
-- 🤖 突出展示Auth for GenAI的四大安全功能：用户认证、API调用、文档获取和异步授权
+- 🤖 突出展示 Auth for GenAI 的四大安全功能：用户认证、API 调用、文档获取和异步授权
 - ℹ️ 底部显示版权信息和开发者预览状态说明
 
 ---
@@ -351,32 +351,32 @@ Motion公司分享了从TypeScript迁移到C#的决策过程，强调了对TypeS
 
 **原文标题**: [React Won by Default – And It's Killing Frontend Innovation | Loren Stewart](https://www.lorenstew.art/blog/react-won-by-default)
 
-React因默认选择而非技术优势主导前端生态，抑制了Svelte、Solid、Qwik等创新框架的发展，导致技术决策依赖网络效应而非实际需求，最终阻碍整体前端创新。
+React 因默认选择而非技术优势主导前端生态，抑制了 Svelte、Solid、Qwik 等创新框架的发展，导致技术决策依赖网络效应而非实际需求，最终阻碍整体前端创新。
 
-- 🚫 React因生态惯性成为默认选择，而非技术优势
-- ⚡ Svelte通过编译时优化减少运行时开销，性能提升显著（如Bundle大小从187KB降至9KB）
-- 🧩 Solid采用细粒度响应式更新，避免虚拟DOM开销，效率比React高2-3倍
-- ⏩ Qwik通过可恢复性实现即时启动，特别适合大型应用和慢速网络
-- 🔄 React的虚拟DOM和Hooks模式引入性能与复杂度代价（如依赖数组陷阱、闭包问题）
+- 🚫 React 因生态惯性成为默认选择，而非技术优势
+- ⚡ Svelte 通过编译时优化减少运行时开销，性能提升显著（如 Bundle 大小从 187KB 降至 9KB）
+- 🧩 Solid 采用细粒度响应式更新，避免虚拟 DOM 开销，效率比 React 高 2-3 倍
+- ⏩ Qwik 通过可恢复性实现即时启动，特别适合大型应用和慢速网络
+- 🔄 React 的虚拟 DOM 和 Hooks 模式引入性能与复杂度代价（如依赖数组陷阱、闭包问题）
 - 🌐 默认选择导致技术单一化：招聘需求、教育方向、组件库生态形成自我强化循环
-- 📉 实际案例：Cloudflare 2025年9月 outage 因useEffect依赖问题触发API过载
+- 📉 实际案例：Cloudflare 2025 年 9 月 outage 因 useEffect 依赖问题触发 API 过载
 - 🧠 解决方案：基于项目约束评估框架，采用创新预算试点替代方案
-- 🌱 生态健康需要多样性，避免单一框架约束Web平台进化
+- 🌱 生态健康需要多样性，避免单一框架约束 Web 平台进化
 
 ---
 
-### [超越视界：Angular如何拥抱AI打造下一代应用 | Angular | 2025年9月 | Angular博客](https://blog.angular.dev/beyond-the-horizon-how-angular-is-embracing-ai-for-next-gen-apps-7a7ed706e1a3?gi=078f48236679)
+### [超越视界：Angular 如何拥抱 AI 打造下一代应用 | Angular | 2025 年 9 月 | Angular 博客](https://blog.angular.dev/beyond-the-horizon-how-angular-is-embracing-ai-for-next-gen-apps-7a7ed706e1a3?gi=078f48236679)
 
 **原文标题**: [Beyond the Horizon: How Angular is Embracing AI for Next-Gen Apps | by Angular | Sep, 2025 | Angular Blog](https://blog.angular.dev/beyond-the-horizon-how-angular-is-embracing-ai-for-next-gen-apps-7a7ed706e1a3?gi=078f48236679)
 
-Angular团队正在积极整合人工智能技术，通过开发创新工具和跨框架合作，为开发者提供更强大的AI辅助开发体验，同时确保框架在AI时代的适应性和代码质量。
+Angular 团队正在积极整合人工智能技术，通过开发创新工具和跨框架合作，为开发者提供更强大的 AI 辅助开发体验，同时确保框架在 AI 时代的适应性和代码质量。
 
-- 🛠️ Angular推出Web Codegen Scorer工具，用于评估和优化LLM生成的Web代码质量，支持即时适配新特性（如Signal表单）
-- 🤝 与SolidJS团队合作并开源该工具，鼓励跨框架社区共同提升AI代码生成能力
-- ⚡ 推出Angular MCP Server（v20.2），为AI编程代理提供内置工具，未来将集成现代化迁移功能和RAG技术以更新LLM知识库
-- 🌐 在Google AI产品中扩展Angular支持：Gemini Canvas和Google AI Studio均已提供Angular模板选项
-- 🔮 探索AI优先框架设计，研究如何优化框架结构同时兼顾人类开发者和LLM的协作效率
-- 🚀 强调Angular的约定式架构（服务/依赖注入）天然适合LLM理解，将持续确保开发者体验平滑过渡
+- 🛠️ Angular 推出 Web Codegen Scorer 工具，用于评估和优化 LLM 生成的 Web 代码质量，支持即时适配新特性（如 Signal 表单）
+- 🤝 与 SolidJS 团队合作并开源该工具，鼓励跨框架社区共同提升 AI 代码生成能力
+- ⚡ 推出 Angular MCP Server（v20.2），为 AI 编程代理提供内置工具，未来将集成现代化迁移功能和 RAG 技术以更新 LLM 知识库
+- 🌐 在 Google AI 产品中扩展 Angular 支持：Gemini Canvas 和 Google AI Studio 均已提供 Angular 模板选项
+- 🔮 探索 AI 优先框架设计，研究如何优化框架结构同时兼顾人类开发者和 LLM 的协作效率
+- 🚀 强调 Angular 的约定式架构（服务/依赖注入）天然适合 LLM 理解，将持续确保开发者体验平滑过渡
 
 ---
 
@@ -388,22 +388,22 @@ Angular团队正在积极整合人工智能技术，通过开发创新工具和�
 
 ---
 
-### [使用React Three Fiber打造沉浸式3D天气可视化 | Codrops](https://tympanus.net/codrops/2025/09/18/creating-an-immersive-3d-weather-visualization-with-react-three-fiber/)
+### [使用 React Three Fiber 打造沉浸式 3D 天气可视化 | Codrops](https://tympanus.net/codrops/2025/09/18/creating-an-immersive-3d-weather-visualization-with-react-three-fiber/)
 
 **原文标题**: [Creating an Immersive 3D Weather Visualization with React Three Fiber | Codrops](https://tympanus.net/codrops/2025/09/18/creating-an-immersive-3d-weather-visualization-with-react-three-fiber/)
 
-使用React Three Fiber创建沉浸式3D天气可视化应用，通过实时API数据驱动太阳、雨雪和风暴等动态天气效果的交互式3D场景。
+使用 React Three Fiber 创建沉浸式 3D 天气可视化应用，通过实时 API 数据驱动太阳、雨雪和风暴等动态天气效果的交互式 3D 场景。
 
-- 🌐 基于React Three Fiber和@react-three/drei技术栈构建，集成WeatherAPI实时气象数据
+- 🌐 基于 React Three Fiber 和@react-three/drei 技术栈构建，集成 WeatherAPI 实时气象数据
 - ☀️ 实现动态日月系统：采用球体贴图与点光源模拟，支持根据当地时间自动切换昼夜效果
-- 🌧️ 高性能粒子系统：使用实例化网格(instancedMesh)实现降雨（圆柱体）和降雪（带漂移旋转）效果
+- 🌧️ 高性能粒子系统：使用实例化网格 (instancedMesh) 实现降雨（圆柱体）和降雪（带漂移旋转）效果
 - ⚡ 复合风暴系统：结合暗色云层、强降雨和随机闪电效果，通过点光源闪烁模拟雷暴场景
-- 📡 API驱动逻辑：将气象文本描述映射为3D组件，支持晴天/多云/降雨/暴风雪等8种天气类型
-- 🌅 智能天空系统：根据日出/日暮/白天/黑夜四个时段动态调整Drei Sky组件的大气参数
-- 🔮 三维预报门户：使用MeshPortalMaterial创建可交互的天气预报门户，支持沉浸式天气预览
-- ✨ 电影级镜头光晕：集成R3F-Ultimate-Lens-Flare库，仅在晴朗天气条件下显示光晕效果
-- ⚡ 性能优化：采用实例化渲染、条件加载和门户模式降级（减少87.5%粒子数量）确保流畅体验
-- 💾 智能缓存机制：实现10分钟API缓存和降级方案，保证应用在API限流时的正常使用
+- 📡 API 驱动逻辑：将气象文本描述映射为 3D 组件，支持晴天/多云/降雨/暴风雪等 8 种天气类型
+- 🌅 智能天空系统：根据日出/日暮/白天/黑夜四个时段动态调整 Drei Sky 组件的大气参数
+- 🔮 三维预报门户：使用 MeshPortalMaterial 创建可交互的天气预报门户，支持沉浸式天气预览
+- ✨ 电影级镜头光晕：集成 R3F-Ultimate-Lens-Flare 库，仅在晴朗天气条件下显示光晕效果
+- ⚡ 性能优化：采用实例化渲染、条件加载和门户模式降级（减少 87.5% 粒子数量）确保流畅体验
+- 💾 智能缓存机制：实现 10 分钟 API 缓存和降级方案，保证应用在 API 限流时的正常使用
 
 ---
 
@@ -450,16 +450,16 @@ Expo SDK 54 正式发布，包含 React Native 0.81，带来 iOS 预编译框架
 
 **原文标题**: [Expo](https://expo.dev/)
 
-Expo是一个全栈React Native框架，提供云端服务以加速应用开发全周期，支持跨平台部署和高效开发工具。
+Expo 是一个全栈 React Native 框架，提供云端服务以加速应用开发全周期，支持跨平台部署和高效开发工具。
 
-- 🚀 全栈React Native框架，集成云端服务加速应用开发周期
-- 📱 支持使用React、Kotlin、Swift编写代码，兼容Expo模块API和配置插件
-- 🌐 单一代码库部署Android、iOS和Web应用，支持空中更新(OTA)快速迭代
+- 🚀 全栈 React Native 框架，集成云端服务加速应用开发周期
+- 📱 支持使用 React、Kotlin、Swift 编写代码，兼容 Expo 模块 API 和配置插件
+- 🌐 单一代码库部署 Android、iOS 和 Web 应用，支持空中更新 (OTA) 快速迭代
 - ⚡ 开发体验优化：真机调试、一键启动模拟器、可视化包分析工具
-- 👥 拥有5万+Discord社区成员，80%的React Native开发者选择使用
-- 🏢 企业级安全合规(SOC 2 Type 2/GDPR)，服务数亿终端用户
-- 📊 内置监控洞察功能，实时追踪用户数据、API请求和错误率
-- 🛠️ 自动化构建测试流程，应用商店提交时长控制在10分钟内
+- 👥 拥有 5 万+Discord 社区成员，80% 的 React Native 开发者选择使用
+- 🏢 企业级安全合规 (SOC 2 Type 2/GDPR)，服务数亿终端用户
+- 📊 内置监控洞察功能，实时追踪用户数据、API 请求和错误率
+- 🛠️ 自动化构建测试流程，应用商店提交时长控制在 10 分钟内
 - ⭐ 受到开发者广泛推荐，简化原生代码操作并提升开发效率
 
 ---
@@ -468,13 +468,13 @@ Expo是一个全栈React Native框架，提供云端服务以加速应用开发�
 
 **原文标题**: [Expo File System gets a major upgrade in SDK 54](https://expo.dev/blog/expo-file-system)
 
-该文本是Expo公司网站的页脚导航内容，列出了产品服务、资源链接、公司信息和法律条款等板块。
+该文本是 Expo 公司网站的页脚导航内容，列出了产品服务、资源链接、公司信息和法律条款等板块。
 
 - 📱 产品服务包括应用开发工具和云服务等
 - 📚 资源区域提供文档、博客和技术支持入口
 - 🏢 公司信息涵盖定价、客户案例和招聘信息
 - ⚖️ 法律板块包含隐私政策和服务条款等法律文档
-- ©️ 版权信息显示为650 Industries公司2025年所有
+- ©️ 版权信息显示为 650 Industries 公司 2025 年所有
 
 ---
 
@@ -482,7 +482,7 @@ Expo是一个全栈React Native框架，提供云端服务以加速应用开发�
 
 **原文标题**: [Free trials for subscriptions](https://clerk.com/changelog/2025-09-02-free-trials?utm_source=cooper-press&utm_medium=newsletter&utm_campaign=free-trials&utm_content=09-19-25&dub_id=AAeQIsxPF9Ht9k4L)
 
-Clerk Billing推出免费试用功能，让用户通过设置试用期提升转化率，支持灵活配置和管理，并内置防滥用机制。
+Clerk Billing 推出免费试用功能，让用户通过设置试用期提升转化率，支持灵活配置和管理，并内置防滥用机制。
 
 - 🆓 免费试用可提升用户转化率，帮助用户体验产品价值
 - ⚙️ 支持在仪表盘灵活配置单个或批量计划的试用时长
@@ -498,37 +498,37 @@ Clerk Billing推出免费试用功能，让用户通过设置试用期提升转�
 
 **原文标题**: [GitHub - LeaVerou/bluesky-likes: Flexible components for displaying Bluesky likes](https://github.com/LeaVerou/bluesky-likes)
 
-这是一个用于展示BlueSky帖子点赞情况的Web组件库，提供灵活且轻量级的解决方案。
+这是一个用于展示 BlueSky 帖子点赞情况的 Web 组件库，提供灵活且轻量级的解决方案。
 
-- 🎯 提供两个核心组件：bluesky-likes显示点赞数，bluesky-likers显示点赞用户头像
-- ⚡ 超轻量级设计，整个包仅约2KB，无依赖
+- 🎯 提供两个核心组件：bluesky-likes 显示点赞数，bluesky-likers 显示点赞用户头像
+- ⚡ 超轻量级设计，整个包仅约 2KB，无依赖
 - 💾 支持动态响应和跨实例的激进缓存机制
 - ♿ 具备无障碍访问支持和国际化友好设计
-- 🎨 高度可定制化，通过CSS属性、插槽和部件进行样式定制
-- 🔧 提供自动加载器简化使用，支持CDN和npm安装
-- 📱 响应式设计，支持RTL语言和本地化数字格式化
-- 🔌 内置BlueSky API包装器，支持获取用户资料和帖子信息
-- 📄 MIT许可证，鼓励盈利使用时资助开发
+- 🎨 高度可定制化，通过 CSS 属性、插槽和部件进行样式定制
+- 🔧 提供自动加载器简化使用，支持 CDN 和 npm 安装
+- 📱 响应式设计，支持 RTL 语言和本地化数字格式化
+- 🔌 内置 BlueSky API 包装器，支持获取用户资料和帖子信息
+- 📄 MIT 许可证，鼓励盈利使用时资助开发
 
 ---
 
-### [Bluesky喜爱Web组件](https://projects.verou.me/bluesky-likes/)
+### [Bluesky 喜爱 Web 组件](https://projects.verou.me/bluesky-likes/)
 
 **原文标题**: [Bluesky Likes Web Components](https://projects.verou.me/bluesky-likes/)
 
-Bluesky Likes Web Components 是一个开源项目，提供可嵌入的组件用于展示Bluesky社交平台的点赞数据，由Lea Verou和Dmitry Sharabin开发，与Bluesky官方无关联。
+Bluesky Likes Web Components 是一个开源项目，提供可嵌入的组件用于展示 Bluesky 社交平台的点赞数据，由 Lea Verou 和 Dmitry Sharabin 开发，与 Bluesky 官方无关联。
 
 - 📄 提供详细文档和资源访问
 - 🐛 支持提交错误反馈与创意建议
-- 💻 开源代码托管于GitHub平台
-- 📦 可通过npm包管理器安装使用
+- 💻 开源代码托管于 GitHub 平台
+- 📦 可通过 npm 包管理器安装使用
 - 🔗 组件内嵌链接时可覆盖默认跳转行为
-- ⚠️ 明确声明与Bluesky官方无隶属关系
-- ®️ 注明Bluesky商标权属信息
+- ⚠️ 明确声明与 Bluesky 官方无隶属关系
+- ®️ 注明 Bluesky 商标权属信息
 
 ---
 
-### [Svedit - 基于Svelte 5构建富文本编辑器的小型库](https://svedit.vercel.app/)
+### [Svedit - 基于 Svelte 5 构建富文本编辑器的小型库](https://svedit.vercel.app/)
 
 **原文标题**: [Svedit - A tiny library for building rich content editors with Svelte 5](https://svedit.vercel.app/)
 
@@ -553,17 +553,17 @@ Svedit 是一个专为 Svelte 5 设计的轻量级富内容编辑器库，采用
 
 **原文标题**: [GitHub - michael/svedit](https://github.com/michael/svedit)
 
-Svedit是一个基于Svelte 5的轻量级富文本编辑器库，允许通过JSON建模内容并使用自定义组件进行渲染和直接编辑。
+Svedit 是一个基于 Svelte 5 的轻量级富文本编辑器库，允许通过 JSON 建模内容并使用自定义组件进行渲染和直接编辑。
 
-- 📝 基于Svelte 5构建的轻量级富文本编辑器库
-- 🎯 使用JSON数据模型定义文档结构和内容
-- ✨ 支持直接在布局中进行内容编辑，无需外部CMS
+- 📝 基于 Svelte 5 构建的轻量级富文本编辑器库
+- 🎯 使用 JSON 数据模型定义文档结构和内容
+- ✨ 支持直接在布局中进行内容编辑，无需外部 CMS
 - 📊 采用图形数据模型，支持跨文档内容共享
-- 🔧 提供完整的文档API和事务处理系统
+- 🔧 提供完整的文档 API 和事务处理系统
 - 🖱️ 支持三种选择类型：文本选择、节点选择和属性选择
 - 🎨 采用无边框画布设计，编辑工具通过悬浮层显示
 - ⚙️ 支持自定义节点类型、工具栏和覆盖层组件
-- 📦 目前处于测试阶段，代码总量不足3000行
+- 📦 目前处于测试阶段，代码总量不足 3000 行
 
 ---
 
@@ -636,12 +636,12 @@ React DayPicker 是一个高度可定制的 React 日期选择器组件，支持
 
 **原文标题**: [Release v0.18.0 · wasp-lang/wasp · GitHub](https://github.com/wasp-lang/wasp/releases/tag/v0.18.0)
 
-Wasp编程语言发布了0.18.0版本更新，包含重大变更、新功能、错误修复和多项优化改进。
+Wasp 编程语言发布了 0.18.0 版本更新，包含重大变更、新功能、错误修复和多项优化改进。
 
-- ⚠️ 需要Node.js版本≥v22.12，Tailwind配置改用ESM模块，Vite升级至7版本
-- 🚀 新增wasp build start命令，支持本地模拟生产环境运行
-- 🐛 修复JSON环境变量解析、Bash补全循环和EmailSignupData字段错误
-- 🔧 支持Prisma三斜杠注释、移除Stitches减少包体积、优化移动端字体显示
+- ⚠️ 需要 Node.js 版本≥v22.12，Tailwind 配置改用 ESM 模块，Vite 升级至 7 版本
+- 🚀 新增 wasp build start 命令，支持本地模拟生产环境运行
+- 🐛 修复 JSON 环境变量解析、Bash 补全循环和 EmailSignupData 字段错误
+- 🔧 支持 Prisma 三斜杠注释、移除 Stitches 减少包体积、优化移动端字体显示
 - 📚 新增自定义身份验证操作的代码示例文档
 
 ---
@@ -650,20 +650,20 @@ Wasp编程语言发布了0.18.0版本更新，包含重大变更、新功能、�
 
 **原文标题**: [Wasp](https://wasp.sh/)
 
-Wasp是一个全栈Web开发框架，通过声明式配置和代码生成技术提升React/Node.js/Prisma应用的开发效率。
+Wasp 是一个全栈 Web 开发框架，通过声明式配置和代码生成技术提升 React/Node.js/Prisma 应用的开发效率。
 
 - 🚀 基于声明式配置语言快速构建全栈应用，支持一键部署
 - 🔐 内置完整身份验证系统，支持社交登录和邮箱登录
-- 🎯 提供类型安全的RPC通信层，自动同步服务端与客户端
-- ⚡ 集成Prisma数据模型，支持自动缓存失效和乐观更新
+- 🎯 提供类型安全的 RPC 通信层，自动同步服务端与客户端
+- ⚡ 集成 Prisma 数据模型，支持自动缓存失效和乐观更新
 - 📧 内置邮件发送功能和后台任务调度系统
-- 🌐 完全开源，支持自定义API路由和数据库种子数据
-- 🛠️ 保留90%React/Node.js代码编写自由度，仅自动化样板代码
+- 🌐 完全开源，支持自定义 API 路由和数据库种子数据
+- 🛠️ 保留 90%React/Node.js 代码编写自由度，仅自动化样板代码
 - 📊 提供实时投票、待办应用等多个类型安全示例项目
 
 ---
 
-### [GitHub - sindresorhus/pretty-ms：将毫秒转换为人类可读字符串：`1337000000` → `15天11小时23分20秒`](https://github.com/sindresorhus/pretty-ms)
+### [GitHub - sindresorhus/pretty-ms：将毫秒转换为人类可读字符串：`1337000000` → `15 天 11 小时 23 分 20 秒`](https://github.com/sindresorhus/pretty-ms)
 
 **原文标题**: [GitHub - sindresorhus/pretty-ms: Convert milliseconds to a human readable string: `1337000000` → `15d 11h 23m 20s`](https://github.com/sindresorhus/pretty-ms)
 
@@ -683,14 +683,14 @@ Wasp是一个全栈Web开发框架，通过声明式配置和代码生成技术�
 
 **原文标题**: [Release v4.0.0 · JS-DevTools/npm-publish · GitHub](https://github.com/JS-DevTools/npm-publish/releases/tag/v4.0.0)
 
-JS-DevTools的npm-publish工具发布了v4.0.0版本，主要更新了运行环境和模块格式，包含一些功能改进和错误修复。
+JS-DevTools 的 npm-publish 工具发布了 v4.0.0 版本，主要更新了运行环境和模块格式，包含一些功能改进和错误修复。
 
-- 🚀 更新运行环境至Node 24和npm 11
-- ⚠️ 不再支持Node 16和18，仅支持Node 20及以上版本
-- 📦 库现在仅支持ESM模块格式
-- 🐛 修复了Windows系统上npm CLI的生成问题
-- 🔧 更新了dry-run和发布冲突逻辑以适配npm>=10
-- 📚 更新了tar和semver依赖项
+- 🚀 更新运行环境至 Node 24 和 npm 11
+- ⚠️ 不再支持 Node 16 和 18，仅支持 Node 20 及以上版本
+- 📦 库现在仅支持 ESM 模块格式
+- 🐛 修复了 Windows 系统上 npm CLI 的生成问题
+- 🔧 更新了 dry-run 和发布冲突逻辑以适配 npm>=10
+- 📚 更新了 tar 和 semver 依赖项
 - 🔒 启用了不可变发布，建议固定使用具体版本号
 
 ---
@@ -699,13 +699,13 @@ JS-DevTools的npm-publish工具发布了v4.0.0版本，主要更新了运行环�
 
 **原文标题**: [GitHub - hexojs/hexo: A fast, simple & powerful blog framework, powered by Node.js.](https://github.com/hexojs/hexo)
 
-Hexo是一个基于Node.js的快速、简洁且强大的博客框架，提供高效的静态网站生成和丰富的扩展功能。
+Hexo 是一个基于 Node.js 的快速、简洁且强大的博客框架，提供高效的静态网站生成和丰富的扩展功能。
 
-- 🚀 基于Node.js的快速静态网站生成器，支持GitHub风格Markdown和Octopress插件
-- 🌐 一键部署到GitHub Pages/Heroku等平台，拥有数百个主题和插件生态
+- 🚀 基于 Node.js 的快速静态网站生成器，支持 GitHub 风格 Markdown 和 Octopress 插件
+- 🌐 一键部署到 GitHub Pages/Heroku等平台，拥有数百个主题和插件生态
 - 📝 简洁命令行操作：支持博客初始化、本地服务器启动、文章创建和静态文件生成
-- 🤝 开源MIT协议，拥有40.8k星标和5k分叉，社区活跃并提供多语言支持
-- 🔧 提供完整API文档、故障排查指南和多种社区交流渠道（Discord/Telegram等）
+- 🤝 开源 MIT 协议，拥有 40.8k 星标和 5k 分叉，社区活跃并提供多语言支持
+- 🔧 提供完整 API 文档、故障排查指南和多种社区交流渠道（Discord/Telegram 等）
 
 ---
 
@@ -733,12 +733,12 @@ Fresh 是一个基于 Deno 构建的下一代 Web 框架，专注于速度、可
 
 Meticulous AI 是一款革命性的自动化测试工具，通过记录用户交互行为自动生成并维护测试套件，无需编写代码即可全面覆盖应用的各种边缘情况和用户流程，显著提升开发效率和软件质量。
 
-- 🚀 自动生成测试：通过记录开发、预演和生产环境中的用户交互，AI引擎自动创建并持续更新可视化端到端测试套件
+- 🚀 自动生成测试：通过记录开发、预演和生产环境中的用户交互，AI 引擎自动创建并持续更新可视化端到端测试套件
 - ⚡ 零维护测试：测试随应用迭代自动演化，无需人工编写、修复或维护任何测试代码
-- 🛡️ 无抖动测试：从Chromium底层构建的确定性调度引擎，彻底消除测试中的随机失败问题
-- 🔍 预合并验证：在代码合并前即可查看PR对用户工作流程的影响，避免回归问题
-- 🌐 广泛框架支持：支持NextJS、React、Vue、Angular、Nuxt、SvelteKit等主流前端框架
-- 📊 企业级应用：已被Dropbox、Notion、Lattice等100多家组织采用，大幅提升工程团队信心和交付速度
+- 🛡️ 无抖动测试：从 Chromium 底层构建的确定性调度引擎，彻底消除测试中的随机失败问题
+- 🔍 预合并验证：在代码合并前即可查看 PR 对用户工作流程的影响，避免回归问题
+- 🌐 广泛框架支持：支持 NextJS、React、Vue、Angular、Nuxt、SvelteKit 等主流前端框架
+- 📊 企业级应用：已被 Dropbox、Notion、Lattice 等 100 多家组织采用，大幅提升工程团队信心和交付速度
 - ⚙️ 灵活集成：既可补充现有测试套件，也可完全替代传统测试方案
 
 ---
@@ -763,14 +763,14 @@ Redis 是一个高速数据平台，提供云端和本地解决方案，帮助�
 
 **原文标题**: [Get started with Redis](https://redis.io/lp/get-started2/?utm_source=cooper-press&utm_medium=cpa&utm_campaign=2025-08-app_performance-javascript-weekly-2&utm_content=cloud_-_redis_cloud_users)
 
-Redis是一个高速数据平台，提供云端和本地解决方案，帮助团队快速开发应用，支持向量数据库、缓存和NoSQL数据库等多种数据技术。
+Redis 是一个高速数据平台，提供云端和本地解决方案，帮助团队快速开发应用，支持向量数据库、缓存和 NoSQL 数据库等多种数据技术。
 
 - 🚀 全球最快数据平台，加速应用开发
 - 🌩️ 支持云端与本地部署，开箱即用
-- 🧠 向量数据库助力生成式AI应用
+- 🧠 向量数据库助力生成式 AI 应用
 - ⚡ 内存缓存技术提升应用响应速度
-- 🗃️ 键值对NoSQL数据库支持实时应用
-- 📊 无缝从实验扩展到生产级AI应用
+- 🗃️ 键值对 NoSQL 数据库支持实时应用
+- 📊 无缝从实验扩展到生产级 AI 应用
 - 💻 提供多语言开发和全角色支持资源
 - 🆓 提供免费构建入口和演示服务
 
@@ -780,14 +780,14 @@ Redis是一个高速数据平台，提供云端和本地解决方案，帮助团
 
 **原文标题**: [JetBrains JavaScript Day 2025](https://lp.jetbrains.com/javascript-day-2025/?utm_source=cooperpress&utm_medium=cpc&utm_campaign=js_weekly_javascript_day_2025&utm_content=3%20)
 
-JetBrains将于2025年10月2日在线举办JavaScript Day免费技术大会，汇聚行业专家分享前沿技术与实践经验，包含主题演讲、实时问答及多场专题讨论。
+JetBrains 将于 2025 年 10 月 2 日在线举办 JavaScript Day 免费技术大会，汇聚行业专家分享前沿技术与实践经验，包含主题演讲、实时问答及多场专题讨论。
 
-- 🗓️ 活动时间：2025年10月2日线上举行（中欧时间15:00开始）
-- 🎫 参与方式：免费注册，通过YouTube平台直播/回放
-- 👥 特邀讲者：包含Ryan Carniato（SolidJS作者）、Kent C. Dodds（前端教育家）、Lydia Hallie（Bun核心成员）等9位行业领袖
-- 🚀 技术主题：涵盖量子计算与JavaScript应用、现代构建工具优化、微前端SSR架构、信号机制演进、AI交互新模式等前沿领域
-- ⚡ 专项议题：包含Bun运行时性能解析、开源项目维护实践、WebStorm产品幕后决策揭秘等实战内容
-- 📺 后续支持：所有会议录制视频将在YouTube发布，支持实时聊天提问
+- 🗓️ 活动时间：2025 年 10 月 2 日线上举行（中欧时间 15:00 开始）
+- 🎫 参与方式：免费注册，通过 YouTube 平台直播/回放
+- 👥 特邀讲者：包含 Ryan Carniato（SolidJS 作者）、Kent C. Dodds（前端教育家）、Lydia Hallie（Bun 核心成员）等 9 位行业领袖
+- 🚀 技术主题：涵盖量子计算与 JavaScript 应用、现代构建工具优化、微前端 SSR 架构、信号机制演进、AI 交互新模式等前沿领域
+- ⚡ 专项议题：包含 Bun 运行时性能解析、开源项目维护实践、WebStorm 产品幕后决策揭秘等实战内容
+- 📺 后续支持：所有会议录制视频将在 YouTube 发布，支持实时聊天提问
 - ✨ 特色环节：设有开幕欢迎、量子算法趣味演讲及闭幕总结环节
 
 ---
@@ -796,13 +796,13 @@ JetBrains将于2025年10月2日在线举办JavaScript Day免费技术大会，�
 
 **原文标题**: [JetBrains JavaScript Day 2025](https://lp.jetbrains.com/javascript-day-2025/?utm_source=cooperpress&utm_medium=cpc&utm_campaign=js_weekly_javascript_day_2025&utm_content=3%20)
 
-JetBrains将于2025年10月2日在线举办JavaScript Day免费技术大会，汇聚行业专家分享前沿技术与实践经验，包含主题演讲和实时问答环节。
+JetBrains 将于 2025 年 10 月 2 日在线举办 JavaScript Day 免费技术大会，汇聚行业专家分享前沿技术与实践经验，包含主题演讲和实时问答环节。
 
-- 🗓️ 活动时间：2025年10月2日线上举行
-- 🎫 参与方式：免费注册，通过YouTube直播观看
-- 👨‍💼 特邀讲者：包括Ryan Carniato（SolidJS创建者）、Kent C. Dodds（软件教育家）、Lydia Hallie（Bun核心成员）等9位行业领袖
-- 🚀 技术主题：涵盖量子算法JavaScript应用、现代构建工具优化、微前端SSR架构、信号机制演进、AI交互新模式等前沿领域
-- ⚡ 特别亮点：Bun运行时性能解析、WebStorm开发工具幕后揭秘、大型开源项目维护实践
+- 🗓️ 活动时间：2025 年 10 月 2 日线上举行
+- 🎫 参与方式：免费注册，通过 YouTube 直播观看
+- 👨‍💼 特邀讲者：包括 Ryan Carniato（SolidJS 创建者）、Kent C. Dodds（软件教育家）、Lydia Hallie（Bun 核心成员）等 9 位行业领袖
+- 🚀 技术主题：涵盖量子算法 JavaScript 应用、现代构建工具优化、微前端 SSR 架构、信号机制演进、AI 交互新模式等前沿领域
+- ⚡ 特别亮点：Bun 运行时性能解析、WebStorm 开发工具幕后揭秘、大型开源项目维护实践
 - 📺 后续支持：所有演讲将录制发布，支持回看
 - 🤝 社区准则：活动遵循行为准则，鼓励实时互动问答
 
@@ -812,10 +812,10 @@ JetBrains将于2025年10月2日在线举办JavaScript Day免费技术大会，�
 
 **原文标题**: [IINA - The modern media player for macOS](https://iina.io/)
 
-IINA是一款基于开源媒体播放器mpv的强大播放器，几乎支持所有本地媒体格式，并可通过浏览器扩展一键播放各类在线流媒体。
+IINA 是一款基于开源媒体播放器 mpv 的强大播放器，几乎支持所有本地媒体格式，并可通过浏览器扩展一键播放各类在线流媒体。
 
-- 🎬 基于开源mpv，支持几乎所有媒体文件格式
-- 🌐 集成youtube-dl，支持在线流媒体播放
+- 🎬 基于开源 mpv，支持几乎所有媒体文件格式
+- 🌐 集成 youtube-dl，支持在线流媒体播放
 - 🖱️ 提供浏览器扩展，实现一键播放功能
 
 ---
@@ -824,42 +824,42 @@ IINA是一款基于开源媒体播放器mpv的强大播放器，几乎支持所�
 
 **原文标题**: [Plugin System | IINA - The modern media player for macOS](https://iina.io/plugins/)
 
-IINA 1.4.0版本引入了基于JavaScript的插件系统，允许用户通过编写代码扩展播放器功能，包括播放控制、界面定制和系统交互等。
+IINA 1.4.0 版本引入了基于 JavaScript 的插件系统，允许用户通过编写代码扩展播放器功能，包括播放控制、界面定制和系统交互等。
 
-- 🧩 插件系统支持JavaScript编写，可调用mpv API、控制播放、访问网络/文件系统及添加UI元素
-- ⚡ 提供简洁高效的API，仅需少量代码即可实现定制功能，支持直接粘贴代码片段使用
-- 🎬 示例1：视频加载时在画面顶部以大字体显示标题（使用overlay模块）
-- 🪟 示例2：视频暂停时自动最小化窗口，恢复窗口时继续播放（通过事件监听实现）
-- 🔧 核心功能覆盖：播放控制、MPV接口、事件监听、网络请求、字幕下载、菜单扩展等12个模块
-- 🛠️ 提供官方命令行工具iina-plugin辅助开发，包含完整文档和TypeScript类型定义
-- 🌐 支持用户脚本插件(iina-plugin-userscript)免打包安装，提供多语言翻译和开源资源
+- 🧩 插件系统支持 JavaScript 编写，可调用 mpv API、控制播放、访问网络/文件系统及添加 UI 元素
+- ⚡ 提供简洁高效的 API，仅需少量代码即可实现定制功能，支持直接粘贴代码片段使用
+- 🎬 示例 1：视频加载时在画面顶部以大字体显示标题（使用 overlay 模块）
+- 🪟 示例 2：视频暂停时自动最小化窗口，恢复窗口时继续播放（通过事件监听实现）
+- 🔧 核心功能覆盖：播放控制、MPV 接口、事件监听、网络请求、字幕下载、菜单扩展等 12 个模块
+- 🛠️ 提供官方命令行工具 iina-plugin 辅助开发，包含完整文档和 TypeScript 类型定义
+- 🌐 支持用户脚本插件 (iina-plugin-userscript) 免打包安装，提供多语言翻译和开源资源
 
 ---
 
-### [哪个npm包的版本号最大？](https://adamhl.dev/blog/largest-number-in-npm-package/)
+### [哪个 npm 包的版本号最大？](https://adamhl.dev/blog/largest-number-in-npm-package/)
 
 **原文标题**: [Which npm package has the largest version number?](https://adamhl.dev/blog/largest-number-in-npm-package/)
 
-作者通过分析npm注册表中的360多万个包，探索了版本号中最大数字的包，最终发现遵循语义化版本控制且版本号最大的包是all-the-package-names，其版本为1.3905.0。
+作者通过分析 npm 注册表中的 360 多万个包，探索了版本号中最大数字的包，最终发现遵循语义化版本控制且版本号最大的包是 all-the-package-names，其版本为 1.3905.0。
 
-- 🔍 作者因AWS SDK v3.888.0的版本号引发好奇，开始研究npm中版本号最大的包
-- 🌐 通过CouchDB的复制API获取了超过360万个包的数据，耗时约12小时
-- 📊 分析显示许多高版本号包因自动化配置错误（如GitHub Actions循环发布）导致版本数虚高
-- 🏆 经过筛选，all-the-package-names以3905的版本号成为实际遵循语义化版本控制的获胜者
-- ⚙️ 使用TypeScript编写脚本处理数据，排除了已知的问题包（如@mahdiarjangi/phetch-cli等）
+- 🔍 作者因 AWS SDK v3.888.0 的版本号引发好奇，开始研究 npm 中版本号最大的包
+- 🌐 通过 CouchDB 的复制 API 获取了超过 360 万个包的数据，耗时约 12 小时
+- 📊 分析显示许多高版本号包因自动化配置错误（如 GitHub Actions 循环发布）导致版本数虚高
+- 🏆 经过筛选，all-the-package-names 以 3905 的版本号成为实际遵循语义化版本控制的获胜者
+- ⚙️ 使用 TypeScript 编写脚本处理数据，排除了已知的问题包（如@mahdiarjangi/phetch-cli 等）
 
 ---
 
-### [下载离线MDN文档 - CSS、HTML、JavaScript、HTTP、SVG - Kapeli](https://kapeli.com/mdn_offline)
+### [下载离线 MDN 文档 - CSS、HTML、JavaScript、HTTP、SVG - Kapeli](https://kapeli.com/mdn_offline)
 
 **原文标题**: [Download Offline MDN Documentation - CSS, HTML, JavaScript, HTTP, SVG - Kapeli](https://kapeli.com/mdn_offline)
 
-该网站提供MDN离线文档下载，包含CSS、HTML、JavaScript、HTTP和SVG等开发文档，支持无网络环境下使用，每月更新并建议搭配专用文档浏览器获得更佳体验。
+该网站提供 MDN 离线文档下载，包含 CSS、HTML、JavaScript、HTTP 和 SVG 等开发文档，支持无网络环境下使用，每月更新并建议搭配专用文档浏览器获得更佳体验。
 
-- 📁 提供CSS/HTML/JavaScript/HTTP/SVG五大离线文档集下载
-- 📅 所有文档均于2025年9月2日完成最新更新
+- 📁 提供 CSS/HTML/JavaScript/HTTP/SVG 五大离线文档集下载
+- 📅 所有文档均于 2025 年 9 月 2 日完成最新更新
 - 🌐 支持直接解压后用浏览器查看，无需安装专用应用
-- ⚡ 推荐搭配Dash(macOS)/Velocity(Win)/Zeal(Linux)使用增强搜索功能
+- ⚡ 推荐搭配 Dash(macOS)/Velocity(Win)/Zeal(Linux) 使用增强搜索功能
 - 🔄 文档档案每月定期更新保持内容最新
 - ⚠️ 若使用文档应用需通过应用内置功能下载专用版本
 
@@ -869,14 +869,14 @@ IINA 1.4.0版本引入了基于JavaScript的插件系统，允许用户通过编
 
 **原文标题**: [A Worker-Owned Tech Consultancy - Bocoup](https://www.bocoup.com/blog/the-webs-most-tolerated-feature)
 
-文章回顾了Internet Explorer的`zoom`属性从非标准功能到最终被现代CSS标准采纳的曲折历程，强调了其在Web发展中的复杂影响和最终标准化的重要性。
+文章回顾了 Internet Explorer 的`zoom`属性从非标准功能到最终被现代 CSS 标准采纳的曲折历程，强调了其在 Web 发展中的复杂影响和最终标准化的重要性。
 
-- 🕰️ 2000年6月19日，微软发布IE 5.5，引入非标准功能`zoom`，允许开发者缩放元素但缺乏正式规范。
-- 🌐 早期Web平台碎片化导致`zoom`未被广泛采纳，仅作为装饰性功能存在。
-- 🔄 Mozilla在Firefox中忽略`zoom`，转而支持标准化的CSS `transform`属性，提供更高效和可控的缩放功能。
-- 📊 通过多项指标（如开发者调查、MDN流量、Stack Overflow提及等）发现`zoom`看似流行，但实际使用中94%为无效值（如`zoom: 1`，用于修复旧版IE问题）。
-- ⚙️ 2023年CSS工作组提出新`zoom`规范，减少缺陷，并于2025年被Interop项目采纳，获得广泛浏览器支持。
-- 💡 启示：Web共识虽慢但促创造性解决方案；避免依赖专有技术；旧功能需谨慎处理兼容性。
+- 🕰️ 2000 年 6 月 19 日，微软发布 IE 5.5，引入非标准功能`zoom`，允许开发者缩放元素但缺乏正式规范。
+- 🌐 早期 Web 平台碎片化导致`zoom`未被广泛采纳，仅作为装饰性功能存在。
+- 🔄 Mozilla 在 Firefox 中忽略`zoom`，转而支持标准化的 CSS `transform`属性，提供更高效和可控的缩放功能。
+- 📊 通过多项指标（如开发者调查、MDN 流量、Stack Overflow 提及等）发现`zoom`看似流行，但实际使用中 94% 为无效值（如`zoom: 1`，用于修复旧版 IE 问题）。
+- ⚙️ 2023 年 CSS 工作组提出新`zoom`规范，减少缺陷，并于 2025 年被 Interop 项目采纳，获得广泛浏览器支持。
+- 💡 启示：Web 共识虽慢但促创造性解决方案；避免依赖专有技术；旧功能需谨慎处理兼容性。
 
 ---
 
