@@ -105,7 +105,7 @@ def scrape_nextjsweekly():
         os.makedirs(outputs_dir)
         print(f"创建输出目录：{outputs_dir}")
         
-    url = "https://nextjsweekly.com/"
+    url = "https://nextjsweekly.com/issues"
     
     # Add headers to mimic a browser request
     headers = {
