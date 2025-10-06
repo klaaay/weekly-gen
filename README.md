@@ -196,11 +196,11 @@ cat last_run_info.json
 # 同步依赖
 uv sync
 
-# 启动服务（默认 8000 端口），内部调度执行 src.main
-uv run uvicorn app.server:app --host 0.0.0.0 --port 8000
+# 启动服务（默认 8111 端口），内部调度执行 src.main
+uv run uvicorn app.server:app --host 0.0.0.0 --port 8111
 
 # 环境变量可配置间隔（默认 300 秒）
-TASK_INTERVAL_SECONDS=600 uv run uvicorn app.server:app --host 0.0.0.0 --port 8000
+TASK_INTERVAL_SECONDS=600 uv run uvicorn app.server:app --host 0.0.0.0 --port 8111
 ```
 
 接口：
@@ -212,7 +212,7 @@ TASK_INTERVAL_SECONDS=600 uv run uvicorn app.server:app --host 0.0.0.0 --port 80
 
 ```bash
 docker build -t weekly-gen:latest .
-docker run --rm -p 8000:8000 \
+docker run --rm -p 8111:8111 \
   -e TASK_INTERVAL_SECONDS=300 \
   -e RUN_CMD="python -m src.main -w 8 --all" \
   -e RUNNING_IN_CONTAINER=1 \

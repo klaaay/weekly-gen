@@ -27,7 +27,7 @@ ENV PATH="/app/.venv/bin:$PATH" \
     WORKDIR=/app \
     RUNNING_IN_CONTAINER=1
 
-EXPOSE 8000
+EXPOSE 8111
 
 # Run the FastAPI app via uv + uvicorn
-CMD ["uv", "run", "uvicorn", "app.server:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uv", "run", "uvicorn", "app.server:app", "--host", "0.0.0.0", "--port", "8111"]

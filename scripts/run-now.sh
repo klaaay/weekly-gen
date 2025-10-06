@@ -3,9 +3,9 @@ set -euo pipefail
 
 # Trigger an immediate background run via FastAPI endpoint.
 # Config:
-#   BASE_URL: service base URL (default: http://localhost:8000)
+#   BASE_URL: service base URL (default: http://localhost:8111)
 
-BASE_URL=${BASE_URL:-http://localhost:8000}
+BASE_URL=${BASE_URL:-http://localhost:8111}
 
 echo "[run-now] POST ${BASE_URL}/run-now"
 
