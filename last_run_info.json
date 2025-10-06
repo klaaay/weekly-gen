@@ -1,9 +1,9 @@
 {
   "thisweekinreact": {
-    "issue_title": "📨 #251: TanStack, React Router, RSC, ESLint, Vite, ViewTransition | Nitro Modules, Expo Workflows, Live Activity, Nitro Fetch, IAP | CSS, HTML, WASM, knip, npm",
-    "link_url": "/newsletter/251",
-    "timestamp": "2025-09-25T10:25:12.861964",
-    "full_url": "https://thisweekinreact.com//newsletter/251"
+    "issue_title": "📨 #252: React 19.2, Activity, useEffectEvent, Compiler, Astro, StyleX, Docusaurus | Vega OS, Voltra, NativeScript, Expo Router, NativeWind, Lynx, Maestro | TC39, Temporal, Baseline, State Of JS, Supply Chain, MCP",
+    "link_url": "/newsletter/252",
+    "timestamp": "2025-10-03T15:27:40.464651",
+    "full_url": "https://thisweekinreact.com//newsletter/252"
   },
   "nextjsweekly": {
     "issue_title": "Issue #102",
@@ -13,38 +13,38 @@
   },
   "reactdigest": {
     "issue_title": "one weekly email",
-    "link_url": "/newsletters/2129-react-won-by-default",
-    "timestamp": "2025-09-22T09:52:50.784673",
-    "full_url": "https://reactdigest.net//newsletters/2129-react-won-by-default"
+    "link_url": "/newsletters/2137-the-nuance-of-react-rendering-behaviour",
+    "timestamp": "2025-10-05T18:39:32.628879",
+    "full_url": "https://reactdigest.net//newsletters/2137-the-nuance-of-react-rendering-behaviour"
   },
   "webtoolsweekly": {
-    "issue_title": "#636\nCSS/HTML, AI Tools, Mobile",
-    "link_url": "archives/issue-636/",
-    "timestamp": "2025-09-25T16:11:33.642983",
-    "full_url": "https://webtoolsweekly.com/archives/issue-636/"
+    "issue_title": "#637\nJS Utils, Media Tools, Git/CLI",
+    "link_url": "archives/issue-637/",
+    "timestamp": "2025-10-03T15:27:40.930131",
+    "full_url": "https://webtoolsweekly.com/archives/issue-637/"
   },
   "nodeweekly": {
-    "issue_title": "Issue #593",
-    "link_url": "issues/593",
-    "timestamp": "2025-09-16T16:06:45.637234",
-    "full_url": "https://nodeweekly.com/issues/593"
+    "issue_title": "Issue #594",
+    "link_url": "issues/594",
+    "timestamp": "2025-10-01T18:37:22.315430",
+    "full_url": "https://nodeweekly.com/issues/594"
   },
   "frontendfoc": {
-    "issue_title": "Issue #710",
-    "link_url": "issues/710",
-    "timestamp": "2025-09-25T10:25:14.379268",
-    "full_url": "https://frontendfoc.us/issues/710"
+    "issue_title": "Issue #711",
+    "link_url": "issues/711",
+    "timestamp": "2025-10-01T18:37:22.295441",
+    "full_url": "https://frontendfoc.us/issues/711"
   },
   "reactweekly": {
-    "issue_title": "Issue #445",
-    "link_url": "issues/445",
-    "timestamp": "2025-09-25T10:25:14.184729",
-    "full_url": "https://reactweekly.com/issues/445"
+    "issue_title": "Issue #446",
+    "link_url": "issues/446",
+    "timestamp": "2025-10-01T18:37:22.328074",
+    "full_url": "https://reactweekly.com/issues/446"
   },
   "javascriptweekly": {
-    "issue_title": "Issue #754",
-    "link_url": "issues/754",
-    "timestamp": "2025-09-28T01:00:08.650323",
-    "full_url": "https://javascriptweekly.com/issues/754"
+    "issue_title": "Issue #755",
+    "link_url": "issues/755",
+    "timestamp": "2025-10-03T16:02:21.265567",
+    "full_url": "https://javascriptweekly.com/issues/755"
   }
 }
