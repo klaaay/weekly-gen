@@ -246,24 +246,24 @@ Mochi Motion 是一个基于 Framer Motion 构建的 React 动画库，专注于
 
 ---
 
-### [GitHub - NickvanDyke/eslint-plugin-react-you-might-not-need-an-effect：捕获不必要的React useEffect钩子，使代码更简洁、快速和安全。](https://github.com/NickvanDyke/eslint-plugin-react-you-might-not-need-an-effect)
+### [GitHub - NickvanDyke/eslint-plugin-react-you-might-not-need-an-effect：捕获不必要的React useEffect 钩子，使代码更简洁、快速和安全。](https://github.com/NickvanDyke/eslint-plugin-react-you-might-not-need-an-effect)
 
 **原文标题**: [GitHub - NickvanDyke/eslint-plugin-react-you-might-not-need-an-effect: Catch unnecessary React useEffect hooks to make your code simpler, faster, and safer.](https://github.com/NickvanDyke/eslint-plugin-react-you-might-not-need-an-effect)
 
-这是一个用于检测React中不必要useEffect钩子的ESLint插件，旨在帮助开发者编写更简洁、高效和可靠的代码。
+这是一个用于检测 React 中不必要 useEffect 钩子的 ESLint 插件，旨在帮助开发者编写更简洁、高效和可靠的代码。
 
-- 🎯 核心功能是捕获不必要的useEffect使用，使代码更易维护且减少错误
-- 📦 支持通过npm或yarn安装，提供推荐配置和自定义配置选项
-- ⚡ 包含11条具体规则，涵盖派生状态、状态更新链、事件处理等常见误用场景
+- 🎯 核心功能是捕获不必要的 useEffect 使用，使代码更易维护且减少错误
+- 📦 支持通过 npm 或 yarn 安装，提供推荐配置和自定义配置选项
+- ⚡ 包含 11 条具体规则，涵盖派生状态、状态更新链、事件处理等常见误用场景
 - 🛠️ 提供详细的规则文档和测试用例，帮助开发者理解各种使用场景
-- 📚 基于React官方最佳实践，特别推荐给React新手学习正确的思维模式
-- 🔧 可与react-hooks/exhaustive-deps规则配合使用以获得更准确的分析
-- 💡 采用MIT开源协议，目前获得1.2k星标和14个分支
+- 📚 基于 React 官方最佳实践，特别推荐给 React 新手学习正确的思维模式
+- 🔧 可与 react-hooks/exhaustive-deps 规则配合使用以获得更准确的分析
+- 💡 采用 MIT 开源协议，目前获得 1.2k 星标和 14 个分支
 - 🐛 鼓励用户反馈使用中遇到的问题，持续改进插件功能
 
 ---
 
-### [React PDF – 灵活强大的React PDF查看器组件](https://www.react-pdf.dev/?utm_source=nextjsweekly&utm_medium=newsletter&utm_campaign=rp_sponsor)
+### [React PDF – 灵活强大的 React PDF 查看器组件](https://www.react-pdf.dev/?utm_source=nextjsweekly&utm_medium=newsletter&utm_campaign=rp_sponsor)
 
 **原文标题**: [React PDF – Flexible and Powerful React PDF Viewer Component](https://www.react-pdf.dev/?utm_source=nextjsweekly&utm_medium=newsletter&utm_campaign=rp_sponsor)
 
@@ -279,44 +279,44 @@ Mochi Motion 是一个基于 Framer Motion 构建的 React 动画库，专注于
 **原文标题**: [Builders Guide to the AI SDK | Vercel Academy](https://vercel.com/academy/ai-sdk)
 
 overview summary
-AI SDK是由Vercel开发的开源工具库，通过实践项目教学帮助开发者快速构建生产级AI应用，涵盖数据提取、智能分类和对话系统等核心功能
+AI SDK 是由 Vercel 开发的开源工具库，通过实践项目教学帮助开发者快速构建生产级 AI 应用，涵盖数据提取、智能分类和对话系统等核心功能
 
 - 🚀 渐进式项目开发：从数据提取脚本到完整聊天机器人，分阶段实现结构化输出、流式响应和工具调用
-- 🎯 实战教学法：通过修复问题代码学习最佳实践，每课产出可运行代码并集成AI Elements等生产工具
-- 📚 三重课程体系：基础知识→隐形AI功能→对话系统，逐步掌握LLM概念、提示工程和外部API集成
-- 🔧 技术准备要求：需熟悉TypeScript/React开发环境，配备Node.js v20+和Vercel账户
-- 🤖 智能辅助学习：提供结构化提示模板，引导使用AI助手深入理解模式设计和错误处理
-- ⚡ 生产级特性：支持Zod模式验证、服务端动作、多步骤工作流，最终部署企业级聊天机器人
+- 🎯 实战教学法：通过修复问题代码学习最佳实践，每课产出可运行代码并集成 AI Elements 等生产工具
+- 📚 三重课程体系：基础知识→隐形 AI 功能→对话系统，逐步掌握 LLM 概念、提示工程和外部 API 集成
+- 🔧 技术准备要求：需熟悉 TypeScript/React 开发环境，配备 Node.js v20+ 和 Vercel 账户
+- 🤖 智能辅助学习：提供结构化提示模板，引导使用 AI 助手深入理解模式设计和错误处理
+- ⚡ 生产级特性：支持 Zod 模式验证、服务端动作、多步骤工作流，最终部署企业级聊天机器人
 
 ---
 
-### [使用React.js通过Framer Motion实现元素动画 | 作者：Sukanta Biswas | 2025年9月 | Medium](https://medium.com/@biswas.sukanta47/animating-elements-through-framer-motion-with-react-js-cdcfb2ce68b8)
+### [使用 React.js 通过 Framer Motion 实现元素动画 | 作者：Sukanta Biswas | 2025 年 9 月 | Medium](https://medium.com/@biswas.sukanta47/animating-elements-through-framer-motion-with-react-js-cdcfb2ce68b8)
 
 **原文标题**: [Animating Elements through framer motion with React.js | by Sukanta Biswas | Sep, 2025 | Medium](https://medium.com/@biswas.sukanta47/animating-elements-through-framer-motion-with-react-js-cdcfb2ce68b8)
 
-本文介绍了如何使用Framer Motion库在React.js中实现动画效果，通过对比原生CSS与Framer Motion的代码示例，展示了该库在简化动画开发、提升可读性和功能丰富性方面的优势。
+本文介绍了如何使用 Framer Motion 库在 React.js 中实现动画效果，通过对比原生 CSS 与 Framer Motion 的代码示例，展示了该库在简化动画开发、提升可读性和功能丰富性方面的优势。
 
-- 🚀 Framer Motion是专为React设计的生产级动画库，支持手势、过渡动画、关键帧等高级功能
-- ⚡ 通过声明式语法实现动画，代码简洁直观（如initial、animate、transition属性）
+- 🚀 Framer Motion 是专为 React 设计的生产级动画库，支持手势、过渡动画、关键帧等高级功能
+- ⚡ 通过声明式语法实现动画，代码简洁直观（如 initial、animate、transition 属性）
 - 🎯 提供丰富交互功能：悬停效果（whileHover）、点击反馈（whileTap）、拖拽（drag）和排序列表（Reorder）
-- 🎪 支持复杂动画序列：通过variants和staggerChildren实现错落有致的列表动画
-- 🔧 完美兼容TypeScript和现有React组件生态
-- 📦 安装简便：通过npm/yarn添加依赖后即可快速集成到Vite+React项目中
-- ✨ 相比纯CSS方案，大幅减少代码量且更易维护（如拖拽功能仅需添加drag属性）
+- 🎪 支持复杂动画序列：通过 variants 和 staggerChildren 实现错落有致的列表动画
+- 🔧 完美兼容 TypeScript 和现有 React 组件生态
+- 📦 安装简便：通过 npm/yarn 添加依赖后即可快速集成到 Vite+React 项目中
+- ✨ 相比纯 CSS 方案，大幅减少代码量且更易维护（如拖拽功能仅需添加 drag 属性）
 - 🌟 内置物理动画系统：支持弹簧动画、动量效果等高级交互体验
 
 ---
 
-### [掌握NPX：npm与Node.js高手的速查手册](https://www.nodejs-security.com/blog/mastering-npx-cheatsheet-npm-nodejs-power-users)
+### [掌握 NPX：npm 与 Node.js 高手的速查手册](https://www.nodejs-security.com/blog/mastering-npx-cheatsheet-npm-nodejs-power-users)
 
 **原文标题**: [Mastering NPX: A Cheatsheet for npm and Node.js Power Users](https://www.nodejs-security.com/blog/mastering-npx-cheatsheet-npm-nodejs-power-users)
 
-NPX是Node.js生态中一个强大的命令行工具，主要用于直接执行npm包而无需全局安装，适用于一次性命令或测试场景。
+NPX 是 Node.js 生态中一个强大的命令行工具，主要用于直接执行 npm 包而无需全局安装，适用于一次性命令或测试场景。
 
-- 🚀 无需全局安装即可运行npm包（如`npx create-react-app my-new-app`）
+- 🚀 无需全局安装即可运行 npm 包（如`npx create-react-app my-new-app`）
 - 📍 通过`-p`标志查找可执行文件路径（如`npx -p shellcheck which shellcheck`）
-- 🔧 支持指定Node.js版本运行命令（如`npx -p node@14 <command>`）
-- 💻 可直接执行GitHub Gists脚本（使用`npx gist <gist-id>`）
+- 🔧 支持指定 Node.js 版本运行命令（如`npx -p node@14 <command>`）
+- 💻 可直接执行 GitHub Gists 脚本（使用`npx gist <gist-id>`）
 - 🌡️ 支持传递环境变量（如`MY_VAR=value npx <package-name>`）
 - ⚠️ 需注意安全风险，建议仅运行可信来源的包
 - 💾 临时缓存机制，执行后自动清理系统
@@ -327,17 +327,17 @@ NPX是Node.js生态中一个强大的命令行工具，主要用于直接执行n
 
 **原文标题**: [State of JavaScript 2025](https://survey.devographics.com/en-US/survey/state-of-js/2025)
 
-JavaScript生态系统已从快速迭代转向稳定发展，前端框架创新放缓，竞争焦点转向元框架与构建工具领域。
+JavaScript 生态系统已从快速迭代转向稳定发展，前端框架创新放缓，竞争焦点转向元框架与构建工具领域。
 
-- 🎂 前端框架进入稳定期，九年历史的Svelte已称得上“老牌”
-- ⚔️ 元框架竞争白热化，Astro正挑战Next.js的领先地位
-- 🛠️ 构建工具领域Vite即将超越webpack成为新标准
-- 🦀 Rust生态可能孕育下一代颠覆性技术
-- 📊 2025年JavaScript现状调查于10月1日至11月1日开放
-- ⏱️ 问卷填写约需15-20分钟，所有问题均可跳过
-- 🌍 调查面向所有JavaScript/TypeScript使用者
+- 🎂 前端框架进入稳定期，九年历史的 Svelte 已称得上“老牌”
+- ⚔️ 元框架竞争白热化，Astro 正挑战 Next.js 的领先地位
+- 🛠️ 构建工具领域 Vite 即将超越 webpack 成为新标准
+- 🦀 Rust 生态可能孕育下一代颠覆性技术
+- 📊 2025 年 JavaScript 现状调查于 10 月 1 日至 11 月 1 日开放
+- ⏱️ 问卷填写约需 15-20 分钟，所有问题均可跳过
+- 🌍 调查面向所有 JavaScript/TypeScript 使用者
 - 📈 数据将公开助力开发者技术选型与浏览器厂商决策
-- 🤝 由Devographics联合全球志愿者共同运营
+- 🤝 由 Devographics 联合全球志愿者共同运营
 - 🗣️ 提供多语言版本支持全球开发者参与
 
 ---
