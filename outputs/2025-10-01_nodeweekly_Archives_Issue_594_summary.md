@@ -1,4 +1,4 @@
-### [Node周刊第594期：2025年9月30日](https://nodeweekly.com/issues/594)
+### [Node 周刊第 594 期：2025 年 9 月 30 日](https://nodeweekly.com/issues/594)
 
 **原文标题**: [Node Weekly Issue 594: September 30, 2025](https://nodeweekly.com/issues/594)
 
@@ -24,19 +24,19 @@
 
 **原文标题**: [A year of improving Node.js compatibility in Cloudflare Workers](https://blog.cloudflare.com/nodejs-workers-2025/)
 
-过去一年Cloudflare Workers团队大幅提升了与Node.js生态系统的兼容性，通过原生运行时实现了核心Node.js标准库模块，使数千个npm包可直接运行。
+过去一年 Cloudflare Workers 团队大幅提升了与 Node.js 生态系统的兼容性，通过原生运行时实现了核心 Node.js 标准库模块，使数千个 npm 包可直接运行。
 
-- 🚀 **原生运行时支持** - 在TypeScript和C++层面原生实现Node.js API，替代原有的polyfill方案，提升性能并减少内存占用
-- 🌐 **网络栈兼容** - 基于现有Sockets API和fetch实现了node:http、node:https、node:net等网络模块，支持Express/Koa等流行框架
-- 💾 **虚拟文件系统** - 为node:fs模块实现内存虚拟文件系统，支持临时文件读写操作，可与Durable Objects结合使用
-- 🔐 **完整加密功能** - 通过ncrypto项目完整实现node:crypto模块，支持哈希、加密、签名等密码学操作
-- ⚙️ **进程环境支持** - 实现process.env环境变量访问、stdin/stdout/stderr流处理以及process.nextTick等核心API
-- 📦 **模块化启用** - 通过nodejs_compat标志一键启用所有功能，也可按需单独启用/禁用特定模块
-- 🔄 **持续贡献生态** - 团队成员积极参与Node.js开源项目开发，推动跨运行时兼容性改进
+- 🚀 **原生运行时支持** - 在 TypeScript 和 C++ 层面原生实现 Node.js API，替代原有的 polyfill 方案，提升性能并减少内存占用
+- 🌐 **网络栈兼容** - 基于现有 Sockets API 和 fetch 实现了 node:http、node:https、node:net 等网络模块，支持 Express/Koa 等流行框架
+- 💾 **虚拟文件系统** - 为 node:fs 模块实现内存虚拟文件系统，支持临时文件读写操作，可与 Durable Objects 结合使用
+- 🔐 **完整加密功能** - 通过 ncrypto 项目完整实现 node:crypto 模块，支持哈希、加密、签名等密码学操作
+- ⚙️ **进程环境支持** - 实现 process.env 环境变量访问、stdin/stdout/stderr 流处理以及 process.nextTick 等核心 API
+- 📦 **模块化启用** - 通过 nodejs_compat 标志一键启用所有功能，也可按需单独启用/禁用特定模块
+- 🔄 **持续贡献生态** - 团队成员积极参与 Node.js 开源项目开发，推动跨运行时兼容性改进
 
 ---
 
-### [将Node.js HTTP服务器引入Cloudflare Workers](https://blog.cloudflare.com/bringing-node-js-http-servers-to-cloudflare-workers/)
+### [将 Node.js HTTP 服务器引入 Cloudflare Workers](https://blog.cloudflare.com/bringing-node-js-http-servers-to-cloudflare-workers/)
 
 **原文标题**: [Bringing Node.js HTTP servers to Cloudflare Workers](https://blog.cloudflare.com/bringing-node-js-http-servers-to-cloudflare-workers/)
 
@@ -53,7 +53,7 @@ Cloudflare Workers 现在支持 Node.js 的 node:http 客户端和服务器 API�
 
 ---
 
-### [基于Electron的应用程序在macOS 26上引发严重系统卡顿问题 · Issue #48311 · electron/electron · GitHub](https://github.com/electron/electron/issues/48311)
+### [基于 Electron 的应用程序在 macOS 26 上引发严重系统卡顿问题 · Issue #48311 · electron/electron · GitHub](https://github.com/electron/electron/issues/48311)
 
 **原文标题**: [Electron-based apps cause a huge system-wide lag on macOS 26 · Issue #48311 · electron/electron · GitHub](https://github.com/electron/electron/issues/48311)
 
@@ -61,12 +61,12 @@ Electron 应用在 macOS 26 系统中引发严重全局卡顿问题
 
 - 🐛 用户反馈 Electron 应用在 macOS 26 系统上导致严重系统卡顿
 - 🖥️ 受影响设备包括 M1 Max MacBook Pro 等 Apple Silicon 芯片设备
-- 📉 表现为窗口移动/滚动卡顿，CPU和GPU使用率却保持低位
-- 🔍 问题在同时开启多个Electron应用（如Discord和VS Code）时更为明显
-- 🚫 最小化Electron应用可暂时缓解卡顿现象
-- 🆚 该问题在macOS 15系统中不存在，仅出现在macOS 26版本
-- 📋 维护人员建议用户通过Feedback Assistant向苹果提交错误报告
-- 🔧 当前Electron版本为37.3.1，暂未确定具体解决方案
+- 📉 表现为窗口移动/滚动卡顿，CPU 和 GPU 使用率却保持低位
+- 🔍 问题在同时开启多个 Electron 应用（如 Discord 和 VS Code）时更为明显
+- 🚫 最小化 Electron 应用可暂时缓解卡顿现象
+- 🆚 该问题在 macOS 15 系统中不存在，仅出现在 macOS 26 版本
+- 📋 维护人员建议用户通过 Feedback Assistant 向苹果提交错误报告
+- 🔧 当前 Electron 版本为 37.3.1，暂未确定具体解决方案
 
 ---
 
@@ -74,14 +74,14 @@ Electron 应用在 macOS 26 系统中引发严重全局卡顿问题
 
 **原文标题**: [Electron Releases](https://releases.electronjs.org/)
 
-Electron项目当前包含稳定版、预发布版和夜间构建版三个主要版本分支，各版本均基于Chromium和Node.js进行开发。
+Electron 项目当前包含稳定版、预发布版和夜间构建版三个主要版本分支，各版本均基于 Chromium 和 Node.js 进行开发。
 
-- 🚀 稳定版v38.2.0已于4天前发布，采用Chromium 140和Node.js 22.19
-- 🔄 稳定版v37.6.0同步更新，搭载Chromium 138与Node.js 22.19
-- ⚡ 稳定版v36.9.3昨日发布，集成Chromium 136及Node.js 22.19
-- 🧪 预发布版v39.0.0-alpha.8今日推出，内置Chromium 142与Node.js 22.19
-- 🌙 夜间构建版v40.0.0-nightly今日更新，同步最新Chromium 142引擎
-- 🔧 当前活跃构建版本为基于main分支的v40.0.0-nightly.20251002
+- 🚀 稳定版 v38.2.0 已于 4 天前发布，采用 Chromium 140 和 Node.js 22.19
+- 🔄 稳定版 v37.6.0 同步更新，搭载 Chromium 138 与 Node.js 22.19
+- ⚡ 稳定版 v36.9.3 昨日发布，集成 Chromium 136 及 Node.js 22.19
+- 🧪 预发布版 v39.0.0-alpha.8 今日推出，内置 Chromium 142 与 Node.js 22.19
+- 🌙 夜间构建版 v40.0.0-nightly 今日更新，同步最新 Chromium 142 引擎
+- 🔧 当前活跃构建版本为基于 main 分支的 v40.0.0-nightly.20251002
 
 ---
 
@@ -121,38 +121,38 @@ Node.js v22.20.0 (LTS) 版本发布，主要更新了 OpenSSL 至 3.5.2 以延�
 
 ---
 
-### [AdonisJS - 功能齐全的Node.js网页框架](https://adonisjs.com/)
+### [AdonisJS - 功能齐全的 Node.js 网页框架](https://adonisjs.com/)
 
 **原文标题**: [AdonisJS - A fully featured web framework for Node.js](https://adonisjs.com/)
 
-AdonisJS是一个功能丰富的Node.js全栈框架，提供类型安全、现代化工具链和开箱即用的开发体验，让开发者能够快速构建高性能的Web应用。
+AdonisJS 是一个功能丰富的 Node.js 全栈框架，提供类型安全、现代化工具链和开箱即用的开发体验，让开发者能够快速构建高性能的 Web 应用。
 
-- 🛡️ 提供类型安全的API设计，支持智能提示和自动导入功能
-- 📦 基于ES模块构建，采用现代化JavaScript标准
-- ⚡ 内置高性能验证库和HTTP服务器，速度媲美Fastify
+- 🛡️ 提供类型安全的 API 设计，支持智能提示和自动导入功能
+- 📦 基于 ES 模块构建，采用现代化 JavaScript 标准
+- ⚡ 内置高性能验证库和 HTTP 服务器，速度媲美 Fastify
 - 🎯 核心框架包含完整功能集，无需额外组装依赖包
 - 🔧 集成配置管理、路由、中间件、文件上传等基础功能
-- 🧪 提供世界级测试体验，支持浏览器测试、API测试和邮件模拟
-- 📚 拥有大量官方维护的扩展包，涵盖ORM、认证、缓存等场景
-- 💬 开发者社区高度评价，认为其文档完善、体验接近Laravel
+- 🧪 提供世界级测试体验，支持浏览器测试、API 测试和邮件模拟
+- 📚 拥有大量官方维护的扩展包，涵盖 ORM、认证、缓存等场景
+- 💬 开发者社区高度评价，认为其文档完善、体验接近 Laravel
 - 🌐 支持多语言、实时通信、健康检查等企业级功能
-- 🛠️ 配备强大的CLI工具和IoC容器，提升开发效率
+- 🛠️ 配备强大的 CLI 工具和 IoC 容器，提升开发效率
 
 ---
 
-### [AdonisJS十年历程——个人回顾与未来展望](https://adonisjs.com/blog/a-decade-of-adonisjs-and-the-future)
+### [AdonisJS 十年历程——个人回顾与未来展望](https://adonisjs.com/blog/a-decade-of-adonisjs-and-the-future)
 
 **原文标题**: [10 Years of AdonisJS — A Personal Reflection and What’s Next](https://adonisjs.com/blog/a-decade-of-adonisjs-and-the-future)
 
-AdonisJS框架已走过十年历程，从解决Node.js全栈开发痛点的初心，逐步发展成为深受全球开发者信赖的开源项目。它并非一夜成名，却凭借纯净的架构设计和活跃社区的支持持续成长。项目创始人宣布将全职投入框架开发，并通过商业化路径确保项目长期发展。
+AdonisJS 框架已走过十年历程，从解决 Node.js 全栈开发痛点的初心，逐步发展成为深受全球开发者信赖的开源项目。它并非一夜成名，却凭借纯净的架构设计和活跃社区的支持持续成长。项目创始人宣布将全职投入框架开发，并通过商业化路径确保项目长期发展。
 
-- 🎉 项目成立十周年，从解决Node.js开发痛点逐步演变为成熟框架
+- 🎉 项目成立十周年，从解决 Node.js 开发痛点逐步演变为成熟框架
 - 🌱 坚持渐进式发展路线，依靠热情社区而非商业资本推动
 - ⚖️ 持续平衡功能迭代、工具更新与可持续发展之间的挑战
 - 🚀 以现代无技术债为核心优势，拒绝遗留包袱保持架构纯净
 - 💼 创始人宣布全职投入，通过赞助计划与商业版本实现长期运营
 - 👥 专注服务个人开发者与小团队，助力创意快速产品化
-- 🔮 未来将通过AdonisJS Insiders赞助计划与Plus商业版本加速发展
+- 🔮 未来将通过 AdonisJS Insiders 赞助计划与 Plus 商业版本加速发展
 
 ---
 
@@ -160,31 +160,31 @@ AdonisJS框架已走过十年历程，从解决Node.js全栈开发痛点的初�
 
 **原文标题**: [State of JavaScript 2025](https://survey.devographics.com/en-US/survey/state-of-js/2025)
 
-JavaScript生态系统已趋于稳定，前端框架创新放缓，竞争转向元框架与构建工具领域。
+JavaScript 生态系统已趋于稳定，前端框架创新放缓，竞争转向元框架与构建工具领域。
 
-- 🎂 前端框架进入稳定期，九年历史的Svelte已称得上"老牌"
-- ⚔️ 元框架竞争白热化，Astro正挑战Next.js的领先地位
-- 🛠️ 构建工具领域Vite即将超越webpack成为新标准
-- 🦀 Rust生态可能孕育下一代颠覆性技术
-- 📊 2025年度JavaScript现状调查于10月1日至11月1日进行
-- ⏱️ 调查耗时约15-20分钟，面向所有JavaScript/TypeScript使用者
+- 🎂 前端框架进入稳定期，九年历史的 Svelte 已称得上"老牌"
+- ⚔️ 元框架竞争白热化，Astro 正挑战 Next.js 的领先地位
+- 🛠️ 构建工具领域 Vite 即将超越 webpack 成为新标准
+- 🦀 Rust 生态可能孕育下一代颠覆性技术
+- 📊 2025 年度 JavaScript 现状调查于 10 月 1 日至 11 月 1 日进行
+- ⏱️ 调查耗时约 15-20 分钟，面向所有 JavaScript/TypeScript 使用者
 - 🌍 调查结果将公开，助力开发者技术选型与浏览器厂商决策
-- 🤝 由Devographics联合全球志愿者共同运营，支持多语言翻译
+- 🤝 由 Devographics 联合全球志愿者共同运营，支持多语言翻译
 
 ---
 
-### [我们的npm供应链安全强化计划 - GitHub博客](https://github.blog/security/supply-chain-security/our-plan-for-a-more-secure-npm-supply-chain/)
+### [我们的 npm 供应链安全强化计划 - GitHub 博客](https://github.blog/security/supply-chain-security/our-plan-for-a-more-secure-npm-supply-chain/)
 
 **原文标题**: [Our plan for a more secure npm supply chain - The GitHub Blog](https://github.blog/security/supply-chain-security/our-plan-for-a-more-secure-npm-supply-chain/)
 
-GitHub针对npm供应链安全威胁推出强化措施，包括强制双因素认证、细粒度令牌和可信发布机制，以应对近期恶意软件攻击并重建开源生态系统信任。
+GitHub 针对 npm 供应链安全威胁推出强化措施，包括强制双因素认证、细粒度令牌和可信发布机制，以应对近期恶意软件攻击并重建开源生态系统信任。
 
-- 🚨 近期npm注册表遭遇大规模账户劫持攻击，自复制蠕虫通过受维护者账户传播恶意软件
-- 🛡️ GitHub已移除500+受感染包并阻断恶意软件传播模式
-- 🔐 即将实施强制双因素认证和7天有效期的细粒度令牌
-- 📦 大力推广可信发布机制以替代传统API令牌
-- ⚙️ 逐步淘汰经典令牌和TOTP双因素认证，转向FIDO认证
-- 📋 维护者可立即启用可信发布、强化发布设置并采用WebAuthn认证
+- 🚨 近期 npm 注册表遭遇大规模账户劫持攻击，自复制蠕虫通过受维护者账户传播恶意软件
+- 🛡️ GitHub 已移除 500+ 受感染包并阻断恶意软件传播模式
+- 🔐 即将实施强制双因素认证和 7 天有效期的细粒度令牌
+- 📦 大力推广可信发布机制以替代传统 API 令牌
+- ⚙️ 逐步淘汰经典令牌和 TOTP 双因素认证，转向 FIDO 认证
+- 📋 维护者可立即启用可信发布、强化发布设置并采用 WebAuthn 认证
 - 🌐 强调生态系统安全需要开发者共同参与和持续警惕
 
 ---
@@ -201,100 +201,100 @@ GitHub针对npm供应链安全威胁推出强化措施，包括强制双因素�
 
 **原文标题**: [Trusted publishing for npm packages | npm Docs](https://docs.npmjs.com/trusted-publishers/)
 
-可信发布允许通过CI/CD工作流直接发布npm包，使用OpenID Connect认证替代传统令牌，提升安全性并自动生成来源证明。
+可信发布允许通过 CI/CD 工作流直接发布 npm 包，使用 OpenID Connect 认证替代传统令牌，提升安全性并自动生成来源证明。
 
-- 🔐 通过OIDC建立npm与CI/CD平台的信任关系，消除长期令牌泄露风险
-- ⚙️ 支持GitHub Actions和GitLab CI/CD云托管运行器，需npm CLI 11.5.1+
-- 📝 配置步骤：在npmjs.com添加发布者+在CI工作流添加OIDC权限
+- 🔐 通过 OIDC 建立 npm 与 CI/CD 平台的信任关系，消除长期令牌泄露风险
+- ⚙️ 支持 GitHub Actions 和 GitLab CI/CD云托管运行器，需npm CLI 11.5.1+
+- 📝 配置步骤：在 npmjs.com 添加发布者 + 在 CI 工作流添加 OIDC 权限
 - 🛡️ 强烈建议启用后限制令牌访问，选择"要求双因素认证并禁用令牌"
 - 🔄 迁移时先验证可信发布再撤销旧令牌，确保发布流程不间断
 - 📦 公有仓库发布公有包时自动生成来源证明，私有仓库不支持此功能
 - ⚠️ 当前限制：仅支持云托管运行器、每个包仅限一个发布者配置
-- 🔧 故障排查重点检查工作流文件名匹配、OIDC权限设置及运行环境
+- 🔧 故障排查重点检查工作流文件名匹配、OIDC 权限设置及运行环境
 
 ---
 
-### [加强npm安全性：认证与令牌管理的重要更新 - GitHub更新日志](https://github.blog/changelog/2025-09-29-strengthening-npm-security-important-changes-to-authentication-and-token-management/)
+### [加强 npm 安全性：认证与令牌管理的重要更新 - GitHub 更新日志](https://github.blog/changelog/2025-09-29-strengthening-npm-security-important-changes-to-authentication-and-token-management/)
 
 **原文标题**: [Strengthening npm security: Important changes to authentication and token management - GitHub Changelog](https://github.blog/changelog/2025-09-29-strengthening-npm-security-important-changes-to-authentication-and-token-management/)
 
-npm正在实施安全改进措施，包括调整令牌生命周期、淘汰经典令牌及升级双因素认证方式，以增强生态系统安全性。
+npm 正在实施安全改进措施，包括调整令牌生命周期、淘汰经典令牌及升级双因素认证方式，以增强生态系统安全性。
 
-- 🔐 精细令牌默认有效期缩短至7天，最长90天
-- 🚫 逐步淘汰经典npm令牌，改用精细权限令牌
-- 🔄 新TOTP双因素认证设置将被禁用，推荐使用WebAuthn
-- 📅 变更分阶段实施：10月初生效新令牌规则，11月中旬停用经典令牌
+- 🔐 精细令牌默认有效期缩短至 7 天，最长 90 天
+- 🚫 逐步淘汰经典 npm 令牌，改用精细权限令牌
+- 🔄 新 TOTP 双因素认证设置将被禁用，推荐使用 WebAuthn
+- 📅 变更分阶段实施：10 月初生效新令牌规则，11 月中旬停用经典令牌
 - 🤝 推荐采用信任发布机制替代长期令牌
 - 📚 提供文档、社区讨论和技术支持协助过渡
-- ⚠️ 现有TOTP配置暂可继续使用但将被逐步淘汰
+- ⚠️ 现有 TOTP 配置暂可继续使用但将被逐步淘汰
 
 ---
 
-### [掌握NPX：npm与Node.js高手的速查手册](https://www.nodejs-security.com/blog/mastering-npx-cheatsheet-npm-nodejs-power-users)
+### [掌握 NPX：npm 与 Node.js 高手的速查手册](https://www.nodejs-security.com/blog/mastering-npx-cheatsheet-npm-nodejs-power-users)
 
 **原文标题**: [Mastering NPX: A Cheatsheet for npm and Node.js Power Users](https://www.nodejs-security.com/blog/mastering-npx-cheatsheet-npm-nodejs-power-users)
 
-NPX是Node.js生态中一个强大的命令行工具，主要用于直接执行npm包而无需全局安装，适用于一次性命令或测试场景。
+NPX 是 Node.js 生态中一个强大的命令行工具，主要用于直接执行 npm 包而无需全局安装，适用于一次性命令或测试场景。
 
-- 🚀 无需全局安装即可运行npm包（如`npx create-react-app my-new-app`）
+- 🚀 无需全局安装即可运行 npm 包（如`npx create-react-app my-new-app`）
 - 📍 使用`-p`标志查找可执行文件路径（如`npx -p shellcheck which shellcheck`）
-- 🔧 支持指定Node.js版本运行命令（如`npx -p node@14 <command>`）
-- 💻 可直接执行GitHub Gists脚本（`npx gist <gist-id>`）
+- 🔧 支持指定 Node.js 版本运行命令（如`npx -p node@14 <command>`）
+- 💻 可直接执行 GitHub Gists 脚本（`npx gist <gist-id>`）
 - 🌡️ 支持传递环境变量（如`MY_VAR=value npx <package-name>`）
-- ⚠️ 需注意安全风险，建议使用npq等工具审计第三方包
+- ⚠️ 需注意安全风险，建议使用 npq 等工具审计第三方包
 - 🔄 自动清理临时缓存，保持系统整洁
-- 🔒 支持私有包执行（需配置npm认证）
+- 🔒 支持私有包执行（需配置 npm 认证）
 
 ---
 
-### [停止使用.reverse().find()：认识findLast() - 马特·史密斯](https://allthingssmitty.com/2025/09/22/stop-using-reverse-find-meet-findlast/)
+### [停止使用.reverse().find()：认识 findLast() - 马特·史密斯](https://allthingssmitty.com/2025/09/22/stop-using-reverse-find-meet-findlast/)
 
 **原文标题**: [
     Stop using .reverse().find(): meet findLast() - Matt Smith
   ](https://allthingssmitty.com/2025/09/22/stop-using-reverse-find-meet-findlast/)
 
-ES2023新增的findLast()和findLastIndex()方法可直接从数组末尾搜索元素，无需反转数组，提供更简洁高效的解决方案。
+ES2023 新增的 findLast() 和 findLastIndex() 方法可直接从数组末尾搜索元素，无需反转数组，提供更简洁高效的解决方案。
 
 - 🔍 替代传统反转搜索方式，避免数组复制和反转操作
 - 📋 适用于聊天记录、活动日志等需要查找最后匹配项的场景
 - ⚡ 提升代码可读性和性能，特别适合处理大型数据集
-- 🎯 findLast()返回匹配元素，findLastIndex()返回匹配索引
-- 🚫 自动跳过稀疏数组中的空槽位，但不跳过显式undefined值
+- 🎯 findLast() 返回匹配元素，findLastIndex() 返回匹配索引
+- 🚫 自动跳过稀疏数组中的空槽位，但不跳过显式 undefined 值
 - ⚠️ 仅适用于真实数组，不支持类数组对象
-- 🌐 主流浏览器和Node.js 18.12+均已支持
+- 🌐 主流浏览器和 Node.js 18.12+ 均已支持
 - 💡 比反向搜索更安全，不会改变原始数组
 
 ---
 
-### [在JavaScript BigInt中存储不明智的数据量 | 乔纳森的博客](https://jonathan-frere.com/posts/bigints-are-cool/)
+### [在 JavaScript BigInt 中存储不明智的数据量 | 乔纳森的博客](https://jonathan-frere.com/posts/bigints-are-cool/)
 
 **原文标题**: [Storing Unwise Amounts of Data in JavaScript Bigints | Jonathan's Blog
 ](https://jonathan-frere.com/posts/bigints-are-cool/)
 
-本文探讨了在JavaScript中使用Bigint类型存储数据的实验性方法，旨在解决配置对象存储时的性能问题，通过位操作实现紧凑数据存储和快速比较，但存在字段宽度限制和代码复杂度等挑战。
+本文探讨了在 JavaScript 中使用 Bigint 类型存储数据的实验性方法，旨在解决配置对象存储时的性能问题，通过位操作实现紧凑数据存储和快速比较，但存在字段宽度限制和代码复杂度等挑战。
 
 - 🎯 解决配置对象存储性能问题：重复键导致序列化字符串过大、对象比较成本高、批量操作缓慢
-- 💡 使用Bigint作为数据存储载体：通过位偏移和掩码操作实现字段的紧凑存储
-- 🛠️ 实现技术方案：定义字段位宽和偏移量，编写getBits/setBits函数，配合存在位标记字段状态
+- 💡 使用 Bigint 作为数据存储载体：通过位偏移和掩码操作实现字段的紧凑存储
+- 🛠️ 实现技术方案：定义字段位宽和偏移量，编写 getBits/setBits 函数，配合存在位标记字段状态
 - 📦 核心优势：内存使用极致压缩、序列化速度快、利用位运算优化比较和交集操作
-- ⚠️ 主要局限：字段必须预设最大宽度、Bigint位操作性能较低、代码复杂度显著增加
+- ⚠️ 主要局限：字段必须预设最大宽度、Bigint 位操作性能较低、代码复杂度显著增加
 - 🔬 实验性质：目前仍为侧项目探索，需在实际使用中验证能否通过快速比较启用其他优化
 - 💭 适用场景：仅推荐在特定性能敏感场景中使用，普通情况不建议采用此方案
 
 ---
 
-### [使用eBPF检测Node.js事件循环 | Coroot](https://coroot.com/blog/instrumenting-the-node-js-event-loop-with-ebpf/)
+### [使用 eBPF 检测 Node.js 事件循环 | Coroot](https://coroot.com/blog/instrumenting-the-node-js-event-loop-with-ebpf/)
 
 **原文标题**: [Instrumenting the Node.js event loop with eBPF | Coroot](https://coroot.com/blog/instrumenting-the-node-js-event-loop-with-ebpf/)
 
-本文介绍了如何使用eBPF技术监测Node.js事件循环的阻塞情况，通过轻量级的内核计数器实现生产环境可用的性能指标，帮助定位单线程事件循环导致的性能瓶颈。
+本文介绍了如何使用 eBPF 技术监测 Node.js 事件循环的阻塞情况，通过轻量级的内核计数器实现生产环境可用的性能指标，帮助定位单线程事件循环导致的性能瓶颈。
 
-- 🌀 Node.js单线程事件循环在CPU核心饱和时会导致性能骤降，即使系统仍有空闲CPU资源
-- ⏱️ 通过eBPF在libuv的uv__io_poll函数中测量同步回调执行时间，准确捕获事件循环阻塞时长
+- 🌀 Node.js 单线程事件循环在 CPU 核心饱和时会导致性能骤降，即使系统仍有空闲 CPU 资源
+- ⏱️ 通过 eBPF 在 libuv 的 uv__io_poll 函数中测量同步回调执行时间，准确捕获事件循环阻塞时长
 - 🚀 采用内核计数器方案替代事件流，仅维护累加纳秒数，实现极低开销的生产级监控
-- 🔍 在OpenTelemetry演示场景中验证：前端服务事件循环阻塞达0.81秒/秒，明确显示单核性能瓶颈
-- 📈 解决方案是通过水平扩展部署多个实例，使负载分散到不同事件循环以利用多核CPU
-- 🛠️ 该功能已集成至Coroot社区版和企业版，可开箱即用诊断Node.js服务性能问题
+- 🔍 在 OpenTelemetry 演示场景中验证：前端服务事件循环阻塞达 0.81 秒/秒，明确显示单核性能瓶颈
+- 📈 解决方案是通过水平扩展部署多个实例，使负载分散到不同事件循环以利用多核 CPU
+- 🛠️ 该功能已集成至 Coroot 社区版和企业版，可开箱即用诊断 Node.js 服务性能问题
 
 ---
 
@@ -318,7 +318,7 @@ Skia Canvas 是一个基于 Node.js 实现的 HTML Canvas 绘图 API，采用谷
 
 ---
 
-### [GitHub - samizdatco/skia-canvas: Node.js的多线程GPU加速2D矢量图形环境](https://github.com/samizdatco/skia-canvas)
+### [GitHub - samizdatco/skia-canvas: Node.js 的多线程 GPU 加速 2D 矢量图形环境](https://github.com/samizdatco/skia-canvas)
 
 **原文标题**: [GitHub - samizdatco/skia-canvas: A multi-threaded, GPU-powered, 2D vector graphics environment for Node.js](https://github.com/samizdatco/skia-canvas)
 
@@ -340,11 +340,11 @@ Skia Canvas 是一个基于 Google Skia 图形引擎的 Node.js 2D 矢量图形�
 
 **原文标题**: [Pompelmi](https://pompelmi.github.io/pompelmi/)
 
-概述：ZIP文件深度检测技术通过多重安全机制确保压缩文件处理的安全性。
+概述：ZIP 文件深度检测技术通过多重安全机制确保压缩文件处理的安全性。
 
 - 💣 炸弹/比率限制 - 防止恶意构造的压缩炸弹攻击
 - 🔄 遍历安全提取 - 阻止路径遍历攻击，确保安全解压
-- 🔍 内部MIME类型嗅探 - 自动检测压缩包内文件的真实格式
+- 🔍 内部 MIME 类型嗅探 - 自动检测压缩包内文件的真实格式
 
 ---
 
@@ -352,13 +352,13 @@ Skia Canvas 是一个基于 Google Skia 图形引擎的 Node.js 2D 矢量图形�
 
 **原文标题**: [YARA - The pattern matching swiss knife for malware researchers](https://virustotal.github.io/yara/)
 
-YARA是一款面向恶意软件研究人员的多功能模式匹配工具，可用于识别和分类恶意样本。它通过基于文本或二进制模式创建规则来描述恶意软件家族，支持跨平台运行并提供多种扩展资源。
+YARA 是一款面向恶意软件研究人员的多功能模式匹配工具，可用于识别和分类恶意样本。它通过基于文本或二进制模式创建规则来描述恶意软件家族，支持跨平台运行并提供多种扩展资源。
 
 - 🛠️ 核心功能：通过字符串匹配与布尔表达式创建检测规则，示例规则可识别包含特定十六进制码或字符串的文件
-- 🌐 跨平台支持：兼容Windows、Linux和Mac OS X系统，提供命令行界面和Python扩展接口
-- 🔧 生态工具：集成yara-ci持续测试规则、yextend压缩文件扫描等开源扩展
-- 📚 资源汇总：包含GitHub项目库、官方文档、技术交流群组和漏洞反馈渠道
-- 🏢 广泛应用：被Avast、Cisco、McAfee等近百家安全企业和组织采用
+- 🌐 跨平台支持：兼容 Windows、Linux 和 Mac OS X 系统，提供命令行界面和 Python 扩展接口
+- 🔧 生态工具：集成 yara-ci 持续测试规则、yextend 压缩文件扫描等开源扩展
+- 📚 资源汇总：包含 GitHub 项目库、官方文档、技术交流群组和漏洞反馈渠道
+- 🏢 广泛应用：被 Avast、Cisco、McAfee 等近百家安全企业和组织采用
 
 ---
 
@@ -381,18 +381,18 @@ pompelmi 是一个专为 Node.js 设计的免费开源文件扫描工具，专�
 
 ---
 
-### [AI代码审查工具 - 发版前分析拉取请求 | Sentry](https://sentry.io/product/ai-code-review/?utm_source=nodeweekly&utm_medium=paid-community&utm_campaign=aicodereview-fy26q3-aicodereviewlaunch&utm_content=newsletter-ai-code-review-beta-learnmore)
+### [AI 代码审查工具 - 发版前分析拉取请求 | Sentry](https://sentry.io/product/ai-code-review/?utm_source=nodeweekly&utm_medium=paid-community&utm_campaign=aicodereview-fy26q3-aicodereviewlaunch&utm_content=newsletter-ai-code-review-beta-learnmore)
 
 **原文标题**: [AI Code Review Tool - Analyze PRs Before Shipping | Sentry](https://sentry.io/product/ai-code-review/?utm_source=nodeweekly&utm_medium=paid-community&utm_campaign=aicodereview-fy26q3-aicodereviewlaunch&utm_content=newsletter-ai-code-review-beta-learnmore)
 
-Sentry AI代码审查平台通过智能预测和自动化测试提升开发效率，在代码合并前主动识别问题。
+Sentry AI 代码审查平台通过智能预测和自动化测试提升开发效率，在代码合并前主动识别问题。
 
-- 🐛 错误预测：结合历史错误数据与实时代码分析，在PR中精准预警潜在故障并提供修复方案
+- 🐛 错误预测：结合历史错误数据与实时代码分析，在 PR 中精准预警潜在故障并提供修复方案
 - 🔍 即时审查：自动检测拼写、格式及逻辑错误，整合代码库上下文信息加速代码合并
 - 🤖 测试生成：自动创建覆盖所有代码行的可执行单元测试，生成独立分支供审核
-- 🌍 可用范围：目前支持GitHub/GitHub企业版，欧盟地区暂不可用
+- 🌍 可用范围：目前支持 GitHub/GitHub 企业版，欧盟地区暂不可用
 - 💰 成本政策：公开测试阶段完全免费
-- 🛡️ 隐私保护：用户数据默认不用于AI训练，生成内容仅对当前用户可见
+- 🛡️ 隐私保护：用户数据默认不用于 AI 训练，生成内容仅对当前用户可见
 - 📬 更新订阅：提供月度产品通讯，避免信息过载
 
 ---
@@ -418,15 +418,15 @@ npm-check-updates 是一个用于检查并升级 package.json 中依赖包版本
 
 **原文标题**: [GitHub Copilot CLI is now in public preview - GitHub Changelog](https://github.blog/changelog/2025-09-25-github-copilot-cli-is-now-in-public-preview/)
 
-GitHub Copilot CLI 现已进入公开预览阶段，将AI编程助手直接集成至终端，支持本地同步开发并具备完整的代码操作能力。
+GitHub Copilot CLI 现已进入公开预览阶段，将 AI 编程助手直接集成至终端，支持本地同步开发并具备完整的代码操作能力。
 
-- 💻 终端原生开发：直接在命令行中使用Copilot编程助手，无需切换上下文
-- 🔗 原生GitHub集成：通过自然语言访问仓库、议题和拉取请求，自动使用现有GitHub账户认证
-- 🤖 智能代理能力：AI助手可规划并执行复杂任务，支持代码构建、编辑、调试和重构
-- 🔧 MCP扩展支持：默认搭载GitHub MCP服务器，支持自定义MCP服务器扩展功能
+- 💻 终端原生开发：直接在命令行中使用 Copilot 编程助手，无需切换上下文
+- 🔗 原生 GitHub 集成：通过自然语言访问仓库、议题和拉取请求，自动使用现有 GitHub 账户认证
+- 🤖 智能代理能力：AI 助手可规划并执行复杂任务，支持代码构建、编辑、调试和重构
+- 🔧 MCP 扩展支持：默认搭载 GitHub MCP 服务器，支持自定义 MCP 服务器扩展功能
 - ⚡ 完全操作控制：每个操作执行前均需用户明确批准，确保安全可控
-- 📦 快速安装：通过npm安装命令 `npm install -g @github/copilot` 即可使用
-- 🆓 订阅兼容：支持现有Copilot Pro、Pro+、Business或Enterprise订阅计划
+- 📦 快速安装：通过 npm 安装命令 `npm install -g @github/copilot` 即可使用
+- 🆓 订阅兼容：支持现有 Copilot Pro、Pro+、Business 或 Enterprise 订阅计划
 
 ---
 
@@ -452,17 +452,17 @@ modern-tar 是一个零依赖的流式 tar 解析与生成库，适用于所有 
 
 **原文标题**: [tar (computing) - Wikipedia](https://en.wikipedia.org/wiki/Tar_(computing))
 
-tar是一种用于将多个文件打包成单个归档文件的Unix/Linux命令工具，最初为磁带存储设计，现广泛用于软件分发和备份。
+tar 是一种用于将多个文件打包成单个归档文件的 Unix/Linux 命令工具，最初为磁带存储设计，现广泛用于软件分发和备份。
 
 - 📦 文件归档工具，可将多个文件合并为单一归档文件（tarball）
-- 🕰️ 诞生于1979年，最初用于磁带存储设备
+- 🕰️ 诞生于 1979 年，最初用于磁带存储设备
 - 📁 支持保留文件元数据（权限、时间戳、目录结构等）
-- 🔄 采用512字节块记录格式，通过填充零字节对齐数据
+- 🔄 采用 512 字节块记录格式，通过填充零字节对齐数据
 - 🌍 存在多种格式标准：传统格式、USTAR、PAX（支持扩展属性）
-- ⚠️ 存在路径长度限制（早期仅100字符），现代格式已扩展
+- ⚠️ 存在路径长度限制（早期仅 100 字符），现代格式已扩展
 - 🛠️ 常与压缩工具联用（如.gz/.bz2/.xz）形成压缩包
 - 💥 需注意“tarbomb”风险（文件直接解压到当前目录）
-- 🐧 主流实现包括GNU tar、BSD tar、star等
+- 🐧 主流实现包括 GNU tar、BSD tar、star 等
 - 📊 缺乏中央索引，需顺序读取，但容错性较强
 
 ---
@@ -488,7 +488,7 @@ ffetch 是一个基于 TypeScript 的现代化 fetch 封装库，提供可配置
 
 **原文标题**: [pnpm 10.17 | pnpm](https://pnpm.io/blog/releases/10.17)
 
-pnpm 10.17版本更新了依赖包成熟期检查机制，优化了版本筛选逻辑
+pnpm 10.17 版本更新了依赖包成熟期检查机制，优化了版本筛选逻辑
 
 - 🔧 `minimumReleaseAgeExclude` 设置新增通配符支持，可批量排除指定范围的包（如`@eslint/*`）
 - 🗃️ 修复缓存场景下精确版本请求仍会触发成熟期检查的问题
@@ -509,7 +509,7 @@ TypeBox 是一个用于 JavaScript 的运行时类型系统，它通过创建内
 - 🚀 高性能编译：Compile 模块可将类型转换为高性能验证器
 - 💡 语法灵活性：支持函数组合和原生 TypeScript 语法构建复杂类型
 - 📄 丰富文档：包含完整的使用示例和迁移指南
-- 🌐 社区活跃：拥有 6.1k Stars 和 189 Forks，被 970 万+项目使用
+- 🌐 社区活跃：拥有 6.1k Stars 和 189 Forks，被 970 万 + 项目使用
 - ⚖️ MIT 许可：开源项目，欢迎社区贡献
 
 ---
@@ -518,24 +518,24 @@ TypeBox 是一个用于 JavaScript 的运行时类型系统，它通过创建内
 
 **原文标题**: [GitHub - openai/openai-node: Official JavaScript / TypeScript library for the OpenAI API](https://github.com/openai/openai-node)
 
-OpenAI官方提供的JavaScript/TypeScript库，用于访问OpenAI REST API，支持多种运行环境和高级功能。
+OpenAI 官方提供的 JavaScript/TypeScript 库，用于访问 OpenAI REST API，支持多种运行环境和高级功能。
 
-- 🚀 官方JavaScript/TypeScript库，提供对OpenAI API的便捷访问
-- 📦 支持npm安装和JSR安装，兼容Node.js、Deno、Bun等运行时
-- 💬 支持响应API和聊天补全API两种文本生成方式
+- 🚀 官方 JavaScript/TypeScript 库，提供对 OpenAI API 的便捷访问
+- 📦 支持 npm 安装和 JSR 安装，兼容 Node.js、Deno、Bun 等运行时
+- 💬 支持响应 API 和聊天补全 API 两种文本生成方式
 - 🌊 提供流式响应支持，可实现实时数据接收
-- 📁 支持多种文件上传方式（File对象、fetch响应、文件流等）
-- 🔐 包含Webhook验证功能，确保数据安全性
-- ⚠️ 完善的错误处理机制，涵盖各类API错误类型
-- 🔄 自动重试机制，默认重试2次连接错误和服务器错误
-- ⏱️ 可配置超时设置，默认10分钟
+- 📁 支持多种文件上传方式（File 对象、fetch 响应、文件流等）
+- 🔐 包含 Webhook 验证功能，确保数据安全性
+- ⚠️ 完善的错误处理机制，涵盖各类 API 错误类型
+- 🔄 自动重试机制，默认重试 2 次连接错误和服务器错误
+- ⏱️ 可配置超时设置，默认 10 分钟
 - 📄 支持自动分页，方便处理大量数据
-- 🌐 提供实时API，支持WebSocket连接实现低延迟交互
-- ☁️ 支持Microsoft Azure OpenAI服务
+- 🌐 提供实时 API，支持 WebSocket 连接实现低延迟交互
+- ☁️ 支持 Microsoft Azure OpenAI 服务
 - 🔧 提供高级功能：原始响应访问、自定义日志、代理配置等
 - ⚡ 支持自定义请求和未记录参数访问
 - 📊 详细的日志记录系统，支持多级别日志输出
-- 🌍 支持浏览器环境（需显式启用dangerouslyAllowBrowser选项）
+- 🌍 支持浏览器环境（需显式启用 dangerouslyAllowBrowser 选项）
 
 ---
 
@@ -543,15 +543,15 @@ OpenAI官方提供的JavaScript/TypeScript库，用于访问OpenAI REST API，�
 
 **原文标题**: [GitHub - sindresorhus/pretty-bytes: Convert bytes to a human readable string: 1337 → 1.34 kB](https://github.com/sindresorhus/pretty-bytes)
 
-这是一个用于将字节数转换为人类可读格式的JavaScript工具库，支持多种自定义格式选项。
+这是一个用于将字节数转换为人类可读格式的 JavaScript 工具库，支持多种自定义格式选项。
 
-- 📦 核心功能是将字节数值转换为易读字符串（如1337→1.34 kB）
+- 📦 核心功能是将字节数值转换为易读字符串（如 1337→1.34 kB）
 - ⚙️ 支持多种配置选项：符号显示、位单位、二进制前缀、本地化等
 - 📐 提供精确控制：最小/最大小数位数、固定宽度对齐功能
 - 🌍 支持国际化，可指定不同语言环境显示数字格式
 - 📊 特别适用于文件大小显示、进度条和表格对齐等场景
-- 🔧 基于MIT开源协议，可通过npm安装使用
-- 📈 项目活跃度高，拥有1.3k星标和大量用户群体
+- 🔧 基于 MIT 开源协议，可通过 npm 安装使用
+- 📈 项目活跃度高，拥有 1.3k 星标和大量用户群体
 
 ---
 
@@ -559,14 +559,14 @@ OpenAI官方提供的JavaScript/TypeScript库，用于访问OpenAI REST API，�
 
 **原文标题**: [Release v0.18.0 · wasp-lang/wasp · GitHub](https://github.com/wasp-lang/wasp/releases/tag/v0.18.0)
 
-Wasp语言发布了0.18.0版本更新，包含多项功能改进和问题修复
+Wasp 语言发布了 0.18.0 版本更新，包含多项功能改进和问题修复
 
-- ⚠️ 重大变更：要求Node.js版本≥v22.12，Tailwind配置改用ESM模块，升级至Vite 7
-- 🚀 新增功能：添加wasp build start命令，可在本地运行构建后的应用
-- 🐛 问题修复：修复JSON环境变量解析、Bash补全循环等多项问题
-- 🔧 优化改进：支持Prisma模式文档注释、移除Stitches减小打包体积、改进移动端字体显示
+- ⚠️ 重大变更：要求 Node.js 版本≥v22.12，Tailwind 配置改用 ESM 模块，升级至 Vite 7
+- 🚀 新增功能：添加 wasp build start 命令，可在本地运行构建后的应用
+- 🐛 问题修复：修复 JSON 环境变量解析、Bash 补全循环等多项问题
+- 🔧 优化改进：支持 Prisma 模式文档注释、移除 Stitches 减小打包体积、改进移动端字体显示
 - 📚 文档更新：新增自定义认证操作的代码示例
-- 👥 贡献者：Genyus和Vickram-T-G等开发者的贡献
+- 👥 贡献者：Genyus 和 Vickram-T-G 等开发者的贡献
 
 ---
 
@@ -574,15 +574,15 @@ Wasp语言发布了0.18.0版本更新，包含多项功能改进和问题修复
 
 **原文标题**: [Wasp](https://wasp.sh/)
 
-Wasp是一个全栈Web开发框架，通过声明式配置语言和代码生成技术，显著提升React+Node.js+Prisma技术栈的开发效率。
+Wasp 是一个全栈 Web 开发框架，通过声明式配置语言和代码生成技术，显著提升 React+Node.js+Prisma 技术栈的开发效率。
 
-- 🚀 通过.wasp配置文件快速定义应用核心功能，支持单命令部署
+- 🚀 通过.wasp 配置文件快速定义应用核心功能，支持单命令部署
 - 🔐 内置全栈身份验证系统，支持谷歌/GitHub/邮箱登录
-- 🔄 提供类型安全的RPC层，自动客户端缓存失效机制
+- 🔄 提供类型安全的 RPC 层，自动客户端缓存失效机制
 - 📧 集成邮件发送、后台任务调度等企业级功能
-- 🛠️ 保持90%代码使用React/Node.js/Prisma开发，仅自动化样板代码
-- ⚡ 支持实时WebSocket应用、TypeScript全栈类型安全
-- 🌐 可部署到任意平台，提供CLI部署工具
+- 🛠️ 保持 90% 代码使用 React/Node.js/Prisma 开发，仅自动化样板代码
+- ⚡ 支持实时 WebSocket 应用、TypeScript 全栈类型安全
+- 🌐 可部署到任意平台，提供 CLI 部署工具
 - 📚 开源项目，提供待办应用、智能求职信等完整示例
 - 🎯 相比传统框架，更专注于减少配置和重复代码编写
 
@@ -592,15 +592,15 @@ Wasp是一个全栈Web开发框架，通过声明式配置语言和代码生成�
 
 **原文标题**: [Release v6.20.0 · mongodb/node-mongodb-native · GitHub](https://github.com/mongodb/node-mongodb-native/releases/tag/v6.20.0)
 
-MongoDB Node.js驱动发布6.20.0版本，新增集合与数据库对象引用功能，优化变更流容错机制，并弃用部分历史遗留API。
+MongoDB Node.js 驱动发布 6.20.0 版本，新增集合与数据库对象引用功能，优化变更流容错机制，并弃用部分历史遗留 API。
 
-- 🎉 集合与数据库对象新增client/db属性引用，可直接获取关联的MongoClient和Db实例
-- 🚀 未确认写入操作现支持hint参数，适用于delete、update和findAndModify命令
-- ⚠️ 弃用ServerCapabilities类、driverInfo配置项及CommandOperationOptions.retryWrites等历史遗留功能
-- 🔄 ChangeStream.tryNext()方法现自动缓存resumeToken，避免故障恢复时出现重复数据
-- 🌐 变更流新增对MongoServerSelectionError的自动恢复支持，增强网络容错能力
-- 🛠️ 修复MongoClient.appendMetadata()重复添加元数据的问题
-- 📚 包含7项功能更新、3项错误修复及1项文档改进
+- 🎉 集合与数据库对象新增 client/db 属性引用，可直接获取关联的 MongoClient 和 Db 实例
+- 🚀 未确认写入操作现支持 hint 参数，适用于 delete、update 和 findAndModify 命令
+- ⚠️ 弃用 ServerCapabilities 类、driverInfo 配置项及 CommandOperationOptions.retryWrites 等历史遗留功能
+- 🔄 ChangeStream.tryNext() 方法现自动缓存 resumeToken，避免故障恢复时出现重复数据
+- 🌐 变更流新增对 MongoServerSelectionError 的自动恢复支持，增强网络容错能力
+- 🛠️ 修复 MongoClient.appendMetadata() 重复添加元数据的问题
+- 📚 包含 7 项功能更新、3 项错误修复及 1 项文档改进
 
 ---
 
@@ -608,20 +608,20 @@ MongoDB Node.js驱动发布6.20.0版本，新增集合与数据库对象引用�
 
 **原文标题**: [Release 11.0.0 · timgit/pg-boss · GitHub](https://github.com/timgit/pg-boss/releases/tag/11.0.0)
 
-pg-boss 11.0.0版本发布，包含多项重大变更和功能优化，主要涉及分区策略调整、API简化、监控机制改进和新增配置选项。
+pg-boss 11.0.0 版本发布，包含多项重大变更和功能优化，主要涉及分区策略调整、API 简化、监控机制改进和新增配置选项。
 
-- ⚠️ 不支持从v10自动迁移，需手动转移数据
-- 🗃️ 队列分区改为可选配置（partition属性）
-- 🗂️ 移除归档表，新增deleteAfterSeconds配置（默认7天）
+- ⚠️ 不支持从 v10 自动迁移，需手动转移数据
+- 🗃️ 队列分区改为可选配置（partition 属性）
+- 🗂️ 移除归档表，新增 deleteAfterSeconds 配置（默认 7 天）
 - ⏱️ 统一时间单位为秒，移除分钟/小时/天级配置
-- 🔄 重构监控机制，新增superviseIntervalSeconds（默认60秒）
-- 📝 API变更：insert方法需指定队列名，参数名标准化
-- 📊 移除事件监控，新增getQueueStats实时统计
-- 🛠️ 维护函数重组，supervise替代maintain
-- ⚡ 最低要求Node.js 22版本
-- 🔔 新增warning事件支持慢查询和队列积压预警
-- 🎯 队列支持多定时任务（key参数）
-- ⏳ 新增retryDelayMax限制重试退避上限
+- 🔄 重构监控机制，新增 superviseIntervalSeconds（默认 60 秒）
+- 📝 API 变更：insert 方法需指定队列名，参数名标准化
+- 📊 移除事件监控，新增 getQueueStats 实时统计
+- 🛠️ 维护函数重组，supervise 替代 maintain
+- ⚡ 最低要求 Node.js 22 版本
+- 🔔 新增 warning 事件支持慢查询和队列积压预警
+- 🎯 队列支持多定时任务（key 参数）
+- ⏳ 新增 retryDelayMax 限制重试退避上限
 
 ---
 
@@ -641,62 +641,62 @@ Verdaccio 是一个轻量级的 Node.js 私有代理注册中心，无需复杂�
 
 ---
 
-### [Holepunch - 高级Node.js软件工程师（全球远程，全职）](https://holepunch.recruitee.com/o/senior-node-engineer?source=Node-Weekly)
+### [Holepunch - 高级 Node.js 软件工程师（全球远程，全职）](https://holepunch.recruitee.com/o/senior-node-engineer?source=Node-Weekly)
 
 **原文标题**: [Holepunch - Senior Node.js Software Engineer (100% Remote, Worldwide)](https://holepunch.recruitee.com/o/senior-node-engineer?source=Node-Weekly)
 
-Holepunch是一家专注于构建去中心化互联网基础设施的科技公司，通过其开源技术栈Pear开发点对点（P2P）平台，旨在消除传统服务器依赖，保障用户数据隐私与自主权。
+Holepunch 是一家专注于构建去中心化互联网基础设施的科技公司，通过其开源技术栈 Pear 开发点对点（P2P）平台，旨在消除传统服务器依赖，保障用户数据隐私与自主权。
 
-- 🌐 采用P2P技术重构互联网架构，确保用户数据完全自主控制
-- ⚡ 基于Node.js开发类似BitTorrent的P2P连接与数据复制系统
-- 📱 旗舰应用Keet展示P2P通信潜力，支持消息、文件共享等功能
-- 💻 招聘全远程Node.js工程师，要求具备模块化开发和npm模块经验
-- 🔧 优先考虑掌握C/C++、网络协议及分布式系统的候选人
+- 🌐 采用 P2P 技术重构互联网架构，确保用户数据完全自主控制
+- ⚡ 基于 Node.js 开发类似 BitTorrent 的 P2P 连接与数据复制系统
+- 📱 旗舰应用 Keet 展示 P2P 通信潜力，支持消息、文件共享等功能
+- 💻 招聘全远程 Node.js 工程师，要求具备模块化开发和 npm 模块经验
+- 🔧 优先考虑掌握 C/C++、网络协议及分布式系统的候选人
 - 🌍 团队分布全球，强调远程协作能力与对去中心化技术的热情
 - 🚀 提供参与前沿技术开发机会，共同构建更安全包容的网络未来
 
 ---
 
-### [Holepunch - 高级Node.js软件工程师（全球远程，全职）](https://holepunch.recruitee.com/o/senior-node-engineer?source=Node-Weekly)
+### [Holepunch - 高级 Node.js 软件工程师（全球远程，全职）](https://holepunch.recruitee.com/o/senior-node-engineer?source=Node-Weekly)
 
 **原文标题**: [Holepunch - Senior Node.js Software Engineer (100% Remote, Worldwide)](https://holepunch.recruitee.com/o/senior-node-engineer?source=Node-Weekly)
 
-Holepunch正在招聘一名高级Node.js软件工程师，该职位完全远程，面向全球。公司致力于通过其开源技术栈Pear重新定义互联网架构，构建去中心化的点对点平台，以增强用户数据控制和隐私保护。
+Holepunch 正在招聘一名高级 Node.js 软件工程师，该职位完全远程，面向全球。公司致力于通过其开源技术栈 Pear 重新定义互联网架构，构建去中心化的点对点平台，以增强用户数据控制和隐私保护。
 
-- 🌐 开发点对点技术栈，基于类似BitTorrent的Node.js技术，实现去中心化应用部署和数据复制
-- 💻 要求具备Node.js丰富经验，能编写高质量代码，熟悉C/C++或原生绑定者优先
-- 📦 强调模块化开发，需有构建和管理npm模块的背景
+- 🌐 开发点对点技术栈，基于类似 BitTorrent 的 Node.js 技术，实现去中心化应用部署和数据复制
+- 💻 要求具备 Node.js 丰富经验，能编写高质量代码，熟悉 C/C++ 或原生绑定者优先
+- 📦 强调模块化开发，需有构建和管理 npm 模块的背景
 - 🧪 负责测试与调试，确保软件可靠性和性能优化
-- 🔗 热爱P2P技术，有相关开发经验或对去中心化充满热情
+- 🔗 热爱 P2P 技术，有相关开发经验或对去中心化充满热情
 - 🌍 需适应全球远程协作，与分布式团队高效沟通
 - 🚀 提供机会参与突破性技术项目，推动互联网演进，优先考虑用户自主权和隐私
 
 ---
 
-### [开始使用Redis](https://redis.io/lp/get-started2/?utm_source=cooper-press&utm_medium=cpa&utm_campaign=2025-08-app_performance-node-weekly-2&utm_content=cloud_-_redis_cloud_users)
+### [开始使用 Redis](https://redis.io/lp/get-started2/?utm_source=cooper-press&utm_medium=cpa&utm_campaign=2025-08-app_performance-node-weekly-2&utm_content=cloud_-_redis_cloud_users)
 
 **原文标题**: [Get started with Redis](https://redis.io/lp/get-started2/?utm_source=cooper-press&utm_medium=cpa&utm_campaign=2025-08-app_performance-node-weekly-2&utm_content=cloud_-_redis_cloud_users)
 
-Redis是一个专为速度设计的数据平台，提供云端和本地部署解决方案，帮助团队快速构建高性能应用。
+Redis 是一个专为速度设计的数据平台，提供云端和本地部署解决方案，帮助团队快速构建高性能应用。
 
-- 🚀 作为全球最快的内存数据库，支持向量数据库、缓存和NoSQL等多种数据架构
-- 🧠 先进的向量数据库功能，可构建最快速可靠的生成式AI应用
+- 🚀 作为全球最快的内存数据库，支持向量数据库、缓存和 NoSQL 等多种数据架构
+- 🧠 先进的向量数据库功能，可构建最快速可靠的生成式 AI 应用
 - ⚡ 通过内存键值存储支持多种数据结构，专为实时应用优化效率
-- 🌩️ 提供Redis Cloud服务，轻松创建首个数据库并快速上手
+- 🌩️ 提供 Redis Cloud 服务，轻松创建首个数据库并快速上手
 - 🔧 为开发者提供多语言支持和技术中心，为架构师和运维团队提供演示和技术讲座
-- 📈 支持从实验到生产级AI应用的无缝扩展，让团队更专注于开发
+- 📈 支持从实验到生产级 AI 应用的无缝扩展，让团队更专注于开发
 - 🆓 提供免费试用选项，助力快速开始构建
 
 ---
 
-### [开始使用Redis](https://redis.io/lp/get-started2/?utm_source=cooper-press&utm_medium=cpa&utm_campaign=2025-08-app_performance-node-weekly-2&utm_content=cloud_-_redis_cloud_users%20)
+### [开始使用 Redis](https://redis.io/lp/get-started2/?utm_source=cooper-press&utm_medium=cpa&utm_campaign=2025-08-app_performance-node-weekly-2&utm_content=cloud_-_redis_cloud_users%20)
 
 **原文标题**: [Get started with Redis](https://redis.io/lp/get-started2/?utm_source=cooper-press&utm_medium=cpa&utm_campaign=2025-08-app_performance-node-weekly-2&utm_content=cloud_-_redis_cloud_users%20)
 
-Redis是一个专为速度设计的数据平台，提供云端和本地部署解决方案，帮助团队快速构建高性能应用。
+Redis 是一个专为速度设计的数据平台，提供云端和本地部署解决方案，帮助团队快速构建高性能应用。
 
-- 🚀 快速部署向量数据库、缓存和NoSQL数据库，支持实时应用开发
-- 🧠 先进的向量数据库助力构建最快速可靠的生成式AI应用
+- 🚀 快速部署向量数据库、缓存和 NoSQL 数据库，支持实时应用开发
+- 🧠 先进的向量数据库助力构建最快速可靠的生成式 AI 应用
 - ⚡ 全球最快内存数据库显著提升应用性能
 - 🗄️ 支持多种数据结构的内存键值存储，适用于实时场景
 - 🌟 提供免费试用，从实验到生产环境无缝扩展
@@ -708,14 +708,14 @@ Redis是一个专为速度设计的数据平台，提供云端和本地部署解
 
 **原文标题**: [agendas/2025/09.md at main · tc39/agendas · GitHub](https://github.com/tc39/agendas/blob/main/2025/09.md)
 
-这是一个关于TC39议程仓库的GitHub页面概览
+这是一个关于 TC39 议程仓库的 GitHub 页面概览
 
-- 📋 公共仓库包含TC39会议的议程和相关信息
-- 🔔 需要登录GitHub账户才能更改通知设置
-- 🍴 已被198个用户复刻
-- ⭐ 获得1.2k个星标收藏
+- 📋 公共仓库包含 TC39 会议的议程和相关信息
+- 🔔 需要登录 GitHub 账户才能更改通知设置
+- 🍴 已被 198 个用户复刻
+- ⭐ 获得 1.2k 个星标收藏
 - 🐛 目前没有开放的议题
-- 🔄 有4个拉取请求待处理
+- 🔄 有 4 个拉取请求待处理
 - ⚠️ 页面加载时出现错误提示
 - 📊 提供代码、议题、安全等导航选项
 
@@ -725,16 +725,16 @@ Redis是一个专为速度设计的数据平台，提供云端和本地部署解
 
 **原文标题**: [GitHub - tc39/proposal-import-bytes: A modest proposal for importing bytes in javascript](https://github.com/tc39/proposal-import-bytes)
 
-该提案旨在为JavaScript添加导入任意字节数据的能力，通过统一的语法实现跨环境文件读取，当前处于TC39流程第二阶段。
+该提案旨在为 JavaScript 添加导入任意字节数据的能力，通过统一的语法实现跨环境文件读取，当前处于 TC39 流程第二阶段。
 
 - 💡 支持通过`import bytes from "./file" with {type: "bytes"}`语法直接导入字节数据
-- 🔄 返回基于不可变ArrayBuffer的Uint8Array对象，确保数据一致性
-- 🌐 解决多平台兼容性问题，替代现有的Deno/Bun/Node.js/浏览器差异化代码
-- ⚡ 支持静态和动态导入两种方式，便于打包工具进行基64内联优化
+- 🔄 返回基于不可变 ArrayBuffer 的 Uint8Array 对象，确保数据一致性
+- 🌐 解决多平台兼容性问题，替代现有的 Deno/Bun/Node.js/浏览器差异化代码
+- ⚡ 支持静态和动态导入两种方式，便于打包工具进行基 64 内联优化
 - 🔒 采用不可变设计避免内存重复、数据竞争和嵌入式系统内存压力
-- 📋 选择Uint8Array而非ArrayBuffer因其与Node.js Buffer兼容且无需额外创建视图
-- 🚫 排除Blob/ReadableStream等方案因它们不属于JavaScript语言标准
-- 📁 使用`type: bytes`属性与JSON模块保持设计一致性，明确区分代码与数据加载
+- 📋 选择 Uint8Array 而非 ArrayBuffer 因其与 Node.js Buffer 兼容且无需额外创建视图
+- 🚫 排除 Blob/ReadableStream 等方案因它们不属于 JavaScript 语言标准
+- 📁 使用`type: bytes`属性与 JSON 模块保持设计一致性，明确区分代码与数据加载
 
 ---
 
@@ -742,17 +742,17 @@ Redis是一个专为速度设计的数据平台，提供云端和本地部署解
 
 **原文标题**: [GitHub - tc39/proposal-iterator-chunking: a proposal to add a method to iterators for producing an iterator of its subsequences](https://github.com/tc39/proposal-iterator-chunking/)
 
-这是一个TC39提案，旨在为迭代器添加将序列分割为子序列的方法，包括非重叠的分块和重叠的滑动窗口两种模式。
+这是一个 TC39 提案，旨在为迭代器添加将序列分割为子序列的方法，包括非重叠的分块和重叠的滑动窗口两种模式。
 
-- 📋 提案状态：目前处于Stage 2.7阶段，已制定规范文档
-- 🔄 核心功能：为迭代器添加chunks()和windows()方法，分别实现非重叠分块和重叠滑动窗口
-- 📊 分块示例：将[0-9]序列按大小2分块得到[[0,1],[2,3],[4,5],[6,7],[8,9]]
-- 🪟 滑动窗口示例：窗口大小为3时，生成[0,1,2]、[1,2,3]等重叠子序列
+- 📋 提案状态：目前处于 Stage 2.7 阶段，已制定规范文档
+- 🔄 核心功能：为迭代器添加 chunks() 和 windows() 方法，分别实现非重叠分块和重叠滑动窗口
+- 📊 分块示例：将[0-9]序列按大小 2 分块得到[[0,1],[2,3],[4,5],[6,7],[8,9]]
+- 🪟 滑动窗口示例：窗口大小为 3 时，生成[0,1,2]、[1,2,3]等重叠子序列
 - 💼 应用场景：分页、网格布局、批处理、矩阵运算、格式编码、分桶等
 - 🎯 滑动窗口用途：连续计算（如平均值）、上下文敏感算法、轮播组件等
-- 🌍 多语言参考：列举了C++、Java、Python、Rust等10多种语言的类似实现
-- 📚 JS生态支持：汇总了chunk、iter-tools等9个主流JS库的相关功能
-- 👥 开发团队：由Michael Ficarra和Kevin Gibbons两位主要贡献者维护
+- 🌍 多语言参考：列举了 C++、Java、Python、Rust 等 10 多种语言的类似实现
+- 📚 JS 生态支持：汇总了 chunk、iter-tools 等 9 个主流 JS 库的相关功能
+- 👥 开发团队：由 Michael Ficarra 和 Kevin Gibbons 两位主要贡献者维护
 
 ---
 
@@ -768,18 +768,18 @@ Redis是一个专为速度设计的数据平台，提供云端和本地部署解
 
 **原文标题**: [Bun v1.2.23 | Bun Blog](https://bun.com/blog/bun-v1.2.23)
 
-本次Bun版本更新修复了119个问题，主要涵盖安装优化、包管理器增强、测试框架升级、Node.js兼容性改进及核心功能优化等方面。
+本次 Bun 版本更新修复了 119 个问题，主要涵盖安装优化、包管理器增强、测试框架升级、Node.js 兼容性改进及核心功能优化等方面。
 
-- 🛠️ 安装方式多样化：支持curl、npm、PowerShell、scoop、brew和docker等多种安装命令
-- 📦 包管理增强：bun install自动迁移pnpm锁文件，新增--cpu/--os标志控制平台特定依赖安装
-- 🔔 Redis客户端升级：支持Pub/Sub消息模式，新增subscribe()和publish()方法
-- ⚡ 测试框架优化：支持test.concurrent并发测试，新增--randomize随机执行顺序，严格CI环境检测
-- 🔄 Node.js兼容性提升：改进node:http、node:dns、node:worker_threads等模块功能
-- 🔒 安全增强：新增--use-system-ca标志使用系统CA证书，Windows支持process.report.getReport()
-- 📟 构建工具升级：bun build支持JSX配置对象，Windows编译支持代码签名剥离
-- 🗄️ 数据库功能增强：Bun.SQL新增sql.array助手支持PostgreSQL数组类型
-- 🐛 问题修复：解决bundler循环依赖、包版本解析溢出、测试框架异常处理等关键问题
-- 👥 社区贡献：感谢16位贡献者的代码提交
+- 🛠️ 安装方式多样化：支持 curl、npm、PowerShell、scoop、brew 和 docker 等多种安装命令
+- 📦 包管理增强：bun install 自动迁移 pnpm 锁文件，新增--cpu/--os 标志控制平台特定依赖安装
+- 🔔 Redis 客户端升级：支持 Pub/Sub 消息模式，新增 subscribe() 和 publish() 方法
+- ⚡ 测试框架优化：支持 test.concurrent 并发测试，新增--randomize 随机执行顺序，严格 CI 环境检测
+- 🔄 Node.js 兼容性提升：改进 node:http、node:dns、node:worker_threads 等模块功能
+- 🔒 安全增强：新增--use-system-ca 标志使用系统 CA 证书，Windows 支持 process.report.getReport()
+- 📟 构建工具升级：bun build 支持 JSX 配置对象，Windows 编译支持代码签名剥离
+- 🗄️ 数据库功能增强：Bun.SQL 新增 sql.array 助手支持 PostgreSQL 数组类型
+- 🐛 问题修复：解决 bundler 循环依赖、包版本解析溢出、测试框架异常处理等关键问题
+- 👥 社区贡献：感谢 16 位贡献者的代码提交
 
 ---
 
@@ -787,12 +787,12 @@ Redis是一个专为速度设计的数据平台，提供云端和本地部署解
 
 **原文标题**: [IINA - The modern media player for macOS](https://iina.io/)
 
-IINA是一款基于开源媒体播放器mpv的多功能播放器，支持本地与在线流媒体播放。
+IINA 是一款基于开源媒体播放器 mpv 的多功能播放器，支持本地与在线流媒体播放。
 
 - 🎬 支持播放几乎所有本地媒体文件
-- 🔓 基于开源播放器mpv技术开发
+- 🔓 基于开源播放器 mpv 技术开发
 - 🌐 通过浏览器扩展一键播放在线流媒体
-- 📺 兼容youtube-dl支持的各类网络视频
+- 📺 兼容 youtube-dl 支持的各类网络视频
 
 ---
 
@@ -804,8 +804,8 @@ IINA 插件系统允许通过 JavaScript 扩展播放器功能，提供简洁而
 
 - 🧩 插件系统基于 JavaScript，可控制播放、调用 mpv API、访问网络和文件系统
 - 🚀 自 1.4.0 版本起支持，通过官方用户脚本插件可直接粘贴代码片段
-- 🎬 示例1：视频加载时在画面上方以大字体显示标题
-- ⏸️ 示例2：暂停时自动最小化窗口，恢复时继续播放
+- 🎬 示例 1：视频加载时在画面上方以大字体显示标题
+- ⏸️ 示例 2：暂停时自动最小化窗口，恢复时继续播放
 - 🔧 核心功能涵盖播放控制、MPV API 调用、事件监听、网络请求
 - 📺 支持自定义界面：覆盖层、侧边栏、独立窗口、菜单项
 - 💾 提供文件访问、偏好设置、系统对话框等实用工具
@@ -818,18 +818,18 @@ IINA 插件系统允许通过 JavaScript 扩展播放器功能，提供简洁而
 
 **原文标题**: [Andromeda](https://tryandromeda.dev/)
 
-Andromeda是一个基于Rust构建的现代JavaScript/TypeScript运行时，采用Nova引擎实现高性能和内存安全，提供零配置TypeScript支持和完整的Web API兼容性
+Andromeda 是一个基于 Rust 构建的现代 JavaScript/TypeScript 运行时，采用 Nova 引擎实现高性能和内存安全，提供零配置 TypeScript 支持和完整的 Web API 兼容性
 
-- 🚀 基于Rust构建，具备内存安全特性和卓越性能
-- ⚡ 集成Nova引擎，提供硬件加速图形和快速启动时间
-- 📝 零配置TypeScript支持，内置语言服务器协议
-- 🛡️ 符合WinterTC标准，支持完整的Web API
+- 🚀 基于 Rust 构建，具备内存安全特性和卓越性能
+- ⚡ 集成 Nova 引擎，提供硬件加速图形和快速启动时间
+- 📝 零配置 TypeScript 支持，内置语言服务器协议
+- 🛡️ 符合 WinterTC 标准，支持完整的 Web API
 - 🔧 包含完整开发工具链：REPL、格式化器、打包器等
 - 🎯 支持单文件编译和跨平台部署
 - 📊 专为图形可视化、高性能脚本和科学计算设计
-- 📦 内置SQLite数据库和Web Crypto API支持
-- 🌐 相比Node.js和Deno具有更低内存占用和更完整功能
-- 🔄 提供一键安装脚本，支持Linux/macOS/Windows平台
+- 📦 内置 SQLite 数据库和 Web Crypto API 支持
+- 🌐 相比 Node.js 和 Deno 具有更低内存占用和更完整功能
+- 🔄 提供一键安装脚本，支持 Linux/macOS/Windows 平台
 
 ---
 
@@ -837,14 +837,14 @@ Andromeda是一个基于Rust构建的现代JavaScript/TypeScript运行时，采�
 
 **原文标题**: [GitHub - alshdavid/ion: A Positively Charged JavaScript Runtime](https://github.com/alshdavid/ion)
 
-Ion是一个基于Rust构建的JavaScript运行时，专为在Rust应用程序中嵌入JavaScript引擎而设计，适用于插件系统、SSR服务和FaaS等场景。
+Ion 是一个基于 Rust 构建的 JavaScript 运行时，专为在 Rust 应用程序中嵌入 JavaScript 引擎而设计，适用于插件系统、SSR 服务和 FaaS 等场景。
 
-- ⚡ 采用分层架构，核心运行时包含V8引擎和基于Tokio的事件循环
-- 🔧 提供易于使用的高级API，支持多线程和独立上下文
+- ⚡ 采用分层架构，核心运行时包含 V8 引擎和基于 Tokio 的事件循环
+- 🔧 提供易于使用的高级 API，支持多线程和独立上下文
 - 📦 可通过解析器、扩展和预处理器灵活扩展标准库功能
-- 🔄 支持Rust与JavaScript双向调用，包含Promise异步处理
-- 🌐 优先兼容Web标准，当前支持基础定时器和控制台API
-- 🚫 明确不兼容Node.js/Deno/Bun的嵌入方案，解决分发和API易用性问题
+- 🔄 支持 Rust 与 JavaScript 双向调用，包含 Promise 异步处理
+- 🌐 优先兼容 Web 标准，当前支持基础定时器和控制台 API
+- 🚫 明确不兼容 Node.js/Deno/Bun 的嵌入方案，解决分发和 API 易用性问题
 - 🧵 运行时、工作线程和上下文均绑定专用线程，确保线程安全
 
 ---
