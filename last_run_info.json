@@ -1,9 +1,9 @@
 {
   "thisweekinreact": {
-    "issue_title": "📨 #252: React 19.2, Activity, useEffectEvent, Compiler, Astro, StyleX, Docusaurus | Vega OS, Voltra, NativeScript, Expo Router, NativeWind, Lynx, Maestro | TC39, Temporal, Baseline, State Of JS, Supply Chain, MCP",
-    "link_url": "/newsletter/252",
-    "timestamp": "2025-10-03T15:27:40.464651",
-    "full_url": "https://thisweekinreact.com//newsletter/252"
+    "issue_title": "📨 #253: React Compiler 1.0, React Foundation, ViewTransition, Fragment Refs, useEffectEvent, Activity | RN 0.82, Hermes V1, DOM APIs, Vega OS | Keyboard Controller, IAP, Skia | Prettier, Node.js, CSS, ESLint",
+    "link_url": "/newsletter/253",
+    "timestamp": "2025-10-09T21:40:29.118555",
+    "full_url": "https://thisweekinreact.com//newsletter/253"
   },
   "nextjsweekly": {
     "issue_title": "Issue #103",
@@ -18,10 +18,10 @@
     "full_url": "https://reactdigest.net//newsletters/2137-the-nuance-of-react-rendering-behaviour"
   },
   "webtoolsweekly": {
-    "issue_title": "#637\nJS Utils, Media Tools, Git/CLI",
-    "link_url": "archives/issue-637/",
-    "timestamp": "2025-10-03T15:27:40.930131",
-    "full_url": "https://webtoolsweekly.com/archives/issue-637/"
+    "issue_title": "#638\nJS Libs, Testing, Build Tools",
+    "link_url": "archives/issue-638/",
+    "timestamp": "2025-10-09T21:40:30.065612",
+    "full_url": "https://webtoolsweekly.com/archives/issue-638/"
   },
   "nodeweekly": {
     "issue_title": "Issue #595",
@@ -30,21 +30,21 @@
     "full_url": "https://nodeweekly.com/issues/595"
   },
   "frontendfoc": {
-    "issue_title": "Issue #711",
-    "link_url": "issues/711",
-    "timestamp": "2025-10-01T18:37:22.295441",
-    "full_url": "https://frontendfoc.us/issues/711"
+    "issue_title": "Issue #712",
+    "link_url": "issues/712",
+    "timestamp": "2025-10-08T23:45:29.659597",
+    "full_url": "https://frontendfoc.us/issues/712"
   },
   "reactweekly": {
-    "issue_title": "Issue #446",
-    "link_url": "issues/446",
-    "timestamp": "2025-10-01T18:37:22.328074",
-    "full_url": "https://reactweekly.com/issues/446"
+    "issue_title": "Issue #447",
+    "link_url": "issues/447",
+    "timestamp": "2025-10-08T23:20:06.801184",
+    "full_url": "https://reactweekly.com/issues/447"
   },
   "javascriptweekly": {
-    "issue_title": "Issue #755",
-    "link_url": "issues/755",
-    "timestamp": "2025-10-03T16:02:21.265567",
-    "full_url": "https://javascriptweekly.com/issues/755"
+    "issue_title": "Issue #756",
+    "link_url": "issues/756",
+    "timestamp": "2025-10-10T23:25:37.528452",
+    "full_url": "https://javascriptweekly.com/issues/756"
   }
 }
