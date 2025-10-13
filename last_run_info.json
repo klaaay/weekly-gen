@@ -13,9 +13,9 @@
   },
   "reactdigest": {
     "issue_title": "one weekly email",
-    "link_url": "/newsletters/2137-the-nuance-of-react-rendering-behaviour",
-    "timestamp": "2025-10-05T18:39:32.628879",
-    "full_url": "https://reactdigest.net//newsletters/2137-the-nuance-of-react-rendering-behaviour"
+    "link_url": "/newsletters/2141-concurrent-hydration-with-usesyncexternalstore",
+    "timestamp": "2025-10-13T10:29:43.035221",
+    "full_url": "https://reactdigest.net//newsletters/2141-concurrent-hydration-with-usesyncexternalstore"
   },
   "webtoolsweekly": {
     "issue_title": "#638\nJS Libs, Testing, Build Tools",
@@ -42,9 +42,9 @@
     "full_url": "https://reactweekly.com/issues/447"
   },
   "javascriptweekly": {
-    "issue_title": "Issue #755",
-    "link_url": "issues/755",
-    "timestamp": "2025-10-03T16:02:21.265567",
-    "full_url": "https://javascriptweekly.com/issues/755"
+    "issue_title": "Issue #756",
+    "link_url": "issues/756",
+    "timestamp": "2025-10-13T10:29:48.114348",
+    "full_url": "https://javascriptweekly.com/issues/756"
   }
 }
