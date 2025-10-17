@@ -92,58 +92,64 @@ def extract_links_and_summarize(
     if matched_links:
         # 记录成功获取的文章数
         processed_articles = 0
+        processed_urls = set()
         
         for link in matched_links:
-            if 'href' in link.attrs:
-                link_text = link.text.strip()
-                link_url = link['href']
+            if 'href' not in link.attrs:
+                continue
+            
+            link_text = link.text.strip()
+            link_url = link['href']
+            
+            # 跳过空文本的链接
+            if not link_text:
+                continue
+            
+            # 确保 URL 是绝对路径
+            normalized_url = link_url
+            if base_url and not normalized_url.startswith('http'):
+                normalized_url = f"{base_url}{normalized_url}"
+            
+            # 避免重复处理相同的链接
+            if normalized_url in processed_urls:
+                continue
+            
+            processed_urls.add(normalized_url)
+            
+            print(f"链接文本：{link_text}")
+            print(f"链接 URL: {normalized_url}")
+            print("获取此链接的内容...")
+            
+            # 获取链接内容
+            if fetch_content_func:
+                article_data = fetch_content_func(normalized_url, headers, proxies)
+            else:
+                # 如果没有提供内容获取函数，则跳过内容获取
+                article_data = {
+                    "url": normalized_url,
+                    "title": link_text,
+                    "chinese_title": link_text,
+                    "summary": "未提供内容获取函数"
+                }
+            
+            # 保存处理过的文章数据
+            processed_articles_data.append(article_data)
+            
+            # 如果提供了 summary_file，则写入总结
+            if summary_file:
+                # 构建文章总结
+                article_summary = f"### [{article_data['chinese_title']}]({article_data['url']})\n\n"
+                article_summary += f"**原文标题**: [{article_data['title']}]({article_data['url']})\n\n"
+                article_summary += f"{article_data['summary']}\n\n"
+                article_summary += f"---\n\n"  # 使用 Markdown 分隔符
                 
-                # 跳过空文本的链接
-                if not link_text:
-                    continue
-                    
-                # 避免重复处理相同的链接
-                if processed_articles > 0 and link_url in [l['href'] for l in matched_links[:processed_articles]]:
-                    continue
-                
-                # 确保 URL 是绝对路径
-                if base_url and not link_url.startswith('http'):
-                    link_url = f"{base_url}{link_url}"
-                    
-                print(f"链接文本：{link_text}")
-                print(f"链接 URL: {link_url}")
-                print("获取此链接的内容...")
-                
-                # 获取链接内容
-                if fetch_content_func:
-                    article_data = fetch_content_func(link_url, headers, proxies)
-                else:
-                    # 如果没有提供内容获取函数，则跳过内容获取
-                    article_data = {
-                        "url": link_url,
-                        "title": link_text,
-                        "chinese_title": link_text,
-                        "summary": "未提供内容获取函数"
-                    }
-                
-                # 保存处理过的文章数据
-                processed_articles_data.append(article_data)
-                
-                # 如果提供了 summary_file，则写入总结
-                if summary_file:
-                    # 构建文章总结
-                    article_summary = f"### [{article_data['chinese_title']}]({article_data['url']})\n\n"
-                    article_summary += f"**原文标题**: [{article_data['title']}]({article_data['url']})\n\n"
-                    article_summary += f"{article_data['summary']}\n\n"
-                    article_summary += f"---\n\n"  # 使用 Markdown 分隔符
-                    
-                    # 写入到文件
-                    with open(summary_file, 'a', encoding='utf-8') as summary_f:
-                        summary_f.write(article_summary)
-                
-                processed_articles += 1
-                print(f"文章 {processed_articles} 已写入总结文件")
-                print("---")
+                # 写入到文件
+                with open(summary_file, 'a', encoding='utf-8') as summary_f:
+                    summary_f.write(article_summary)
+            
+            processed_articles += 1
+            print(f"文章 {processed_articles} 已写入总结文件")
+            print("---")
         
         if summary_file:
             print(f"\n所有 {processed_articles} 篇文章总结已保存到 {summary_file}")
