@@ -1,15 +1,18 @@
-### [Node周刊第597期：2025年10月21日](https://nodeweekly.com/issues/597)
+### [Node 周刊第 597 期：2025 年 10 月 21 日](https://nodeweekly.com/issues/597)
 
 **原文标题**: [Node Weekly Issue 597: October 21, 2025](https://nodeweekly.com/issues/597)
 
-本期通讯聚焦Node.js生态系统更新与工具发布，涵盖核心版本特性、开发技巧及行业动态。
+overview summary
+本期 Node 周报重点介绍了 Node.js v25.0.0 版本的重大更新，包含多项性能优化和新特性，同时汇总了 TigerData 对 PostgreSQL 的扩展突破、多场技术大会的精彩内容，以及十余个热门开发工具的最新版本发布。
 
-- 🚀 Node.js v25.0.0发布：默认启用Web存储、JSON性能优化、新增网络权限控制，同时Node 24进入活跃LTS阶段
-- 🐅 TigerData推出强化版Postgres：支持2PB级数据规模与每日1.5万亿指标处理，保持标准SQL兼容性
-- 🛠️ 开发工具更新：Ace CLI框架教程、Wretch 3.0封装fetch API、DOMPurify 3.3提供XSS防护
-- 📊 技术深度解析：通过DTrace分析Node.js反压机制，揭示禁用反压导致的GC峰值问题
-- 🔧 生态工具链升级：包含Graffle 7.3 GraphQL客户端、ImapFlow邮件客户端等20+开发工具更新
-- 💡 行业动态：Cloudflare推出代码沙盒服务、PostgreSQL 18异步IO性能提升、NYT谜题TypeScript解法
+- 🚀 Node.js v25.0.0 正式发布，默认启用 Web 存储并带来 JSON 性能优化
+- 📊 TigerData 将 PostgreSQL 扩展至 2PB 规模，支持每日 1.5 万亿指标处理
+- 🎥 Nordic.js 2025 技术大会视频上线，涵盖 Node.js 生态最新进展
+- 🛠️ Ace CLI 框架教程：使用 Node/Bun 构建书签管理应用
+- ⚡ 通过 DTrace 工具深入分析 Node.js 流背压机制对垃圾回收的影响
+- 📦 多款开发工具更新：Wretch 3.0 强化 fetch 功能、DOMPurify 3.3 提升 XSS 防护
+- 🔧 开发资源推荐：Node 测试覆盖率文档、typeof null 历史渊源解析
+- 🌐 行业动态：Cloudflare 推出代码沙盒服务、PostgreSQL 18 性能基准测试
 
 ---
 
@@ -17,15 +20,14 @@
 
 **原文标题**: [Node.js — Node.js v25.0.0 (Current)](https://nodejs.org/en/blog/release/v25.0.0)
 
-Node.js v25.0.0 正式发布，带来 V8 引擎升级至 14.1 版本，显著提升 JSON 序列化性能，默认启用 Web Storage API，并引入权限模型增强与多项 API 优化及废弃更新。
+Node.js v25.0.0 正式发布，带来 V8 引擎升级至 14.1 版本，显著提升 JSON 序列化性能，默认启用 Web Storage API，并引入权限模型的网络控制功能，同时移除多项已弃用 API 以优化安全性和开发体验。
 
-- 🚀 V8 引擎升级至 14.1，带来 JSON 序列化性能大幅提升和 WebAssembly 优化
-- 🔒 权限模型新增 --allow-net 标志，强化默认安全应用策略
-- 🌐 Web Storage API 现默认启用，ErrorEvent 成为全局对象
-- 🗑️ 废弃 SlowBuffer 等长期弃用 API，清理旧有接口
-- ⚡ 新增便携式编译缓存和 WebAssembly JSPI 支持，改善开发体验
-- 🔧 多项构建工具和依赖更新，包括 Python 3.14 测试支持和 Clang 最低版本要求提升至 19
-- 📦 包含 npm 11.6.2 更新及多项错误修复和性能改进
+- 🚀 V8 引擎升级至 14.1，大幅优化 JSON.stringify 性能并支持 Uint8Array 的 base64/hex 转换  
+- 🔒 权限模型新增 --allow-net 标志，强化应用默认安全机制  
+- 🌐 默认启用 Web Storage API，ErrorEvent 设为全局对象  
+- 🗑️ 移除 SlowBuffer 等长期弃用 API，提升代码清洁度  
+- ⚡ 新增便携式编译缓存和 WebAssembly JSPI 支持，改善开发效率  
+- 🔧 更新构建工具链，包括 Python 3.14 测试支持和 Clang 最低版本要求提升至 19
 
 ---
 
@@ -33,15 +35,14 @@ Node.js v25.0.0 正式发布，带来 V8 引擎升级至 14.1 版本，显著提
 
 **原文标题**: [Permissions | Node.js v25.0.0 Documentation](https://nodejs.org/api/permissions.html)
 
-Node.js权限模型提供了一种在运行时限制对特定资源访问的机制，通过进程级权限控制来防止可信代码意外操作未授权的系统资源。
+Node.js 权限模型通过进程级权限控制来限制对系统资源的访问，采用"安全带"机制防止可信代码意外操作未授权资源，但无法防范恶意代码绕过限制。
 
-- 🔐 权限模型采用"安全带"机制，仅防止可信代码的无意越权，不提供恶意代码防护
-- 🚩 需通过--permission标志启用，默认限制文件系统、网络、子进程等所有核心模块访问
-- 📁 文件系统权限需分别使用--allow-fs-read和--allow-fs-write标志单独授权
-- 🔍 运行时可通过process.permission.has()API动态检查权限状态
-- ⚡ 与npx配合使用时需通过--node-options传递权限参数
-- ⚠️ 存在已知限制：不继承到工作线程、符号链接可能绕过权限、某些启动标志不受约束
-- 🚫 不支持运行时加载OpenSSL引擎和本地模块扩展
+- 🛡️ 权限模型通过--permission 标志启用，默认限制文件系统、网络、子进程等核心模块的访问权限
+- ⚙️ 运行时可通过 process.permission.has() 动态检查权限状态，支持按作用域和具体资源进行验证
+- 📁 文件系统权限需显式使用--allow-fs-read/--allow-fs-write 开启，支持通配符和绝对路径配置
+- 🔄 与 npx 配合使用时需通过--node-options 传递权限参数，并妥善处理全局模块和缓存目录的读取权限
+- ⚠️ 存在已知限制：不继承到工作线程、符号链接可能绕过路径限制、OpenSSL 引擎等部分功能受限
+- 🚫 权限模型在环境初始化后生效，因此--env-file 等启动阶段读取文件的标志不受权限规则约束
 
 ---
 
@@ -49,15 +50,31 @@ Node.js权限模型提供了一种在运行时限制对特定资源访问的机�
 
 **原文标题**: [Node.js — Node.js v22.21.0 (LTS)](https://nodejs.org/en/blog/release/v22.21.0)
 
-Node.js v22.21.0 (LTS) 版本发布，主要增强了代理配置支持、内存管理优化及多项功能改进。
+Node.js v22.21.0 (LTS) 版本发布，主要新增了 HTTP 代理支持、内存管理优化和多项功能改进。
 
-- 🌐 新增 `--use-env-proxy` 命令行选项，支持通过环境变量配置 HTTP 代理
-- 🔄 为 HTTP 服务器添加 `shouldUpgradeCallback`，允许服务端控制协议升级行为
-- 🧩 在 `http/https.request` 和 `Agent` 中内置代理支持
-- 💾 扩展 `--max-old-space-size` 参数，支持百分比形式设置内存限制
-- 🔧 包含多项依赖更新（OpenSSL 升级至 3.5.4、npm 更新至 10.9.4）
-- 📚 文档改进，包括标记 `.env` 文件支持为稳定功能
-- 🐛 修复了 REPL、TLS、SQLite 等多个模块的问题
+- 🌐 新增命令行选项 `--use-env-proxy` 和环境变量 `NODE_USE_ENV_PROXY` 支持 HTTP 代理
+- 🔄 为 HTTP 服务器添加 `shouldUpgradeCallback` 回调函数，增强升级协议控制能力
+- 📊 `--max-old-space-size` 内存参数新增百分比配置支持
+- ⚡ 内置 HTTP/HTTPS 请求和 Agent 现在支持代理功能
+- 🔧 多项依赖更新：OpenSSL 升级至 3.5.4、npm 更新至 10.9.4、Undici 更新至 6.22.0
+- 🐛 修复了 REPL 大字符串粘贴性能问题、诊断通道竞争条件等多个 Bug
+- 📚 文档改进：新增安全升级策略、.env 文件支持标记为稳定等功能说明
+
+---
+
+### [您也能将 Postgres 扩展至每日处理 2.45 PB 数据和 2.5 T 指标 | TigerData](https://www.tigerdata.com/blog/scaling-postgresql-to-petabyte-scale?utm_source=cooperpress&utm_medium=referral&utm_campaign=project-eyeballs-2025&utm_content=node-weekly-newsletter-owl-1)
+
+**原文标题**: [You, Too, Can Scale Postgres to 2.45 PB and 2.5 T Metrics per Day | TigerData](https://www.tigerdata.com/blog/scaling-postgresql-to-petabyte-scale?utm_source=cooperpress&utm_medium=referral&utm_campaign=project-eyeballs-2025&utm_content=node-weekly-newsletter-owl-1)
+
+TigerData 公司通过其 Tiger Cloud 云平台成功将 PostgreSQL 数据库扩展至每日处理 2.5 万亿指标、存储 2.45PB 数据的规模，证明了 PostgreSQL 在时序数据和实时分析场景下的强大扩展能力。
+
+- 🚀 单日指标处理量突破 2.5 万亿，总数据存储量达 2.45PB
+- 🗄️ 采用分层存储架构，活跃数据集保持在 12TB，其余 1.5PB 数据自动分层
+- ⚡ 通过时序数据库特性实现高速查询，持续聚合技术保障查询性能
+- 🔄 使用 UDDSketch 算法压缩原始数据，采样率优化至 25%
+- 🌳 建立分层连续聚合树结构（分钟/小时/天级），避免直接查询原始表
+- 📈 三年来数据量每年增长约 1PB，无需读写分离仍保持稳定运行
+- 🆓 强调所有用户均可通过 Tiger Cloud 达到相同规模，平台功能完全开放
 
 ---
 
@@ -65,121 +82,142 @@ Node.js v22.21.0 (LTS) 版本发布，主要增强了代理配置支持、内存
 
 **原文标题**: [Nordic.js - YouTube](https://www.youtube.com/@nordicjs/videos)
 
-这是一个关于YouTube平台相关信息和链接的页面介绍
+这是一个关于 YouTube 平台信息和政策页面的概述
 
-- ℹ️ 关于平台的基本信息
-- 📢 媒体与新闻发布相关内容
-- ©️ 版权信息与政策
-- 📞 联系方式与用户服务
-- 👥 内容创作者资源
-- 💼 广告与商业合作
-- 🔧 开发者工具与接口
-- 📋 使用条款与协议
-- 🔒 隐私保护政策
-- ⚖️ 平台安全与规范
-- 🔄 平台功能运作机制
-- 🧪 新功能测试与体验
-- 🏢 公司归属与年份标识
+- ℹ️ 关于平台的基本介绍
+- 📢 媒体联系与新闻发布
+- ©️ 版权相关声明
+- 📞 联系方式
+- 👥 内容创作者信息
+- 💼 广告合作业务
+- 💻 开发者资源
+- 📋 服务条款
+- 🔒 隐私政策
+- ⚖️ 平台安全政策
+- 🔧 平台运作机制
+- 🧪 新功能测试
+- Ⓜ️ 版权所有声明（谷歌公司 2025）
 
 ---
 
-### [北欧.js 2025 • 张怡怡 - 2025年Node.js软件包发布实战 - YouTube](https://www.youtube.com/watch?v=I0jvOJW7NaI)
+### [北欧.js 2025 • 张怡怡 - 2025 年 Node.js 软件包发布实战 - YouTube](https://www.youtube.com/watch?v=I0jvOJW7NaI)
 
 **原文标题**: [Nordic.js 2025 • Joyee Cheung - Shipping Node.js packages in 2025 - YouTube](https://www.youtube.com/watch?v=I0jvOJW7NaI)
 
-这是一个关于YouTube平台信息页面的概述，包含平台功能说明与政策条款
+这是一个关于 YouTube 平台信息页面的概述，包含主要功能板块与政策条款。
 
-- ℹ️ 关于平台基本信息与业务介绍
-- 📢 媒体联系与新闻发布相关事项  
-- ©️ 版权保护政策与侵权处理机制
-- 📞 用户联系与客服支持渠道
-- 🎬 内容创作者专属服务与资源
-- 💼 商业合作与广告投放业务
-- 🔧 开发者工具与API接口服务
-- 📑 用户协议与条款细则
-- 🔒 隐私保护政策与数据安全
-- ⚖️ 平台政策与安全规范
-- 🔄 功能测试与产品更新动态
-- ⏰ 2025年谷歌版权所有声明
+- 📄 关于平台的基本信息与介绍
+- 📢 媒体联系与新闻发布相关
+- ©️ 版权声明与知识产权保护
+- 📞 用户联系与客服渠道
+- 🎬 内容创作者专属资源
+- 💼 广告合作与商业推广
+- 🔧 开发者工具与技术支持
+- 📑 服务条款与使用协议
+- 🔒 隐私政策与数据保护
+- 🛡️ 平台安全与政策指南
+- ⚙️ 产品功能运作机制说明
+- 🧪 新功能测试与体验
+- ⏳ 2025 年谷歌公司版权所有
 
 ---
 
-### [北欧.js 2025 • Marco Ippolito - 又一份配置文件：介绍node.config.json - YouTube](https://www.youtube.com/watch?v=KayS7U-ivNo)
+### [北欧.js 2025 • Marco Ippolito - 又一份配置文件：介绍 node.config.json - YouTube](https://www.youtube.com/watch?v=KayS7U-ivNo)
 
 **原文标题**: [Nordic.js 2025 • Marco Ippolito - Yet Another Config File: introducing node.config.json - YouTube](https://www.youtube.com/watch?v=KayS7U-ivNo)
 
-这是一个关于YouTube平台各项服务与政策信息的概述。
+这是一个关于 YouTube 平台信息与服务的页面概览
 
 - ℹ️ 关于平台的基本介绍
-- 📢 媒体与新闻相关事项
-- ©️ 版权保护与知识产权
-- 📞 联系方式与用户服务
-- 👥 内容创作者相关信息
+- 📢 媒体与新闻相关内容
+- ©️ 版权信息与政策
+- 📞 联系方式与用户支持
+- 👥 内容创作者资源
 - 💼 广告与商业合作
-- 🔧 开发者资源与工具
-- 📑 服务条款与使用协议
+- 🔧 开发者工具与接口
+- 📜 服务条款与使用协议
 - 🔒 隐私保护政策
-- ⚖️ 平台政策与安全保障
+- ⚖️ 平台安全政策与规范
 - 🔄 平台运作机制说明
 - 🧪 新功能测试与体验
-- ⏰ 2025年谷歌公司版权所有
+- Ⓜ️ 版权所有方标识
 
 ---
 
-### [JSConf | LF活动](https://events.linuxfoundation.org/jsconf-north-america/)
+### [JSConf | LF 活动](https://events.linuxfoundation.org/jsconf-north-america/)
 
 **原文标题**: [JSConf | LF Events](https://events.linuxfoundation.org/jsconf-north-america/)
 
-JSConf北美大会已于2025年10月14-16日在马里兰州切萨皮克湾成功举办，作为JavaScript社区的顶级活动，本次会议包含主题演讲、技术分享与特色户外体验，并与ng-conf联合举办带来更丰富的技术交流。
+JSConf 北美大会已于 2025 年 10 月 14-16 日在马里兰州切萨皮克湾成功举办，作为 JavaScript 社区的顶级活动，本次会议与 ng-conf 联合举办，提供技术交流与特色体验日。
 
-- 🗓️ 活动时间：2025年10月14-16日 | 地点：马里兰州切萨皮克湾凯悦度假村
-- 🎯 核心特色：首日与末日为技术交流日，次日提供高尔夫/皮划艇/工作坊等自选体验
-- 👨‍👩‍👧‍👦 家庭友好：提供宾客通行证与免费儿童照管服务
-- 🤝 联合活动：与ng-conf协同举办，注册JSConf可获Angular会议折扣票
-- 🎥 资源回顾：主题演讲视频已发布于OpenJS基金会YouTube频道
-- 🌟 演讲嘉宾：汇集Charlie Gerard/Evan You/Rachel White等15位行业专家
-- 💡 社区价值：持续推动JavaScript生态系统发展，促成技术合作与创新
-
----
-
-### [错误](https://nodeweekly.com/link/175920/web)
-
-**原文标题**: [Error](https://nodeweekly.com/link/175920/web)
-
-无法总结：获取内容时出错 - HTTPSConnectionPool(host='nodeweekly.com', port=443): Max retries exceeded with url: /link/175920/web (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+- 🗓️ 活动时间：2025 年 10 月 14-16 日 | 地点：马里兰州切萨皮克湾凯悦度假村
+- 🎯 核心内容：主题演讲/分组讨论/社交活动 | 特色环节：第二天自选冒险体验（高尔夫/皮划艇/海滩篝火等）
+- 👨‍👩‍👧‍👦 家庭友好：提供宾客通行证与免费儿童看护服务 | ✈️ 含机场接送
+- 🎥 资源回顾：会议录像发布于 OpenJS 基金会 YouTube 频道 | 演讲资料可通过活动日程获取
+- 🤝 行业影响：作为 JavaScript 生态创新发源地 | 本次与 ng-conf 联合举办形成技术双峰会
+- 🌟 演讲嘉宾：包含 Charlie Gerard/Evan You/Robin Bender Ginn 等 15 位行业专家
+- 💫 活动特色：开放式可视化协作工作坊 | 航空数据可视化等前沿议题
 
 ---
 
-### [错误](https://nodeweekly.com/link/175884/web)
+### [Node.js 2025：新特性与未来展望 - Speaker Deck](https://speakerdeck.com/ruyadorno/node-dot-js-2025-whats-new-and-whats-next)
 
-**原文标题**: [Error](https://nodeweekly.com/link/175884/web)
+**原文标题**: [Node.js 2025: What's new and what's next - Speaker Deck](https://speakerdeck.com/ruyadorno/node-dot-js-2025-whats-new-and-whats-next)
 
-无法总结：获取内容时出错 - HTTPSConnectionPool(host='nodeweekly.com', port=443): Max retries exceeded with url: /link/175884/web (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+好的，请提供您需要总结的文本内容，我将按照您要求的格式进行整理：
+- 顶部提供概述总结
+- 用"-"符号列出带表情符号的要点
+- 全程使用中文输出
+
+请粘贴需要总结的文本内容。
 
 ---
 
-### [使用Ace构建CLI：基于Node.js和Bun的书签应用 - Galaxy博客](https://blog.galaxycloud.app/building-clis-with-ace-a-bookmarks-app-in-node-js-and-bun/)
+### [NestJS 零配置支持 - Vercel](https://vercel.com/changelog/zero-configuration-support-for-nestjs)
+
+**原文标题**: [Zero-configuration support for NestJS - Vercel](https://vercel.com/changelog/zero-configuration-support-for-nestjs)
+
+Vercel 现已支持零配置部署 NestJS 应用，这是一个用于构建高效可扩展 Node.js 服务端应用的流行框架。平台默认采用动态计算资源与按需计费模式，实现自动扩缩容与成本优化。
+
+- 🚀 **零配置部署**：无需额外配置即可在 Vercel 平台快速部署 NestJS 应用程序
+- ⚡ **动态资源分配**：基于流量自动调节计算资源，支持应用弹性扩缩容
+- 💰 **按需计费**：采用活跃 CPU 计费模式，仅根据实际使用量付费
+- 📚 **开发友好**：提供完整示例代码与官方文档支持快速入门
+- 🌐 **高效运行**：内置反射元数据支持，保持 NestJS 框架原生特性
+
+---
+
+### [使用 Ace 构建 CLI：Node.js 与 Bun 中的书签应用 - Galaxy 博客](https://blog.galaxycloud.app/building-clis-with-ace-a-bookmarks-app-in-node-js-and-bun/)
 
 **原文标题**: [Building CLIs with Ace: a Bookmarks App in Node.js and Bun - Galaxy Blog](https://blog.galaxycloud.app/building-clis-with-ace-a-bookmarks-app-in-node-js-and-bun/)
 
-本文介绍了如何使用Ace框架构建一个简单的书签管理CLI应用，包括项目初始化、命令创建、参数处理、数据持久化及打包为独立可执行文件的全过程。
+本文介绍了如何使用 Ace 框架构建一个书签管理 CLI 应用，涵盖项目初始化、命令创建、交互式提示、数据持久化及测试等完整开发流程。
 
-- 🚀 使用Ace框架构建Node.js/Bun命令行应用，集成提示、表格和测试功能
-- 📦 通过配置TypeScript环境和依赖初始化项目，支持装饰器等实验性特性
-- 🛠️ 创建添加书签命令，支持参数验证、交互式提示和数据持久化到本地JSON文件
-- 📋 实现查看书签列表功能，以彩色表格形式展示存储的书签信息
-- 🎨 添加全局ANSI标志支持，可控制彩色输出的开启与关闭
-- 🧪 内置测试友好设计，可直接捕获提示和记录器输出进行断言
-- 📦 使用Bun将应用编译为独立可执行文件，无需Node.js环境即可运行
-- ⚡ 框架轻量高效，比类似工具小80%，提供开箱即用的完整CLI开发体验
+- 🛠️ 使用 Ace 框架构建 Node.js/Bun 命令行应用，集成提示、日志和表格等功能
+- 📁 通过 TypeScript 创建 ESM 项目结构，配置 Ace 内核与命令加载器
+- ✨ 实现添加书签命令，支持参数验证与交互式提示补全
+- 💾 使用 configstore 持久化存储书签数据到本地 JSON 文件
+- 📋 开发查看命令以表格形式展示存储的书签列表
+- 🎨 通过全局标志支持 ANSI 彩色输出控制
+- ⚡ 利用 Bun 将应用编译为独立可执行文件
+- 🧪 框架内置测试支持，可断言日志输出和捕获提示交互
 
 ---
 
-### [错误](https://nodeweekly.com/link/175886/web)
+### [介绍（Ace 命令）| AdonisJS 文档](https://docs.adonisjs.com/guides/ace/introduction)
 
-**原文标题**: [Error](https://nodeweekly.com/link/175886/web)
+**原文标题**: [Introduction (Ace commands) | AdonisJS Documentation](https://docs.adonisjs.com/guides/ace/introduction)
 
-无法总结：获取内容时出错 - HTTPSConnectionPool(host='docs.adonisjs.com', port=443): Max retries exceeded with url: /guides/ace/introduction (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+Ace 是 AdonisJS 的命令行框架，用于创建和运行控制台命令，支持别名扩展和编程式执行。
+
+- 🚀 通过`node ace`执行命令，支持 TypeScript 代码运行
+- 📋 使用`list`命令或直接运行查看可用命令列表
+- ❓ 通过`--help`标志获取单个命令的详细帮助信息
+- 🎨 使用`--ansi`标志手动控制彩色输出显示
+- 🔄 在`adonisrc.ts`中配置命令别名简化常用命令
+- ⚙️ 别名扩展时自动附加预设参数到原命令
+- 💻 通过`ace.exec`方法编程式执行命令
+- 🔍 使用`ace.hasCommand`检查命令是否存在后再执行
 
 ---
 
@@ -187,18 +225,14 @@ JSConf北美大会已于2025年10月14-16日在马里兰州切萨皮克湾成功
 
 **原文标题**: [GitHub - adonisjs/ace: Node.js framework for creating command line applications](https://github.com/adonisjs/ace)
 
-AdonisJS Ace 是一个专为 Node.js 设计的轻量级命令行应用开发框架，注重测试友好性和简洁的 API 设计。
+AdonisJS Ace 是一个专为 Node.js 设计的命令行应用开发框架，注重轻量化和测试友好性。
 
-- 🚀 专为 Node.js 打造的命令行应用开发框架
-- 🧪 内置测试友好设计理念
-- 📦 相比其他 CLI 框架更加轻量级
-- 📚 提供清晰的 API 用于创建 CLI 命令
-- 🌐 官方文档可在 AdonisJS 官网获取
-- 👥 鼓励社区贡献，提供贡献指南和行为准则
-- 📄 采用 MIT 开源许可证
-- ⭐ 获得 387 个星标和 36 个复刻
-- 🔄 支持 TypeScript 语言开发（占比 99.6%）
-- 📈 被 31,490 个项目使用，社区活跃
+- 🛠️ **轻量级 CLI 框架** - 相比其他命令行框架更加精简，提供简洁的 API
+- 🧪 **测试友好设计** - 在构建时充分考虑了测试需求
+- 🌐 **活跃社区支持** - 拥有 385 个星标和 36 个分支，被 31,490 个项目使用
+- 📄 **MIT 许可证** - 采用开源 MIT 许可证
+- 🔄 **持续维护** - 已有 111 个版本发布，最新更新于 2025 年 9 月
+- 💻 **TypeScript 开发** - 主要使用 TypeScript 语言（占比 99.6%）
 
 ---
 
@@ -206,34 +240,32 @@ AdonisJS Ace 是一个专为 Node.js 设计的轻量级命令行应用开发框�
 
 **原文标题**: [Introduction (Preface) | AdonisJS Documentation](https://docs.adonisjs.com/guides/preface/introduction)
 
-AdonisJS 是一个基于 Node.js 的 TypeScript 优先 Web 框架，专注于为后端应用提供结构化开发环境、现代化工具链和丰富的功能模块，同时保持对前端技术的灵活性。
+AdonisJS 是一个基于 Node.js 的 TypeScript 优先全栈 Web 框架，专注于提供结构化应用开发、现代化工具链和类型安全支持。
 
-- 🚀 **TypeScript 优先** - 提供完整的 TypeScript 开发环境支持，包含类型安全的事件发射器、环境变量和验证库
-- 🎯 **专注后端开发** - 框架核心专注于后端功能，支持与传统模板引擎、JSON API 或 Inertia 等前端技术栈灵活搭配
-- 🔧 **现代化工具链** - 基于 ES 模块、Node.js 子路径导入、SWC 和 Vite 等现代 JavaScript 工具构建
-- 🏗️ **MVC 架构模式** - 采用经典的 MVC 设计模式，通过路由、控制器和模型组织代码结构
-- 📚 **完善生态系统** - 提供大量维护良好且文档齐全的官方包，涵盖邮件发送、用户验证、CRUD 操作等常见需求
-- ⚡ **开发体验优化** - 支持后端代码热重载（HMR），减少配置时间，让团队更专注于业务功能开发
-- 🌐 **社区支持** - 拥有活跃的 Discord 社区、GitHub 讨论区和多语言文档翻译
-- 📅 **持续更新** - 框架保持定期更新，近期发布了 REPL、ESLint 配置、数据库和缓存等模块的改进
+- 🚀 提供应用结构、TypeScript 开发环境和 HMR 支持
+- ⚡ 减少技术选型时间，专注业务功能开发
+- 🎯 后端专注，支持传统模板引擎、JSON API 和 Inertia 前端集成
+- 🔒 基于现代 ES 模块、SWC 和 Vite，提供完整类型安全
+- 🏗️ 采用 MVC 模式，支持路由、控制器和模型的数据流
+- 📚 文档侧重模块参考，推荐 Adocasts 教程入门学习
+- 🔄 持续更新维护，近期发布 REPL、ESLint 配置等模块更新
 
 ---
 
-### [泰勒试用DTrace——泰勒·希勒里](https://tylerhillery.com/blog/tyler-tries-dtrace/)
+### [泰勒试用 DTrace——泰勒·希勒里](https://tylerhillery.com/blog/tyler-tries-dtrace/)
 
 **原文标题**: [Tyler Tries DTrace â Tyler Hillery](https://tylerhillery.com/blog/tyler-tries-dtrace/)
 
-作者在学习Node.js流背压机制时，通过DTrace工具探索了垃圾回收性能的测量方法，记录了从环境配置、代码修改到数据收集的全过程。
+作者在学习 Node.js 流背压机制时，通过官方文档接触到了 DTrace 动态追踪工具，并尝试复现文档中通过 DTrace 测量垃圾回收时间的示例。过程中经历了下载测试视频、修改 Node.js 源码禁用背压机制、编译自定义 Node 版本、配置 DTrace 环境等挑战，最终成功通过 DTrace 观测到禁用背压导致的 GC 时间增加现象。
 
-- 🎯 作者在Node.js文档的背压示例中发现DTrace工具，受播客影响决定实践探索
-- 📚 背压指数据生产速度超过消费速度导致的缓冲队列堆积，Node.js通过机制控制数据流避免内存溢出
-- 🛠️ 为复现示例需要9GB视频文件，作者下载开源影片并用ffmpeg合成8.9GB测试文件
-- ⚙️ 修改Node.js源码禁用背压机制：定位writeOrBuffer函数并将返回值改为true
-- 🚧 编译Node.js时遭遇环境配置问题，通过调试发现缺失g++-12依赖，最终成功编译
-- 🔍 在macOS虚拟机上配置DTrace时发现Node.js已默认禁用USDT探针，通过AI辅助重新启用
-- 📊 使用DTrace成功测量GC时间，数据显示禁用背压后垃圾回收耗时显著增加
-- 💡 验证了背压机制通过writeOrBuffer返回false暂停可读流，通过drain事件恢复数据流
-- 🐰 实验结束后作者打算观看使用的测试视频《Big Buck Bunny》
+- 🛠️ 作者在 Node.js 官方文档中发现 DTrace 工具，受 Oxide and Friends 播客影响决定尝试实践
+- 📚 背压机制指数据生产速度超过消费速度时，通过暂停生产者防止内存堆积的流量控制机制
+- 🎬 为复现示例下载 Big Buck Bunny 测试视频，使用 ffmpeg 合成 9GB 测试文件
+- 🔧 通过修改 Node.js 源码中 writeOrBuffer 函数的返回值来禁用背压机制
+- 🖥️ 编译 Node.js 时解决环境配置问题，最终成功构建自定义版本
+- 🔍 在 macOS 虚拟机上配置 DTrace，发现新版 Node.js 已移除 DTrace 支持后通过 AI 辅助重新添加
+- 📊 使用 DTrace 成功测量 GC 时间，验证禁用背压会导致垃圾回收更频繁
+- ⚠️ 实验证实背压机制能有效缓解内存压力，避免 GC 过载
 
 ---
 
@@ -241,38 +273,49 @@ AdonisJS 是一个基于 Node.js 的 TypeScript 优先 Web 框架，专注于为
 
 **原文标题**: [Node.js — Backpressuring in Streams](https://nodejs.org/en/learn/modules/backpressuring-in-streams)
 
-本文介绍了Node.js中流（Streams）的反压机制（Backpressure），解释了数据在传输过程中当接收端处理速度跟不上发送端时，数据会在缓冲区堆积的问题。文章详细说明了Node.js如何通过流自动管理反压，确保数据平滑流动，避免内存耗尽和系统性能下降，并提供了实现自定义流时的最佳实践指南。
+本文介绍了 Node.js 中流（Streams）的反压机制（Backpressure），解释了数据在传输过程中当接收端处理速度跟不上发送端时，数据会在缓冲区堆积的问题。文章详细说明了 Node.js 如何通过流机制自动管理反压，确保内存高效使用，避免系统资源耗尽，并提供了实现自定义流时的最佳实践指南。
 
-- 🌊 反压机制在数据流中防止缓冲区数据堆积，确保系统稳定运行
-- 🔄 Node.js通过流的.pipe()方法自动处理反压，优化数据传输
-- ⚠️ 忽略反压会导致内存泄漏、垃圾回收压力增大和系统性能下降
-- 📊 实验显示，启用反压时内存占用仅87.81 MB，禁用后飙升至1.52 GB
-- 🔧 实现自定义流需遵守规则：检查.push()和.write()的返回值，尊重反压信号
-- 🛠️ 使用pipeline替代pipe处理错误，确保流安全销毁
-- 📖 建议阅读Node.js文档，掌握Stream API以提升流处理能力
-
----
-
-### [错误](https://nodeweekly.com/link/175891/web)
-
-**原文标题**: [Error](https://nodeweekly.com/link/175891/web)
-
-无法总结：获取内容时出错 - HTTPSConnectionPool(host='developer.vonage.com', port=443): Max retries exceeded with url: /en/blog/build-a-real-time-interactive-rcs-experience-with-node-js-and-vonage (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+- 💥 反压机制防止数据在传输过程中因处理速度不匹配而导致的内存堆积和系统资源耗尽
+- 🔄 Node.js 通过流的.pipe() 方法自动处理反压，确保数据平滑流动
+- 📊 当 Writable 流的.write() 方法返回 false 时，触发反压，暂停 Readable 流的数据发送
+- 🚀 使用 pipeline API 替代.pipe() 可以更好地处理错误和清理资源，特别是在 Node.js 10.x 及以上版本
+- 🛠️ 实现自定义流时，必须遵守反压规则，如检查.push() 和.write() 的返回值，避免强制推送数据
+- 📉 忽略反压会导致内存使用激增、垃圾回收效率低下，甚至系统崩溃
+- 🔧 通过设置 highWaterMark 可以调整流的缓冲区大小，但需谨慎操作
+- 📚 使用 readable-stream 库可以确保在不同 Node.js 版本和浏览器中的兼容性
 
 ---
 
-### [Node.js — 在Node.js中收集代码覆盖率](https://nodejs.org/en/learn/test-runner/collecting-code-coverage)
+### [使用 Node.js 和 Vonage 构建实时交互式 RCS 体验](https://developer.vonage.com/en/blog/build-a-real-time-interactive-rcs-experience-with-node-js-and-vonage)
+
+**原文标题**: [Build a Real-Time Interactive RCS Experience with Node.js and Vonage](https://developer.vonage.com/en/blog/build-a-real-time-interactive-rcs-experience-with-node-js-and-vonage)
+
+本教程展示了如何使用 Node.js 和 Vonage Messages API 构建实时交互式 RCS 体验，通过足球比赛场景演示多步骤互动流程。
+
+- 🚀 RCS 技术通过富媒体和交互按钮提升用户参与度，支持品牌在默认消息应用中创建沉浸式体验
+- ⚽ 示例流程：用户选择比赛结果→投票最佳球员→浏览商品轮播，完整代码可在 GitHub 获取
+- 🛠️ 环境要求：Node.js、ngrok、Vonage API 账户和 RCS 测试设备，需联系销售团队开通开发者权限
+- 📁 项目采用模块化结构，核心文件包括配置管理、消息模板和服务层，便于维护扩展
+- 🔗 使用 Express 服务器处理 webhook，根据用户选择动态发送建议回复/独立富卡片/轮播卡片
+- 🌐 通过 ngrok 暴露本地服务，配置 Vonage 应用并关联 RCS 代理，实现消息收发功能
+- 🎯 消息模板封装了三种 RCS 交互类型，支持快速替换媒体资源和商品链接
+- 📱 测试时通过 API 触发初始消息，用户交互会触发后续流程，目前仅实现巴西队分支
+- 💡 可扩展其他分支流程，结合设备定位 API 在特定场景触发互动，适用于体育/音乐/零售等多种场景
+
+---
+
+### [Node.js — 在 Node.js 中收集代码覆盖率](https://nodejs.org/en/learn/test-runner/collecting-code-coverage)
 
 **原文标题**: [Node.js — Collecting code coverage in Node.js](https://nodejs.org/en/learn/test-runner/collecting-code-coverage)
 
-Node.js 提供了通过测试运行器收集代码覆盖率的内置支持，可以使用实验性标志或API启用，并介绍了如何通过注释和命令行参数管理覆盖范围及设置阈值。
+Node.js 通过内置测试运行器支持代码覆盖率收集，可使用实验性标志或 API 启用。代码覆盖率是衡量测试期间执行源代码比例的指标，帮助识别测试盲区，通常以百分比形式呈现，数值越高代表测试覆盖越全面。
 
-- 🚀 通过 `--experimental-test-coverage` 标志或 `run()` API 的 `coverage` 选项启用代码覆盖率收集
-- 📊 代码覆盖率衡量测试期间执行的源代码比例，包括行覆盖率、分支覆盖率和函数覆盖率，以百分比形式表示测试完整性
-- 🔍 示例显示未测试的 `multiply` 函数导致行覆盖率为76.92%，函数覆盖率为66.67%
-- 🚫 使用 `/* node:coverage ignore next */` 注释可忽略特定代码段，使覆盖率报告达到100%
-- 🛠️ 通过 `--test-coverage-include` 和 `--test-coverage-exclude` 命令行参数包含或排除文件模式
-- ⚖️ 使用 `--test-coverage-lines` 等阈值标志可在覆盖率不达标时使进程退出码为1，强制要求测试质量
+- 🚀 启用覆盖率：通过`--experimental-test-coverage`标志或`run()`API 的`coverage:true`选项激活
+- 📊 覆盖率类型：包含行覆盖率（执行代码行比例）、分支覆盖率（条件分支测试比例）和函数覆盖率（被调用函数比例）
+- 🔍 基础示例：演示包含三个函数的模块，其中未测试的`multiply`函数导致覆盖率下降至 66.67%
+- 🚫 排除代码：支持通过`/* node:coverage ignore */`注释忽略特定代码段，或使用 CLI 参数排除文件模式
+- 🎯 阈值控制：可设置行/分支/函数覆盖率的最低阈值，未达标时进程返回失败状态码
+- 📁 文件过滤：通过`--test-coverage-include`和`--test-coverage-exclude`参数精确控制覆盖范围
 
 ---
 
@@ -280,19 +323,18 @@ Node.js 提供了通过测试运行器收集代码覆盖率的内置支持，可
 
 **原文标题**: [Why typeof null === object | Piotr Zarycki - Programming Blog](https://pzarycki.com/en/posts/js-null/)
 
-JavaScript中typeof null返回"object"是由于历史遗留的设计缺陷，在32位系统底层实现中null的二进制标记与对象类型相同，且因兼容性问题至今未被修复。
+JavaScript 中`typeof null`返回`"object"`是由于历史遗留的设计缺陷，源自 1995 年 Netscape 浏览器的原始实现。在 32 位系统中采用类型标记机制时，空指针（null）的二进制表示与对象类型标记相同（低 3 位均为 000），导致类型判断错误。虽然存在简单的修复方案，但为保持与海量现有代码的兼容性，该行为被保留至今。
 
-- 🕰️ 历史原因：JavaScript在1995年Netscape浏览器中采用32位类型标记，null的二进制值(全零)与对象类型标记(000)冲突
-- 🔧 底层机制：通过JSVAL_IS_OBJECT宏检测时，null(0x00000000)和真实对象都被识别为对象类型
-- 🐛 修复可能：当时存在JSVAL_IS_NULL宏可正确识别null，但未被typeof函数采用
-- 📜 兼容性：2013年ECMAScript标准提案因破坏现有网站兼容性而被否决
-- 💡 解决方案：实际开发中需使用`value !== null && typeof value === 'object'`进行准确判断
-- 🏗️ 架构影响：该现象源于32位系统中内存对齐机制和指针标记技术的设计决策
-- 🌍 现实影响：数百万网站已适应此特性，成为JavaScript最著名的语言特性之一
+- 🔍 `typeof null`返回`"object"`是 JavaScript 的著名历史遗留问题
+- ⚙️ 根源在于 Netscape 1.3 的 32 位类型标记系统：对象与 null 共享相同的低位标记（000）
+- 🖥️ 空指针`0x00000000`的二进制表示被错误识别为对象类型
+- 🔧 当时已有检测 null 的宏（`JSVAL_IS_NULL`）但未在`typeof`实现中使用
+- 🌍 2013 年修复提案因破坏向后兼容性被 ECMAScript 标准拒绝
+- 💡 正确检测对象应使用：`value !== null && typeof value === 'object'`
 
 ---
 
-### [GitHub - elbywan/wretch: 一个围绕 fetch 构建的语法直观的轻量级封装工具。:candy:](https://github.com/elbywan/wretch)
+### [GitHub - elbywan/wretch: 一个围绕 fetch 构建的语法直观的微型封装库。:candy:](https://github.com/elbywan/wretch)
 
 **原文标题**: [GitHub - elbywan/wretch: A tiny wrapper built around fetch with an intuitive syntax. :candy:](https://github.com/elbywan/wretch)
 
@@ -303,10 +345,11 @@ Wretch 是一个轻量级的 fetch 封装库，提供直观的语法简化网络
 - 🧊 **不可变实例** - 每次调用创建克隆实例，可安全复用配置
 - 🔌 **模块化设计** - 支持插件和中间件扩展功能
 - 🌐 **多平台兼容** - 支持现代浏览器、Node.js 22+、Deno 和 Bun
-- 🦺 **类型安全** - 使用 TypeScript 开发，提供完整类型支持
-- 🎯 **错误处理** - 内置 HTTP 错误状态码处理方法和请求重试机制
-- 📦 **丰富功能** - 支持文件上传进度跟踪、查询参数、表单数据等常见场景
-- 🔄 **请求链式** - 采用直观的链式调用语法，配置请求和响应处理流程
+- 🦺 **类型安全** - 使用 TypeScript 编写，提供完整类型支持
+- 🛡️ **优雅错误处理** - 提供针对不同状态码的错误处理方法
+- 📦 **丰富功能** - 包含查询字符串、FormData、进度跟踪、请求中止等常用功能
+- 🔄 **请求重试** - 内置重试中间件，支持自定义重试条件
+- ⚡ **性能优化** - 支持请求去重和缓存中间件，提升应用性能
 
 ---
 
@@ -316,32 +359,14 @@ Wretch 是一个轻量级的 fetch 封装库，提供直观的语法简化网络
 
 Wretch 是一个轻量级的 fetch 封装库，提供直观的语法简化网络请求和响应处理。
 
-- 🪶 **轻量** - 核心库体积小于 1.8KB（gzip压缩）
-- 💡 **直观** - 简洁的 API，自动处理错误、头部和序列化
-- 🧊 **不可变** - 每次调用创建可安全复用的克隆实例
-- 🔌 **模块化** - 可通过插件添加功能，中间件拦截请求
-- 🧩 **同构** - 兼容现代浏览器、Node.js 22+、Deno 和 Bun
-- 🦺 **类型安全** - 使用 TypeScript 编写，强类型支持
-- ✅ **成熟稳定** - 完整的单元测试覆盖，广泛使用
-- 💓 **持续维护** - 多年活跃开发
-
-**主要特性：**
-- 🍬 自动 JSON 序列化/反序列化
-- 🔄 优雅的错误处理机制
-- 📤 简化的请求发送方式
-- ⚡ 支持文件上传进度跟踪
-- 🔁 自动重试失败请求
-- 🔐 支持 Token 自动刷新
-- 🎯 完整的 TypeScript 支持
-
-**使用示例：**
-```javascript
-const api = wretch("https://api.example.com")
-  .auth("Bearer token")
-  .options({mode: "cors"})
-
-const data = await api.get("/users").json()
-```
+- 🍬 **轻量简洁** - 核心代码仅 1.8KB，提供比原生 fetch 更优雅的 API
+- 🔄 **自动处理** - 自动处理 JSON 序列化、错误状态码检查和响应解析
+- 🧩 **模块化设计** - 支持插件系统和中间件，可扩展功能
+- 🌐 **多平台兼容** - 支持现代浏览器、Node.js 22+、Deno 和 Bun
+- 🛡️ **类型安全** - 使用 TypeScript 编写，提供完整的类型支持
+- ⚡ **常用功能** - 内置查询字符串、FormData、进度监控、请求重试等
+- 🔧 **配置复用** - 不可变实例设计，可安全重用配置
+- 📦 **灵活安装** - 支持 npm、CDN 等多种安装方式
 
 ---
 
@@ -349,18 +374,17 @@ const data = await api.get("/users").json()
 
 **原文标题**: [Release 3.0.0 · elbywan/wretch · GitHub](https://github.com/elbywan/wretch/releases/tag/3.0.0)
 
-Wretch v3 是一个重大版本更新，带来了更小、更快、功能更强大的 fetch 封装库，具有改进的类型安全性、更智能的默认设置和令人兴奋的新功能。
+Wretch v3 是一个重大版本更新，带来了更小、更快、功能更强大的 fetch 封装库，具备改进的类型安全、更智能的默认设置和令人兴奋的新特性。
 
-- 🚀 需要 Node.js 22 或更高版本，直接使用原生 Web API，显著减小包体积并提升性能
-- 🎯 引入 `.customError()` 方法替代 `.errorType()`，提供完整的 TypeScript 支持，实现更灵活的错误处理
-- 🔄 重试中间件默认跳过 4xx 客户端错误，仅重试 5xx 服务器错误和网络故障
-- 📤 进度插件支持实时上传进度监控，在 Node.js 中无缝工作
-- 🎨 支持单次调用传递多个插件，使设置更简洁
-- 💎 多个插件方法改用选项对象参数，提高 API 可维护性和可读性
+- 🚀 要求 Node.js 22 或更高版本，直接使用原生 Web API，实现零 polyfill 开销，显著减小包体积并提升性能
+- 🎯 引入 `.customError()` 方法替代 `.errorType()`，提供完整的 TypeScript 支持，允许自定义错误属性和解析方式
+- 🔄 重试中间件默认跳过 4xx 客户端错误，仅针对 5xx 服务器错误和网络故障进行重试，符合 HTTP 语义
+- 📤 进度插件新增上传进度监控功能，支持实时跟踪上传进度，在 Node.js 中无缝工作
+- 🎨 支持一次性传递多个插件，使配置更简洁清晰
+- 💎 多个插件方法改用选项对象而非位置参数，提升 API 可维护性和可读性
 - 🔗 新增 `.toFetch()` 方法，可将 Wretch 请求链转换为标准 fetch 调用
-- 🧹 移除全局配置方法，改为每个实例显式配置，架构更简洁
-- 🔧 现代化开发栈：使用 Rolldown 打包、原生 Node.js 测试、文档代码片段自动测试、跨运行时测试等
-- 📖 包含破坏性变更，需升级到 Node.js 22+，迁移错误处理和全局配置等
+- 🧹 移除全局配置方法，改为每个实例单独配置，架构更简洁
+- 🔧 现代化开发栈：使用 Rolldown 打包、原生 Node.js 测试、文档代码片段自动化测试、全面跨运行时测试和安全更新
 
 ---
 
@@ -369,27 +393,28 @@ Wretch v3 是一个重大版本更新，带来了更小、更快、功能更强�
 **原文标题**: [Graffle](https://graffle.js.org/)
 
 overview summary
-Graffle 遵循 GraphQL over HTTP 和 GraphQL 多部分请求规范，确保技术实现的标准化与兼容性。
+Graffle 遵循 GraphQL over HTTP 和 GraphQL 多部分请求规范，确保与标准兼容。
 
-- 🌐 符合 GraphQL over HTTP 规范
-- 📨 支持 GraphQL 多部分请求标准
-- ✅ 实现技术规范兼容性
+- 🎯 符合 GraphQL over HTTP 规范
+- 📄 遵循 GraphQL 多部分请求规范
+- ✅ 确保技术标准兼容性
 
 ---
 
-### [GitHub - cure53/DOMPurify：DOMPurify - 一款仅限DOM、超快速、极度宽容的HTML、MathML和SVG跨站脚本（XSS）清理工具。DOMPurify采用安全默认设置，同时提供丰富的可配置性和钩子。演示：](https://github.com/cure53/DOMPurify)
+### [GitHub - cure53/DOMPurify：DOMPurify - 一款仅限 DOM、超快速、极度宽容的 HTML、MathML 和 SVG 跨站脚本（XSS）清理器。DOMPurify 采用安全默认设置工作，同时提供大量可配置选项和钩子。演示：](https://github.com/cure53/DOMPurify)
 
 **原文标题**: [GitHub - cure53/DOMPurify: DOMPurify - a DOM-only, super-fast, uber-tolerant XSS sanitizer for HTML, MathML and SVG. DOMPurify works with a secure default, but offers a lot of configurability and hooks. Demo:](https://github.com/cure53/DOMPurify)
 
-DOMPurify 是一个专为 HTML、MathML 和 SVG 设计的快速、高容错性 XSS 清理工具，提供安全默认配置与高度可定制性。
+DOMPurify 是一个专为 HTML、MathML 和 SVG 设计的快速、高容错性的 XSS 净化库，通过默认安全配置提供高度可定制性，能有效清除恶意代码并防止跨站脚本攻击。
 
-- 🛡️ 专注于 DOM 层面的 XSS 防护，支持 HTML、MathML 和 SVG 内容净化
-- ⚡ 具备超高速处理性能与极强的容错能力
-- 🔧 提供丰富的配置选项和扩展钩子，默认配置安全可靠
-- 🌐 附演示页面：cure53.de/purify
-- 📊 项目热度：16.1k 星标、810 分叉、57.6万+ 项目使用
-- 🔄 持续维护：最新版本 3.3.0（2025年10月发布），共129个版本
-- 👥 由115位贡献者共同开发，主要采用 JavaScript 和 TypeScript 编写
+- 🛡️ 核心功能是净化 HTML 内容并阻止 XSS 攻击，支持现代浏览器及 Node.js 环境
+- ⚡ 采用浏览器原生技术实现极致净化速度，输入脏 HTML 即可返回安全内容
+- 🎯 默认支持 HTML5/SVG/MathML，可通过配置限定特定标签和属性
+- 🚫 自动移除危险元素（如 onerror 事件）并保留安全内容（如纯图片标签）
+- 🔧 提供丰富配置选项：自定义允许列表/禁止列表、URI 处理、返回类型控制等
+- 🌐 支持服务端运行（需配合 jsdom），提供 TypeScript 类型定义和 React 绑定
+- 🐛 设有安全漏洞奖励计划，持续更新维护并经过多浏览器自动化测试验证
+- 📚 提供实时演示页面和详细文档，包含大量代码示例和配置案例
 
 ---
 
@@ -397,14 +422,15 @@ DOMPurify 是一个专为 HTML、MathML 和 SVG 设计的快速、高容错性 X
 
 **原文标题**: [DOMPurify 3.3.0 "Aurora"](https://cure53.de/purify)
 
-DOMPurify 3.3.0 "Aurora" 是一款专注于DOM处理的超高速、高容错性XSS净化工具，支持HTML、SVG和MathML内容的安全清理。
+DOMPurify 3.3.0 版本是一个专注于 DOM 处理的超快速 XSS 净化工具，支持 HTML、SVG 和 MathML 内容的安全清理。
 
-- 🚀 专为DOM设计的高速XSS净化器
-- 🛡️ 支持HTML/SVG/MathML多格式内容安全处理  
-- 🧪 提供实时净化演示与自定义测试功能
-- 📝 可输出净化结果至控制台或DOM节点
-- ⚡ 具备自动转换与性能计时特性
-- 🧹 实现脏HTML到洁净HTML/DOM的转换
+- 🛡️ 专为防御 XSS 攻击设计的 DOM 净化工具
+- ⚡ 具备超高速处理性能与高容错特性
+- 🌐 支持 HTML/SVG/MathML 多种格式内容净化
+- 🧪 提供实时演示环境可测试自定义 payload
+- 📝 支持多种输出方式：控制台显示/DOM 写入/jQuery 处理
+- ⏱️ 内置性能监控显示原始/净化 HTML 处理耗时
+- 🔄 可选自动转换功能增强兼容性
 
 ---
 
@@ -414,58 +440,64 @@ DOMPurify 3.3.0 "Aurora" 是一款专注于DOM处理的超高速、高容错性X
       Home - Documentation
   ](https://imapflow.com/)
 
-ImapFlow 是一个专为 Node.js 设计的现代化、易用的 IMAP 客户端库，旨在简化 IMAP 协议的使用，无需深入了解 IMAP 细节即可通过直观的 API 管理电子邮件账户。
+ImapFlow 是一个专为 Node.js 设计的现代化、易用的 IMAP 客户端库，旨在简化 IMAP 协议交互，无需深入了解 IMAP 细节即可通过直观 API 管理邮件。
 
-- 📧 专为 Node.js 开发的 IMAP 客户端库，提供简单易用的 API
-- 🔗 可无缝集成到 EmailEngine 电子邮件 API，将 IMAP 账户转换为 REST 接口
-- 🛠️ 自动处理 IMAP 扩展，如服务器不支持某些功能则忽略相关返回值
-- 📥 通过 npm 安装：`npm install imapflow`，并导入 ImapFlow 类使用
-- ⏳ 所有方法基于 Promise，需使用 `await` 或 `then()` 处理异步操作
-- 🔒 支持邮箱锁定和消息获取，示例包括获取最新邮件内容和列出所有邮件主题
-- 📚 提供完整的 API 参考文档，代码开源在 GitHub
-- 📄 基于 MIT 许可证，由 Postal Systems OÜ 维护至 2024 年
+- 📧 专为 Node.js 设计的 IMAP 客户端库，提供简单易用的 API 接口
+- 🔗 可搭配 EmailEngine 将 IMAP 账户转换为 REST API，便于集成
+- 🛠️ 自动处理 IMAP 扩展功能，兼容不同服务器特性
+- 📥 通过 npm 安装：`npm install imapflow`，支持 Promise 异步操作
+- 🔒 提供邮箱锁定机制，确保操作安全并支持邮件获取和列表读取
+- 📚 详细 API 文档和 MIT 开源许可，代码托管于 GitHub
 
 ---
 
-### [GitHub - lukeacl/atsippy: 支持重连压缩的Bluesky Jetstream服务客户端 (https://github.com/bluesky-social/jetstream)](https://github.com/lukeacl/atsippy)
+### [GitHub - lukeacl/atsippy: 支持重连压缩的 Bluesky Jetstream 服务客户端 (https://github.com/bluesky-social/jetstream)](https://github.com/lukeacl/atsippy)
 
 **原文标题**: [GitHub - lukeacl/atsippy: A reconnecting compression supporting client for the Bluesky Jetstream (https://github.com/bluesky-social/jetstream) service.](https://github.com/lukeacl/atsippy)
 
-这是一个用于Bluesky Jetstream服务的客户端库，支持自动重连和压缩功能。
+ATSippy 是一个为 Bluesky Jetstream 服务设计的客户端，支持重连和压缩功能，用于订阅和处理来自 Bluesky 社交网络的数据流。
 
-- 🔌 **自动重连支持** - 当连接断开时可自动重新连接
-- 🗜️ **压缩功能** - 支持数据压缩传输以提升性能
-- 📡 **WebSocket客户端** - 专为Bluesky Jetstream服务设计的客户端
-- ⚙️ **高度可配置** - 可设置端点、重连延迟、压缩选项等参数
-- 📋 **事件监听机制** - 提供连接、提交、创建、更新等多种事件监听
-- 🔧 **TypeScript开发** - 使用TypeScript编写，确保类型安全
-- 📄 **MPL-2.0许可证** - 采用Mozilla公共许可证2.0版本
-- 📦 **npm包管理** - 可通过npm安装使用，集成便捷
+- 🔄 支持自动重连和压缩功能，确保稳定连接和数据传输
+- 📦 可通过 npm 安装，使用 TypeScript 编写，兼容 Bluesky Jetstream 服务
+- ⚙️ 可配置连接参数，包括端点、重连延迟、压缩使用及订阅的数据集合和 DID
+- 📡 提供多种事件监听，如连接、心跳、数据提交、创建、更新、删除等操作
+- 📄 采用 MPL-2.0 许可证，项目开源，目前有 5 个星标，暂无分支
 
 ---
 
-### [错误](https://nodeweekly.com/link/175925/web)
+### [介绍 Jetstream | Bluesky](https://docs.bsky.app/blog/jetstream)
 
-**原文标题**: [Error](https://nodeweekly.com/link/175925/web)
+**原文标题**: [Introducing Jetstream | Bluesky](https://docs.bsky.app/blog/jetstream)
 
-无法总结：获取内容时出错 - HTTPSConnectionPool(host='nodeweekly.com', port=443): Max retries exceeded with url: /link/175925/web (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+Jetstream 是 AT 协议中 Firehose 数据流的简化替代方案，专为降低开发门槛和带宽消耗而设计，支持 JSON 格式和数据过滤功能。
+
+- 🚀 提供简化的 JSON 数据格式，替代复杂的二进制 CBOR/CAR 解析
+- 📡 支持按数据集合 (NSID) 和存储库 (DID) 进行灵活过滤
+- 💻 作为开源中间件，消费 Firehose 数据并分发给多个订阅者
+- 🌐 已在美东美西部署多个公共实例供开发者使用
+- ⚡ 显著降低带宽消耗并支持数据压缩
+- 🔄 源于工程师个人项目，现已升级为团队维护项目
+- ⚠️ 不含密码学签名验证，适用于非关键业务场景
+- 🎯 特别适合实验项目、原型开发和新应用调试
+- 📊 不适用于数据归档、内容审核等需要身份验证的场景
+- 🛠️ 未来计划将部分优势整合至正式协议规范
 
 ---
 
-### [GitHub - faker-js/faker：在浏览器和Node.js中生成海量虚假数据](https://github.com/faker-js/faker)
+### [GitHub - faker-js/faker：在浏览器和Node.js中生成海量模拟数据](https://github.com/faker-js/faker)
 
 **原文标题**: [GitHub - faker-js/faker: Generate massive amounts of fake data in the browser and node.js](https://github.com/faker-js/faker)
 
-Faker是一个用于生成大量虚假数据的JavaScript库，支持浏览器和Node.js环境，主要用于测试和开发场景。
+Faker 是一个用于生成大量虚假但逼真数据的 JavaScript 库，支持浏览器和 Node.js 环境，主要用于测试和开发。
 
-- 🚀 支持生成人物信息、地理位置、时间日期、金融数据、商业产品等多种类型的虚假数据
-- 🌍 提供超过70种本地化语言版本，可生成符合地区特征的逼真数据
-- ⚙️ 支持设置随机种子，确保生成结果的可重复性
-- 📦 通过npm安装，支持ESM和CJS两种模块系统
-- 🔧 提供模板功能，可以组合多个API方法生成复杂数据
-- 📊 项目在GitHub上获得14.5k星标，被24.3万多个项目使用
-- 👥 拥有活跃的开源社区，有463位贡献者参与开发
-- 📄 采用MIT开源协议，提供详细的API文档和在线试用功能
+- 🚀 支持生成人物信息、地理位置、日期时间、金融数据、商业产品等多种类型的虚假数据
+- 🌍 提供超过 70 种本地化语言版本，可生成符合不同地区习惯的逼真数据
+- 📦 通过 npm 安装，支持 ESM 和 CommonJS 两种模块系统
+- ⚙️ 支持设置随机种子，确保生成结果可重现
+- 🔧 提供模板功能，可以组合多个 API 方法生成复杂数据格式
+- 📊 项目在 GitHub 上获得 14.5k 星标，被 24.3 万多个项目使用
+- 🤝 采用 MIT 开源协议，由社区共同维护开发
+- 💻 支持 TypeScript 和 JavaScript，主要使用 TypeScript 开发
 
 ---
 
@@ -473,30 +505,32 @@ Faker是一个用于生成大量虚假数据的JavaScript库，支持浏览器�
 
 **原文标题**: [Release v1.8.0 · yamadashy/repomix · GitHub](https://github.com/yamadashy/repomix/releases/tag/v1.8.0)
 
-Repomix v1.8.0 版本发布，新增官方Claude Code插件和完整目录结构显示功能，增强AI开发工作流支持。
+Repomix v1.8.0 版本发布，新增 Claude Code 官方插件支持、完整目录结构显示功能和 Dart 语言压缩优化，同时修复了若干问题。
 
-- 🚀 新增Claude Code官方插件，支持代码库分析和自然语言命令操作
+- 🚀 新增 Claude Code 官方插件，支持代码库打包、搜索和自然语言操作
 - 📁 新增完整目录结构显示选项，提供更全面的项目上下文
-- ⚡ 新增Dart语言树状压缩支持，可减少约50%的token使用
-- 🐛 修复了Claude Code插件市场模式验证问题
-- 👥 感谢贡献者slavakurilyak和ramarivera的代码贡献
-- 📦 可通过npm update -g repomix命令更新到最新版本
+- ⚡ 新增 Dart 语言树形压缩支持，可减少约 50% 的 token 使用
+- 🐛 修复了 Claude Code 插件市场模式验证问题
+- 👥 感谢贡献者 slavakurilyak 和 ramarivera 的代码贡献
+- 📦 可通过 npm update -g repomix 命令进行更新
 
 ---
 
-### [Node-oracledb 6.10 在精简模式中引入高级队列(AQ)支持及其他功能 | 作者：Sharad Chandran | Oracle开发者 | 2025年10月 | Medium](https://medium.com/oracledevs/node-oracledb-6-10-introduces-advanced-queuing-aq-support-in-thin-mode-and-much-more-d8a88bf5966d)
+### [Node-oracledb 6.10 在精简模式下引入高级队列 (AQ) 支持及其他多项功能 | Sharad Chandran | Oracle 开发者 | 2025 年 10 月 | Medium](https://medium.com/oracledevs/node-oracledb-6-10-introduces-advanced-queuing-aq-support-in-thin-mode-and-much-more-d8a88bf5966d)
 
 **原文标题**: [Node-oracledb 6.10 introduces Advanced Queuing (AQ) support in Thin mode and much more | by Sharad Chandran | Oracle Developers | Oct, 2025 | Medium](https://medium.com/oracledevs/node-oracledb-6-10-introduces-advanced-queuing-aq-support-in-thin-mode-and-much-more-d8a88bf5966d)
 
-node-oracledb 6.10版本发布，新增Thin模式下的高级队列支持、连接池代理用户外部认证、配置缓存时间控制以及SODA扩展JSON数据类型等功能，提升了开发灵活性和应用部署效率。
+node-oracledb 6.10 版本发布，新增 Thin 模式高级队列支持、连接池代理用户外部认证、配置缓存时间控制及 SODA 扩展 JSON 数据类型等功能，提升开发灵活性与应用部署效率。
 
-- 🚀 Thin模式支持高级队列(AQ)，无需Oracle客户端库即可使用经典队列
-- 🔒 连接池支持代理用户外部认证，增强数据库连接安全性
-- ⏱️ 新增config_time_to_live参数，可控制集中配置的缓存时间
-- 📊 SODA支持扩展JSON数据类型，实现无缝数据传输
-- 📨 新增deliveryMode属性，支持持久化和缓冲两种消息传递模式
-- 🏷️ 新增dbColumnName元数据属性，提供实际数据库列名
-- 🔧 修复了GitHub用户报告的多个问题
+- 🚀 Thin 模式支持 Oracle 高级队列 (AQ)，无需启用 Thick 模式即可使用经典队列
+- 🔐 连接池新增代理用户外部认证功能，增强数据库连接安全性  
+- ⏱️ 支持配置缓存存活时间参数，灵活控制集中配置提供商的缓存策略
+- 📄 SODA 操作新增扩展 JSON 数据类型支持，实现无缝数据转换
+- 📦 消息出队选项新增传递模式设置，支持持久化与缓冲两种模式
+- 🏷️ 查询结果元数据新增数据库原始列名字段，便于精准识别数据来源
+- 🔧 修复多项 GitHub 反馈问题，优化模块稳定性
+
+（注：原文中关于安装方式、资源链接等辅助信息已按摘要要求过滤）
 
 ---
 
@@ -504,17 +538,16 @@ node-oracledb 6.10版本发布，新增Thin模式下的高级队列支持、连�
 
 **原文标题**: [GitHub - Blizzard/node-rdkafka: Node.js bindings for librdkafka](https://github.com/Blizzard/node-rdkafka)
 
-这是一个基于Node.js的Apache Kafka客户端库，封装了librdkafka C/C++库，提供高性能的消息生产和消费功能。
+这是一个基于 Node.js 的 Apache Kafka 客户端库，它封装了 librdkafka C/C++ 库，提供高性能的消息生产和消费功能。
 
-- 🚀 支持Kafka 0.9+版本，使用librdkafka 2.12.0作为底层驱动
-- 📦 提供生产者(Producer)和消费者(KafkaConsumer)两种客户端
-- 🔧 支持流式API和标准API两种使用方式
-- ⚡ 支持消息压缩(gzip/snappy/lz4)、SSL加密、SASL认证等功能
-- 🔄 内置消费者组重平衡机制和偏移量提交回调
-- 📊 提供元数据查询和水位偏移量查询功能
-- 🛠️ 包含管理客户端(AdminClient)，支持主题创建、删除和分区扩展
-- 🐧 主要支持Linux/Mac系统，Windows需通过NuGet安装预编译库
-- 📄 采用MIT开源协议，需要Node.js 16+运行环境
+- 🚀 高性能 Node.js Kafka 客户端，基于 librdkafka 2.12.0 构建
+- 📝 支持消息生产和消费，提供流式 API 和标准 API 两种使用方式
+- ⚙️ 丰富的配置选项，支持回调函数和事件监听
+- 🔄 内置消费者组重平衡机制，支持手动和自动分区分配
+- 📊 提供管理客户端，支持主题创建、删除和分区扩展
+- 🖥️ 支持多种操作系统，包括 Linux、Mac 和 Windows
+- 🧪 包含完整的单元测试和端到端集成测试
+- 📄 采用 MIT 开源协议，目前有 2.2k 星标和 407 个分支
 
 ---
 
@@ -522,23 +555,19 @@ node-oracledb 6.10版本发布，新增Thin模式下的高级队列支持、连�
 
 **原文标题**: [GitHub - openai/openai-node: Official JavaScript / TypeScript library for the OpenAI API](https://github.com/openai/openai-node)
 
-OpenAI官方提供的JavaScript/TypeScript库，用于访问OpenAI REST API，支持多种运行环境和高级功能。
+OpenAI 官方提供的 JavaScript/TypeScript 库，用于访问 OpenAI REST API，支持多种运行环境和高级功能。
 
-- 🚀 官方JavaScript/TypeScript库，提供对OpenAI API的便捷访问
-- 📦 支持npm安装和JSR安装，兼容Node.js、Deno、Bun等运行时
-- 💬 支持Responses API和Chat Completions API两种文本生成方式
-- 🌊 提供流式响应支持，可实时处理服务器发送事件
-- 📁 支持多种文件上传方式，包括File对象、fetch响应和fs流
-- 🔐 包含Webhook验证功能，确保webhook请求的安全性
-- ⚠️ 完善的错误处理机制，涵盖各种HTTP状态码错误类型
-- 🔄 自动重试机制，默认重试2次连接错误和服务器错误
-- ⏰ 可配置超时设置，默认10分钟
-- 📄 支持自动分页，方便遍历列表数据
-- 🌐 提供实时API支持，通过WebSocket实现低延迟对话
-- ☁️ 兼容Microsoft Azure OpenAI服务
-- 🔧 支持原始响应数据访问、自定义日志记录和代理配置
-- 🛠️ 允许自定义请求和访问未文档化功能
-- ⚡ 要求TypeScript >= 4.9，支持多种现代JavaScript运行时
+- 📦 提供官方 JavaScript/TypeScript 库，可通过 npm 安装或从 JSR 导入
+- 🤖 支持 Responses API 和 Chat Completions API 两种文本生成方式
+- 🌊 支持流式响应和多种文件上传格式
+- 🔒 提供 Webhook 验证功能，确保请求安全性
+- ⚠️ 完善的错误处理机制，包含多种错误类型分类
+- 🔄 自动重试机制，可配置重试次数和超时时间
+- 📄 支持自动分页，方便处理大量数据
+- ☁️ 兼容 Microsoft Azure OpenAI 服务
+- 🛠️ 提供高级功能：原始响应访问、自定义日志、代理配置等
+- 🌐 支持多种运行时环境：Node.js、Deno、Bun、Cloudflare Workers 等
+- ⚡ 包含实时 API，支持 WebSocket 连接实现低延迟交互
 
 ---
 
@@ -546,16 +575,16 @@ OpenAI官方提供的JavaScript/TypeScript库，用于访问OpenAI REST API，�
 
 **原文标题**: [GitHub - google/zx: A tool for writing better scripts](https://github.com/google/zx)
 
-这是一个用于编写更好脚本的工具，由Google开发，支持在JavaScript/TypeScript中直接执行shell命令。
+这是一个用于编写更好脚本的 JavaScript 工具库，提供跨平台子进程封装和参数转义功能。
 
-- 🚀 支持多种JavaScript运行时（Node.js、Bun、Deno、GraalVM）
-- 📝 提供对child_process的跨平台封装和参数转义
-- 🔧 同时支持CJS和ESM模块，JS和TS语言
-- 🌐 兼容Linux、macOS和Windows系统
-- ⭐ 在GitHub上获得44.7k星标，1.2k分支
-- 📚 详细文档和代码示例可供参考
-- 📄 采用Apache-2.0开源协议
-- 🛠️ 主要用JavaScript（63.2%）和TypeScript（36.7%）开发
+- 🚀 支持多种 JavaScript 运行时（Node.js、Bun、Deno、GraalVM）
+- 📦 提供便捷的子进程操作和参数处理功能
+- 🌐 兼容 Linux、macOS 和 Windows 系统
+- 📚 支持 CommonJS 和 ESM 模块规范
+- ⭐ 在 GitHub 上获得 44.7k 星标和 1.2k 分支
+- 🔧 可同时使用 JavaScript 和 TypeScript 进行开发
+- 📄 采用 Apache-2.0 开源协议
+- 💻 旨在简化复杂脚本的编写过程
 
 ---
 
@@ -563,53 +592,49 @@ OpenAI官方提供的JavaScript/TypeScript库，用于访问OpenAI REST API，�
 
 **原文标题**: [GitHub - sindresorhus/terminal-image: Display images in the terminal](https://github.com/sindresorhus/terminal-image)
 
-这是一个用于在终端中显示图像的Node.js库，支持多种终端协议和图像格式。
+该仓库是一个用于在终端中显示图像的开源 Node.js 模块，支持多种终端协议和图像格式。
 
-- 🖼️ 支持在终端中显示PNG、JPEG和GIF图像
-- 🔧 自动选择最佳显示协议（Kitty、iTerm2或ANSI块字符）
-- 📏 可自定义图像尺寸，支持百分比或行列数设置
-- 🔄 默认保持宽高比，也可选择不保持
-- 🎬 支持GIF动画播放，可控制最大帧率
-- 📦 提供buffer和file两种加载方式
-- 🌐 可通过网络请求显示远程图像
-- 📋 兼容所有支持颜色的终端环境
+- 🖼️ 支持在终端中显示 PNG、JPEG 和 GIF 图像，可自动适配不同终端的图形协议
+- 🎯 提供灵活的尺寸设置选项，支持百分比或行列数定义，默认保持宽高比
+- ⚡ 支持 GIF 动画播放，可自定义帧率和渲染方式
+- 🔧 提供 buffer 和 file 两种 API 调用方式，支持远程图像显示
+- 🌈 自动选择最佳渲染协议：Kitty 图形协议、iTerm2 内联图像协议或 ANSI 块字符回退
+- 📦 采用 MIT 开源协议，在 npm 上有 25k+ 项目使用
+- 🛠️ 包含完整的类型定义和测试用例，开发文档详细
 
 ---
 
-### [GitHub - sindresorhus/got：🌐 人性化且功能强大的Node.js HTTP请求库](https://github.com/sindresorhus/got)
+### [GitHub - sindresorhus/got：🌐 适用于 Node.js 的人性化且功能强大的 HTTP 请求库](https://github.com/sindresorhus/got)
 
 **原文标题**: [GitHub - sindresorhus/got: 🌐 Human-friendly and powerful HTTP request library for Node.js](https://github.com/sindresorhus/got)
 
-这是一个名为Got的Node.js HTTP请求库的GitHub仓库页面概览。
+这是一个名为 Got 的 Node.js HTTP 请求库的 GitHub 仓库页面概览，该库功能强大且易于使用。
 
-- 🌐 专为Node.js设计的友好且功能强大的HTTP请求库
-- ⭐ 获得14.8k星标和972次分叉，表明其受欢迎程度
-- 📦 采用ESM模块系统，不再支持CommonJS
-- 🔄 默认支持失败重试机制
-- 🎯 提供专门的JSON模式处理功能
-- 📚 包含丰富的文档和多种API（Promise、Stream、分页等）
-- 🔌 支持插件系统，拥有多个扩展插件
-- ⚡ 支持HTTP/2协议和高级HTTPS功能
-- 🆚 在功能对比中表现全面，支持RFC兼容缓存、Cookie等
-- 🛡️ 被众多知名公司和项目使用，如Segment、Antora等
-- 📄 采用MIT开源许可证
-- 🔧 完全使用TypeScript编写
+- 🌐 专为 Node.js 设计的人性化且功能强大的 HTTP 请求库
+- ⭐ 获得 14.8k 星标和 972 次分叉，表明其受欢迎程度和社区活跃度
+- 📦 仅支持 ESM 模块，不再提供 CommonJS 导出
+- 🔄 默认支持失败重试、JSON 模式处理和进度事件等高级功能
+- 🔌 提供插件系统，支持 AWS、GitHub、GitLab 等服务的便捷封装
+- 📊 与 axios、node-fetch 等库相比，支持 HTTP/2、分页 API 等更多功能
+- 🏢 被 Segment、Natural Cycles 等多家公司用于生产环境
+- 📄 采用 MIT 许可证，由社区支持维护
 
 ---
 
-### [GitHub - pinojs/pino：🌲 超快速、纯天然的JSON日志记录器](https://github.com/pinojs/pino)
+### [GitHub - pinojs/pino：🌲 超快速、纯天然的 JSON 日志记录器](https://github.com/pinojs/pino)
 
 **原文标题**: [GitHub - pinojs/pino: 🌲 super fast, all natural json logger](https://github.com/pinojs/pino)
 
-Pino是一个专为Node.js设计的高性能JSON日志记录库，以其极低的开销和快速的日志处理能力著称。
+Pino 是一个专为 Node.js 设计的高性能 JSON 日志记录库，具有极低的开销和丰富的生态系统支持。
 
-- 🌲 超高速且完全自然的JSON日志记录器
-- 📊 支持异步日志记录和子日志记录器功能
-- 🚀 在Node.js环境中运行，性能超过其他日志库5倍以上
-- 🔧 提供传输处理和开发环境格式化工具（如pino-pretty）
-- 📦 兼容webpack和esbuild等打包工具
-- 👥 由活跃的开源团队维护，采用OPEN开放源代码模式
-- 📄 采用MIT许可证，文档和生态系统完善
+- 🌲 超快速且纯天然的 JSON 日志记录器，适用于 Node.js 环境
+- 📊 极低的开销设计，性能比同类日志库快 5 倍以上
+- 🚀 支持异步日志记录和子日志记录器功能
+- 🔧 提供传输机制，建议在独立线程中处理日志
+- 📦 支持通过 webpack 或 esbuild 等工具进行打包
+- 🌐 兼容多种 Web 框架，包括 Fastify、Express、Hapi 等
+- 📄 采用 MIT 开源许可证，拥有活跃的社区贡献
+- ⭐ GitHub 上获得 16.6k 星标，被 61.5 万多个项目使用
 
 ---
 
@@ -617,48 +642,32 @@ Pino是一个专为Node.js设计的高性能JSON日志记录库，以其极低�
 
 **原文标题**: [ESLint v9.38.0 released - ESLint - Pluggable JavaScript Linter](https://eslint.org/blog/2025/10/eslint-v9.38.0-released/)
 
-ESLint v9.38.0 已发布，这是次要版本更新，包含新功能、错误修复和多项优化。
+ESLint v9.38.0 版本发布，作为一次小版本更新，主要改进了插件配置解析机制并修复了若干问题。
 
-- 🔧 插件配置解析改进：优化了同时支持新旧配置格式的插件选择逻辑
-- 🎯 复杂度规则更新：现在仅高亮函数头部而非整个函数
-- 🐛 修复 no-loss-of-precision 规则误报问题
-- 📚 改进 pnpm 依赖类型支持
-- 📝 更新文档可访问性和格式规范
-- 🔄 升级 @eslint/js 至 9.38.0 版本
-- ⚡ 重构代码使用 @eslint/core 类型定义
-- 🧪 测试环境新增 Node.js 25 支持
+- 🔧 插件配置解析增强：defineConfig() 助手现支持直接识别 flat/recommended 配置格式
+- 🎯 复杂度规则优化：仅高亮函数头部而非整个函数体
+- 🐛 精度丢失修复：修正 no-loss-of-precision 规则对科学计数法的误报
+- 📦 依赖类型支持：提升 pnpm 孤立依赖的类型检测准确性
+- 📖 文档改进：增强网页可访问性与规则文档格式规范
+- 🔄 核心升级：同步更新 @eslint/js 至 9.38.0 版本
+- 🧹 代码维护：重构类型引用、修复拼写错误并更新 CI 工作流
 
 ---
 
-### [Holepunch - 高级Node.js软件工程师（全球远程，全职）](https://holepunch.recruitee.com/o/senior-node-engineer?source=Node-Weekly)
+### [Holepunch - 高级 Node.js 软件工程师（全球远程，全职）](https://holepunch.recruitee.com/o/senior-node-engineer?source=Node-Weekly)
 
 **原文标题**: [Holepunch - Senior Node.js Software Engineer (100% Remote, Worldwide)](https://holepunch.recruitee.com/o/senior-node-engineer?source=Node-Weekly)
 
-Holepunch是一家专注于构建去中心化互联网架构的科技公司，通过其开源技术栈Pear开发点对点（P2P）平台，旨在赋予用户数据控制权并提升隐私保护。公司正在招聘一名远程Node.js软件工程师，以推动P2P技术发展和生态系统扩展。
+Holepunch 是一家专注于构建去中心化互联网架构的科技公司，通过其开源技术栈 Pear 开发点对点（P2P）平台，旨在赋予用户数据控制权并提升隐私保护。公司正在招聘远程 Node.js 软件工程师，以推动 P2P 技术发展和生态系统扩展。
 
-- 🚀 公司使命：利用P2P技术重塑互联网，确保用户数据自主和隐私，摆脱中心化控制
-- 🌐 核心技术：基于开源Pear平台，支持从开发者机器直接部署应用，实现可扩展的P2P连接和数据复制
-- 📱 旗舰产品：Keet通讯应用展示P2P潜力，涵盖消息传递、文件共享和协作功能
-- 💻 职位要求：需精通Node.js开发，具备模块化代码和npm模块经验，熟悉测试调试，热爱P2P技术
-- 🌍 工作环境：全球远程协作，团队致力于创新和去中心化未来建设
-- ✨ 职业机会：参与前沿技术项目，与创新团队合作，推动更安全、包容的互联网发展
-
----
-
-### [ConfigCat - 团队功能特性开关服务](https://configcat.com/promotions/node-weekly/?utm_source=cooperpress_newsletter&utm_medium=sponsor&utm_campaign=cooperpress_node_202510)
-
-**原文标题**: [ConfigCat - Feature Flag Service for Teams](https://configcat.com/promotions/node-weekly/?utm_source=cooperpress_newsletter&utm_medium=sponsor&utm_campaign=cooperpress_node_202510)
-
-ConfigCat是一个功能开关管理平台，帮助开发团队通过功能标志控制功能发布流程，支持渐进式发布和即时回滚。
-
-- 🚀 **功能发布控制** - 支持目标用户群体逐步发布功能，出现问题时立即关闭功能
-- ⚡ **快速集成** - 10分钟完成设置，无需信用卡，提供NODE25优惠码享25%折扣
-- 🔧 **技术实现** - 通过ConfigCat.js SDK轻松管理功能开关，支持暗黑模式、销售模式等场景
-- 💰 **透明定价** - 提供永久免费版和多种付费方案，所有计划都包含完整功能
-- 🛡️ **安全可靠** - 不收集用户数据，功能标志在客户端评估，确保数据隐私和安全
-- 🔄 **无厂商锁定** - 支持随时导出数据，兼容OpenFeature标准
-- ⭐ **用户认可** - 被多家企业推荐，评价优于LaunchDarkly，简单易用且性价比高
-- 📊 **服务等级** - 提供99%-99.99%的SLA保障，支持从初创公司到企业级需求
+- 🌐 公司使命是重新定义互联网架构，利用 P2P 技术消除传统服务器需求，确保用户数据自主权和隐私
+- 📱 旗舰产品 Keet 展示 P2P 通信应用的潜力，支持消息传递、文件共享和协作功能
+- 💻 招聘 Node.js 工程师需具备高质量代码编写经验，熟悉 C/C++ 或本地绑定为加分项
+- 🧩 要求模块化开发能力，包括构建 npm 模块和管理模块化代码库
+- 🔍 强调测试与调试技能，确保软件可靠性和性能优化
+- ❤️ 候选人需对 P2P 技术充满热情，有相关开发经验者优先
+- 🌍 职位完全远程，要求具备全球团队协作经验
+- 🚀 加入后将参与开创性技术工作，推动去中心化网络未来建设
 
 ---
 
@@ -666,49 +675,45 @@ ConfigCat是一个功能开关管理平台，帮助开发团队通过功能标�
 
 **原文标题**: [ConfigCat - Feature Flag Service for Teams](https://configcat.com/promotions/node-weekly/?utm_source=cooperpress_newsletter&utm_medium=sponsor&utm_campaign=cooperpress_node_202510)
 
-ConfigCat是一个功能开关管理平台，帮助开发团队通过功能标志实现渐进式功能发布和即时回滚。
+ConfigCat 是一个功能开关管理平台，帮助开发团队通过功能标志控制功能发布流程，支持渐进式发布和即时回滚。
 
-- 🚀 无需部署即可控制功能发布，支持目标用户定向和即时关闭功能
-- ⚡ 10分钟快速设置，提供永久免费套餐且无需信用卡
-- 💻 通过客户端SDK实时评估功能状态，示例支持暗黑模式/促销模式等场景
-- 🔒 注重数据隐私，不在服务端收集用户数据，支持本地部署
-- 💰 提供透明定价，免费版含10个功能标志，专业版起价82美元/月
-- 🌟 获行业好评，被评价为比LaunchDarkly更优性价比的解决方案
-- 🆓 支持无供应商锁定，可随时导出数据并兼容OpenFeature标准
-- 🏢 服务规模覆盖初创公司到企业级客户，通过ISO27001认证
+- 🚀 **功能发布控制** - 支持定向用户群体、渐进式功能发布，出现问题时立即关闭功能
+- ⚡ **快速集成** - 10 分钟完成设置，无需信用卡，提供 NODE25 优惠码享 25% 折扣
+- 🔧 **技术实现** - 通过 ConfigCat.js SDK 轻松管理功能开关，支持暗黑模式、销售模式等场景
+- 🛡️ **安全隐私** - 不收集用户数据，功能标志在客户端评估，满足合规要求
+- 💰 **透明定价** - 永久免费版含 10 个功能标志，专业版$82/月起，支持无供应商锁定
+- 🌟 **用户认可** - 获多家企业好评，比 LaunchDarkly 更优性价比，简单易用且功能强大
+- 🏢 **企业级服务** - 提供私有化部署选项，支持 ISO 27001 认证，99.99% 高可用性保障
 
 ---
 
-### [如何修复任何Bug——过度反应篇](https://overreacted.io/how-to-fix-any-bug/)
+### [如何修复任何 Bug——过度反应篇](https://overreacted.io/how-to-fix-any-bug/)
 
 **原文标题**: [How to Fix Any Bug — overreacted](https://overreacted.io/how-to-fix-any-bug/)
 
-在React Router应用中，滚动功能因服务器调用出现抖动问题的调试过程
+在 React Router 应用中，滚动功能因网络请求调用而失效，作者通过系统化调试方法定位到 ScrollRestoration 组件与滚动操作的冲突问题。
 
-- 🐛 作者在React Router应用中遇到滚动抖动问题，触发条件是在滚动按钮中同时调用服务器
-- 🤖 尝试用Claude修复失败，因AI缺乏可感知抖动的具体复现步骤
-- 🔍 建立可靠复现案例：点击按钮后测量滚动位置变化，将视觉问题转化为可验证的测试
-- ⚠️ 验证新复现案例的有效性：确认注释掉网络调用能同时修复原始问题和新测试案例
-- 🧩 采用系统化排除法：逐步删除代码组件并确保每一步bug仍存在，持续缩小问题范围
-- 🚫 Claude在排除过程中偏离指令，转而测试理论假设导致脱离有效调试路径
-- 🎯 最终定位根本原因：React Router旧版本的ScrollRestoration组件会在每次路由验证时触发滚动重置
-- 💡 解决方案：升级React Router版本或调整路由嵌套结构避免冲突
-- 📝 核心方法论：保持严格递增的调试进度，确保每次代码删减后bug仍然可复现
+- 🐛 滚动抖动问题出现在调用服务器请求后，原本正常的 scrollIntoView 功能失效
+- 🤖 尝试用 Claude 修复失败，因 AI 缺乏可视化验证能力且未建立有效复现步骤
+- 🔍 建立可靠复现案例：通过测量滚动位置变化验证问题存在
+- ⚠️ 复现案例简化风险：需确保新案例与原始问题关联性
+- 🧪 采用逐步删除法：持续移除代码组件并验证问题是否依然存在
+- 📉 保持调试纪律：每次修改后必须确认 bug 仍然重现
+- 🎯 最终定位根因：React Router 旧版 ScrollRestoration 组件在路由验证时错误触发
+- 💡 解决方案：更新 React Router 版本或调整组件嵌套结构
 
 ---
 
-### [沙盒SDK](https://sandbox.cloudflare.com/)
+### [沙盒 SDK](https://sandbox.cloudflare.com/)
 
 **原文标题**: [Sandbox SDK](https://sandbox.cloudflare.com/)
 
-好的，请提供您需要总结的文本内容，我将按照以下格式为您生成中文摘要：
+好的，请提供您需要总结的文本内容，我将按照您要求的格式进行整理：
+- 顶部提供概述摘要
+- 用中文生成带表情符号的要点列表
+- 确保内容简洁且包含关键信息
 
-概述总结
-- 😊 要点一
-- 📊 要点二
-- 🔍 要点三
-
-请将需要总结的文本粘贴在下方，我会立即为您处理。
+请粘贴需要总结的文本。
 
 ---
 
@@ -716,50 +721,47 @@ ConfigCat是一个功能开关管理平台，帮助开发团队通过功能标�
 
 **原文标题**: [PostgreSQL: PostgreSQL 18 Released!](https://www.postgresql.org/about/news/postgresql-18-released-3142/)
 
-PostgreSQL 18正式发布，这是世界上最先进的开源数据库的最新版本，通过异步I/O子系统显著提升性能，支持虚拟生成列和OAuth 2.0认证，优化升级流程和查询性能，增强开发者体验和安全性。
+PostgreSQL 18 正式发布，这是世界上最先进的开源数据库的最新版本，通过异步 I/O 子系统提升性能达 3 倍，支持虚拟生成列和 OAuth 2.0 认证，优化了升级流程和查询性能，增强了开发者体验和安全性。
 
-- 🚀 异步I/O子系统提升存储读取性能达3倍，支持并发I/O请求
-- 📊 保留规划器统计信息，加速大版本升级后的性能恢复
-- 🔍 多列B树索引支持跳过扫描，优化OR条件查询性能
-- 💻 虚拟生成列实时计算值，新增uuidv7()函数改善UUID索引
-- 🔐 支持OAuth 2.0认证，弃用md5密码验证
-- 📝 增强全文搜索和Unicode排序，改进文本处理效率
-- 🔄 逻辑复制默认并行流式传输，提升订阅性能
-- 📈 优化vacuum策略和EXPLAIN分析，增强系统可观测性
-- ⚡ 支持ARM NEON/SVE硬件加速，提升位计数函数性能
-- 🌐 新增PostgreSQL有线协议版本3.2，首次更新 since 2003
+- 🚀 异步 I/O 子系统提升存储读取性能达 3 倍，支持并发 I/O 请求
+- 📊 升级时保留规划器统计信息，减少性能波动，加速升级过程
+- 🔍 多列 B 树索引支持"跳过扫描"，优化 OR 条件查询和表连接性能
+- 💻 虚拟生成列默认计算查询时值，支持逻辑复制和 UUIDv7 生成
+- 🔒 引入 OAuth 2.0 认证，弃用 MD5 密码验证，支持 SCRAM 认证
+- 📝 新增 PG_UNICODE_FAST 排序规则，加速文本处理和模式匹配
+- 🔄 逻辑复制默认并行流式传输，支持自动删除空闲复制槽
+- 📈 优化 VACUUM 策略，EXPLAIN 增强显示缓冲区和索引查找详情
+- ⚙️ 默认启用页面校验和，新增 PostgreSQL 有线协议版本 3.2
 
 ---
 
-### [等待Postgres 18：利用异步I/O加速磁盘读取](https://pganalyze.com/blog/postgres-18-async-io)
+### [等待 Postgres 18：利用异步 I/O 加速磁盘读取](https://pganalyze.com/blog/postgres-18-async-io)
 
 **原文标题**: [Waiting for Postgres 18: Accelerating Disk Reads with Asynchronous I/O](https://pganalyze.com/blog/postgres-18-async-io)
 
-PostgreSQL 18引入了异步I/O架构革新，通过io_method配置实现非阻塞磁盘读取，在云环境中显著提升查询性能，同时需要调整监控和调优策略。
+PostgreSQL 18 引入异步 I/O 架构革新，通过新的 io_method 配置实现非阻塞磁盘读取，在云环境中显著提升查询性能，同时带来监控方式和参数调优的新挑战。
 
-- 🚀 异步I/O支持三种模式：sync（同步）、worker（工作进程）和io_uring（Linux高性能接口），默认使用worker模式
-- ⚡ 基准测试显示异步读取性能提升2-3倍，io_uring模式在冷缓存场景下表现最佳，查询耗时从15秒缩短至5.7秒
-- 🛠️ effective_io_concurrency参数现直接控制预读请求数量，默认值从1提升至16，需结合io_combine_limit调整
-- 📊 新增pg_aios视图用于监控异步I/O状态，传统EXPLAIN ANALYZE可能低估实际I/O耗时
-- ☁️ 在AWS EBS等网络存储环境中收益最明显，通过并行读取降低延迟，提升CPU利用率
-- ⚠️ 当前仅支持读取操作（顺序扫描/位图堆扫描/VACUUM），写入仍保持同步，未来版本可能扩展
-- 🔧 需重启生效的全局配置，建议生产环境测试io_uring（需Linux 5.1+内核）以获得最佳性能
+- 🚀 异步 I/O 支持三种模式：sync（同步）、worker（工作进程）、io_uring（Linux 高性能接口）
+- ⚡ AWS 基准测试显示 worker 模式提升 1.5 倍性能，io_uring 模式实现近 3 倍性能飞跃
+- 🔧 新增 io_method 参数需重启生效，effective_io_concurrency 现可直接控制预读请求数量
+- 📊 监控方式变革：需使用 pg_aios 视图追踪异步 I/O 状态，EXPLAIN ANALYZE 可能低估实际 I/O 耗时
+- 🌩️ 特别适合云环境：有效降低网络存储延迟影响，为未来异步写入功能奠定基础
+- ⚠️ 当前限制：仅支持顺序扫描、位图堆扫描和 VACUUM 等读操作，写入仍保持同步
 
 ---
 
-### [Postgres 17与18性能基准测试对比 —— PlanetScale](https://planetscale.com/blog/benchmarking-postgres-17-vs-18)
+### [Postgres 17 与 18 性能基准测试对比 —— PlanetScale](https://planetscale.com/blog/benchmarking-postgres-17-vs-18)
 
 **原文标题**: [Benchmarking Postgres 17 vs 18 â PlanetScale](https://planetscale.com/blog/benchmarking-postgres-17-vs-18)
 
-PostgreSQL 18与17的性能基准测试对比，重点评估新引入的I/O处理方式（worker/io_uring/sync）在不同存储配置下的表现。测试使用300GB数据库和只读负载，覆盖单连接与高并发场景。
+PostgreSQL 18 与 17 的性能基准测试对比，重点评估新增的 I/O 处理方式在不同硬件配置下的表现。
 
-- 🚀 PostgreSQL 18在单连接场景下，sync和worker模式在网络存储（gp3/io2）中性能显著优于17和io_uring
-- 💾 本地NVMe存储在所有配置中表现最优，延迟和IOPS优势明显
-- 🔄 高并发测试中，io_uring仅在本地NVMe存储且大范围扫描时略微领先
-- ⚙️ worker模式被推荐为默认设置，平衡了异步I/O优势与兼容性
-- 💡 io_uring未全面领先的原因包括：索引扫描暂不支持异步、校验计算瓶颈等
-- 💰 成本分析显示本地NVMe实例（i7i）兼具最佳性价比与存储容量（1.8TB）
-- 📊 测试表明I/O配置需根据具体负载调整，无通用最优解
+- 📊 PostgreSQL 18 引入 io_method 配置选项，支持 sync（兼容 17）、worker（新默认）和 io_uring 三种 I/O 处理模式
+- ⚡ 单连接测试中，网络存储场景下 worker 模式性能最优，本地 NVMe 硬盘则各模式差异不大
+- 🔄 高并发测试显示 io_uring 在本地 NVMe 存储的极端场景下略有优势，但整体仍以 worker 模式表现更稳定
+- 💸 成本分析表明配备本地 NVMe 硬盘的实例兼具最佳性价比和性能表现
+- 🔍 io_uring 未全面领先的原因包括：索引扫描暂不支持异步、内存操作瓶颈及特定场景并发需求
+- 🏆 结论推荐：本地硬盘为性能首选，worker 模式作为默认配置平衡性最佳，不同 I/O 配置需按实际场景选择
 
 ---
 
@@ -767,16 +769,16 @@ PostgreSQL 18与17的性能基准测试对比，重点评估新引入的I/O处�
 
 **原文标题**: [Solving NYT's Pips Puzzle — Andrew Healey](https://healeycodes.com/solving-nyt-pips-puzzle)
 
-本文介绍了作者为《纽约时报》的Pips拼图游戏开发求解器的过程，包括游戏逻辑编码、深度优先搜索算法实现、优化策略以及交互式界面的构建。
+作者开发了一个用于解决《纽约时报》Pips 骨牌拼图游戏的求解器，通过深度优先搜索算法结合多种优化策略，将求解效率提升了约 16 倍，并构建了可视化界面用于调试和展示搜索过程。
 
-- 🧩 Pips是《纽约时报》的每日骨牌拼图游戏，玩家需在区域限制条件下将骨牌放置到棋盘上
-- 🌳 求解器采用深度优先搜索算法遍历合法游戏状态树，并通过优化使效率比暴力搜索提升约16倍
-- 🛠️ 构建了调试界面和搜索树可视化工具，帮助直观理解算法行为
-- 📐 定义了游戏数据结构（包括骨牌类型、坐标系统和五种区域限制规则）
-- 🔄 核心算法通过递归放置骨牌对，遇到非法状态时回溯到最近合法状态
-- ⚡ 实施三项关键优化：跳过重复骨牌方向、检测孤立空单元格、智能区域可行性预判
-- 📊 优化效果显著：Hard/16/20/25谜题的搜索节点数从21337降至1355
-- 🎨 使用React开发游戏界面，用Canvas实现树状可视化，并解决了性能渲染问题
+- 🧩 游戏规则涉及在特定区域内放置骨牌，需满足求和、相等、不等或大小比较等限制条件
+- 🖥️ 采用 TypeScript 定义了游戏数据结构，包括骨牌类型、坐标系统和区域规则
+- 🔍 核心算法基于深度优先搜索，通过构建邻接表处理非矩形游戏板
+- 🚫 优化一：跳过相同数字骨牌的重复方向检查，节点数从 21337 降至 7618
+- 🧱 优化二：检测并避免创建孤立空单元格，节点数进一步降至 5777
+- 📊 优化三：智能区域检查，提前排除不可行分支，最终节点数降至 1355
+- 🎨 开发了 React 可视化界面，包含游戏板展示和搜索树动态绘制
+- ⚡ 通过缓冲区和帧率控制解决了性能问题，完整代码已开源
 
 ---
 

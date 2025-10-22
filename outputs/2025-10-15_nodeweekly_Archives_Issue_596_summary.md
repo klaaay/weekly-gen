@@ -327,7 +327,7 @@ serialize-javascript 是一个可将 JavaScript 对象序列化为 JSON 超集�
 - 🛡️ 自动转义 HTML 字符与换行符防止 XSS 攻击
 - ⚡ 提供 isJSON 选项加速纯 JSON 数据序列化
 - 🎨 支持格式化输出与自定义序列化规则
-- 📜 输出为标准 JavaScript 代码可直接嵌入 <script> 标签
+- 📜 输出为标准 JavaScript 代码可直接嵌入 `<script>` 标签
 - 🔧 提供不安全模式供特殊场景使用
 - 📄 源自 Yahoo 开源项目，采用 BSD 许可证
 
