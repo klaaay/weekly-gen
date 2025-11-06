@@ -1,9 +1,9 @@
 {
   "thisweekinreact": {
-    "issue_title": "📨 #256: Next.js, directives, TanStack, Storybook, Waku, shadcn, Rari, Astro | Navigation, EAS, Expo Modules, Gesture Handler, Screens, Nitro, IAP | ArkType, Biome, Svelte, Hono",
-    "link_url": "/newsletter/256",
-    "timestamp": "2025-10-30T22:39:14.738889",
-    "full_url": "https://thisweekinreact.com//newsletter/256"
+    "issue_title": "📨 #257: Navigation API, PPR, directives, micro-frontends, i18n, Storybook, Immer | Godot, Uniwind, RCE, iOS filters, Windows, GPU, Hermes, Meta Quest | Node LTS, Safari, Rspack, Vite, SWC, Remix",
+    "link_url": "/newsletter/257",
+    "timestamp": "2025-11-06T10:19:31.098902",
+    "full_url": "https://thisweekinreact.com//newsletter/257"
   },
   "nextjsweekly": {
     "issue_title": "Issue #106",
@@ -24,22 +24,22 @@
     "full_url": "https://webtoolsweekly.com/archives/issue-641/"
   },
   "nodeweekly": {
-    "issue_title": "Issue #598",
-    "link_url": "issues/598",
-    "timestamp": "2025-10-30T11:16:35.224165",
-    "full_url": "https://nodeweekly.com/issues/598"
+    "issue_title": "Issue #599",
+    "link_url": "issues/599",
+    "timestamp": "2025-11-06T10:19:32.190850",
+    "full_url": "https://nodeweekly.com/issues/599"
   },
   "frontendfoc": {
-    "issue_title": "Issue #715",
-    "link_url": "issues/715",
-    "timestamp": "2025-10-30T11:16:34.733522",
-    "full_url": "https://frontendfoc.us/issues/715"
+    "issue_title": "Issue #716",
+    "link_url": "issues/716",
+    "timestamp": "2025-11-06T10:19:32.519623",
+    "full_url": "https://frontendfoc.us/issues/716"
   },
   "reactweekly": {
-    "issue_title": "Issue #449",
-    "link_url": "issues/449",
-    "timestamp": "2025-10-30T11:16:34.935842",
-    "full_url": "https://reactweekly.com/issues/449"
+    "issue_title": "Issue #450",
+    "link_url": "issues/450",
+    "timestamp": "2025-11-06T10:19:32.744079",
+    "full_url": "https://reactweekly.com/issues/450"
   },
   "javascriptweekly": {
     "issue_title": "Issue #759",
