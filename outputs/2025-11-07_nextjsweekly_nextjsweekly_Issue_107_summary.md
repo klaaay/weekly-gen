@@ -1,16 +1,16 @@
-### [在Next.js 16中实现next-intl国际化与'use cache'功能 | Aurora Scharff](https://aurorascharff.no/posts/implementing-nextjs-16-use-cache-with-next-intl-internationalization/)
+### [在 Next.js 16 中实现 next-intl 国际化与'use cache'功能 | Aurora Scharff](https://aurorascharff.no/posts/implementing-nextjs-16-use-cache-with-next-intl-internationalization/)
 
 **原文标题**: [Implementing Next.js 16 'use cache' with next-intl Internationalization | Aurora Scharff](https://aurorascharff.no/posts/implementing-nextjs-16-use-cache-with-next-intl-internationalization/)
 
-Next.js 16的'use cache'指令与next-intl国际化库目前存在兼容性问题，本文探讨了问题根源、未来解决方案及当前可用的临时解决方法。
+Next.js 16 的'use cache'指令与 next-intl 国际化库目前存在兼容性问题，本文探讨了问题根源、未来解决方案及当前可用的临时解决方法。
 
-- 🚫 Next.js 16的'use cache'指令与next-intl库存在兼容性问题，因为getTranslations()默认依赖headers()读取请求头信息
-- 🌐 next-intl通过中间件将locale作为请求头传递，避免手动在组件树中传递区域参数，但这会导致动态渲染
-- 🔧 临时解决方案需要配置generateStaticParams和setRequestLocale启用静态渲染，并在使用缓存的组件中显式传递locale参数
-- ⚡ 使用'use cache'的组件需要Suspense边界包装，支持部分预渲染功能，提升页面加载性能
-- 🎯 未来next/root-params API将解决深层参数访问问题，使next-intl无需依赖headers()即可访问locale参数
-- 📝 当前需在页面组件中提取locale参数并传递给缓存组件，同时保持非缓存组件的正常使用方式
-- 🔗 作者提供了完整的代码示例和分支演示，展示了在Next.js 16电商demo中的具体实现方案
+- 🚫 Next.js 16 的'use cache'指令与 next-intl 库存在兼容性问题，因为 getTranslations() 默认依赖 headers() 读取请求头信息
+- 🌐 next-intl 通过中间件将 locale 作为请求头传递，避免手动在组件树中传递区域参数，但这会导致动态渲染
+- 🔧 临时解决方案需要配置 generateStaticParams 和 setRequestLocale 启用静态渲染，并在使用缓存的组件中显式传递 locale 参数
+- ⚡ 使用'use cache'的组件需要 Suspense 边界包装，支持部分预渲染功能，提升页面加载性能
+- 🎯 未来 next/root-params API 将解决深层参数访问问题，使 next-intl 无需依赖 headers() 即可访问 locale 参数
+- 📝 当前需在页面组件中提取 locale 参数并传递给缓存组件，同时保持非缓存组件的正常使用方式
+- 🔗 作者提供了完整的代码示例和分支演示，展示了在 Next.js 16 电商 demo 中的具体实现方案
 
 ---
 
@@ -33,11 +33,11 @@ Next.js 16 正式发布，这是该框架的一个重要里程碑版本，专注
 
 ---
 
-### [若你讨厌React服务器组件，请看这个 - YouTube](https://www.youtube.com/watch?v=C84YEp-8-hI)
+### [若你讨厌 React 服务器组件，请看这个 - YouTube](https://www.youtube.com/watch?v=C84YEp-8-hI)
 
 **原文标题**: [Watch this if you hate React Server Components - YouTube](https://www.youtube.com/watch?v=C84YEp-8-hI)
 
-这是YouTube网站页脚导航链接的概述，包含平台各项服务条款与功能说明。
+这是 YouTube 网站页脚导航链接的概述，包含平台各项服务条款与功能说明。
 
 - 📋 关于平台的基本信息与介绍
 - 📰 媒体与新闻相关资源
@@ -45,30 +45,30 @@ Next.js 16 正式发布，这是该框架的一个重要里程碑版本，专注
 - 📞 用户联系与客服渠道
 - 🎬 内容创作者专属资源
 - 💼 广告合作与商业推广
-- 💻 开发者工具与API接口
+- 💻 开发者工具与 API 接口
 - 📜 服务条款与使用协议
 - 🔒 隐私保护与数据政策
 - ⚖️ 平台政策与安全指南
-- 🔧 YouTube运作机制解析
+- 🔧 YouTube 运作机制解析
 - 🧪 新功能测试与体验
-- 🏢 2025年谷歌公司版权所有
+- 🏢 2025 年谷歌公司版权所有
 
 ---
 
-### [React Server组件：它们真的能提升性能吗？](https://www.developerway.com/posts/react-server-components-performance)
+### [React Server 组件：它们真的能提升性能吗？](https://www.developerway.com/posts/react-server-components-performance)
 
 **原文标题**: [React Server Components: Do They Really Improve Performance?](https://www.developerway.com/posts/react-server-components-performance)
 
-本文通过数据驱动的方式比较了客户端渲染(CSR)、服务端渲染(SSR)和React服务端组件(RSC)在相同应用和测试环境下的性能表现，重点关注初始加载性能以及客户端与服务端数据获取的影响。
+本文通过数据驱动的方式比较了客户端渲染 (CSR)、服务端渲染 (SSR) 和 React 服务端组件 (RSC) 在相同应用和测试环境下的性能表现，重点关注初始加载性能以及客户端与服务端数据获取的影响。
 
-- 📊 **性能测试方法**：在6倍CPU降速和慢速4G网络环境下，使用Chrome性能面板测量LCP、侧边栏可见时间、消息可见时间和页面可交互时间
-- ⚡ **客户端渲染表现**：初始加载LCP达4.1秒，但页面一旦加载即可完全交互，页面间切换最快
-- 🚀 **服务端渲染优势**：将LCP从4.1秒大幅提升至1.61秒，但会产生2.39秒的"无交互间隙"
-- 🔄 **服务端数据获取**：虽然会略微降低LCP至2.16秒，但能让完整页面体验更早可见
-- 🔧 **Next.js迁移影响**：从Pages迁移到App Router可能使性能变差，需要重写数据获取逻辑
-- ⚠️ **React服务端组件限制**：单独使用RSC不会改善性能，必须结合Streaming和Suspense才能看到改进
-- 🎯 **关键发现**：Streaming和Suspense才是性能提升的关键，而非RSC本身
-- 💡 **实施建议**：需要完整的应用重构和正确的Suspense边界设置才能获得性能收益
+- 📊 **性能测试方法**：在 6 倍 CPU 降速和慢速 4G 网络环境下，使用 Chrome 性能面板测量 LCP、侧边栏可见时间、消息可见时间和页面可交互时间
+- ⚡ **客户端渲染表现**：初始加载 LCP 达 4.1 秒，但页面一旦加载即可完全交互，页面间切换最快
+- 🚀 **服务端渲染优势**：将 LCP 从 4.1 秒大幅提升至 1.61 秒，但会产生 2.39 秒的"无交互间隙"
+- 🔄 **服务端数据获取**：虽然会略微降低 LCP 至 2.16 秒，但能让完整页面体验更早可见
+- 🔧 **Next.js 迁移影响**：从 Pages 迁移到 App Router 可能使性能变差，需要重写数据获取逻辑
+- ⚠️ **React 服务端组件限制**：单独使用 RSC 不会改善性能，必须结合 Streaming 和 Suspense 才能看到改进
+- 🎯 **关键发现**：Streaming 和 Suspense 才是性能提升的关键，而非 RSC 本身
+- 💡 **实施建议**：需要完整的应用重构和正确的 Suspense 边界设置才能获得性能收益
 
 ---
 
@@ -76,16 +76,16 @@ Next.js 16 正式发布，这是该框架的一个重要里程碑版本，专注
 
 **原文标题**: [Document-Driven Development: How I Built a Production Blog Without Writing a Single Line of Code By Hand | Daniel Kliewer | Daniel Kliewer](https://danielkliewer.com/blog/2025-11-03-document-driven-development-nextjs-blog)
 
-本文介绍了一种名为"文档驱动开发"的AI辅助编程方法，作者通过详细文档规范和自然语言提示，在无需手动编写代码的情况下构建了完整的Next.js博客系统。该方法强调前期文档规划的重要性，通过14个核心文档定义项目架构，利用AI编码代理实现自动化开发，最终完成具备路由、响应式设计和语义搜索等功能的完整博客平台。
+本文介绍了一种名为"文档驱动开发"的 AI 辅助编程方法，作者通过详细文档规范和自然语言提示，在无需手动编写代码的情况下构建了完整的 Next.js 博客系统。该方法强调前期文档规划的重要性，通过 14 个核心文档定义项目架构，利用 AI 编码代理实现自动化开发，最终完成具备路由、响应式设计和语义搜索等功能的完整博客平台。
 
 - 📝 重新定义"氛围编程"为使用自然语言创建软件，降低开发门槛
 - 🏗️ 提出文档驱动开发理念，将文档作为系统架构蓝图
-- 📋 建立14个核心文档规范，涵盖需求、架构、测试到部署全流程
-- 🤖 采用预提示方法训练AI理解开发意图，提升需求分析质量
+- 📋 建立 14 个核心文档规范，涵盖需求、架构、测试到部署全流程
+- 🤖 采用预提示方法训练 AI 理解开发意图，提升需求分析质量
 - 🔄 通过迭代式开发流程，配合检查清单确保代码质量
 - ⚡ 实现从概念到可运行博客的完整构建，验证方法可行性
-- 💡 强调前期规划比编码更重要，AI放大而非替代人类思考
-- 🌟 展示AI辅助开发可产出更专业、可维护的软件产品
+- 💡 强调前期规划比编码更重要，AI 放大而非替代人类思考
+- 🌟 展示 AI 辅助开发可产出更专业、可维护的软件产品
 
 ---
 
@@ -93,19 +93,19 @@ Next.js 16 正式发布，这是该框架的一个重要里程碑版本，专注
 
 **原文标题**: [Encapsulate as much state as possible in your component](https://blacksheepcode.com/posts/encapsulate_as_much_state_as_possible)
 
-本文讨论了在React组件设计中应尽可能封装状态的理念，通过对比两种组件接口设计方式，说明将状态转换逻辑封装在组件内部能提升代码可维护性和使用便利性。
+本文讨论了在 React 组件设计中应尽可能封装状态的理念，通过对比两种组件接口设计方式，说明将状态转换逻辑封装在组件内部能提升代码可维护性和使用便利性。
 
-- 🚫 错误设计：通过props完全控制组件状态会使父组件承担状态转换逻辑
+- 🚫 错误设计：通过 props 完全控制组件状态会使父组件承担状态转换逻辑
 - 🔄 状态转换：测试时需额外创建包装组件来模拟状态变化，增加复杂度
 - ✅ 正确方案：组件内部管理状态，仅暴露异步操作函数作为接口
 - 🧪 测试优势：内部状态管理的组件测试更贴近实际使用场景
 - 🔍 现实案例：自动完成组件封装搜索、防抖、取消等复杂逻辑
-- 🛠️ 工具影响：TanStack Query等状态管理工具影响了组件接口设计模式
+- 🛠️ 工具影响：TanStack Query 等状态管理工具影响了组件接口设计模式
 - 💡 核心思想：将固有复杂性封装在组件内部，简化消费者使用体验
 
 ---
 
-### [升级至Solito 5 | Solito](https://solito.dev/v5)
+### [升级至 Solito 5 | Solito](https://solito.dev/v5)
 
 **原文标题**: [Upgrade to Solito 5 | Solito](https://solito.dev/v5)
 
@@ -126,14 +126,14 @@ Solito 5 版本进行了重大更新，移除了对 react-native-web 的依赖�
 
 **原文标题**: [civic-auth-examples/packages/civic-auth/nextjs at main · civicteam/civic-auth-examples · GitHub](https://github.com/civicteam/civic-auth-examples/tree/main/packages/civic-auth/nextjs)
 
-这是一个GitHub仓库页面，展示civicteam组织下的civic-auth-examples项目的基本信息
+这是一个 GitHub 仓库页面，展示 civicteam 组织下的 civic-auth-examples 项目的基本信息
 
 - 🔒 公开仓库，需要登录才能更改通知设置
-- 🍴 项目被复刻3次
-- ⭐ 获得3个星标收藏
+- 🍴 项目被复刻 3 次
+- ⭐ 获得 3 个星标收藏
 - 💻 代码仓库正常显示
-- 🐛 存在5个未解决的问题
-- 🔄 有17个拉取请求待处理
+- 🐛 存在 5 个未解决的问题
+- 🔄 有 17 个拉取请求待处理
 - ⚡ 可执行自动化操作
 - 📊 项目统计信息可查看
 - 🚨 安全相关功能模块
@@ -178,19 +178,19 @@ Storybook 10 发布，主要包含 ESM 独占支持、模块自动模拟、类�
 
 ---
 
-### [GitHub - blazejkustra/react-compiler-marker: 在VSCode/Cursor中高亮显示经React编译器优化的组件 ✨](https://github.com/blazejkustra/react-compiler-marker)
+### [GitHub - blazejkustra/react-compiler-marker: 在 VSCode/Cursor 中高亮显示经 React 编译器优化的组件 ✨](https://github.com/blazejkustra/react-compiler-marker)
 
 **原文标题**: [GitHub - blazejkustra/react-compiler-marker: Highlights React components optimized by the React Compiler in VSCode/Cursor ✨](https://github.com/blazejkustra/react-compiler-marker)
 
-这是一个用于VSCode/Cursor的React编译器标记扩展，可高亮显示被React编译器优化的React组件，提供优化状态可视化、悬停详情提示和编译输出预览功能。
+这是一个用于 VSCode/Cursor 的 React 编译器标记扩展，可高亮显示被 React 编译器优化的 React 组件，提供优化状态可视化、悬停详情提示和编译输出预览功能。
 
 - ✨ 显示组件优化状态（✨表示已优化，🚫表示编译失败）
 - 🛠️ 支持通过命令面板激活/停用标记或单文件检查
 - 📋 提供悬停工具提示显示详细优化信息
 - 👁️ 可预览当前文件的编译输出结果
-- ⚙️ 支持自定义Babel插件路径配置
+- ⚙️ 支持自定义 Babel 插件路径配置
 - 🐛 已知问题包括匿名函数提示显示异常和大文件性能略降
-- 🌐 MIT开源协议，支持问题提交和功能贡献
+- 🌐 MIT 开源协议，支持问题提交和功能贡献
 
 ---
 
@@ -198,30 +198,30 @@ Storybook 10 发布，主要包含 ESM 独占支持、模块自动模拟、类�
 
 **原文标题**: [Fork Buckets Like You Fork Code | Tigris Object Storage](https://www.tigrisdata.com/blog/fork-buckets-like-code/?utm_source=nextjs)
 
-Tigris对象存储引入桶分叉功能，可像代码分支一样快速创建数据集的独立副本，支持开发测试和实验场景。
+Tigris 对象存储引入桶分叉功能，可像代码分支一样快速创建数据集的独立副本，支持开发测试和实验场景。
 
 - 🚀 即时创建数据分叉：无需全量复制即可获得生产数据的隔离副本，秒级完成创建与销毁
 - 🕰️ 完整时间旅行能力：基于不可变对象存储和快照技术，实现整个存储桶的时间点版本控制
-- 🔧 多样化应用场景：支持开发环境隔离、数据集版本控制、A/B测试和智能体沙箱等用例
-- 💡 技术实现原理：通过FoundationDB全局有序日志记录元数据，分叉时仅需引用快照版本无需移动数据
+- 🔧 多样化应用场景：支持开发环境隔离、数据集版本控制、A/B 测试和智能体沙箱等用例
+- 💡 技术实现原理：通过 FoundationDB 全局有序日志记录元数据，分叉时仅需引用快照版本无需移动数据
 - 🤖 智能体工作流示例：可为每个智能体创建独立数据分叉，避免冲突并确保结果可重现
 - ⚡ 核心优势：数据隔离、即时回滚、完美一致性、调试友好，提升开发效率与数据安全性
 
 ---
 
-### [平台之外：Vercel是否正在设计编程语言的未来？- DEV社区](https://dev.to/herrington_darkholme/the-new-programming-frontier-why-vercel-is-redefining-the-language-2ij0)
+### [平台之外：Vercel 是否正在设计编程语言的未来？- DEV 社区](https://dev.to/herrington_darkholme/the-new-programming-frontier-why-vercel-is-redefining-the-language-2ij0)
 
 **原文标题**: [Beyond the Platform: Is Vercel Designing the Future of Programming Languages? - DEV Community](https://dev.to/herrington_darkholme/the-new-programming-frontier-why-vercel-is-redefining-the-language-2ij0)
 
-Vercel正在通过引入新的语言级特性来重新定义编程语言的未来，这些特性旨在简化分布式系统中数据与计算的复杂性管理。
+Vercel 正在通过引入新的语言级特性来重新定义编程语言的未来，这些特性旨在简化分布式系统中数据与计算的复杂性管理。
 
-- 🌐 Vercel推出的新特性挑战了JavaScript语义，展示了编程语言可能向原生管理多运行时、网络透明性及任务持久性演进的方向
-- 🔄 Server Actions通过序列化闭包实现客户端与服务器逻辑的无缝调用，使远程过程调用如同本地函数般简单
+- 🌐 Vercel 推出的新特性挑战了 JavaScript 语义，展示了编程语言可能向原生管理多运行时、网络透明性及任务持久性演进的方向
+- 🔄 Server Actions 通过序列化闭包实现客户端与服务器逻辑的无缝调用，使远程过程调用如同本地函数般简单
 - 💾 'use cache'指令利用闭包和参数自动生成缓存键，提供了语言级别的缓存机制，优化数据访问性能
 - ⚙️ 'use workflow'指令引入持久化函数概念，支持在分布式环境中暂停和恢复执行，确保任务可靠性和确定性重放
-- 📜 编程语言历史表明其不断演进以处理新复杂度，Vercel的特性可能标志着语言开始内建数据管理能力
+- 📜 编程语言历史表明其不断演进以处理新复杂度，Vercel 的特性可能标志着语言开始内建数据管理能力
 - 🔗 序列化闭包、代数效应和增量计算是支撑这一愿景的核心计算机科学概念，分别处理计算移动、资源安全访问和高效缓存
-- 🚀 Vercel的举措可能预示未来语言将内建错误监控、数据隐私和可观测性，让开发者更专注于业务逻辑而非基础设施
+- 🚀 Vercel 的举措可能预示未来语言将内建错误监控、数据隐私和可观测性，让开发者更专注于业务逻辑而非基础设施
 
 ---
 
@@ -229,48 +229,48 @@ Vercel正在通过引入新的语言级特性来重新定义编程语言的未�
 
 **原文标题**: [Your URL Is Your State](https://alfy.blog/2025/10/31/your-url-is-your-state.html)
 
-作者通过PrismJS配置URL的发现，阐述了URL作为状态管理工具的强大功能，强调优秀URL设计能存储应用状态、实现分享与持久化，并提供了具体实现方法和最佳实践。
+作者通过 PrismJS 配置 URL 的发现，阐述了 URL 作为状态管理工具的强大功能，强调优秀 URL 设计能存储应用状态、实现分享与持久化，并提供了具体实现方法和最佳实践。
 
-- 🔗 URL可编码完整应用状态，如PrismJS配置、GitHub代码高亮和地图坐标
+- 🔗 URL 可编码完整应用状态，如 PrismJS 配置、GitHub 代码高亮和地图坐标
 - 🎯 路径段适合层级导航，查询参数处理筛选配置，锚点实现页面内定位
-- ⚡ 现代API（URLSearchParams）和React路由简化了URL状态管理
-- 📝 应将筛选、分页、视图模式等可分享状态存入URL，避免存储敏感数据或临时状态
+- ⚡ 现代 API（URLSearchParams）和 React 路由简化了 URL 状态管理
+- 📝 应将筛选、分页、视图模式等可分享状态存入 URL，避免存储敏感数据或临时状态
 - 🚫 常见误区包括内存态丢失、敏感信息泄露、命名不透明和过度复杂的状态编码
-- 💡 优秀URL兼具状态容器、用户界面和数据契约三重价值，是Web原生解决方案
+- 💡 优秀 URL 兼具状态容器、用户界面和数据契约三重价值，是 Web 原生解决方案
 
 ---
 
-### [Octoverse：AI引领TypeScript登顶，每秒新增一位GitHub开发者 - GitHub官方博客](https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/)
+### [Octoverse：AI 引领 TypeScript 登顶，每秒新增一位 GitHub 开发者 - GitHub 官方博客](https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/)
 
 **原文标题**: [Octoverse: A new developer joins GitHub every second as AI leads TypeScript to #1 - The GitHub Blog](https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/)
 
-2025年GitHub开发者数量突破1.8亿，平均每秒新增一名开发者，AI技术推动TypeScript成为平台最常用编程语言，全球开发活动呈现爆发式增长。
+2025 年 GitHub 开发者数量突破 1.8 亿，平均每秒新增一名开发者，AI 技术推动 TypeScript 成为平台最常用编程语言，全球开发活动呈现爆发式增长。
 
-- 👥 开发者规模达1.8亿，年增3600万，印度年增超500万成为最大增长源
-- 🤖 AI驱动开发变革：80%新用户首周使用Copilot，110万仓库集成LLM SDK
-- ⚡ TypeScript超越Python/JavaScript登顶，严格类型系统更适配AI辅助开发
-- 🌍 全球协作加速：私有仓库贡献量达49.7亿，公有仓库年增1.21亿
-- 📈 开发效能提升：合并PR超43.2亿次（+23%），代码推送近10亿次
-- 🔧 AI基础设施爆发：vLLM、Ollama等AI工具仓库贡献者年增150%
-- 🛡️ 安全自动化进阶：关键漏洞修复时间缩短30%，Dependabot配置仓库翻倍
-- 📊 Python稳居AI领域主导：50%新AI仓库采用，Jupyter笔记本使用量增长75%
+- 👥 开发者规模达 1.8 亿，年增 3600 万，印度年增超 500 万成为最大增长源
+- 🤖 AI 驱动开发变革：80% 新用户首周使用 Copilot，110 万仓库集成 LLM SDK
+- ⚡ TypeScript 超越 Python/JavaScript 登顶，严格类型系统更适配 AI 辅助开发
+- 🌍 全球协作加速：私有仓库贡献量达 49.7 亿，公有仓库年增 1.21 亿
+- 📈 开发效能提升：合并 PR 超 43.2 亿次（+23%），代码推送近 10 亿次
+- 🔧 AI 基础设施爆发：vLLM、Ollama 等 AI 工具仓库贡献者年增 150%
+- 🛡️ 安全自动化进阶：关键漏洞修复时间缩短 30%，Dependabot 配置仓库翻倍
+- 📊 Python 稳居 AI 领域主导：50% 新 AI 仓库采用，Jupyter 笔记本使用量增长 75%
 - 🌱 新兴市场崛起：巴西、印尼、尼日利亚开发者数量实现倍数级增长
-- 🚀 智能代理普及：GitHub Copilot代理功能已生成超100万次PR
+- 🚀 智能代理普及：GitHub Copilot 代理功能已生成超 100 万次 PR
 
 ---
 
-### [2025年抓取Next.js网站的秘籍——诡术开发者](https://www.trickster.dev/post/scraping-nextjs-web-sites-in-2025/)
+### [2025 年抓取 Next.js 网站的秘籍——诡术开发者](https://www.trickster.dev/post/scraping-nextjs-web-sites-in-2025/)
 
 **原文标题**: [Scraping Next.js web sites in 2025 – Trickster Dev](https://www.trickster.dev/post/scraping-nextjs-web-sites-in-2025/)
 
-本文介绍了在2025年如何通过解析Next.js网站中的self.__next_f.push()调用来提取数据，并提供了使用njsparser库的具体方法和代码示例。
+本文介绍了在 2025 年如何通过解析 Next.js 网站中的 self.__next_f.push() 调用来提取数据，并提供了使用 njsparser 库的具体方法和代码示例。
 
-- 🚀 React作为主流前端框架，通过组件化和虚拟DOM解决Web应用状态与UI同步问题
-- 🔗 Next.js扩展React功能，提供路由优化和服务器端渲染(SSR)支持全栈开发
-- 💧 传统Next.js站点通过__NEXT_DATA__脚本实现数据水合，新版本改用React服务端组件
-- 📦 新架构将数据分块序列化为React特有格式，通过self.__next_f.push()调用嵌入页面
-- 🛠️ 使用njsparser Python库可解析Next.js飞行数据，文中提供了完整代码示例
-- 🔍 通过CLI工具可检测网站是否包含可解析的Next.js数据
+- 🚀 React 作为主流前端框架，通过组件化和虚拟 DOM 解决 Web 应用状态与 UI 同步问题
+- 🔗 Next.js 扩展 React 功能，提供路由优化和服务器端渲染 (SSR) 支持全栈开发
+- 💧 传统 Next.js 站点通过__NEXT_DATA__脚本实现数据水合，新版本改用 React 服务端组件
+- 📦 新架构将数据分块序列化为 React 特有格式，通过 self.__next_f.push() 调用嵌入页面
+- 🛠️ 使用 njsparser Python 库可解析 Next.js 飞行数据，文中提供了完整代码示例
+- 🔍 通过 CLI 工具可检测网站是否包含可解析的 Next.js 数据
 - 📊 解析得到的数据呈分块嵌套结构，需遍历提取所需字段
 
 ---
