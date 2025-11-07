@@ -770,3 +770,115 @@ Immer 是一个用于创建不可变状态的 JavaScript 库，允许通过直�
 
 ---
 
+### [错误](https://javascriptweekly.com/link/176485/web)
+
+**原文标题**: [Error](https://javascriptweekly.com/link/176485/web)
+
+无法总结：获取内容时出错 - HTTPSConnectionPool(host='javascriptweekly.com', port=443): Max retries exceeded with url: /link/176485/web (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+---
+
+### [错误](https://javascriptweekly.com/link/176486/web)
+
+**原文标题**: [Error](https://javascriptweekly.com/link/176486/web)
+
+无法总结：获取内容时出错 - HTTPSConnectionPool(host='javascriptweekly.com', port=443): Max retries exceeded with url: /link/176486/web (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+---
+
+### [错误](https://javascriptweekly.com/link/176487/web)
+
+**原文标题**: [Error](https://javascriptweekly.com/link/176487/web)
+
+无法总结：获取内容时出错 - HTTPSConnectionPool(host='javascriptweekly.com', port=443): Max retries exceeded with url: /link/176487/web (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+---
+
+### [Go 编程语言](https://go.dev/)
+
+**原文标题**: [The Go Programming Language](https://go.dev/)
+
+Go是一种由Google支持的开源编程语言，以其简洁性、安全性和高扩展性著称，适用于构建各类软件系统。
+
+- 🚀 简单易学，适合团队协作，内置并发支持和丰富的标准库
+- 🌐 强大的生态系统，拥有众多合作伙伴、社区和工具资源
+- ⚡ 编译速度快，代码简洁，显著提升开发效率和程序性能
+- ☁️ 广泛应用于云计算、网络服务、命令行工具和Web开发等领域
+- 📚 提供全面的学习资源，包括教程、课程和实战指南
+- 💼 受到Capital One、RedHat等知名企业的高度评价和采用
+
+---
+
+### [ViteConf 2025 回顾 | 虚空零点](https://voidzero.dev/posts/whats-new-viteconf-2025)
+
+**原文标题**: [ViteConf 2025 Recap | VoidZero](https://voidzero.dev/posts/whats-new-viteconf-2025)
+
+ViteConf 2025大会在阿姆斯特丹首次线下举办，汇集了全球框架开发者、Vite维护者和社区成员，发布了多项重要工具链更新。
+
+- 🚀 **Vite+统一工具链**：集成测试、代码检查、格式化等开发工具，提供零配置开箱体验与 monorepo 原生支持
+- ⚡ **Oxlint支持JS插件**：在保留Rust高性能的同时兼容28万ESLint生态插件，实现完整替代
+- 🔧 **Vite DevTools预览**：提供可视化构建分析界面和插件API，助力调试与定制化开发
+- 🌐 **Nitro v3全栈方案**：通过Vite插件实现前后端统一开发，支持SSR与多平台部署
+- 🧪 **Vitest 4浏览器模式**：用真实浏览器替代模拟DOM，新增可视化回归测试功能
+- 📈 **效能提升案例**：Framer采用Rolldown优化LCP指标41%，Linear通过Oxlint将代码检查速度提升90%
+
+---
+
+### [用161行JavaScript赚取1万美元 — Mirat Can Bayrak](https://mirat.dev/articles/161-satir-javascript-ile-10k-dolar-yapmak/)
+
+**原文标题**: [Earning $10K with 161 Lines of JavaScript — Mirat Can Bayrak](https://mirat.dev/articles/161-satir-javascript-ile-10k-dolar-yapmak/)
+
+该文章讲述了一个开发者仅用161行JavaScript代码创建了一个简单的《堡垒之夜》赛季倒计时网站，通过广告收入和网站出售赚取超过1万美元的故事。
+
+- ⏰ 开发者发现一个仅显示《堡垒之夜》赛季倒计时的极简网站
+- 💰 该网站在Flippa平台显示月入200美元且收入经过验证
+- 📈 网站持续运营4年，其中3年稳定创收，累计广告收益达7200美元
+- 🛒 网站以3500美元价格成功售出，总收益达10700美元
+- 👨💻 创建者Priyam Raj是印度班加罗尔的年轻开发者，项目代码公开在GitHub
+- 💡 案例证明简单创意与最小化实现仍能创造持续价值
+- 🔄 作者通过此例修正了自己此前关于软件开发成本过高的观点
+
+---
+
+### [事件驱动应用的低代码编程：Node-RED](https://nodered.org/)
+
+**原文标题**: [Low-code programming for event-driven applications : Node-RED](https://nodered.org/)
+
+好的，请提供您需要总结的文本内容，我将按照您要求的格式进行整理：
+- 顶部提供概述总结
+- 用"-"符号列出带表情符号的要点
+- 所有内容使用中文呈现
+
+---
+
+### [Node-RED 大会 2025 即将到来！：Node-RED](https://nodered.org/blog/2025/10/28/node-red-con)
+
+**原文标题**: [Node-RED Con 2025 is coming! : Node-RED](https://nodered.org/blog/2025/10/28/node-red-con)
+
+Node-RED Con 2025在线技术大会即将召开，聚焦行业创新与用户体验升级
+
+- 📅 会议将于2025年10月28日举行，目前已超过1000人注册
+- 🎤 开场主题演讲将发布社区调研结果并公布用户体验现代化计划  
+- 🏭 涵盖工厂、公共事业、金融、智能家居等多行业应用场景
+- 🌐 采用线上会议形式，汇集社区开发者与行业实践者
+- 💡 重点展示低代码编程在事件驱动应用中的创新实践
+- 📢 可通过官方论坛和Slack频道参与会前讨论与反馈
+
+---
+
+### [《异星工厂》](https://www.factorio.com/)
+
+**原文标题**: [Factorio](https://www.factorio.com/)
+
+这是一款关于建造和管理自动化工厂的游戏，玩家需要采集资源、研究科技、对抗敌人，并支持模组与多人联机。
+
+- 🏭 核心玩法围绕工厂建设与自动化生产，包含资源采集与科技研发
+- 🎮 提供自由地图设计、Lua模组编写及多人联机功能
+- 🚀 新资料片《太空时代》已发布，支持任天堂Switch平台
+- 📈 游戏自2012年开发至今，累计销量超350万份
+- 🛒 可通过Steam、GOG或官方商店购买游戏与周边商品
+- 👾 内置创意工坊提供丰富模组，包含故事任务、武器强化等扩展内容
+- ✨ 持续更新维护，目前稳定版为2.0.72
+
+---
+

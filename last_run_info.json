@@ -1,45 +1,45 @@
 {
   "thisweekinreact": {
-    "issue_title": "📨 #256: Next.js, directives, TanStack, Storybook, Waku, shadcn, Rari, Astro | Navigation, EAS, Expo Modules, Gesture Handler, Screens, Nitro, IAP | ArkType, Biome, Svelte, Hono",
-    "link_url": "/newsletter/256",
-    "timestamp": "2025-10-30T22:39:14.738889",
-    "full_url": "https://thisweekinreact.com//newsletter/256"
+    "issue_title": "📨 #257: Navigation API, PPR, directives, micro-frontends, i18n, Storybook, Immer | Godot, Uniwind, RCE, iOS filters, Windows, GPU, Hermes, Meta Quest | Node LTS, Safari, Rspack, Vite, SWC, Remix",
+    "link_url": "/newsletter/257",
+    "timestamp": "2025-11-06T22:39:14.124280",
+    "full_url": "https://thisweekinreact.com//newsletter/257"
   },
   "nextjsweekly": {
-    "issue_title": "Issue #106",
-    "link_url": "/issues/106",
-    "timestamp": "2025-11-02T18:09:38.859787",
-    "full_url": "https://nextjsweekly.com//issues/106"
+    "issue_title": "Issue #107",
+    "link_url": "/issues/107",
+    "timestamp": "2025-11-07T22:48:13.274535",
+    "full_url": "https://nextjsweekly.com//issues/107"
   },
   "reactdigest": {
     "issue_title": "one weekly email",
-    "link_url": "/newsletters/2149-react-server-components-do-they-really-improve-performance",
-    "timestamp": "2025-10-27T22:42:43.831099",
-    "full_url": "https://reactdigest.net//newsletters/2149-react-server-components-do-they-really-improve-performance"
+    "link_url": "/newsletters/2153-directives-and-the-platform-boundary",
+    "timestamp": "2025-11-03T23:15:13.380744",
+    "full_url": "https://reactdigest.net//newsletters/2153-directives-and-the-platform-boundary"
   },
   "webtoolsweekly": {
-    "issue_title": "#641\nReact, Git/CLI, AI Tools",
-    "link_url": "archives/issue-641/",
-    "timestamp": "2025-10-30T21:50:45.555023",
-    "full_url": "https://webtoolsweekly.com/archives/issue-641/"
+    "issue_title": "#642\nJS Utils, JSON/DB, Build Tools",
+    "link_url": "archives/issue-642/",
+    "timestamp": "2025-11-06T22:39:14.641956",
+    "full_url": "https://webtoolsweekly.com/archives/issue-642/"
   },
   "nodeweekly": {
-    "issue_title": "Issue #598",
-    "link_url": "issues/598",
-    "timestamp": "2025-10-30T11:16:35.224165",
-    "full_url": "https://nodeweekly.com/issues/598"
+    "issue_title": "Issue #599",
+    "link_url": "issues/599",
+    "timestamp": "2025-11-05T22:05:37.922597",
+    "full_url": "https://nodeweekly.com/issues/599"
   },
   "frontendfoc": {
-    "issue_title": "Issue #715",
-    "link_url": "issues/715",
-    "timestamp": "2025-10-30T11:16:34.733522",
-    "full_url": "https://frontendfoc.us/issues/715"
+    "issue_title": "Issue #716",
+    "link_url": "issues/716",
+    "timestamp": "2025-11-06T22:39:15.729965",
+    "full_url": "https://frontendfoc.us/issues/716"
   },
   "reactweekly": {
-    "issue_title": "Issue #449",
-    "link_url": "issues/449",
-    "timestamp": "2025-10-30T11:16:34.935842",
-    "full_url": "https://reactweekly.com/issues/449"
+    "issue_title": "Issue #450",
+    "link_url": "issues/450",
+    "timestamp": "2025-11-05T23:15:39.151250",
+    "full_url": "https://reactweekly.com/issues/450"
   },
   "javascriptweekly": {
     "issue_title": "Issue #759",
