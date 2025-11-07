@@ -2,9 +2,9 @@
 
 **原文标题**: [No title found](https://x.com/sebastienlorber)
 
-检测到浏览器中JavaScript功能未启用，建议开启JavaScript或更换受支持浏览器以正常使用X平台。受支持浏览器列表可查阅帮助中心，隐私相关扩展程序可能影响功能使用。
+检测到浏览器中 JavaScript 功能未启用，建议开启 JavaScript 或更换受支持浏览器以正常使用 X 平台。受支持浏览器列表可查阅帮助中心，隐私相关扩展程序可能影响功能使用。
 
-- 🌐 启用JavaScript或更换浏览器
+- 🌐 启用 JavaScript 或更换浏览器
 - 📚 帮助中心查看支持浏览器列表  
 - 🔒 禁用隐私扩展解决访问问题
 - ⚠️ 遇到错误可尝试重新加载
@@ -24,16 +24,16 @@
 
 **原文标题**: [@sebastienlorber.com on Bluesky](https://bsky.app/profile/sebastienlorber.com/post/3m4vqarcpdc2x)
 
-这是一个关于React技术动态的互动网页应用，需要JavaScript支持才能完整体验。
+这是一个关于 React 技术动态的互动网页应用，需要 JavaScript 支持才能完整体验。
 
-- 🌐 互动网页应用需要JavaScript支持
-- 📬 可通过bsky.social和atproto.com了解更多Bluesky信息
-- 👨‍💻 Sebastien Lorber分享了第257期React周报
-- 📰 内容涵盖导航API、部分预渲染、指令等React新特性
-- 🎮 包含Godot游戏引擎、Uniwind等移动开发相关内容
+- 🌐 互动网页应用需要 JavaScript 支持
+- 📬 可通过 bsky.social 和 atproto.com 了解更多 Bluesky 信息
+- 👨‍💻 Sebastien Lorber 分享了第 257 期 React 周报
+- 📰 内容涵盖导航 API、部分预渲染、指令等 React 新特性
+- 🎮 包含 Godot 游戏引擎、Uniwind 等移动开发相关内容
 - ⚠️ 提到了关键开发服务器安全漏洞警告
-- 📱 涉及GPU、iOS滤镜、Windows和Hermes等移动端技术
-- 🗓️ 信息更新时间为2025年11月5日
+- 📱 涉及 GPU、iOS 滤镜、Windows 和 Hermes 等移动端技术
+- 🗓️ 信息更新时间为 2025 年 11 月 5 日
 
 ---
 
@@ -41,18 +41,18 @@
 
 **原文标题**: [No title found](https://x.com/sebastienlorber/status/1986146133131841803)
 
-检测到浏览器中JavaScript功能未启用，导致无法正常使用x.com平台服务。
+检测到浏览器中 JavaScript 功能未启用，导致无法正常使用 x.com 平台服务。
 
-- 🌐 请开启浏览器JavaScript功能或更换受支持浏览器
+- 🌐 请开启浏览器 JavaScript 功能或更换受支持浏览器
 - 📚 支持浏览器列表可在帮助中心查询
 - 🔧 隐私扩展插件可能造成访问异常，建议暂时禁用
 - 🔄 若遇故障可通过“重试”按钮重新加载
 - ⚖️ 页脚包含服务条款、隐私政策等法律文件链接
-- ℹ️ 版权信息显示该服务由X公司运营至2025年
+- ℹ️ 版权信息显示该服务由 X 公司运营至 2025 年
 
 ---
 
-### [LinkedIn登录，登录 | LinkedIn](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsebastienlorber%2Frecent-activity%2Fall%2F)
+### [LinkedIn 登录，登录 | LinkedIn](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsebastienlorber%2Frecent-activity%2Fall%2F)
 
 **原文标题**: [
             
@@ -65,10 +65,10 @@
 - 🍎 支持苹果账户快捷登录
 - 🔑 提供密码钥匙登录选项  
 - 📮 可通过邮箱收取一次性验证链接登录
-- 📜 登录需同意用户协议、隐私政策和Cookie政策
+- 📜 登录需同意用户协议、隐私政策和 Cookie 政策
 - 🆕 设有新用户注册入口
 - 📬 包含邮件未收到时的解决方案（检查垃圾箱/重新发送）
-- 🔐 支持传统邮箱/手机号+密码登录方式
+- 🔐 支持传统邮箱/手机号 + 密码登录方式
 
 ---
 
@@ -76,13 +76,13 @@
 
 **原文标题**: [Reddit - The heart of the internet](https://www.reddit.com/user/sebastienlorber/submitted/?rdt=42399)
 
-本期汇总了React生态圈第256期和React Native第255-256期的重要更新动态
+本期汇总了 React 生态圈第 256 期和 React Native 第 255-256 期的重要更新动态
 
-- 🌐 React 256期涵盖Next.js、指令系统、TanStack、Storybook等核心框架工具更新
-- 📱 React Native 256期聚焦导航系统、EAS、Expo模块、手势处理等移动端特性
-- 🔧 React Native 255期包含Solito、iOS顶部栏、Expo、底部标签等开发工具改进
-- 📰 所有内容均来自ThisWeekInReact.com官方新闻通讯源
-- 👥 相关讨论在Reddit的r/reactjs和r/reactnative社区同步展开
+- 🌐 React 256 期涵盖 Next.js、指令系统、TanStack、Storybook 等核心框架工具更新
+- 📱 React Native 256 期聚焦导航系统、EAS、Expo 模块、手势处理等移动端特性
+- 🔧 React Native 255 期包含 Solito、iOS 顶部栏、Expo、底部标签等开发工具改进
+- 📰 所有内容均来自 ThisWeekInReact.com 官方新闻通讯源
+- 👥 相关讨论在 Reddit 的 r/reactjs 和 r/reactnative 社区同步展开
 - 📚 每期通讯均提供对应在线文档链接供深入查阅
 
 ---
@@ -91,10 +91,10 @@
 
 **原文标题**: [No title found](https://x.com/Baconbrix/status/1622655092657688576)
 
-检测到浏览器中JavaScript功能未启用，请启用JavaScript或更换受支持的浏览器以继续使用x.com平台。相关解决方案可查阅帮助中心获取详细信息。
+检测到浏览器中 JavaScript 功能未启用，请启用 JavaScript 或更换受支持的浏览器以继续使用 x.com 平台。相关解决方案可查阅帮助中心获取详细信息。
 
-- 🚫 JavaScript未启用导致功能受限
-- 🌐 建议启用JavaScript或更换受支持的浏览器
+- 🚫 JavaScript 未启用导致功能受限
+- 🌐 建议启用 JavaScript 或更换受支持的浏览器
 - 📖 具体支持浏览器列表请查阅帮助中心
 - 🔧 隐私扩展可能造成干扰，建议暂时禁用后重试
 - ⚠️ 遇到技术故障时可尝试重新加载页面
@@ -106,9 +106,9 @@
 
 **原文标题**: [No title found](https://x.com/Baconbrix)
 
-检测到浏览器中JavaScript功能未启用，导致无法正常使用X平台服务。
+检测到浏览器中 JavaScript 功能未启用，导致无法正常使用 X 平台服务。
 
-- 🌐 请启用浏览器JavaScript功能或更换受支持浏览器
+- 🌐 请启用浏览器 JavaScript 功能或更换受支持浏览器
 - 📚 支持浏览器列表可在帮助中心查询
 - 🔧 隐私扩展可能造成访问异常，建议暂时禁用
 - 🔄 遇到错误时可尝试重新加载页面
@@ -116,64 +116,64 @@
 
 ---
 
-### [AI代码审查：减少3万缺陷，提速50% | Sentry产品博客](https://blog.sentry.io/ai-code-review-30k-bugs-lighter-50-faster/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=aicodereview-fy26q4-aicodereviewlaunch&utm_content=newsletter-30k-blog-learnmore)
+### [AI 代码审查：减少 3 万缺陷，提速 50% | Sentry 产品博客](https://blog.sentry.io/ai-code-review-30k-bugs-lighter-50-faster/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=aicodereview-fy26q4-aicodereviewlaunch&utm_content=newsletter-30k-blog-learnmore)
 
 **原文标题**: [AI Code Review: 30K Bugs Lighter, 50% faster | Product Blog • Sentry](https://blog.sentry.io/ai-code-review-30k-bugs-lighter-50-faster/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=aicodereview-fy26q4-aicodereviewlaunch&utm_content=newsletter-30k-blog-learnmore)
 
-AI代码审查工具推出一个月后，在自主代码测试中发现并修复超过3万个错误，性能优化50%，新增可复制AI提示功能，并集成Claude技能实现自动修复。
+AI 代码审查工具推出一个月后，在自主代码测试中发现并修复超过 3 万个错误，性能优化 50%，新增可复制 AI 提示功能，并集成 Claude 技能实现自动修复。
 
-- 🐛 发现并修复超3万个代码错误，包括训练计划应用中的日程逻辑重叠漏洞
-- ⚡ 审查响应速度提升50%，通过优化模型选择与设定思考预算降低延迟
-- 📝 重构评论结构，新增可复制AI提示框支持一键生成修复方案
-- 🤖 推出Claude技能插件，可自动验证问题并生成经过验证的代码补丁
+- 🐛 发现并修复超 3 万个代码错误，包括训练计划应用中的日程逻辑重叠漏洞
+- ⚡ 审查响应速度提升 50%，通过优化模型选择与设定思考预算降低延迟
+- 📝 重构评论结构，新增可复制 AI 提示框支持一键生成修复方案
+- 🤖 推出 Claude 技能插件，可自动验证问题并生成经过验证的代码补丁
 - 🎥 提供线上工作坊回放，演示工具配置与实战应用方法
 - 📢 开放用户反馈渠道，邀请开发者体验并分享使用感受
 
 ---
 
-### [[研讨会] 借助AI代码审查减少生产故障 | Sentry](https://sentry.io/resources/ai-code-review-workshop/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=aicodereview-fy26q4-aicodereviewlaunch&utm_content=newsletter-workshop-learnmore)
+### [[研讨会] 借助 AI 代码审查减少生产故障 | Sentry](https://sentry.io/resources/ai-code-review-workshop/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=aicodereview-fy26q4-aicodereviewlaunch&utm_content=newsletter-workshop-learnmore)
 
 **原文标题**: [[Workshop] Break production less with AI code review | Sentry](https://sentry.io/resources/ai-code-review-workshop/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=aicodereview-fy26q4-aicodereviewlaunch&utm_content=newsletter-workshop-learnmore)
 
-该网站是Sentry平台的产品介绍页面，重点展示了其AI代码审查功能，旨在帮助开发者在高峰期避免生产环境故障。
+该网站是 Sentry 平台的产品介绍页面，重点展示了其 AI 代码审查功能，旨在帮助开发者在高峰期避免生产环境故障。
 
 - 🛠️ 提供错误监控、会话回放、性能追踪等开发者工具套件
-- 🤖 新增AI代码审查功能，可预测错误并生成单元测试
-- 🎬 通过在线研讨会演示如何利用AI进行PR审查和错误预防
-- 📱 支持Web前端、移动端、游戏开发等多平台解决方案
-- 🔗 集成GitHub、Slack等主流开发工具并提供多语言SDK
+- 🤖 新增 AI 代码审查功能，可预测错误并生成单元测试
+- 🎬 通过在线研讨会演示如何利用 AI 进行 PR 审查和错误预防
+- 📱 支持 Web 前端、移动端、游戏开发等多平台解决方案
+- 🔗 集成 GitHub、Slack 等主流开发工具并提供多语言 SDK
 - 📖 提供开发文档、技术博客和播客等学习资源
 - 🛡️ 明确隐私保护政策，说明个人数据收集和使用规范
 
 ---
 
-### [AI代码审查工具 - 发版前PR分析 | Sentry](https://sentry.io/product/ai-code-review/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=aicodereview-fy26q4-aicodereviewlaunch&utm_content=newsletter-30k-blog-learnmore)
+### [AI 代码审查工具 - 发版前 PR 分析 | Sentry](https://sentry.io/product/ai-code-review/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=aicodereview-fy26q4-aicodereviewlaunch&utm_content=newsletter-30k-blog-learnmore)
 
 **原文标题**: [AI Code Review Tool - Analyze PRs Before Shipping | Sentry](https://sentry.io/product/ai-code-review/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=aicodereview-fy26q4-aicodereviewlaunch&utm_content=newsletter-30k-blog-learnmore)
 
-Sentry推出AI代码审查功能，通过预测错误、即时PR反馈和自动生成测试三大核心功能，帮助开发者在代码合并前发现并修复问题，降低生产环境故障率。
+Sentry 推出 AI 代码审查功能，通过预测错误、即时 PR 反馈和自动生成测试三大核心功能，帮助开发者在代码合并前发现并修复问题，降低生产环境故障率。
 
-- 🚨 **错误预测** - 结合历史错误数据与代码上下文，在PR中精准预测潜在错误并提供修复方案
-- ⚡ **即时PR反馈** - 自动检测代码格式、逻辑错误等问题，整合仓库上下文信息提升代码审查效率
-- 🧪 **自动测试生成** - 智能分析代码结构并生成可执行的单元测试，覆盖PR中所有代码行
-- 🌐 **平台支持** - 目前仅支持GitHub/GitHub Enterprise，欧盟地区暂不可用
+- 🚨 **错误预测** - 结合历史错误数据与代码上下文，在 PR 中精准预测潜在错误并提供修复方案
+- ⚡ **即时 PR 反馈** - 自动检测代码格式、逻辑错误等问题，整合仓库上下文信息提升代码审查效率
+- 🧪 **自动测试生成** - 智能分析代码结构并生成可执行的单元测试，覆盖 PR 中所有代码行
+- 🌐 **平台支持** - 目前仅支持 GitHub/GitHub Enterprise，欧盟地区暂不可用
 - 💰 **免费阶段** - 公开测试期间完全免费使用
-- 🔒 **数据隐私** - 用户数据默认不会用于训练AI模型，生成内容仅对当前用户可见
-- 📚 **快速入门** - 需安装Sentry和Seer应用，并在设置中开启GenAI功能
+- 🔒 **数据隐私** - 用户数据默认不会用于训练 AI 模型，生成内容仅对当前用户可见
+- 📚 **快速入门** - 需安装 Sentry 和 Seer 应用，并在设置中开启 GenAI 功能
 
 ---
 
-### [我们学到的关于打造可扩展初创企业的32件事](https://newsletter.posthog.com/p/32-things-weve-learned-from-scaling?r=5t1b8o)
+### [我们学到的关于打造可扩展初创企业的 32 件事](https://newsletter.posthog.com/p/32-things-weve-learned-from-scaling?r=5t1b8o)
 
 **原文标题**: [32 things we’ve learned about building a startup that scales](https://newsletter.posthog.com/p/32-things-weve-learned-from-scaling?r=5t1b8o)
 
-从11人初创团队成长为150人规模企业的32条经验总结，涵盖企业文化、招聘策略、产品开发与市场营销等核心领域
+从 11 人初创团队成长为 150 人规模企业的 32 条经验总结，涵盖企业文化、招聘策略、产品开发与市场营销等核心领域
 
 - 🌟 乐观态度比硬技能更重要，消极情绪具有高破坏性
 - ⚠️ 降低招聘标准终将后悔，需持续坚守用人原则
 - 🚫 面试阶段拒绝比入职后解雇容易千倍
 - 📊 确保现有团队高效运作优先于盲目扩招
-- 🎯 SuperDay面试法是最有效的人才评估方式
+- 🎯 SuperDay 面试法是最有效的人才评估方式
 - 🎪 关键岗位首聘切忌冒险，必须选择经验丰富者
 - 👥 内部执行始终优于外包合作
 - 💬 避免反馈流程官僚化，保持即时有效的沟通机制
@@ -182,11 +182,11 @@ Sentry推出AI代码审查功能，通过预测错误、即时PR反馈和自动�
 - 🗣️ 抵制管理术语，坚持使用自然语言交流
 - 🧩 选择性借鉴成功经验，拒绝全盘照搬
 
-- 🔧 6人以下小团队最具扩展性
-- 🎯 持续聚焦理想客户画像(ICP)
-- 🔄 产品市场匹配(PMF)需要持续迭代
-- 🤖 理性运用AI技术解决实际问题
-- 🎯 明确具体价值的问题才值得用AI解决
+- 🔧 6 人以下小团队最具扩展性
+- 🎯 持续聚焦理想客户画像 (ICP)
+- 🔄 产品市场匹配 (PMF) 需要持续迭代
+- 🤖 理性运用 AI 技术解决实际问题
+- 🎯 明确具体价值的问题才值得用 AI 解决
 - 👂 保持用户对话，及时验证需求变化
 - 🚀 设定交付目标而非结果指标
 - 😊 优先开发最具趣味性的功能
@@ -213,31 +213,31 @@ Sentry推出AI代码审查功能，通过预测错误、即时PR反馈和自动�
 
 **原文标题**: [@sebastienlorber.com on Bluesky](https://bsky.app/profile/did:plc:hxmev3uady7j4litwnr5fzbg/post/3m4uqq6kplc24)
 
-JavaScript是运行此交互式网络应用的必要条件，简单HTML界面无法支持其功能。
+JavaScript 是运行此交互式网络应用的必要条件，简单 HTML 界面无法支持其功能。
 
-- 🌐 深入了解Bluesky平台可访问bsky.social和atproto.com网站
-- ⚛️ 开发者Sebastien Lorber（sebastienlorber.com）发布关于Navigation API的更新
-- 🚀 Navigation API即将全面覆盖所有浏览器
-- 🔄 彻底重新定义构建客户端路由/单页应用的API标准
-- 😕 传统History API存在使用限制
-- ✅ 新Navigation API提供集中式导航事件拦截方案
-- 📅 该技术动态发布于2025年11月5日
+- 🌐 深入了解 Bluesky 平台可访问 bsky.social 和 atproto.com 网站
+- ⚛️ 开发者 Sebastien Lorber（sebastienlorber.com）发布关于 Navigation API 的更新
+- 🚀 Navigation API 即将全面覆盖所有浏览器
+- 🔄 彻底重新定义构建客户端路由/单页应用的 API 标准
+- 😕 传统 History API 存在使用限制
+- ✅ 新 Navigation API 提供集中式导航事件拦截方案
+- 📅 该技术动态发布于 2025 年 11 月 5 日
 
 ---
 
-### [由sebmarkbage提交的Pull Request #33162：为DOM渲染器实现基于Navigation API的默认指示器 · facebook/react · GitHub](https://github.com/facebook/react/pull/33162)
+### [由 sebmarkbage 提交的 Pull Request #33162：为 DOM 渲染器实现基于 Navigation API 的默认指示器 · facebook/react · GitHub](https://github.com/facebook/react/pull/33162)
 
 **原文标题**: [Implement Navigation API backed default indicator for DOM renderer by sebmarkbage · Pull Request #33162 · facebook/react · GitHub](https://github.com/facebook/react/pull/33162)
 
-React团队为DOM渲染器实现了基于Navigation API的默认过渡指示器功能，当未自定义onDefaultTransitionIndicator时，会自动触发模拟导航事件来显示浏览器原生加载状态。
+React 团队为 DOM 渲染器实现了基于 Navigation API 的默认过渡指示器功能，当未自定义 onDefaultTransitionIndicator 时，会自动触发模拟导航事件来显示浏览器原生加载状态。
 
-- 🚀 默认使用Navigation API模拟导航事件，在过渡期间自动触发浏览器加载指示器（如Chrome的旋转图标）
-- 🌐 兼容性因浏览器而异：Chrome已支持，Firefox/Safari尚未完全实现Navigation API
-- ⚡ 通过100毫秒延迟启动机制避免快速导航时的闪烁问题
+- 🚀 默认使用 Navigation API 模拟导航事件，在过渡期间自动触发浏览器加载指示器（如 Chrome 的旋转图标）
+- 🌐 兼容性因浏览器而异：Chrome 已支持，Firefox/Safari 尚未完全实现 Navigation API
+- ⚡ 通过 100 毫秒延迟启动机制避免快速导航时的闪烁问题
 - 🔄 智能并发处理：当存在进行中的导航时会等待完成，避免冲突
-- 🏷️ 在info字段提供"react-transition"标识符供其他路由库识别特殊导航类型
-- 📦 代码包体积轻微增加（约0.3%），主要影响react-dom-client生产版本
-- ✅ 已通过240项检查并合并到主分支，获得核心团队审核批准
+- 🏷️ 在 info 字段提供"react-transition"标识符供其他路由库识别特殊导航类型
+- 📦 代码包体积轻微增加（约 0.3%），主要影响 react-dom-client 生产版本
+- ✅ 已通过 240 项检查并合并到主分支，获得核心团队审核批准
 
 ---
 
@@ -253,19 +253,19 @@ React团队为DOM渲染器实现了基于Navigation API的默认过渡指示器�
 
 ---
 
-### [在Next.js 16中实现next-intl国际化与'use cache'功能 | Aurora Scharff](https://aurorascharff.no/posts/implementing-nextjs-16-use-cache-with-next-intl-internationalization/)
+### [在 Next.js 16 中实现 next-intl 国际化与'use cache'功能 | Aurora Scharff](https://aurorascharff.no/posts/implementing-nextjs-16-use-cache-with-next-intl-internationalization/)
 
 **原文标题**: [Implementing Next.js 16 'use cache' with next-intl Internationalization | Aurora Scharff](https://aurorascharff.no/posts/implementing-nextjs-16-use-cache-with-next-intl-internationalization/)
 
-Next.js 16的'use cache'指令与next-intl国际化库存在兼容性问题，本文探讨了问题根源、未来解决方案及当前可用的临时解决方法。
+Next.js 16 的'use cache'指令与 next-intl 国际化库存在兼容性问题，本文探讨了问题根源、未来解决方案及当前可用的临时解决方法。
 
-- 🚫 Next.js 16的'use cache'指令与next-intl存在兼容性问题，因为getTranslations()默认依赖headers()读取请求头信息
-- 🔧 next-intl通过中间件将locale作为请求头传递，避免手动在组件树中传递区域参数
-- 📋 临时解决方案需要配置generateStaticParams和setRequestLocale启用静态渲染
-- 🔄 使用'use cache'的组件需显式接收locale参数并传递给getTranslations函数
-- ⏳ 未来next/root-params API将彻底解决此问题，无需依赖headers()或手动传递参数
-- ⚡ 启用cacheComponents后，需使用Suspense边界处理动态组件加载状态
-- 📚 完整代码示例可在GitHub仓库查看，作者还提供了Next.js 16电商演示项目参考
+- 🚫 Next.js 16 的'use cache'指令与 next-intl 存在兼容性问题，因为 getTranslations() 默认依赖 headers() 读取请求头信息
+- 🔧 next-intl 通过中间件将 locale 作为请求头传递，避免手动在组件树中传递区域参数
+- 📋 临时解决方案需要配置 generateStaticParams 和 setRequestLocale 启用静态渲染
+- 🔄 使用'use cache'的组件需显式接收 locale 参数并传递给 getTranslations 函数
+- ⏳ 未来 next/root-params API 将彻底解决此问题，无需依赖 headers() 或手动传递参数
+- ⚡ 启用 cacheComponents 后，需使用 Suspense 边界处理动态组件加载状态
+- 📚 完整代码示例可在 GitHub 仓库查看，作者还提供了 Next.js 16 电商演示项目参考
 
 ---
 
@@ -275,22 +275,22 @@ Next.js 16的'use cache'指令与next-intl国际化库存在兼容性问题，�
 
 组件设计应尽可能封装内部状态，让父组件无需管理子组件的状态转换逻辑，从而简化使用并提升代码可维护性。
 
-- 🚫 避免将组件所有状态通过props暴露给父组件管理，这会增加使用复杂度
-- 🔄 推荐让组件内部管理状态转换，例如通过返回Promise的异步函数处理加载状态
+- 🚫 避免将组件所有状态通过 props 暴露给父组件管理，这会增加使用复杂度
+- 🔄 推荐让组件内部管理状态转换，例如通过返回 Promise 的异步函数处理加载状态
 - 🧪 封装状态逻辑后测试更直观，能真实模拟用户交互流程
 - 🎯 复杂组件（如自动补全）应内置防抖、请求取消等逻辑，减少重复代码
 - 📝 组件接口应明确必需参数，通过类型检查确保关键逻辑不被遗漏
-- ⚡ 状态管理工具（如TanStack Query）可与封装模式结合使用，通过提取懒查询保持接口简洁
+- ⚡ 状态管理工具（如 TanStack Query）可与封装模式结合使用，通过提取懒查询保持接口简洁
 
 ---
 
-### [平台之外：Vercel是否正在设计编程语言的未来？- DEV社区](https://dev.to/herrington_darkholme/the-new-programming-frontier-why-vercel-is-redefining-the-language-2ij0)
+### [平台之外：Vercel 是否正在设计编程语言的未来？- DEV 社区](https://dev.to/herrington_darkholme/the-new-programming-frontier-why-vercel-is-redefining-the-language-2ij0)
 
 **原文标题**: [Beyond the Platform: Is Vercel Designing the Future of Programming Languages? - DEV Community](https://dev.to/herrington_darkholme/the-new-programming-frontier-why-vercel-is-redefining-the-language-2ij0)
 
-Vercel正在通过引入新的语言级特性来重新定义编程语言的未来，这些特性旨在简化分布式系统中数据与计算的复杂性管理。
+Vercel 正在通过引入新的语言级特性来重新定义编程语言的未来，这些特性旨在简化分布式系统中数据与计算的复杂性管理。
 
-- 🌐 Vercel推出Server Actions等特性，模糊客户端与服务器代码边界，使远程调用如同本地函数
+- 🌐 Vercel 推出 Server Actions 等特性，模糊客户端与服务器代码边界，使远程调用如同本地函数
 - 💾 通过"use cache"指令实现语言级缓存，自动生成缓存键并依赖闭包序列化
 - ⚡ "use workflow"指令提供持久化函数支持，确保任务在故障后可恢复执行
 - 🔄 基于可序列化闭包技术，实现计算逻辑在不同运行环境间的迁移与状态保持
@@ -300,40 +300,40 @@ Vercel正在通过引入新的语言级特性来重新定义编程语言的未�
 
 ---
 
-### [为何初创公司选择React（以及何时不应选用）——来自Evil Martians团队博客的《火星纪事》](https://evilmartians.com/chronicles/why-startups-choose-react-and-when-you-should-not)
+### [为何初创公司选择 React（以及何时不应选用）——来自 Evil Martians 团队博客的《火星纪事》](https://evilmartians.com/chronicles/why-startups-choose-react-and-when-you-should-not)
 
 **原文标题**: [Why startups choose React (and when you shouldn't)—Martian Chronicles, Evil Martians’ team blog](https://evilmartians.com/chronicles/why-startups-choose-react-and-when-you-should-not)
 
-2025年大多数初创企业选择React框架，但数据显示小框架在项目存活率和开发者满意度方面表现更优。React凭借庞大生态系统获得88.6%的融资份额，但各框架85%的项目会被废弃，而Svelte在高质量项目中的存活率达36.1%。开发者满意度与融资趋势存在明显差距，建议根据团队规模、招聘需求等实际条件选择框架。
+2025 年大多数初创企业选择 React 框架，但数据显示小框架在项目存活率和开发者满意度方面表现更优。React 凭借庞大生态系统获得 88.6% 的融资份额，但各框架 85% 的项目会被废弃，而 Svelte 在高质量项目中的存活率达 36.1%。开发者满意度与融资趋势存在明显差距，建议根据团队规模、招聘需求等实际条件选择框架。
 
-- 🚀 React占据88.6%初创企业融资（28.5亿美元中的25.2亿），主要优势在于人才储备和生态系统
-- ⚰️ 所有框架平均85%的GitHub项目已停止维护，React废弃率83.2%但仍存110万活跃项目
-- 🌱 Svelte在高质量项目（星标>10）中存活率最高（36.1%），React为20.7%
-- 🎯 跨框架项目平均星标数达15254，是单框架项目的近5倍，说明框架无关设计更易成功
-- 😊 开发者满意度与使用率成反比：Svelte满意度88%但使用率26%，React满意度75%但使用率82%
-- 💡 建议快速扩张团队选择React，稳定团队可考虑满意度更高的Vue（87%）或性能更优的Svelte
-- 🏢 大型企业适合Angular的规范架构，性能关键应用推荐Svelte的小体积包
+- 🚀 React 占据 88.6% 初创企业融资（28.5 亿美元中的 25.2 亿），主要优势在于人才储备和生态系统
+- ⚰️ 所有框架平均 85% 的 GitHub 项目已停止维护，React 废弃率 83.2% 但仍存 110 万活跃项目
+- 🌱 Svelte 在高质量项目（星标>10）中存活率最高（36.1%），React 为 20.7%
+- 🎯 跨框架项目平均星标数达 15254，是单框架项目的近 5 倍，说明框架无关设计更易成功
+- 😊 开发者满意度与使用率成反比：Svelte 满意度 88% 但使用率 26%，React 满意度 75% 但使用率 82%
+- 💡 建议快速扩张团队选择 React，稳定团队可考虑满意度更高的 Vue（87%）或性能更优的 Svelte
+- 🏢 大型企业适合 Angular 的规范架构，性能关键应用推荐 Svelte 的小体积包
 - 🔄 架构设计应保持业务逻辑与框架解耦，确保系统能适应框架迁移
 
 ---
 
-### [利用原子状态优化深层嵌套组件树中的React性能 | Harbor](https://runharbor.com/blog/2025-10-26-improving-deeply-nested-react-render-performance-with-jotai-atomic-state)
+### [利用原子状态优化深层嵌套组件树中的 React 性能 | Harbor](https://runharbor.com/blog/2025-10-26-improving-deeply-nested-react-render-performance-with-jotai-atomic-state)
 
 **原文标题**: [Using Atomic State to Improve React Performance in Deeply Nested Component Trees | Harbor](https://runharbor.com/blog/2025-10-26-improving-deeply-nested-react-render-performance-with-jotai-atomic-state)
 
-本文介绍了Harbor公司如何通过原子状态管理解决React深层嵌套组件树的性能问题，在保持开发体验的同时显著提升渲染性能。
+本文介绍了 Harbor 公司如何通过原子状态管理解决 React 深层嵌套组件树的性能问题，在保持开发体验的同时显著提升渲染性能。
 
-- 🚀 从React Context迁移至Jotai原子状态管理，实现精准重渲染
+- 🚀 从 React Context 迁移至 Jotai 原子状态管理，实现精准重渲染
 - ⚡ 仅更新相关状态变更的组件，避免整棵树重渲染的性能损耗
 - 🎯 通过原子化状态分割，为每个组件创建独立的状态依赖单元
 - 🔄 保持受控输入模式，支持复杂条件可见性和验证逻辑
-- 💡 类useState的API设计使迁移成本极低，开发体验流畅
+- 💡 类 useState 的 API 设计使迁移成本极低，开发体验流畅
 - 🏥 在临床试验数据采集场景中成功平衡功能完整性与性能需求
 - 🌳 针对四层嵌套结构（事件→表单→字段组→字段）进行优化
 
 ---
 
-### [React国际化质量保证 | Lingual](https://lingual.dev/blog/quality-assurance-for-i18n-in-react/)
+### [React 国际化质量保证 | Lingual](https://lingual.dev/blog/quality-assurance-for-i18n-in-react/)
 
 **原文标题**: [
   
@@ -341,32 +341,32 @@ Vercel正在通过引入新的语言级特性来重新定义编程语言的未�
   
 ](https://lingual.dev/blog/quality-assurance-for-i18n-in-react/)
 
-React应用国际化质量保障概述：通过i18n-check工具实现自动化翻译文件检测，确保多语言应用在开发阶段发现翻译缺失、语法错误和冗余键值等问题。
+React 应用国际化质量保障概述：通过 i18n-check 工具实现自动化翻译文件检测，确保多语言应用在开发阶段发现翻译缺失、语法错误和冗余键值等问题。
 
-- 🔍 检测翻译缺失键值与ICU语法错误
+- 🔍 检测翻译缺失键值与 ICU 语法错误
 - 🧹 清理未使用或过时的翻译键值
-- ⚙️ 支持主流i18n库（react-intl/i18next/next-intl）
-- 🔄 集成CI流水线实现自动化检查
+- ⚙️ 支持主流 i18n 库（react-intl/i18next/next-intl）
+- 🔄 集成 CI 流水线实现自动化检查
 - 📝 保持源语言文件作为翻译基准
 - 🛠️ 提供本地预提交钩子与云端检查工作流
 - 🚀 通过规范化流程预防多语言运行时错误
 
 ---
 
-### [全栈Next.js 15课程 - Next之路](https://www.road-to-next.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_3.3)
+### [全栈 Next.js 15 课程 - Next 之路](https://www.road-to-next.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_3.3)
 
 **原文标题**: [Full-Stack Next.js 15 Course - The Road to Next](https://www.road-to-next.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_3.3)
 
-这是一门由Robin Wieruch推出的全栈Web开发视频课程，专注于Next.js 15和React 19，旨在帮助开发者从初级进阶到高级水平，掌握构建现代SaaS产品所需的技能。
+这是一门由 Robin Wieruch 推出的全栈 Web 开发视频课程，专注于 Next.js 15 和 React 19，旨在帮助开发者从初级进阶到高级水平，掌握构建现代 SaaS 产品所需的技能。
 
-- 🚀 **课程目标**：培养学员成为全栈开发者，涵盖从UI到数据库的完整开发流程
-- 🎯 **适用人群**：前端转全栈、进阶React学习、追求高级工程师职位者
-- 💻 **技术栈**：Next.js 15、React 19、Prisma、Supabase、TypeScript等现代工具
-- 🛠️ **实践项目**：通过构建可部署的SaaS入门套件巩固学习成果
+- 🚀 **课程目标**：培养学员成为全栈开发者，涵盖从 UI 到数据库的完整开发流程
+- 🎯 **适用人群**：前端转全栈、进阶 React 学习、追求高级工程师职位者
+- 💻 **技术栈**：Next.js 15、React 19、Prisma、Supabase、TypeScript 等现代工具
+- 🛠️ **实践项目**：通过构建可部署的 SaaS 入门套件巩固学习成果
 - 📚 **学习路径**：提供开发者旅程（$249）和软件工程师旅程（$349）两种选择
 - 👨‍🏫 **讲师资历**：拥有十年开发经验，畅销书作者，曾与多家知名企业合作
 - 🌟 **课程特色**：深入讲解服务器组件、身份验证、性能优化等高级概念
-- 🤝 **学习支持**：提供Discord社区、完成证书和14天退款保证
+- 🤝 **学习支持**：提供 Discord 社区、完成证书和 14 天退款保证
 - 💰 **优惠选项**：支持学生折扣、团队许可和分期付款
 
 ---
@@ -375,13 +375,13 @@ React应用国际化质量保障概述：通过i18n-check工具实现自动化�
 
 **原文标题**: [Release v10.2.0 · immerjs/immer · GitHub](https://github.com/immerjs/immer/releases/tag/v10.2.0)
 
-Immer是一个用于处理不可变状态的JavaScript库，通过代理模式实现高效的不可变数据更新。
+Immer 是一个用于处理不可变状态的 JavaScript 库，通过代理模式实现高效的不可变数据更新。
 
-- 🚀 最新版本v10.2.0于2025年10月25日发布，包含性能优化功能
-- ⚡ 新增setUseStrictIteration配置项，可优化Immer执行性能
-- 🔒 支持GitHub签名验证，确保代码安全性
-- 📊 项目获得28.7k星标和866个分支，社区活跃度高
-- 🐛 当前版本修复了33个问题并合并了12个拉取请求
+- 🚀 最新版本 v10.2.0 于 2025 年 10 月 25 日发布，包含性能优化功能
+- ⚡ 新增 setUseStrictIteration 配置项，可优化 Immer 执行性能
+- 🔒 支持 GitHub 签名验证，确保代码安全性
+- 📊 项目获得 28.7k 星标和 866 个分支，社区活跃度高
+- 🐛 当前版本修复了 33 个问题并合并了 12 个拉取请求
 - 🔄 提供严格迭代模式选项，提升大数据集处理效率
 
 ---
@@ -392,7 +392,7 @@ Immer是一个用于处理不可变状态的JavaScript库，通过代理模式�
 
 Redux Toolkit v2.10.0 版本发布，主要包含性能优化和错误修复，重点改进了 Immer 库的更新效率并优化了内部代码结构。
 
-- 🚀 更新 Immer 至 10.2 版本，通过禁用严格迭代提升约10%性能
+- 🚀 更新 Immer 至 10.2 版本，通过禁用严格迭代提升约 10% 性能
 - ⚡ 优化内部循环操作与 RTKQ 标签失效处理逻辑
 - 📦 重构导入结构节省约 0.8KB 打包体积
 - 🐛 修复 combineSlices 类型推断问题
@@ -400,7 +400,7 @@ Redux Toolkit v2.10.0 版本发布，主要包含性能优化和错误修复，�
 
 ---
 
-### [RFC：通过AbortSignal在React异步API中实现统一取消功能（作者：RichLewis007 · 拉取请求 #271 · reactjs/rfcs · GitHub）](https://github.com/reactjs/rfcs/pull/271)
+### [RFC：通过 AbortSignal 在 React 异步 API 中实现统一取消功能（作者：RichLewis007 · 拉取请求 #271 · reactjs/rfcs · GitHub）](https://github.com/reactjs/rfcs/pull/271)
 
 **原文标题**: [RFC: Unified cancellation via AbortSignal across React async APIs by RichLewis007 · Pull Request #271 · reactjs/rfcs · GitHub](https://github.com/reactjs/rfcs/pull/271)
 
@@ -419,14 +419,14 @@ React 团队提出通过 AbortSignal 实现异步 API 统一取消机制的提�
 
 **原文标题**: [[DRAFT] Initial React "concurrent stores" compat prototype by markerikson · Pull Request #2263 · reduxjs/react-redux · GitHub](https://github.com/reduxjs/react-redux/pull/2263)
 
-React-Redux团队正在进行一项实验性集成，尝试使用React即将推出的"并发存储"API替代现有的useSyncExternalStore，以实现与React并发特性的兼容。该原型已成功通过大部分测试，仅剩少数边缘情况需要处理，并提出了关于connect高阶组件和性能优化的后续改进方向。
+React-Redux 团队正在进行一项实验性集成，尝试使用 React 即将推出的"并发存储"API 替代现有的 useSyncExternalStore，以实现与 React 并发特性的兼容。该原型已成功通过大部分测试，仅剩少数边缘情况需要处理，并提出了关于 connect 高阶组件和性能优化的后续改进方向。
 
-- 🚀 **原型进展**：成功将React-Redux的useSelector钩子迁移至新的useStoreSelector API，仅3个测试未通过
+- 🚀 **原型进展**：成功将 React-Redux 的 useSelector 钩子迁移至新的 useStoreSelector API，仅 3 个测试未通过
 - ⚠️ **已知问题**：存在选择器稳定性、错误处理语义和订阅性能等边缘情况需要解决
-- 🔄 **架构变更**：新增Redux存储增强器来创建React兼容存储，绕过了原有的Subscription实现
-- 📈 **性能影响**：选择器调用次数显著增加（如1→3、2→4），订阅管理改用数组导致取消订阅性能下降
-- 🎯 **后续重点**：需支持不稳定选择器引用、自定义相等比较，并测试中间件和DevTools的兼容性
-- 💡 **设计决策**：考虑放弃connect高阶组件的并发支持，建议用户迁移到useSelector
+- 🔄 **架构变更**：新增 Redux 存储增强器来创建 React 兼容存储，绕过了原有的 Subscription 实现
+- 📈 **性能影响**：选择器调用次数显著增加（如 1→3、2→4），订阅管理改用数组导致取消订阅性能下降
+- 🎯 **后续重点**：需支持不稳定选择器引用、自定义相等比较，并测试中间件和 DevTools 的兼容性
+- 💡 **设计决策**：考虑放弃 connect 高阶组件的并发支持，建议用户迁移到 useSelector
 - 🔧 **优化方向**：计划将订阅数据结构改为链表，并探索新的错误处理机制
 
 ---
@@ -435,21 +435,21 @@ React-Redux团队正在进行一项实验性集成，尝试使用React即将推�
 
 **原文标题**: [Turborepo 2.6 | Turborepo](https://turborepo.com/blog/turbo-2-6)
 
-Turborepo 2.6版本发布，重点优化了微前端本地开发体验、正式支持Bun包管理器并新增终端任务搜索功能。
+Turborepo 2.6 版本发布，重点优化了微前端本地开发体验、正式支持 Bun 包管理器并新增终端任务搜索功能。
 
 - 🚀 **微前端本地代理**：通过单一端口和命令运行多个应用，简化开发流程
-- 📦 **Bun包管理器稳定支持**：基于依赖变更的智能缓存机制，提升构建效率  
+- 📦 **Bun 包管理器稳定支持**：基于依赖变更的智能缓存机制，提升构建效率  
 - 🔍 **终端任务搜索**：支持按"/"快捷键快速筛选任务，优化大型仓库操作体验
-- 🔗 **生产环境集成**：与Vercel等基础设施提供商深度整合微前端方案
-- 📚 **功能完善**：包含17项新特性、30项修复及大量文档示例更新
+- 🔗 **生产环境集成**：与 Vercel 等基础设施提供商深度整合微前端方案
+- 📚 **功能完善**：包含 17 项新特性、30 项修复及大量文档示例更新
 
 ---
 
-### [前端未来在@VercelHQ与Malte Ubl共话 - YouTube](https://www.youtube.com/watch?v=tgfjhAy85UI)
+### [前端未来在@VercelHQ 与 Malte Ubl 共话 - YouTube](https://www.youtube.com/watch?v=tgfjhAy85UI)
 
 **原文标题**: [The future of Frontend is on @VercelHQ with Malte Ubl - YouTube](https://www.youtube.com/watch?v=tgfjhAy85UI)
 
-这是YouTube网站页脚导航链接的概述，包含平台各项服务条款与功能说明。
+这是 YouTube 网站页脚导航链接的概述，包含平台各项服务条款与功能说明。
 
 - 📋 关于平台的基本信息与介绍
 - 📰 媒体与新闻相关资源
@@ -457,13 +457,13 @@ Turborepo 2.6版本发布，重点优化了微前端本地开发体验、正式�
 - 📞 用户联系与客服渠道
 - 🎬 内容创作者专属资源
 - 💼 广告合作与商业推广
-- 💻 开发者工具与API接口
+- 💻 开发者工具与 API 接口
 - 📜 服务条款与使用协议
 - 🔒 隐私保护与数据政策
 - ⚖️ 平台政策与安全指南
-- 🔧 YouTube功能运作机制
+- 🔧 YouTube 功能运作机制
 - 🧪 新功能测试与体验
-- 🏢 2025年谷歌公司版权所有
+- 🏢 2025 年谷歌公司版权所有
 
 ---
 
@@ -507,13 +507,13 @@ Storybook 10 是一个重大更新版本，主要引入了 ESM 独占支持作�
 
 **原文标题**: [Release v6.4.0 · vadimdemedes/ink · GitHub](https://github.com/vadimdemedes/ink/releases/tag/v6.4.0)
 
-这是一个GitHub仓库页面，显示ink项目v6.4.0版本发布信息，包含功能更新和错误修复。
+这是一个 GitHub 仓库页面，显示 ink 项目 v6.4.0 版本发布信息，包含功能更新和错误修复。
 
-- 🆕 新增onRender钩子功能
-- 🔧 修复.dim.bold颜色显示问题
-- 🏷️ 版本号从v6.3.1升级至v6.4.0
-- 👥 获得4位用户点赞认可
-- 📅 于10月26日由sindresorhus发布
+- 🆕 新增 onRender 钩子功能
+- 🔧 修复.dim.bold 颜色显示问题
+- 🏷️ 版本号从 v6.3.1 升级至 v6.4.0
+- 👥 获得 4 位用户点赞认可
+- 📅 于 10 月 26 日由 sindresorhus 发布
 
 ---
 
@@ -527,7 +527,7 @@ react-intersection-observer 库发布了 v10.0.0 版本，主要新增了无需�
 - 📚 新增 IntersectionChangeEffect/IntersectionEffectOptions 类型定义和完整文档示例
 - ⚠️ 所有核心方法现在会忽略浏览器初始的不可见状态触发，确保回调仅在真实可见度变化时执行
 - 🧪 为新增钩子提供了完整的 Vitest 测试套件，覆盖阈值触发等关键场景
-- 🔄 包含多项依赖更新和文档优化，由4位贡献者共同完成
+- 🔄 包含多项依赖更新和文档优化，由 4 位贡献者共同完成
 
 ---
 
@@ -535,16 +535,16 @@ react-intersection-observer 库发布了 v10.0.0 版本，主要新增了无需�
 
 **原文标题**: [Release v7.0.0 · garmeeh/next-seo · GitHub](https://github.com/garmeeh/next-seo/releases/tag/v7.0.0)
 
-Next SEO v7.0.0 是一个完全重写的版本，包含重大API变更，建议现有项目继续使用v6版本，除非需要新的JSON-LD组件或启动新项目。
+Next SEO v7.0.0 是一个完全重写的版本，包含重大 API 变更，建议现有项目继续使用 v6 版本，除非需要新的 JSON-LD 组件或启动新项目。
 
-- 🚨 重大变更警告：v7为完全重写版本，所有API均不兼容，需彻底重写SEO实现
-- 🔄 架构升级：采用现代化工具链，使用tsup构建工具和Vitest测试框架
-- 📝 开发者体验：完整TypeScript支持，改进类型推断和tree-shaking
-- 🤖 AI友好：专为AI辅助开发设计，提供贡献指南文档
-- 🎯 JSON-LD合规：所有组件基于Google最新结构化数据规范重建
-- ⚙️ API变更：Pages Router改用函数式API，需配合next/head使用
+- 🚨 重大变更警告：v7 为完全重写版本，所有 API 均不兼容，需彻底重写 SEO 实现
+- 🔄 架构升级：采用现代化工具链，使用 tsup 构建工具和 Vitest 测试框架
+- 📝 开发者体验：完整 TypeScript 支持，改进类型推断和 tree-shaking
+- 🤖 AI 友好：专为 AI 辅助开发设计，提供贡献指南文档
+- 🎯 JSON-LD 合规：所有组件基于 Google 最新结构化数据规范重建
+- ⚙️ API 变更：Pages Router 改用函数式 API，需配合 next/head 使用
 - 📚 完善文档：提供完整迁移指南和组件使用示例
-- 🛠️ 持续维护：v6版本将继续获得错误修复和安全更新
+- 🛠️ 持续维护：v6 版本将继续获得错误修复和安全更新
 
 ---
 
@@ -569,7 +569,7 @@ Next SEO v7.0.0 是一个完全重写的版本，包含重大API变更，建议�
 
 **原文标题**: [React Compiler 1.0 with TanStack Start! - YouTube](https://www.youtube.com/watch?v=-3-17PRN7jg)
 
-这是YouTube网站页脚导航链接的概述。
+这是 YouTube 网站页脚导航链接的概述。
 
 - 📋 关于平台的基本信息
 - 📰 媒体与新闻相关资源
@@ -577,7 +577,7 @@ Next SEO v7.0.0 是一个完全重写的版本，包含重大API变更，建议�
 - 📞 联系与反馈渠道
 - 🎬 内容创作者专区
 - 💼 广告合作与投放
-- 💻 开发者资源与API
+- 💻 开发者资源与 API
 - 📜 服务条款与协议
 - 🔒 隐私政策与数据保护
 - ⚖️ 平台政策与安全指南
@@ -587,11 +587,11 @@ Next SEO v7.0.0 是一个完全重写的版本，包含重大API变更，建议�
 
 ---
 
-### [真正的NextJS杀手终于来了... - YouTube](https://www.youtube.com/watch?v=4ig08UACvso)
+### [真正的 NextJS 杀手终于来了... - YouTube](https://www.youtube.com/watch?v=4ig08UACvso)
 
 **原文标题**: [The Real NextJS Killer is Finally Here... - YouTube](https://www.youtube.com/watch?v=4ig08UACvso)
 
-这是YouTube网站页脚导航链接的概述。
+这是 YouTube 网站页脚导航链接的概述。
 
 - ℹ️ 关于平台的基本信息
 - 📰 官方新闻与公告
@@ -599,21 +599,21 @@ Next SEO v7.0.0 是一个完全重写的版本，包含重大API变更，建议�
 - 📞 联系方式
 - 🎬 内容创作者资源
 - 💼 广告合作机会
-- 💻 开发者工具与API
+- 💻 开发者工具与 API
 - 📑 服务条款说明
 - 🔒 隐私政策保护
 - ⚖️ 平台政策与安全指南
-- 🔧 YouTube运作机制
+- 🔧 YouTube 运作机制
 - 🧪 新功能测试体验
-- ⏰ 2025年谷歌版权所有
+- ⏰ 2025 年谷歌版权所有
 
 ---
 
-### [大家都在嘲笑Next.js 16 - YouTube](https://www.youtube.com/watch?v=QQnqj5c76es)
+### [大家都在嘲笑 Next.js 16 - YouTube](https://www.youtube.com/watch?v=QQnqj5c76es)
 
 **原文标题**: [Everyone's Making Fun of Next.js 16 - YouTube](https://www.youtube.com/watch?v=QQnqj5c76es)
 
-这是YouTube网站页脚导航链接的简要说明。
+这是 YouTube 网站页脚导航链接的简要说明。
 
 - ℹ️ 关于平台的基本信息
 - 📢 媒体与新闻发布相关内容
@@ -621,21 +621,21 @@ Next SEO v7.0.0 是一个完全重写的版本，包含重大API变更，建议�
 - 📞 联系方式和用户支持
 - 🎬 内容创作者相关资源
 - 💼 广告合作与商业机会
-- 💻 开发者工具和API接口
+- 💻 开发者工具和 API 接口
 - 📜 服务条款和使用协议
 - 🔒 隐私保护政策和数据安全
 - ⚖️ 平台政策与安全指南
-- 🔧 YouTube功能运作原理
+- 🔧 YouTube 功能运作原理
 - 🧪 新功能测试与体验
 - 🏢 公司信息与版权年份
 
 ---
 
-### [若你讨厌React服务器组件，请看这个 - YouTube](https://www.youtube.com/watch?v=C84YEp-8-hI)
+### [若你讨厌 React 服务器组件，请看这个 - YouTube](https://www.youtube.com/watch?v=C84YEp-8-hI)
 
 **原文标题**: [Watch this if you hate React Server Components - YouTube](https://www.youtube.com/watch?v=C84YEp-8-hI)
 
-这是一个关于YouTube平台信息页面的概述，包含平台功能、政策条款和合作渠道等核心内容。
+这是一个关于 YouTube 平台信息页面的概述，包含平台功能、政策条款和合作渠道等核心内容。
 
 - 📋 平台基本信息与法律条款
 - 📢 媒体合作与广告业务
@@ -646,16 +646,16 @@ Next SEO v7.0.0 是一个完全重写的版本，包含重大API变更，建议�
 
 ---
 
-### [本月React动态 | TMiR 2025-10：会后特辑；React 19.2发布、React基金会成立、React Native淘汰旧架构。Next.js指令集过载问题引关注](https://share.transistor.fm/s/ad1a1c53)
+### [本月 React 动态 | TMiR 2025-10：会后特辑；React 19.2 发布、React 基金会成立、React Native 淘汰旧架构。Next.js 指令集过载问题引关注](https://share.transistor.fm/s/ad1a1c53)
 
 **原文标题**: [This Month in React | TMiR 2025-10: Post-conf; React 19.2, React Foundation, React Native removing old architecture. Next.js has too many directives](https://share.transistor.fm/s/ad1a1c53)
 
 该内容为播客平台的界面选项和功能列表，提供多种订阅与收听渠道。
 
-- 📱 支持苹果播客、Spotify等主流平台订阅
+- 📱 支持苹果播客、Spotify 等主流平台订阅
 - 🔗 提供分享、嵌入及复制链接功能
 - 🎧 包含预告片、附赠内容及完整文字稿
-- 🌐 支持多语言平台和地区性服务（如JioSaavn/Gaana）
+- 🌐 支持多语言平台和地区性服务（如 JioSaavn/Gaana）
 - ⏯️ 具备章节跳转和定点播放功能
 
 ---
@@ -664,10 +664,10 @@ Next SEO v7.0.0 是一个完全重写的版本，包含重大API变更，建议�
 
 **原文标题**: [No title found](https://x.com/grabbou/status/1829126194022715617)
 
-检测到浏览器中JavaScript功能未启用，建议启用JavaScript或更换受支持浏览器以正常使用X平台。受支持浏览器列表可查阅帮助中心，同时请检查是否因隐私扩展导致功能异常。
+检测到浏览器中 JavaScript 功能未启用，建议启用 JavaScript 或更换受支持浏览器以正常使用 X 平台。受支持浏览器列表可查阅帮助中心，同时请检查是否因隐私扩展导致功能异常。
 
-- 🚫 JavaScript未启用导致功能受限
-- 🌐 需启用JavaScript或更换受支持浏览器
+- 🚫 JavaScript 未启用导致功能受限
+- 🌐 需启用 JavaScript 或更换受支持浏览器
 - 📖 支持浏览器列表详见帮助中心
 - 🔧 隐私扩展可能引发问题需暂时禁用
 - 🔄 操作失败时可尝试重新加载页面
@@ -678,9 +678,9 @@ Next SEO v7.0.0 是一个完全重写的版本，包含重大API变更，建议�
 
 **原文标题**: [No title found](https://x.com/grabbou)
 
-检测到浏览器中JavaScript功能未启用，请启用JavaScript或切换至受支持的浏览器以继续使用x.com平台。相关解决方案可参考帮助中心，常见问题包括隐私扩展冲突等。
+检测到浏览器中 JavaScript 功能未启用，请启用 JavaScript 或切换至受支持的浏览器以继续使用 x.com 平台。相关解决方案可参考帮助中心，常见问题包括隐私扩展冲突等。
 
-- 🚫 JavaScript未启用导致功能受限
+- 🚫 JavaScript 未启用导致功能受限
 - 🌐 需切换支持浏览器或调整设置
 - 🔧 帮助中心提供兼容浏览器列表
 - 🛡️ 隐私扩展可能引发访问问题
@@ -688,11 +688,11 @@ Next SEO v7.0.0 是一个完全重写的版本，包含重大API变更，建议�
 
 ---
 
-### [1771科技：LyteNyte，同类最快的React数据网格](https://www.1771technologies.com/)
+### [1771 科技：LyteNyte，同类最快的 React 数据网格](https://www.1771technologies.com/)
 
 **原文标题**: [1771 Technologies: LyteNyte, Fastest in Class React Data Grid](https://www.1771technologies.com/)
 
-LyteNyte Grid是一款专为现代Web构建的最快React数据表格组件，具有无与伦比的性能、内存效率和丰富功能，同时保持极小的打包体积，旨在帮助企业实现卓越的数据展示效果。
+LyteNyte Grid 是一款专为现代 Web 构建的最快 React 数据表格组件，具有无与伦比的性能、内存效率和丰富功能，同时保持极小的打包体积，旨在帮助企业实现卓越的数据展示效果。
 
 - ⚡️ 极致性能：提供业界领先的渲染速度和内存效率
 - 🎛️ 核心功能：支持排序、筛选、列调整和移动等基础操作
@@ -707,24 +707,24 @@ LyteNyte Grid是一款专为现代Web构建的最快React数据表格组件，�
 
 ---
 
-### [定价 | 1771科技](https://www.1771technologies.com/pricing)
+### [定价 | 1771 科技](https://www.1771technologies.com/pricing)
 
 **原文标题**: [Pricing | 1771 Technologies](https://www.1771technologies.com/pricing)
 
-本文介绍了LyteNyte Grid的三种授权方案及其功能差异，包含核心版免费授权与两个专业版的付费授权选项，并详细说明了授权期限内的版本更新和技术支持权益。
+本文介绍了 LyteNyte Grid 的三种授权方案及其功能差异，包含核心版免费授权与两个专业版的付费授权选项，并详细说明了授权期限内的版本更新和技术支持权益。
 
-- 💰 核心版免费：适用于个人开发者及开源团队，采用Apache 2.0协议永久免费
-- 👥 开发者专业版：每年$399/席位，支持1-50人团队，含12个月技术支持和版本更新
-- 🏢 企业专业版：支持50人以上团队，需联系销售定制报价，提供更高级支持服务
-- ⏳ 授权期限：专业版用户在12个月授权期内可永久使用期间发布的所有版本
+- 💰 核心版免费：适用于个人开发者及开源团队，采用 Apache 2.0 协议永久免费
+- 👥 开发者专业版：每年$399/席位，支持 1-50 人团队，含 12 个月技术支持和版本更新
+- 🏢 企业专业版：支持 50 人以上团队，需联系销售定制报价，提供更高级支持服务
+- ⏳ 授权期限：专业版用户在 12 个月授权期内可永久使用期间发布的所有版本
 - 🔄 版本权益：授权到期后仍可继续使用授权期内获得的版本，但无法获取新版本
 - 🆓 基础功能：核心版仅包含基础网格功能，专业版提供树状数据、数据透视等高级功能
-- 📞 技术支持：专业版含24小时响应保障、私有支持通道及优先处理权限
+- 📞 技术支持：专业版含 24 小时响应保障、私有支持通道及优先处理权限
 - 🔄 续约机制：续订授权可继续获得新版本和技术支持服务
 
 ---
 
-### [GitHub - borndotcom/react-native-godot：React Native Godot - 在React Native应用中嵌入Godot引擎](https://github.com/borndotcom/react-native-godot)
+### [GitHub - borndotcom/react-native-godot：React Native Godot - 在 React Native 应用中嵌入 Godot 引擎](https://github.com/borndotcom/react-native-godot)
 
 **原文标题**: [GitHub - borndotcom/react-native-godot: React Native Godot - Embed Godot Engine in React Native apps](https://github.com/borndotcom/react-native-godot)
 
@@ -743,38 +743,38 @@ React Native Godot 是一个开源项目，允许在 React Native 应用中嵌�
 
 ---
 
-### [介绍Uniwind——React Native最快的Tailwind绑定库](https://www.reactnativecrossroads.com/posts/introducing-uniwind-the-fastest-tailwind-bindings-for-react-native)
+### [介绍 Uniwind——React Native 最快的 Tailwind 绑定库](https://www.reactnativecrossroads.com/posts/introducing-uniwind-the-fastest-tailwind-bindings-for-react-native)
 
 **原文标题**: [Introducing Uniwind - the fastest Tailwind bindings for React Native](https://www.reactnativecrossroads.com/posts/introducing-uniwind-the-fastest-tailwind-bindings-for-react-native)
 
-Uniwind是专为React Native设计的高性能Tailwind CSS绑定库，提供跨平台样式解决方案，具备卓越性能和丰富功能。
+Uniwind 是专为 React Native 设计的高性能 Tailwind CSS 绑定库，提供跨平台样式解决方案，具备卓越性能和丰富功能。
 
-- 🚀 性能提升：比Nativewind快2.5倍，提供更流畅的开发体验
+- 🚀 性能提升：比 Nativewind 快 2.5 倍，提供更流畅的开发体验
 - 🎨 主题支持：轻松配置多主题模式，支持自定义主题注册
-- 📱 跨平台兼容：完美适配Web/Android/iOS平台，实现样式统一
-- ⚡ 高效解析器：内置高性能CSS解析器，支持Tailwind 4语法和常规CSS文件
-- 🔄 自动绑定：为所有React Native组件自动生成className和样式属性映射
-- 🛠 开发工具：提供完整文档、迁移指南和metro插件配置支持
-- 🎯 生态合作：与HeroUI合作推出首个UI工具包，性能提升达250%
-- 💼 专业版本：即将推出Uniwind Pro版本，集成C++引擎和动画功能
-- 🔮 未来规划：将持续优化Unistyles，提升性能并增加Expo Go支持
+- 📱 跨平台兼容：完美适配 Web/Android/iOS 平台，实现样式统一
+- ⚡ 高效解析器：内置高性能 CSS 解析器，支持 Tailwind 4 语法和常规 CSS 文件
+- 🔄 自动绑定：为所有 React Native 组件自动生成 className 和样式属性映射
+- 🛠 开发工具：提供完整文档、迁移指南和 metro 插件配置支持
+- 🎯 生态合作：与 HeroUI 合作推出首个 UI 工具包，性能提升达 250%
+- 💼 专业版本：即将推出 Uniwind Pro 版本，集成 C++ 引擎和动画功能
+- 🔮 未来规划：将持续优化 Unistyles，提升性能并增加 Expo Go 支持
 
 ---
 
-### [使用Expo库开发Meta Quest：可行方案与局限](https://www.callstack.com/blog/using-expo-libraries-on-horizon-os-a-guide-to-compatibility?utm_campaign=meta&utm_source=TWIR&utm_medium=email&utm_content=using-expo-libraries-on-horizon-os-a-guide-to-compatibility)
+### [使用 Expo 库开发 Meta Quest：可行方案与局限](https://www.callstack.com/blog/using-expo-libraries-on-horizon-os-a-guide-to-compatibility?utm_campaign=meta&utm_source=TWIR&utm_medium=email&utm_content=using-expo-libraries-on-horizon-os-a-guide-to-compatibility)
 
 **原文标题**: [Using Expo Libraries for Meta Quest: What Works & What Doesn't](https://www.callstack.com/blog/using-expo-libraries-on-horizon-os-a-guide-to-compatibility?utm_campaign=meta&utm_source=TWIR&utm_medium=email&utm_content=using-expo-libraries-on-horizon-os-a-guide-to-compatibility)
 
-本文介绍了在Meta Horizon OS上使用Expo库的兼容性指南，涵盖可直接使用的库、需要调整配置的库以及不支持的库，并提供了具体替代方案和代码示例。
+本文介绍了在 Meta Horizon OS 上使用 Expo 库的兼容性指南，涵盖可直接使用的库、需要调整配置的库以及不支持的库，并提供了具体替代方案和代码示例。
 
-- 🎯 大多数Expo核心库（如文件系统、资源管理）可直接在Horizon OS运行
-- 🔧 需使用expo-horizon-core插件配置项目设置和权限
-- 💰 应用内支付需改用支持Meta结算系统的expo-iap库
-- 🔔 通知功能需使用专门适配的expo-horizon-notifications库
-- 📍 定位服务需使用expo-horizon-location（精度限于WiFi定位）
-- ❌ 不支持依赖Google服务的功能（如地图、Firebase）和手机硬件功能
-- 📐 需遵循VR特有的设计规范（点击目标、导航等）
-- 🔀 可通过isHorizonDevice()方法编写跨平台代码
+- 🎯 大多数 Expo 核心库（如文件系统、资源管理）可直接在 Horizon OS 运行
+- 🔧 需使用 expo-horizon-core 插件配置项目设置和权限
+- 💰 应用内支付需改用支持 Meta 结算系统的 expo-iap 库
+- 🔔 通知功能需使用专门适配的 expo-horizon-notifications 库
+- 📍 定位服务需使用 expo-horizon-location（精度限于 WiFi 定位）
+- ❌ 不支持依赖 Google 服务的功能（如地图、Firebase）和手机硬件功能
+- 📐 需遵循 VR 特有的设计规范（点击目标、导航等）
+- 🔀 可通过 isHorizonDevice() 方法编写跨平台代码
 
 ---
 
@@ -782,9 +782,9 @@ Uniwind是专为React Native设计的高性能Tailwind CSS绑定库，提供跨�
 
 **原文标题**: [No title found](https://x.com/grabbou/status/1985394290298683463)
 
-检测到浏览器中JavaScript功能未启用，请启用JavaScript或切换至受支持的浏览器以继续使用x.com平台。相关解决方案可参考帮助中心，常见问题包括隐私扩展冲突等。
+检测到浏览器中 JavaScript 功能未启用，请启用 JavaScript 或切换至受支持的浏览器以继续使用 x.com 平台。相关解决方案可参考帮助中心，常见问题包括隐私扩展冲突等。
 
-- 🚫 JavaScript未启用导致功能受限
+- 🚫 JavaScript 未启用导致功能受限
 - 🌐 需切换受支持浏览器或调整设置  
 - 🔧 隐私扩展可能引发访问异常
 - 📖 帮助中心提供详细解决方案
@@ -796,10 +796,10 @@ Uniwind是专为React Native设计的高性能Tailwind CSS绑定库，提供跨�
 
 **原文标题**: [No title found](https://x.com/tmikov/status/1984742735530831955)
 
-该页面提示浏览器未启用JavaScript功能，导致无法正常访问X平台内容，并提供了故障排除方案。
+该页面提示浏览器未启用 JavaScript 功能，导致无法正常访问 X 平台内容，并提供了故障排除方案。
 
-- 🌐 检测到浏览器已禁用JavaScript功能
-- ⚙️ 建议启用JavaScript或更换受支持浏览器
+- 🌐 检测到浏览器已禁用 JavaScript 功能
+- ⚙️ 建议启用 JavaScript 或更换受支持浏览器
 - 📚 支持浏览器列表可查阅帮助中心
 - 🛡️ 隐私扩展可能引发访问问题
 - 🔄 提供重新加载页面的操作选项
@@ -811,9 +811,9 @@ Uniwind是专为React Native设计的高性能Tailwind CSS绑定库，提供跨�
 
 **原文标题**: [No title found](https://x.com/tmikov/status/1985120423424708785)
 
-检测到浏览器中JavaScript功能未启用，请启用JavaScript或切换至受支持的浏览器以继续使用x.com平台。相关解决方案可查阅帮助中心，常见问题包括隐私扩展冲突等。
+检测到浏览器中 JavaScript 功能未启用，请启用 JavaScript 或切换至受支持的浏览器以继续使用 x.com 平台。相关解决方案可查阅帮助中心，常见问题包括隐私扩展冲突等。
 
-- 🚫 JavaScript未启用导致功能受限
+- 🚫 JavaScript 未启用导致功能受限
 - 🌐 需切换受支持浏览器或启用脚本
 - 📚 帮助中心提供浏览器兼容列表
 - 🔧 隐私扩展可能引发访问问题
@@ -825,9 +825,9 @@ Uniwind是专为React Native设计的高性能Tailwind CSS绑定库，提供跨�
 
 **原文标题**: [No title found](https://x.com/Baconbrix/status/1984788567579914394)
 
-检测到浏览器中JavaScript功能未启用，导致无法正常使用X平台服务。
+检测到浏览器中 JavaScript 功能未启用，导致无法正常使用 X 平台服务。
 
-- 🌐 请启用浏览器JavaScript功能或更换受支持浏览器
+- 🌐 请启用浏览器 JavaScript 功能或更换受支持浏览器
 - 📚 支持浏览器列表可在帮助中心查询
 - 🔧 隐私扩展可能导致异常，建议暂时禁用后重试
 - 🔄 遇到错误时可通过"重试"按钮重新加载
@@ -847,15 +847,15 @@ Uniwind是专为React Native设计的高性能Tailwind CSS绑定库，提供跨�
 
 **原文标题**: [CVE-2025-11953 Critical RCE in React Native CLI](https://jfrog.com/blog/CVE-2025-11953-critical-react-native-community-cli-vulnerability/)
 
-JFrog安全团队发现React Native开发工具包存在关键远程代码执行漏洞CVE-2025-11953，该漏洞允许未授权攻击者通过开发服务器执行任意系统命令，影响范围覆盖全球每周约200万次下载的React Native开发环境。
+JFrog 安全团队发现 React Native 开发工具包存在关键远程代码执行漏洞 CVE-2025-11953，该漏洞允许未授权攻击者通过开发服务器执行任意系统命令，影响范围覆盖全球每周约 200 万次下载的 React Native 开发环境。
 
-- 🚨 漏洞评级为CVSS 9.8分，影响@react-native-community/cli-server-api软件包4.8.0至20.0.0-alpha.2版本
-- 🌐 结合React Native核心代码的网络安全问题，开发服务器会默认暴露在所有网络接口
-- ⚡ 攻击者可通过向/open-url端点发送特制POST请求触发任意命令执行
-- 💻 Windows平台可实现完整命令执行，macOS/Linux平台存在受限代码执行风险
-- 🔧 修复方案：升级到@react-native-community/cli-server-api 20.0.0以上版本，或启动时添加--host 127.0.0.1参数
-- 📋 检测方式：通过npm list命令检查项目或全局环境是否包含受影响软件包
-- ⚠️ 使用Expo等替代开发框架或非Metro服务器的项目不受影响
+- 🚨 漏洞评级为 CVSS 9.8 分，影响@react-native-community/cli-server-api 软件包 4.8.0 至 20.0.0-alpha.2 版本
+- 🌐 结合 React Native 核心代码的网络安全问题，开发服务器会默认暴露在所有网络接口
+- ⚡ 攻击者可通过向/open-url 端点发送特制 POST 请求触发任意命令执行
+- 💻 Windows 平台可实现完整命令执行，macOS/Linux 平台存在受限代码执行风险
+- 🔧 修复方案：升级到@react-native-community/cli-server-api 20.0.0 以上版本，或启动时添加--host 127.0.0.1 参数
+- 📋 检测方式：通过 npm list 命令检查项目或全局环境是否包含受影响软件包
+- ⚠️ 使用 Expo 等替代开发框架或非 Metro 服务器的项目不受影响
 
 ---
 
@@ -863,22 +863,22 @@ JFrog安全团队发现React Native开发工具包存在关键远程代码执行
 
 **原文标题**: [Shared Element Transition on the New Architecture (feature flag) by bartlomiejbloniarz · Pull Request #7466 · software-mansion/react-native-reanimated · GitHub](https://github.com/software-mansion/react-native-reanimated/pull/7466)
 
-该PR在实验性功能标志下为React Native Reanimated库重新引入了共享元素过渡功能，目前存在平台兼容性和性能限制，社区反馈积极。
+该 PR 在实验性功能标志下为 React Native Reanimated 库重新引入了共享元素过渡功能，目前存在平台兼容性和性能限制，社区反馈积极。
 
 - 🔄 **功能回归** - 在新架构中恢复共享元素过渡功能，目前处于功能标志保护下的有限范围
-- ⚠️ **iOS限制** - 原生模态框动画无法正常工作，模态框会覆盖在共享元素上方
+- ⚠️ **iOS 限制** - 原生模态框动画无法正常工作，模态框会覆盖在共享元素上方
 - 📱 **进度过渡** - 暂不支持自定义进度过渡（滑动返回），当前为硬编码实现
 - 🎯 **属性支持** - 进度过渡动画支持的属性比基础过渡少
-- 📏 **布局问题** - iOS端仍存在标题栏高度相关的显示问题
+- 📏 **布局问题** - iOS 端仍存在标题栏高度相关的显示问题
 - ⚡ **性能瓶颈** - 变换计算过于频繁导致性能问题，需优化过渡启动识别机制
-- 🔧 **依赖修复** - 使用rnscreens的临时解决方案来避免过渡视图快照问题
-- 🎉 **社区反响** - 获得大量积极反馈（58个赞、51个火箭、46个庆祝等表情反应）
-- 🧪 **测试示例** - 提供fabric-example应用供开发者测试功能
-- 📝 **持续开发** - 包含95次提交，涉及动画逻辑、滚动偏移、布局动画等多个方面的改进
+- 🔧 **依赖修复** - 使用 rnscreens 的临时解决方案来避免过渡视图快照问题
+- 🎉 **社区反响** - 获得大量积极反馈（58 个赞、51 个火箭、46 个庆祝等表情反应）
+- 🧪 **测试示例** - 提供 fabric-example 应用供开发者测试功能
+- 📝 **持续开发** - 包含 95 次提交，涉及动画逻辑、滚动偏移、布局动画等多个方面的改进
 
 ---
 
-### [功能(expo-router): 在静态导出模式下增加对服务器数据加载器的支持，由hassankhan提交 · Pull Request #40130 · expo/expo · GitHub](https://github.com/expo/expo/pull/40130)
+### [功能 (expo-router): 在静态导出模式下增加对服务器数据加载器的支持，由 hassankhan 提交 · Pull Request #40130 · expo/expo · GitHub](https://github.com/expo/expo/pull/40130)
 
 **原文标题**: [feat(expo-router): add support for server data loaders in static export mode by hassankhan · Pull Request #40130 · expo/expo · GitHub](https://github.com/expo/expo/pull/40130)
 
@@ -893,33 +893,33 @@ Expo Router 在静态导出模式下新增了对服务器数据加载器的支�
 
 ---
 
-### [在iOS上实现缺失的CSS滤镜 · Issue #927 · react-native-community/discussions-and-proposals · GitHub](https://github.com/react-native-community/discussions-and-proposals/issues/927)
+### [在 iOS 上实现缺失的 CSS 滤镜 · Issue #927 · react-native-community/discussions-and-proposals · GitHub](https://github.com/react-native-community/discussions-and-proposals/issues/927)
 
 **原文标题**: [Implementing missing CSS filters on iOS · Issue #927 · react-native-community/discussions-and-proposals · GitHub](https://github.com/react-native-community/discussions-and-proposals/issues/927)
 
-React Native社区讨论在iOS平台上实现缺失的CSS滤镜功能的方案
+React Native 社区讨论在 iOS 平台上实现缺失的 CSS 滤镜功能的方案
 
-- 🎯 当前React Native的CSS滤镜在Android支持模糊/对比度等10种效果，而iOS仅支持亮度和透明度
-- ⚠️ 方案一采用CAFilter私有API：存在应用商店审核拒绝风险，仅建议第三方库使用
-- ✅ 方案二使用SwiftUI公共API：支持7种基础滤镜且无审核风险，但实现复杂度较高
-- 🖼️ CIFilter方案被排除：仅适用于静态图片，不适用于动态视图
+- 🎯 当前 React Native 的 CSS 滤镜在 Android 支持模糊/对比度等 10 种效果，而 iOS 仅支持亮度和透明度
+- ⚠️ 方案一采用 CAFilter 私有 API：存在应用商店审核拒绝风险，仅建议第三方库使用
+- ✅ 方案二使用 SwiftUI 公共 API：支持 7 种基础滤镜且无审核风险，但实现复杂度较高
+- 🖼️ CIFilter 方案被排除：仅适用于静态图片，不适用于动态视图
 - 🔄 社区正在PR#52495中讨论SwiftUI方案的具体实现，寻求改进建议
-- 💡 需要解决sepia/invert/dropShadow等缺失滤镜的兼容性问题
+- 💡 需要解决 sepia/invert/dropShadow 等缺失滤镜的兼容性问题
 
 ---
 
-### [feat(iOS): 由intergalacticspacehighway实现的background-size、position和repeat样式 · Pull Request #52283 · facebook/react-native · GitHub](https://github.com/facebook/react-native/pull/52283)
+### [feat(iOS): 由 intergalacticspacehighway 实现的 background-size、position 和 repeat 样式 · Pull Request #52283 · facebook/react-native · GitHub](https://github.com/facebook/react-native/pull/52283)
 
 **原文标题**: [feat(iOS): background-size, position and repeat styles by intergalacticspacehighway · Pull Request #52283 · facebook/react-native · GitHub](https://github.com/facebook/react-native/pull/52283)
 
-React Native iOS平台新增背景样式支持，包括背景尺寸、位置和重复模式的CSS规范实现。
+React Native iOS 平台新增背景样式支持，包括背景尺寸、位置和重复模式的 CSS 规范实现。
 
-- 🎨 新增iOS平台背景样式支持：背景尺寸(background-size)、位置(background-position)和重复模式(background-repeat)
-- 📱 遵循CSS规范实现，默认采用background-origin: padding-box和background-clip: border-box以匹配Web行为
-- 🔧 包含9个提交，涉及640行代码新增和12行代码修改
-- ✅ 已通过代码审查并合并到主分支，包含完整的测试方案和RNTester示例
-- 🐛 修复了浮点精度问题和空间重复算法，确保与CSS规范完全匹配
-- 🤝 与JS端和Android端的相关PR同步开发，构成完整的跨平台背景样式功能
+- 🎨 新增 iOS 平台背景样式支持：背景尺寸 (background-size)、位置 (background-position) 和重复模式 (background-repeat)
+- 📱 遵循 CSS 规范实现，默认采用 background-origin: padding-box 和 background-clip: border-box 以匹配 Web 行为
+- 🔧 包含 9 个提交，涉及 640 行代码新增和 12 行代码修改
+- ✅ 已通过代码审查并合并到主分支，包含完整的测试方案和 RNTester 示例
+- 🐛 修复了浮点精度问题和空间重复算法，确保与 CSS 规范完全匹配
+- 🤝 与 JS 端和 Android 端的相关 PR 同步开发，构成完整的跨平台背景样式功能
 
 ---
 
@@ -927,14 +927,14 @@ React Native iOS平台新增背景样式支持，包括背景尺寸、位置和�
 
 **原文标题**: [State of React Native 2025 Preview / Call for Questions · software-mansion/state-of-react-native · Discussion #11 · GitHub](https://github.com/software-mansion/state-of-react-native/discussions/11)
 
-Software Mansion正在筹备2025年React Native现状调查，现公开征集问题建议，旨在优化调查内容并减少重复性问题。
+Software Mansion 正在筹备 2025 年 React Native 现状调查，现公开征集问题建议，旨在优化调查内容并减少重复性问题。
 
-- 📋 正在准备启动2025年React Native现状调查
+- 📋 正在准备启动 2025 年 React Native 现状调查
 - 💡 公开征集问题修改建议和新问题提案
 - ✂️ 计划精简调查内容：移除小众工具和重复章节
 - 🆕 新增目标平台选项：Vega OS、HarmonyOS、车机系统
-- 🤖 新增平台API章节：设备端AI和语音识别功能
-- 📊 调整版本选项：更新React Native支持版本范围
+- 🤖 新增平台 API 章节：设备端 AI 和语音识别功能
+- 📊 调整版本选项：更新 React Native 支持版本范围
 - 🏗️ 新增架构迁移状态调查：新架构采用情况
 - 🔄 合并测试与监控问题为多选题目
 - 🗑️ 移除已淘汰工具：Flipper、传统调试工具等
@@ -942,18 +942,18 @@ Software Mansion正在筹备2025年React Native现状调查，现公开征集问
 
 ---
 
-### [RFC：由hurali97提出的Android棕地API标准化 · 拉取请求 #953 · React Native社区讨论与提案 · GitHub](https://github.com/react-native-community/discussions-and-proposals/pull/953)
+### [RFC：由 hurali97 提出的 Android 棕地 API 标准化 · 拉取请求 #953 · React Native 社区讨论与提案 · GitHub](https://github.com/react-native-community/discussions-and-proposals/pull/953)
 
 **原文标题**: [RFC: standardize brownfield API for Android by hurali97 · Pull Request #953 · react-native-community/discussions-and-proposals · GitHub](https://github.com/react-native-community/discussions-and-proposals/pull/953)
 
-该提案旨在为React Native在Android平台上制定标准化的混合开发集成API，以改进现有原生与React Native混合项目的协作方式。
+该提案旨在为 React Native 在 Android 平台上制定标准化的混合开发集成 API，以改进现有原生与 React Native 混合项目的协作方式。
 
-- 📱 提出Android平台React Native混合开发标准化API方案
-- 🔄 解决现有混合项目中原生代码与React Native的集成痛点
-- 📋 通过RFC（征求意见稿）流程进行社区讨论和提案
-- 🤝 来自社区贡献者hurali97的拉取请求
-- 🎯 目标是为Android混合开发建立统一接口标准
-- 📅 提案于2025年11月4日提交至react-native-community仓库
+- 📱 提出 Android 平台 React Native 混合开发标准化 API 方案
+- 🔄 解决现有混合项目中原生代码与 React Native 的集成痛点
+- 📋 通过 RFC（征求意见稿）流程进行社区讨论和提案
+- 🤝 来自社区贡献者 hurali97 的拉取请求
+- 🎯 目标是为 Android 混合开发建立统一接口标准
+- 📅 提案于 2025 年 11 月 4 日提交至 react-native-community 仓库
 
 ---
 
@@ -961,15 +961,15 @@ Software Mansion正在筹备2025年React Native现状调查，现公开征集问
 
 **原文标题**: [Release React Native Windows 0.80.0 · microsoft/react-native-windows · GitHub](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.80.0)
 
-React Native Windows 0.80.0版本发布，主要针对React Native 0.80.0，包含2025年6月1日至7月31日的更新。新架构默认启用，建议尽快迁移以获得性能提升和长期支持。修复了可靠性问题，增强了无障碍功能，并实现了多项新架构特性。
+React Native Windows 0.80.0 版本发布，主要针对 React Native 0.80.0，包含 2025 年 6 月 1 日至 7 月 31 日的更新。新架构默认启用，建议尽快迁移以获得性能提升和长期支持。修复了可靠性问题，增强了无障碍功能，并实现了多项新架构特性。
 
 - 🚀 新架构默认启用，建议迁移至新架构以获得性能改进和长期支持
-- 🔧 修复了Text组件的adjustsFontSizeToFit属性问题，改进了TextInput的占位符颜色和焦点状态
-- ♿ 增强了无障碍功能，包括为Image、TextInput和Button组件添加了aria属性支持
-- 📜 实现了ScrollView的snapToStart、snapToEnd、snapToOffsets等属性，以及TextInput的onPressOut、scrollEnabled等新功能
-- 🎯 新增Modal组件以替代Flyout和Popup，支持onDismiss、onShow和visible属性
-- 📊 核心组件在新架构中的功能覆盖率普遍达到92%以上，View、ActivityIndicator和Image已实现完全功能对等
-- ⚠️ 已知问题包括移动窗口时Modal可能导致应用崩溃，建议在Modal打开时避免移动主窗口
+- 🔧 修复了 Text 组件的 adjustsFontSizeToFit 属性问题，改进了 TextInput 的占位符颜色和焦点状态
+- ♿ 增强了无障碍功能，包括为 Image、TextInput 和 Button 组件添加了 aria 属性支持
+- 📜 实现了 ScrollView 的 snapToStart、snapToEnd、snapToOffsets 等属性，以及 TextInput 的 onPressOut、scrollEnabled 等新功能
+- 🎯 新增 Modal 组件以替代 Flyout 和 Popup，支持 onDismiss、onShow 和 visible 属性
+- 📊 核心组件在新架构中的功能覆盖率普遍达到 92% 以上，View、ActivityIndicator 和 Image 已实现完全功能对等
+- ⚠️ 已知问题包括移动窗口时 Modal 可能导致应用崩溃，建议在 Modal 打开时避免移动主窗口
 
 ---
 
@@ -977,13 +977,13 @@ React Native Windows 0.80.0版本发布，主要针对React Native 0.80.0，包�
 
 **原文标题**: [Release v2.2.0 · Shopify/flash-list · GitHub](https://github.com/Shopify/flash-list/releases/tag/v2.2.0)
 
-Shopify开源项目flash-list发布v2.2.0版本更新，主要新增粘性头部配置功能并优化iOS测试流程。
+Shopify 开源项目 flash-list 发布 v2.2.0 版本更新，主要新增粘性头部配置功能并优化 iOS 测试流程。
 
 - 🎯 新增粘性头部配置功能，支持偏移量设置、背景效果、原生驱动及单元格隐藏
-- 🧪 在持续集成中启用iOS端到端测试流程
-- 👥 迎来新贡献者@alexrass的首次代码提交
-- 📝 完整版本变更记录可查看v2.1.0到v2.2.0的代码差异
-- 👍 获得4位社区用户的积极反馈
+- 🧪 在持续集成中启用 iOS 端到端测试流程
+- 👥 迎来新贡献者@alexrass 的首次代码提交
+- 📝 完整版本变更记录可查看 v2.1.0 到 v2.2.0 的代码差异
+- 👍 获得 4 位社区用户的积极反馈
 
 ---
 
@@ -991,13 +991,13 @@ Shopify开源项目flash-list发布v2.2.0版本更新，主要新增粘性头部
 
 **原文标题**: [Release v20.45.0 · wix/Detox · GitHub](https://github.com/wix/Detox/releases/tag/20.45.0)
 
-Detox测试框架发布20.45.0版本更新，主要针对iOS和Android平台进行功能优化与兼容性改进
+Detox 测试框架发布 20.45.0 版本更新，主要针对 iOS 和 Android 平台进行功能优化与兼容性改进
 
-- 🍎 iOS 18兼容性支持 - 确保框架在最新iOS系统稳定运行
-- 🦅 Swift语言支持 - 扩展iOS端开发语言兼容性
-- 🤖 Android依赖解析优化 - 适配React Native 77版本依赖管理
-- 👥 双贡献者协作 - 由markdevocht和gosha212共同完成本次更新
-- 📝 完整更新日志 - 包含从20.44.0到20.45.0的所有变更记录
+- 🍎 iOS 18 兼容性支持 - 确保框架在最新 iOS 系统稳定运行
+- 🦅 Swift 语言支持 - 扩展 iOS 端开发语言兼容性
+- 🤖 Android 依赖解析优化 - 适配 React Native 77 版本依赖管理
+- 👥 双贡献者协作 - 由 markdevocht 和 gosha212 共同完成本次更新
+- 📝 完整更新日志 - 包含从 20.44.0 到 20.45.0 的所有变更记录
 
 ---
 
@@ -1005,15 +1005,15 @@ Detox测试框架发布20.45.0版本更新，主要针对iOS和Android平台进�
 
 **原文标题**: [feat(🌎): React Native Web support (#273) · wcandillon/react-native-webgpu@578ad98 · GitHub](https://github.com/wcandillon/react-native-webgpu/commit/578ad989b4326724702b14245d5c82622849ee23)
 
-该项目为React Native WebGPU库添加了Web平台支持，实现了跨平台GPU计算功能。
+该项目为 React Native WebGPU 库添加了 Web 平台支持，实现了跨平台 GPU 计算功能。
 
-- 🌐 新增React Native Web支持，扩展了跨平台兼容性
-- 📱 配置了Web平台的Metro打包配置和HTML模板
-- 🎨 集成CanvasKit和Three.js用于图形渲染
-- 🔧 添加CORS代理解决Web端跨域资源访问问题
+- 🌐 新增 React Native Web 支持，扩展了跨平台兼容性
+- 📱 配置了 Web 平台的 Metro 打包配置和 HTML 模板
+- 🎨 集成 CanvasKit 和 Three.js 用于图形渲染
+- 🔧 添加 CORS 代理解决 Web 端跨域资源访问问题
 - 📦 更新依赖版本并优化项目结构
-- 🖥️ 支持在Web浏览器中运行GPU计算示例
-- 🎯 保持与原生平台一致的API接口
+- 🖥️ 支持在 Web 浏览器中运行 GPU 计算示例
+- 🎯 保持与原生平台一致的 API 接口
 
 ---
 
@@ -1021,33 +1021,33 @@ Detox测试框架发布20.45.0版本更新，主要针对iOS和Android平台进�
 
 **原文标题**: [Release v0.8.0 · software-mansion/TypeGPU · GitHub](https://github.com/software-mansion/TypeGPU/releases/tag/v0.8.0)
 
-TypeGPU 0.8版本发布，主要包含GPU调试功能增强、着色器函数简化、纹理API重构以及多个新功能添加和错误修复。
+TypeGPU 0.8 版本发布，主要包含 GPU 调试功能增强、着色器函数简化、纹理 API 重构以及多个新功能添加和错误修复。
 
-- 🐛 GPU端新增console.log功能，便于调试着色器代码
+- 🐛 GPU 端新增 console.log 功能，便于调试着色器代码
 - 🎯 简化着色器函数语法，使用'use gpu'替代原有指令
-- 🖼️ 全面改进纹理API，支持自动生成mipmap
+- 🖼️ 全面改进纹理 API，支持自动生成 mipmap
 - ➕ 新增乘方运算符**和位转换功能
 - 🛠️ 添加多个示例项目（水母滑块、粘菌模拟等）
-- 📚 完善文档体系，包含迁移指南和API说明
+- 📚 完善文档体系，包含迁移指南和 API 说明
 - 🔧 修复指针处理、类型推断等多项稳定性问题
-- 📦 同步发布typegpu及相关插件v0.8.0版本
+- 📦 同步发布 typegpu 及相关插件 v0.8.0 版本
 
 ---
 
-### [GitHub - JiriHoffmann/react-native-clusterer: 基于C++ Supercluster实现的React Native聚类库](https://github.com/JiriHoffmann/react-native-clusterer)
+### [GitHub - JiriHoffmann/react-native-clusterer: 基于 C++ Supercluster 实现的 React Native 聚类库](https://github.com/JiriHoffmann/react-native-clusterer)
 
 **原文标题**: [GitHub - JiriHoffmann/react-native-clusterer: React Native clustering library using C++ Supercluster implementation](https://github.com/JiriHoffmann/react-native-clusterer)
 
-这是一个React Native点聚合库，使用C++实现的Supercluster算法和JSI绑定，相比JavaScript版本初始点加载速度提升高达10倍。
+这是一个 React Native 点聚合库，使用 C++ 实现的 Supercluster 算法和 JSI 绑定，相比 JavaScript 版本初始点加载速度提升高达 10 倍。
 
-- 🚀 基于C++ Supercluster实现的高性能React Native点聚合库
-- ⚡ 通过JSI绑定实现比JavaScript版本快10倍的初始加载速度
-- 📦 提供三种使用方式：useClusterer钩子、Clusterer组件和Supercluster类
+- 🚀 基于 C++ Supercluster 实现的高性能 React Native 点聚合库
+- ⚡ 通过 JSI 绑定实现比 JavaScript 版本快 10 倍的初始加载速度
+- 📦 提供三种使用方式：useClusterer 钩子、Clusterer 组件和 Supercluster 类
 - 🗺️ 支持地图聚类、集群展开、分页获取等功能
 - 🔧 可配置聚类参数：最小/最大缩放级别、最小点数、聚类半径等
 - 📱 包含完整的示例项目和性能对比
-- 📄 采用MIT开源许可证
-- 🛠️ 支持TypeScript，提供类型检查和工具方法
+- 📄 采用 MIT 开源许可证
+- 🛠️ 支持 TypeScript，提供类型检查和工具方法
 
 ---
 
@@ -1080,18 +1080,18 @@ React Native 应用引导流程开发难题的解决方案——react-native-onb
 
 **原文标题**: [React Native for Vega: Recreating Apple & Google Photos in RN - Part 3 | Software Mansion](https://blog.swmansion.com/react-native-for-vega-recreating-apple-google-photos-in-rn-part-3-f015e9272aed?gi=ba237de7f6e7)
 
-本文介绍了如何在亚马逊Vega平台上使用React Native开发多平台照片库应用，重点讲解了Vega平台特性、开发流程和跨平台集成方案。
+本文介绍了如何在亚马逊 Vega 平台上使用 React Native 开发多平台照片库应用，重点讲解了 Vega 平台特性、开发流程和跨平台集成方案。
 
-- 🚀 Vega平台基于React Native 0.72，采用新架构并集成在操作系统层面，能显著减小应用体积
-- 📱 支持为Echo系列设备和Fire TV等亚马逊新一代设备开发应用
-- 🛠️ 开发工具包含Vega Studio、CLI和虚拟设备模拟器等完整套件
-- 📝 必须通过manifest.toml文件配置应用元数据和系统能力要求
-- 🔧 采用Bare Workflow开发模式，需要手动配置Metro和Babel
+- 🚀 Vega 平台基于 React Native 0.72，采用新架构并集成在操作系统层面，能显著减小应用体积
+- 📱 支持为 Echo 系列设备和 Fire TV 等亚马逊新一代设备开发应用
+- 🛠️ 开发工具包含 Vega Studio、CLI 和虚拟设备模拟器等完整套件
+- 📝 必须通过 manifest.toml 文件配置应用元数据和系统能力要求
+- 🔧 采用 Bare Workflow 开发模式，需要手动配置 Metro 和 Babel
 - 🎯 独特的焦点管理系统支持遥控器和语音导航功能
-- 📦 应用需打包成.vpkg格式并通过专用命令安装到设备
-- 🔄 通过monorepo结构和.kpl扩展名实现跨平台代码管理
-- ⚡ 对不兼容库（如expo-media-library）提供了替代解决方案
-- 📁 采用沙盒文件系统，资源文件需打包至/pkg/assets目录
+- 📦 应用需打包成.vpkg 格式并通过专用命令安装到设备
+- 🔄 通过 monorepo 结构和.kpl 扩展名实现跨平台代码管理
+- ⚡ 对不兼容库（如 expo-media-library）提供了替代解决方案
+- 📁 采用沙盒文件系统，资源文件需打包至/pkg/assets 目录
 
 ---
 
@@ -1103,11 +1103,11 @@ React Native 应用引导流程开发难题的解决方案——react-native-onb
 
 ---
 
-### [使用Expo模块构建MIDI-over-Bluetooth应用](https://expo.dev/blog/building-a-midi-over-bluetooth-app-using-expo-modules)
+### [使用 Expo 模块构建 MIDI-over-Bluetooth 应用](https://expo.dev/blog/building-a-midi-over-bluetooth-app-using-expo-modules)
 
 **原文标题**: [Building a MIDI-over-Bluetooth app using Expo Modules](https://expo.dev/blog/building-a-midi-over-bluetooth-app-using-expo-modules)
 
-Expo平台导航与资源概览
+Expo 平台导航与资源概览
 - 📚 文档中心
 - 🚀 产品服务
 - 💼 企业方案
@@ -1121,11 +1121,11 @@ Expo平台导航与资源概览
 
 ---
 
-### [使用Swift构建React Native TurboModules - 事件发射 - YouTube](https://www.youtube.com/watch?v=WArl-7O6e0w)
+### [使用 Swift 构建 React Native TurboModules - 事件发射 - YouTube](https://www.youtube.com/watch?v=WArl-7O6e0w)
 
 **原文标题**: [Building React Native TurboModules with Swift - Event Emitting - YouTube](https://www.youtube.com/watch?v=WArl-7O6e0w)
 
-这是YouTube网站页脚导航链接的概述。
+这是 YouTube 网站页脚导航链接的概述。
 
 - ℹ️ 关于平台的基本信息
 - 📰 官方新闻与公告
@@ -1133,21 +1133,21 @@ Expo平台导航与资源概览
 - 📞 联系方式
 - 🎬 内容创作者资源
 - 💼 广告合作机会
-- 💻 开发者工具与API
+- 💻 开发者工具与 API
 - 📑 服务条款说明
 - 🔒 隐私政策保护
 - ⚖️ 平台政策与安全指南
-- 🔧 YouTube运作机制
+- 🔧 YouTube 运作机制
 - 🧪 新功能测试体验
-- ⏰ 2025年谷歌版权所有
+- ⏰ 2025 年谷歌版权所有
 
 ---
 
-### [如何优化Expo应用性能 | Expo应用开发最佳实践 - YouTube](https://www.youtube.com/watch?v=vFbim_U1Lmc)
+### [如何优化 Expo 应用性能 | Expo 应用开发最佳实践 - YouTube](https://www.youtube.com/watch?v=vFbim_U1Lmc)
 
 **原文标题**: [How to make Expo apps faster | Expo app development best practices - YouTube](https://www.youtube.com/watch?v=vFbim_U1Lmc)
 
-这是YouTube网站页脚导航链接的概述
+这是 YouTube 网站页脚导航链接的概述
 
 - ℹ️ 关于平台的基本信息
 - 📢 媒体与新闻发布相关内容
@@ -1155,21 +1155,21 @@ Expo平台导航与资源概览
 - 📞 用户联系渠道
 - 🎬 内容创作者资源
 - 💼 广告合作与商业机会
-- 👨‍💻 开发者工具与API
+- 👨‍💻 开发者工具与 API
 - 📜 服务条款与使用协议
 - 🔒 隐私保护政策
 - ⚖️ 平台政策与安全指南
 - 🔧 平台运作机制说明
 - 🧪 新功能测试信息
-- 🏢 2025年谷歌公司版权所有声明
+- 🏢 2025 年谷歌公司版权所有声明
 
 ---
 
-### [如何使用Expo Router和React Native Skia创建流动标签页 - YouTube](https://www.youtube.com/watch?v=AJA4Crbd0cI)
+### [如何使用 Expo Router 和 React Native Skia 创建流动标签页 - YouTube](https://www.youtube.com/watch?v=AJA4Crbd0cI)
 
 **原文标题**: [How to Create Liquid Tabs with Expo Router and React Native Skia - YouTube](https://www.youtube.com/watch?v=AJA4Crbd0cI)
 
-这是YouTube网站页脚导航链接的概述，包含平台各项服务条款与功能说明。
+这是 YouTube 网站页脚导航链接的概述，包含平台各项服务条款与功能说明。
 
 - 📋 关于平台的基本信息和公司介绍
 - 📰 媒体联系与新闻发布相关渠道  
@@ -1177,13 +1177,13 @@ Expo平台导航与资源概览
 - 📞 用户联系与客服沟通方式
 - 🎬 内容创作者专属资源与支持
 - 💼 广告投放与商业合作服务
-- ⚙️ 开发者工具与API接口文档
+- ⚙️ 开发者工具与 API 接口文档
 - 📜 平台使用条款与服务协议
 - 🔒 用户隐私保护与数据安全政策
 - 🛡️ 社区准则与安全防护措施
 - 🔧 平台运行机制与技术原理说明
 - 🧪 新功能测试与用户体验优化
-- 🏢 2025年谷歌有限责任公司版权所有声明
+- 🏢 2025 年谷歌有限责任公司版权所有声明
 
 ---
 
@@ -1191,7 +1191,7 @@ Expo平台导航与资源概览
 
 **原文标题**: [SwiftUI In Your Expo App | React Native Mornings | Ep. 5 - YouTube](https://www.youtube.com/watch?v=7HdwnDmfY90)
 
-这是YouTube网站页脚导航链接的概述，包含平台各项服务条款与功能说明。
+这是 YouTube 网站页脚导航链接的概述，包含平台各项服务条款与功能说明。
 
 - 📄 关于平台基本信息
 - 📢 媒体与新闻发布
@@ -1209,7 +1209,7 @@ Expo平台导航与资源概览
 
 ---
 
-### [火箭飞船 | 084 - 世博会MCP、MMKV、Godot游戏与React Native包混淆](https://share.transistor.fm/s/247578d7?utm_source=convertkit&utm_medium=email&utm_campaign=New%20podcast,%20AI-native%20dev,%20Godot%20games%20&%20Flutter%20in%20Expo?%20%F0%9F%8E%AE%20-%2019581248)
+### [火箭飞船 | 084 - 世博会 MCP、MMKV、Godot 游戏与 React Native 包混淆](https://share.transistor.fm/s/247578d7?utm_source=convertkit&utm_medium=email&utm_campaign=New%20podcast,%20AI-native%20dev,%20Godot%20games%20&%20Flutter%20in%20Expo?%20%F0%9F%8E%AE%20-%2019581248)
 
 **原文标题**: [Rocket Ship | 084 - Expo MCP, MMKV, Godot Games & React Native Package Confusion](https://share.transistor.fm/s/247578d7?utm_source=convertkit&utm_medium=email&utm_campaign=New%20podcast,%20AI-native%20dev,%20Godot%20games%20&%20Flutter%20in%20Expo?%20%F0%9F%8E%AE%20-%2019581248)
 
@@ -1227,31 +1227,31 @@ Expo平台导航与资源概览
 
 **原文标题**: [Node.js — Node.js v22 to v24](https://nodejs.org/en/blog/migrations/v22-to-v24)
 
-本文介绍了从Node.js v22迁移到v24的部分内容，用户态迁移团队正在开发更多代码修改工具以协助迁移。Node.js 24.11.0版本已进入长期支持阶段，支持将持续到2028年4月。迁移时需注意平台支持变更、OpenSSL 3.5的安全升级、行为变化及C++插件的适配要求。
+本文介绍了从 Node.js v22 迁移到 v24 的部分内容，用户态迁移团队正在开发更多代码修改工具以协助迁移。Node.js 24.11.0 版本已进入长期支持阶段，支持将持续到 2028 年 4 月。迁移时需注意平台支持变更、OpenSSL 3.5 的安全升级、行为变化及 C++ 插件的适配要求。
 
-- 🚫 停止支持32位Windows和Linux armv7预构建版本
-- 🍎 macOS预构建二进制文件要求最低版本13.5
-- 🔐 OpenSSL 3.5默认安全级别提升至2，禁用弱密钥和RC4密码
-- ⚠️ 行为变更包括更严格的fetch规范、流错误处理和路径修复
-- 🔧 C++插件需适配V8 13.6并建议优先使用NODE-API
-- 🛠️ 源码编译需gcc 12.2或Xcode 16.1以上版本
-- 🔄 提供6个自动化代码修改工具处理废弃API迁移
-- 📅 长期支持周期持续至2028年4月
+- 🚫 停止支持 32 位 Windows 和 Linux armv7 预构建版本
+- 🍎 macOS 预构建二进制文件要求最低版本 13.5
+- 🔐 OpenSSL 3.5 默认安全级别提升至 2，禁用弱密钥和 RC4 密码
+- ⚠️ 行为变更包括更严格的 fetch 规范、流错误处理和路径修复
+- 🔧 C++ 插件需适配 V8 13.6 并建议优先使用 NODE-API
+- 🛠️ 源码编译需 gcc 12.2 或 Xcode 16.1 以上版本
+- 🔄 提供 6 个自动化代码修改工具处理废弃 API 迁移
+- 📅 长期支持周期持续至 2028 年 4 月
 
 ---
 
-### [setHTML()、可信类型与清理器API](https://olliewilliams.xyz/blog/sanitizer/)
+### [setHTML()、可信类型与清理器 API](https://olliewilliams.xyz/blog/sanitizer/)
 
 **原文标题**: [setHTML(), Trusted Types and the Sanitizer API](https://olliewilliams.xyz/blog/sanitizer/)
 
-本文介绍了setHTML()方法、可信类型API和清理器API，这些技术共同致力于防止跨站脚本攻击（XSS）。setHTML()可安全插入HTML到DOM中，默认过滤危险元素和属性；清理器API允许自定义过滤规则；可信类型API通过内容安全策略强制使用安全内容。
+本文介绍了 setHTML() 方法、可信类型 API 和清理器 API，这些技术共同致力于防止跨站脚本攻击（XSS）。setHTML() 可安全插入 HTML 到 DOM 中，默认过滤危险元素和属性；清理器 API 允许自定义过滤规则；可信类型 API 通过内容安全策略强制使用安全内容。
 
-- 🛡️ setHTML()方法能自动过滤脚本、内联事件处理器等危险内容，提供默认安全配置
-- ⚙️ 清理器API支持白名单和黑名单两种配置模式，可精细控制允许保留的HTML元素和属性
-- 🔒 可信类型API通过CSP头启用，强制要求使用TrustedHTML对象而非原始字符串操作DOM
-- 🔄 两种API互补：清理器API提供安全构建DOM的方法，可信类型API确保只能使用经过清理的内容
-- 📋 推荐优先使用setHTML()和Document.parseHTML()等安全方法，避免直接使用innerHTML等不安全接口
-- 🌐 当前浏览器支持情况：Firefox Nightly和Chrome Canary已支持最新规范，Safari持积极态度但未开始实现
+- 🛡️ setHTML() 方法能自动过滤脚本、内联事件处理器等危险内容，提供默认安全配置
+- ⚙️ 清理器 API 支持白名单和黑名单两种配置模式，可精细控制允许保留的 HTML 元素和属性
+- 🔒 可信类型 API 通过 CSP 头启用，强制要求使用 TrustedHTML 对象而非原始字符串操作 DOM
+- 🔄 两种 API 互补：清理器 API 提供安全构建 DOM 的方法，可信类型 API 确保只能使用经过清理的内容
+- 📋 推荐优先使用 setHTML() 和 Document.parseHTML() 等安全方法，避免直接使用 innerHTML 等不安全接口
+- 🌐 当前浏览器支持情况：Firefox Nightly 和 Chrome Canary 已支持最新规范，Safari 持积极态度但未开始实现
 
 ---
 
@@ -1259,9 +1259,9 @@ Expo平台导航与资源概览
 
 **原文标题**: [Safari 26.2 Beta Release Notes | Apple Developer Documentation](https://developer.apple.com/documentation/safari-release-notes/safari-26_2-release-notes)
 
-该页面需要启用JavaScript才能正常显示内容。
+该页面需要启用 JavaScript 才能正常显示内容。
 
-- 🔧 请在浏览器设置中启用JavaScript功能
+- 🔧 请在浏览器设置中启用 JavaScript 功能
 - 🔄 刷新页面后即可查看完整内容
 
 ---
@@ -1270,10 +1270,10 @@ Expo平台导航与资源概览
 
 **原文标题**: [remix/packages/interaction/README.md at main · remix-run/remix · GitHub](https://github.com/remix-run/remix/blob/main/packages/interaction/README.md)
 
-Remix是一个由Remix Run开发的开源React全栈Web框架项目，专注于提供优秀的用户体验和开发者体验。
+Remix 是一个由 Remix Run 开发的开源 React 全栈 Web 框架项目，专注于提供优秀的用户体验和开发者体验。
 
-- 🚀 基于React的全栈框架，支持现代Web开发
-- 📊 项目热度高，获得31.9k星标和2.7k分支
+- 🚀 基于 React 的全栈框架，支持现代 Web 开发
+- 📊 项目热度高，获得 31.9k 星标和 2.7k 分支
 - 🔧 提供完整的开发工具链，包括代码管理、问题跟踪和安全功能
 - 👥 活跃的社区协作，包含议题讨论和拉取请求功能
 - ⚡ 强调性能和用户体验优化
@@ -1301,18 +1301,18 @@ Rspack 1.6 版本发布，带来多项新功能和性能优化，包括增强的
 
 ---
 
-### [宣布Wasm插件向后兼容性](https://blog.swc.rs/2025-11-4-wasm-backward-compatibility)
+### [宣布 Wasm 插件向后兼容性](https://blog.swc.rs/2025-11-4-wasm-backward-compatibility)
 
 **原文标题**: [Announcing Backward Compatibility for Wasm plugins](https://blog.swc.rs/2025-11-4-wasm-backward-compatibility)
 
-SWC生态系统宣布Wasm插件向后兼容性重大改进，显著提升开发体验。
+SWC 生态系统宣布 Wasm 插件向后兼容性重大改进，显著提升开发体验。
 
-- 🎉 自@swc/core v1.15.0起，Wasm插件实现向后兼容
-- 🔧 引入稳定ABI接口，消除每次版本更新需重新编译插件的麻烦
+- 🎉 自@swc/core v1.15.0 起，Wasm 插件实现向后兼容
+- 🔧 引入稳定 ABI 接口，消除每次版本更新需重新编译插件的麻烦
 - ⏱️ 大幅降低插件开发者和终端用户的维护负担
-- 🤝 由quininer和rspack团队通过PR #11198实现关键技术突破
-- 🚀 兼容性提升将惠及SWC、rspack和next.js等下游项目用户
-- 📢 推荐立即升级v1.15.0版本获得更稳定的插件体验
+- 🤝 由 quininer 和 rspack 团队通过 PR #11198 实现关键技术突破
+- 🚀 兼容性提升将惠及 SWC、rspack 和 next.js 等下游项目用户
+- 📢 推荐立即升级 v1.15.0 版本获得更稳定的插件体验
 - ⚠️ 虽仍存在少量不兼容变更，但重大变更将更容易避免
 
 ---
@@ -1321,15 +1321,15 @@ SWC生态系统宣布Wasm插件向后兼容性重大改进，显著提升开发�
 
 **原文标题**: [@vite.dev on Bluesky](https://bsky.app/profile/vite.dev/post/3m4uva3sj4c2z)
 
-这是一个关于Vite 7.2版本发布的公告，强调该网页需要JavaScript支持才能正常交互。
+这是一个关于 Vite 7.2 版本发布的公告，强调该网页需要 JavaScript 支持才能正常交互。
 
-- ⚡️ Vite 7.2版本已正式发布
-- 📦 新增build.license配置选项
-- 🔗 支持代理和HTTP2协议
+- ⚡️ Vite 7.2 版本已正式发布
+- 📦 新增 build.license 配置选项
+- 🔗 支持代理和 HTTP2 协议
 - 💜 包含更多功能改进和错误修复
-- 📋 完整更新日志请查看GitHub链接
-- 🌐 该网页为交互式应用需要JavaScript支持
-- 🔗 相关资源链接：bsky.social和atproto.com
+- 📋 完整更新日志请查看 GitHub 链接
+- 🌐 该网页为交互式应用需要 JavaScript 支持
+- 🔗 相关资源链接：bsky.social 和 atproto.com
 
 ---
 
@@ -1349,24 +1349,24 @@ MSW v2.12.0 新增了对 Server-Sent Events 的原生模拟支持，通过类型
 
 ---
 
-### [初探Remix 3 - 语法特性 #951](https://syntax.fm/show/951/a-first-look-at-remix-3)
+### [初探 Remix 3 - 语法特性 #951](https://syntax.fm/show/951/a-first-look-at-remix-3)
 
 **原文标题**: [A first look at Remix 3 - Syntax #951](https://syntax.fm/show/951/a-first-look-at-remix-3)
 
-Remix 3作为全栈框架全面拥抱原生Web标准，通过事件驱动架构、信号机制和流处理提升开发效率，同时强调基于标准的工具链兼容性。
+Remix 3 作为全栈框架全面拥抱原生 Web 标准，通过事件驱动架构、信号机制和流处理提升开发效率，同时强调基于标准的工具链兼容性。
 
-- 🚀 采用原生Web标准：使用Events、Signals、Streams和Fetch API构建现代化应用
+- 🚀 采用原生 Web 标准：使用 Events、Signals、Streams 和 Fetch API 构建现代化应用
 - 🧩 全栈框架特性：整合前后端开发流程，支持服务端与客户端无缝协作
-- 🤖 LLM就绪设计：优化人工智能集成能力，提供精简API接口
+- 🤖 LLM 就绪设计：优化人工智能集成能力，提供精简 API 接口
 - 📐 基于标准开发：兼容多种工具库，支持自定义技术栈选型
-- ⚡ 响应式架构：通过JSX/TSX组件模型实现状态管理，支持手动渲染控制
-- 🎯 事件驱动交互：采用EventTarget机制实现组件间通信
+- ⚡ 响应式架构：通过 JSX/TSX 组件模型实现状态管理，支持手动渲染控制
+- 🎯 事件驱动交互：采用 EventTarget 机制实现组件间通信
 - 🛡️ 类型安全访问：提供可靠的上下文类型校验
-- 🌊 异步流程控制：运用AbortSignal管理异步操作取消
-- 🎨 样式方案：内置CSS属性支持，实现类Svelte样式作用域
-- 🔗 跨运行时支持：基于Web Request/Response标准实现多环境运行
-- 🛠️ 工具链灵活：支持Vite/esbuild构建，采用ESM模块规范
-- 🗺️ 路由系统：基于代码的命名路由，集成URL Pattern API
+- 🌊 异步流程控制：运用 AbortSignal 管理异步操作取消
+- 🎨 样式方案：内置 CSS 属性支持，实现类 Svelte 样式作用域
+- 🔗 跨运行时支持：基于 Web Request/Response标准实现多环境运行
+- 🛠️ 工具链灵活：支持 Vite/esbuild 构建，采用 ESM 模块规范
+- 🗺️ 路由系统：基于代码的命名路由，集成 URL Pattern API
 
 ---
 
@@ -1374,14 +1374,14 @@ Remix 3作为全栈框架全面拥抱原生Web标准，通过事件驱动架构�
 
 **原文标题**: [No title found](https://x.com/wcandillon/status/1263825118557593600)
 
-该页面提示浏览器中JavaScript功能未启用，导致无法正常访问X平台内容，并提供了故障排除指引。
+该页面提示浏览器中 JavaScript 功能未启用，导致无法正常访问 X 平台内容，并提供了故障排除指引。
 
-- 🌐 浏览器JavaScript支持已禁用
-- 📝 建议启用JavaScript或更换受支持浏览器
+- 🌐 浏览器 JavaScript 支持已禁用
+- 📝 建议启用 JavaScript 或更换受支持浏览器
 - 🔧 可访问帮助中心查看兼容浏览器列表
 - 🛡️ 隐私扩展可能导致异常，建议暂时禁用
 - 📄 页面底部包含服务条款与隐私政策链接
-- ⚠️ 显示2025年X公司版权信息与重试按钮
+- ⚠️ 显示 2025 年 X 公司版权信息与重试按钮
 
 ---
 
@@ -1389,13 +1389,13 @@ Remix 3作为全栈框架全面拥抱原生Web标准，通过事件驱动架构�
 
 **原文标题**: [No title found](https://x.com/wcandillon)
 
-检测到浏览器中JavaScript功能未启用，导致无法正常使用X平台服务。
+检测到浏览器中 JavaScript 功能未启用，导致无法正常使用 X 平台服务。
 
-- 🌐 请启用浏览器JavaScript功能或更换受支持的浏览器
+- 🌐 请启用浏览器 JavaScript 功能或更换受支持的浏览器
 - 📚 支持浏览器列表可在帮助中心查看
 - 🔧 隐私扩展插件可能造成访问异常，建议暂时禁用
 - 🔄 遇到错误时可尝试重新加载页面
-- ⚖️ 平台服务条款、隐私政策及Cookie使用说明详见页脚链接
+- ⚖️ 平台服务条款、隐私政策及 Cookie 使用说明详见页脚链接
 
 ---
 
