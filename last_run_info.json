@@ -1,9 +1,9 @@
 {
   "thisweekinreact": {
-    "issue_title": "📨 #257: Navigation API, PPR, directives, micro-frontends, i18n, Storybook, Immer | Godot, Uniwind, RCE, iOS filters, Windows, GPU, Hermes, Meta Quest | Node LTS, Safari, Rspack, Vite, SWC, Remix",
-    "link_url": "/newsletter/257",
-    "timestamp": "2025-11-07T23:11:57.959464",
-    "full_url": "https://thisweekinreact.com//newsletter/257"
+    "issue_title": "📨 #258: TanStack, Next.js, ImGui, next-intl, React-Email, Ink, React Router | Valdi, IntersectionObserver, Nitro, Radon, Lynx, WebGPU, Audio | TC39, Node, Web Animations, TypeScript, pnpm",
+    "link_url": "/newsletter/258",
+    "timestamp": "2025-11-13T11:13:45.085338",
+    "full_url": "https://thisweekinreact.com//newsletter/258"
   },
   "nextjsweekly": {
     "issue_title": "Issue #107",
@@ -18,28 +18,28 @@
     "full_url": "https://reactdigest.net//newsletters/2157-your-url-is-your-state"
   },
   "webtoolsweekly": {
-    "issue_title": "#642\nJS Utils, JSON/DB, Build Tools",
-    "link_url": "archives/issue-642/",
-    "timestamp": "2025-11-06T22:39:14.641956",
-    "full_url": "https://webtoolsweekly.com/archives/issue-642/"
+    "issue_title": "#643\nJS Libs, Media Tools, Uncats",
+    "link_url": "archives/issue-643/",
+    "timestamp": "2025-11-13T13:34:17.675228",
+    "full_url": "https://webtoolsweekly.com/archives/issue-643/"
   },
   "nodeweekly": {
-    "issue_title": "Issue #599",
-    "link_url": "issues/599",
-    "timestamp": "2025-11-05T22:05:37.922597",
-    "full_url": "https://nodeweekly.com/issues/599"
+    "issue_title": "Issue #600",
+    "link_url": "issues/600",
+    "timestamp": "2025-11-12T18:10:04.990178",
+    "full_url": "https://nodeweekly.com/issues/600"
   },
   "frontendfoc": {
-    "issue_title": "Issue #716",
-    "link_url": "issues/716",
-    "timestamp": "2025-11-06T22:39:15.729965",
-    "full_url": "https://frontendfoc.us/issues/716"
+    "issue_title": "Issue #717",
+    "link_url": "issues/717",
+    "timestamp": "2025-11-13T11:13:46.491884",
+    "full_url": "https://frontendfoc.us/issues/717"
   },
   "reactweekly": {
-    "issue_title": "Issue #450",
-    "link_url": "issues/450",
-    "timestamp": "2025-11-05T23:15:39.151250",
-    "full_url": "https://reactweekly.com/issues/450"
+    "issue_title": "Issue #451",
+    "link_url": "issues/451",
+    "timestamp": "2025-11-13T11:13:46.258101",
+    "full_url": "https://reactweekly.com/issues/451"
   },
   "javascriptweekly": {
     "issue_title": "Issue #760",
