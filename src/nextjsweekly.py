@@ -135,6 +135,8 @@ def scrape_nextjsweekly():
         
         # 根据要求，查找第一个 href 是"/issues/数字"格式的 a 标签
         latest_issue_link = soup.find('a', href=lambda x: x and re.match(r'^/issues/\d+$', x))
+
+        print("latest_issue_link",latest_issue_link)
         
         if latest_issue_link:
             # 获取最新一期的链接
@@ -166,26 +168,28 @@ def scrape_nextjsweekly():
             if link_url:
                 # Send GET request to the linked page
                 print(f"Fetching content from: {link_url}")
+                print("link_url",link_url)
                 link_response = requests.get(link_url, headers=headers, proxies=proxies)
+                print("link_response.status_code",link_response.status_code)
                 
                 # Check if the request was successful
                 if link_response.status_code == 200:
                     # Parse the HTML content of the linked page
                     link_soup = BeautifulSoup(link_response.text, 'html.parser')
                     
-                    # 根据要求，查找所有 class 为"news"的 div 下的 a 标签
-                    news_divs = link_soup.find_all('div', class_='news')
+                    # 根据要求，查找所有 h3 标签
+                    h3_tags = link_soup.find_all('h3')
                     
-                    if news_divs:
+                    if h3_tags:
                         # 创建一个列表来存储所有新闻链接
                         all_news_links = []
                         
-                        # 遍历每个 news div，收集所有 a 标签
-                        for news_div in news_divs:
-                            links = news_div.find_all('a', href=True)
+                        # 遍历每个 h3 标签，收集所有 a 标签
+                        for h3_tag in h3_tags:
+                            links = h3_tag.find_all('a', href=True)
                             all_news_links.extend(links)
                             
-                        print(f"Found {len(all_news_links)} links in {len(news_divs)} news sections")
+                        print(f"Found {len(all_news_links)} links in {len(h3_tags)} h3 sections")
                         
                         # 使用自定义的提取方式处理这些链接
                         extract_links_and_summarize(
@@ -200,7 +204,7 @@ def scrape_nextjsweekly():
                             pre_filtered_links=all_news_links  # 传递收集到的所有新闻链接
                         )
                     else:
-                        print("No 'news' div found on the page.")
+                        print("No h3 tags found on the page.")
                 else:
                     print(f"Failed to retrieve the linked page. Status code: {link_response.status_code}")
             else:
