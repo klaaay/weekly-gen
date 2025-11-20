@@ -1,9 +1,9 @@
 {
   "thisweekinreact": {
-    "issue_title": "📨 #258: TanStack, Next.js, ImGui, next-intl, React-Email, Ink, React Router | Valdi, IntersectionObserver, Nitro, Radon, Lynx, WebGPU, Audio | TC39, Node, Web Animations, TypeScript, pnpm",
-    "link_url": "/newsletter/258",
-    "timestamp": "2025-11-13T11:13:45.085338",
-    "full_url": "https://thisweekinreact.com//newsletter/258"
+    "issue_title": "📨 #259: State of React, Promise subclasses, Next.js, RSC, JSX Tools, React Grab, Base UI, Waku, StyleX | Yoga CSS Grid, Radon, Brownfield, Detox, Bootsplash | TC39, Browserslist, Linters, Prisma",
+    "link_url": "/newsletter/259",
+    "timestamp": "2025-11-20T14:05:40.137156",
+    "full_url": "https://thisweekinreact.com//newsletter/259"
   },
   "nextjsweekly": {
     "issue_title": "Issue #108 Nov 14, 2025React Email 5, Better Upload, Error Boundary, Anti-Vendor-Lock-In, StyleX, PWA App Icons in Next.js 16",
@@ -13,33 +13,33 @@
   },
   "reactdigest": {
     "issue_title": "one weekly email",
-    "link_url": "/newsletters/2157-your-url-is-your-state",
-    "timestamp": "2025-11-10T19:51:09.011108",
-    "full_url": "https://reactdigest.net//newsletters/2157-your-url-is-your-state"
+    "link_url": "/newsletters/2161-react-in-its-sigma-era",
+    "timestamp": "2025-11-17T20:18:05.128639",
+    "full_url": "https://reactdigest.net//newsletters/2161-react-in-its-sigma-era"
   },
   "webtoolsweekly": {
-    "issue_title": "#643\nJS Libs, Media Tools, Uncats",
-    "link_url": "archives/issue-643/",
-    "timestamp": "2025-11-13T13:34:17.675228",
-    "full_url": "https://webtoolsweekly.com/archives/issue-643/"
+    "issue_title": "#644\nCSS/HTML, Git/CLI, Mobile",
+    "link_url": "archives/issue-644/",
+    "timestamp": "2025-11-20T20:35:40.750928",
+    "full_url": "https://webtoolsweekly.com/archives/issue-644/"
   },
   "nodeweekly": {
-    "issue_title": "Issue #600",
-    "link_url": "issues/600",
-    "timestamp": "2025-11-12T18:10:04.990178",
-    "full_url": "https://nodeweekly.com/issues/600"
+    "issue_title": "Issue #601",
+    "link_url": "issues/601",
+    "timestamp": "2025-11-19T15:41:33.640694",
+    "full_url": "https://nodeweekly.com/issues/601"
   },
   "frontendfoc": {
-    "issue_title": "Issue #717",
-    "link_url": "issues/717",
-    "timestamp": "2025-11-13T11:13:46.491884",
-    "full_url": "https://frontendfoc.us/issues/717"
+    "issue_title": "Issue #718",
+    "link_url": "issues/718",
+    "timestamp": "2025-11-20T14:05:41.632653",
+    "full_url": "https://frontendfoc.us/issues/718"
   },
   "reactweekly": {
-    "issue_title": "Issue #451",
-    "link_url": "issues/451",
-    "timestamp": "2025-11-13T11:13:46.258101",
-    "full_url": "https://reactweekly.com/issues/451"
+    "issue_title": "Issue #452",
+    "link_url": "issues/452",
+    "timestamp": "2025-11-20T14:05:41.575907",
+    "full_url": "https://reactweekly.com/issues/452"
   },
   "javascriptweekly": {
     "issue_title": "Issue #761",
