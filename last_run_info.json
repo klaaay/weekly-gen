@@ -1,9 +1,9 @@
 {
   "thisweekinreact": {
-    "issue_title": "📨 #259: State of React, Promise subclasses, Next.js, RSC, JSX Tools, React Grab, Base UI, Waku, StyleX | Yoga CSS Grid, Radon, Brownfield, Detox, Bootsplash | TC39, Browserslist, Linters, Prisma",
-    "link_url": "/newsletter/259",
-    "timestamp": "2025-11-20T14:05:40.137156",
-    "full_url": "https://thisweekinreact.com//newsletter/259"
+    "issue_title": "📨 #260: TanStack, Actions, Immer, RTK, Streamdown, XState Store, ReScript, HTML streaming | Vercel v0, Worklets, Skia, Tailwind, Native Stack, Gifted Chat, Enriched | TC39, Playwright, Bun, Astro, Better Auth",
+    "link_url": "/newsletter/260",
+    "timestamp": "2025-11-27T12:44:36.101355",
+    "full_url": "https://thisweekinreact.com//newsletter/260"
   },
   "nextjsweekly": {
     "issue_title": "Issue #109 Nov 21, 2025Next Analyze, Prisma 7, use-nemo, State of React 2025, Error Boundaries, Tables & Modals, UI Framework Guide",
@@ -18,28 +18,28 @@
     "full_url": "https://reactdigest.net//newsletters/2165-how-we-migrated-from-enzyme-to-react-testing-library"
   },
   "webtoolsweekly": {
-    "issue_title": "#644\nCSS/HTML, Git/CLI, Mobile",
-    "link_url": "archives/issue-644/",
-    "timestamp": "2025-11-20T20:35:40.750928",
-    "full_url": "https://webtoolsweekly.com/archives/issue-644/"
+    "issue_title": "#645\nFrameworks, Testing, JS Lib Plugins",
+    "link_url": "archives/issue-645/",
+    "timestamp": "2025-11-27T12:44:36.570636",
+    "full_url": "https://webtoolsweekly.com/archives/issue-645/"
   },
   "nodeweekly": {
-    "issue_title": "Issue #601",
-    "link_url": "issues/601",
-    "timestamp": "2025-11-19T15:41:33.640694",
-    "full_url": "https://nodeweekly.com/issues/601"
+    "issue_title": "Issue #602",
+    "link_url": "issues/602",
+    "timestamp": "2025-11-27T12:44:37.103013",
+    "full_url": "https://nodeweekly.com/issues/602"
   },
   "frontendfoc": {
-    "issue_title": "Issue #718",
-    "link_url": "issues/718",
-    "timestamp": "2025-11-20T14:05:41.632653",
-    "full_url": "https://frontendfoc.us/issues/718"
+    "issue_title": "Issue #719",
+    "link_url": "issues/719",
+    "timestamp": "2025-11-27T12:44:37.142870",
+    "full_url": "https://frontendfoc.us/issues/719"
   },
   "reactweekly": {
-    "issue_title": "Issue #452",
-    "link_url": "issues/452",
-    "timestamp": "2025-11-20T14:05:41.575907",
-    "full_url": "https://reactweekly.com/issues/452"
+    "issue_title": "Issue #453",
+    "link_url": "issues/453",
+    "timestamp": "2025-11-27T12:44:36.655841",
+    "full_url": "https://reactweekly.com/issues/453"
   },
   "javascriptweekly": {
     "issue_title": "Issue #762",
