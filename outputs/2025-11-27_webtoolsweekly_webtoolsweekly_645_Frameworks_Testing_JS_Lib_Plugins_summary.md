@@ -1,33 +1,33 @@
-### [Cloudways 2025黑色星期五特惠：新用户享3个月5折优惠](https://www.cloudways.com/en/promo-code.php?utm_source=Promotion&utm_medium=bfcmpromotion&utm_campaign=Webtoolsweekly2&utm_content=community)
+### [Cloudways 2025 黑色星期五特惠：新用户享 3 个月 5 折优惠](https://www.cloudways.com/en/promo-code.php?utm_source=Promotion&utm_medium=bfcmpromotion&utm_campaign=Webtoolsweekly2&utm_content=community)
 
 **原文标题**: [Cloudways Black Friday 2025: 50% Off for 3 Months](https://www.cloudways.com/en/promo-code.php?utm_source=Promotion&utm_medium=bfcmpromotion&utm_campaign=Webtoolsweekly2&utm_content=community)
 
-Cloudways推出黑色星期五/网络星期一促销活动，提供50%折扣和免费迁移服务，帮助用户应对流量高峰并实现灵活扩展。
+Cloudways 推出黑色星期五/网络星期一促销活动，提供 50% 折扣和免费迁移服务，帮助用户应对流量高峰并实现灵活扩展。
 
-- 🚀 所有托管方案和附加服务享50%折扣三个月，无需预付费用或长期合约
+- 🚀 所有托管方案和附加服务享 50% 折扣三个月，无需预付费用或长期合约
 - 🌐 支持无限网站和域名，无流量限制，采用按量计费模式实现弹性扩展
-- 🔄 提供50次免费专业迁移服务，由专家团队确保安全无缝转移（需在2025年12月31日前申请）
-- ⚡ 配备自动扩展功能的完全托管WordPress方案，起价每月50美元
-- 🛡️ 附加服务包含企业级CDN、恶意软件防护和自动更新功能，均享受5折优惠
-- 📞 覆盖190个国家，服务超10万企业，客户满意度达96%并提供24/7专家支持
+- 🔄 提供 50 次免费专业迁移服务，由专家团队确保安全无缝转移（需在 2025 年 12 月 31 日前申请）
+- ⚡ 配备自动扩展功能的完全托管 WordPress 方案，起价每月 50 美元
+- 🛡️ 附加服务包含企业级 CDN、恶意软件防护和自动更新功能，均享受 5 折优惠
+- 📞 覆盖 190 个国家，服务超 10 万企业，客户满意度达 96% 并提供 24/7 专家支持
 - 💡 支持多云平台托管，可随时调整资源配置，仅按实际使用量付费
 
 ---
 
-### [GitHub - Daymychen/art-design-pro：基于Vite + TypeScript + Element Plus的Vue 3后台管理系统模板 | vue3后台框架 | vue管理系统 — 专注用户体验与视觉设计](https://github.com/Daymychen/art-design-pro)
+### [GitHub - Daymychen/art-design-pro：基于Vite + TypeScript + Element Plus 的 Vue 3 后台管理系统模板 | vue3 后台框架 | vue 管理系统 — 专注用户体验与视觉设计](https://github.com/Daymychen/art-design-pro)
 
 **原文标题**: [GitHub - Daymychen/art-design-pro: A Vue 3 admin dashboard template using Vite + TypeScript + Element Plus | vue3 admin | vue-admin — focused on user experience and visual design.](https://github.com/Daymychen/art-design-pro)
 
-这是一个基于Vue 3的后台管理系统模板项目，专注于用户体验和视觉设计，采用现代前端技术栈构建。
+这是一个基于 Vue 3 的后台管理系统模板项目，专注于用户体验和视觉设计，采用现代前端技术栈构建。
 
-- 🎨 采用Vue3+TypeScript+Vite技术栈，集成Element Plus和Tailwind CSS
-- 🚀 内置丰富组件和实用API，显著提升开发效率
-- 📱 现代化UI设计，提供流畅的交互体验和页面过渡动画
+- 🎨 采用 Vue3+TypeScript+Vite 技术栈，集成 Element Plus 和 Tailwind CSS
+- 🚀 内置丰富组件和实用 API，显著提升开发效率
+- 📱 现代化 UI 设计，提供流畅的交互体验和页面过渡动画
 - 🔧 包含一键清理脚本，可快速移除演示数据获得纯净开发环境
 - 📚 提供完整文档和技术支持，支持主流现代浏览器
-- 🌟 开源MIT协议，拥有4.3k星标和810个分支
+- 🌟 开源 MIT 协议，拥有 4.3k 星标和 810 个分支
 - 🤝 欢迎社区贡献，持续优化更新并保持技术栈先进性
-- 💝 提供QQ技术交流群和在线演示地址
+- 💝 提供 QQ 技术交流群和在线演示地址
 
 ---
 
@@ -35,15 +35,15 @@ Cloudways推出黑色星期五/网络星期一促销活动，提供50%折扣和�
 
 **原文标题**: [GitHub - twofold-rsc/twofold](https://github.com/twofold-rsc/twofold)
 
-Twofold是一个基于React服务器组件、Tailwind和TypeScript的周末项目开发框架，提供完整的工具链和快速启动方案。
+Twofold 是一个基于 React 服务器组件、Tailwind 和 TypeScript 的周末项目开发框架，提供完整的工具链和快速启动方案。
 
-- 🚀 支持通过npm/pnpm快速创建项目：`npx create-twofold-app@latest` 或 `pnpm create-twofold-app@latest`
-- ⚙️ 技术栈基于React Server Components、Tailwind CSS和TypeScript
+- 🚀 支持通过 npm/pnpm 快速创建项目：`npx create-twofold-app@latest` 或 `pnpm create-twofold-app@latest`
+- ⚙️ 技术栈基于 React Server Components、Tailwind CSS 和 TypeScript
 - 📚 官方文档可通过 twofoldframework.com 访问
-- 🔧 运行环境要求Node.js版本22.20.0或更高
-- 📊 项目目前获得94个星标和4个分支，处于活跃开发阶段
-- 🏷️ 最新版本为v0.0.70，包含60个发布版本
-- 💻 代码主要采用TypeScript编写（占比97.6%）
+- 🔧 运行环境要求 Node.js 版本 22.20.0 或更高
+- 📊 项目目前获得 94 个星标和 4 个分支，处于活跃开发阶段
+- 🏷️ 最新版本为 v0.0.70，包含 60 个发布版本
+- 💻 代码主要采用 TypeScript 编写（占比 97.6%）
 
 ---
 
@@ -68,7 +68,7 @@ Foundations 是一个由 Significa 开发的开源 UI 组件库，提供经过�
 
 **原文标题**: [ElevenLabs UI | ElevenLabs UI](https://ui.elevenlabs.io/)
 
-该内容展示了一个名为Scribe v2 Realtime的交互式语音界面，集成了语音聊天、音频可视化与智能体交互功能。
+该内容展示了一个名为 Scribe v2 Realtime 的交互式语音界面，集成了语音聊天、音频可视化与智能体交互功能。
 
 - 🎤 集成实时语音聊天功能，支持点击启动客户服务对话
 - 🎵 配备动态音频波形可视化，带流畅滚动动画效果
@@ -123,15 +123,15 @@ Indie UI 是一个基于 React、shadcn 和 Framer Motion 构建的现代化 UI 
 
 **原文标题**: [GitHub - graycoreio/daffodil: Build complex Ecommerce store frontends and connect to any backend https://discord.gg/BdaJVZ53sR](https://github.com/graycoreio/daffodil)
 
-Daffodil是一个开源电子商务前端开发框架，用于构建可连接任意后端的复杂商店前端，基于Angular和TypeScript技术栈。
+Daffodil 是一个开源电子商务前端开发框架，用于构建可连接任意后端的复杂商店前端，基于 Angular 和 TypeScript 技术栈。
 
 - 🛒 核心功能：构建可对接任何电商后端的商店前端系统
-- ⚡ 技术特性：基于Angular框架，采用TypeScript开发
-- 🌐 项目状态：拥有410个星标、69个分支，MIT开源协议
-- 📚 开发资源：提供完整文档、演示站点(daff.io)和社区Discord
-- 📦 模块化设计：包含分析、购物车、支付、产品等30+功能包
+- ⚡ 技术特性：基于 Angular 框架，采用 TypeScript 开发
+- 🌐 项目状态：拥有 410 个星标、69 个分支，MIT 开源协议
+- 📚 开发资源：提供完整文档、演示站点 (daff.io) 和社区 Discord
+- 📦 模块化设计：包含分析、购物车、支付、产品等 30+ 功能包
 - 🤝 社区参与：欢迎贡献代码，标注有"good first issue"入门任务
-- 🎯 应用场景：支持Magento等电商平台，具备PWA渐进式网页应用特性
+- 🎯 应用场景：支持 Magento 等电商平台，具备 PWA 渐进式网页应用特性
 - 🔧 快速开始：通过`npx ng add @daffodil/commerce`命令快速集成
 
 ---
@@ -140,20 +140,20 @@ Daffodil是一个开源电子商务前端开发框架，用于构建可连接任
 
 **原文标题**: [GitHub - dhuan/mock: Build and test APIs easily](https://github.com/dhuan/mock/)
 
-一个用于轻松构建和测试API的开源工具，支持通过配置文件或命令行定义路由，并使用脚本处理响应。
+一个用于轻松构建和测试 API 的开源工具，支持通过配置文件或命令行定义路由，并使用脚本处理响应。
 
-- 🚀 **快速构建API** - 通过命令行或配置文件轻松定义API路由和响应处理程序
-- 🐚 **脚本驱动响应** - 支持使用Shell脚本或其他程序作为API响应处理器
-- 🧪 **API测试功能** - 提供断言功能验证端点是否被正确请求
-- 🔄 **代理扩展能力** - 可作为代理扩展现有API，添加新路由而不影响原服务
+- 🚀 **快速构建 API** - 通过命令行或配置文件轻松定义 API 路由和响应处理程序
+- 🐚 **脚本驱动响应** - 支持使用 Shell 脚本或其他程序作为 API 响应处理器
+- 🧪 **API 测试功能** - 提供断言功能验证端点是否被正确请求
+- 🔄 **代理扩展能力** - 可作为代理扩展现有 API，添加新路由而不影响原服务
 - 📖 **丰富文档示例** - 提供详细用户指南和多种使用示例帮助快速上手
-- ⚡ **单文件部署** - 采用Go语言开发，以单一可执行文件形式分发
-- 🔓 **开源许可** - 基于MIT许可证开源，可自由使用和修改
-- 🌐 **多协议支持** - 支持HTTP等多种协议，可通过浏览器直接访问测试
+- ⚡ **单文件部署** - 采用 Go 语言开发，以单一可执行文件形式分发
+- 🔓 **开源许可** - 基于 MIT 许可证开源，可自由使用和修改
+- 🌐 **多协议支持** - 支持 HTTP 等多种协议，可通过浏览器直接访问测试
 
 ---
 
-### [GitHub - TanStack/开发工具：🤖 跨框架开发工具面板，用于处理TanStack库的开发工具及自定义插件](https://github.com/TanStack/devtools)
+### [GitHub - TanStack/开发工具：🤖 跨框架开发工具面板，用于处理 TanStack 库的开发工具及自定义插件](https://github.com/TanStack/devtools)
 
 **原文标题**: [GitHub - TanStack/devtools: 🤖 Framework-agnostic devtools panel for handling TanStack libraries devtools and your custom devtool plugins](https://github.com/TanStack/devtools)
 
@@ -173,7 +173,7 @@ TanStack Devtools 是一个框架无关的开发调试工具集，为 TanStack �
 
 **原文标题**: [Khaki](https://khaki.email/?utm_source=wellput&utm_medium=newsletter&utm_content=Web+Tools+Weekly-v2-r527973-p553951-c41800&transaction_id=102f84f1580bb4356861d228c63513&code=NEWSLETTER)
 
-卡其是一款智能个人邮箱客户端，通过AI技术优化邮件管理体验，提供个性化信息分类与推送服务。
+卡其是一款智能个人邮箱客户端，通过 AI 技术优化邮件管理体验，提供个性化信息分类与推送服务。
 
 - 📧 提供清爽的新闻通讯阅读体验
 - ✈️ 自动追踪旅行确认信息
@@ -182,12 +182,12 @@ TanStack Devtools 是一个框架无关的开发调试工具集，为 TanStack �
 - 🔍 解决重要邮件遗漏与查找难题
 - 📬 自动归类订阅邮件与收据
 - 🔐 集成网站账号密码管理
-- 🤖 采用AI技术替代手动标签分类
+- 🤖 采用 AI 技术替代手动标签分类
 - 🚀 目前开放测试版申请通道
 
 ---
 
-### [GitHub - callstackincubator/react-native-harness：Harness将Jest风格的测试引入真实原生环境，让您能够像测试React Native应用一样用JavaScript测试TurboModules。](https://github.com/callstackincubator/react-native-harness)
+### [GitHub - callstackincubator/react-native-harness：Harness将Jest风格的测试引入真实原生环境，让您能够像测试React Native 应用一样用 JavaScript 测试 TurboModules。](https://github.com/callstackincubator/react-native-harness)
 
 **原文标题**: [GitHub - callstackincubator/react-native-harness: Harness brings Jest-style tests to real native environments so you can test TurboModules like you would test your React Native app: with JavaScript.](https://github.com/callstackincubator/react-native-harness)
 
@@ -207,28 +207,28 @@ React Native Harness 是一个开源测试工具，允许开发者在真实原�
 
 **原文标题**: [GitHub - aquasecurity/trivy: Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more](https://github.com/aquasecurity/trivy)
 
-Trivy是一款由Aqua Security开发的开源安全扫描工具，用于检测容器、Kubernetes、代码仓库等多种环境中的安全漏洞、错误配置、敏感信息和软件物料清单。
+Trivy 是一款由 Aqua Security 开发的开源安全扫描工具，用于检测容器、Kubernetes、代码仓库等多种环境中的安全漏洞、错误配置、敏感信息和软件物料清单。
 
-- 🔍 支持扫描容器镜像、文件系统、Git仓库、虚拟机镜像和Kubernetes等多种目标
+- 🔍 支持扫描容器镜像、文件系统、Git 仓库、虚拟机镜像和 Kubernetes 等多种目标
 - 🛡️ 具备漏洞检测、错误配置检查、密钥发现和软件许可证分析等多种扫描功能
-- ⚡ 提供多种安装方式，包括Homebrew、Docker镜像和直接下载二进制文件
-- 🔗 集成GitHub Actions、Kubernetes Operator和VS Code插件等流行平台
+- ⚡ 提供多种安装方式，包括 Homebrew、Docker 镜像和直接下载二进制文件
+- 🔗 集成 GitHub Actions、Kubernetes Operator 和 VS Code 插件等流行平台
 - 🌐 支持大多数主流编程语言、操作系统和平台
-- 📊 项目获得30k星标和2.8k分支，采用Apache-2.0开源协议
-- 🚀 提供每日构建的canary版本，但不建议在生产环境使用
+- 📊 项目获得 30k 星标和 2.8k 分支，采用 Apache-2.0 开源协议
+- 🚀 提供每日构建的 canary 版本，但不建议在生产环境使用
 - 👥 拥有活跃的开源社区，遵循行为准则并欢迎贡献
 
 ---
 
-### [FileMock - 免费测试文件生成器 | 视频、PDF与音频](https://filemock.com/)
+### [FileMock - 免费测试文件生成器 | 视频、PDF 与音频](https://filemock.com/)
 
 **原文标题**: [FileMock - Free Test File Generator | Video, PDF & Audio](https://filemock.com/)
 
 视频文件生成器工具概述，支持创建多种格式的测试视频文件，可精确控制文件大小和时长，并提供高级选项配置。
 
-- 🎬 支持生成MP4（高压缩通用格式）、MOV（苹果高质量）、AVI（旧式大文件）、MKV（影视专用）、WEBM（网页优化）、FLV（旧版Flash）等视频格式
-- 🎚️ 可自定义目标文件大小（最高2000MB）与视频持续时间（秒数）
-- ⚙️ 提供高级选项配置功能，默认生成带渐变效果的MP4格式
+- 🎬 支持生成 MP4（高压缩通用格式）、MOV（苹果高质量）、AVI（旧式大文件）、MKV（影视专用）、WEBM（网页优化）、FLV（旧版 Flash）等视频格式
+- 🎚️ 可自定义目标文件大小（最高 2000MB）与视频持续时间（秒数）
+- ⚙️ 提供高级选项配置功能，默认生成带渐变效果的 MP4 格式
 - 🌐 生成文件兼容所有主流视频播放器与浏览器
 
 ---
@@ -255,12 +255,12 @@ Web Codegen Scorer 是一个用于评估大型语言模型生成网页代码质�
 这是一个包含多种测试框架的无障碍自动化示例库，旨在帮助开发者构建更完善的自动化无障碍测试流程。
 
 - 🎯 项目包含集成测试、组件测试、测试引擎和测试结构四大类示例
-- 🔧 集成测试涵盖Cypress、PlayWright、Puppeteer等框架
-- ⚛️ 组件测试支持React Testing Lib、Vue Test Utils、Angular Karma等
-- 🚀 测试引擎包含Pa11y、IBM Accessibility等工具
+- 🔧 集成测试涵盖 Cypress、PlayWright、Puppeteer 等框架
+- ⚛️ 组件测试支持 React Testing Lib、Vue Test Utils、Angular Karma 等
+- 🚀 测试引擎包含 Pa11y、IBM Accessibility 等工具
 - 📚 提供测试结构最佳实践示例
-- 🌟 项目获得25个星标和2个分支
-- 📄 主要使用HTML(99.6%)和JavaScript(0.4%)语言
+- 🌟 项目获得 25 个星标和 2 个分支
+- 📄 主要使用 HTML(99.6%) 和 JavaScript(0.4%) 语言
 
 ---
 
@@ -268,14 +268,14 @@ Web Codegen Scorer 是一个用于评估大型语言模型生成网页代码质�
 
 **原文标题**: [GitHub - mitsuhiko/vite-console-forward-plugin: Forwards console logs to the vite log](https://github.com/mitsuhiko/vite-console-forward-plugin)
 
-这是一个Vite插件，可将浏览器控制台日志转发到Vite开发服务器控制台，便于在开发过程中进行调试。
+这是一个 Vite 插件，可将浏览器控制台日志转发到 Vite 开发服务器控制台，便于在开发过程中进行调试。
 
-- 🔧 **功能作用** - 拦截浏览器控制台日志（包括log、warn、error等）并转发到Vite开发服务器
+- 🔧 **功能作用** - 拦截浏览器控制台日志（包括 log、warn、error 等）并转发到 Vite 开发服务器
 - 🎯 **使用场景** - 适用于浏览器开发工具不易访问的环境、移动设备调试、自动化测试等场景
-- ⚙️ **配置选项** - 支持设置启用状态、API端点路径和要转发的控制台级别
+- ⚙️ **配置选项** - 支持设置启用状态、API 端点路径和要转发的控制台级别
 - 🔄 **工作原理** - 通过客户端代码注入、日志缓冲批处理和服务器端中间件实现
 - 📦 **安装方式** - 可直接复制插件文件或作为本地依赖安装
-- 📄 **开源许可** - 采用MIT许可证，项目已获得138个星标和5个分支
+- 📄 **开源许可** - 采用 MIT 许可证，项目已获得 138 个星标和 5 个分支
 
 ---
 
@@ -287,21 +287,21 @@ Web Codegen Scorer 是一个用于评估大型语言模型生成网页代码质�
 
 ---
 
-### [GitHub - SikandarJODD/svelte-animations：Svelte Magic UI、Svelte Aceternity UI，使用Tailwind CSS和Framer Motion构建的Svelte组件](https://github.com/SikandarJODD/svelte-animations)
+### [GitHub - SikandarJODD/svelte-animations：Svelte Magic UI、Svelte Aceternity UI，使用 Tailwind CSS 和 Framer Motion 构建的 Svelte 组件](https://github.com/SikandarJODD/svelte-animations)
 
 **原文标题**: [GitHub - SikandarJODD/svelte-animations: Svelte Magic UI, Svelte Aceternity UI, Svelte Components build using Tailwind CSS & Framer Motion](https://github.com/SikandarJODD/svelte-animations)
 
-这是一个基于Svelte框架的动画组件库项目，集成了多种UI组件库和动画效果。
+这是一个基于 Svelte 框架的动画组件库项目，集成了多种 UI 组件库和动画效果。
 
-- 🎨 包含Magic UI、Aceternity UI、Luxe UI等多个UI组件库
-- ⚡ 使用Tailwind CSS和Svelte Motion构建组件
-- ⚠️ 部分基于svelte-motion的组件暂不支持Svelte 5
-- 🔄 正在使用Motion-Start库迁移组件以支持Svelte 5
-- 📊 目前已支持多个组件库的Svelte 5迁移
-- 🌟 项目获得1.1k星标和45个分支
-- 📄 采用MIT开源许可证
+- 🎨 包含 Magic UI、Aceternity UI、Luxe UI 等多个 UI 组件库
+- ⚡ 使用 Tailwind CSS 和 Svelte Motion 构建组件
+- ⚠️ 部分基于 svelte-motion 的组件暂不支持 Svelte 5
+- 🔄 正在使用 Motion-Start 库迁移组件以支持 Svelte 5
+- 📊 目前已支持多个组件库的 Svelte 5 迁移
+- 🌟 项目获得 1.1k 星标和 45 个分支
+- 📄 采用 MIT 开源许可证
 - 🆕 新增作品集模板和登陆页面模板
-- 💝 提供GitHub赞助和社交媒体分享支持
+- 💝 提供 GitHub 赞助和社交媒体分享支持
 
 ---
 
@@ -309,27 +309,27 @@ Web Codegen Scorer 是一个用于评估大型语言模型生成网页代码质�
 
 **原文标题**: [GitHub - ferreira-tb/tauri-store: Persistent stores for Tauri](https://github.com/ferreira-tb/tauri-store)
 
-这是一个为Tauri应用提供持久化存储解决方案的开源项目，支持多窗口数据同步和跨语言调用。
+这是一个为 Tauri 应用提供持久化存储解决方案的开源项目，支持多窗口数据同步和跨语言调用。
 
 - 💾 提供数据持久化存储功能，可将状态保存至本地磁盘
 - 🔄 支持多窗口数据同步，确保应用状态一致性
 - ⚡ 具备防抖和节流机制优化存储更新性能
-- 🌐 支持JavaScript和Rust双语言访问存储数据
+- 🌐 支持 JavaScript 和 Rust 双语言访问存储数据
 - 🎯 兼容主流前端框架（React、Vue、Svelte、Nuxt）
-- 📦 提供多种插件：Pinia、Valtio、Zustand等状态管理库集成
+- 📦 提供多种插件：Pinia、Valtio、Zustand 等状态管理库集成
 - 📚 包含详细文档和示例项目供参考学习
-- ⚠️ 非官方Tauri插件，需Tauri 2.0及以上版本
-- 📈 项目活跃度高：106星标、5个分支、130次发布
+- ⚠️ 非官方 Tauri 插件，需 Tauri 2.0 及以上版本
+- 📈 项目活跃度高：106 星标、5 个分支、130 次发布
 
 ---
 
-### [Svedit - 用于在Svelte中构建可编辑网站的微型库](https://svedit.dev/)
+### [Svedit - 用于在 Svelte 中构建可编辑网站的微型库](https://svedit.dev/)
 
 **原文标题**: [Svedit - A tiny library for building editable websites in Svelte](https://svedit.dev/)
 
 Svedit 是一个专为 Svelte 设计的轻量级可编辑网站构建库，采用 JSON 内容模型和可视化就地编辑模式，支持嵌套节点结构和事务性操作，目前处于测试阶段。
 
-- 🚀 **轻量级编辑器**：核心实现仅约2000行代码，无需额外内容管理系统
+- 🚀 **轻量级编辑器**：核心实现仅约 2000 行代码，无需额外内容管理系统
 - 🎯 **可视化编辑**：通过 Svelte 组件直接渲染 JSON 内容模型，实现所见即所得编辑
 - 🌳 **图形化内容结构**：支持从简单段落到复杂嵌套节点的多层次内容组织
 - 🔗 **原生 Svelte 集成**：专为 Svelte 5 设计，无需第三方渲染 API
@@ -346,16 +346,16 @@ Svedit 是一个专为 Svelte 设计的轻量级可编辑网站构建库，采�
 
 **原文标题**: [GitHub - express-rate-limit/express-rate-limit: Basic rate-limiting middleware for the Express web server](https://github.com/express-rate-limit/express-rate-limit)
 
-express-rate-limit是一个用于Express框架的基础限流中间件，用于限制重复请求公共API和端点（如密码重置），支持与express-slow-down等工具协同工作。
+express-rate-limit 是一个用于 Express 框架的基础限流中间件，用于限制重复请求公共 API 和端点（如密码重置），支持与 express-slow-down 等工具协同工作。
 
-- 🛡️ 基础限流功能：为Express服务器提供请求频率限制，防止API滥用
+- 🛡️ 基础限流功能：为 Express 服务器提供请求频率限制，防止 API 滥用
 - ⚙️ 灵活配置：支持自定义时间窗口、请求上限、响应消息和状态码
-- 🚦 头部支持：可配置传统X-Rate-Limit头部或标准RateLimit头部
-- 🗄️ 多存储支持：内置内存存储，兼容Redis等外部数据存储
-- 🌐 IP识别：默认基于IP地址识别用户，支持IPv6子网配置
+- 🚦 头部支持：可配置传统 X-Rate-Limit 头部或标准 RateLimit 头部
+- 🗄️ 多存储支持：内置内存存储，兼容 Redis 等外部数据存储
+- 🌐 IP 识别：默认基于 IP 地址识别用户，支持 IPv6 子网配置
 - 📊 请求过滤：可跳过成功/失败请求，支持自定义跳过条件
 - 🔧 异步支持：所有配置选项均支持异步函数
-- 📦 活跃维护：拥有3.2k星标，495k+项目使用，持续更新
+- 📦 活跃维护：拥有 3.2k 星标，495k+ 项目使用，持续更新
 
 ---
 
@@ -363,14 +363,14 @@ express-rate-limit是一个用于Express框架的基础限流中间件，用于�
 
 **原文标题**: [GitHub - SameerJS6/lina: Drop-in shadcn/ui ScrollArea replacement (Radix/Base UI) with native touch, adaptive masks, and polished interactions.](https://github.com/SameerJS6/lina)
 
-Lina是一个专为现代UI设计的自适应滚动区域组件，作为shadcn/ui ScrollArea的直接替代方案，提供原生触控体验和精致交互效果。
+Lina 是一个专为现代 UI 设计的自适应滚动区域组件，作为 shadcn/ui ScrollArea 的直接替代方案，提供原生触控体验和精致交互效果。
 
 - 🎯 自适应遮罩：仅在内容可滚动时显示边缘渐变效果，并根据滚动位置、轴向和容器形状实时调整
 - ✨ 微交互效果：在非触控设备上为自定义滚动条提供悬停/按压效果，滑块行为响应灵敏
 - 📱 原生触控优化：采用正确的触控操作、动量滚动和被动监听器，在移动端实现原生滚动体验
-- 🔄 直接替换：完全兼容shadcn/ui ScrollArea的API、属性和类名，可无缝替换使用
-- 🎪 双框架支持：提供基于Radix UI和Base UI的两种版本，保持一致的API和视觉设计
-- ⭐ 开源项目：获得262个星标，采用MIT许可协议，基于主流UI框架构建
+- 🔄 直接替换：完全兼容 shadcn/ui ScrollArea 的 API、属性和类名，可无缝替换使用
+- 🎪 双框架支持：提供基于 Radix UI 和 Base UI 的两种版本，保持一致的 API 和视觉设计
+- ⭐ 开源项目：获得 262 个星标，采用 MIT 许可协议，基于主流 UI 框架构建
 
 ---
 
@@ -378,34 +378,34 @@ Lina是一个专为现代UI设计的自适应滚动区域组件，作为shadcn/u
 
 **原文标题**: [GitHub - artem-mangilev/ngx-vflow: An open source library to build node-based UI with Angular 16+](https://github.com/artem-mangilev/ngx-vflow)
 
-ngx-vflow是一个用于构建基于节点UI的开源Angular库，支持创建从静态图表到可视化编辑器的各种应用。
+ngx-vflow 是一个用于构建基于节点 UI 的开源 Angular 库，支持创建从静态图表到可视化编辑器的各种应用。
 
-- 🚀 基于Angular 16+的开源库，用于构建节点式用户界面
+- 🚀 基于 Angular 16+ 的开源库，用于构建节点式用户界面
 - 🎯 支持自定义设计，可使用默认样式或通过熟悉技术完全定制
-- 📦 通过npm安装：npm i ngx-vflow --save
-- 🔗 提供完整的组件API和宿主指令支持
-- 📄 采用MIT开源许可证
-- ⭐ GitHub项目获得410星标和32个分支
+- 📦 通过 npm 安装：npm i ngx-vflow --save
+- 🔗 提供完整的组件 API 和宿主指令支持
+- 📄 采用 MIT 开源许可证
+- ⭐ GitHub 项目获得 410 星标和 32 个分支
 - 🌐 详细文档和示例可访问官网：www.ngx-vflow.org
 
 ---
 
-### [GitHub - sparkjsdev/spark: ✨ 面向THREE.js的高级3D高斯溅射渲染器](https://github.com/sparkjsdev/spark)
+### [GitHub - sparkjsdev/spark: ✨ 面向 THREE.js 的高级 3D 高斯溅射渲染器](https://github.com/sparkjsdev/spark)
 
 **原文标题**: [GitHub - sparkjsdev/spark: :sparkles:  An advanced 3D Gaussian Splatting renderer for THREE.js](https://github.com/sparkjsdev/spark)
 
-这是一个基于THREE.js的高级3D高斯泼溅渲染器开源项目，具有跨平台兼容性和丰富的功能特性。
+这是一个基于 THREE.js 的高级 3D 高斯泼溅渲染器开源项目，具有跨平台兼容性和丰富的功能特性。
 
-- ✨ 专为THREE.js设计的高斯泼溅渲染器，支持动态编辑和实时渲染
-- 📱 跨平台兼容性强，支持98%以上WebGL2设备，移动端流畅运行
+- ✨ 专为 THREE.js 设计的高斯泼溅渲染器，支持动态编辑和实时渲染
+- 📱 跨平台兼容性强，支持 98% 以上 WebGL2 设备，移动端流畅运行
 - 🔄 支持多种文件格式：.PLY（含压缩版）、.SPZ、.SPLAT、.KSPLAT、.SOG
 - 🎮 具备动态编辑功能，支持实时颜色调整、位移变换和骨骼动画
-- 🛠️ 提供多种集成方式：CDN引入、NPM安装和在线编辑器模板
+- 🛠️ 提供多种集成方式：CDN 引入、NPM 安装和在线编辑器模板
 - 📚 包含完整开发环境配置，支持本地示例运行和项目贡献
 - 🌐 配套详细文档网站，支持在线部署和静态站点生成
-- ⚡ 内置压缩工具，支持将泼溅文件压缩为SPZ格式
-- 📊 项目活跃度高：1.3k星标、101个分支、16位贡献者
-- 🔧 技术栈丰富：主要使用TypeScript，辅以GLSL、Rust等语言
+- ⚡ 内置压缩工具，支持将泼溅文件压缩为 SPZ 格式
+- 📊 项目活跃度高：1.3k 星标、101 个分支、16 位贡献者
+- 🔧 技术栈丰富：主要使用 TypeScript，辅以 GLSL、Rust 等语言
 
 ---
 
@@ -413,16 +413,16 @@ ngx-vflow是一个用于构建基于节点UI的开源Angular库，支持创建�
 
 **原文标题**: [GitHub - svelteplot/svelteplot: Svelte Plotting Framework](https://github.com/svelteplot/svelteplot)
 
-这是一个基于分层图形语法理念构建的Svelte可视化框架，其API设计深受Observable Plot启发，专为数据分析和交互式可视化设计。
+这是一个基于分层图形语法理念构建的 Svelte 可视化框架，其 API 设计深受 Observable Plot 启发，专为数据分析和交互式可视化设计。
 
 - 📊 基于分层图形语法理念的可视化框架
-- ⚡ 专为Svelte框架设计，支持交互式数据可视化
-- 🌐 官方网站svelteplot.dev，GitHub获得314星标和21个分支
-- 🔧 开发环境使用pnpm管理，支持单元测试和视觉回归测试
-- 📝 采用TypeScript(49.8%)和Svelte(45.7%)为主要开发语言
-- 📦 当前最新版本v0.7.1，已有37个发布版本
-- 👥 由17位贡献者共同维护的开源项目
-- 📄 包含完整的开发文档、贡献指南和MIT许可证
+- ⚡ 专为 Svelte 框架设计，支持交互式数据可视化
+- 🌐 官方网站 svelteplot.dev，GitHub 获得 314 星标和 21 个分支
+- 🔧 开发环境使用 pnpm 管理，支持单元测试和视觉回归测试
+- 📝 采用 TypeScript(49.8%) 和 Svelte(45.7%) 为主要开发语言
+- 📦 当前最新版本 v0.7.1，已有 37 个发布版本
+- 👥 由 17 位贡献者共同维护的开源项目
+- 📄 包含完整的开发文档、贡献指南和 MIT 许可证
 
 ---
 
@@ -430,12 +430,12 @@ ngx-vflow是一个用于构建基于节点UI的开源Angular库，支持创建�
 
 **原文标题**: [Contact Web Tools Weekly](https://webtoolsweekly.com/contact?opt=classifieds)
 
-如需在Web Tools Weekly投放广告，请查看广告方案页面了解选项，并通过下方表单咨询当前可预订档期。仅限广告咨询使用本表单，其他业务请通过X私信、Bluesky聊天或订阅后回复邮件联系。
+如需在 Web Tools Weekly 投放广告，请查看广告方案页面了解选项，并通过下方表单咨询当前可预订档期。仅限广告咨询使用本表单，其他业务请通过 X 私信、Bluesky 聊天或订阅后回复邮件联系。
 
 - 📅 查看广告方案页面了解投放选项
 - 📩 通过提交表单咨询当前可预订广告位
 - 📝 填写姓名、邮箱、推广链接等必填信息
-- 🎯 可选择顶部广告+文字链/付费评测/中部图片广告等六类方案
+- 🎯 可选择顶部广告 + 文字链/付费评测/中部图片广告等六类方案
 - ⚠️ 本表单仅处理广告业务咨询
 - ✉️ 其他业务需通过社交媒体或邮件联系
 
@@ -466,22 +466,22 @@ Splendid Labz 提供一套专为 Astro 和 Svelte 设计的组件库、样式系
 
 ---
 
-### [Webix JS 网格——适用于现代网页应用的强大JavaScript数据表格](https://grid.webix.com/)
+### [Webix JS 网格——适用于现代网页应用的强大 JavaScript 数据表格](https://grid.webix.com/)
 
 **原文标题**: [Webix JS Grid â Powerful JavaScript DataGrid for Modern Web Apps](https://grid.webix.com/)
 
-Webix Grid Pro是一款高性能JavaScript数据表格组件，专为处理复杂数据密集型应用而设计
+Webix Grid Pro 是一款高性能 JavaScript 数据表格组件，专为处理复杂数据密集型应用而设计
 
 - 📊 提供子行、高级编辑器、区域选择等丰富功能，支持海量数据毫秒级渲染
-- 🛠️ 支持7种主题皮肤和CSS自定义，可灵活集成React/Vue/Angular等前端框架
-- 💰 提供GPL免费版和Pro商业版（起价$749），商业版含永久许可且无隐藏费用
-- 📚 配备详细文档、150+代码示例和活跃社区论坛，提供专业技术支持
+- 🛠️ 支持 7 种主题皮肤和 CSS 自定义，可灵活集成 React/Vue/Angular 等前端框架
+- 💰 提供 GPL 免费版和 Pro 商业版（起价$749），商业版含永久许可且无隐藏费用
+- 📚 配备详细文档、150+ 代码示例和活跃社区论坛，提供专业技术支持
 - 🚀 采用懒加载和动态渲染技术，确保处理数百万行数据时仍保持流畅交互
 - ⭐ 获全球开发者好评，学习曲线平缓，特别适合企业级关键任务应用
 
 ---
 
-### [GrayBlocks - 无限Figma、Framer与Webflow组件库](https://grayblocks.net/)
+### [GrayBlocks - 无限 Figma、Framer 与 Webflow 组件库](https://grayblocks.net/)
 
 **原文标题**: [GrayBlocks - Unlimited Figma, Framer & Webflow Components](https://grayblocks.net/)
 
@@ -502,25 +502,25 @@ Webix Grid Pro是一款高性能JavaScript数据表格组件，专为处理复�
 这是一份面向技术专业人士的每周通讯，提供精选工具与实用内容，深受订阅者好评。
 
 - 📧 每周一发送邮件，无垃圾内容且注重隐私保护
-- 👥 拥有3213名订阅者，社群持续增长
+- 👥 拥有 3213 名订阅者，社群持续增长
 - ⭐ 读者反馈显示其内容精炼实用，是备受期待的每周必读
 - 🛠️ 帮助从业者发现高效工具，提升工作效率
 - 💌 多位用户自发称赞其持续提供的高价值信息
 
 ---
 
-### [Uxia - 利用AI合成测试者实现分钟级用户体验测试](https://www.uxia.app/)
+### [Uxia - 利用 AI 合成测试者实现分钟级用户体验测试](https://www.uxia.app/)
 
 **原文标题**: [Uxia - UX Testing in Minutes with AI Synthetic Testers ](https://www.uxia.app/)
 
-Uxia是一款AI驱动的用户体验测试平台，通过合成用户模拟真实用户行为，为产品设计和产品管理团队提供快速、可靠的UX/UI验证，无需真实用户参与。
+Uxia 是一款 AI 驱动的用户体验测试平台，通过合成用户模拟真实用户行为，为产品设计和产品管理团队提供快速、可靠的 UX/UI 验证，无需真实用户参与。
 
-- 🤖 利用AI合成用户进行自动化测试，可自定义用户画像（年龄、职业、地域等）
+- 🤖 利用 AI 合成用户进行自动化测试，可自定义用户画像（年龄、职业、地域等）
 - ⚡ 分钟级反馈速度，替代传统耗时数日的用户测试流程
 - 🎯 支持多种测试类型：可用性测试、无障碍检测、热力图分析、启发式评估
 - 📊 提供详细测试报告：交互记录、问题检测、可访问性检查、可信度分析
-- 💰 灵活定价方案：免费版支持2次测试，专业版34.95欧元/月，企业版定制
-- 🏆 获Product Hunt日/周/月度最佳产品，被700+领先产品团队采用
+- 💰 灵活定价方案：免费版支持 2 次测试，专业版 34.95 欧元/月，企业版定制
+- 🏆 获 Product Hunt 日/周/月度最佳产品，被 700+ 领先产品团队采用
 - 🔧 支持图像/视频原型上传，自动生成可操作的改进建议
 - 🌍 消除测试者偏见，提供无偏见的用户反馈
 - 📈 帮助团队快速迭代设计，降低开发成本，避免返工
@@ -531,15 +531,15 @@ Uxia是一款AI驱动的用户体验测试平台，通过合成用户模拟真�
 
 **原文标题**: [Pie - Autonomous QA that tests like a human](https://pie.inc/)
 
-Pie是一款革命性的AI驱动QA测试平台，通过模拟真实用户行为实现快速自动化测试，无需编写代码即可在30分钟内达到80%端到端测试覆盖率。
+Pie 是一款革命性的 AI 驱动 QA 测试平台，通过模拟真实用户行为实现快速自动化测试，无需编写代码即可在 30 分钟内达到 80% 端到端测试覆盖率。
 
 - 🚀 即插即用测试体验：上传应用程序后立即自动生成测试用例，无需配置脚本或等待
-- ⏱️ 极速测试覆盖：部署AI测试代理群组，将传统需要10000小时的测试压缩至30分钟完成
-- 🧠 智能自然语言测试：使用日常语言描述测试场景（如"测试过期信用卡结账流程"），AI自动转化为具体测试用例
+- ⏱️ 极速测试覆盖：部署 AI 测试代理群组，将传统需要 10000 小时的测试压缩至 30 分钟完成
+- 🧠 智能自然语言测试：使用日常语言描述测试场景（如"测试过期信用卡结账流程"），AI 自动转化为具体测试用例
 - 📊 明确发布决策：提供单一可读性评分，清晰指示是否达到发布标准，消除多报告交叉核对的需求
-- 🔒 企业级安全保障：通过SOC 2 Type 2认证，仅与应用程序UI交互，不访问源代码，确保知识产权安全
-- 🔧 全栈兼容性：框架无关设计，支持React Native等各种技术栈，通过模拟真实用户操作确保兼容性
-- 💬 用户证言：Fi公司CEO证实平台显著提升发布信心和产品上线速度
+- 🔒 企业级安全保障：通过 SOC 2 Type 2 认证，仅与应用程序 UI 交互，不访问源代码，确保知识产权安全
+- 🔧 全栈兼容性：框架无关设计，支持 React Native 等各种技术栈，通过模拟真实用户操作确保兼容性
+- 💬 用户证言：Fi 公司 CEO 证实平台显著提升发布信心和产品上线速度
 
 ---
 
@@ -547,10 +547,10 @@ Pie是一款革命性的AI驱动QA测试平台，通过模拟真实用户行为�
 
 **原文标题**: [No title found](https://x.com/nalinrajput23/status/1993679270049440223)
 
-检测到浏览器中JavaScript功能未启用，请启用JavaScript或切换至受支持的浏览器以继续使用x.com平台。受支持浏览器列表可在帮助中心查看。
+检测到浏览器中 JavaScript 功能未启用，请启用 JavaScript 或切换至受支持的浏览器以继续使用 x.com 平台。受支持浏览器列表可在帮助中心查看。
 
-- 🚫 JavaScript未启用导致功能受限
-- 🌐 需切换受支持浏览器或开启JavaScript
+- 🚫 JavaScript 未启用导致功能受限
+- 🌐 需切换受支持浏览器或开启 JavaScript
 - 📖 帮助中心提供兼容浏览器清单
 - 🔒 隐私扩展可能引发访问问题
 - 🔄 建议禁用扩展后重试操作
@@ -562,10 +562,10 @@ Pie是一款革命性的AI驱动QA测试平台，通过模拟真实用户行为�
 
 **原文标题**: [No title found](https://x.com/LouisLazaris)
 
-检测到浏览器中JavaScript功能未启用，请启用JavaScript或切换至受支持的浏览器以继续使用X平台。受支持浏览器列表可在帮助中心查看。
+检测到浏览器中 JavaScript 功能未启用，请启用 JavaScript 或切换至受支持的浏览器以继续使用 X 平台。受支持浏览器列表可在帮助中心查看。
 
-- 🚫 JavaScript未启用导致功能受限
-- 🌐 建议启用JavaScript或更换受支持浏览器  
+- 🚫 JavaScript 未启用导致功能受限
+- 🌐 建议启用 JavaScript 或更换受支持浏览器  
 - 📖 支持浏览器列表详见帮助中心
 - 🔧 隐私扩展可能造成访问问题，建议暂时禁用
 - 🔄 遇到错误时可尝试重新加载页面
@@ -577,25 +577,25 @@ Pie是一款革命性的AI驱动QA测试平台，通过模拟真实用户行为�
 
 **原文标题**: [@louislazaris.com on Bluesky](https://bsky.app/profile/louislazaris.com)
 
-这是一个关于前端开发者Louis Lazaris的个人资料页面，展示了他的专业背景和在线资源。
+这是一个关于前端开发者 Louis Lazaris 的个人资料页面，展示了他的专业背景和在线资源。
 
-- 🔧 这是一个需要JavaScript支持的高度交互式网页应用
-- 👨‍💻 Louis Lazaris是前端开发者和新闻通讯策划人
-- 📧 维护多个专业网站：Web工具周刊、技术生产力、VS Code邮件等
-- 🎸 运营吉他手专属的YouTube频道TuneJotter
-- 🔗 可通过bluesky.social和atproto.com了解更多关于Bluesky平台的信息
+- 🔧 这是一个需要 JavaScript 支持的高度交互式网页应用
+- 👨‍💻 Louis Lazaris 是前端开发者和新闻通讯策划人
+- 📧 维护多个专业网站：Web 工具周刊、技术生产力、VS Code 邮件等
+- 🎸 运营吉他手专属的 YouTube 频道 TuneJotter
+- 🔗 可通过 bluesky.social 和 atproto.com 了解更多关于 Bluesky 平台的信息
 
 ---
 
-### [提交工具至Web工具周刊](https://webtoolsweekly.com/submit)
+### [提交工具至 Web 工具周刊](https://webtoolsweekly.com/submit)
 
 **原文标题**: [Submit a Tool to Web Tools Weekly](https://webtoolsweekly.com/submit)
 
 征集面向前端开发者的实用工具资源
-- 📢 通过X或Bluesky平台提交工具推荐
+- 📢 通过 X 或 Bluesky 平台提交工具推荐
 - 🔧 接受各类开发工具提交（库/框架/插件/应用程序等）
 - 🚫 明确排除文章教程类内容
-- 📬 提供两个具体提交渠道：X平台私信和Bluesky聊天
+- 📬 提供两个具体提交渠道：X 平台私信和 Bluesky 聊天
 - 📧 生产力工具需投递至独立通讯专栏
 
 ---
@@ -608,9 +608,9 @@ Pie是一款革命性的AI驱动QA测试平台，通过模拟真实用户行为�
 
 - 🥁 支持六种鼓声拟声词：boom（底鼓）、chit（军鼓）、tick（闭合踩镲）、tiss（开放踩镲）、tcha（拍手）、空格（休止）
 - ⌨️ 采用文本输入创作节奏，通过空格控制节奏间隔，例："boom   chit boom boomboom chit"
-- 🎛️ 音源采自Vermona DRM1 MKIII模拟鼓合成器实录
-- 💡 创作灵感源自Tidal Cycles实时编码、语音音素研究及打字游戏概念
-- 👨‍💻 由Maxwell Neely-Cohen于2025年开发的“一万台鼓机计划”第二部作品
+- 🎛️ 音源采自 Vermona DRM1 MKIII 模拟鼓合成器实录
+- 💡 创作灵感源自 Tidal Cycles 实时编码、语音音素研究及打字游戏概念
+- 👨‍💻 由 Maxwell Neely-Cohen 于 2025 年开发的“一万台鼓机计划”第二部作品
 
 ---
 
@@ -618,12 +618,12 @@ Pie是一款革命性的AI驱动QA测试平台，通过模拟真实用户行为�
 
 **原文标题**: [Web Tools Weekly | A Weekly Newsletter for Front-end Developers](https://webtoolsweekly.com/)
 
-Web Tools Weekly 是一份面向网页开发者的周报，提供最新工具和资源，拥有超过1.3万订阅用户，每周发送无垃圾邮件内容。
+Web Tools Weekly 是一份面向网页开发者的周报，提供最新工具和资源，拥有超过 1.3 万订阅用户，每周发送无垃圾邮件内容。
 
 - 📧 每周一封邮件推送，无垃圾内容且遵循隐私政策
-- 👥 拥有13,183名活跃订阅者，社群认可度高  
+- 👥 拥有 13,183 名活跃订阅者，社群认可度高  
 - ⭐ 用户评价极高，被赞为最实用的技术简报之一
-- 🔧 专注前端开发工具和JavaScript技巧分享
+- 🔧 专注前端开发工具和 JavaScript 技巧分享
 - 💌 订阅即同意服务条款和数据追踪政策
 - 🗣️ 读者反馈显示其长期提供高价值内容
 
