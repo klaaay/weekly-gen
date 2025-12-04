@@ -1,9 +1,9 @@
 {
   "thisweekinreact": {
-    "issue_title": "📨 #260: TanStack, Actions, Immer, RTK, Streamdown, XState Store, ReScript, HTML streaming | Vercel v0, Worklets, Skia, Tailwind, Native Stack, Gifted Chat, Enriched | TC39, Playwright, Bun, Astro, Better Auth",
-    "link_url": "/newsletter/260",
-    "timestamp": "2025-11-27T12:44:36.101355",
-    "full_url": "https://thisweekinreact.com//newsletter/260"
+    "issue_title": "📨 #261: RSC vulnerability, Activity, ViewTransition, React Router, Sonner, Cedar, Storybook, Conform | RNRepo, Nitro Modules, Keyboard Controller, SET, Sheets, deep links | tsgo, Bun, WebGPU, Vite, oxfmt, Valibot",
+    "link_url": "/newsletter/261",
+    "timestamp": "2025-12-04T20:10:53.876666",
+    "full_url": "https://thisweekinreact.com//newsletter/261"
   },
   "nextjsweekly": {
     "issue_title": "Issue #109 Nov 21, 2025Next Analyze, Prisma 7, use-nemo, State of React 2025, Error Boundaries, Tables & Modals, UI Framework Guide",
@@ -18,10 +18,10 @@
     "full_url": "https://reactdigest.net//newsletters/2169-automated-accessibility-testing-for-react"
   },
   "webtoolsweekly": {
-    "issue_title": "#645\nFrameworks, Testing, JS Lib Plugins",
-    "link_url": "archives/issue-645/",
-    "timestamp": "2025-11-27T12:44:36.570636",
-    "full_url": "https://webtoolsweekly.com/archives/issue-645/"
+    "issue_title": "#646\nReact, Git/CLI, Uncats",
+    "link_url": "archives/issue-646/",
+    "timestamp": "2025-12-04T20:10:55.558572",
+    "full_url": "https://webtoolsweekly.com/archives/issue-646/"
   },
   "nodeweekly": {
     "issue_title": "Issue #603",
@@ -30,16 +30,16 @@
     "full_url": "https://nodeweekly.com/issues/603"
   },
   "frontendfoc": {
-    "issue_title": "Issue #719",
-    "link_url": "issues/719",
-    "timestamp": "2025-11-27T12:44:37.142870",
-    "full_url": "https://frontendfoc.us/issues/719"
+    "issue_title": "Issue #720",
+    "link_url": "issues/720",
+    "timestamp": "2025-12-04T20:10:55.063906",
+    "full_url": "https://frontendfoc.us/issues/720"
   },
   "reactweekly": {
-    "issue_title": "Issue #453",
-    "link_url": "issues/453",
-    "timestamp": "2025-11-27T12:44:36.655841",
-    "full_url": "https://reactweekly.com/issues/453"
+    "issue_title": "Issue #454",
+    "link_url": "issues/454",
+    "timestamp": "2025-12-04T20:10:56.822753",
+    "full_url": "https://reactweekly.com/issues/454"
   },
   "javascriptweekly": {
     "issue_title": "Issue #763",
