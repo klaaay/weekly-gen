@@ -1,22 +1,22 @@
-### [React 状态问题 454：2025年12月3日](https://react.statuscode.com/issues/454)
+### [React 状态问题 454:2025 年 12 月 3 日](https://react.statuscode.com/issues/454)
 
 **原文标题**: [React Status Issue 454: December 3, 2025](https://react.statuscode.com/issues/454)
 
-本期内容涵盖React安全漏洞、框架更新、性能优化及新工具发布，重点关注React生态的最新动态和开发资源。
+本期内容涵盖 React 安全漏洞、框架更新、性能优化及新工具发布，重点关注 React 生态的最新动态和开发资源。
 
-- ⚠️ React Server Components存在严重安全漏洞，影响特定版本，需升级至修复版本
-- 🚀 Vite 8 Beta发布，采用Rolldown引擎提升构建速度
-- 🔧 React Router正实验性支持React Server Components
-- 📈 TanStack开源项目两年发展回顾，展示成功经验
-- 📱 React Native新架构成为未来发展方向
-- 🔒 Next.js服务器攻击漏洞已修复，建议升级版本
-- 🛠️ 多个React工具更新，包括认证框架、加密库和日历控件
-- 📊 图表库、Markdown编辑器等UI工具发布新版本
-- 🌐 行业动态：Anthropic收购Bun公司，Electron项目进入维护休整期
+- ⚠️ React Server Components 存在严重安全漏洞，影响特定版本，需升级至修复版本
+- 🚀 Vite 8 Beta 发布，采用 Rolldown 引擎提升构建速度
+- 🔧 React Router 正实验性支持 React Server Components
+- 📈 TanStack 开源项目两年发展回顾，展示成功经验
+- 📱 React Native 新架构成为未来发展方向
+- 🔒 Next.js 服务器攻击漏洞已修复，建议升级版本
+- 🛠️ 多个 React 工具更新，包括认证框架、加密库和日历控件
+- 📊 图表库、Markdown 编辑器等 UI 工具发布新版本
+- 🌐 行业动态：Anthropic 收购 Bun 公司，Electron 项目进入维护休整期
 
 ---
 
-### [React服务器组件中的关键安全漏洞——React](https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components)
+### [React 服务器组件中的关键安全漏洞——React](https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components)
 
 **原文标题**: [Critical Security Vulnerability in React Server Components – React](https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components)
 
@@ -32,20 +32,20 @@ React Server Components 中存在一个未经身份验证的远程代码执行�
 
 ---
 
-### [发布 19.0.1 版本（2025年12月3日）· facebook/react · GitHub](https://github.com/facebook/react/releases/tag/v19.0.1)
+### [发布 19.0.1 版本（2025 年 12 月 3 日）· facebook/react · GitHub](https://github.com/facebook/react/releases/tag/v19.0.1)
 
 **原文标题**: [Release 19.0.1 (December 3rd, 2025) · facebook/react · GitHub](https://github.com/facebook/react/releases/tag/v19.0.1)
 
-React 19.0.1 版本于2025年12月3日发布，主要修复了服务器组件相关问题。
+React 19.0.1 版本于 2025 年 12 月 3 日发布，主要修复了服务器组件相关问题。
 
 - 🐛 修复了服务器组件在服务器动作中的问题
 - 🔧 由贡献者 sebmarkbage 提交修复
-- 📅 版本发布于2025年12月3日，包含1557次提交
-- 👥 获得社区积极反馈，共有8人参与互动
+- 📅 版本发布于 2025 年 12 月 3 日，包含 1557 次提交
+- 👥 获得社区积极反馈，共有 8 人参与互动
 
 ---
 
-### [发布 19.1.2 版本（2025年12月3日）· facebook/react · GitHub](https://github.com/facebook/react/releases/tag/v19.1.2)
+### [发布 19.1.2 版本（2025 年 12 月 3 日）· facebook/react · GitHub](https://github.com/facebook/react/releases/tag/v19.1.2)
 
 **原文标题**: [Release 19.1.2 (December 3rd, 2025) · facebook/react · GitHub](https://github.com/facebook/react/releases/tag/v19.1.2)
 
@@ -60,7 +60,7 @@ React 项目在 GitHub 上发布了版本 v19.1.2，主要修复了 React Server
 
 ---
 
-### [发布 19.2.1 版本（2025年12月3日）· facebook/react · GitHub](https://github.com/facebook/react/releases/tag/v19.2.1)
+### [发布 19.2.1 版本（2025 年 12 月 3 日）· facebook/react · GitHub](https://github.com/facebook/react/releases/tag/v19.2.1)
 
 **原文标题**: [Release 19.2.1 (December 3rd, 2025) · facebook/react · GitHub](https://github.com/facebook/react/releases/tag/v19.2.1)
 
@@ -70,27 +70,27 @@ React 项目在 GitHub 上的最新动态，包括版本发布、社区互动及
 - 🔧 该版本由贡献者 sebmarkbage 提交，专注于服务器操作的 React 服务器组件修复
 - 👥 社区反应热烈，共收到 27 次表情互动，包括大笑、爱心、火箭和关注等
 - ⚠️ 页面在加载过程中遇到了一些错误，需要重新加载来解决
-- 📊 项目整体数据：24.1万星标、5万复刻、855个议题和241个拉取请求
+- 📊 项目整体数据：24.1 万星标、5 万复刻、855 个议题和 241 个拉取请求
 
 ---
 
-### [构建高性能React应用 | 前端大师](https://frontendmasters.com/courses/react-performance-v2/?utm_source=email&utm_medium=reactstatus&utm_content=reactperfv2)
+### [构建高性能 React 应用 | 前端大师](https://frontendmasters.com/courses/react-performance-v2/?utm_source=email&utm_medium=reactstatus&utm_content=reactperfv2)
 
 **原文标题**: [Build High-Performance React Apps | Frontend Masters](https://frontendmasters.com/courses/react-performance-v2/?utm_source=email&utm_medium=reactstatus&utm_content=reactperfv2)
 
-本课程深入讲解如何构建高性能React应用，涵盖React 19的性能优化策略及经典最佳实践，通过实际案例帮助开发者识别并解决性能瓶颈。
+本课程深入讲解如何构建高性能 React 应用，涵盖 React 19 的性能优化策略及经典最佳实践，通过实际案例帮助开发者识别并解决性能瓶颈。
 
-- 🚀 课程聚焦React 19性能策略，包括水合、Suspense、资源加载和服务器操作，同时巩固记忆化、虚拟化和代码分割等经久不衰的最佳实践。
+- 🚀 课程聚焦 React 19 性能策略，包括水合、Suspense、资源加载和服务器操作，同时巩固记忆化、虚拟化和代码分割等经久不衰的最佳实践。
 - 🔍 学习快速诊断性能瓶颈和代价高昂的重新渲染，构建体验流畅的应用，课程包含真实场景启发的实践实验。
-- 📚 课程内容涵盖渲染与React Fiber、状态管理、记忆化、过渡与延迟值等核心章节，并详细解析重新渲染的机制与优化方案。
-- 🛠️ 介绍React开发者工具的使用，教授如何通过下推状态、记忆化（useCallback、useMemo、React.memo）和优化上下文API来防止不必要的重新渲染。
-- ⚡ 探讨React Fiber的协作式调度渲染引擎、车道（Lanes）优先级模型，以及如何使用startTransition和useDeferredValue保持应用响应速度。
-- ✨ 演示乐观UI更新的实现，以在等待服务器响应时提供即时反馈，从而提升用户体验和应用性能。
+- 📚 课程内容涵盖渲染与 React Fiber、状态管理、记忆化、过渡与延迟值等核心章节，并详细解析重新渲染的机制与优化方案。
+- 🛠️ 介绍 React 开发者工具的使用，教授如何通过下推状态、记忆化（useCallback、useMemo、React.memo）和优化上下文 API 来防止不必要的重新渲染。
+- ⚡ 探讨 React Fiber 的协作式调度渲染引擎、车道（Lanes）优先级模型，以及如何使用 startTransition 和 useDeferredValue 保持应用响应速度。
+- ✨ 演示乐观 UI 更新的实现，以在等待服务器响应时提供即时反馈，从而提升用户体验和应用性能。
 - 💡 课程最后包含问答环节，解答关于性能瓶颈优先级、记忆化安全使用等实际问题，并总结关键优化要点。
 
 ---
 
-### [Vite 8 Beta：基于Rolldown驱动的Vite | Vite](https://vite.dev/blog/announcing-vite8-beta)
+### [Vite 8 Beta：基于 Rolldown 驱动的 Vite | Vite](https://vite.dev/blog/announcing-vite8-beta)
 
 **原文标题**: [Vite 8 Beta: The Rolldown-powered Vite | Vite](https://vite.dev/blog/announcing-vite8-beta)
 
@@ -126,48 +126,48 @@ React Router 正在实验性地集成 React Server Components（RSC），其实�
 
 **原文标题**: [The State of TanStack, Two Years of Full-Time OSS | TanStack Blog](https://tanstack.com/blog/tanstack-2-years)
 
-TanStack创始人回顾两年全职投入开源的心路历程，从个人项目发展为拥有庞大生态的可持续开源组织，强调团队协作、家庭支持与社区贡献的重要性，并展望未来扩展计划。
+TanStack 创始人回顾两年全职投入开源的心路历程，从个人项目发展为拥有庞大生态的可持续开源组织，强调团队协作、家庭支持与社区贡献的重要性，并展望未来扩展计划。
 
-- 🚀 **全职投入开源**：两年前作者全身心投入TanStack，致力于打造专业且可持续的开源生态系统，现已支持全球数百万开发者和大型企业。
-- 💡 **核心挑战与突破**：在没有外部资金的情况下启动全栈框架TanStack Start，通过适配器设计支持多运行时，并逐步构建团队实现项目推进。
+- 🚀 **全职投入开源**：两年前作者全身心投入 TanStack，致力于打造专业且可持续的开源生态系统，现已支持全球数百万开发者和大型企业。
+- 💡 **核心挑战与突破**：在没有外部资金的情况下启动全栈框架 TanStack Start，通过适配器设计支持多运行时，并逐步构建团队实现项目推进。
 - 👨👩👧👦 **家庭与个人平衡**：家人支持成为应对高强度工作的基石，作者注重工作与生活的平衡，避免过度消耗。
-- 🤝 **团队与可持续模式**：通过合作伙伴资助，为12名核心贡献者提供报酬，并建立可持续的财务模型，确保项目长期稳定运行。
-- 📊 **显著增长数据**：TanStack拥有13个活跃项目、36名核心贡献者、超6300名Discord社区成员，累计下载量超40亿次，获超11万GitHub星标。
-- 🌍 **企业级应用**：超9000家公司正式使用TanStack，另有3.3万家处于评估阶段，涵盖科技、金融、医疗等多个行业。
-- 🔮 **未来规划**：聚焦TanStack Start 1.0版本、完善React服务端组件支持，并计划在2026年推出一项重大新库，拓展生态边界。
-- ❤️ **感恩与支持**：感谢贡献者、合作伙伴及社区用户，并呼吁通过GitHub星标、Discord参与或赞助等方式支持项目持续发展。
+- 🤝 **团队与可持续模式**：通过合作伙伴资助，为 12 名核心贡献者提供报酬，并建立可持续的财务模型，确保项目长期稳定运行。
+- 📊 **显著增长数据**：TanStack 拥有 13 个活跃项目、36 名核心贡献者、超 6300 名 Discord 社区成员，累计下载量超 40 亿次，获超 11 万 GitHub 星标。
+- 🌍 **企业级应用**：超 9000 家公司正式使用 TanStack，另有 3.3 万家处于评估阶段，涵盖科技、金融、医疗等多个行业。
+- 🔮 **未来规划**：聚焦 TanStack Start 1.0 版本、完善 React 服务端组件支持，并计划在 2026 年推出一项重大新库，拓展生态边界。
+- ❤️ **感恩与支持**：感谢贡献者、合作伙伴及社区用户，并呼吁通过 GitHub 星标、Discord 参与或赞助等方式支持项目持续发展。
 
 ---
 
-### [并非新事：'架构'如何开启React Native的未来](https://www.callstack.com/podcasts/its-not-new-how-the-architecture-unlocks-react-natives-future)
+### [并非新事：'架构'如何开启 React Native 的未来](https://www.callstack.com/podcasts/its-not-new-how-the-architecture-unlocks-react-natives-future)
 
 **原文标题**: [It's Not New: How 'The Architecture' Unlocks React Native's Future](https://www.callstack.com/podcasts/its-not-new-how-the-architecture-unlocks-react-natives-future)
 
-这篇播客讨论了React Native的“新架构”已正式成为其核心架构，并探讨了该架构如何为框架的未来发展奠定基础。
+这篇播客讨论了 React Native 的“新架构”已正式成为其核心架构，并探讨了该架构如何为框架的未来发展奠定基础。
 
-- 🏗️ React Native的“新架构”现已成熟，不再被称为“新”，而是被确立为框架的核心基础架构。
-- 🚀 该架构是解锁下一代React Native功能的关键基石，为多项重要能力提供了支持。
+- 🏗️ React Native 的“新架构”现已成熟，不再被称为“新”，而是被确立为框架的核心基础架构。
+- 🚀 该架构是解锁下一代 React Native 功能的关键基石，为多项重要能力提供了支持。
 - ⚡ 它实现了并发渲染功能，允许创建并发渲染路径并管理线程优先级。
-- 🔗 该架构直接支持React 19的新特性（如`<Activity>`组件在原生端运行），并提供了必要的并发支持。
-- 🌐 它为实现原生平台上的Web标准DOM API奠定了基础。
-- ⚙️ 此架构也是Hermes V1（即新版静态Hermes）运行的基础。
+- 🔗 该架构直接支持 React 19 的新特性（如`<Activity>`组件在原生端运行），并提供了必要的并发支持。
+- 🌐 它为实现原生平台上的 Web 标准 DOM API 奠定了基础。
+- ⚙️ 此架构也是 Hermes V1（即新版静态 Hermes）运行的基础。
 
 ---
 
-### [和谐智能——以每次0.0001美分的价格击垮Next.js服务器](https://www.harmonyintelligence.com/taking-down-next-js-servers)
+### [和谐智能——以每次 0.0001 美分的价格击垮 Next.js 服务器](https://www.harmonyintelligence.com/taking-down-next-js-servers)
 
 **原文标题**: [Harmony Intelligence - Taking down Next.js servers for 0.0001 cents a pop](https://www.harmonyintelligence.com/taking-down-next-js-servers)
 
-研究人员发现了一个影响自托管Next.js服务器的未认证DoS漏洞，攻击者仅需发送一个HTTP请求即可使服务器崩溃，且攻击成本极低。该漏洞由AI安全代理自主发现，涉及`cloneBodyStream`函数在处理请求流时无内存限制的问题。漏洞影响Next.js 15.5.4及更早版本，已通过15.5.5和16.0.0版本修复。缓解措施包括升级版本或配置反向代理以限制请求大小。
+研究人员发现了一个影响自托管 Next.js 服务器的未认证 DoS 漏洞，攻击者仅需发送一个 HTTP 请求即可使服务器崩溃，且攻击成本极低。该漏洞由 AI 安全代理自主发现，涉及`cloneBodyStream`函数在处理请求流时无内存限制的问题。漏洞影响 Next.js 15.5.4 及更早版本，已通过 15.5.5 和 16.0.0 版本修复。缓解措施包括升级版本或配置反向代理以限制请求大小。
 
-- 🔍 **漏洞发现**：AI安全代理在测试中自主发现了一个未公开的Next.js DoS漏洞，而非最初寻找的已知漏洞。
+- 🔍 **漏洞发现**：AI 安全代理在测试中自主发现了一个未公开的 Next.js DoS 漏洞，而非最初寻找的已知漏洞。
 - 💥 **攻击原理**：漏洞位于`cloneBodyStream`函数，攻击者可通过发送无限数据流导致服务器内存耗尽而崩溃，且攻击资源消耗极低。
-- 🛡️ **影响范围**：影响自托管Next.js服务器（Vercel托管不受影响），涉及版本包括15.5.4及更早的14.x、13.x等。
-- ⚙️ **修复措施**：Next.js维护者已发布补丁，限制内存缓冲区大小（默认10MB）；建议升级至15.5.5或16.0.0以上版本。
-- 🔧 **缓解方案**：配置反向代理（如nginx）限制请求大小可有效防御；仅依赖速率限制或Next.js内置配置无法防护。
-- 📈 **漏洞评级**：建议CVSS v3.1评分为7.5（高危），因攻击无需认证且影响广泛，但合理部署反向代理可降低风险。
-- 🤖 **技术亮点**：AI代理通过多智能体架构分析代码并验证漏洞，展示了在复杂环境中自主发现安全问题的能力。
-- ⏳ **披露时间线**：2025年8月私密披露给Vercel，10月发布补丁，11月公开披露并提供缓解建议。
+- 🛡️ **影响范围**：影响自托管 Next.js 服务器（Vercel 托管不受影响），涉及版本包括 15.5.4 及更早的 14.x、13.x 等。
+- ⚙️ **修复措施**：Next.js 维护者已发布补丁，限制内存缓冲区大小（默认 10MB）；建议升级至 15.5.5 或 16.0.0 以上版本。
+- 🔧 **缓解方案**：配置反向代理（如 nginx）限制请求大小可有效防御；仅依赖速率限制或 Next.js 内置配置无法防护。
+- 📈 **漏洞评级**：建议 CVSS v3.1 评分为 7.5（高危），因攻击无需认证且影响广泛，但合理部署反向代理可降低风险。
+- 🤖 **技术亮点**：AI 代理通过多智能体架构分析代码并验证漏洞，展示了在复杂环境中自主发现安全问题的能力。
+- ⏳ **披露时间线**：2025 年 8 月私密披露给 Vercel，10 月发布补丁，11 月公开披露并提供缓解建议。
 
 ---
 
@@ -193,7 +193,7 @@ Next.js 16 通过一系列实用更新，优化了缓存、路由和请求拦截
 - 📚 作者计划撰写关于设计系统的系列文章
 - 💡 文章以一系列设计原则的初步列表开篇
 - 🌐 内容面向多语言读者，包括法语、葡萄牙语、印地语等
-- 🔗 原文链接指向tkdodo.eu网站，提供进一步阅读
+- 🔗 原文链接指向 tkdodo.eu 网站，提供进一步阅读
 
 ---
 
@@ -239,7 +239,7 @@ Better Auth 1.4 版本发布，引入了无状态认证、SCIM 配置、数据�
 
 ---
 
-### [GitHub - margelo/react-native-quick-crypto: ⚡️ 基于C/C++ JSI编写的Node.js `crypto`模块快速实现](https://github.com/margelo/react-native-quick-crypto)
+### [GitHub - margelo/react-native-quick-crypto: ⚡️ 基于 C/C++ JSI 编写的 Node.js `crypto`模块快速实现](https://github.com/margelo/react-native-quick-crypto)
 
 **原文标题**: [GitHub - margelo/react-native-quick-crypto: ⚡️ A fast implementation of Node's `crypto` module written in C/C++ JSI](https://github.com/margelo/react-native-quick-crypto)
 
@@ -278,21 +278,21 @@ Node.js 的 `crypto` 模块提供了基于 OpenSSL 的加密功能，包括哈�
 
 **原文标题**: [Tuple Â· Tuple](https://tuple.app/l/pair-programming?utm_source=cooperpress&utm_medium=referral&utm_campaign=react_status_sponsored_20251203)
 
-Tuple是一款专为远程结对编程设计的应用程序，提供高清屏幕共享、流畅音频和远程控制功能，旨在提升开发者的协作效率。
+Tuple 是一款专为远程结对编程设计的应用程序，提供高清屏幕共享、流畅音频和远程控制功能，旨在提升开发者的协作效率。
 
 - 🖥️ 专为开发者打造，提供高清屏幕共享和远程控制，优化结对编程体验
 - 🔒 采用端到端加密，确保所有音频、视频和屏幕共享数据的安全与隐私
-- 🔊 支持超高清分辨率（最高5K）和低延迟音频，使代码清晰可读，对话自然流畅
+- 🔊 支持超高清分辨率（最高 5K）和低延迟音频，使代码清晰可读，对话自然流畅
 - 🔄 一键切换屏幕共享者，便于协作解决问题
 - 🎨 内置屏幕标注、表情反应和动画功能，增强互动乐趣
-- 💻 基于C++开发，降低CPU占用，确保运行流畅
-- 🆓 提供14天免费试用，受数千团队信赖
+- 💻 基于 C++ 开发，降低 CPU 占用，确保运行流畅
+- 🆓 提供 14 天免费试用，受数千团队信赖
 
 ---
 
-### [GitHub - shivantra/react-web-camera: React Web Camera — 一个React组件，用于直接从浏览器捕获多张照片。适用于网页、响应式应用和PWA。解决了<input type="file" capture>一次只能拍摄一张照片的限制。](https://github.com/shivantra/react-web-camera)
+### [GitHub - shivantra/react-web-camera: React Web Camera — 一个 React 组件，用于直接从浏览器捕获多张照片。适用于网页、响应式应用和 PWA。解决了`<input type="file" capture>`一次只能拍摄一张照片的限制。](https://github.com/shivantra/react-web-camera)
 
-**原文标题**: [GitHub - shivantra/react-web-camera: React Web Camera — A React component for capturing multiple photos directly from the browser. Works on web, responsive apps, and PWAs. Solving the limitation of <input type="file" capture> which only allows one photo at a time.](https://github.com/shivantra/react-web-camera)
+**原文标题**: [GitHub - shivantra/react-web-camera: React Web Camera — A React component for capturing multiple photos directly from the browser. Works on web, responsive apps, and PWAs. Solving the limitation of `<input type="file" capture>` which only allows one photo at a time.](https://github.com/shivantra/react-web-camera)
 
 React Web Camera 是一个轻量灵活的 React 组件，用于从用户摄像头（前置或后置）捕获图像，支持 jpeg、png 和 webp 格式。它解决了移动端 `<input type="file" capture>` 只能拍摄单张照片的限制，适用于网页、响应式应用和 PWA，提供多图拍摄、摄像头切换和完全可定制的 UI。
 
@@ -313,12 +313,12 @@ React Web Camera 是一个轻量灵活的 React 组件，用于从用户摄像�
 
 **原文标题**: [React Web Camera – Shivantra](https://shivantra.com/react-web-camera/)
 
-React Web Camera 是一个轻量级、无头React组件，专为解决单次会话中捕获多张图片的需求而设计，提供灵活的UI控制和PWA兼容性。
+React Web Camera 是一个轻量级、无头 React 组件，专为解决单次会话中捕获多张图片的需求而设计，提供灵活的 UI 控制和 PWA 兼容性。
 
 - 📸 支持多图像捕获，解决传统相机输入单次拍摄的限制
-- ⚛️ 基于React的轻量级无头组件，赋予开发者完整的UI与样式控制权
-- 🖥️ 优化桌面端体验，同时支持渐进式Web应用（PWA）
-- ❤️ 由Shivantra开发并维护
+- ⚛️ 基于 React 的轻量级无头组件，赋予开发者完整的 UI 与样式控制权
+- 🖥️ 优化桌面端体验，同时支持渐进式 Web 应用（PWA）
+- ❤️ 由 Shivantra 开发并维护
 
 ---
 
@@ -328,30 +328,30 @@ React Web Camera 是一个轻量级、无头React组件，专为解决单次会�
 
 本文介绍了人工智能在医疗领域的应用现状与前景，重点探讨了其在疾病诊断、治疗方案优化及医疗管理效率提升方面的作用，并指出面临的挑战与未来发展趋势。
 
-- 🩺 AI辅助诊断系统能通过分析医学影像快速识别病灶，提高早期疾病检出率
+- 🩺 AI 辅助诊断系统能通过分析医学影像快速识别病灶，提高早期疾病检出率
 - 💊 基于机器学习的个性化治疗方案可结合患者数据优化用药与治疗路径
 - 📊 智能医疗管理平台整合临床数据，辅助医院资源调度与决策分析
-- 🔬 基因组学与AI结合加速精准医疗发展，助力靶向药物研发
+- 🔬 基因组学与 AI 结合加速精准医疗发展，助力靶向药物研发
 - ⚠️ 面临医疗数据隐私保护、算法透明度与临床验证等挑战
 - 🌐 未来将向多模态数据融合、人机协同诊疗及普惠医疗方向演进
 
 ---
 
-### [BlockNote - 基于区块的JavaScript React富文本编辑器](https://www.blocknotejs.org/)
+### [BlockNote - 基于区块的 JavaScript React 富文本编辑器](https://www.blocknotejs.org/)
 
 **原文标题**: [BlockNote - Javascript Block-Based React rich text editor](https://www.blocknotejs.org/)
 
-BlockNote是一款开源的块式富文本编辑器，提供开箱即用的现代UI组件和强大的自定义功能，基于成熟的Prosemirror和Yjs技术构建，支持实时协作与多框架集成。
+BlockNote 是一款开源的块式富文本编辑器，提供开箱即用的现代 UI 组件和强大的自定义功能，基于成熟的 Prosemirror 和 Yjs 技术构建，支持实时协作与多框架集成。
 
-- 🎯 **开箱即用** – 内置类Notion的菜单和工具栏，提供熟悉体验且完全可定制  
-- 🧱 **块式设计** – 支持拖放和嵌套块结构，提供强大API供开发者使用  
+- 🎯 **开箱即用** – 内置类 Notion 的菜单和工具栏，提供熟悉体验且完全可定制  
+- 🧱 **块式设计** – 支持拖放和嵌套块结构，提供强大 API 供开发者使用  
 - 👥 **实时协作** – 内置多人编辑功能，轻松打造协同文档体验  
 - 🔧 **高度可扩展** – 支持自定义块、样式和插件，满足个性化需求  
-- 🛡️ **TypeScript优先** – 提供完整类型安全，即使扩展自定义功能也有自动补全  
+- 🛡️ **TypeScript 优先** – 提供完整类型安全，即使扩展自定义功能也有自动补全  
 - 🎨 **主题定制** – 支持亮暗模式，可完全匹配品牌视觉风格  
-- 📄 **格式兼容** – 支持BlockNote JSON与Markdown/HTML相互转换  
-- ⚙️ **技术基础** – 基于久经考验的Prosemirror框架，降低使用门槛  
-- 🌐 **多框架支持** – 原生支持React，也可通过Vanilla JS适配其他框架  
+- 📄 **格式兼容** – 支持 BlockNote JSON 与 Markdown/HTML 相互转换  
+- ⚙️ **技术基础** – 基于久经考验的 Prosemirror 框架，降低使用门槛  
+- 🌐 **多框架支持** – 原生支持 React，也可通过 Vanilla JS 适配其他框架  
 - 💡 **生产就绪** – 已被数十家企业用于生产环境，核心依赖行业标准技术  
 - ❓ **开源免费** – 完全开源，提供咨询支持和商业许可选项
 
@@ -378,15 +378,15 @@ La Suite Docs 是一个基于 Django 和 React 构建的开源协作笔记、维
 
 **原文标题**: [FullCalendar - JavaScript Event Calendar](https://fullcalendar.io/)
 
-本文介绍了FullCalendar，一款功能强大且流行的JavaScript日历库，支持多种前端框架，并提供了丰富的定制选项和插件系统。
+本文介绍了 FullCalendar，一款功能强大且流行的 JavaScript 日历库，支持多种前端框架，并提供了丰富的定制选项和插件系统。
 
-- 📅 FullCalendar是一款最受欢迎的JavaScript日历库，支持React、Vue、Angular及原生JavaScript
-- 🔧 提供超过300种设置，功能强大且高度可定制，能满足各种日历需求
+- 📅 FullCalendar 是一款最受欢迎的 JavaScript 日历库，支持 React、Vue、Angular 及原生 JavaScript
+- 🔧 提供超过 300 种设置，功能强大且高度可定制，能满足各种日历需求
 - 📦 采用模块化插件设计，可灵活组合以减小项目打包体积
-- ⚡ 为React提供高性能组件，支持JSX渲染嵌套内容
-- 🔌 支持通过npm安装，针对不同框架有相应的安装包（如@fullcalendar/angular、@fullcalendar/react等）
-- 🌐 拥有庞大的用户基础：每月超过200万次npm下载和7000万次CDN下载
-- ⭐ 在GitHub上获得超过1.7万星标，拥有10年以上开源历史和120多位贡献者
+- ⚡ 为 React 提供高性能组件，支持 JSX 渲染嵌套内容
+- 🔌 支持通过 npm 安装，针对不同框架有相应的安装包（如@fullcalendar/angular、@fullcalendar/react 等）
+- 🌐 拥有庞大的用户基础：每月超过 200 万次 npm 下载和 7000 万次 CDN 下载
+- ⭐ 在 GitHub 上获得超过 1.7 万星标，拥有 10 年以上开源历史和 120 多位贡献者
 - 💡 核心始终免费开源，同时提供付费高级插件和技术支持选项
 - 🎯 提供详细的集成示例代码，展示如何在不同框架中初始化和配置日历组件
 
@@ -407,20 +407,20 @@ La Suite Docs 是一个基于 Django 和 React 构建的开源协作笔记、维
 
 ---
 
-### [GitHub - Ademking/use-nemo: 自定义React指令](https://github.com/Ademking/use-nemo)
+### [GitHub - Ademking/use-nemo: 自定义 React 指令](https://github.com/Ademking/use-nemo)
 
 **原文标题**: [GitHub - Ademking/use-nemo: Custom React directives](https://github.com/Ademking/use-nemo)
 
-这是一个名为“use-nemo”的开源Vite插件库，允许开发者在JavaScript/TypeScript项目中创建类似React的自定义指令，通过构建时的代码转换实现特定功能。
+这是一个名为“use-nemo”的开源 Vite 插件库，允许开发者在 JavaScript/TypeScript 项目中创建类似 React 的自定义指令，通过构建时的代码转换实现特定功能。
 
 - 🎯 **自定义指令系统** – 支持创建如"use nemo"、"use analytics"等任意指令，触发自定义代码转换
-- 🔧 **Vite插件集成** – 专为Vite+React项目设计，通过配置即可启用指令处理功能
-- 📦 **简易安装使用** – 通过npm安装，在vite.config.ts中添加插件即可开始使用
-- 🛠️ **灵活创建指令** – 提供DirectiveHandler接口和辅助函数（injectCode/injectComment等），支持快速开发定制指令
-- 🐱 **示例演示** – 内置useMeow指令示例，展示如何实现控制台日志注入等基础功能
+- 🔧 **Vite 插件集成** – 专为 Vite+React 项目设计，通过配置即可启用指令处理功能
+- 📦 **简易安装使用** – 通过 npm 安装，在 vite.config.ts 中添加插件即可开始使用
+- 🛠️ **灵活创建指令** – 提供 DirectiveHandler 接口和辅助函数（injectCode/injectComment 等），支持快速开发定制指令
+- 🐱 **示例演示** – 内置 useMeow 指令示例，展示如何实现控制台日志注入等基础功能
 - ⚙️ **自动处理流程** – 自动扫描源代码中的指令声明，调用对应处理器进行代码转换并清理指令标记
-- 📄 **MIT开源许可** – 项目采用MIT许可证，包含完整的API文档和最佳实践指南
-- 🌟 **社区活跃** – GitHub上获得126颗星，支持TypeScript并鼓励开发者贡献代码
+- 📄 **MIT 开源许可** – 项目采用 MIT 许可证，包含完整的 API 文档和最佳实践指南
+- 🌟 **社区活跃** – GitHub 上获得 126 颗星，支持 TypeScript 并鼓励开发者贡献代码
 
 ---
 
@@ -447,15 +447,15 @@ React Spectrum Charts 是一个基于 React 的声明式图表库，它允许开
 
 本文介绍了人工智能在医疗领域的应用现状与前景，重点探讨了其在疾病诊断、药物研发和个性化治疗方面的突破性进展，同时提及了相关的伦理挑战和未来发展趋势。
 
-- 🤖 AI辅助诊断系统能通过分析医学影像快速识别病灶，提升早期癌症等疾病的检出率
+- 🤖 AI 辅助诊断系统能通过分析医学影像快速识别病灶，提升早期癌症等疾病的检出率
 - 💊 机器学习加速药物筛选过程，大幅缩短新药研发周期并降低实验成本
-- 🧬 基于基因测序的个性化治疗方案可通过AI算法实现精准用药预测
-- ⚖️ 数据隐私保护与算法透明度成为医疗AI推广过程中亟待解决的伦理议题
-- 🌐 远程医疗与可穿戴设备结合AI技术，正推动慢性病管理模式革新
+- 🧬 基于基因测序的个性化治疗方案可通过 AI 算法实现精准用药预测
+- ⚖️ 数据隐私保护与算法透明度成为医疗 AI 推广过程中亟待解决的伦理议题
+- 🌐 远程医疗与可穿戴设备结合 AI 技术，正推动慢性病管理模式革新
 
 ---
 
-### [GitHub - uiwjs/react-md-editor: 一款基于React.js和TypeScript实现的简易Markdown编辑器，支持预览功能。](https://github.com/uiwjs/react-md-editor)
+### [GitHub - uiwjs/react-md-editor: 一款基于 React.js 和 TypeScript 实现的简易 Markdown 编辑器，支持预览功能。](https://github.com/uiwjs/react-md-editor)
 
 **原文标题**: [GitHub - uiwjs/react-md-editor: A simple markdown editor with preview, implemented with React.js and TypeScript.](https://github.com/uiwjs/react-md-editor)
 
@@ -480,14 +480,14 @@ react-md-editor 是一个基于 React.js 和 TypeScript 实现的简单 Markdown
 
 本文介绍了人工智能在医疗领域的应用现状与前景，重点探讨了其在疾病诊断、治疗方案优化及医疗管理效率提升方面的作用，并简要提及了相关的伦理挑战。
 
-- 🤖 AI辅助诊断系统能通过分析医学影像快速识别病灶，提高早期疾病检出率
+- 🤖 AI 辅助诊断系统能通过分析医学影像快速识别病灶，提高早期疾病检出率
 - 💊 基于机器学习的个性化治疗方案可结合患者数据优化用药与治疗路径
 - 📊 智能医疗管理平台通过自动化流程减少行政负担，提升医疗机构运营效率
 - ⚖️ 数据隐私与算法透明度等伦理问题仍需在技术发展中同步完善治理框架
 
 ---
 
-### [GitHub - quantizor/markdown-to-jsx：一款极速且功能丰富的Markdown工具链。支持输出至AST、React、React Native、SolidJS、Vue、HTML等多种格式！](https://github.com/quantizor/markdown-to-jsx)
+### [GitHub - quantizor/markdown-to-jsx：一款极速且功能丰富的Markdown工具链。支持输出至AST、React、React Native、SolidJS、Vue、HTML 等多种格式！](https://github.com/quantizor/markdown-to-jsx)
 
 **原文标题**: [GitHub - quantizor/markdown-to-jsx: A very fast and versatile markdown toolchain. Output to AST, React, React Native, SolidJS, Vue, HTML, and more!](https://github.com/quantizor/markdown-to-jsx)
 
@@ -503,7 +503,7 @@ markdown-to-jsx 是一个快速、多功能的 Markdown 工具链，支持将 Ma
 
 ---
 
-### [GitHub - rpldy/react-uploady: 现代文件上传 - 适用于React的组件与钩子](https://github.com/rpldy/react-uploady)
+### [GitHub - rpldy/react-uploady: 现代文件上传 - 适用于 React 的组件与钩子](https://github.com/rpldy/react-uploady)
 
 **原文标题**: [GitHub - rpldy/react-uploady: Modern file uploading - components & hooks for React](https://github.com/rpldy/react-uploady)
 
@@ -553,7 +553,7 @@ Reactylon 是一个基于 Babylon.js 和 React 构建的强大跨平台框架，
 
 ---
 
-### [GitHub - pmndrs/react-three-fiber: 🇨🇭 一个用于Three.js的React渲染器](https://github.com/pmndrs/react-three-fiber)
+### [GitHub - pmndrs/react-three-fiber: 🇨🇭 一个用于 Three.js 的 React 渲染器](https://github.com/pmndrs/react-three-fiber)
 
 **原文标题**: [GitHub - pmndrs/react-three-fiber: 🇨🇭 A React renderer for Three.js](https://github.com/pmndrs/react-three-fiber)
 
@@ -587,12 +587,12 @@ Prettier 3.7 版本发布，主要提升了 TypeScript 和 Flow 的格式化一�
 
 **原文标题**: [Release 10.28.0 · preactjs/preact · GitHub](https://github.com/preactjs/preact/releases/tag/10.28.0)
 
-Preact 10.28.0版本发布，包含类型更新、错误修复和性能优化，由多位贡献者共同完成。
+Preact 10.28.0 版本发布，包含类型更新、错误修复和性能优化，由多位贡献者共同完成。
 
-- 🐛 修复了dangerouslySetInnerHTML类型和滚动事件等问题
-- 🔧 添加了snap事件支持并移除了重复的JSX定义
-- ⚡ 引入了部分v11版本的性能优化
-- 👥 感谢marvinhagemeister等5位贡献者的参与
+- 🐛 修复了 dangerouslySetInnerHTML 类型和滚动事件等问题
+- 🔧 添加了 snap 事件支持并移除了重复的 JSX 定义
+- ⚡ 引入了部分 v11 版本的性能优化
+- 👥 感谢 marvinhagemeister 等 5 位贡献者的参与
 - 📦 包含服务器端兼容性改进和信号渲染修复
 
 ---
@@ -601,39 +601,39 @@ Preact 10.28.0版本发布，包含类型更新、错误修复和性能优化，
 
 **原文标题**: [Bun is joining Anthropic | Bun Blog](https://bun.com/blog/bun-joins-anthropic)
 
-Bun已被Anthropic收购，将作为Claude Code等AI编程工具的基础设施，同时保持开源、公开开发及原有团队不变，以加速JavaScript工具生态发展。
+Bun 已被 Anthropic 收购，将作为 Claude Code 等 AI 编程工具的基础设施，同时保持开源、公开开发及原有团队不变，以加速 JavaScript 工具生态发展。
 
-- 🚀 **Bun被Anthropic收购**：将作为Claude Code、Claude Agent SDK等AI编程产品的核心基础设施  
-- 🔓 **开源承诺不变**：保持MIT开源协议，代码持续公开在GitHub维护  
+- 🚀 **Bun 被 Anthropic 收购**：将作为 Claude Code、Claude Agent SDK 等 AI 编程产品的核心基础设施  
+- 🔓 **开源承诺不变**：保持 MIT 开源协议，代码持续公开在 GitHub 维护  
 - 👥 **团队与开发模式延续**：原团队全职投入，维持高频更新与社区互动  
-- 🎯 **技术路线持续聚焦**：继续优化高性能JavaScript工具链、Node.js兼容性与替代方案  
-- 🤖 **深度集成AI生态**：通过单文件可执行特性，已支撑Claude Code、FactoryAI等多款AI编程工具  
-- ⚡ **获得长期发展动力**：依托Anthropic资源，跳过商业化探索阶段，专注工具链优化  
-- 📈 **历史演进回顾**：从个人项目到月下载量超720万的开源运行时，历时5年迭代至v1.3版本  
-- 🔮 **未来定位**：成为AI驱动软件开发的首选运行时，同时服务通用JavaScript生态
+- 🎯 **技术路线持续聚焦**：继续优化高性能 JavaScript 工具链、Node.js 兼容性与替代方案  
+- 🤖 **深度集成 AI 生态**：通过单文件可执行特性，已支撑 Claude Code、FactoryAI 等多款 AI 编程工具  
+- ⚡ **获得长期发展动力**：依托 Anthropic 资源，跳过商业化探索阶段，专注工具链优化  
+- 📈 **历史演进回顾**：从个人项目到月下载量超 720 万的开源运行时，历时 5 年迭代至 v1.3 版本  
+- 🔮 **未来定位**：成为 AI 驱动软件开发的首选运行时，同时服务通用 JavaScript 生态
 
 ---
 
-### [十二月静默月（2025年12月）| 电子](https://www.electronjs.org/blog/dec-quiet-period-25)
+### [十二月静默月（2025 年 12 月）| 电子](https://www.electronjs.org/blog/dec-quiet-period-25)
 
 **原文标题**: [December Quiet Month (Dec'25) | Electron](https://www.electronjs.org/blog/dec-quiet-period-25)
 
-Electron 项目宣布自12月1日起进入年度静默期，期间维护人员将暂停常规维护工作以休息或专注深度工作，项目将于2026年1月全面恢复运作。这一安排自2020年起实施，旨在让团队休整并为新年充电，同时体现了项目的健康状态。文章回顾了2025年的主要成就，并详细说明了静默期的具体政策。
+Electron 项目宣布自 12 月 1 日起进入年度静默期，期间维护人员将暂停常规维护工作以休息或专注深度工作，项目将于 2026 年 1 月全面恢复运作。这一安排自 2020 年起实施，旨在让团队休整并为新年充电，同时体现了项目的健康状态。文章回顾了 2025 年的主要成就，并详细说明了静默期的具体政策。
 
-- 📅 **年度静默期启动**：Electron 项目从12月1日起进入静默期，维护人员暂停常规工作，2026年1月恢复。
-- 🛠️ **2025年项目成就**：包括发布6个主要版本、迁移构建工具、更新发布页面设计、通过并实施多项RFC、完成Google Summer of Code项目、升级npm包为ES模块、改进发布系统安全性，以及新增4名维护者。
+- 📅 **年度静默期启动**：Electron 项目从 12 月 1 日起进入静默期，维护人员暂停常规工作，2026 年 1 月恢复。
+- 🛠️ **2025 年项目成就**：包括发布 6 个主要版本、迁移构建工具、更新发布页面设计、通过并实施多项 RFC、完成 Google Summer of Code 项目、升级 npm 包为 ES 模块、改进发布系统安全性，以及新增 4 名维护者。
 - 🔒 **静默期安全政策**：安全相关紧急发布和《行为准则》处理照常进行，但常规版本发布、会议和问题处理将延迟或暂停。
-- 🙏 **致谢与展望**：感谢所有贡献者保持项目健康发展，期待2026年继续合作。
+- 🙏 **致谢与展望**：感谢所有贡献者保持项目健康发展，期待 2026 年继续合作。
 
 ---
 
-### [Node.js 24 LTS现已全面支持构建与函数功能 - Vercel](https://vercel.com/changelog/node-js-24-lts-is-now-generally-available-for-builds-and-functions)
+### [Node.js 24 LTS 现已全面支持构建与函数功能 - Vercel](https://vercel.com/changelog/node-js-24-lts-is-now-generally-available-for-builds-and-functions)
 
 **原文标题**: [Node.js 24 LTS is now generally available for builds and functions - Vercel](https://vercel.com/changelog/node-js-24-lts-is-now-generally-available-for-builds-and-functions)
 
 Node.js 24 现已作为运行时版本提供，用于构建和函数，其默认用于新项目并带来多项核心更新。
 
-- 🚀 **V8引擎升级**：搭载 V8 13.6 引擎，带来性能提升及 Float16Array、Error.isError 等新 JavaScript 特性。
+- 🚀 **V8 引擎升级**：搭载 V8 13.6 引擎，带来性能提升及 Float16Array、Error.isError 等新 JavaScript 特性。
 - 🌐 **全局 URLPattern API**：提供更简便的 URL 路由与匹配功能，无需依赖外部库或复杂正则表达式。
 - ⚡ **Undici v7**：内置 fetch API 拥有更快的 HTTP 性能、改进的 HTTP/2 与 HTTP/3 支持及更高效的连接处理。
 - 📦 **npm v11**：附带更新的 npm 版本，提升了与现代 JavaScript 包的兼容性。
@@ -647,11 +647,11 @@ Node.js 24 现已作为运行时版本提供，用于构建和函数，其默认
 
 本文介绍了人工智能在医疗领域的应用现状与前景，重点探讨了其在疾病诊断、治疗方案优化及医疗管理效率提升方面的作用，并提及了相关的伦理挑战。
 
-- 🩺 AI辅助诊断系统能通过分析医学影像快速识别病灶，提高早期疾病检出率
+- 🩺 AI 辅助诊断系统能通过分析医学影像快速识别病灶，提高早期疾病检出率
 - 💊 基于机器学习的个性化治疗方案可结合患者数据优化用药与治疗路径
 - 📊 智能医疗管理平台能整合病例信息，减少行政负担并降低人为错误
 - ⚖️ 数据隐私与算法透明度等伦理问题仍需建立规范框架予以应对
-- 🔮 未来AI或将成为医疗标准流程的核心组成部分，推动精准医疗发展
+- 🔮 未来 AI 或将成为医疗标准流程的核心组成部分，推动精准医疗发展
 
 ---
 
