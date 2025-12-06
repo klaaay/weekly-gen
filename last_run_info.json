@@ -6,10 +6,10 @@
     "full_url": "https://thisweekinreact.com//newsletter/261"
   },
   "nextjsweekly": {
-    "issue_title": "Issue #109 Nov 21, 2025Next Analyze, Prisma 7, use-nemo, State of React 2025, Error Boundaries, Tables & Modals, UI Framework Guide",
-    "link_url": "/issues/109",
-    "timestamp": "2025-11-23T15:14:43.966197",
-    "full_url": "https://nextjsweekly.com//issues/109"
+    "issue_title": "Issue #110 Dec 5, 2025Critical RSC CVE, Auth CN, Next.js interview malware, fallback rewrites, faster K8s, and Bun’s acquisition",
+    "link_url": "/issues/110",
+    "timestamp": "2025-12-05T23:34:51.158615",
+    "full_url": "https://nextjsweekly.com//issues/110"
   },
   "reactdigest": {
     "issue_title": "one weekly email",
@@ -42,9 +42,9 @@
     "full_url": "https://reactweekly.com/issues/454"
   },
   "javascriptweekly": {
-    "issue_title": "Issue #763",
-    "link_url": "issues/763",
-    "timestamp": "2025-11-30T00:32:02.670296",
-    "full_url": "https://javascriptweekly.com/issues/763"
+    "issue_title": "Issue #764",
+    "link_url": "issues/764",
+    "timestamp": "2025-12-05T23:34:52.395329",
+    "full_url": "https://javascriptweekly.com/issues/764"
   }
 }
