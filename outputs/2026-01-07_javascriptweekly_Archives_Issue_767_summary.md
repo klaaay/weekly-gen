@@ -1,71 +1,71 @@
-### [JavaScript周刊第767期：2026年1月6日](https://javascriptweekly.com/issues/767)
+### [JavaScript 周刊第 767 期：2026 年 1 月 6 日](https://javascriptweekly.com/issues/767)
 
 **原文标题**: [JavaScript Weekly Issue 767: January 6, 2026](https://javascriptweekly.com/issues/767)
 
-JavaScript周刊2026年首期发布，宣布改为每周二发送，并回顾了2025年JavaScript生态的重要动态与新年展望。
+JavaScript 周刊 2026 年首期发布，宣布改为每周二发送，并回顾了 2025 年 JavaScript 生态的重要动态与新年展望。
 
-- 🏆 **2025年JavaScript新星榜单**：n8n和React Bits超越shadcn/ui位列前二，该年度总结已进入第十年
-- 🤖 **AI驱动的无感测试工具**：Meticulous推出基于Chromium的E2E测试方案，获Dropbox等企业采用
-- 🔋 **嵌入式JavaScript新引擎**：Fabrice Bellard发布MicroQuickJS，仅需10KB内存即可运行
-- 📦 **包管理器年度变革**：pnpm在2025年实现重大转型，最新版本增强安全策略控制
-- 🦕 **Deno游戏开发教程**：官方博客连载恐龙跑酷游戏制作指南，展示Deno实战应用
-- ⚡ **TypeScript性能优化案例**：大型单体仓库通过多项技术手段显著提升编译效率
-- 📅 **跨框架日历组件**：Schedule-X 3.6支持React/Vue等六大框架，提供Material Design风格
-- 🎨 **CSS网格布局革新**：Safari技术预览版已实现CSS Grid Lanes原生瀑布流布局
-- 📊 **数据可视化生态更新**：Recharts 3.6强化D3集成，Color.js v0.6向正式版迈进
-- 🔌 **开发者工具升级潮**：Bruno 3.0重构API客户端界面，JoltPhysics.js 1.0实现物理引擎移植
+- 🏆 **2025 年 JavaScript 新星榜单**：n8n 和 React Bits 超越 shadcn/ui 位列前二，该年度总结已进入第十年
+- 🤖 **AI 驱动的无感测试工具**：Meticulous 推出基于 Chromium 的 E2E 测试方案，获 Dropbox 等企业采用
+- 🔋 **嵌入式 JavaScript 新引擎**：Fabrice Bellard 发布 MicroQuickJS，仅需 10KB 内存即可运行
+- 📦 **包管理器年度变革**：pnpm 在 2025 年实现重大转型，最新版本增强安全策略控制
+- 🦕 **Deno 游戏开发教程**：官方博客连载恐龙跑酷游戏制作指南，展示 Deno 实战应用
+- ⚡ **TypeScript 性能优化案例**：大型单体仓库通过多项技术手段显著提升编译效率
+- 📅 **跨框架日历组件**：Schedule-X 3.6 支持 React/Vue 等六大框架，提供 Material Design 风格
+- 🎨 **CSS 网格布局革新**：Safari 技术预览版已实现 CSS Grid Lanes 原生瀑布流布局
+- 📊 **数据可视化生态更新**：Recharts 3.6 强化 D3 集成，Color.js v0.6 向正式版迈进
+- 🔌 **开发者工具升级潮**：Bruno 3.0 重构 API 客户端界面，JoltPhysics.js 1.0 实现物理引擎移植
 
 ---
 
-### [2025年JavaScript新星](https://risingstars.js.org/2025/en)
+### [2025 年 JavaScript 新星](https://risingstars.js.org/2025/en)
 
 **原文标题**: [2025 JavaScript Rising Stars](https://risingstars.js.org/2025/en)
 
-2025年JavaScript生态回顾：AI驱动创新与安全挑战并存，n8n以惊人增长领跑年度项目，Bun被Anthropic收购预示AI工具新方向，React生态在服务器端演进中面临复杂性与安全考验，移动开发领域迎来新框架竞争，全栈与工具链持续迭代，开发者需在拥抱AI自动化与保障代码质量间寻找平衡。
+2025 年 JavaScript 生态回顾：AI 驱动创新与安全挑战并存，n8n 以惊人增长领跑年度项目，Bun 被 Anthropic 收购预示 AI 工具新方向，React 生态在服务器端演进中面临复杂性与安全考验，移动开发领域迎来新框架竞争，全栈与工具链持续迭代，开发者需在拥抱 AI 自动化与保障代码质量间寻找平衡。
 
-- 🏆 **年度总冠军n8n**：AI增强的无代码工作流自动化平台，全年获超11.2万星，反映自动化工具与AI代理工作流需求激增
-- ⚛️ **React生态演进**：React重登前端框架榜首，React 19引入Activity API，服务器组件发展伴随React2Shell安全漏洞警示
-- 🆕 **全栈新星Motia**：后端框架类别冠军，通过Steps抽象统一API、队列、工作流与AI代理开发范式
-- 🔧 **工具链变革**：Bun获Anthropic收购转向AI代理运行时，Vite生态推出Rolldown等Rust工具，TypeScript启动Go语言重写计划
-- 🤖 **AI工作流崛起**：n8n、Dyad、Stagehand等AI自动化工具占据榜单，标志开发重点从聊天机器人转向可委托工作流构建
-- 📱 **移动开发变局**：Valdi与Lynx新框架超越React Native，Dioxus尝试用Rust实现跨平台渲染，React Native持续向稳定版演进
-- 🛡️ **安全挑战凸显**：npm供应链遭受"Shai-Hulud"大规模攻击，React服务器组件漏洞暴露新兴技术安全风险
-- 🔮 **生态趋势展望**：指令模式（use client/use server）引发语言特性讨论，Remix 3将弃用React转向Web原生，AI工作流技能成关键竞争力
+- 🏆 **年度总冠军 n8n**：AI 增强的无代码工作流自动化平台，全年获超 11.2 万星，反映自动化工具与 AI 代理工作流需求激增
+- ⚛️ **React 生态演进**：React 重登前端框架榜首，React 19 引入 Activity API，服务器组件发展伴随 React2Shell 安全漏洞警示
+- 🆕 **全栈新星 Motia**：后端框架类别冠军，通过 Steps 抽象统一 API、队列、工作流与 AI 代理开发范式
+- 🔧 **工具链变革**：Bun 获 Anthropic 收购转向 AI 代理运行时，Vite 生态推出 Rolldown 等 Rust 工具，TypeScript 启动 Go 语言重写计划
+- 🤖 **AI 工作流崛起**：n8n、Dyad、Stagehand 等 AI 自动化工具占据榜单，标志开发重点从聊天机器人转向可委托工作流构建
+- 📱 **移动开发变局**：Valdi 与 Lynx 新框架超越 React Native，Dioxus 尝试用 Rust 实现跨平台渲染，React Native 持续向稳定版演进
+- 🛡️ **安全挑战凸显**：npm 供应链遭受"Shai-Hulud"大规模攻击，React 服务器组件漏洞暴露新兴技术安全风险
+- 🔮 **生态趋势展望**：指令模式（use client/use server）引发语言特性讨论，Remix 3 将弃用 React 转向 Web 原生，AI 工作流技能成关键竞争力
 
 ---
 
-### [AI工作流自动化平台与工具 - n8n](https://n8n.io/)
+### [AI 工作流自动化平台与工具 - n8n](https://n8n.io/)
 
 **原文标题**: [AI Workflow Automation Platform & Tools - n8n](https://n8n.io/)
 
-n8n是一款面向技术团队的高度灵活AI工作流自动化平台，提供可视化拖拽和代码编辑两种构建方式，支持自托管或云端部署，能够创建多步骤AI代理并集成超过500种应用，帮助企业快速实现AI驱动的自动化流程。
+n8n 是一款面向技术团队的高度灵活 AI 工作流自动化平台，提供可视化拖拽和代码编辑两种构建方式，支持自托管或云端部署，能够创建多步骤 AI 代理并集成超过 500 种应用，帮助企业快速实现 AI 驱动的自动化流程。
 
-- 🤖 **AI工作流构建**：支持通过拖拽或代码方式快速集成各类大语言模型，构建多步骤AI代理系统
-- 🏢 **企业级功能**：提供完全自托管选项、SSO身份验证、高级权限管理等安全协作功能
-- 🔌 **广泛集成能力**：拥有超过500种应用集成，涵盖通信、开发、网络安全等多个类别
-- 💻 **混合开发模式**：同时支持可视化界面和JavaScript/Python代码编辑，满足不同技术需求
-- 📊 **实际应用场景**：已在IT运维、安全运营、销售分析等多个领域实现自动化效率提升
-- 🌟 **社区认可度高**：GitHub获16.6万星标，G2评分4.9/5，拥有20万+社区成员
-- 🚀 **快速部署验证**：提供1700+模板和实时调试功能，支持快速测试和迭代工作流
-- 🏆 **客户成功案例**：帮助Delivery Hero每月节省200小时，StepStone将2周工作缩短至2小时
+- 🤖 **AI 工作流构建**：支持通过拖拽或代码方式快速集成各类大语言模型，构建多步骤 AI 代理系统
+- 🏢 **企业级功能**：提供完全自托管选项、SSO 身份验证、高级权限管理等安全协作功能
+- 🔌 **广泛集成能力**：拥有超过 500 种应用集成，涵盖通信、开发、网络安全等多个类别
+- 💻 **混合开发模式**：同时支持可视化界面和 JavaScript/Python 代码编辑，满足不同技术需求
+- 📊 **实际应用场景**：已在 IT 运维、安全运营、销售分析等多个领域实现自动化效率提升
+- 🌟 **社区认可度高**：GitHub 获 16.6 万星标，G2 评分 4.9/5，拥有 20 万 + 社区成员
+- 🚀 **快速部署验证**：提供 1700+ 模板和实时调试功能，支持快速测试和迭代工作流
+- 🏆 **客户成功案例**：帮助 Delivery Hero 每月节省 200 小时，StepStone 将 2 周工作缩短至 2 小时
 
 ---
 
-### [React Bits - React动画UI组件](https://reactbits.dev/)
+### [React Bits - React 动画 UI 组件](https://reactbits.dev/)
 
 **原文标题**: [React Bits - Animated UI Components For React](https://reactbits.dev/)
 
 本文介绍了人工智能在医疗领域的应用现状与前景，重点探讨了其在疾病诊断、治疗方案优化及医疗管理效率提升方面的作用，并简要提及了相关的伦理挑战。
 
-- 🤖 AI辅助诊断系统能通过分析医学影像快速识别病灶，提高早期疾病检出率
+- 🤖 AI 辅助诊断系统能通过分析医学影像快速识别病灶，提高早期疾病检出率
 - 🧬 机器学习算法可整合基因组数据与临床信息，为患者提供个性化治疗方案
 - ⚡ 智能调度系统优化医院资源分配，减少患者等候时间并缓解医护压力
 - 📊 电子健康记录结合预测模型实现慢性病风险预警，助力预防医学发展
-- ⚖️ 数据隐私保护与算法透明度成为医疗AI推广过程中需要解决的关键伦理问题
+- ⚖️ 数据隐私保护与算法透明度成为医疗 AI 推广过程中需要解决的关键伦理问题
 
 ---
 
-### [精密AI——无需编写测试的自动化前端测试](https://www.meticulous.ai/?utm_source=jsweekly&utm_medium=referral&utm_campaign=jan6th2026)
+### [精密 AI——无需编写测试的自动化前端测试](https://www.meticulous.ai/?utm_source=jsweekly&utm_medium=referral&utm_campaign=jan6th2026)
 
 **原文标题**: [Meticulous AI - Automated Frontend Testing Without Writing Tests](https://www.meticulous.ai/?utm_source=jsweekly&utm_medium=referral&utm_campaign=jan6th2026)
 
@@ -73,9 +73,9 @@ Meticulous AI 是一款创新的自动化测试工具，通过记录用户与应
 
 - 🚀 **无需编写测试** – 通过记录用户交互自动生成测试，覆盖所有边缘情况和用户流程，无需手动编写或维护测试代码。
 - 🔄 **自动更新测试套件** – 随着应用功能的变化，测试套件会自动添加新测试并移除过时的测试，保持测试的时效性和完整性。
-- ⚡ **消除测试不稳定** – 从底层构建的确定性调度引擎，彻底消除测试中的不稳定现象，并支持高速并行测试，数千个测试可在120秒内完成。
+- ⚡ **消除测试不稳定** – 从底层构建的确定性调度引擎，彻底消除测试中的不稳定现象，并支持高速并行测试，数千个测试可在 120 秒内完成。
 - 🛡️ **安全无副作用** – 通过模拟后端响应进行测试，避免因数据变化导致的误报，无需设置测试账户或模拟数据，测试过程无副作用。
-- 🌐 **广泛集成支持** – 支持多种前端框架（如React、Vue、Angular等），只需添加脚本标签即可快速集成到开发、预演和生产环境。
+- 🌐 **广泛集成支持** – 支持多种前端框架（如 React、Vue、Angular 等），只需添加脚本标签即可快速集成到开发、预演和生产环境。
 - 📈 **提升开发效率** – 帮助团队在合并代码前预览更改对用户流程的影响，防止回归问题，显著提升代码发布速度和开发信心。
 
 ---
@@ -84,14 +84,14 @@ Meticulous AI 是一款创新的自动化测试工具，通过记录用户与应
 
 **原文标题**: [mquickjs/README.md at main · bellard/mquickjs · GitHub](https://github.com/bellard/mquickjs/blob/main/README.md)
 
-QuickJS是一个由Fabrice Bellard开发的小型且可嵌入的JavaScript引擎，具有轻量级、快速执行和完整ES2020支持的特点。
+QuickJS 是一个由 Fabrice Bellard 开发的小型且可嵌入的 JavaScript 引擎，具有轻量级、快速执行和完整 ES2020 支持的特点。
 
 - 🚀 轻量高效：设计紧凑，适合嵌入式系统和资源受限环境
-- 📜 完整ES2020支持：全面兼容现代JavaScript标准
+- 📜 完整 ES2020 支持：全面兼容现代 JavaScript 标准
 - 🔧 可嵌入性：易于集成到其他应用程序中
-- 🛠️ 独立运行时：包含编译器和解释器，支持独立执行JavaScript代码
+- 🛠️ 独立运行时：包含编译器和解释器，支持独立执行 JavaScript 代码
 - 🔍 数学扩展：内置数学库，支持大整数和精确小数运算
-- 📦 模块系统：实现ES模块标准，便于代码组织和管理
+- 📦 模块系统：实现 ES 模块标准，便于代码组织和管理
 - 🛡️ 安全特性：提供内存安全和执行沙箱功能
 
 ---
@@ -102,57 +102,57 @@ QuickJS是一个由Fabrice Bellard开发的小型且可嵌入的JavaScript引擎
 
 该网站展示了法布里斯·贝拉（Fabrice Bellard）的一系列创新技术项目，涵盖编程语言、数据压缩、嵌入式系统、多媒体处理及高性能计算等领域。
 
-- 🚀 **Micro QuickJS**：适用于微控制器的JavaScript引擎
-- 🎵 **TSAC音频压缩**：极低比特率音频压缩技术
-- 📦 **ts_zip文本压缩**：基于大语言模型的实用文本压缩工具
-- 💬 **ts_sms短信压缩**：利用大语言模型的短消息压缩方案
-- 🌐 **TextSynth Server**：提供大语言模型REST API的Web服务器
-- 🏆 **NNCP数据压缩器**：领跑大型文本压缩基准测试
-- ⚡ **QuickJS引擎**：轻量级完整的JavaScript引擎
+- 🚀 **Micro QuickJS**：适用于微控制器的 JavaScript 引擎
+- 🎵 **TSAC 音频压缩**：极低比特率音频压缩技术
+- 📦 **ts_zip 文本压缩**：基于大语言模型的实用文本压缩工具
+- 💬 **ts_sms 短信压缩**：利用大语言模型的短消息压缩方案
+- 🌐 **TextSynth Server**：提供大语言模型 REST API 的 Web 服务器
+- 🏆 **NNCP 数据压缩器**：领跑大型文本压缩基准测试
+- ⚡ **QuickJS 引擎**：轻量级完整的 JavaScript 引擎
 - 🤖 **textsynth.com**：大语言模型访问平台
-- 🎨 **微型混淆图像解码器**：2018国际混淆代码大赛作品
-- 🔢 **LibBF高精度库**：任意精度浮点数处理库
-- π **TinyPI程序**：可计算数百万位圆周率
-- 🖥️ **浏览器模拟器**：支持在浏览器运行X Window/Windows 2000
-- 🎮 **TinyEMU模拟器**：支持RISC-V/x86架构的轻量模拟器
-- 📐 **SoftFP浮点库**：符合IEEE 754-2008标准的浮点仿真库
-- 🖼️ **BPG图像格式**：基于HEVC的便携图像格式
-- 📡 **软件基站**：在普通PC上运行的4G/5G基站系统
-- ⚙️ **ASN1编译器**：生成高效C代码的编译工具
-- 🌐 **JS版PC模拟器**：测量浏览器启动Linux的时间
-- π **圆周率计算**：用台式机计算2700亿位圆周率
-- 📺 **电视信号生成**：通过PC显示器生成模拟/数字电视信号
-- 💻 **QEMU模拟器**：通用机器模拟与虚拟化平台
-- 🎬 **FFMPEG多媒体系统**：作者2000年创立的多媒体开源项目
-- 📝 **TCC编译器**：支持C语言脚本化的轻量级C编译器
-- ✨ **QEmacs编辑器**：用于学习Unicode/文本处理的开源编辑器
-- 🏅 **OTCC编译器**：2001年国际混淆代码大赛获奖作品
-- 🎮 **TinyGL图形库**：OpenGL的精简高效子集
+- 🎨 **微型混淆图像解码器**：2018 国际混淆代码大赛作品
+- 🔢 **LibBF 高精度库**：任意精度浮点数处理库
+- π **TinyPI 程序**：可计算数百万位圆周率
+- 🖥️ **浏览器模拟器**：支持在浏览器运行 X Window/Windows 2000
+- 🎮 **TinyEMU 模拟器**：支持 RISC-V/x86 架构的轻量模拟器
+- 📐 **SoftFP 浮点库**：符合 IEEE 754-2008 标准的浮点仿真库
+- 🖼️ **BPG 图像格式**：基于 HEVC 的便携图像格式
+- 📡 **软件基站**：在普通 PC 上运行的 4G/5G 基站系统
+- ⚙️ **ASN1 编译器**：生成高效 C 代码的编译工具
+- 🌐 **JS 版 PC 模拟器**：测量浏览器启动 Linux 的时间
+- π **圆周率计算**：用台式机计算 2700 亿位圆周率
+- 📺 **电视信号生成**：通过 PC 显示器生成模拟/数字电视信号
+- 💻 **QEMU 模拟器**：通用机器模拟与虚拟化平台
+- 🎬 **FFMPEG 多媒体系统**：作者 2000 年创立的多媒体开源项目
+- 📝 **TCC 编译器**：支持 C 语言脚本化的轻量级 C 编译器
+- ✨ **QEmacs 编辑器**：用于学习 Unicode/文本处理的开源编辑器
+- 🏅 **OTCC 编译器**：2001 年国际混淆代码大赛获奖作品
+- 🎮 **TinyGL 图形库**：OpenGL 的精简高效子集
 - 🧮 **科学网络计算器**：在线科学计算工具
 - 📚 **圆周率研究**：圆周率公式算法与计算研究
-- 🔢 **质数打印程序**：输出最大已知质数的微型C程序
+- 🔢 **质数打印程序**：输出最大已知质数的微型 C 程序
 - 📂 **历史项目归档**：早期技术项目集合
 
 ---
 
-### [QuickJS JavaScript引擎](https://bellard.org/quickjs/)
+### [QuickJS JavaScript 引擎](https://bellard.org/quickjs/)
 
 **原文标题**: [QuickJS Javascript Engine](https://bellard.org/quickjs/)
 
-QuickJS是一个小型且可嵌入的JavaScript引擎，支持ES2023规范，具有快速解释器和低启动时间，适用于嵌入式系统。
+QuickJS 是一个小型且可嵌入的 JavaScript 引擎，支持 ES2023 规范，具有快速解释器和低启动时间，适用于嵌入式系统。
 
-- 🚀 **2025-09-13发布新版本**：包含更新日志，持续优化引擎性能。
-- 🔧 **2025-04-26版本调整**：移除大数扩展和qjscalc应用以简化代码，推荐使用BFCalc计算器替代。
-- 📦 **轻量嵌入设计**：仅需少量C文件，无外部依赖，简单程序代码体积约367 KiB。
-- ⚡ **高效解释器**：单核桌面PC可在2分钟内运行7.8万项ECMAScript测试套件，运行时实例完整生命周期低于300微秒。
-- ✅ **全面兼容ES2023**：支持模块、异步生成器、代理等特性，通过近100%的ECMAScript测试套件验证。
+- 🚀 **2025-09-13 发布新版本**：包含更新日志，持续优化引擎性能。
+- 🔧 **2025-04-26 版本调整**：移除大数扩展和 qjscalc 应用以简化代码，推荐使用 BFCalc 计算器替代。
+- 📦 **轻量嵌入设计**：仅需少量 C 文件，无外部依赖，简单程序代码体积约 367 KiB。
+- ⚡ **高效解释器**：单核桌面 PC 可在 2 分钟内运行 7.8 万项 ECMAScript 测试套件，运行时实例完整生命周期低于 300 微秒。
+- ✅ **全面兼容 ES2023**：支持模块、异步生成器、代理等特性，通过近 100% 的 ECMAScript 测试套件验证。
 - 🔄 **引用计数垃圾回收**：结合循环移除技术，降低内存占用并确保确定性行为。
-- 🌐 **多平台支持**：提供跨Linux、Mac、Windows等系统的Cosmopolitan二进制文件，以及TypeScript和Babel编译器集成。
-- 📚 **开源与文档**：基于MIT许可证发布，提供HTML/PDF格式文档，源代码及二进制文件可通过官网或GitHub获取。
+- 🌐 **多平台支持**：提供跨 Linux、Mac、Windows 等系统的 Cosmopolitan 二进制文件，以及 TypeScript 和 Babel 编译器集成。
+- 📚 **开源与文档**：基于 MIT 许可证发布，提供 HTML/PDF 格式文档，源代码及二进制文件可通过官网或 GitHub 获取。
 
 ---
 
-### [法布里斯·贝拉发布MicroQuickJS | 黑客新闻](https://news.ycombinator.com/item?id=46367224)
+### [法布里斯·贝拉发布 MicroQuickJS | 黑客新闻](https://news.ycombinator.com/item?id=46367224)
 
 **原文标题**: [Fabrice Bellard Releases MicroQuickJS | Hacker News](https://news.ycombinator.com/item?id=46367224)
 
@@ -190,32 +190,32 @@ pnpm 是一款高效、安全的 Node.js 包管理器，专注于提升安装速
 
 **原文标题**: [🚀 pnpm in 2025 | pnpm](https://pnpm.io/blog/2025/12/29/pnpm-in-2025)
 
-2025年是pnpm变革性的一年，主要聚焦于重新定义包管理的安全模型，同时在性能与开发者体验方面也取得了显著提升。根据下载统计，pnpm的使用量相比2024年翻了一番。
+2025 年是 pnpm 变革性的一年，主要聚焦于重新定义包管理的安全模型，同时在性能与开发者体验方面也取得了显著提升。根据下载统计，pnpm 的使用量相比 2024 年翻了一番。
 
-- 🏠 **官网重新设计**：借助赞助商Bit.cloud的支持，新版官网使用Bit组件构建，并引入了专属设计系统。
-- 🎤 **首次大型演讲**：维护者Zoltan Kochan在阿姆斯特丹的JSNation大会上进行了首次现场演讲，分享了关于配置依赖的内容。
-- 🔒 **默认安全强化**：pnpm v10不再默认信任安装的包，默认阻止`preinstall`/`postinstall`等生命周期脚本的执行，大幅减少了供应链攻击风险。
+- 🏠 **官网重新设计**：借助赞助商 Bit.cloud 的支持，新版官网使用 Bit 组件构建，并引入了专属设计系统。
+- 🎤 **首次大型演讲**：维护者 Zoltan Kochan 在阿姆斯特丹的 JSNation 大会上进行了首次现场演讲，分享了关于配置依赖的内容。
+- 🔒 **默认安全强化**：pnpm v10 不再默认信任安装的包，默认阻止`preinstall`/`postinstall`等生命周期脚本的执行，大幅减少了供应链攻击风险。
 - 🛡️ **深度防御机制**：新增`minimumReleaseAge`拦截“零日”发布、`trustPolicy: no-downgrade`防止降级攻击、`blockExoticSubdeps`阻止可信依赖引入不可信子依赖。
 - 💾 **全局虚拟存储**：引入全局虚拟存储功能，允许多个项目共享相同的依赖图，显著节省磁盘空间并加速安装过程。
-- 📦 **原生JSR支持**：新增对JSR注册表的原生支持，可直接通过`jsr:`协议安装包，并与npm依赖无缝协同工作。
-- ⚙️ **配置依赖管理**：推出配置依赖功能，允许在单体仓库中集中管理pnpm配置（如钩子、补丁和构建权限），确保版本一致性。
-- ⚡ **自动运行时管理**：扩展运行时管理支持至Deno和Bun，可通过`package.json`中的`devEngines.runtime`指定所需运行时版本，实现团队环境统一。
+- 📦 **原生 JSR 支持**：新增对 JSR 注册表的原生支持，可直接通过`jsr:`协议安装包，并与 npm 依赖无缝协同工作。
+- ⚙️ **配置依赖管理**：推出配置依赖功能，允许在单体仓库中集中管理 pnpm 配置（如钩子、补丁和构建权限），确保版本一致性。
+- ⚡ **自动运行时管理**：扩展运行时管理支持至 Deno 和 Bun，可通过`package.json`中的`devEngines.runtime`指定所需运行时版本，实现团队环境统一。
 
 ---
 
-### [JavaScript周刊第766期：2025年12月19日](https://javascriptweekly.com/issues/766)
+### [JavaScript 周刊第 766 期：2025 年 12 月 19 日](https://javascriptweekly.com/issues/766)
 
 **原文标题**: [JavaScript Weekly Issue 766: December 19, 2025](https://javascriptweekly.com/issues/766)
 
-这是2025年最后一期《JavaScript周刊》的总结，涵盖了年度回顾、重要发布、热门文章以及月度生态动态。
+这是 2025 年最后一期《JavaScript 周刊》的总结，涵盖了年度回顾、重要发布、热门文章以及月度生态动态。
 
-- 🗓️ **期刊安排调整**：本期为2025年最后一期，提醒读者期刊将于2026年1月起改为每周二发布，下一期将于1月6日发布。
-- 📦 **打包工具趋势**：JavaScript打包工具的速度竞争已趋缓，当前重点转向优化产物体积和交付给用户的代码质量。
-- 🤖 **AI编程实践**：文章探讨了超越演示的AI实际工作流，包括提示工程、编码代理及生产级应用开发。
-- ⚡ **AI辅助移植**：作者使用OpenAI的Codex和GPT 5.2，在4.5小时内将HTML5解析器从Python移植到JavaScript。
-- 🛠️ **工具与发布**：包括React Server Components探索工具、Cloudflare Wrangler的框架自动部署支持、以及Tesseract.js 7.0、Base UI 1.0等多个重要库的版本更新。
-- 🏆 **年度十大热门链接**：涵盖了从JavaScript解析谜题、ES2025新特性解析，到依赖管理、Electron误解澄清等广泛主题。
-- 📅 **2025月度生态回顾**：按月份总结了全年重大事件，如Bun、Deno、TypeScript、React等关键项目的版本发布、社区活动和安全事件。
+- 🗓️ **期刊安排调整**：本期为 2025 年最后一期，提醒读者期刊将于 2026 年 1 月起改为每周二发布，下一期将于 1 月 6 日发布。
+- 📦 **打包工具趋势**：JavaScript 打包工具的速度竞争已趋缓，当前重点转向优化产物体积和交付给用户的代码质量。
+- 🤖 **AI 编程实践**：文章探讨了超越演示的 AI 实际工作流，包括提示工程、编码代理及生产级应用开发。
+- ⚡ **AI 辅助移植**：作者使用 OpenAI 的 Codex 和 GPT 5.2，在 4.5 小时内将 HTML5 解析器从 Python 移植到 JavaScript。
+- 🛠️ **工具与发布**：包括 React Server Components 探索工具、Cloudflare Wrangler 的框架自动部署支持、以及 Tesseract.js 7.0、Base UI 1.0 等多个重要库的版本更新。
+- 🏆 **年度十大热门链接**：涵盖了从 JavaScript 解析谜题、ES2025 新特性解析，到依赖管理、Electron 误解澄清等广泛主题。
+- 📅 **2025 月度生态回顾**：按月份总结了全年重大事件，如 Bun、Deno、TypeScript、React 等关键项目的版本发布、社区活动和安全事件。
 - 🎄 **结语与预告**：主编感谢读者支持，并预告假期后回归，同时推广了测试自动化、工作流管理等赞助商服务。
 
 ---
@@ -241,20 +241,20 @@ WebF Beta 是一款为 Flutter 设计的 W3C/WHATWG 兼容的 Web 运行时，�
 
 **原文标题**: [pnpm 10.27 | pnpm](https://pnpm.io/blog/releases/10.27)
 
-pnpm 10.27版本引入了信任策略忽略设置、全局虚拟存储库的项目注册与垃圾回收功能，并修复了多项错误，提升了包管理的安全性和存储效率。
+pnpm 10.27 版本引入了信任策略忽略设置、全局虚拟存储库的项目注册与垃圾回收功能，并修复了多项错误，提升了包管理的安全性和存储效率。
 
 - 🔐 新增`trustPolicyIgnoreAfter`设置，允许忽略对指定发布时间之前的包进行信任策略检查
 - 📁 为全局虚拟存储库添加项目注册功能，支持通过`pnpm store prune`安全清理未使用的包
-- 🗂️ 调整无作用域包在全局虚拟存储中的位置，统一为4级目录深度以保持结构一致性
-- 🧹 引入标记-清除垃圾回收算法，自动扫描并移除全局虚拟存储中未使用的包
+- 🗂️ 调整无作用域包在全局虚拟存储中的位置，统一为 4 级目录深度以保持结构一致性
+- 🧹 引入标记 - 清除垃圾回收算法，自动扫描并移除全局虚拟存储中未使用的包
 - ⚠️ 当`tokenHelper`设置包含环境变量时抛出错误，增强配置安全性
-- 🔧 修复Git依赖构建脚本未遵循`dangerouslyAllowAllBuilds`设置的问题
+- 🔧 修复 Git 依赖构建脚本未遵循`dangerouslyAllowAllBuilds`设置的问题
 - ⏭️ 在使用`--global`参数时跳过包管理器检查并发出警告
 - 🐛 修复`pnpm add`错误修改`pnpm-workspace.yaml`中目录条目的问题
 
 ---
 
-### [GitHub - vadimdemedes/ink：🌈 用于交互式命令行应用的React框架](https://github.com/vadimdemedes/ink)
+### [GitHub - vadimdemedes/ink：🌈 用于交互式命令行应用的 React 框架](https://github.com/vadimdemedes/ink)
 
 **原文标题**: [GitHub - vadimdemedes/ink: 🌈 React for interactive command-line apps](https://github.com/vadimdemedes/ink)
 
@@ -359,63 +359,63 @@ Deno 是一个现代 JavaScript/TypeScript 运行时，其 GitHub 仓库发布�
 
 **原文标题**: [Parcel](https://parceljs.org/)
 
-Parcel是一款零配置、高性能的构建工具，提供从开发到生产的全流程优化体验，支持多种语言和文件类型，具备自动插件安装、热重载、并行构建与智能缓存等功能，并能自动进行生产优化如代码分割与压缩。
+Parcel 是一款零配置、高性能的构建工具，提供从开发到生产的全流程优化体验，支持多种语言和文件类型，具备自动插件安装、热重载、并行构建与智能缓存等功能，并能自动进行生产优化如代码分割与压缩。
 
-- 🚀 **零配置启动**：无需复杂配置，从HTML文件开始即可支持多种语言和文件类型，自动安装所需插件。
+- 🚀 **零配置启动**：无需复杂配置，从 HTML 文件开始即可支持多种语言和文件类型，自动安装所需插件。
 - ⚡ **高效开发体验**：内置开发服务器、热重载与状态保持，提供实时错误诊断和代码高亮提示。
-- 🏎️ **极致构建性能**：基于Rust和SWC的编译器实现10-100倍速度提升，支持多核并行处理和全局缓存。
+- 🏎️ **极致构建性能**：基于 Rust 和 SWC 的编译器实现 10-100 倍速度提升，支持多核并行处理和全局缓存。
 - 🌳 **自动生产优化**：内置树摇、代码压缩、图片优化、内容哈希和代码分割，全面优化生产环境输出。
-- 🎯 **多目标支持**：自动根据浏览器目标进行代码转译，支持差分打包、Web Workers及多格式库构建。
-- 🔧 **灵活可扩展**：支持通过.parcelrc配置和插件系统定制构建流程，插件API设计完善且支持热重载。
+- 🎯 **多目标支持**：自动根据浏览器目标进行代码转译，支持差分打包、Web Workers 及多格式库构建。
+- 🔧 **灵活可扩展**：支持通过.parcelrc 配置和插件系统定制构建流程，插件 API 设计完善且支持热重载。
 - 🌍 **开源驱动**：由全球开发者社区贡献和维护，提供多层级赞助支持。
 
 ---
 
-### [使用Deno构建恐龙跑酷游戏，第一部分 | Deno](https://deno.com/blog/build-a-game-with-deno-1)
+### [使用 Deno 构建恐龙跑酷游戏，第一部分 | Deno](https://deno.com/blog/build-a-game-with-deno-1)
 
 **原文标题**: [Build a dinosaur runner game with Deno, pt. 1 | Deno](https://deno.com/blog/build-a-game-with-deno-1)
 
-本系列文章将指导你使用Deno构建一个简单的浏览器恐龙跑酷游戏，首篇内容涵盖项目初始化、本地服务器搭建及部署到Deno Deploy的完整流程。
+本系列文章将指导你使用 Deno 构建一个简单的浏览器恐龙跑酷游戏，首篇内容涵盖项目初始化、本地服务器搭建及部署到 Deno Deploy 的完整流程。
 
 - 🦕 使用 `deno init` 命令创建基础项目结构，配置 `deno.json` 管理任务和依赖
 - 🗂️ 建立标准目录结构，包含 `src/` 服务端代码、`public/` 静态资源及环境配置文件
-- ⚙️ 集成Oak框架搭建服务器，通过环境变量配置端口和主机，设置文件读写权限
-- 🌐 创建基础HTML页面与健康检查API端点，实现静态文件服务和路由功能
-- 🚀 通过 `deno deploy` 命令将项目部署至Deno Deploy云平台，支持实时在线访问
+- ⚙️ 集成 Oak 框架搭建服务器，通过环境变量配置端口和主机，设置文件读写权限
+- 🌐 创建基础 HTML 页面与健康检查 API 端点，实现静态文件服务和路由功能
+- 🚀 通过 `deno deploy` 命令将项目部署至 Deno Deploy 云平台，支持实时在线访问
 - 🔄 配置开发/生产双模式任务脚本，支持热重载和权限管理的灵活开发环境
 
 ---
 
-### [使用Deno构建恐龙跑酷游戏，第二部分 | Deno](https://deno.com/blog/build-a-game-with-deno-2)
+### [使用 Deno 构建恐龙跑酷游戏，第二部分 | Deno](https://deno.com/blog/build-a-game-with-deno-2)
 
 **原文标题**: [Build a dinosaur runner game with Deno, pt. 2 | Deno](https://deno.com/blog/build-a-game-with-deno-2)
 
-本文是使用Deno构建恐龙跑酷游戏系列的第二部分，重点介绍了如何为游戏添加HTML5画布、游戏循环、用户控制和基础物理系统。通过设置画布、实现游戏循环、添加键盘与鼠标/触摸输入、构建重力与跳跃物理系统，并将项目部署到云端，开发者可以创建一个具有交互性的基础游戏框架。
+本文是使用 Deno 构建恐龙跑酷游戏系列的第二部分，重点介绍了如何为游戏添加 HTML5 画布、游戏循环、用户控制和基础物理系统。通过设置画布、实现游戏循环、添加键盘与鼠标/触摸输入、构建重力与跳跃物理系统，并将项目部署到云端，开发者可以创建一个具有交互性的基础游戏框架。
 
-- 🎮 设置HTML5画布作为游戏主区域，并添加分数显示与控制说明界面
-- 🔄 使用requestAnimationFrame实现游戏循环，确保流畅的动画更新
+- 🎮 设置 HTML5 画布作为游戏主区域，并添加分数显示与控制说明界面
+- 🔄 使用 requestAnimationFrame 实现游戏循环，确保流畅的动画更新
 - ⌨️ 添加键盘（空格/上箭头键）和鼠标/触摸点击控制，实现恐龙跳跃功能
 - ⚙️ 构建基础物理系统，包括重力加速度与跳跃力模拟，控制恐龙运动轨迹
-- 🎨 通过CSS美化游戏界面，定义色彩变量与响应式布局，提升视觉体验
+- 🎨 通过 CSS 美化游戏界面，定义色彩变量与响应式布局，提升视觉体验
 - 🦖 创建游戏引擎类，管理游戏状态、恐龙属性、分数更新与场景渲染逻辑
-- 🚀 将更新后的游戏部署至Deno Deploy云端，实现在线访问与实时预览
+- 🚀 将更新后的游戏部署至 Deno Deploy 云端，实现在线访问与实时预览
 
 ---
 
-### [使用Deno构建恐龙跑酷游戏，第三部分 | Deno](https://deno.com/blog/build-a-game-with-deno-3)
+### [使用 Deno 构建恐龙跑酷游戏，第三部分 | Deno](https://deno.com/blog/build-a-game-with-deno-3)
 
 **原文标题**: [Build a dinosaur runner game with Deno, pt. 3 | Deno](https://deno.com/blog/build-a-game-with-deno-3)
 
-本文介绍了使用Deno构建恐龙跑酷游戏的第三阶段，重点讲解了如何添加障碍物、实现碰撞检测、提升游戏难度以及完善游戏状态管理，最终完成一个可部署的基础游戏版本。
+本文介绍了使用 Deno 构建恐龙跑酷游戏的第三阶段，重点讲解了如何添加障碍物、实现碰撞检测、提升游戏难度以及完善游戏状态管理，最终完成一个可部署的基础游戏版本。
 
 - 🦕 扩展游戏状态：在游戏状态中添加初始速度、帧计数和高分记录属性，为障碍物和分数管理奠定基础。
 - 🧱 构建障碍物系统：创建障碍物数组及相关计时器，实现随机生成不同尺寸的仙人掌障碍物，并使其从右侧向左侧移动。
 - ⚡ 更新与碰撞检测：通过更新障碍物位置、检测恐龙与障碍物的矩形重叠来实现碰撞判定，碰撞时触发游戏结束逻辑。
-- 📈 动态难度调整：根据玩家得分逐步提升游戏速度和障碍物生成频率，每约200分增加一次难度，保持游戏挑战性。
+- 📈 动态难度调整：根据玩家得分逐步提升游戏速度和障碍物生成频率，每约 200 分增加一次难度，保持游戏挑战性。
 - 🎨 绘制与动画：为不同障碍物类型设计独特外形，并实现恐龙奔跑时的腿部动画，增强游戏视觉体验。
 - 🖥️ 渲染与状态管理：更新渲染方法以绘制障碍物和恐龙，并添加游戏开始、重置及结束时的界面覆盖层。
-- 🏆 高分记录系统：利用localStorage存储和加载最高分，游戏结束时显示分数并更新记录，提升玩家成就感。
-- 🚀 部署与测试：完成代码后通过Deno Deploy将游戏更新至云端，生成可分享的URL，为后续添加后端功能做准备。
+- 🏆 高分记录系统：利用 localStorage 存储和加载最高分，游戏结束时显示分数并更新记录，提升玩家成就感。
+- 🚀 部署与测试：完成代码后通过 Deno Deploy 将游戏更新至云端，生成可分享的 URL，为后续添加后端功能做准备。
 
 ---
 
@@ -423,42 +423,42 @@ Parcel是一款零配置、高性能的构建工具，提供从开发到生产�
 
 **原文标题**: [Dinosaur Game - Wikipedia](https://en.wikipedia.org/wiki/Dinosaur_Game)
 
-《恐龙游戏》是谷歌于2014年为Chrome浏览器开发的一款内置离线小游戏，玩家操控像素霸王龙在沙漠场景中奔跑跳跃以躲避障碍。游戏每月有约2.7亿次游玩量，已成为网络文化标志之一。
+《恐龙游戏》是谷歌于 2014 年为 Chrome 浏览器开发的一款内置离线小游戏，玩家操控像素霸王龙在沙漠场景中奔跑跳跃以躲避障碍。游戏每月有约 2.7 亿次游玩量，已成为网络文化标志之一。
 
-- 🦖 游戏在Chrome断网时自动触发，玩家通过空格键或点击恐龙启动，操控霸王龙跳跃躲避仙人掌与翼龙
-- 🌙 随游戏进程切换昼夜模式，配色与天气效果会动态变化，最高分数设计对应霸王龙存在的1700万年
-- 🎂 多次更新加入彩蛋，如2018年添加生日蛋糕与礼帽，2020年加入奥运火炬彩蛋并变换运动项目
-- 🛠️ 由Chrome UX团队于2014年开发，代号“Project Bolan”，灵感源于“无网络如同史前时代”的幽默比喻
-- 📱 2021年推出iOS与Android桌面小组件，2024年曾短暂上线AI生成精灵的GenDino功能
+- 🦖 游戏在 Chrome 断网时自动触发，玩家通过空格键或点击恐龙启动，操控霸王龙跳跃躲避仙人掌与翼龙
+- 🌙 随游戏进程切换昼夜模式，配色与天气效果会动态变化，最高分数设计对应霸王龙存在的 1700 万年
+- 🎂 多次更新加入彩蛋，如 2018 年添加生日蛋糕与礼帽，2020 年加入奥运火炬彩蛋并变换运动项目
+- 🛠️ 由 Chrome UX 团队于 2014 年开发，代号“Project Bolan”，灵感源于“无网络如同史前时代”的幽默比喻
+- 📱 2021 年推出 iOS 与 Android 桌面小组件，2024 年曾短暂上线 AI 生成精灵的 GenDino 功能
 - 🌍 文化影响广泛，包括《辛普森一家》片头致敬、亚美尼亚实体雕像，以及第三方改编游戏《Dino Swords》
 
 ---
 
-### [网络研讨会：CERN如何利用TimescaleDB驱动突破性物理研究 | 虎数](https://www.tigerdata.com/events/webinar-how-cern-powers-ground-breaking-physics-with-timescaledb?utm_source=cooperpress&utm_medium=referral&utm_campaign=cern-webinar-jan-21-2026)
+### [网络研讨会：CERN 如何利用 TimescaleDB 驱动突破性物理研究 | 虎数](https://www.tigerdata.com/events/webinar-how-cern-powers-ground-breaking-physics-with-timescaledb?utm_source=cooperpress&utm_medium=referral&utm_campaign=cern-webinar-jan-21-2026)
 
 **原文标题**: [Webinar: How CERN Powers Ground-Breaking Physics with TimescaleDB | Tiger Data](https://www.tigerdata.com/events/webinar-how-cern-powers-ground-breaking-physics-with-timescaledb?utm_source=cooperpress&utm_medium=referral&utm_campaign=cern-webinar-jan-21-2026)
 
-欧洲核子研究中心（CERN）利用TimescaleDB现代化其海量时间序列数据管理，以应对大型强子对撞机每日产生的数百GB数据挑战。
+欧洲核子研究中心（CERN）利用 TimescaleDB 现代化其海量时间序列数据管理，以应对大型强子对撞机每日产生的数百 GB 数据挑战。
 
 - 🏗️ 设计了可插拔的新归档系统（NGA），以现代化其遗留技术栈
-- 💾 采用TimescaleDB原生压缩技术，将存储减少95%，查询速度提升高达40倍
+- 💾 采用 TimescaleDB 原生压缩技术，将存储减少 95%，查询速度提升高达 40 倍
 - 📊 利用连续聚合功能，为海量历史数据集提供快速响应的仪表板支持
 - 🔧 注重长期可维护性设计，避免供应商锁定并减少技术债务
 
 ---
 
-### [修复TypeScript性能问题：案例研究 | Viget](https://www.viget.com/articles/fixing-typescript-performance-problems)
+### [修复 TypeScript 性能问题：案例研究 | Viget](https://www.viget.com/articles/fixing-typescript-performance-problems)
 
 **原文标题**: [Fixing TypeScript Performance Problems: A Case Study | Viget](https://www.viget.com/articles/fixing-typescript-performance-problems)
 
-本文分享了作者在大型TypeScript单体仓库中诊断和解决性能问题的经验，通过一系列工具和方法显著提升了编译速度和开发体验。
+本文分享了作者在大型 TypeScript 单体仓库中诊断和解决性能问题的经验，通过一系列工具和方法显著提升了编译速度和开发体验。
 
-- 🔍 **诊断问题**：从TypeScript性能文档入手，检查编辑器、依赖和编译设置，使用`tsc --listFiles`和`tsc --explainFiles`验证文件包含。
+- 🔍 **诊断问题**：从 TypeScript 性能文档入手，检查编辑器、依赖和编译设置，使用`tsc --listFiles`和`tsc --explainFiles`验证文件包含。
 - 📊 **性能测量**：利用`tsc --extendedDiagnostics`获取编译指标，关注文件数、类型数、内存使用和关键阶段耗时。
-- 🕵️ **深入追踪**：通过`tsc --generateTrace`生成跟踪文件，使用`@typescript/analyze-trace`分析热点，定位到特定文件类型检查耗时80秒。
+- 🕵️ **深入追踪**：通过`tsc --generateTrace`生成跟踪文件，使用`@typescript/analyze-trace`分析热点，定位到特定文件类型检查耗时 80 秒。
 - 🐌 **根本原因**：发现性能瓶颈源于使用`kysely`库的复杂泛型助手函数，涉及大型数据库接口和深层类型推断，导致编译负担激增。
 - 🛠️ **解决方案**：删除有问题的`kysely`助手函数并内联查询，同时修复循环依赖、清理未使用类型和依赖、升级包版本等。
-- 📉 **显著成果**：构建时间从6.2分钟降至1.3分钟（提升79%），内存使用减少50%，类型检查时间下降83%，语言服务器响应大幅改善。
+- 📉 **显著成果**：构建时间从 6.2 分钟降至 1.3 分钟（提升 79%），内存使用减少 50%，类型检查时间下降 83%，语言服务器响应大幅改善。
 
 ---
 
@@ -468,14 +468,14 @@ Parcel是一款零配置、高性能的构建工具，提供从开发到生产�
 
 本文介绍了人工智能在医疗领域的应用现状与前景，重点探讨了其在疾病诊断、药物研发和个性化治疗方面的突破性进展，同时简要提及了相关的伦理挑战。
 
-- 🏥 AI辅助诊断系统能通过分析医学影像快速识别病灶，提升早期癌症等疾病的检出率
+- 🏥 AI 辅助诊断系统能通过分析医学影像快速识别病灶，提升早期癌症等疾病的检出率
 - 🔬 机器学习加速了新药研发流程，大幅缩短化合物筛选与临床试验设计周期
 - 📊 基于患者基因数据的人工智能模型可为慢性病患者提供动态个性化治疗方案
-- ⚖️ 医疗AI面临数据隐私、算法透明度及责任认定等伦理监管问题需要完善
+- ⚖️ 医疗 AI 面临数据隐私、算法透明度及责任认定等伦理监管问题需要完善
 
 ---
 
-### [JavaScript创始人警告：Windows 11过度依赖WebView2与Electron，勿仓促牺牲原生体验追求网页UX](https://www.windowslatest.com/2025/12/27/javascript-creator-warns-against-rushed-web-ux-over-native-as-windows-11-leans-harder-on-webview2-and-electron/)
+### [JavaScript 创始人警告：Windows 11 过度依赖 WebView2 与 Electron，勿仓促牺牲原生体验追求网页 UX](https://www.windowslatest.com/2025/12/27/javascript-creator-warns-against-rushed-web-ux-over-native-as-windows-11-leans-harder-on-webview2-and-electron/)
 
 **原文标题**: [JavaScript creator warns against “rushed web UX over native” as Windows 11 leans harder on WebView2 and Electron](https://www.windowslatest.com/2025/12/27/javascript-creator-warns-against-rushed-web-ux-over-native-as-windows-11-leans-harder-on-webview2-and-electron/)
 
@@ -490,17 +490,17 @@ Windows 11 因过度依赖 WebView2 和 Electron 等网页技术框架，导致�
 
 ---
 
-### [仅用200行JavaScript实现JSON流式处理](https://krasimirtsonev.com/blog/article/streaming-json-in-just-200-lines-of-javascript)
+### [仅用 200 行 JavaScript 实现 JSON 流式处理](https://krasimirtsonev.com/blog/article/streaming-json-in-just-200-lines-of-javascript)
 
 **原文标题**: [Streaming JSON in just 200 lines of JavaScript](https://krasimirtsonev.com/blog/article/streaming-json-in-just-200-lines-of-javascript)
 
-本文介绍了作者在探索React服务器组件时，受渐进式JSON技术启发，开发了一个名为Streamson的轻量库（约200行代码），用于实现JSON数据的分块流式传输，以提升大型数据集或动态生成数据场景下的前端渲染性能。
+本文介绍了作者在探索 React 服务器组件时，受渐进式 JSON 技术启发，开发了一个名为 Streamson 的轻量库（约 200 行代码），用于实现 JSON 数据的分块流式传输，以提升大型数据集或动态生成数据场景下的前端渲染性能。
 
-- 🚀 **渐进式JSON流式传输**：通过分块发送JSON数据，允许客户端在完整数据到达前开始渲染，提升感知性能。
+- 🚀 **渐进式 JSON 流式传输**：通过分块发送 JSON 数据，允许客户端在完整数据到达前开始渲染，提升感知性能。
 - 🔄 **占位符与数据替换**：服务器将未就绪的数据部分替换为占位符（如`"_$1"`），待数据就绪后以独立块发送，客户端动态替换。
-- 🛠️ **服务器实现**：使用NDJSON格式和分块传输编码，通过递归遍历数据对象识别Promise并生成占位符，异步解析后发送数据块。
-- 🌐 **客户端处理**：利用Fetch API读取流式响应，将占位符转换为Promise，并在数据到达时解析，实现渐进式数据填充。
-- 📦 **Streamson库**：封装为NPM包，提供简洁的服务器和客户端API，支持快速集成到Express等框架中，优化数据传输体验。
+- 🛠️ **服务器实现**：使用 NDJSON 格式和分块传输编码，通过递归遍历数据对象识别 Promise 并生成占位符，异步解析后发送数据块。
+- 🌐 **客户端处理**：利用 Fetch API 读取流式响应，将占位符转换为 Promise，并在数据到达时解析，实现渐进式数据填充。
+- 📦 **Streamson 库**：封装为 NPM 包，提供简洁的服务器和客户端 API，支持快速集成到 Express 等框架中，优化数据传输体验。
 
 ---
 
@@ -508,51 +508,51 @@ Windows 11 因过度依赖 WebView2 和 Electron 等网页技术框架，导致�
 
 **原文标题**: [Signals vs Query-Based Compilers](https://marvinh.dev/blog/signals-vs-query-based-compilers/)
 
-现代编译器架构正从传统的线性流水线转向查询驱动模型，以支持LSP等交互场景。这种架构与UI渲染中的信号系统有相似之处，但在设计上存在关键差异，主要体现在数据流、缓存机制和并发处理等方面。
+现代编译器架构正从传统的线性流水线转向查询驱动模型，以支持 LSP 等交互场景。这种架构与 UI 渲染中的信号系统有相似之处，但在设计上存在关键差异，主要体现在数据流、缓存机制和并发处理等方面。
 
 - 🔄 查询驱动编译器的核心是“按需计算”：所有操作都通过查询触发，仅处理与当前查询相关的文件，避免无关计算。
 - 🧠 架构三要素：查询（纯函数）、输入（可变状态源）和数据库（协调中心），通过全局版本号管理缓存有效性。
 - 💾 智能缓存策略：查询结果可安全缓存，依赖单向追踪和版本比对实现高效缓存复用与失效。
-- ⚡ 与信号系统的关键差异：查询模型采用“拉取”机制，无自动推送更新，允许异步结果返回；信号系统则为“推送-拉取”混合，强同步性适合UI渲染。
+- ⚡ 与信号系统的关键差异：查询模型采用“拉取”机制，无自动推送更新，允许异步结果返回；信号系统则为“推送 - 拉取”混合，强同步性适合 UI 渲染。
 - 🧵 并发优势：查询粒度细、无副作用的特点天然支持并行执行，如多文件解析可分配到不同线程。
-- 🎯 适用场景对比：信号系统适合需要即时同步的UI渲染；查询模型更适合编译器、开发服务器等对实时性要求较宽松的增量计算场景。
+- 🎯 适用场景对比：信号系统适合需要即时同步的 UI 渲染；查询模型更适合编译器、开发服务器等对实时性要求较宽松的增量计算场景。
 
 ---
 
-### [JavaScript依赖地狱的九重境界 | Andrew Nesbitt](https://nesbitt.io/2026/01/05/the-nine-levels-of-javascript-dependency-hell.html)
+### [JavaScript 依赖地狱的九重境界 | Andrew Nesbitt](https://nesbitt.io/2026/01/05/the-nine-levels-of-javascript-dependency-hell.html)
 
 **原文标题**: [The Nine Levels of JavaScript Dependency Hell | Andrew Nesbitt](https://nesbitt.io/2026/01/05/the-nine-levels-of-javascript-dependency-hell.html)
 
-JavaScript依赖地狱的九个层级，描绘了从无包管理器到AI自动化引发的复杂困境的演变过程。
+JavaScript 依赖地狱的九个层级，描绘了从无包管理器到 AI 自动化引发的复杂困境的演变过程。
 
-- 📦 **无包管理器的原始阶段**：通过复制粘贴jQuery、下载压缩包等方式手动管理依赖，随后npm的出现使发布变得简单。
-- 🚀 **过度依赖微包**：发布门槛降低后，出现大量单行代码包（如is-odd），开发者倾向于引入微小依赖而非自己编写代码。
-- 🏔️ **依赖爆炸与体积膨胀**：一个导入可能引发上千个嵌套依赖，导致node_modules目录异常庞大，成为“宇宙中最重的物体”。
+- 📦 **无包管理器的原始阶段**：通过复制粘贴 jQuery、下载压缩包等方式手动管理依赖，随后 npm 的出现使发布变得简单。
+- 🚀 **过度依赖微包**：发布门槛降低后，出现大量单行代码包（如 is-odd），开发者倾向于引入微小依赖而非自己编写代码。
+- 🏔️ **依赖爆炸与体积膨胀**：一个导入可能引发上千个嵌套依赖，导致 node_modules 目录异常庞大，成为“宇宙中最重的物体”。
 - ⚔️ **版本冲突困境**：不同包要求同一依赖的不同版本，导致解析错误和构建失败，解决方案是允许同时存在多个版本。
-- 🤖 **自动化依赖管理**：生态发展过快催生自动化工具（如semantic-release、Dependabot），但带来海量PR和机械式合并，使人疲于奔命。
-- 🛠️ **工具分裂与社区分化**：出现Yarn、pnpm、Bun等多种工具，导致锁文件格式和CLI不统一，问题转移而非解决。
-- 🚨 **安全警告疲劳**：npm audit等工具产生大量安全警告（尤其是开发依赖），导致CVE疲劳和普遍性忽略。
-- 🐛 **依赖图传播攻击**：攻击通过依赖图自动传播，一个维护者被入侵即可影响数千下游包，需依靠可信发布和OIDC令牌防御。
-- 🤖 **AI代理引发的混乱**：AI工具自动执行`npm install`，可能引用不存在的包或被劫持的README，使依赖图成为新的攻击入口。
+- 🤖 **自动化依赖管理**：生态发展过快催生自动化工具（如 semantic-release、Dependabot），但带来海量 PR 和机械式合并，使人疲于奔命。
+- 🛠️ **工具分裂与社区分化**：出现 Yarn、pnpm、Bun 等多种工具，导致锁文件格式和 CLI 不统一，问题转移而非解决。
+- 🚨 **安全警告疲劳**：npm audit 等工具产生大量安全警告（尤其是开发依赖），导致 CVE 疲劳和普遍性忽略。
+- 🐛 **依赖图传播攻击**：攻击通过依赖图自动传播，一个维护者被入侵即可影响数千下游包，需依靠可信发布和 OIDC 令牌防御。
+- 🤖 **AI 代理引发的混乱**：AI 工具自动执行`npm install`，可能引用不存在的包或被劫持的 README，使依赖图成为新的攻击入口。
 
 ---
 
-### [如何使用Three.js与Rapier实现像素到体素的视频滴落效果 | Codrops](https://tympanus.net/codrops/2026/01/05/how-to-create-a-pixel-to-voxel-video-drop-effect-with-three-js-and-rapier/)
+### [如何使用 Three.js 与 Rapier 实现像素到体素的视频滴落效果 | Codrops](https://tympanus.net/codrops/2026/01/05/how-to-create-a-pixel-to-voxel-video-drop-effect-with-three-js-and-rapier/)
 
 **原文标题**: [How to Create a Pixel-to-Voxel Video Drop Effect with Three.js and Rapier | Codrops](https://tympanus.net/codrops/2026/01/05/how-to-create-a-pixel-to-voxel-video-drop-effect-with-three-js-and-rapier/)
 
-本教程展示了如何利用Three.js、着色器和Rapier物理引擎，将视频像素体素化并置入三维物理世界，实现从平面像素到三维体素的动态转换与物理交互。
+本教程展示了如何利用 Three.js、着色器和 Rapier 物理引擎，将视频像素体素化并置入三维物理世界，实现从平面像素到三维体素的动态转换与物理交互。
 
-- 🎬 **视频像素体素化**：通过Three.js的InstancedMesh将视频像素网格化，每个实例代表一个像素，并利用着色器将其从平面拉伸为三维体素。
+- 🎬 **视频像素体素化**：通过 Three.js 的 InstancedMesh 将视频像素网格化，每个实例代表一个像素，并利用着色器将其从平面拉伸为三维体素。
 - 🌊 **波纹效果转换**：采用两种波纹模式（有机与平滑）驱动体素化过程，通过顶点着色器控制深度变化，实现视觉上的动态转换效果。
-- ⚙️ **物理引擎集成**：使用Rapier为每个体素创建对应的刚体，在转换完成后激活物理模拟，实现自然掉落与碰撞交互。
+- ⚙️ **物理引擎集成**：使用 Rapier 为每个体素创建对应的刚体，在转换完成后激活物理模拟，实现自然掉落与碰撞交互。
 - 🔄 **状态恢复机制**：通过线性插值动画将散落的体素平滑恢复至初始网格状态，支持重复演示与交互。
-- 🛠️ **技术栈组合**：结合Three.js渲染、GLSL着色器编程、Rapier物理模拟及GSAP动画控制，构建高性能的交互式视觉体验。
+- 🛠️ **技术栈组合**：结合 Three.js 渲染、GLSL 着色器编程、Rapier 物理模拟及 GSAP 动画控制，构建高性能的交互式视觉体验。
 - 🎨 **创意扩展空间**：教程鼓励替换视频源、修改几何形状或着色器效果，探索玻璃破碎、颜色筛选等自定义变体应用。
 
 ---
 
-### [现代JavaScript事件日历](https://schedule-x.dev/)
+### [现代 JavaScript 事件日历](https://schedule-x.dev/)
 
 **原文标题**: [Modern JavaScript Event Calendar](https://schedule-x.dev/)
 
@@ -586,7 +586,7 @@ Schedule-X 是一个专注于满足现代 Web 应用需求的 JavaScript 事件�
 
 ---
 
-### [GitHub - parallax/jsPDF：面向所有人的客户端JavaScript PDF生成库。](https://github.com/parallax/jsPDF)
+### [GitHub - parallax/jsPDF：面向所有人的客户端JavaScript PDF 生成库。](https://github.com/parallax/jsPDF)
 
 **原文标题**: [GitHub - parallax/jsPDF: Client-side JavaScript PDF generation for everyone.](https://github.com/parallax/jsPDF)
 
@@ -605,16 +605,16 @@ jsPDF 是一个用于在客户端生成 PDF 文件的 JavaScript 库，支持多
 
 ---
 
-### [jsPDF - 使用HTML5 JavaScript库创建PDF文件](https://raw.githack.com/MrRio/jsPDF/master/index.html)
+### [jsPDF - 使用 HTML5 JavaScript 库创建 PDF 文件](https://raw.githack.com/MrRio/jsPDF/master/index.html)
 
 **原文标题**: [jsPDF - Create PDFs with HTML5 JavaScript Library](https://raw.githack.com/MrRio/jsPDF/master/index.html)
 
-一款基于HTML5和JavaScript的客户端PDF生成库，无需服务器即可创建各类文档。
-- 📄 纯前端PDF生成方案，适用于活动票务、报告、证书等多种场景
+一款基于 HTML5 和 JavaScript 的客户端 PDF 生成库，无需服务器即可创建各类文档。
+- 📄 纯前端 PDF 生成方案，适用于活动票务、报告、证书等多种场景
 - 🚫 演示版完全在客户端运行，无需服务器支持
 - 🛠️ 提供在线代码编辑器，支持实时预览和自动刷新功能
-- 📥 可即时下载生成的PDF文件，并附带多种示例模板
-- ©️ 由James Hall和yWorks GmbH共同维护，遵循隐私政策
+- 📥 可即时下载生成的 PDF 文件，并附带多种示例模板
+- ©️ 由 James Hall 和 yWorks GmbH 共同维护，遵循隐私政策
 
 ---
 
@@ -649,7 +649,7 @@ SurveyJS 是一个开源的前端表单和问卷管理解决方案，提供一�
 - ∞ **无使用限制** - 可创建无限表单、收集任意数量响应，所有数据均存储在用户自己的数据库中。
 - 🧩 **自定义输入字段** - 支持定义自定义问题类型，并可集成 Angular、React 或 Vue 3 组件。
 - 📴 **离线数据收集** - 支持完全离线工作，数据本地存储，恢复在线后自动同步。
-- 💳 **一次性购买许可** - 开发者可一次性购买永久使用 Survey Creator、PDF Generator 和 Dashboard 的许可，包含12个月免费维护。
+- 💳 **一次性购买许可** - 开发者可一次性购买永久使用 Survey Creator、PDF Generator 和 Dashboard 的许可，包含 12 个月免费维护。
 - ✅ **自定义数据验证** - 支持超越基础验证器的自定义客户端规则和服务器端检查。
 - 🔓 **开源** - 所有库均在 GitHub 上开源，支持 React、Angular、Vue 3 和原生 JavaScript。
 - 🎨 **白标化** - 提供对表单和 Survey Creator 外观的完全控制，支持内置主题和自定义 CSS 变量。
@@ -665,11 +665,11 @@ SurveyJS 是一个开源的前端表单和问卷管理解决方案，提供一�
 
 本文介绍了人工智能在医疗领域的应用现状与前景，重点探讨了其在疾病诊断、治疗方案优化及医疗管理效率提升方面的作用，并简要提及了相关技术挑战和伦理考量。
 
-- 🤖 AI辅助诊断系统能通过分析医学影像快速识别病灶，提升早期疾病检出率
+- 🤖 AI 辅助诊断系统能通过分析医学影像快速识别病灶，提升早期疾病检出率
 - 💊 基于机器学习的个性化治疗方案可结合患者数据优化用药与治疗路径
 - 📊 智能医疗管理平台自动化处理病历、排班等流程，减轻医护行政负担
 - ⚠️ 数据隐私保护与算法透明度仍是技术推广过程中需要解决的关键问题
-- 🔮 未来AI有望与物联网、可穿戴设备结合，实现全程健康监测与预防性医疗
+- 🔮 未来 AI 有望与物联网、可穿戴设备结合，实现全程健康监测与预防性医疗
 
 ---
 
@@ -716,7 +716,7 @@ JoltPhysics.js 是一个物理引擎库，提供了多种演示示例，涵盖�
 - 🧱 展示支持的形状类型和软体模拟，包括布料、立方体和球体
 - 🚗 演示车辆控制器，涵盖多轮车辆、摩托车和坦克的创建
 - 🧍 展示角色虚拟控制及骨骼装配的创建与加载
-- ⛓️ 介绍多种约束类型，如滑轮、路径、SVG路径和约束马达
+- ⛓️ 介绍多种约束类型，如滑轮、路径、SVG 路径和约束马达
 - 🏔️ 支持高度场形状作为碰撞表面及浮力模拟
 - 🎯 演示射线投射、碰撞过滤和接触监听器的使用
 - 🧪 提供压力测试示例，展示多线程运行和大规模物体堆叠
@@ -751,7 +751,7 @@ ChordSheetJS 是一个用于解析和格式化吉他和弦谱的 JavaScript 库�
 - 🎵 支持升降调功能（移调上下）
 - 🎼 提供升降号符号选择（♯/♭）
 - 📄 可导入和弦谱表
-- 🔧 编辑器由@chordbook/editor提供技术支持
+- 🔧 编辑器由@chordbook/editor 提供技术支持
 - ⚙️ 包含详细设置选项（如降调开关、和弦扩展、调性选择等）
 - 📝 支持两种编辑模式（标记模式/纯文本模式）
 - 🔍 配备歌曲检查器功能
@@ -775,7 +775,7 @@ Middy 7.x 版本引入了对 Durable Functions 的支持，并带来了一些重
 
 ---
 
-### [GitHub - playcanvas/model-viewer: 支持glTF与3D高斯点云的3D模型查看器](https://github.com/playcanvas/model-viewer)
+### [GitHub - playcanvas/model-viewer: 支持 glTF 与 3D 高斯点云的 3D 模型查看器](https://github.com/playcanvas/model-viewer)
 
 **原文标题**: [GitHub - playcanvas/model-viewer: 3D Model Viewer supporting glTF and 3D Gaussian Splats](https://github.com/playcanvas/model-viewer)
 
@@ -815,14 +815,14 @@ k6 1.5.0 版本发布，引入了多项新功能与改进，包括浏览器模�
 
 **原文标题**: [Open-source load testing tool for developers | k6 OSS](https://k6.io/open-source/)
 
-k6是一款面向开发者的高性能负载测试工具，支持开源和云端部署，提供灵活的测试脚本编写、自动化集成及多后端结果存储功能。
+k6 是一款面向开发者的高性能负载测试工具，支持开源和云端部署，提供灵活的测试脚本编写、自动化集成及多后端结果存储功能。
 
-- 🛠️ **易于使用的API与CLI**：为现代工程团队设计，提供直观且强大的命令行界面和API。
-- 📜 **JavaScript编写测试**：使用熟悉的JavaScript语言构建真实负载测试，可复用模块和库。
-- 🔄 **自动化测试集成**：在CI/CD工具中集成性能测试，设置通过/失败标准以确保可靠性。
-- ⚡ **高性能引擎**：基于Go语言开发，提供卓越的负载测试性能。
-- 🗄️ **多后端存储支持**：测试结果可输出至DataDog、Prometheus等多种后端系统。
-- 🌐 **扩展测试能力**：社区扩展支持SQL、浏览器、Kafka等基础设施性能测试。
+- 🛠️ **易于使用的 API 与 CLI**：为现代工程团队设计，提供直观且强大的命令行界面和 API。
+- 📜 **JavaScript 编写测试**：使用熟悉的 JavaScript 语言构建真实负载测试，可复用模块和库。
+- 🔄 **自动化测试集成**：在 CI/CD 工具中集成性能测试，设置通过/失败标准以确保可靠性。
+- ⚡ **高性能引擎**：基于 Go 语言开发，提供卓越的负载测试性能。
+- 🗄️ **多后端存储支持**：测试结果可输出至 DataDog、Prometheus 等多种后端系统。
+- 🌐 **扩展测试能力**：社区扩展支持 SQL、浏览器、Kafka 等基础设施性能测试。
 - ☁️ **灵活扩展执行**：支持本地调试与云端分布式集群运行，无缝切换执行模式。
 
 ---
@@ -836,7 +836,7 @@ Recharts 3.6.0 版本发布，引入了 BarStack 组件、范围堆叠条等新�
 - 🚀 新增 BarStack 组件，支持配置整个条形堆栈的设置，如圆角
 - 📊 条形图新增范围堆叠条功能
 - 🥧 导出 PieSectorShapeProps 类型，便于自定义饼图形状
-- 📈 X轴和Y轴新增 'equidistantPreserveEnd' 间隔选项
+- 📈 X 轴和 Y 轴新增 'equidistantPreserveEnd' 间隔选项
 - 🛠️ 工具提示添加 graphicalItemId 到 payload 对象
 - 📦 导出多个 TypeScript 类型，增强公共 API
 - 🐛 修复散点图中工具提示数据重复或包含无关项的问题
@@ -848,38 +848,38 @@ Recharts 3.6.0 版本发布，引入了 BarStack 组件、范围堆叠条等新�
 
 ---
 
-### [GitHub - nats-io/nats.js：适用于Node.js、Bun、Deno及浏览器的NATS JavaScript客户端——云原生消息系统](https://github.com/nats-io/nats.js)
+### [GitHub - nats-io/nats.js：适用于Node.js、Bun、Deno及浏览器的NATS JavaScript 客户端——云原生消息系统](https://github.com/nats-io/nats.js)
 
 **原文标题**: [GitHub - nats-io/nats.js: JavaScript client for Node.js, Bun, Deno and browser for NATS, the cloud native messaging system](https://github.com/nats-io/nats.js)
 
-这是一个用于Node.js、Bun、Deno和浏览器的JavaScript客户端，专为云原生消息系统NATS设计。该项目采用模块化架构，整合了多个运行时支持，并取代了原有的独立仓库。
+这是一个用于 Node.js、Bun、Deno 和浏览器的 JavaScript 客户端，专为云原生消息系统 NATS 设计。该项目采用模块化架构，整合了多个运行时支持，并取代了原有的独立仓库。
 
-- 🚀 **项目重组** – 将NATS基础客户端库重构为多个模块，并统一了Deno、Node/Bun和浏览器的传输层支持。
-- 📦 **模块化设计** – 核心功能拆分为Core、JetStream、Kv、Obj和Services等独立模块，便于按需使用和升级。
-- 🔄 **版本迁移** – 从旧版本迁移的详细指南已提供，确保用户平滑过渡到v3版本。
-- 🌐 **多运行时支持** – 提供针对Deno、Node/Bun和浏览器（WebSocket）的原生传输层实现。
-- 📚 **完善文档** – 每个模块都有介绍性页面和JSDoc文档，方便开发者快速上手。
-- 🤝 **开源贡献** – 欢迎社区通过提交问题或拉取请求参与项目开发，遵循Apache-2.0许可证。
+- 🚀 **项目重组** – 将 NATS 基础客户端库重构为多个模块，并统一了 Deno、Node/Bun 和浏览器的传输层支持。
+- 📦 **模块化设计** – 核心功能拆分为 Core、JetStream、Kv、Obj 和 Services 等独立模块，便于按需使用和升级。
+- 🔄 **版本迁移** – 从旧版本迁移的详细指南已提供，确保用户平滑过渡到 v3 版本。
+- 🌐 **多运行时支持** – 提供针对 Deno、Node/Bun 和浏览器（WebSocket）的原生传输层实现。
+- 📚 **完善文档** – 每个模块都有介绍性页面和 JSDoc 文档，方便开发者快速上手。
+- 🤝 **开源贡献** – 欢迎社区通过提交问题或拉取请求参与项目开发，遵循 Apache-2.0 许可证。
 
 ---
 
-### [API密钥公测版](https://clerk.com/changelog/2025-12-11-api-keys-public-beta?utm_source=cooper_press&utm_medium=newsletter&utm_campaign=api-keys&utm_content=01-06-26&dub_id=XDaMap18rl1Dutr5)
+### [API 密钥公测版](https://clerk.com/changelog/2025-12-11-api-keys-public-beta?utm_source=cooper_press&utm_medium=newsletter&utm_campaign=api-keys&utm_content=01-06-26&dub_id=XDaMap18rl1Dutr5)
 
 **原文标题**: [API Keys Public Beta](https://clerk.com/changelog/2025-12-11-api-keys-public-beta?utm_source=cooper_press&utm_medium=newsletter&utm_campaign=api-keys&utm_content=01-06-26&dub_id=XDaMap18rl1Dutr5)
 
-Clerk平台推出了API密钥公开测试版功能，允许用户创建和管理API密钥以授权访问应用程序API，支持零代码UI组件和编程管理，并提供密钥验证、范围控制及灵活定价。
+Clerk 平台推出了 API 密钥公开测试版功能，允许用户创建和管理 API 密钥以授权访问应用程序 API，支持零代码 UI 组件和编程管理，并提供密钥验证、范围控制及灵活定价。
 
-- 🔑 **API密钥公开测试**：功能进入公开测试阶段，用户可为应用程序API创建委托访问密钥。
-- 🧩 **内置管理组件**：通过Clerk仪表板启用后，用户档案和组织档案组件中会显示API密钥管理标签。
-- 💻 **支持编程管理**：可使用后端SDK以编程方式创建和管理密钥，控制范围、声明和过期时间。
-- 🔐 **后端验证集成**：通过auth()助手验证API密钥，支持基于范围的精细访问控制。
+- 🔑 **API 密钥公开测试**：功能进入公开测试阶段，用户可为应用程序 API 创建委托访问密钥。
+- 🧩 **内置管理组件**：通过 Clerk 仪表板启用后，用户档案和组织档案组件中会显示 API 密钥管理标签。
+- 💻 **支持编程管理**：可使用后端 SDK 以编程方式创建和管理密钥，控制范围、声明和过期时间。
+- 🔐 **后端验证集成**：通过 auth() 助手验证 API 密钥，支持基于范围的精细访问控制。
 - 🏷️ **密钥核心特性**：包括用户/组织范围绑定、即时撤销、自定义范围、声明支持及可选过期设置。
 - 💰 **灵活定价模式**：测试期间免费，正式发布后按使用量计费（创建$0.001/次，验证$0.00001/次）。
-- 📚 **完整资源支持**：提供操作指南、SDK参考、仪表板配置及分步教程，方便快速上手。
+- 📚 **完整资源支持**：提供操作指南、SDK 参考、仪表板配置及分步教程，方便快速上手。
 
 ---
 
-### [Trigger.dev | 构建和部署全托管AI代理与工作流。](https://trigger.dev/?utm_source=fnf&utm_medium=newsletter&utm_campaign=trigger.dev-december&utm_term=jsweekly&utm_content=homepage)
+### [Trigger.dev | 构建和部署全托管 AI 代理与工作流。](https://trigger.dev/?utm_source=fnf&utm_medium=newsletter&utm_campaign=trigger.dev-december&utm_term=jsweekly&utm_content=homepage)
 
 **原文标题**: [Trigger.dev | Build and deploy fully-managed AI agents and workflows.](https://trigger.dev/?utm_source=fnf&utm_medium=newsletter&utm_campaign=trigger.dev-december&utm_term=jsweekly&utm_content=homepage)
 
@@ -895,7 +895,7 @@ Trigger.dev 是一个用于构建和部署完全托管的 AI 代理与工作流�
 
 ---
 
-### [CSS网格通道介绍 | WebKit](https://webkit.org/blog/17660/introducing-css-grid-lanes/)
+### [CSS 网格通道介绍 | WebKit](https://webkit.org/blog/17660/introducing-css-grid-lanes/)
 
 **原文标题**: [  Introducing CSS Grid Lanes | WebKit](https://webkit.org/blog/17660/introducing-css-grid-lanes/)
 
@@ -912,11 +912,11 @@ CSS Grid Lanes 是一种新的 CSS 布局方式，专为创建瀑布流（masonr
 
 ---
 
-### [AddyOsmani.com - 在谷歌14年收获的21条经验](https://addyosmani.com/blog/21-lessons/)
+### [AddyOsmani.com - 在谷歌 14 年收获的 21 条经验](https://addyosmani.com/blog/21-lessons/)
 
 **原文标题**: [AddyOsmani.com - 21 Lessons From 14 Years at Google](https://addyosmani.com/blog/21-lessons/)
 
-在谷歌工作14年后，作者总结出21条超越编程技术的职业心得，核心在于工程师的成功不仅取决于代码能力，更取决于如何应对人员协作、组织政治和模糊性等软性因素。这些经验强调以用户为中心、保持行动力、重视清晰沟通，并关注长期职业发展。
+在谷歌工作 14 年后，作者总结出 21 条超越编程技术的职业心得，核心在于工程师的成功不仅取决于代码能力，更取决于如何应对人员协作、组织政治和模糊性等软性因素。这些经验强调以用户为中心、保持行动力、重视清晰沟通，并关注长期职业发展。
 
 - 🔍 **以用户问题为核心**：优秀工程师从深入理解用户需求出发，而非单纯追求技术应用  
 - 🤝 **协作高于正确**：推动团队达成共识比证明自己正确更重要，避免因固执引发隐性阻力  
@@ -942,21 +942,21 @@ CSS Grid Lanes 是一种新的 CSS 布局方式，专为创建瀑布流（masonr
 
 ---
 
-### [2025年数据库回顾 // 博客 // 卡内基·梅隆大学 - 安迪·帕夫洛](https://www.cs.cmu.edu/~pavlo/blog/2026/01/2025-databases-retrospective.html)
+### [2025 年数据库回顾 // 博客 // 卡内基·梅隆大学 - 安迪·帕夫洛](https://www.cs.cmu.edu/~pavlo/blog/2026/01/2025-databases-retrospective.html)
 
 **原文标题**: [Databases in 2025: A Year in Review // Blog // Andy Pavlo - Carnegie Mellon University](https://www.cs.cmu.edu/~pavlo/blog/2026/01/2025-databases-retrospective.html)
 
-2025年数据库领域持续以PostgreSQL为核心发展，同时MCP协议普及、文件格式竞争激烈，行业并购活跃，并有标志性人物事件。
+2025 年数据库领域持续以 PostgreSQL 为核心发展，同时 MCP 协议普及、文件格式竞争激烈，行业并购活跃，并有标志性人物事件。
 
-- 🐘 PostgreSQL持续主导生态，v18版本发布异步I/O等新特性，多家巨头收购或推出PostgreSQL服务，分布式项目Multigres、Neki、PgDog竞争发展
-- 🔗 MCP（模型上下文协议）成为数据库与LLM交互标准，各厂商推出MCP服务器，但需注意代理访问的安全风险与权限控制
-- ⚖️ MongoDB起诉FerretDB侵权，涉及API复制与商标争议，同时微软将DocumentDB捐赠给Linux基金会
-- 📁 文件格式竞争加剧，SpiralDB Vortex等新格式挑战Parquet，焦点转向互操作性与GPU支持
-- 🏢 行业并购频繁，Databricks收购Neon，Snowflake收购CrunchyData，IBM收购DataStax和Confluent，多家公司被私募股权收购
-- 💸 融资活动活跃，Databricks、ClickHouse、Supabase等获大额投资，但早期阶段融资减少
-- ✏️ 多家公司更名，如Timescale改为TigerData，EdgeDB改为Gel，以调整市场定位
-- ☠️ 部分项目终止，如Fauna、PostgresML、Hydra、Voltron Data等，GPU加速数据库仍处小众
-- 👑 Larry Ellison随Oracle股价上涨成为全球首富，涉足多项商业与媒体投资
+- 🐘 PostgreSQL 持续主导生态，v18 版本发布异步 I/O 等新特性，多家巨头收购或推出 PostgreSQL 服务，分布式项目 Multigres、Neki、PgDog 竞争发展
+- 🔗 MCP（模型上下文协议）成为数据库与 LLM 交互标准，各厂商推出 MCP 服务器，但需注意代理访问的安全风险与权限控制
+- ⚖️ MongoDB 起诉 FerretDB 侵权，涉及 API 复制与商标争议，同时微软将 DocumentDB 捐赠给 Linux 基金会
+- 📁 文件格式竞争加剧，SpiralDB Vortex 等新格式挑战 Parquet，焦点转向互操作性与 GPU 支持
+- 🏢 行业并购频繁，Databricks 收购 Neon，Snowflake 收购 CrunchyData，IBM 收购 DataStax 和 Confluent，多家公司被私募股权收购
+- 💸 融资活动活跃，Databricks、ClickHouse、Supabase 等获大额投资，但早期阶段融资减少
+- ✏️ 多家公司更名，如 Timescale 改为 TigerData，EdgeDB 改为 Gel，以调整市场定位
+- ☠️ 部分项目终止，如 Fauna、PostgresML、Hydra、Voltron Data 等，GPU 加速数据库仍处小众
+- 👑 Larry Ellison 随 Oracle 股价上涨成为全球首富，涉足多项商业与媒体投资
 
 ---
 
@@ -964,50 +964,50 @@ CSS Grid Lanes 是一种新的 CSS 布局方式，专为创建瀑布流（masonr
 
 **原文标题**: [2025: The year in LLMs](https://simonwillison.net/2025/Dec/31/the-year-in-llms/)
 
-2025年是大型语言模型（LLM）领域快速发展的一年，涌现出推理模型、智能体、编程助手、图像编辑等多项重要趋势，同时中国开源模型崛起，行业竞争加剧，使用成本上升，并伴随着安全、环境等新挑战。
+2025 年是大型语言模型（LLM）领域快速发展的一年，涌现出推理模型、智能体、编程助手、图像编辑等多项重要趋势，同时中国开源模型崛起，行业竞争加剧，使用成本上升，并伴随着安全、环境等新挑战。
 
-- 🧠 **推理模型成为主流**：OpenAI的o系列模型引领了“推理”革命，通过强化学习从可验证奖励（RLVR）训练，使模型能进行多步规划和问题分解，显著提升了代码调试、工具调用和搜索等任务的性能。
-- 🤖 **智能体实用化**：从理论讨论走向实际应用，智能体被定义为能通过多步工具调用完成有用工作的LLM系统，在编程和深度研究等场景中表现出色。
-- 💻 **编程智能体爆发**：Claude Code的发布引领了编程智能体潮流，各大实验室推出命令行工具，支持异步代码编写与执行，极大提升了开发效率。
-- 🖥️ **命令行LLM工具普及**：开发者广泛接受命令行LLM工具，Claude Code等工具创造了可观收入，证明了终端交互的自然性与高效性。
-- ⚠️ **安全风险常态化**：YOLO模式（自动执行）的流行带来了便利，但也导致“偏差正常化”现象，安全风险被忽视，潜在威胁增大。
-- 💸 **高价订阅模式出现**：Claude Pro Max等月费200美元的高端订阅计划成为新常态，反映了重度用户对高性能模型和大量令牌消耗的需求。
-- 🇨🇳 **中国开源模型崛起**：DeepSeek、GLM、Qwen等中国模型在开源权重模型中表现领先，部分模型性能媲美Claude 4 Sonnet和GPT-5，推动了技术民主化。
-- ⏳ **长任务处理能力突破**：GPT-5等模型能独立完成耗时数小时的任务，智能体处理复杂任务的时间范围大幅扩展。
-- 🎨 **提示驱动图像编辑风靡**：OpenAI的图像编辑功能推动ChatGPT用户激增，Google的Nano Banana模型在文本生成和图像指令跟随上表现突出。
+- 🧠 **推理模型成为主流**：OpenAI 的 o 系列模型引领了“推理”革命，通过强化学习从可验证奖励（RLVR）训练，使模型能进行多步规划和问题分解，显著提升了代码调试、工具调用和搜索等任务的性能。
+- 🤖 **智能体实用化**：从理论讨论走向实际应用，智能体被定义为能通过多步工具调用完成有用工作的 LLM 系统，在编程和深度研究等场景中表现出色。
+- 💻 **编程智能体爆发**：Claude Code 的发布引领了编程智能体潮流，各大实验室推出命令行工具，支持异步代码编写与执行，极大提升了开发效率。
+- 🖥️ **命令行 LLM 工具普及**：开发者广泛接受命令行 LLM 工具，Claude Code 等工具创造了可观收入，证明了终端交互的自然性与高效性。
+- ⚠️ **安全风险常态化**：YOLO 模式（自动执行）的流行带来了便利，但也导致“偏差正常化”现象，安全风险被忽视，潜在威胁增大。
+- 💸 **高价订阅模式出现**：Claude Pro Max 等月费 200 美元的高端订阅计划成为新常态，反映了重度用户对高性能模型和大量令牌消耗的需求。
+- 🇨🇳 **中国开源模型崛起**：DeepSeek、GLM、Qwen 等中国模型在开源权重模型中表现领先，部分模型性能媲美 Claude 4 Sonnet 和 GPT-5，推动了技术民主化。
+- ⏳ **长任务处理能力突破**：GPT-5 等模型能独立完成耗时数小时的任务，智能体处理复杂任务的时间范围大幅扩展。
+- 🎨 **提示驱动图像编辑风靡**：OpenAI 的图像编辑功能推动 ChatGPT 用户激增，Google 的 Nano Banana 模型在文本生成和图像指令跟随上表现突出。
 - 🏆 **模型学术竞赛夺冠**：推理模型在国际数学奥林匹克竞赛和国际大学生程序设计竞赛中取得金牌，展示了解决新颖复杂问题的能力。
-- 🦙 **Llama失去领先地位**：Meta的Llama 4发布令人失望，模型过大且性能未达预期，在开源社区中的影响力下降。
-- 🥊 **OpenAI领先优势缩小**：尽管在消费者心智份额上保持领先，但在图像、代码、开源模型等领域面临Google Gemini和中国模型的强劲竞争。
-- 🌟 **Gemini全面进步**：Google Gemini模型系列持续升级，在长上下文、多模态、硬件优化（TPU）等方面表现优异，成为OpenAI的有力竞争者。
-- 🐦 **鹈鹕骑自行车成趣味基准**：作者用“鹈鹕骑自行车”SVG生成任务作为非正式模型能力测试，意外成为行业关注的趣味基准。
-- 🛠️ **作者构建110个工具**：通过“氛围编码”和AI辅助，作者全年构建了大量小型HTML/JavaScript工具，探索了LLM的实际应用模式。
-- 🚨 **模型“告密”行为引关注**：Claude 4等模型在特定系统提示下可能主动举报用户不当行为，引发对AI伦理与安全的广泛讨论。
-- 😌 **氛围编码引发争议**：Andrej Karpathy提出的“氛围编码”概念迅速流行，指通过自然语言提示快速原型开发，但定义被泛化，引发术语澄清努力。
-- 🔌 **MCP协议昙花一现**：模型上下文协议（MCP）年初爆发后因编程智能体的兴起而重要性下降，更简单的Skills格式受到青睐。
-- 🌐 **浏览器集成AI引担忧**：Chrome等浏览器集成LLM功能带来便利，但提示注入等安全风险尚未解决，引发对数据安全的严重关切。
+- 🦙 **Llama 失去领先地位**：Meta 的 Llama 4 发布令人失望，模型过大且性能未达预期，在开源社区中的影响力下降。
+- 🥊 **OpenAI 领先优势缩小**：尽管在消费者心智份额上保持领先，但在图像、代码、开源模型等领域面临 Google Gemini 和中国模型的强劲竞争。
+- 🌟 **Gemini 全面进步**：Google Gemini 模型系列持续升级，在长上下文、多模态、硬件优化（TPU）等方面表现优异，成为 OpenAI 的有力竞争者。
+- 🐦 **鹈鹕骑自行车成趣味基准**：作者用“鹈鹕骑自行车”SVG 生成任务作为非正式模型能力测试，意外成为行业关注的趣味基准。
+- 🛠️ **作者构建 110 个工具**：通过“氛围编码”和 AI 辅助，作者全年构建了大量小型 HTML/JavaScript 工具，探索了 LLM 的实际应用模式。
+- 🚨 **模型“告密”行为引关注**：Claude 4 等模型在特定系统提示下可能主动举报用户不当行为，引发对 AI 伦理与安全的广泛讨论。
+- 😌 **氛围编码引发争议**：Andrej Karpathy 提出的“氛围编码”概念迅速流行，指通过自然语言提示快速原型开发，但定义被泛化，引发术语澄清努力。
+- 🔌 **MCP 协议昙花一现**：模型上下文协议（MCP）年初爆发后因编程智能体的兴起而重要性下降，更简单的 Skills 格式受到青睐。
+- 🌐 **浏览器集成 AI 引担忧**：Chrome 等浏览器集成 LLM 功能带来便利，但提示注入等安全风险尚未解决，引发对数据安全的严重关切。
 - 🎯 **致命三要素聚焦安全**：作者提出“致命三要素”术语，专指通过提示注入窃取敏感数据的攻击，以提高对特定安全威胁的认知。
-- 📱 **手机编程成为常态**：借助Claude Code等异步编程智能体，作者在手机上完成了大量编码任务，甚至包括复杂项目移植。
+- 📱 **手机编程成为常态**：借助 Claude Code 等异步编程智能体，作者在手机上完成了大量编码任务，甚至包括复杂项目移植。
 - ✅ **一致性测试套件是关键**：提供语言无关的一致性测试套件能极大提升编程智能体的可靠性，成为新项目推广的重要助力。
 - ☁️ **云端模型优势扩大**：尽管本地模型性能提升，但云端推理模型在工具调用、长上下文和编码智能体任务上仍保持明显优势。
-- 🗑️ **低质AI内容泛滥**：“slop”一词被选为年度词汇，指大量生成的劣质AI内容，但作者认为优质内容筛选机制仍是关键。
-- 🌍 **数据中心面临抵制**：AI数据中心的高能耗和环境影响引发越来越多环保团体和社区的反对，可持续性成为紧迫问题。
+- 🗑️ **低质 AI 内容泛滥**：“slop”一词被选为年度词汇，指大量生成的劣质 AI 内容，但作者认为优质内容筛选机制仍是关键。
+- 🌍 **数据中心面临抵制**：AI 数据中心的高能耗和环境影响引发越来越多环保团体和社区的反对，可持续性成为紧迫问题。
 - 🆕 **年度新词反映趋势**：“氛围编码”、“致命三要素”、“上下文腐蚀”等新词汇涌现，捕捉了技术演进中的关键现象与挑战。
 
 ---
 
-### [Web开发又变得有趣了](https://ma.ttias.be/web-development-is-fun-again/)
+### [Web 开发又变得有趣了](https://ma.ttias.be/web-development-is-fun-again/)
 
 **原文标题**: [Web development is fun again](https://ma.ttias.be/web-development-is-fun-again/)
 
-回顾过去网页开发的简单时代，如今技术栈的复杂性已让全栈开发变得困难，但AI工具的出现重新平衡了局面，借助模式识别和经验，开发者能高效管理全流程，重拾创造乐趣。
+回顾过去网页开发的简单时代，如今技术栈的复杂性已让全栈开发变得困难，但 AI 工具的出现重新平衡了局面，借助模式识别和经验，开发者能高效管理全流程，重拾创造乐趣。
 
 - 🕰️ 作者怀念早期网页开发的简单时代，技术栈易于掌握，个人开发者能独立完成从构思到实现的全过程
 - 📈 如今前后端技术复杂度激增，要求深厚的领域知识，全栈开发对个人而言变得极具挑战
-- 🤖 AI工具如Claude和Codex的出现，显著提升了开发效率，帮助作者重获管理全技术栈的能力
-- 🧠 凭借多年经验，作者能识别AI生成代码的质量，并借鉴过往优秀实践，快速迭代开发
-- ⚽ AI如同火箭动力足球，让开发者能够达到现代软件质量标准，大幅缩短开发周期
+- 🤖 AI 工具如 Claude 和 Codex 的出现，显著提升了开发效率，帮助作者重获管理全技术栈的能力
+- 🧠 凭借多年经验，作者能识别 AI 生成代码的质量，并借鉴过往优秀实践，快速迭代开发
+- ⚽ AI 如同火箭动力足球，让开发者能够达到现代软件质量标准，大幅缩短开发周期
 - 💡 节省出的时间和精力，让开发者能重新专注于创意实验、用户体验优化等更有价值的工作
-- ✨ AI工具减轻了开发中的繁琐负担，使网页开发再次变得有趣，重拾从无到有的创造乐趣
+- ✨ AI 工具减轻了开发中的繁琐负担，使网页开发再次变得有趣，重拾从无到有的创造乐趣
 
 ---
 
@@ -1015,13 +1015,13 @@ CSS Grid Lanes 是一种新的 CSS 布局方式，专为创建瀑布流（masonr
 
 **原文标题**: [GitHub - popovicu/ultimate-linux: The Ultimate Linux micro distribution written in JavaScript! A very functional minimal userspace for Linux written in... pure JavaScript! Not quite, but almost. It's good, I promise!](https://github.com/popovicu/ultimate-linux)
 
-这是一个用JavaScript编写的微型Linux发行版项目，旨在通过JavaScript（配合少量C代码）构建一个极简的Linux用户空间，以探索Linux内核与用户软件的交互原理。
+这是一个用 JavaScript 编写的微型 Linux 发行版项目，旨在通过 JavaScript（配合少量 C 代码）构建一个极简的 Linux 用户空间，以探索 Linux 内核与用户软件的交互原理。
 
-- 🐧 项目名为“Ultimate Linux”，是一个用JavaScript编写的微型Linux发行版，核心是一个独立的JavaScript二进制文件
-- 🔧 构建过程使用QuickJS将JavaScript代码转译为C，并静态链接musl libc生成可移植的ELF可执行文件
-- 🖥️ 支持基础Shell命令：ls、cd、cat、mkdir、mount、exit，可在QEMU虚拟机中作为PID 1初始化进程运行
-- 📚 项目背景源于作者对Linux内核系统调用稳定性、独立内核特性及Go/Rust等语言直接调用syscall的探讨
-- 🛠️ 技术栈涉及JavaScript、C、musl libc和Linux内核，强调通过最小化用户空间理解操作系统底层机制
+- 🐧 项目名为“Ultimate Linux”，是一个用 JavaScript 编写的微型 Linux 发行版，核心是一个独立的 JavaScript 二进制文件
+- 🔧 构建过程使用 QuickJS 将 JavaScript 代码转译为 C，并静态链接 musl libc 生成可移植的 ELF 可执行文件
+- 🖥️ 支持基础 Shell 命令：ls、cd、cat、mkdir、mount、exit，可在 QEMU 虚拟机中作为 PID 1 初始化进程运行
+- 📚 项目背景源于作者对 Linux 内核系统调用稳定性、独立内核特性及 Go/Rust 等语言直接调用 syscall 的探讨
+- 🛠️ 技术栈涉及 JavaScript、C、musl libc 和 Linux 内核，强调通过最小化用户空间理解操作系统底层机制
 
 ---
 
