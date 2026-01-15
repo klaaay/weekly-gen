@@ -1,9 +1,9 @@
 {
   "thisweekinreact": {
-    "issue_title": "📨 #263: DoS, RSC Explorer, Base UI, shadcn, Blender, TanStack, Format.js | Hermes, Screens, Survey, React Navigation, ZoomGrid, Radon, TrueSheet, PagerView, Nitro | Node.js, TypeScript, Safari, State of HTML",
-    "link_url": "/newsletter/263",
-    "timestamp": "2025-12-19T13:22:28.784909",
-    "full_url": "https://thisweekinreact.com//newsletter/263"
+    "issue_title": "📨 #264: Next.js, Immer, React Router, Waku, Ant, React Conf, | Voltra, 0.84 RC, Hermes, RNSec, Galeria, Nitro, Radon, Facetpack, Rock, Haptics | Chrome, Astro, Turborepo, Rspack, Rising Stars",
+    "link_url": "/newsletter/264",
+    "timestamp": "2026-01-15T11:24:13.872398",
+    "full_url": "https://thisweekinreact.com//newsletter/264"
   },
   "nextjsweekly": {
     "issue_title": "Issue #112 Jan 9, 2026RSC Explorer, React 19.2 Async Shift, Vercel AI SDK 6, Base UI v1, shadcn/create, Next.js notFound() Bug",
@@ -18,10 +18,10 @@
     "full_url": "https://reactdigest.net//newsletters/2191-how-good-is-ai-at-coding-react-really"
   },
   "webtoolsweekly": {
-    "issue_title": "#651\nJS Libs, Testing, AI Tools",
-    "link_url": "archives/issue-651/",
-    "timestamp": "2026-01-10T00:59:47.347638",
-    "full_url": "https://webtoolsweekly.com/archives/issue-651/"
+    "issue_title": "#652\nCSS/HTML, Git/CLI, Build Tools",
+    "link_url": "archives/issue-652/",
+    "timestamp": "2026-01-15T16:29:49.776148",
+    "full_url": "https://webtoolsweekly.com/archives/issue-652/"
   },
   "nodeweekly": {
     "issue_title": "Issue #606",
@@ -30,10 +30,10 @@
     "full_url": "https://nodeweekly.com/issues/606"
   },
   "frontendfoc": {
-    "issue_title": "Issue #723",
-    "link_url": "issues/723",
-    "timestamp": "2026-01-07T23:18:39.493683",
-    "full_url": "https://frontendfoc.us/issues/723"
+    "issue_title": "Issue #724",
+    "link_url": "issues/724",
+    "timestamp": "2026-01-15T11:24:14.994716",
+    "full_url": "https://frontendfoc.us/issues/724"
   },
   "reactweekly": {
     "issue_title": "Issue #457",
@@ -42,9 +42,9 @@
     "full_url": "https://reactweekly.com/issues/457"
   },
   "javascriptweekly": {
-    "issue_title": "Issue #767",
-    "link_url": "issues/767",
-    "timestamp": "2026-01-07T23:18:39.385232",
-    "full_url": "https://javascriptweekly.com/issues/767"
+    "issue_title": "Issue #768",
+    "link_url": "issues/768",
+    "timestamp": "2026-01-14T14:39:19.681490",
+    "full_url": "https://javascriptweekly.com/issues/768"
   }
 }
