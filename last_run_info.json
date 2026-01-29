@@ -1,9 +1,9 @@
 {
   "thisweekinreact": {
-    "issue_title": "📨 #265: React Skills, json-render, ViewTransition, Base UI, shadcn, Store, MDX, GTK | RN Windows/macOS/Harmony, Brownie, Enriched, Navigation, Teleport, Nitro | TC39, Astro, jQuery, Node.js",
-    "link_url": "/newsletter/265",
-    "timestamp": "2026-01-22T14:04:58.636972",
-    "full_url": "https://thisweekinreact.com//newsletter/265"
+    "issue_title": "📨 #266: DoS, shadcn, Skills, Rspack, React Aria, TanStack, Remotion, ChartGPU | Expo 55 beta, Hermes, Expo Router, Widgets, CSS, AI, Bootsplash, Detox | TC39, Rolldown, Yarn, Nodde, Mermaid, Unplugin",
+    "link_url": "/newsletter/266",
+    "timestamp": "2026-01-29T10:23:17.367429",
+    "full_url": "https://thisweekinreact.com//newsletter/266"
   },
   "nextjsweekly": {
     "issue_title": "Issue #114 Jan 23, 2026Skills.sh, Stealing React Components, React has changed, better-themes, Server Action Data Fetching, opensrc",
@@ -30,10 +30,10 @@
     "full_url": "https://nodeweekly.com/issues/608"
   },
   "frontendfoc": {
-    "issue_title": "Issue #725",
-    "link_url": "issues/725",
-    "timestamp": "2026-01-22T14:05:01.048484",
-    "full_url": "https://frontendfoc.us/issues/725"
+    "issue_title": "Issue #726",
+    "link_url": "issues/726",
+    "timestamp": "2026-01-29T10:23:20.119584",
+    "full_url": "https://frontendfoc.us/issues/726"
   },
   "reactweekly": {
     "issue_title": "Issue #459",
@@ -42,9 +42,9 @@
     "full_url": "https://reactweekly.com/issues/459"
   },
   "javascriptweekly": {
-    "issue_title": "Issue #769",
-    "link_url": "issues/769",
-    "timestamp": "2026-01-21T11:38:35.901555",
-    "full_url": "https://javascriptweekly.com/issues/769"
+    "issue_title": "Issue #770",
+    "link_url": "issues/770",
+    "timestamp": "2026-01-28T10:07:00.089510",
+    "full_url": "https://javascriptweekly.com/issues/770"
   }
 }
