@@ -1,0 +1,77 @@
+{
+  "ROOT": {
+    "type": { "resolvedName": "Container" },
+    "isCanvas": true,
+    "props": {
+      "style": { "padding": 16, "background": "#fff" },
+      "data-insp-path": "packages/pc/src/pages/InteractionTool/index.tsx:65:15:Element"
+    },
+    "displayName": "容器",
+    "custom": { "displayName": "根节点" },
+    "hidden": false,
+    "nodes": [
+      "Cg52cq0qwq",
+      "67bc5213-4fbc-422e-98a1-b823ad1822c2",
+      "1b186c21-0b41-4647-9083-34115bc9a245"
+    ],
+    "linkedNodes": {}
+  },
+  "67bc5213-4fbc-422e-98a1-b823ad1822c2": {
+    "type": { "resolvedName": "Paragraph" },
+    "isCanvas": true,
+    "props": {
+      "text": { "jsExpression": { "code": "video_url" } },
+      "type": "",
+      "style": { "margin": "0 0 8px 0" }
+    },
+    "displayName": "段落",
+    "custom": {},
+    "parent": "ROOT",
+    "hidden": false,
+    "nodes": [],
+    "linkedNodes": {}
+  },
+  "1b186c21-0b41-4647-9083-34115bc9a245": {
+    "type": { "resolvedName": "RadioGroup" },
+    "isCanvas": true,
+    "props": {
+      "block": false,
+      "style": { "gap": 8, "flexDirection": "row" },
+      "disabled": false,
+      "options": [
+        { "label": "愤怒_Angry", "value": 0 },
+        { "label": "打架_Fighting", "value": 1 },
+        { "label": "不情愿_Moaning", "value": 2 },
+        { "label": "愉快_Demanding", "value": 3 },
+        { "label": "狩猎_Hunting", "value": 4 },
+        { "label": "呼噜声_Resting", "value": 5 },
+        { "label": "哈气_Defensing", "value": 6 },
+        { "label": "其他_other", "value": 7 }
+      ],
+      "value": { "jsExpression": { "code": "classification_record" } }
+    },
+    "displayName": "单选组",
+    "custom": {},
+    "parent": "ROOT",
+    "hidden": false,
+    "nodes": [],
+    "linkedNodes": {}
+  },
+  "Cg52cq0qwq": {
+    "type": { "resolvedName": "Video" },
+    "isCanvas": false,
+    "props": {
+      "url": { "jsExpression": { "code": "video_url" } },
+      "autoplay": true,
+      "loop": true,
+      "controls": true,
+      "style": { "height": 500, "width": "100%" }
+    },
+    "displayName": "视频",
+    "custom": {},
+    "parent": "ROOT",
+    "hidden": false,
+    "nodes": [],
+    "linkedNodes": {}
+  }
+}
