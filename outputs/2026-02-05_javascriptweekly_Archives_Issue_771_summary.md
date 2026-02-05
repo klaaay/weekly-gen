@@ -1,15 +1,15 @@
-### [JavaScript周刊第771期：2026年2月3日](https://javascriptweekly.com/issues/771)
+### [JavaScript 周刊第 771 期：2026 年 2 月 3 日](https://javascriptweekly.com/issues/771)
 
 **原文标题**: [JavaScript Weekly Issue 771: February 3, 2026](https://javascriptweekly.com/issues/771)
 
-本期JavaScript周刊重点报道了多个重要框架和工具的更新动态，以及社区中的热点项目与安全事件。
+本期 JavaScript 周刊重点报道了多个重要框架和工具的更新动态，以及社区中的热点项目与安全事件。
 
-- 🚀 **四大JavaScript重量级项目发布更新**：Gatsby v5.16支持React 19，Babel 8进入发布候选阶段，Rspress 2.0静态站点生成器发布，Lodash推出安全修复版本。
-- 🤖 **AI助手项目OpenClaw引发热潮**：开源TypeScript项目在GitHub获15万星标，经历两次更名，并衍生出自主运行的社交网络等生态应用。
-- 🔧 **工具与库版本更新**：Node.js v25.6.0优化异步钩子性能，jQuery UI兼容jQuery 4.0，Bun新增原生Markdown解析功能，另有多项主流工具发布新版本。
-- 📚 **技术文章与教程精选**：涵盖JavaScript数字解析陷阱、Node.js版本性能对比、ESLint配置实践、WebGL视觉效果实现等深度内容。
-- 🛠️ **新工具与代码库推荐**：包括热力图生成库Heat.js 5.0、Cron调度工具Croner 10.0、React日历组件DayFlow，以及TypeScript转C#编译器等创新项目。
-- ⚠️ **安全与社区事件**：OpenJS基金会发布年度安全报告，Notepad++编辑器疑似遭遇国家级攻击，GitHub探讨低质量贡献解决方案。
+- 🚀 **四大 JavaScript 重量级项目发布更新**：Gatsby v5.16 支持 React 19，Babel 8 进入发布候选阶段，Rspress 2.0 静态站点生成器发布，Lodash 推出安全修复版本。
+- 🤖 **AI 助手项目 OpenClaw 引发热潮**：开源 TypeScript 项目在 GitHub 获 15 万星标，经历两次更名，并衍生出自主运行的社交网络等生态应用。
+- 🔧 **工具与库版本更新**：Node.js v25.6.0 优化异步钩子性能，jQuery UI 兼容 jQuery 4.0，Bun 新增原生 Markdown 解析功能，另有多项主流工具发布新版本。
+- 📚 **技术文章与教程精选**：涵盖 JavaScript 数字解析陷阱、Node.js 版本性能对比、ESLint 配置实践、WebGL 视觉效果实现等深度内容。
+- 🛠️ **新工具与代码库推荐**：包括热力图生成库 Heat.js 5.0、Cron 调度工具 Croner 10.0、React日历组件DayFlow，以及TypeScript转C#编译器等创新项目。
+- ⚠️ **安全与社区事件**：OpenJS 基金会发布年度安全报告，Notepad++ 编辑器疑似遭遇国家级攻击，GitHub 探讨低质量贡献解决方案。
 
 ---
 
@@ -17,7 +17,7 @@
 
 **原文标题**: [v5.16 Release Notes | Gatsby](https://www.gatsbyjs.com/docs/reference/release-notes/v5.16/)
 
-Gatsby 5.16.0 版本于2026年1月发布，主要新增对 React 19 和 Node.js 24 的官方支持，同时包含多项错误修复与改进。
+Gatsby 5.16.0 版本于 2026 年 1 月发布，主要新增对 React 19 和 Node.js 24 的官方支持，同时包含多项错误修复与改进。
 
 - 🚀 **支持 React 19**：Gatsby 及其官方维护的所有 `gatsby-` 包现已正式兼容 React 19，升级非破坏性，可安全使用 React 18 或 19。
 - ⚠️ **升级注意事项**：社区插件可能尚未更新支持 React 19，需自行检查；部分新功能如文档元数据提升暂不可用，且实验性功能“部分水合”与 React 19 不兼容。
@@ -88,7 +88,7 @@ Rspress 2.0 正式发布，这是一款基于 Rsbuild 的静态站点生成器�
 
 ---
 
-### [深入Lodash安全重置与维护重启内部——Sock...](https://socket.dev/blog/inside-lodash-security-reset)
+### [深入 Lodash 安全重置与维护重启内部——Sock...](https://socket.dev/blog/inside-lodash-security-reset)
 
 **原文标题**: [Inside Lodash’s Security Reset and Maintenance Reboot - Sock...](https://socket.dev/blog/inside-lodash-security-reset)
 
@@ -108,7 +108,7 @@ Open VSX 宣布将实施预发布安全检查机制，以应对近期多次恶�
 Lodash 是一个现代化的 JavaScript 实用工具库，提供模块化、高性能和额外功能，简化了数组、数字、对象和字符串等数据类型的处理。
 
 - 🛠️ **功能丰富**：提供多种实用方法，用于迭代数组、对象和字符串，操作和测试值，以及创建复合函数。
-- 📦 **模块化设计**：支持多种构建版本，包括核心构建（约4kB）、完整构建（约24kB）和按需加载的方法包，适合不同项目需求。
+- 📦 **模块化设计**：支持多种构建版本，包括核心构建（约 4kB）、完整构建（约 24kB）和按需加载的方法包，适合不同项目需求。
 - 🌐 **多环境支持**：可在浏览器、Node.js 等环境中使用，支持通过 npm、CDN 或直接引入脚本安装。
 - 🔄 **函数式编程**：提供专门的 FP 版本，支持不可变、自动柯里化、迭代优先和数据最后的方法。
 - 📄 **开源许可**：基于 MIT 许可证发布，支持现代 JavaScript 环境，兼容多种浏览器和 Node.js 版本。
@@ -116,34 +116,34 @@ Lodash 是一个现代化的 JavaScript 实用工具库，提供模块化、高�
 
 ---
 
-### [精密AI——无需编写测试的自动化前端测试](https://www.meticulous.ai?utm_source=jsweekly&utm_medium=referral&utm_campaign=26q1&utm_content=primary)
+### [精密 AI——无需编写测试的自动化前端测试](https://www.meticulous.ai?utm_source=jsweekly&utm_medium=referral&utm_campaign=26q1&utm_content=primary)
 
 **原文标题**: [Meticulous AI - Automated Frontend Testing Without Writing Tests](https://www.meticulous.ai?utm_source=jsweekly&utm_medium=referral&utm_campaign=26q1&utm_content=primary)
 
-Meticulous AI是一款创新的自动化测试工具，通过记录用户与应用交互生成并维护测试套件，无需手动编写或修复测试，帮助团队高效交付无回归的可靠代码。
+Meticulous AI 是一款创新的自动化测试工具，通过记录用户与应用交互生成并维护测试套件，无需手动编写或修复测试，帮助团队高效交付无回归的可靠代码。
 
 - 🚀 **无需编写测试**：通过记录用户交互自动生成覆盖所有代码分支和边缘情况的测试套件，无需手动编写或维护测试。
 - 🔄 **自动演化测试**：随着应用更新，测试套件自动添加新功能测试并淘汰过时测试，保持测试始终最新且完整。
-- ⚡ **闪电般执行速度**：基于Chromium构建的确定性调度引擎，实现无抖动测试，并通过并行计算在120秒内完成数千次测试。
+- ⚡ **闪电般执行速度**：基于 Chromium 构建的确定性调度引擎，实现无抖动测试，并通过并行计算在 120 秒内完成数千次测试。
 - 🛡️ **零副作用测试**：通过模拟后端响应进行测试，无需设置测试账户或模拟数据，避免误报和数据变更影响。
-- 🔗 **无缝集成**：支持与现有测试套件结合使用或完全替代，提供与主流框架（如React、Vue、Angular等）的快速集成方案。
-- 📈 **提升开发效率**：被Dropbox、Notion等超过100家组织信任，帮助工程师减少调试时间，加速可靠代码的交付流程。
+- 🔗 **无缝集成**：支持与现有测试套件结合使用或完全替代，提供与主流框架（如 React、Vue、Angular 等）的快速集成方案。
+- 📈 **提升开发效率**：被 Dropbox、Notion 等超过 100 家组织信任，帮助工程师减少调试时间，加速可靠代码的交付流程。
 
 ---
 
-### [OpenClaw — 个人AI助手](https://openclaw.ai/)
+### [OpenClaw — 个人 AI 助手](https://openclaw.ai/)
 
 **原文标题**: [OpenClaw — Personal AI Assistant](https://openclaw.ai/)
 
-OpenClaw 是一款开源的个人AI助手，能够通过常用聊天应用（如 WhatsApp、Telegram）进行操作，具备持久记忆和系统控制能力，让用户拥有一个可自我扩展的私人AI伙伴。
+OpenClaw 是一款开源的个人 AI 助手，能够通过常用聊天应用（如 WhatsApp、Telegram）进行操作，具备持久记忆和系统控制能力，让用户拥有一个可自我扩展的私人 AI 伙伴。
 
 - 🦞 **开源可自控** – 数据存储在本地，非云端托管，用户拥有完全控制权，可自行修改和扩展。
 - 🤖 **多功能自动化** – 可管理邮件、日历、文件，运行脚本，控制智能家居，甚至处理代码测试和错误修复。
 - 💬 **全平台聊天集成** – 支持 WhatsApp、Telegram、Discord、Slack 等常用通讯工具，通过自然对话进行操作。
 - 🧠 **持久记忆与个性化** – 具备长期记忆能力，能够学习用户习惯，成为个性化的“第二大脑”。
-- 🔧 **技能自扩展** – 可通过对话让AI自行创建新技能或插件，社区也在不断贡献新功能。
+- 🔧 **技能自扩展** – 可通过对话让 AI 自行创建新技能或插件，社区也在不断贡献新功能。
 - ⚡ **快速部署** – 提供一键安装脚本，支持 macOS、Windows、Linux，几分钟内即可完成设置。
-- 🌐 **未来感体验** – 许多用户形容使用体验如同“活在未来”，感觉像是早期AGI或数字同事。
+- 🌐 **未来感体验** – 许多用户形容使用体验如同“活在未来”，感觉像是早期 AGI 或数字同事。
 
 ---
 
@@ -165,50 +165,50 @@ OpenClaw 是一个可在本地设备上运行的个人 AI 助手，支持通过�
 
 ---
 
-### [Moltbook是当前互联网上最有趣的地方。](https://simonwillison.net/2026/Jan/30/moltbook/)
+### [Moltbook 是当前互联网上最有趣的地方。](https://simonwillison.net/2026/Jan/30/moltbook/)
 
 **原文标题**: [Moltbook is the most interesting place on the internet right now](https://simonwillison.net/2026/Jan/30/moltbook/)
 
-文章介绍了当前AI领域最热门的开源项目OpenClaw（曾用名Clawdbot、Moltbot），它是一个数字个人助理，通过技能系统实现强大功能，并重点描述了基于其技能构建的创意社交平台Moltbook，该平台让AI助理之间能够互动交流。作者在肯定其创新价值与社区活力的同时，也表达了对安全风险的担忧，包括提示注入攻击、技能潜在恶意性以及缺乏可靠安全方案等问题。
+文章介绍了当前 AI 领域最热门的开源项目 OpenClaw（曾用名 Clawdbot、Moltbot），它是一个数字个人助理，通过技能系统实现强大功能，并重点描述了基于其技能构建的创意社交平台 Moltbook，该平台让 AI 助理之间能够互动交流。作者在肯定其创新价值与社区活力的同时，也表达了对安全风险的担忧，包括提示注入攻击、技能潜在恶意性以及缺乏可靠安全方案等问题。
 
-- 🤖 OpenClaw是一个开源数字个人助理项目，两个月内GitHub获星超11.4万，通过技能系统实现功能扩展
-- 🔗 Moltbook是基于OpenClaw技能构建的社交平台，AI助理可在此互动、发帖和创建子论坛
+- 🤖 OpenClaw 是一个开源数字个人助理项目，两个月内 GitHub 获星超 11.4 万，通过技能系统实现功能扩展
+- 🔗 Moltbook 是基于 OpenClaw 技能构建的社交平台，AI 助理可在此互动、发帖和创建子论坛
 - ⚠️ 作者指出该类软件存在提示注入等安全风险，技能可能窃取信息，且缺乏有效安全方案
-- 🛠️ 社区通过clawhub.ai分享数千种技能，用户可远程控制手机、处理音频等，展现强大应用潜力
+- 🛠️ 社区通过 clawhub.ai 分享数千种技能，用户可远程控制手机、处理音频等，展现强大应用潜力
 - 🔐 用户为降低风险使用独立设备运行，但作者认为“致命三重威胁”依然存在，安全建设迫在眉睫
 
 ---
 
-### [JS Bin - 协作式JavaScript调试工具](https://jsbin.com/)
+### [JS Bin - 协作式 JavaScript 调试工具](https://jsbin.com/)
 
 **原文标题**: [JS Bin - Collaborative JavaScript Debugging](https://jsbin.com/)
 
-JS Bin是一个在线代码编辑和实时预览工具，支持HTML、CSS和JavaScript等多种语言，并提供丰富的功能如代码分享、嵌入和协作编辑。
+JS Bin 是一个在线代码编辑和实时预览工具，支持 HTML、CSS 和 JavaScript 等多种语言，并提供丰富的功能如代码分享、嵌入和协作编辑。
 
-- 🛠️ **功能丰富** – 支持多种处理器（如Markdown、Sass、TypeScript）和实时控制台输出
-- 🔗 **分享便捷** – 可通过链接、嵌入代码或导出为Gist轻松分享作品
-- ⌨️ **快捷键高效** – 提供多种键盘快捷键，提升编辑效率（如Ctrl+S保存、Ctrl+Enter重新渲染）
-- 🌐 **URL灵活** – 不同URL后缀对应特定功能（如`/edit`编辑、`/embed`生成嵌入版本）
+- 🛠️ **功能丰富** – 支持多种处理器（如 Markdown、Sass、TypeScript）和实时控制台输出
+- 🔗 **分享便捷** – 可通过链接、嵌入代码或导出为 Gist 轻松分享作品
+- ⌨️ **快捷键高效** – 提供多种键盘快捷键，提升编辑效率（如 Ctrl+S 保存、Ctrl+Enter 重新渲染）
+- 🌐 **URL 灵活** – 不同 URL 后缀对应特定功能（如`/edit`编辑、`/embed`生成嵌入版本）
 - 👥 **协作与账户** – 支持登录注册、代码存档、克隆和模板保存，便于团队协作
-- 📚 **资源与支持** – 提供博客、帮助文档和社区支持，用户可升级Pro版本获取更多功能
+- 📚 **资源与支持** – 提供博客、帮助文档和社区支持，用户可升级 Pro 版本获取更多功能
 
 ---
 
-### [JS Bin 将于2026年下线](https://remysharp.com/2026/02/02/js-bin-down-in-2026)
+### [JS Bin 将于 2026 年下线](https://remysharp.com/2026/02/02/js-bin-down-in-2026)
 
 **原文标题**: [JS Bin down in 2026](https://remysharp.com/2026/02/02/js-bin-down-in-2026)
 
-JS Bin 在2026年1月底遭遇了持续数天的严重宕机，作者通过升级Node.js版本、优化nginx配置、引入CloudFlare防护以及调整防火墙规则等一系列措施，最终解决了因异常流量攻击导致的服务器过载问题，并反思了在危机中过度依赖AI工具可能带来的配置复杂化风险。
+JS Bin 在 2026 年 1 月底遭遇了持续数天的严重宕机，作者通过升级 Node.js 版本、优化 nginx 配置、引入 CloudFlare 防护以及调整防火墙规则等一系列措施，最终解决了因异常流量攻击导致的服务器过载问题，并反思了在危机中过度依赖 AI 工具可能带来的配置复杂化风险。
 
-- 🚨 **严重宕机事件**：JS Bin 在2026年1月底遭遇持续数天的宕机，服务器因异常流量攻击导致内存和CPU过载，无法通过常规重启恢复。
-- 🛠️ **维护模式遗留问题**：JS Bin 已运行近18年，长期处于“维护模式”，服务器资源仅为1GB内存的单核AWS实例，且Node.js版本停留在古老的v7。
-- 📈 **异常流量攻击**：监控显示入站网络流量飙升至100MB峰值，持续高并发请求导致服务器崩溃，作者推测可能是AI爬虫大规模抓取所致。
-- 🔧 **技术升级与优化**：将Node.js从v7升级至v22，优化nginx配置（调整工作进程、超时设置等），并配置系统在内存不足时优先终止Node进程以保留SSH访问能力。
-- 🛡️ **引入CloudFlare防护**：将DNS解析迁移至CloudFlare以过滤恶意流量，但初期因配置错误导致合法用户收到520错误（TLS版本不匹配）。
-- 🔐 **防火墙与安全组配置**：通过服务器ufw规则和AWS安全组批量添加CloudFlare IP白名单，彻底屏蔽非代理流量，缓解服务器压力。
-- 🤖 **AI工具使用反思**：作者在紧急调试中过度依赖ChatGPT等AI工具，导致配置复杂化（如nginx规则冲突），反而延长了故障排查时间。
-- ✅ **根本问题解决**：禁用CloudFlare的TLS 1.3支持以匹配服务器旧版nginx，并清理错误配置后，服务完全恢复，服务器负载降至正常水平（CPU使用率约4.6%）。
-- 📊 **防护效果显著**：CloudFlare成功拦截大量攻击流量（仅香港地区24小时内就有1000万请求），作者后悔未尽早部署防护措施。
+- 🚨 **严重宕机事件**：JS Bin 在 2026 年 1 月底遭遇持续数天的宕机，服务器因异常流量攻击导致内存和 CPU 过载，无法通过常规重启恢复。
+- 🛠️ **维护模式遗留问题**：JS Bin 已运行近 18 年，长期处于“维护模式”，服务器资源仅为 1GB 内存的单核 AWS 实例，且 Node.js 版本停留在古老的 v7。
+- 📈 **异常流量攻击**：监控显示入站网络流量飙升至 100MB 峰值，持续高并发请求导致服务器崩溃，作者推测可能是 AI 爬虫大规模抓取所致。
+- 🔧 **技术升级与优化**：将 Node.js 从 v7 升级至 v22，优化 nginx 配置（调整工作进程、超时设置等），并配置系统在内存不足时优先终止 Node 进程以保留 SSH 访问能力。
+- 🛡️ **引入 CloudFlare 防护**：将 DNS 解析迁移至 CloudFlare 以过滤恶意流量，但初期因配置错误导致合法用户收到 520 错误（TLS 版本不匹配）。
+- 🔐 **防火墙与安全组配置**：通过服务器 ufw 规则和 AWS 安全组批量添加 CloudFlare IP 白名单，彻底屏蔽非代理流量，缓解服务器压力。
+- 🤖 **AI 工具使用反思**：作者在紧急调试中过度依赖 ChatGPT 等 AI 工具，导致配置复杂化（如 nginx 规则冲突），反而延长了故障排查时间。
+- ✅ **根本问题解决**：禁用 CloudFlare 的 TLS 1.3 支持以匹配服务器旧版 nginx，并清理错误配置后，服务完全恢复，服务器负载降至正常水平（CPU 使用率约 4.6%）。
+- 📊 **防护效果显著**：CloudFlare 成功拦截大量攻击流量（仅香港地区 24 小时内就有 1000 万请求），作者后悔未尽早部署防护措施。
 
 ---
 
@@ -220,7 +220,7 @@ JS Bin 在2026年1月底遭遇了持续数天的严重宕机，作者通过升�
 
 ---
 
-### [RFC：将OnPush设为默认变更检测策略 · angular/angular · 讨论 #66779 · GitHub](https://github.com/angular/angular/discussions/66779)
+### [RFC：将 OnPush 设为默认变更检测策略 · angular/angular · 讨论 #66779 · GitHub](https://github.com/angular/angular/discussions/66779)
 
 **原文标题**: [RFC: Setting OnPush as the default Change Detection Strategy · angular/angular · Discussion #66779 · GitHub](https://github.com/angular/angular/discussions/66779)
 
@@ -234,14 +234,14 @@ Angular 团队计划在 v22 版本中将组件的默认变更检测策略改为 
 
 ---
 
-### [Astro 2026年1月更新亮点 | Astro](https://astro.build/blog/whats-new-january-2026/)
+### [Astro 2026 年 1 月更新亮点 | Astro](https://astro.build/blog/whats-new-january-2026/)
 
 **原文标题**: [What’s new in Astro - January 2026 | Astro](https://astro.build/blog/whats-new-january-2026/)
 
-Astro 2026年1月动态更新，涵盖技术进展、社区贡献、新工具与模板，以及丰富的用户案例展示。
+Astro 2026 年 1 月动态更新，涵盖技术进展、社区贡献、新工具与模板，以及丰富的用户案例展示。
 
 - 🚀 Astro 技术公司加入 Cloudflare，v6 Beta 版本发布，并解释了项目的资金模式
-- 📈 Astro 在 GitHub 和 JavaScript Rising Stars 2025 中表现突出，发布了2025年度回顾
+- 📈 Astro 在 GitHub 和 JavaScript Rising Stars 2025 中表现突出，发布了 2025 年度回顾
 - 🏛️ 知名机构如哈佛大学和瑞士媒体 Tages-Anzeiger 已采用 Astro 构建网站
 - 🌐 展示了多个创新网站案例，包括伦敦烤肉餐厅指南和民主风险追踪器等特色项目
 - 🎨 通过视觉惊艳的网站如 ASTRO_INFINITY，证明了 Astro 在动画和视觉效果上的强大能力
@@ -254,7 +254,7 @@ Astro 2026年1月动态更新，涵盖技术进展、社区贡献、新工具与
 
 ---
 
-### [Svelte 2026年2月更新亮点](https://svelte.dev/blog/whats-new-in-svelte-february-2026)
+### [Svelte 2026 年 2 月更新亮点](https://svelte.dev/blog/whats-new-in-svelte-february-2026)
 
 **原文标题**: [What’s new in Svelte: February 2026](https://svelte.dev/blog/whats-new-in-svelte-february-2026)
 
@@ -293,14 +293,14 @@ Node.js 25.6.0 版本发布，包含多项新功能、性能优化和依赖项�
 
 **原文标题**: [jQuery UI 1.14.2 released | jQuery UI Blog](https://blog.jqueryui.com/2026/01/jquery-ui-1-14-2-released/)
 
-jQuery UI 1.14.2 版本已发布，主要修复了标签页ID包含Unicode字符及支持带URL凭证页面的标签页问题，并移除了对jQuery Mousewheel插件的依赖。此版本还修复了缓动演示并迁移了测试基础设施至jquery-test-runner。该版本已测试兼容jQuery 1.12.4至4.0.0，且jQuery UI目前处于维护状态，仅进行兼容性更新和安全修复，不计划新增重要功能。
+jQuery UI 1.14.2 版本已发布，主要修复了标签页 ID 包含 Unicode 字符及支持带 URL 凭证页面的标签页问题，并移除了对 jQuery Mousewheel 插件的依赖。此版本还修复了缓动演示并迁移了测试基础设施至 jquery-test-runner。该版本已测试兼容 jQuery 1.12.4 至 4.0.0，且 jQuery UI 目前处于维护状态，仅进行兼容性更新和安全修复，不计划新增重要功能。
 
-- 🐛 修复了标签页ID包含Unicode字符及支持带URL凭证页面的问题
-- 🔧 移除了对jQuery Mousewheel插件的依赖
-- 🛠️ 修复了缓动演示并迁移测试基础设施至jquery-test-runner
-- ✅ 已测试兼容jQuery 1.12.4、2.2.4、3.6.4、3.7.1及4.0.0版本
-- ⚠️ jQuery UI处于维护状态，仅进行兼容性更新和安全修复，无新功能计划
-- 📦 提供多种下载方式：开发包、主题包、npm、bower及CDN链接
+- 🐛 修复了标签页 ID 包含 Unicode 字符及支持带 URL 凭证页面的问题
+- 🔧 移除了对 jQuery Mousewheel 插件的依赖
+- 🛠️ 修复了缓动演示并迁移测试基础设施至 jquery-test-runner
+- ✅ 已测试兼容 jQuery 1.12.4、2.2.4、3.6.4、3.7.1 及 4.0.0 版本
+- ⚠️ jQuery UI 处于维护状态，仅进行兼容性更新和安全修复，无新功能计划
+- 📦 提供多种下载方式：开发包、主题包、npm、bower 及 CDN 链接
 - 📄 包含详细变更日志和升级指南供用户参考
 
 ---
@@ -324,16 +324,16 @@ jQuery UI 1.14.2 版本已发布，主要修复了标签页ID包含Unicode字符
 
 **原文标题**: [Astro 5.17 | Astro](https://astro.build/blog/astro-5170/)
 
-Astro 5.17 版本引入了多项新功能和改进，包括可配置的开发工具栏位置、异步文件解析、分区化Cookie支持、图像优化升级等，旨在提升开发体验和项目性能。
+Astro 5.17 版本引入了多项新功能和改进，包括可配置的开发工具栏位置、异步文件解析、分区化 Cookie 支持、图像优化升级等，旨在提升开发体验和项目性能。
 
-- 🛠️ **可配置开发工具栏位置**：新增 `devToolbar.placement` 配置选项，允许设置项目级的默认工具栏位置，避免与页面底部元素（如聊天窗口）冲突，同时仍支持开发者通过UI覆盖此设置。
-- ⚡ **异步文件解析**：`file()` 加载器的 `parser()` 选项现在支持异步函数，便于在加载文件数据时执行复杂操作（如API调用），而现有同步解析器无需修改即可继续使用。
-- 🍪 **分区化Cookie支持**：通过 `Astro.cookies.set()` 的新 `partitioned` 选项，支持在嵌入式场景（如iframe）中设置分区化Cookie，增强隐私控制并符合现代隐私标准。
-- 🎨 **图像背景色控制**：图像转换新增 `background` 属性，允许在转换为不支持透明度的格式（如JPEG）时指定背景颜色，支持CSS颜色语法，避免默认黑色背景。
-- 🔍 **Sharp内核选择**：Sharp图像服务新增 `kernel` 配置选项，允许选择不同的重采样算法（如 `mks2021`），以精细控制图像缩放的质量和效果，适用于所有站点图像。
+- 🛠️ **可配置开发工具栏位置**：新增 `devToolbar.placement` 配置选项，允许设置项目级的默认工具栏位置，避免与页面底部元素（如聊天窗口）冲突，同时仍支持开发者通过 UI 覆盖此设置。
+- ⚡ **异步文件解析**：`file()` 加载器的 `parser()` 选项现在支持异步函数，便于在加载文件数据时执行复杂操作（如 API 调用），而现有同步解析器无需修改即可继续使用。
+- 🍪 **分区化 Cookie 支持**：通过 `Astro.cookies.set()` 的新 `partitioned` 选项，支持在嵌入式场景（如 iframe）中设置分区化 Cookie，增强隐私控制并符合现代隐私标准。
+- 🎨 **图像背景色控制**：图像转换新增 `background` 属性，允许在转换为不支持透明度的格式（如 JPEG）时指定背景颜色，支持 CSS 颜色语法，避免默认黑色背景。
+- 🔍 **Sharp 内核选择**：Sharp 图像服务新增 `kernel` 配置选项，允许选择不同的重采样算法（如 `mks2021`），以精细控制图像缩放的质量和效果，适用于所有站点图像。
 - 📦 **优化数据存储**：`glob()` 加载器新增 `retainBody` 选项（默认 `true`），设置为 `false` 时可避免存储原始文件内容，显著减少大型内容集合的数据存储大小。
-- 🔄 **升级指南**：推荐使用 `@astrojs/upgrade` CLI工具自动升级项目，或手动运行包管理器的升级命令（如 `npm install astro@latest`）以获取最新版本。
-- 🐛 **错误修复与社区贡献**：版本包含自5.16以来的多项错误修复，详细更新请查阅变更日志；感谢核心团队及众多社区贡献者的代码与文档改进。
+- 🔄 **升级指南**：推荐使用 `@astrojs/upgrade` CLI 工具自动升级项目，或手动运行包管理器的升级命令（如 `npm install astro@latest`）以获取最新版本。
+- 🐛 **错误修复与社区贡献**：版本包含自 5.16 以来的多项错误修复，详细更新请查阅变更日志；感谢核心团队及众多社区贡献者的代码与文档改进。
 
 ---
 
@@ -347,12 +347,12 @@ ESLint v10.0.0-rc.2 是一个预发布版本，主要修复了先前版本中的
 - 🗑️ 完全移除了 `/use-at-your-own-risk` 入口中的 `LegacyESLint` 和 `FlatESLint` 导出
 - 📦 需通过指定 `next` 标签或版本号手动安装此预发布版本
 - 📘 提供了详细的迁移指南，帮助用户处理版本升级中的破坏性变更
-- 🔧 更新了文档，包括支持 `:is` 选择器别名和ESM依赖策略说明
+- 🔧 更新了文档，包括支持 `:is` 选择器别名和 ESM 依赖策略说明
 - 🧹 进行了代码维护，如修复文档和注释中的拼写错误
 
 ---
 
-### [GitHub - trpc/trpc: 🧙‍♀️ 快速推进，稳如磐石。轻松构建端到端类型安全的API。](https://github.com/trpc/trpc)
+### [GitHub - trpc/trpc: 🧙‍♀️ 快速推进，稳如磐石。轻松构建端到端类型安全的 API。](https://github.com/trpc/trpc)
 
 **原文标题**: [GitHub - trpc/trpc: 🧙‍♀️  Move Fast and Break Nothing. End-to-end typesafe APIs made easy.](https://github.com/trpc/trpc)
 
@@ -387,7 +387,7 @@ Lexical 是一个由 Meta 开发的开源、可扩展的文本编辑器框架，
 
 ---
 
-### [Reka UI - 无样式、完全可访问的UI库 | Reka UI](https://reka-ui.com/)
+### [Reka UI - 无样式、完全可访问的 UI 库 | Reka UI](https://reka-ui.com/)
 
 **原文标题**: [Reka UI - Unstyled, fully accessible UI library | Reka UI](https://reka-ui.com/)
 
@@ -397,13 +397,13 @@ Reka UI v2 版本发布，这是一个基于 Vue 的开源库，提供无样式�
 - 🧩 **无样式基础组件**：提供 40 多个原始组件，支持完全自定义样式，API 设计友好。
 - ♿ **开箱即用的可访问性**：遵循 WAI-ARIA 设计模式，支持键盘导航、屏幕阅读器等辅助技术。
 - 🌍 **国际化支持**：包含 RTL 布局、多语言和数字系统适配，适合全球用户。
-- ⚡ **提升开发效率**：组件库旨在节省开发时间，加速项目交付，已有 160 万+ 月下载量。
+- ⚡ **提升开发效率**：组件库旨在节省开发时间，加速项目交付，已有 160 万 + 月下载量。
 - 📚 **丰富的资源**：提供组件示例、用例和详细文档，便于集成和学习。
 - 🛠️ **易于上手**：支持快速安装和设置，开发者可浏览组件和样式示例开始使用。
 
 ---
 
-### [精准解析器 - 每日WTF](https://thedailywtf.com/articles/a-percise-parser)
+### [精准解析器 - 每日 WTF](https://thedailywtf.com/articles/a-percise-parser)
 
 **原文标题**: [A Percise Parser - The Daily WTF](https://thedailywtf.com/articles/a-percise-parser)
 
@@ -418,30 +418,30 @@ Reka UI v2 版本发布，这是一个基于 Vue 的开源库，提供无样式�
 
 ---
 
-### [Node.js 16至25性能基准测试：性能随时间如何演变](https://www.repoflow.io/blog/node-js-16-to-25-benchmarks-how-performance-evolved-over-time)
+### [Node.js 16 至 25 性能基准测试：性能随时间如何演变](https://www.repoflow.io/blog/node-js-16-to-25-benchmarks-how-performance-evolved-over-time)
 
 **原文标题**: [Node.js 16 to 25 Benchmarks: How Performance Evolved Over Time](https://www.repoflow.io/blog/node-js-16-to-25-benchmarks-how-performance-evolved-over-time)
 
-本文对Node.js 16至25版本进行了性能基准测试，重点关注HTTP吞吐量、JSON处理、加密哈希、内存操作及循环计算等核心场景，揭示了各版本间的性能演进趋势。
+本文对 Node.js 16 至 25 版本进行了性能基准测试，重点关注 HTTP 吞吐量、JSON 处理、加密哈希、内存操作及循环计算等核心场景，揭示了各版本间的性能演进趋势。
 
-- 📊 **HTTP GET吞吐量测试**：测量本地HTTP服务器在保持连接和32个并发请求下的每秒请求处理能力。
-- 🔍 **JSON解析与序列化速度**：评估Node.js解析小型JSON数据及将对象序列化为JSON字符串的性能。
-- 🔐 **SHA-256哈希计算**：通过crypto.createHash("sha256")测试哈希生成的处理吞吐量。
-- 💾 **缓冲区复制性能**：使用Buffer.copy方法测量64KB缓冲区的内存复制效率。
-- 🔄 **数组映射与归约操作**：针对常见JavaScript模式（数组map后接reduce）进行性能分析。
+- 📊 **HTTP GET 吞吐量测试**：测量本地 HTTP 服务器在保持连接和 32 个并发请求下的每秒请求处理能力。
+- 🔍 **JSON 解析与序列化速度**：评估 Node.js 解析小型 JSON 数据及将对象序列化为 JSON 字符串的性能。
+- 🔐 **SHA-256 哈希计算**：通过 crypto.createHash("sha256") 测试哈希生成的处理吞吐量。
+- 💾 **缓冲区复制性能**：使用 Buffer.copy 方法测量 64KB 缓冲区的内存复制效率。
+- 🔄 **数组映射与归约操作**：针对常见 JavaScript 模式（数组 map 后接 reduce）进行性能分析。
 - 🧵 **字符串拼接效率**：测试通过重复拼接操作构建字符串的性能表现。
-- ➗ **整数循环与算术运算**：通过紧凑整数循环执行基础算术运算，评估JavaScript引擎的数值代码优化效果。
-- 🎲 **随机化整数循环测试**：在循环中引入Math.random()随机性，验证Node 25在真实数据依赖场景下的性能提升是否稳定。
-- ⚙️ **测试方法与环境**：所有测试在Apple M4硬件上运行五次取中位数，测试间进行冷却以避免热偏差影响结果。
-- 🚀 **核心结论**：Node.js各版本性能持续稳步提升，Node 25在数值计算和循环密集型任务中表现尤为突出，实际应用性能提升取决于具体工作负载特性。
+- ➗ **整数循环与算术运算**：通过紧凑整数循环执行基础算术运算，评估 JavaScript 引擎的数值代码优化效果。
+- 🎲 **随机化整数循环测试**：在循环中引入 Math.random() 随机性，验证 Node 25 在真实数据依赖场景下的性能提升是否稳定。
+- ⚙️ **测试方法与环境**：所有测试在 Apple M4 硬件上运行五次取中位数，测试间进行冷却以避免热偏差影响结果。
+- 🚀 **核心结论**：Node.js 各版本性能持续稳步提升，Node 25 在数值计算和循环密集型任务中表现尤为突出，实际应用性能提升取决于具体工作负载特性。
 
 ---
 
-### [B2B企业就绪实用清单](https://hello.descope.com/b2b-enterprise-readiness-checklist?utm_source=cooperpress-newsletters&utm_medium=display&utm_campaign=javascript-weekly-newsletter-02-2026&utm_content=enterprise-checklist)
+### [B2B 企业就绪实用清单](https://hello.descope.com/b2b-enterprise-readiness-checklist?utm_source=cooperpress-newsletters&utm_medium=display&utm_campaign=javascript-weekly-newsletter-02-2026&utm_content=enterprise-checklist)
 
 **原文标题**: [A Practical Checklist for B2B Enterprise Readiness](https://hello.descope.com/b2b-enterprise-readiness-checklist?utm_source=cooperpress-newsletters&utm_medium=display&utm_campaign=javascript-weekly-newsletter-02-2026&utm_content=enterprise-checklist)
 
-本文介绍了一份面向快速增长的B2B公司的企业级准备清单，旨在帮助它们更高效地满足企业客户的身份验证需求，从而让开发团队能更专注于产品开发。
+本文介绍了一份面向快速增长的 B2B 公司的企业级准备清单，旨在帮助它们更高效地满足企业客户的身份验证需求，从而让开发团队能更专注于产品开发。
 
 - 🔍 识别企业级准备就绪的信号
 - 🏛️ 从六个基础支柱评估组织能力
@@ -450,7 +450,7 @@ Reka UI v2 版本发布，这是一个基于 Vue 的开源库，提供无样式�
 
 ---
 
-### [JavaScript中的显式资源管理 - Matt Smith](https://allthingssmitty.com/2026/02/02/explicit-resource-management-in-javascript/)
+### [JavaScript 中的显式资源管理 - Matt Smith](https://allthingssmitty.com/2026/02/02/explicit-resource-management-in-javascript/)
 
 **原文标题**: [
     Explicit resource management in JavaScript - Matt Smith
@@ -473,130 +473,130 @@ JavaScript 终于引入了显式资源管理，提供了一种语言级别的机
 
 **原文标题**: [7 learnings from Anders Hejlsberg: The architect behind C# and TypeScript - The GitHub Blog](https://github.blog/developer-skills/programming-languages-and-frameworks/7-learnings-from-anders-hejlsberg-the-architect-behind-c-and-typescript/)
 
-本文总结了编程语言设计师Anders Hejlsberg（C#和TypeScript的创造者）在职业生涯中的核心洞见，强调构建能适应规模、持久耐用的工具与系统的关键原则。
+本文总结了编程语言设计师 Anders Hejlsberg（C#和TypeScript的创造者）在职业生涯中的核心洞见，强调构建能适应规模、持久耐用的工具与系统的关键原则。
 
-- 🚀 **快速反馈至关重要**：从Turbo Pascal到TypeScript，缩短编码与运行间的反馈循环能显著提升开发效率，鼓励更多实验与重构。
+- 🚀 **快速反馈至关重要**：从 Turbo Pascal 到 TypeScript，缩短编码与运行间的反馈循环能显著提升开发效率，鼓励更多实验与重构。
 - 🤝 **规模化需放弃个人偏好**：成功系统需适应团队协作，而非追求个人理想中的完美设计，如C#平衡了不同开发者群体的需求。
-- 🔄 **兼容现有生态优于取代**：TypeScript选择扩展JavaScript而非另起炉灶，体现了尊重开发现实工作流程的务实妥协。
+- 🔄 **兼容现有生态优于取代**：TypeScript 选择扩展 JavaScript 而非另起炉灶，体现了尊重开发现实工作流程的务实妥协。
 - 👁️ **开源项目的透明度建立信任**：公开决策过程、优先处理社区反馈能增强项目可信度与协作效率。
-- ⚙️ **必要时更换实现语言以突破性能瓶颈**：TypeScript编译器从JavaScript迁移到Go，在保持行为一致性的同时解锁了并行计算与性能提升。
-- 🧠 **AI时代工具更需提供准确约束**：在AI辅助编程中，强类型系统、可靠重构工具等确定性工具比代码生成能力更重要，它们为AI输出提供校验基础。
+- ⚙️ **必要时更换实现语言以突破性能瓶颈**：TypeScript 编译器从 JavaScript 迁移到 Go，在保持行为一致性的同时解锁了并行计算与性能提升。
+- 🧠 **AI 时代工具更需提供准确约束**：在 AI 辅助编程中，强类型系统、可靠重构工具等确定性工具比代码生成能力更重要，它们为 AI 输出提供校验基础。
 - 📚 **开放协作保留机构记忆**：公开的讨论历史与决策记录帮助新成员理解系统演进背景，促进项目的长期健康发展。
 
 ---
 
-### [我的Vue项目ESLint配置观点 | alexop.dev](https://alexop.dev/posts/opinionated-eslint-setup-vue-projects/)
+### [我的 Vue 项目 ESLint 配置观点 | alexop.dev](https://alexop.dev/posts/opinionated-eslint-setup-vue-projects/)
 
 **原文标题**: [My Opinionated ESLint Setup for Vue Projects | alexop.dev](https://alexop.dev/posts/opinionated-eslint-setup-vue-projects/)
 
-本文分享了一套针对Vue项目的ESLint配置方案，旨在通过自动化规则强制执行代码规范，提升代码可读性、可维护性，并适应AI辅助编程时代的需求。该方案结合了Oxlint的速度优势和ESLint的全面性，并包含一系列核心规则、自定义规则及最佳实践。
+本文分享了一套针对 Vue 项目的 ESLint 配置方案，旨在通过自动化规则强制执行代码规范，提升代码可读性、可维护性，并适应 AI 辅助编程时代的需求。该方案结合了 Oxlint 的速度优势和 ESLint 的全面性，并包含一系列核心规则、自定义规则及最佳实践。
 
-- 🚀 **双检查器策略**：结合Oxlint（快速检查）和ESLint（全面检查），实现高效且完整的代码质量保障。
+- 🚀 **双检查器策略**：结合 Oxlint（快速检查）和 ESLint（全面检查），实现高效且完整的代码质量保障。
 - 🛡️ **核心代码质量规则**：包括限制函数复杂度、禁止嵌套三元表达式、避免类型断言（`as`）、使用联合类型替代枚举、提倡提前返回替代`else/else-if`。
 - 🔗 **架构与边界控制**：通过导入路径限制，强制实施功能模块隔离和单向数据流，防止跨功能模块的依赖。
-- 🧩 **Vue组件规范**：强制执行组件多词命名、属性命名约定、检测未使用的属性/引用/事件，并推荐使用Vue 3.5+的新API（如属性解构）。
+- 🧩 **Vue 组件规范**：强制执行组件多词命名、属性命名约定、检测未使用的属性/引用/事件，并推荐使用 Vue 3.5+ 的新 API（如属性解构）。
 - 🌐 **国际化与路由规范**：禁止硬编码文本字符串，强制使用国际化函数；禁止硬编码路由路径，提倡使用命名路由。
-- 🧪 **测试代码规范**：统一测试结构（如使用`it`、钩子置顶），禁止直接使用`mount`/`render`而改用集中式测试助手，推荐使用Vitest定位器。
-- 🦄 **现代JavaScript模式**：通过`eslint-plugin-unicorn`启用一系列提升代码质量的规则（如更好的正则表达式、一致的解构）。
-- 🛠️ **自定义规则**：包括确保组合式函数正确使用Vue、禁止硬编码Tailwind颜色、禁止在测试描述块中使用`let`、提取复杂条件为变量、强制对仓库调用进行错误包装。
+- 🧪 **测试代码规范**：统一测试结构（如使用`it`、钩子置顶），禁止直接使用`mount`/`render`而改用集中式测试助手，推荐使用 Vitest 定位器。
+- 🦄 **现代 JavaScript 模式**：通过`eslint-plugin-unicorn`启用一系列提升代码质量的规则（如更好的正则表达式、一致的解构）。
+- 🛠️ **自定义规则**：包括确保组合式函数正确使用 Vue、禁止硬编码 Tailwind 颜色、禁止在测试描述块中使用`let`、提取复杂条件为变量、强制对仓库调用进行错误包装。
 
 ---
 
-### [使用GSAP、Three.js、Astro和Barba.js构建滚动触发的WebGL画廊 | Codrops](https://tympanus.net/codrops/2026/02/02/building-a-scroll-revealed-webgl-gallery-with-gsap-three-js-astro-and-barba-js/)
+### [使用 GSAP、Three.js、Astro 和 Barba.js 构建滚动触发的 WebGL 画廊 | Codrops](https://tympanus.net/codrops/2026/02/02/building-a-scroll-revealed-webgl-gallery-with-gsap-three-js-astro-and-barba-js/)
 
 **原文标题**: [Building a Scroll-Revealed WebGL Gallery with GSAP, Three.js, Astro and Barba.js | Codrops](https://tympanus.net/codrops/2026/02/02/building-a-scroll-revealed-webgl-gallery-with-gsap-three-js-astro-and-barba-js/)
 
-本文介绍了如何使用GSAP、Three.js、Astro和Barba.js构建一个多页面的WebGL图片画廊，实现滚动触发的着色器显示效果、平滑滚动和无缝页面过渡。
+本文介绍了如何使用 GSAP、Three.js、Astro 和 Barba.js 构建一个多页面的 WebGL 图片画廊，实现滚动触发的着色器显示效果、平滑滚动和无缝页面过渡。
 
-- 🎨 **技术栈组合**：结合GSAP（驱动动画）、Three.js（WebGL渲染）、Astro（轻量级多页面结构）和Barba.js（页面过渡控制），打造现代创意开发项目。
-- 🖼️ **DOM与WebGL同步**：通过将Three.js平面与HTML图片精确匹配，确保滚动时视觉元素完美对齐。
-- 🌀 **平滑滚动集成**：使用GSAP的ScrollSmoother插件实现与渲染循环协调的平滑滚动，避免原生滚动与WebGL更新不同步的问题。
-- ⚡ **滚动触发着色器动画**：利用ScrollTrigger在图片进入视口时，通过着色器uniform控制实现动态显示效果。
-- 🔄 **无缝页面过渡**：借助Barba.js管理导航，结合Flip插件实现点击图片时视觉上跨页面的平滑过渡效果。
-- 📝 **文本动画增强**：使用SplitText插件对页面文字进行分行处理，并添加滚动触发的渐入渐出动画，提升用户体验。
-- 🛠️ **环境与代码结构**：详细说明了项目初始化、页面模板、样式布局以及核心类（如Canvas、Media、TextAnimation）的实现逻辑。
-- ⚙️ **性能与清理**：强调在页面过渡时需妥善处理GSAP实例、Three.js资源（如几何体、材质）以避免内存泄漏，确保应用高效运行。
+- 🎨 **技术栈组合**：结合 GSAP（驱动动画）、Three.js（WebGL 渲染）、Astro（轻量级多页面结构）和 Barba.js（页面过渡控制），打造现代创意开发项目。
+- 🖼️ **DOM 与 WebGL 同步**：通过将 Three.js 平面与 HTML 图片精确匹配，确保滚动时视觉元素完美对齐。
+- 🌀 **平滑滚动集成**：使用 GSAP 的 ScrollSmoother 插件实现与渲染循环协调的平滑滚动，避免原生滚动与 WebGL 更新不同步的问题。
+- ⚡ **滚动触发着色器动画**：利用 ScrollTrigger 在图片进入视口时，通过着色器 uniform 控制实现动态显示效果。
+- 🔄 **无缝页面过渡**：借助 Barba.js 管理导航，结合 Flip 插件实现点击图片时视觉上跨页面的平滑过渡效果。
+- 📝 **文本动画增强**：使用 SplitText 插件对页面文字进行分行处理，并添加滚动触发的渐入渐出动画，提升用户体验。
+- 🛠️ **环境与代码结构**：详细说明了项目初始化、页面模板、样式布局以及核心类（如 Canvas、Media、TextAnimation）的实现逻辑。
+- ⚙️ **性能与清理**：强调在页面过渡时需妥善处理 GSAP 实例、Three.js 资源（如几何体、材质）以避免内存泄漏，确保应用高效运行。
 
 ---
 
-### [使用GSAP、Three.js与Astro实现滚动时的WebGL像素特效](https://pixelimageeffect.pages.dev/)
+### [使用 GSAP、Three.js 与 Astro 实现滚动时的 WebGL 像素特效](https://pixelimageeffect.pages.dev/)
 
 **原文标题**: [WebGL Pixel Effect on Scroll with GSAP, Three.js and Astro](https://pixelimageeffect.pages.dev/)
 
-本文介绍了一个结合WebGL、GSAP和Three.js实现的滚动像素化特效教程，并嵌入了一段北方探险的文学描写，展示了技术与创意叙事的结合。
+本文介绍了一个结合 WebGL、GSAP 和 Three.js 实现的滚动像素化特效教程，并嵌入了一段北方探险的文学描写，展示了技术与创意叙事的结合。
 
-- 🎨 教程使用WebGL、GSAP和Three.js创建滚动触发的像素化视觉效果
+- 🎨 教程使用 WebGL、GSAP 和 Three.js 创建滚动触发的像素化视觉效果
 - 📜 内容包含北方探险（1970-1978）的文学片段，描绘了荒凉寒冷的自然环境
 - 🧑‍🤝‍🧑 故事中出现了穿越荒野的男人、女人和孩子，突显生存的坚韧
-- 🔗 提供了相关演示链接、GitHub资源和更多类似教程推荐
+- 🔗 提供了相关演示链接、GitHub 资源和更多类似教程推荐
 - ❄️ 环境描写强调北地的孤寂、寒冷与自然力量的威严
 
 ---
 
-### [[SMT][Z3] 使用Z3 SMT求解器预测Firefox中的Math.random()](https://yurichev.com/blog/xorshift/)
+### [[SMT][Z3] 使用 Z3 SMT 求解器预测 Firefox 中的 Math.random()](https://yurichev.com/blog/xorshift/)
 
 **原文标题**: [[SMT][Z3] Predicting Math.random() in Firefox using Z3 SMT-solver](https://yurichev.com/blog/xorshift/)
 
-本文介绍了如何利用Z3 SMT求解器预测Firefox浏览器中Math.random()函数的输出，通过分析其采用的Xorshift128+伪随机数生成算法，仅需前三个随机数即可恢复初始状态，并验证了生成连续接近零值的随机数序列的可能性。
+本文介绍了如何利用 Z3 SMT 求解器预测 Firefox 浏览器中 Math.random() 函数的输出，通过分析其采用的 Xorshift128+ 伪随机数生成算法，仅需前三个随机数即可恢复初始状态，并验证了生成连续接近零值的随机数序列的可能性。
 
-- 🔍 Firefox使用Xorshift128+算法生成伪随机数，其源码可通过链接查看
-- 🧩 仅需前三个Math.random()输出值，即可利用Z3求解器唯一确定初始状态
-- ✅ 实验成功恢复初始状态并准确预测后续20个随机数，验证了方法的有效性
-- 🔬 通过修改Z3脚本，探索了生成连续接近零值随机数序列的可能性
-- 📝 本文灵感来源于Douglas Goddard的相关文章，并提供了完整的代码示例
+- 🔍 Firefox 使用 Xorshift128+ 算法生成伪随机数，其源码可通过链接查看
+- 🧩 仅需前三个 Math.random() 输出值，即可利用 Z3 求解器唯一确定初始状态
+- ✅ 实验成功恢复初始状态并准确预测后续 20 个随机数，验证了方法的有效性
+- 🔬 通过修改 Z3 脚本，探索了生成连续接近零值随机数序列的可能性
+- 📝 本文灵感来源于 Douglas Goddard 的相关文章，并提供了完整的代码示例
 
 ---
 
-### [保障npm安全是基础要求——与尼古拉斯·C·扎卡斯对话（Changelog访谈第674期）](https://changelog.com/podcast/674)
+### [保障 npm 安全是基础要求——与尼古拉斯·C·扎卡斯对话（Changelog 访谈第 674 期）](https://changelog.com/podcast/674)
 
 **原文标题**: [Securing npm is table stakes with Nicholas C. Zakas (Changelog Interviews #674)](https://changelog.com/podcast/674)
 
-本期节目探讨了npm包管理器的安全现状及改进方向。ESLint创始人Nicholas C. Zakas批评GitHub对npm安全问题的应对不足，并提出具体改进建议，同时分析了JSR等替代方案的局限性，表达了对关键基础设施缺乏重视的担忧。
+本期节目探讨了 npm 包管理器的安全现状及改进方向。ESLint 创始人 Nicholas C. Zakas 批评 GitHub 对 npm 安全问题的应对不足，并提出具体改进建议，同时分析了 JSR 等替代方案的局限性，表达了对关键基础设施缺乏重视的担忧。
 
-- 🔐 Nicholas认为GitHub对npm安全漏洞的回应不够充分，需采取更严格措施
+- 🔐 Nicholas 认为 GitHub 对 npm 安全漏洞的回应不够充分，需采取更严格措施
 - 💡 建议实施可信发布机制，通过自动化流程和多重验证提升包安全性
-- ⚠️ 指出npm面临严重安全风险，可能因一次重大攻击导致生态系统崩溃
-- 👥 质疑npm团队人员配置是否充足，担忧维护资源不足
+- ⚠️ 指出 npm 面临严重安全风险，可能因一次重大攻击导致生态系统崩溃
+- 👥 质疑 npm 团队人员配置是否充足，担忧维护资源不足
 - 🔄 讨论安装钩子的安全隐患，建议限制或移除高风险功能
 - 🏷️ 提出验证发布者身份的方案，增强包来源的可信度
-- 🌐 分析JSR等替代注册表的局限性，难以取代npm的生态地位
+- 🌐 分析 JSR 等替代注册表的局限性，难以取代 npm 的生态地位
 - 💰 探讨商业模式对安全的影响，建议建立可持续的资金支持机制
-- 🤖 提及AI工具在代码安全中的潜在作用，超越炒作的实际价值
+- 🤖 提及 AI 工具在代码安全中的潜在作用，超越炒作的实际价值
 - 📢 呼吁社区关注基础设施安全，共同推动行业标准提升
 
 ---
 
-### [使用Astro构建RSS聚合器](https://www.raymondcamden.com/2026/02/02/building-an-rss-aggregator-with-astro)
+### [使用 Astro 构建 RSS 聚合器](https://www.raymondcamden.com/2026/02/02/building-an-rss-aggregator-with-astro)
 
 **原文标题**: [Building an RSS Aggregator with Astro](https://www.raymondcamden.com/2026/02/02/building-an-rss-aggregator-with-astro)
 
-本文介绍了作者使用Astro框架构建一个RSS聚合器的过程，该应用允许用户自定义订阅源，并通过服务器端路由获取和解析内容，同时利用本地存储和缓存技术提升体验。
+本文介绍了作者使用 Astro 框架构建一个 RSS 聚合器的过程，该应用允许用户自定义订阅源，并通过服务器端路由获取和解析内容，同时利用本地存储和缓存技术提升体验。
 
-- 🛠️ 使用Astro框架构建RSS聚合器，支持用户自定义订阅源并通过服务器端路由获取和解析内容
-- 🎨 前端采用Simple.css美化界面，通过原生对话框元素管理订阅源，利用localStorage持久化用户数据
-- 🔄 实现订阅项的混合排序与缓存机制，使用Netlify Blobs进行一小时缓存以减少重复请求
-- ⚡ 强调Astro在Netlify上的出色开发体验，仅需简单配置即可实现服务器端渲染和Blob存储功能
+- 🛠️ 使用 Astro 框架构建 RSS 聚合器，支持用户自定义订阅源并通过服务器端路由获取和解析内容
+- 🎨 前端采用 Simple.css 美化界面，通过原生对话框元素管理订阅源，利用 localStorage 持久化用户数据
+- 🔄 实现订阅项的混合排序与缓存机制，使用 Netlify Blobs 进行一小时缓存以减少重复请求
+- ⚡ 强调 Astro 在 Netlify 上的出色开发体验，仅需简单配置即可实现服务器端渲染和 Blob 存储功能
 - 📦 项目代码已开源，提供在线演示链接供用户体验和进一步开发参考
 
 ---
 
-### [Heat.js：JavaScript热力图](https://www.heatjs.com/)
+### [Heat.js：JavaScript 热力图](https://www.heatjs.com/)
 
 **原文标题**: [Heat.js : JavaScript Heat Map](https://www.heatjs.com/)
 
 该工具是一款完全免费开源的日历组件，支持多框架集成、多语言与视图，提供数据导入导出及动态调整功能，便于趋势分析与定制使用。
 
 - 📄 完全免费开源，遵循特定许可证
-- 🔗 支持导出数据以集成React、Vue、Angular等框架
+- 🔗 支持导出数据以集成 React、Vue、Angular 等框架
 - ⚙️ 高度可配置，含自定义触发器和多语言文本支持
-- 🌍 默认支持60种语言
+- 🌍 默认支持 60 种语言
 - 📊 提供地图、折线、图表、日期、月份和色域等多种视图
 - 📤 支持导出多种文件格式，含系统剪贴板设置
 - 📥 支持从多种文件格式导入数据
 - 🔄 组件可动态调整尺寸以适应不同布局或屏幕（默认关闭）
 - 📈 可对比去年每日数据，快速查看百分比变化以识别趋势
-- 🗓️ 推荐轻量级JavaScript库Calendar.js用于构建交互式日历
-- 🆘 提供专门支持服务，承诺48小时内回复用户请求
+- 🗓️ 推荐轻量级 JavaScript 库 Calendar.js 用于构建交互式日历
+- 🆘 提供专门支持服务，承诺 48 小时内回复用户请求
 
 ---
 
@@ -618,12 +618,12 @@ Heat.js 是一个用于创建热图日历的 JavaScript 库，提供多种视图
 
 **原文标题**: [Chart View : Demos : Heat.js](https://www.heatjs.com/demos/views/chart)
 
-Heat.js 是一个用于创建热图的可配置JavaScript库，提供多种视图和自定义选项。
+Heat.js 是一个用于创建热图的可配置 JavaScript 库，提供多种视图和自定义选项。
 
 - 🗺️ **基本视图**：支持地图、折线图、图表、天和月等多种视图类型。
 - 🎨 **动态颜色与主题**：允许自定义颜色范围和主题，适应不同语言和布局需求。
 - ⚙️ **高级配置**：包括缩放、调整大小、年度统计、标题栏按钮和可编辑趋势类型等功能。
-- 📊 **图表视图示例**：通过包含特定CSS和JS文件，并在DOM中添加元素，可快速创建默认显示图表视图的热图实例。
+- 📊 **图表视图示例**：通过包含特定 CSS 和 JS 文件，并在 DOM 中添加元素，可快速创建默认显示图表视图的热图实例。
 - 🔗 **扩展文档**：更多高级功能和详细配置可查阅完整文档。
 
 ---
@@ -644,7 +644,7 @@ Heat.js 是一个用于创建热图的可配置JavaScript库，提供多种视�
 
 ---
 
-### [GitHub - williamtroup/Heat.js: 🌞 一个高度可定制的JavaScript库，用于生成交互式热力图。它能将数据转化为平滑、视觉直观的热力层，让模式和强度一目了然。](https://github.com/williamtroup/Heat.js)
+### [GitHub - williamtroup/Heat.js: 🌞 一个高度可定制的 JavaScript 库，用于生成交互式热力图。它能将数据转化为平滑、视觉直观的热力层，让模式和强度一目了然。](https://github.com/williamtroup/Heat.js)
 
 **原文标题**: [GitHub - williamtroup/Heat.js: 🌞 A highly customizable JavaScript library for generating interactive heatmaps. It transforms data into smooth, visually intuitive heat layers, making patterns and intensity easy to spot at a glance.](https://github.com/williamtroup/Heat.js)
 
@@ -661,7 +661,7 @@ Heat.js 是一个高度可定制的 JavaScript 库，用于生成交互式热力
 
 ---
 
-### [MCP服务器安全认证 — WorkOS](https://workos.com/mcp?utm_source=cpjavascript&utm_medium=referral&utm_campaign=q12026)
+### [MCP 服务器安全认证 — WorkOS](https://workos.com/mcp?utm_source=cpjavascript&utm_medium=referral&utm_campaign=q12026)
 
 **原文标题**: [Secure auth for MCP servers — WorkOS](https://workos.com/mcp?utm_source=cpjavascript&utm_medium=referral&utm_campaign=q12026)
 
@@ -716,8 +716,8 @@ cron 是一个用于在 Unix 和类 Unix 操作系统中调度周期性任务的
 
 Croner 10.0.0 是一个重大版本更新，实现了完整的 OCPS 1.4 合规性，引入了新的调度功能，并提升了可靠性。此次更新包含了对年份字段的支持、新的模式匹配方法、日期偏移功能、反向历史查询以及关键的错误修复。同时，它也引入了一些破坏性变更，如问号字符行为的改变和更严格的解析规则。
 
-- 🎯 **OCPS 合规性**：全面支持 OCPS 1.2 至 1.4 标准，包括年份字段、W（工作日）修饰符、+（AND逻辑）修饰符以及模式昵称。
-- 🔍 **新功能方法**：新增 `match()` 方法用于检查日期是否匹配cron模式，`previousRuns()` 方法用于枚举过去的计划执行时间。
+- 🎯 **OCPS 合规性**：全面支持 OCPS 1.2 至 1.4 标准，包括年份字段、W（工作日）修饰符、+（AND 逻辑）修饰符以及模式昵称。
+- 🔍 **新功能方法**：新增 `match()` 方法用于检查日期是否匹配 cron 模式，`previousRuns()` 方法用于枚举过去的计划执行时间。
 - 📅 **灵活调度**：引入 `dayOffset` 选项，支持相对于模式匹配日期的调度（如“前一天”或“后一天”）。
 - 🛠️ **配置与控制**：新增 `mode` 选项以精确控制模式解析，`sloppyRanges` 选项用于保持与非标准语法的向后兼容性。
 - ⚠️ **破坏性变更**：问号字符 `?` 现作为通配符别名（同 `*`）；最低 Deno 版本要求提升至 2.0；默认采用更严格的解析规则。
@@ -740,7 +740,7 @@ DayFlow 是一个轻量优雅的 React 全功能日历组件，专为产品团�
 
 ---
 
-### [GitHub - dayflow-js/calendar: 一款轻量优雅的React全日历（或React-big-calendar）网页组件，可轻松集成shadcn-ui或任何基于Tailwind的UI库 🌟 喜欢的话请点星支持！](https://github.com/dayflow-js/calendar)
+### [GitHub - dayflow-js/calendar: 一款轻量优雅的 React 全日历（或 React-big-calendar）网页组件，可轻松集成 shadcn-ui 或任何基于 Tailwind 的 UI 库 🌟 喜欢的话请点星支持！](https://github.com/dayflow-js/calendar)
 
 **原文标题**: [GitHub - dayflow-js/calendar: A lightweight and elegant React full calendar(or React-big-calendar) component for the web, easily integrated with shadcn-ui or any Tailwind-based UI library 🌟 Star if you like it!](https://github.com/dayflow-js/calendar)
 
@@ -789,17 +789,17 @@ EmbedPDF 是一个开源的、与框架无关的 JavaScript PDF 查看器，可�
 
 ---
 
-### [嵌入PDF](https://app.embedpdf.com/)
+### [嵌入 PDF](https://app.embedpdf.com/)
 
 **原文标题**: [EmbedPDF](https://app.embedpdf.com/)
 
 本文介绍了人工智能在医疗领域的应用现状与前景，重点探讨了其在疾病诊断、治疗方案优化及医疗管理效率提升方面的作用，同时简要提及了相关的伦理挑战。
 
-- 🩺 AI在医学影像分析中表现出色，能辅助医生更早、更准确地识别肿瘤等病变
+- 🩺 AI 在医学影像分析中表现出色，能辅助医生更早、更准确地识别肿瘤等病变
 - 💊 通过分析患者数据，人工智能可帮助制定个性化治疗方案，提高治疗效果
 - ⚙️ 智能系统能优化医院资源分配，简化管理流程，降低运营成本
 - 🤖 机器人辅助手术日益普及，提升复杂手术的精确度与安全性
-- 🧬 在基因组学和药物研发中，AI加速了新药发现和靶点识别过程
+- 🧬 在基因组学和药物研发中，AI 加速了新药发现和靶点识别过程
 - ⚖️ 应用同时面临数据隐私、算法偏见等伦理与监管方面的挑战
 
 ---
@@ -834,7 +834,7 @@ StackBlur 是一个快速且近似高斯模糊的 JavaScript 库，适用于图�
 
 ---
 
-### [精简你的JavaScript与TypeScript项目 | Knip](https://knip.dev/)
+### [精简你的 JavaScript 与 TypeScript 项目 | Knip](https://knip.dev/)
 
 **原文标题**: [Declutter your JavaScript & TypeScript projects | Knip](https://knip.dev/)
 
@@ -849,7 +849,7 @@ Knip 是一款用于 JavaScript 和 TypeScript 项目的自动化工具，旨在
 
 ---
 
-### [GitHub - parallax/jsPDF：面向所有人的客户端JavaScript PDF生成工具。](https://github.com/parallax/jsPDF)
+### [GitHub - parallax/jsPDF：面向所有人的客户端JavaScript PDF 生成工具。](https://github.com/parallax/jsPDF)
 
 **原文标题**: [GitHub - parallax/jsPDF: Client-side JavaScript PDF generation for everyone.](https://github.com/parallax/jsPDF)
 
@@ -865,17 +865,17 @@ jsPDF 是一个客户端 JavaScript 库，用于在浏览器中生成 PDF 文档
 
 ---
 
-### [jsPDF - 使用HTML5 JavaScript库创建PDF文件](https://raw.githack.com/MrRio/jsPDF/master/index.html)
+### [jsPDF - 使用 HTML5 JavaScript 库创建 PDF 文件](https://raw.githack.com/MrRio/jsPDF/master/index.html)
 
 **原文标题**: [jsPDF - Create PDFs with HTML5 JavaScript Library](https://raw.githack.com/MrRio/jsPDF/master/index.html)
 
-一款用于在浏览器中生成PDF的HTML5 JavaScript库，无需服务器支持，适用于创建票据、报告、证书等多种文档。
+一款用于在浏览器中生成 PDF 的 HTML5 JavaScript 库，无需服务器支持，适用于创建票据、报告、证书等多种文档。
 
-- 📄 基于HTML5的客户端PDF生成方案
+- 📄 基于 HTML5 的客户端 PDF 生成方案
 - 🎫 适用于活动票据、报告、证书等文档制作
 - 🌐 纯前端实现，无需服务器参与
 - 🔧 提供在线演示和代码运行功能
-- 📥 支持即时下载生成的PDF文件
+- 📥 支持即时下载生成的 PDF 文件
 - 🔄 可设置代码自动刷新选项
 
 ---
@@ -896,7 +896,7 @@ jsPDF 是一个客户端 JavaScript 库，用于在浏览器中生成 PDF 文档
 
 ---
 
-### [GitHub - focus-trap/focus-trap: 将焦点限制在DOM节点内。](https://github.com/focus-trap/focus-trap)
+### [GitHub - focus-trap/focus-trap: 将焦点限制在 DOM 节点内。](https://github.com/focus-trap/focus-trap)
 
 **原文标题**: [GitHub - focus-trap/focus-trap: Trap focus within a DOM node.](https://github.com/focus-trap/focus-trap)
 
@@ -929,18 +929,18 @@ focus-trap 是一个用于在 DOM 节点内捕获焦点的 JavaScript 库，主�
 
 ---
 
-### [探索解决GitHub低质量贡献的方案 · 社区 · 讨论 #185387 · GitHub](https://github.com/orgs/community/discussions/185387)
+### [探索解决 GitHub 低质量贡献的方案 · 社区 · 讨论 #185387 · GitHub](https://github.com/orgs/community/discussions/185387)
 
 **原文标题**: [Exploring Solutions to Tackle Low-Quality Contributions on GitHub · community · Discussion #185387 · GitHub](https://github.com/orgs/community/discussions/185387)
 
-GitHub 正在探索应对低质量贡献的解决方案，以减轻维护者的运营负担，包括短期措施如可配置的拉取请求权限和从界面删除PR的功能，以及长期方向如增强权限模型、改进分类工具和AI辅助贡献的透明度。
+GitHub 正在探索应对低质量贡献的解决方案，以减轻维护者的运营负担，包括短期措施如可配置的拉取请求权限和从界面删除 PR 的功能，以及长期方向如增强权限模型、改进分类工具和 AI 辅助贡献的透明度。
 
-- 🔧 **可配置的拉取请求权限**：允许仓库所有者更精细地控制PR访问，例如限制仅协作者可提交或针对镜像仓库禁用PR。
-- 🗑️ **从界面删除PR**：维护者可直接删除垃圾或低质量PR，以改善仓库组织。
-- 🛡️ **增强权限模型**：探索更精细的控制，例如定义PR必须满足的标准才能被创建。
-- 🤖 **改进分类工具**：可能利用AI评估贡献是否符合项目指南，帮助维护者优先审查。
-- 🔍 **AI辅助贡献的透明度**：提升AI工具在PR生命周期中使用的可见性和归属。
-- 📝 **社区反馈与探索**：GitHub鼓励用户分享反馈，并继续研究即时改进和长期解决方案。
+- 🔧 **可配置的拉取请求权限**：允许仓库所有者更精细地控制 PR 访问，例如限制仅协作者可提交或针对镜像仓库禁用 PR。
+- 🗑️ **从界面删除 PR**：维护者可直接删除垃圾或低质量 PR，以改善仓库组织。
+- 🛡️ **增强权限模型**：探索更精细的控制，例如定义 PR 必须满足的标准才能被创建。
+- 🤖 **改进分类工具**：可能利用 AI 评估贡献是否符合项目指南，帮助维护者优先审查。
+- 🔍 **AI 辅助贡献的透明度**：提升 AI 工具在 PR 生命周期中使用的可见性和归属。
+- 📝 **社区反馈与探索**：GitHub 鼓励用户分享反馈，并继续研究即时改进和长期解决方案。
 
 ---
 
@@ -948,18 +948,18 @@ GitHub 正在探索应对低质量贡献的解决方案，以减轻维护者的�
 
 **原文标题**: [Throttle individual network requests  |  Blog  |  Chrome for Developers](https://developer.chrome.com/blog/throttle-individual-network-requests)
 
-Chrome 145 开发者工具新增了针对单个网络请求进行节流或阻塞的功能，使开发者能更精确地模拟特定资源（如缓慢的第三方API或大图）的加载情况，而无需降低整个页面的速度。
+Chrome 145 开发者工具新增了针对单个网络请求进行节流或阻塞的功能，使开发者能更精确地模拟特定资源（如缓慢的第三方 API 或大图）的加载情况，而无需降低整个页面的速度。
 
 - 🛠️ **新增功能**：Chrome 145 开发者工具现支持对单个网络请求进行节流或阻塞，取代了过去只能全局节流或完全阻塞请求的限制。
 - 📁 **操作位置**：在“网络”面板中右键点击任一请求，即可选择“阻塞请求”或“节流请求”，操作会自动打开“请求条件”抽屉并创建相应规则。
-- ⚙️ **自定义设置**：在“请求条件”抽屉中，可使用预设（如慢速3G）或自定义配置文件，并通过通配符编辑URL模式来针对特定资源或请求组。
+- ⚙️ **自定义设置**：在“请求条件”抽屉中，可使用预设（如慢速 3G）或自定义配置文件，并通过通配符编辑 URL 模式来针对特定资源或请求组。
 - 🚦 **规则优先级**：若请求匹配多个模式，开发者工具会应用找到的第一条规则；可使用抽屉中的箭头按钮调整规则优先级顺序。
 - 🟡 **识别效果**：被节流的请求在“网络”面板中显示为黄色/金色，时间列带时钟图标；被阻塞的请求显示为红色，状态列为“(blocked:devtools)”。
 - 📊 **性能影响**：节流请求会影响页面性能；在录制性能配置文件时，可将鼠标悬停在网络轨道的请求上查看具体应用的网络条件详情。
 
 ---
 
-### [介绍Codex应用 | OpenAI](https://openai.com/index/introducing-the-codex-app/)
+### [介绍 Codex 应用 | OpenAI](https://openai.com/index/introducing-the-codex-app/)
 
 **原文标题**: [Introducing the Codex app | OpenAI](https://openai.com/index/introducing-the-codex-app/)
 
@@ -978,10 +978,10 @@ OpenAI 推出专为 macOS 设计的 Codex 应用程序，这是一个强大的�
 
 **原文标题**: [No title found](https://x.com/robzolkos/status/2018412778965315965)
 
-该页面提示用户浏览器中JavaScript功能未启用或存在兼容性问题，导致无法正常使用X平台（原Twitter），并提供了相应的解决建议。
+该页面提示用户浏览器中 JavaScript 功能未启用或存在兼容性问题，导致无法正常使用 X 平台（原 Twitter），并提供了相应的解决建议。
 
-- 🚫 JavaScript未启用导致功能受限
-- 🌐 建议启用JavaScript或更换受支持的浏览器
+- 🚫 JavaScript 未启用导致功能受限
+- 🌐 建议启用 JavaScript 或更换受支持的浏览器
 - 📖 支持浏览器列表可在帮助中心查询
 - 🔧 部分隐私扩展可能引发冲突，建议暂时禁用
 - 🔄 页面提供“重试”功能供用户再次尝试访问
@@ -1004,7 +1004,7 @@ OpenAI 推出专为 macOS 设计的 Codex 应用程序，这是一个强大的�
 
 ---
 
-### [GitHub - BCsabaEngine/svelteesp32：将任意Web应用嵌入ESP32——单一二进制文件，零文件系统困扰 将您的Svelte、React、Angular或Vue前端转换为单个C++头文件。通过自动gzip压缩、ETag缓存和无缝OTA更新，直接从ESP32/ESP8266闪存提供精美的Web界面。](https://github.com/BCsabaEngine/svelteesp32)
+### [GitHub - BCsabaEngine/svelteesp32：将任意Web应用嵌入ESP32——单一二进制文件，零文件系统困扰 将您的 Svelte、React、Angular 或 Vue 前端转换为单个 C++ 头文件。通过自动 gzip 压缩、ETag 缓存和无缝 OTA 更新，直接从 ESP32/ESP8266 闪存提供精美的 Web 界面。](https://github.com/BCsabaEngine/svelteesp32)
 
 **原文标题**: [GitHub - BCsabaEngine/svelteesp32: Embed Any Web App in Your ESP32 — One Binary, Zero Filesystem Hassle Turn your Svelte, React, Angular, or Vue frontend into a single C++ header file. Serve beautiful web interfaces directly from ESP32/ESP8266 flash memory with automatic gzip compression, ETag caching, and seamless OTA updates.](https://github.com/BCsabaEngine/svelteesp32)
 
