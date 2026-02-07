@@ -1,8 +1,8 @@
-### [Gal Schlezinger @ ReactNext '25 | 使用React服务器组件提升性能！ - YouTube](https://www.youtube.com/watch?v=TInTm-M5yBs)
+### [Gal Schlezinger @ ReactNext '25 | 使用 React 服务器组件提升性能！ - YouTube](https://www.youtube.com/watch?v=TInTm-M5yBs)
 
 **原文标题**: [Gal Schlezinger @  ReactNext '25 | Improving Performance using React Server Components! - YouTube](https://www.youtube.com/watch?v=TInTm-M5yBs)
 
-这是一个YouTube网站的页脚导航链接列表，展示了其主要的政策、资源与信息板块。
+这是一个 YouTube 网站的页脚导航链接列表，展示了其主要的政策、资源与信息板块。
 
 - 🏠 **概览与导航** - 网站的核心信息与目录索引
 - 📰 **新闻中心** - 官方公告与媒体资源
@@ -10,10 +10,10 @@
 - 📞 **联系渠道** - 用户咨询与反馈途径
 - 🎨 **创作者资源** - 专为内容创作者提供的工具与支持
 - 📢 **广告服务** - 广告投放与商业合作相关信息
-- 💻 **开发者平台** - 面向开发者的API与技术资源
+- 💻 **开发者平台** - 面向开发者的 API 与技术资源
 - 📜 **使用条款** - 平台服务协议与使用规则
 - 🔒 **隐私与安全** - 用户数据保护政策与安全措施
-- ⚙️ **平台运作** - YouTube功能机制说明
+- ⚙️ **平台运作** - YouTube 功能机制说明
 - 🧪 **功能测试** - 新特性的体验与测试通道
 - ™️ **商标版权** - 谷歌公司版权年份标识
 
@@ -23,13 +23,13 @@
 
 **原文标题**: [Ahead-of-time compilation for next-intl – Internationalization (i18n) for Next.js](https://next-intl.dev/blog/precompilation)
 
-next-intl 4.8版本引入了预编译功能，通过启用预编译标志，可显著减少约9KB的压缩JavaScript包大小，并提升运行时性能。该功能将消息解析工作移至构建时，使用优化的AST格式，运行时仅需约650字节的格式化函数。启用后，包含单个客户端翻译的next-intl仅增加约4KB大小。但需注意，预编译不支持t.raw API，建议迁移至替代方案。
+next-intl 4.8 版本引入了预编译功能，通过启用预编译标志，可显著减少约 9KB 的压缩 JavaScript 包大小，并提升运行时性能。该功能将消息解析工作移至构建时，使用优化的 AST 格式，运行时仅需约 650 字节的格式化函数。启用后，包含单个客户端翻译的 next-intl 仅增加约 4KB 大小。但需注意，预编译不支持 t.raw API，建议迁移至替代方案。
 
-- 🚀 **性能提升**：启用预编译可立即减少约9KB压缩JavaScript，提升应用运行速度。
-- ⚙️ **简易启用**：在next.config.ts中设置precompile: true即可，无需更改现有代码。
-- 📦 **轻量运行时**：预编译后仅需约650字节的格式化函数，支持完整ICU功能。
-- 🔧 **优化AST**：采用最小化数组结构存储编译消息，减少数据体积。
-- 🚫 **限制说明**：不支持t.raw API，建议使用MDX或CMS管理富文本内容。
+- 🚀 **性能提升**：启用预编译可立即减少约 9KB 压缩 JavaScript，提升应用运行速度。
+- ⚙️ **简易启用**：在 next.config.ts 中设置 precompile: true 即可，无需更改现有代码。
+- 📦 **轻量运行时**：预编译后仅需约 650 字节的格式化函数，支持完整 ICU 功能。
+- 🔧 **优化 AST**：采用最小化数组结构存储编译消息，减少数据体积。
+- 🚫 **限制说明**：不支持 t.raw API，建议使用 MDX 或 CMS 管理富文本内容。
 - 🌍 **多语言支持**：保持按语言拆分消息的能力，适合大型多语言网站。
 - 🔮 **未来展望**：作者计划进一步优化消息的自动摇树，提升性能。
 
@@ -39,7 +39,7 @@ next-intl 4.8版本引入了预编译功能，通过启用预编译标志，可�
 
 **原文标题**: [Arcjet - Ship security features faster](https://arcjet.com/?ref=nextjs-weekly&utm_campaign=nextjs-weekly)
 
-Arcjet是一家专注于为航天器提供热防护系统的公司，其技术通过快速部署安全功能，显著提升了航天器的可靠性和任务适应性。
+Arcjet 是一家专注于为航天器提供热防护系统的公司，其技术通过快速部署安全功能，显著提升了航天器的可靠性和任务适应性。
 
 - 🚀 快速集成热防护系统，缩短航天器开发周期
 - 🔥 高效抵御再入大气层时的高温，确保设备安全
@@ -48,11 +48,11 @@ Arcjet是一家专注于为航天器提供热防护系统的公司，其技术�
 
 ---
 
-### [RSC与SSR性能对比：为何无流式传输与Suspense，LCP优化难以奏效 - YouTube](https://www.youtube.com/watch?v=_RQAMXlWSd0)
+### [RSC 与 SSR 性能对比：为何无流式传输与 Suspense，LCP 优化难以奏效 - YouTube](https://www.youtube.com/watch?v=_RQAMXlWSd0)
 
 **原文标题**: [RSC vs SSR Performance: Why LCP Optimization Fails Without Streaming and Suspense - YouTube](https://www.youtube.com/watch?v=_RQAMXlWSd0)
 
-YouTube平台功能与服务概览  
+YouTube 平台功能与服务概览  
 - 📄 网站页脚导航与法律条款  
 - 📞 用户联系与版权申诉渠道  
 - 🎨 创作者内容管理与广告合作  
@@ -121,7 +121,7 @@ agent-browser 是一个专为 AI 代理设计的浏览器自动化命令行工�
 - 🛠️ **丰富命令集** – 包含点击、填充、滚动、截图等核心操作，以及网络拦截、Cookie 管理、标签页控制等高级功能，满足多样化自动化需求。
 - 🌐 **多环境支持** – 支持本地 Chromium、iOS 模拟器、真实设备，并可集成 Browserbase、Browser Use、Kernel 等云浏览器服务，适应不同部署场景。
 - 🔧 **灵活配置选项** – 提供会话隔离、持久化配置、自定义浏览器路径、请求头设置等功能，便于管理复杂身份验证与多用户场景。
-- 📦 **现代化架构** – 采用客户端-守护进程模式，Rust CLI 负责解析命令，Node.js 守护进程管理 Playwright 浏览器实例，兼顾性能与兼容性。
+- 📦 **现代化架构** – 采用客户端 - 守护进程模式，Rust CLI 负责解析命令，Node.js 守护进程管理 Playwright 浏览器实例，兼顾性能与兼容性。
 
 ---
 
@@ -140,7 +140,7 @@ Syntux 是一个用于构建生成式 Web 用户界面的开源库，它通过�
 
 ---
 
-### [Facehash - 适用于React的优雅极简头像](https://www.facehash.dev/)
+### [Facehash - 适用于 React 的优雅极简头像](https://www.facehash.dev/)
 
 **原文标题**: [Facehash - Beautiful Minimalist Avatars for React](https://www.facehash.dev/)
 
@@ -172,17 +172,17 @@ Tigris 发布了专为 JavaScript/TypeScript 项目设计的 Storage SDK，旨�
 
 ---
 
-### [JavaScript框架 - 迈向2026年 - DEV社区](https://dev.to/this-is-learning/javascript-frameworks-heading-into-2026-2hel)
+### [JavaScript 框架 - 迈向 2026 年 - DEV 社区](https://dev.to/this-is-learning/javascript-frameworks-heading-into-2026-2hel)
 
 **原文标题**: [JavaScript Frameworks - Heading into 2026 - DEV Community](https://dev.to/this-is-learning/javascript-frameworks-heading-into-2026-2hel)
 
-本文回顾了2025年JavaScript框架的发展趋势，指出AI已成为主导话题，框架设计重点从性能转向战略愿景，并探讨了AI优先、同构优先和异步优先三大新方向，同时反思了框架在AI时代面临的复杂性与简化需求。
+本文回顾了 2025 年 JavaScript 框架的发展趋势，指出 AI 已成为主导话题，框架设计重点从性能转向战略愿景，并探讨了 AI 优先、同构优先和异步优先三大新方向，同时反思了框架在 AI 时代面临的复杂性与简化需求。
 
-- 🤖 **AI优先框架兴起**：AI正重塑框架设计理念，如Remix 3通过减少领域特定语言来优化AI代码生成，而传统框架则面临历史成功带来的训练集依赖挑战。
-- 🔄 **同构优先架构成熟**：开发者更青睐像Tanstack Start、SolidStart等支持同构渲染的框架，它们延续SPA优势并整合服务端功能，无需完全改变架构。
-- ⚡ **异步处理成为核心**：React的Transition和Svelte的异步更新机制显示，框架正将异步操作融入核心设计，以保障UI响应性和一致性。
-- 🧩 **AI简化开发复杂度**：AI通过“拼凑”底层模块间接降低了开发复杂性，促使框架更关注原始模式而非复杂抽象，但可能牺牲整体优化。
-- 🧭 **框架角色重新定位**：2025年框架更注重核心精炼与通用原则，而非颠覆性创新，未来变化将更实质性地影响代码思维而不仅是编写方式。
+- 🤖 **AI 优先框架兴起**：AI 正重塑框架设计理念，如 Remix 3 通过减少领域特定语言来优化 AI 代码生成，而传统框架则面临历史成功带来的训练集依赖挑战。
+- 🔄 **同构优先架构成熟**：开发者更青睐像 Tanstack Start、SolidStart 等支持同构渲染的框架，它们延续 SPA 优势并整合服务端功能，无需完全改变架构。
+- ⚡ **异步处理成为核心**：React 的 Transition 和 Svelte 的异步更新机制显示，框架正将异步操作融入核心设计，以保障 UI 响应性和一致性。
+- 🧩 **AI 简化开发复杂度**：AI 通过“拼凑”底层模块间接降低了开发复杂性，促使框架更关注原始模式而非复杂抽象，但可能牺牲整体优化。
+- 🧭 **框架角色重新定位**：2025 年框架更注重核心精炼与通用原则，而非颠覆性创新，未来变化将更实质性地影响代码思维而不仅是编写方式。
 
 ---
 
@@ -190,10 +190,10 @@ Tigris 发布了专为 JavaScript/TypeScript 项目设计的 Storage SDK，旨�
 
 **原文标题**: [No title found](https://x.com/shuding/status/2013632751568851233)
 
-该页面提示JavaScript未启用，导致无法正常使用X平台，并提供了相应的解决建议与支持信息。
+该页面提示 JavaScript 未启用，导致无法正常使用 X 平台，并提供了相应的解决建议与支持信息。
 
-- 🚫 检测到浏览器中JavaScript被禁用，影响X平台正常使用
-- 🔧 建议启用JavaScript或切换至受支持的浏览器
+- 🚫 检测到浏览器中 JavaScript 被禁用，影响 X 平台正常使用
+- 🔧 建议启用 JavaScript 或切换至受支持的浏览器
 - 📖 可在帮助中心查看受支持的浏览器列表
 - 🛡️ 部分隐私扩展可能导致问题，建议暂时禁用后重试
 - 🔄 页面提供“再试一次”的重新加载选项
@@ -201,30 +201,30 @@ Tigris 发布了专为 JavaScript/TypeScript 项目设计的 Storage SDK，旨�
 
 ---
 
-### [CSS在2026年：重塑前端开发的新特性 - LogRocket博客](https://blog.logrocket.com/css-in-2026)
+### [CSS 在 2026 年：重塑前端开发的新特性 - LogRocket 博客](https://blog.logrocket.com/css-in-2026)
 
 **原文标题**: [CSS in 2026: The new features reshaping frontend development - LogRocket Blog](https://blog.logrocket.com/css-in-2026)
 
-现代CSS功能日益强大，通过新特性减少对JavaScript的依赖，并直接在样式表中实现更丰富的用户界面。
+现代 CSS 功能日益强大，通过新特性减少对 JavaScript 的依赖，并直接在样式表中实现更丰富的用户界面。
 
-- 🎨 CSS新特性增强界面表现力
-- ⚡ 减少对JavaScript的依赖
-- 📦 样式表直接实现复杂UI效果
+- 🎨 CSS 新特性增强界面表现力
+- ⚡ 减少对 JavaScript 的依赖
+- 📦 样式表直接实现复杂 UI 效果
 
 ---
 
-### [使用Vercel沙盒运行不受信任的代码，现已全面开放 - Vercel](https://vercel.com/blog/vercel-sandbox-is-now-generally-available)
+### [使用 Vercel 沙盒运行不受信任的代码，现已全面开放 - Vercel](https://vercel.com/blog/vercel-sandbox-is-now-generally-available)
 
 **原文标题**: [Run untrusted code with Vercel Sandbox, now generally available - Vercel](https://vercel.com/blog/vercel-sandbox-is-now-generally-available)
 
-Vercel Sandbox现已正式发布，这是一个专为AI代理设计的执行层基础设施，提供快速启动、安全隔离的微虚拟机环境，支持按需创建和自动销毁，并开源了CLI和SDK供开发者使用。
+Vercel Sandbox 现已正式发布，这是一个专为 AI 代理设计的执行层基础设施，提供快速启动、安全隔离的微虚拟机环境，支持按需创建和自动销毁，并开源了 CLI 和 SDK 供开发者使用。
 
-- 🚀 AI代理正在改变软件开发方式，但传统基础设施是为人类而非代理设计的，Vercel Sandbox为此提供了专用执行层
-- 🔧 基于Vercel每日处理超270万次部署的Hive计算平台构建，采用Firecracker微虚拟机技术，实现快速启动与隔离
-- ⚡ 满足代理对亚秒级启动、代码安全隔离、临时环境、快照恢复和动态CPU计费的核心需求
-- 💻 提供完整的Linux环境，支持sudo权限和包管理，可通过简单API创建和运行沙箱
-- 🏗️ 已被Roo Code和Blackbox AI等团队用于构建AI编程代理平台，提升开发协作效率与任务并行处理能力
-- 📦 开源CLI和SDK，开发者可通过`npx sandbox create`快速创建沙箱，并参考文档进行集成
+- 🚀 AI 代理正在改变软件开发方式，但传统基础设施是为人类而非代理设计的，Vercel Sandbox 为此提供了专用执行层
+- 🔧 基于 Vercel 每日处理超 270 万次部署的 Hive 计算平台构建，采用 Firecracker 微虚拟机技术，实现快速启动与隔离
+- ⚡ 满足代理对亚秒级启动、代码安全隔离、临时环境、快照恢复和动态 CPU 计费的核心需求
+- 💻 提供完整的 Linux 环境，支持 sudo 权限和包管理，可通过简单 API 创建和运行沙箱
+- 🏗️ 已被 Roo Code 和 Blackbox AI 等团队用于构建 AI 编程代理平台，提升开发协作效率与任务并行处理能力
+- 📦 开源 CLI 和 SDK，开发者可通过`npx sandbox create`快速创建沙箱，并参考文档进行集成
 
 ---
 
