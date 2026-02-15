@@ -139,12 +139,17 @@ def scrape_reactweekly():
         content_file = os.path.join(outputs_dir, f"{safe_title}_content.txt")
         summary_file = os.path.join(outputs_dir, f"{safe_title}_summary.md")  # Markdown 格式
         
-        # Find the first issue link - looking for links with href="issues/*" and text containing "Issue #"
-        issue_link = soup.find('a', href=re.compile(r'^issues/\d+$'), string=re.compile(r'Issue #\d+'))
+        # Find the first issue link - 新页面结构: href="/issues/462", 链接文本是文章标题
+        issue_link = soup.find('a', href=re.compile(r'^/issues/\d+$'))
         
         if issue_link and 'href' in issue_link.attrs:
             link_url = issue_link['href']
-            issue_title = issue_link.text
+            # 从 href 提取 issue 号，用于 issue_title（如 /issues/462 -> Issue #462）
+            issue_num_match = re.search(r'/issues/(\d+)$', link_url)
+            issue_title = f"Issue #{issue_num_match.group(1)}" if issue_num_match else issue_link.text.strip()
+            # 统一 link_url 格式为 issues/462（无前导斜杠），与 last_run_info 兼容
+            if link_url.startswith('/'):
+                link_url = link_url.lstrip('/')
             print(f"Found issue link: {issue_link.text} - {link_url}")
             
             # 检查是否与上次抓取的 link_url 相同
@@ -155,7 +160,7 @@ def scrape_reactweekly():
                 return
             
             # 记录上次运行抓取的 issue_link 信息
-            issue_info = create_issue_info(issue_title, link_url, "https://reactweekly.com")
+            issue_info = create_issue_info(issue_title, link_url, "https://react.statuscode.com")
             update_last_run_info(script_name, issue_info)
             
             # Sanitize issue title for filename
@@ -178,22 +183,39 @@ def scrape_reactweekly():
                 # Parse the HTML content of the linked page
                 link_soup = BeautifulSoup(link_response.text, 'html.parser')
                 
-                # 定义链接匹配模式
-                link_patterns = [
-                    re.compile(r'^https://react.statuscode\.com/link'),  # 绝对 URL 模式
-                    re.compile(r'^/link')                          # 相对 URL 模式
-                ]
+                # 页面已改版：无 /link 跟踪链接，文章为直接外链。预筛选 body 下的文章链接
+                excluded_domains = (
+                    'react.statuscode.com', 'frontendmasters.com', 'stateofreact.com',
+                    '2025.stateofreact.com', 'reactweekly.com'
+                )
+                pre_filtered_links = []
+                seen_urls = set()
+                for a in (link_soup.body or link_soup).find_all('a', href=True):
+                    href = a.get('href', '').strip()
+                    text = a.get_text(strip=True)
+                    if not href.startswith('https://') or len(text) < 15:
+                        continue
+                    try:
+                        domain = urlparse(href).netloc.lower()
+                        if any(exc in domain for exc in excluded_domains):
+                            continue
+                    except Exception:
+                        continue
+                    if href in seen_urls:
+                        continue
+                    seen_urls.add(href)
+                    pre_filtered_links.append(a)
                 
                 # 使用提取的函数来处理链接
                 extract_links_and_summarize(
                     soup=link_soup,
-                    link_patterns=link_patterns,
                     headers=headers,
                     proxies=proxies,
                     summary_file=summary_file,
                     summary_title_prefix="reactweekly",
                     base_url="https://react.statuscode.com",
-                    fetch_content_func=fetch_page_content
+                    fetch_content_func=fetch_page_content,
+                    pre_filtered_links=pre_filtered_links
                 )
             else:
                 print(f"Failed to retrieve the linked page. Status code: {link_response.status_code}")
