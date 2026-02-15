@@ -1,4 +1,4 @@
-### [Node周刊第611期：2026年2月12日](https://nodeweekly.com/issues/611)
+### [Node 周刊第 611 期：2026 年 2 月 12 日](https://nodeweekly.com/issues/611)
 
 **原文标题**: [Node Weekly Issue 611: February 12, 2026](https://nodeweekly.com/issues/611)
 
@@ -24,27 +24,27 @@ TypeScript 6.0 Beta 版本发布，这是基于当前 JavaScript 代码库的最
 - 🔄 **新增 `--stableTypeOrdering` 标志**：此标志使 TypeScript 6.0 的类型排序行为与 7.0 保持一致，有助于减少两个版本间的差异，便于迁移诊断，但可能会带来性能开销。
 - 🎯 **新增 `es2025` 作为 `target` 和 `lib` 选项**：虽然 ES2025 没有新的语言特性，但增加了新的内置 API 类型（如 `RegExp.escape`），并将一些声明从 `esnext` 移至 `es2025`。
 - ⏳ **为 `Temporal` API 提供内置类型**：针对已进入 Stage 3 的 `Temporal` 提案，TypeScript 6.0 通过 `esnext` 库提供了其类型定义，开发者可以提前使用。
-- 🗺️ **为 Map/WeakMap 新增 "upsert" 方法类型**：为 ECMAScript 新增的 `getOrInsert` 和 `getOrInsertComputed` 方法提供了类型支持，简化了常见的“检查-设置”模式。
+- 🗺️ **为 Map/WeakMap 新增 "upsert" 方法类型**：为 ECMAScript 新增的 `getOrInsert` 和 `getOrInsertComputed` 方法提供了类型支持，简化了常见的“检查 - 设置”模式。
 - 🛡️ **新增 `RegExp.escape` 类型**：为进入 Stage 4 的 `RegExp.escape` 提案提供了类型支持，用于安全地转义正则表达式中的特殊字符。
 - 🌐 **`dom` 库现在包含 `dom.iterable` 和 `dom.asynciterable`**：将迭代相关声明直接并入主 `dom` 库，简化了配置，提升了开发体验。
 - ⚠️ **多项重大变更与弃用**：包括默认启用 `strict` 模式、`module` 默认改为 `esnext`、`target` 默认改为最新 ES 版本、弃用 `target: es5`、`--moduleResolution node`、`--baseUrl`、`--outFile` 等旧有选项和语法，旨在推动项目现代化并提升性能。
 
 ---
 
-### [TypeScript 7 进展 - 2025年12月 - TypeScript](https://devblogs.microsoft.com/typescript/progress-on-typescript-7-december-2025/)
+### [TypeScript 7 进展 - 2025 年 12 月 - TypeScript](https://devblogs.microsoft.com/typescript/progress-on-typescript-7-december-2025/)
 
 **原文标题**: [Progress on TypeScript 7 - December 2025 - TypeScript](https://devblogs.microsoft.com/typescript/progress-on-typescript-7-december-2025/)
 
-TypeScript 7.0（代号“Corsa”）的开发进展顺利，已进入稳定可用的阶段，提供了显著性能提升和更完整的编辑器支持，同时团队宣布TypeScript 6.0将是最后一个基于JavaScript代码库的版本，未来将全力推进TypeScript 7.0的完善和发布。
+TypeScript 7.0（代号“Corsa”）的开发进展顺利，已进入稳定可用的阶段，提供了显著性能提升和更完整的编辑器支持，同时团队宣布 TypeScript 6.0 将是最后一个基于 JavaScript 代码库的版本，未来将全力推进 TypeScript 7.0 的完善和发布。
 
-- 🚀 **性能大幅提升**：TypeScript 7.0通过原生代码和共享内存并行技术，编译速度相比6.0版本提升约8-10倍，并支持多项目并行构建。
-- 🛠️ **编辑器支持完善**：VS Code扩展已提供稳定的原生预览版，支持代码补全（含自动导入）、跳转定义、重命名等核心语言服务功能，可随时切换回内置版本。
-- ✅ **类型检查高度兼容**：TypeScript 7.0的类型检查已接近完成，在测试用例中与6.0的错误检测一致性极高，可安全用于项目验证。
+- 🚀 **性能大幅提升**：TypeScript 7.0 通过原生代码和共享内存并行技术，编译速度相比 6.0 版本提升约 8-10 倍，并支持多项目并行构建。
+- 🛠️ **编辑器支持完善**：VS Code 扩展已提供稳定的原生预览版，支持代码补全（含自动导入）、跳转定义、重命名等核心语言服务功能，可随时切换回内置版本。
+- ✅ **类型检查高度兼容**：TypeScript 7.0 的类型检查已接近完成，在测试用例中与 6.0 的错误检测一致性极高，可安全用于项目验证。
 - 📦 **编译器功能就绪**：命令行工具`tsgo`已支持增量编译、项目引用和构建模式，可通过`@typescript/native-preview`包安装使用。
-- ⚠️ **需注意的变更**：7.0将默认启用`--strict`、移除`--target es5`等已弃用功能，JavaScript类型检查规则更严格，部分JSDoc标签不再支持。
-- 🔄 **版本过渡策略**：TypeScript 6.0作为最终JavaScript版本，主要提供弃用警告和兼容性桥梁，后续将仅通过补丁修复安全或严重回归问题。
+- ⚠️ **需注意的变更**：7.0 将默认启用`--strict`、移除`--target es5`等已弃用功能，JavaScript 类型检查规则更严格，部分 JSDoc 标签不再支持。
+- 🔄 **版本过渡策略**：TypeScript 6.0 作为最终 JavaScript 版本，主要提供弃用警告和兼容性桥梁，后续将仅通过补丁修复安全或严重回归问题。
 - 🐛 **问题反馈重置**：由于语言服务架构重构，旧版编辑器相关的问题报告需在新版扩展中重新验证和提交。
-- 📢 **鼓励试用反馈**：团队邀请开发者尝试VS Code扩展和预览版编译器，并通过GitHub提交问题以帮助完善最终版本。
+- 📢 **鼓励试用反馈**：团队邀请开发者尝试 VS Code 扩展和预览版编译器，并通过 GitHub 提交问题以帮助完善最终版本。
 
 ---
 
@@ -120,7 +120,7 @@ TypeScript 6.0 Beta 版本已发布，这是基于当前 JavaScript 代码库的
 - 🔄 **稳定类型排序标志**：新增 `--stableTypeOrdering` 标志，使 6.0 的类型排序行为与 7.0 保持一致，便于迁移对比，但可能会降低性能。
 - 🎯 **新的编译目标**：增加了 `es2025` 作为 `target` 和 `lib` 的选项，并引入了新的内置 API 类型。
 - ⏳ **Temporal API 类型**：为已达到 Stage 3 的 Temporal 提案提供了内置类型支持。
-- 🗺️ **Map 新增方法**：为 `Map` 和 `WeakMap` 添加了 `getOrInsert` 和 `getOrInsertComputed` 方法，简化了“检查-设置”模式。
+- 🗺️ **Map 新增方法**：为 `Map` 和 `WeakMap` 添加了 `getOrInsert` 和 `getOrInsertComputed` 方法，简化了“检查 - 设置”模式。
 - 🛡️ **RegExp.escape**：新增 `RegExp.escape` 函数，用于安全地转义正则表达式中的特殊字符。
 - 🌐 **DOM 库整合**：`dom` 库现在默认包含了 `dom.iterable` 和 `dom.asynciterable` 的内容，简化了配置。
 - ⚠️ **重大变更与弃用**：包括默认启用 `strict` 模式、`module` 默认改为 `esnext`、弃用 `target: es5`、`--moduleResolution node`、`--baseUrl`、`--outFile` 等多项设置，以反映现代开发实践。
@@ -143,7 +143,7 @@ TypeScript 6.0 Beta 版本发布，这是基于当前 JavaScript 代码库的最
 - 🔄 **类型排序**：新增 `--stableTypeOrdering` 标志，使 6.0 的类型排序行为与 7.0 保持一致，便于迁移对比，但可能会带来性能开销。
 - 🎯 **新的编译目标**：增加了 `es2025` 作为 `target` 和 `lib` 的新选项，并引入了新的内置 API 类型。
 - ⏳ **时间 API**：为已达到 Stage 3 的 Temporal API 提供了内置类型支持。
-- 🗺️ **Map 新方法**：为 `Map` 和 `WeakMap` 新增了 `getOrInsert` 和 `getOrInsertComputed` 方法，简化了“检查-插入”模式。
+- 🗺️ **Map 新方法**：为 `Map` 和 `WeakMap` 新增了 `getOrInsert` 和 `getOrInsertComputed` 方法，简化了“检查 - 插入”模式。
 - 🛡️ **正则表达式转义**：新增 `RegExp.escape` 函数，用于安全地转义正则表达式中的特殊字符。
 - 🌐 **DOM 库整合**：将 `dom.iterable` 和 `dom.asynciterable` 的内容完全整合到 `dom` 库中，简化了配置。
 - ⚠️ **重大变更与弃用**：多项默认值发生变更（如 `strict` 默认为 `true`，`module` 默认为 `esnext`），并弃用了 `target: es5`、`--moduleResolution node`、`--baseUrl`、`--outFile` 等大量旧选项和语法，为 7.0 做准备。
@@ -151,7 +151,7 @@ TypeScript 6.0 Beta 版本发布，这是基于当前 JavaScript 代码库的最
 
 ---
 
-### [使用Memetria K/V构建 — Memetria](https://dashboard.memetria.com/nodeweekly/)
+### [使用 Memetria K/V 构建 — Memetria](https://dashboard.memetria.com/nodeweekly/)
 
 **原文标题**: [Build with Memetria K/V — Memetria](https://dashboard.memetria.com/nodeweekly/)
 
@@ -210,9 +210,9 @@ Axios 是一个基于 Promise 的 HTTP 客户端，适用于浏览器和 Node.js
 
 **原文标题**: [Compare Packages - npmx](https://npmx.dev/compare)
 
-该工具允许用户并排比较不同的npm软件包，通过关键指标帮助选择最合适的包。
+该工具允许用户并排比较不同的 npm 软件包，通过关键指标帮助选择最合适的包。
 
-- 🔍 搜索并添加至少两个npm包进行对比
+- 🔍 搜索并添加至少两个 npm 包进行对比
 - 📊 提供性能、包大小、依赖数量等多项指标比较
 - 📦 显示安装大小、直接依赖和总依赖数
 - ⚡ 包含每周下载量、受欢迎度和发布时间等信息
@@ -222,7 +222,7 @@ Axios 是一个基于 Promise 的 HTTP 客户端，适用于浏览器和 Node.js
 
 ---
 
-### [如何在Node.js中发起HTTP请求](https://nodejsdesignpatterns.com/blog/nodejs-http-request/)
+### [如何在 Node.js 中发起 HTTP 请求](https://nodejsdesignpatterns.com/blog/nodejs-http-request/)
 
 **原文标题**: [How to make an HTTP request in Node.js](https://nodejsdesignpatterns.com/blog/nodejs-http-request/)
 
@@ -294,20 +294,20 @@ Node.js 项目将 cjs-module-lexer 依赖替换为 merve，以提升 CommonJS �
 
 ---
 
-### [GitHub - nodejs/cjs-module-lexer: 通过分析CommonJS模块快速提取命名导出的词法分析器](https://github.com/nodejs/cjs-module-lexer)
+### [GitHub - nodejs/cjs-module-lexer: 通过分析 CommonJS 模块快速提取命名导出的词法分析器](https://github.com/nodejs/cjs-module-lexer)
 
 **原文标题**: [GitHub - nodejs/cjs-module-lexer: Fast lexer to extract named exports via analysis from CommonJS modules](https://github.com/nodejs/cjs-module-lexer)
 
-这是一个用于快速解析CommonJS模块并提取命名导出的JavaScript词法分析器，由Node.js官方维护，主要用于在ES模块中导入CommonJS模块时检测可用的命名导出。
+这是一个用于快速解析 CommonJS 模块并提取命名导出的 JavaScript 词法分析器，由 Node.js 官方维护，主要用于在 ES 模块中导入 CommonJS 模块时检测可用的命名导出。
 
-- 🚀 **高性能解析**：冷启动约90ms/MB，热启动约15ms/MB，WASM版本性能提升约1.5倍
+- 🚀 **高性能解析**：冷启动约 90ms/MB，热启动约 15ms/MB，WASM 版本性能提升约 1.5 倍
 - 🎯 **精确检测**：支持`exports.name`、`exports['name']`、`Object.defineProperty`等多种导出模式
 - 🔄 **重导出识别**：能检测`module.exports = require()`和转译器生成的星号重导出模式
-- 🧩 **语法兼容**：全面支持JavaScript语法，正确处理注释、字符串和正则表达式歧义
-- 🛡️ **模式冻结**：检测模式已固定，确保不同Node.js版本间的向后兼容性
-- 📦 **多环境支持**：支持Node.js 10+和所有支持WebAssembly的浏览器
-- 🔧 **使用简便**：提供CommonJS和ESM两种API，WASM版本需要异步初始化
-- 📊 **基准测试**：包含详细的性能基准数据，WASM版本在3635KB样本上平均耗时27.76ms
+- 🧩 **语法兼容**：全面支持 JavaScript 语法，正确处理注释、字符串和正则表达式歧义
+- 🛡️ **模式冻结**：检测模式已固定，确保不同 Node.js 版本间的向后兼容性
+- 📦 **多环境支持**：支持 Node.js 10+ 和所有支持 WebAssembly 的浏览器
+- 🔧 **使用简便**：提供 CommonJS 和 ESM 两种 API，WASM 版本需要异步初始化
+- 📊 **基准测试**：包含详细的性能基准数据，WASM 版本在 3635KB 样本上平均耗时 27.76ms
 
 ---
 
@@ -351,24 +351,24 @@ ESLint v10.0.0 是一个主要版本发布，引入了新功能、修复了错�
 
 **原文标题**: [Bun v1.3.9 | Bun Blog](https://bun.sh/blog/bun-v1.3.9)
 
-本文介绍了Bun的最新更新，包括安装与升级方法、并行与顺序运行脚本功能、HTTP/2连接升级、Symbol.dispose支持、NO_PROXY改进、性能优化及多项错误修复。
+本文介绍了 Bun 的最新更新，包括安装与升级方法、并行与顺序运行脚本功能、HTTP/2 连接升级、Symbol.dispose 支持、NO_PROXY 改进、性能优化及多项错误修复。
 
-- 🚀 **安装Bun**：支持多种安装方式，如curl、npm、PowerShell、Scoop、Homebrew和Docker。
-- 🔄 **升级Bun**：使用`bun upgrade`命令轻松升级。
-- ⚙️ **并行与顺序运行脚本**：新增`--parallel`和`--sequential`选项，支持并发或顺序执行package.json脚本，并带有前缀输出。
-- 🌐 **HTTP/2连接升级**：修复了`net.Server`到`Http2SecureServer`的连接升级模式，适用于HTTP/2代理服务器。
-- 🔧 **Symbol.dispose支持**：`mock()`和`spyOn()`现在支持`Symbol.dispose`，使用`using`关键字可自动恢复模拟。
-- 🛡️ **NO_PROXY改进**：现在即使显式设置代理选项，`NO_PROXY`环境变量也会被正确检查。
-- ⏱️ **CPU性能分析**：新增`--cpu-prof-interval`标志，可配置CPU分析器的采样间隔。
-- 📦 **ESM字节码支持**：`--compile`现在支持ESM格式的字节码。
-- 🐛 **ARMv8.0修复**：解决了在旧版ARM64处理器上的崩溃问题。
-- ⚡ **性能优化**：包括更快的Markdown渲染、`AbortSignal.abort()`优化、正则表达式SIMD加速等。
-- 🔧 **JavaScriptCore升级**：多项性能改进，如`String#startsWith`、`Set#size`、`Map#size`和`String#trim`的优化。
-- 🐞 **错误修复**：包括Node.js兼容性改进、Bun API修复、Web API问题解决和TypeScript类型修正。
+- 🚀 **安装 Bun**：支持多种安装方式，如 curl、npm、PowerShell、Scoop、Homebrew 和 Docker。
+- 🔄 **升级 Bun**：使用`bun upgrade`命令轻松升级。
+- ⚙️ **并行与顺序运行脚本**：新增`--parallel`和`--sequential`选项，支持并发或顺序执行 package.json 脚本，并带有前缀输出。
+- 🌐 **HTTP/2连接升级**：修复了`net.Server`到`Http2SecureServer`的连接升级模式，适用于 HTTP/2 代理服务器。
+- 🔧 **Symbol.dispose 支持**：`mock()`和`spyOn()`现在支持`Symbol.dispose`，使用`using`关键字可自动恢复模拟。
+- 🛡️ **NO_PROXY 改进**：现在即使显式设置代理选项，`NO_PROXY`环境变量也会被正确检查。
+- ⏱️ **CPU 性能分析**：新增`--cpu-prof-interval`标志，可配置 CPU 分析器的采样间隔。
+- 📦 **ESM 字节码支持**：`--compile`现在支持 ESM 格式的字节码。
+- 🐛 **ARMv8.0 修复**：解决了在旧版 ARM64 处理器上的崩溃问题。
+- ⚡ **性能优化**：包括更快的 Markdown 渲染、`AbortSignal.abort()`优化、正则表达式 SIMD 加速等。
+- 🔧 **JavaScriptCore 升级**：多项性能改进，如`String#startsWith`、`Set#size`、`Map#size`和`String#trim`的优化。
+- 🐞 **错误修复**：包括 Node.js 兼容性改进、Bun API 修复、Web API 问题解决和 TypeScript 类型修正。
 
 ---
 
-### [almostnode — 浏览器中的Node.js](https://almostnode.dev/)
+### [almostnode — 浏览器中的 Node.js](https://almostnode.dev/)
 
 **原文标题**: [almostnode — Node.js in your browser](https://almostnode.dev/)
 
@@ -380,44 +380,44 @@ Next.js 应用在浏览器环境中通过文件路由系统实现客户端渲染
 
 ---
 
-### [JavaScript自我清理即将变得更加轻松 - Piccalilli](https://piccalil.li/blog/its-about-to-get-a-lot-easier-for-your-javascript-to-clean-up-after-itself/)
+### [JavaScript 自我清理即将变得更加轻松 - Piccalilli](https://piccalil.li/blog/its-about-to-get-a-lot-easier-for-your-javascript-to-clean-up-after-itself/)
 
 **原文标题**: [
   It’s about to get a lot easier for your JavaScript to clean up after itself - Piccalilli
 ](https://piccalil.li/blog/its-about-to-get-a-lot-easier-for-your-javascript-to-clean-up-after-itself/)
 
-JavaScript即将通过“显式资源管理”提案，让开发者能更轻松地管理资源清理，提升代码的整洁性和可预测性。
+JavaScript 即将通过“显式资源管理”提案，让开发者能更轻松地管理资源清理，提升代码的整洁性和可预测性。
 
 - 🧹 提案引入`using`关键字，声明块作用域变量，在其离开作用域时自动调用`[Symbol.dispose]()`方法进行资源清理
-- 🔗 标准化`[Symbol.dispose]()`方法，为各种资源（如文件、WebSocket连接等）提供一致的清理接口
-- 🗑️ 解释了“隐式资源管理”，如WeakSet和WeakMap的弱引用机制，允许垃圾回收自动清理不再使用的对象
+- 🔗 标准化`[Symbol.dispose]()`方法，为各种资源（如文件、WebSocket 连接等）提供一致的清理接口
+- 🗑️ 解释了“隐式资源管理”，如 WeakSet 和 WeakMap 的弱引用机制，允许垃圾回收自动清理不再使用的对象
 - ⏳ 强调垃圾回收的时机不确定，而显式资源管理让开发者能主动控制清理过程
 - 🔄 通过生成器对象示例，展示了资源生命周期的概念及`finally`块在清理中的作用
-- 🚀 提案已进入标准第三阶段，并获得主流浏览器（除Safari外）的支持，鼓励开发者尝试使用
+- 🚀 提案已进入标准第三阶段，并获得主流浏览器（除 Safari 外）的支持，鼓励开发者尝试使用
 - ⚠️ 提醒语法可能仍有变动，不建议在生产环境中使用，但可通过实验性功能提前体验
 
 ---
 
-### [TimescaleDB：PostgreSQL时序数据库 | 虎数 | 虎数](https://www.tigerdata.com/timescaledb?utm_source=cooperpress&utm_medium=referral&utm_campaign=node-weekly-newsletter)
+### [TimescaleDB：PostgreSQL 时序数据库 | 虎数 | 虎数](https://www.tigerdata.com/timescaledb?utm_source=cooperpress&utm_medium=referral&utm_campaign=node-weekly-newsletter)
 
 **原文标题**: [TimescaleDB: PostgreSQL Time-Series DB | Tiger Data | Tiger Data](https://www.tigerdata.com/timescaledb?utm_source=cooperpress&utm_medium=referral&utm_campaign=node-weekly-newsletter)
 
-TimescaleDB是基于PostgreSQL构建的时序数据库，提供自动分区、行列混合存储、高达95%的压缩率、增量物化视图、自动化数据管理和专用时序函数等核心功能，适用于物联网、加密货币与金融科技、实时分析等场景。其托管云服务Tiger Cloud提供生产就绪的弹性平台，支持数据分层、统一数据架构、按需扩展计算和高可用性，同时提供24/7专家支持。
+TimescaleDB 是基于 PostgreSQL 构建的时序数据库，提供自动分区、行列混合存储、高达 95% 的压缩率、增量物化视图、自动化数据管理和专用时序函数等核心功能，适用于物联网、加密货币与金融科技、实时分析等场景。其托管云服务 Tiger Cloud 提供生产就绪的弹性平台，支持数据分层、统一数据架构、按需扩展计算和高可用性，同时提供 24/7 专家支持。
 
-- 🗂️ **自动分区**：通过超表将PostgreSQL表按时间或ID自动分区，实现快速数据摄取和大规模查询优化。
+- 🗂️ **自动分区**：通过超表将 PostgreSQL 表按时间或 ID 自动分区，实现快速数据摄取和大规模查询优化。
 - 💾 **行列混合存储**：结合行存储和列存储，以低成本保留多年历史数据，并加速分析查询。
-- 📉 **高压缩率**：采用列式编码和时序感知压缩，压缩率高达95%，支持在压缩数据上直接过滤和聚合。
+- 📉 **高压缩率**：采用列式编码和时序感知压缩，压缩率高达 95%，支持在压缩数据上直接过滤和聚合。
 - 🔄 **增量物化视图**：通过连续聚合实现增量刷新的汇总数据，支持实时模式包含最新变更。
 - 🤖 **自动化数据管理**：内置任务调度器，可配置列存储、保留和连续聚合策略，提供完整可审计性。
-- ⏱️ **专用时序函数**：提供约200个原生SQL函数，简化高级时序分析，支持统计汇总、时间加权平均等操作。
+- ⏱️ **专用时序函数**：提供约 200 个原生 SQL 函数，简化高级时序分析，支持统计汇总、时间加权平均等操作。
 - 🌐 **应用场景**：适用于物联网传感器监控、加密货币与金融科技数据分析、实时客户仪表板等。
-- ☁️ **Tiger Cloud优势**：提供一键超表创建、数据分层到低成本对象存储、按需计算扩展、多可用区高可用性和安全合规支持。
-- 🛠️ **自托管选项**：支持在自有基础设施上安装TimescaleDB，包含核心功能，但需自行管理云专属特性如水平读取扩展和托管备份。
-- 📞 **专家支持**：提供24/7技术指导和快速SLA响应，涵盖从原型开发到大规模生产的全周期支持。
+- ☁️ **Tiger Cloud 优势**：提供一键超表创建、数据分层到低成本对象存储、按需计算扩展、多可用区高可用性和安全合规支持。
+- 🛠️ **自托管选项**：支持在自有基础设施上安装 TimescaleDB，包含核心功能，但需自行管理云专属特性如水平读取扩展和托管备份。
+- 📞 **专家支持**：提供 24/7 技术指导和快速 SLA 响应，涵盖从原型开发到大规模生产的全周期支持。
 
 ---
 
-### [Node.js是单线程的吗？](https://nodesource.com/blog/is-nodejs-single-threaded-or-not)
+### [Node.js 是单线程的吗？](https://nodesource.com/blog/is-nodejs-single-threaded-or-not)
 
 **原文标题**: [Is Node.js Single-Threaded… or Not?](https://nodesource.com/blog/is-nodejs-single-threaded-or-not)
 
@@ -436,14 +436,14 @@ Node.js 的 JavaScript 执行默认是单线程的，但其运行时通过 libuv
 
 **原文标题**: [Transformers.js v4 Preview: Now Available on NPM!](https://huggingface.co/blog/transformersjs-v4)
 
-Transformers.js v4预览版现已发布，带来全新WebGPU运行时、性能优化、代码库重构、新模型支持及独立分词器库等重大更新。
+Transformers.js v4 预览版现已发布，带来全新 WebGPU 运行时、性能优化、代码库重构、新模型支持及独立分词器库等重大更新。
 
-- 🚀 **性能与运行时改进**：采用全新C++编写的WebGPU运行时，支持浏览器、Node、Bun、Deno等多环境，并利用ONNX Runtime专有算子实现高达4倍的速度提升。
-- 🏗️ **代码库重构**：使用PNPM工作区转为monorepo结构，拆分模块化类结构提升可维护性，并将示例移至独立仓库。
-- 🛠️ **新构建系统**：从Webpack迁移至esbuild，构建时间缩短10倍，默认打包体积减少53%。
-- 🤖 **新模型与架构**：新增GPT-OSS、Chatterbox、Mamba、MoE等先进模型，均支持WebGPU硬件加速。
-- 📦 **独立分词器库**：推出@huggingface/tokenizers，仅8.8kB且无依赖，提供完整类型安全的独立分词功能。
-- ✨ **其他改进**：增强类型系统与日志控制，支持超过8B参数的大模型，并优化离线使用体验。
+- 🚀 **性能与运行时改进**：采用全新 C++ 编写的 WebGPU 运行时，支持浏览器、Node、Bun、Deno 等多环境，并利用 ONNX Runtime 专有算子实现高达 4 倍的速度提升。
+- 🏗️ **代码库重构**：使用 PNPM 工作区转为 monorepo 结构，拆分模块化类结构提升可维护性，并将示例移至独立仓库。
+- 🛠️ **新构建系统**：从 Webpack 迁移至 esbuild，构建时间缩短 10 倍，默认打包体积减少 53%。
+- 🤖 **新模型与架构**：新增 GPT-OSS、Chatterbox、Mamba、MoE 等先进模型，均支持 WebGPU 硬件加速。
+- 📦 **独立分词器库**：推出@huggingface/tokenizers，仅 8.8kB 且无依赖，提供完整类型安全的独立分词功能。
+- ✨ **其他改进**：增强类型系统与日志控制，支持超过 8B 参数的大模型，并优化离线使用体验。
 
 ---
 
@@ -453,7 +453,7 @@ Transformers.js v4预览版现已发布，带来全新WebGPU运行时、性能�
 
 这是一个关于 Ink 库 v6.7.0 版本发布的 GitHub 页面内容摘要，主要包含版本更新信息和错误提示。
 
-- 🚀 **版本发布**：v6.7.0 版本于 2月10日发布，包含 16 次提交至主分支。
+- 🚀 **版本发布**：v6.7.0 版本于 2 月 10 日发布，包含 16 次提交至主分支。
 - 🔧 **功能改进**：新增对 React 并发渲染（可选）、同步更新、kitty 键盘协议支持（可选）、IME 光标定位 API 的支持，并改进了终端尺寸检测。
 - 🐛 **问题修复**：修复了初始渲染时的全屏尾随换行符、使用多个 `useInput` 钩子时的 `MaxListenersExceededWarning`、卸载时刷新待处理渲染和等待 stdout 耗尽、以及 macOS 上 Option+Return 键处理等问题。
 - ⚠️ **页面错误**：页面加载过程中出现错误提示，需要重新加载。
@@ -529,17 +529,17 @@ Service Worker API 是一种在 Web Workers 中可用的技术，它作为代理
 
 ---
 
-### [文员MCP服务器](https://clerk.com/changelog/2026-01-20-clerk-mcp-server?utm_source=cooper_press&utm_medium=newsletter&utm_campaign=mcp&utm_content=02-12-26&dub_id=6YbaOYr0nwekZOpA)
+### [文员 MCP 服务器](https://clerk.com/changelog/2026-01-20-clerk-mcp-server?utm_source=cooper_press&utm_medium=newsletter&utm_campaign=mcp&utm_content=02-12-26&dub_id=6YbaOYr0nwekZOpA)
 
 **原文标题**: [Clerk MCP Server](https://clerk.com/changelog/2026-01-20-clerk-mcp-server?utm_source=cooper_press&utm_medium=newsletter&utm_campaign=mcp&utm_content=02-12-26&dub_id=6YbaOYr0nwekZOpA)
 
-Clerk推出MCP服务器公开测试版，使AI编程助手能直接获取最新的SDK代码片段和实施模式，提升开发效率。
+Clerk 推出 MCP 服务器公开测试版，使 AI 编程助手能直接获取最新的 SDK 代码片段和实施模式，提升开发效率。
 
-- 🚀 Clerk发布MCP服务器公开测试版，为AI编程助手提供实时SDK支持
-- 🤖 兼容Claude、Cursor和GitHub Copilot等AI助手，优化开发体验
-- 💡 可查询Next.js身份验证钩子、B2B SaaS权限设置等具体实施问题
+- 🚀 Clerk 发布 MCP 服务器公开测试版，为 AI 编程助手提供实时 SDK 支持
+- 🤖 兼容 Claude、Cursor 和 GitHub Copilot 等 AI 助手，优化开发体验
+- 💡 可查询 Next.js 身份验证钩子、B2B SaaS 权限设置等具体实施问题
 - 📚 提供完整设置指南和文档，方便开发者快速接入
-- 💬 鼓励用户通过反馈门户和Discord社区提供使用意见
+- 💬 鼓励用户通过反馈门户和 Discord 社区提供使用意见
 
 ---
 
@@ -547,9 +547,9 @@ Clerk推出MCP服务器公开测试版，使AI编程助手能直接获取最新�
 
 **原文标题**: [Release 9.5.2 · dolanmiu/docx · GitHub](https://github.com/dolanmiu/docx/releases/tag/9.5.2)
 
-该页面显示了一个GitHub仓库的发布页面，其中包含版本9.5.2的更新详情、错误修复、依赖项更新以及新贡献者的信息。
+该页面显示了一个 GitHub 仓库的发布页面，其中包含版本 9.5.2 的更新详情、错误修复、依赖项更新以及新贡献者的信息。
 
-- 🐛 修复了文档中的MS文章URL和编号项目引用导出问题
+- 🐛 修复了文档中的 MS 文章 URL 和编号项目引用导出问题
 - 📚 更新了编号功能的文档，并添加了完整示例
 - 🖋️ 新增了对段落“之间”边框的支持
 - 🔧 实现了内容控件功能
@@ -646,11 +646,11 @@ Broz 是一个用于截图的极简无边框浏览器，基于 Electron 构建�
 
 **原文标题**: [Shiki](https://shiki.style/)
 
-准确美观的文本编辑器，采用与VS Code相同的引擎，并随VS Code同步优化提升。
+准确美观的文本编辑器，采用与 VS Code 相同的引擎，并随 VS Code 同步优化提升。
 
-- 🌈 采用与VS Code相同的文本语法引擎
+- 🌈 采用与 VS Code 相同的文本语法引擎
 - 🎨 提供准确且美观的代码高亮与编辑体验
-- 🔄 功能与优化随VS Code同步更新提升
+- 🔄 功能与优化随 VS Code 同步更新提升
 
 ---
 
@@ -660,14 +660,14 @@ Broz 是一个用于截图的极简无边框浏览器，基于 Electron 构建�
 
 本文介绍了人工智能在医疗领域的应用现状与前景，重点探讨了其在疾病诊断、药物研发和个性化治疗方面的突破性进展，同时简要提及了相关的伦理挑战。
 
-- 🏥 AI辅助诊断系统能通过分析医学影像快速识别病灶，提升早期癌症等疾病的检出率
+- 🏥 AI 辅助诊断系统能通过分析医学影像快速识别病灶，提升早期癌症等疾病的检出率
 - 🔬 机器学习加速新药研发流程，大幅缩短化合物筛选与临床试验周期
 - 📊 基于患者数据的个性化治疗方案正成为慢性病管理的新趋势
-- ⚖️ 医疗AI面临数据隐私、算法透明度及责任界定等伦理监管问题
+- ⚖️ 医疗 AI 面临数据隐私、算法透明度及责任界定等伦理监管问题
 
 ---
 
-### [GitHub - svaarala/duktape: Duktape - 专注于可移植性与小巧体积的可嵌入JavaScript引擎](https://github.com/svaarala/duktape)
+### [GitHub - svaarala/duktape: Duktape - 专注于可移植性与小巧体积的可嵌入 JavaScript 引擎](https://github.com/svaarala/duktape)
 
 **原文标题**: [GitHub - svaarala/duktape: Duktape - embeddable Javascript engine with a focus on portability and compact footprint](https://github.com/svaarala/duktape)
 
@@ -681,11 +681,11 @@ Duktape 是一个专注于可移植性和紧凑体积的可嵌入 JavaScript 引
 
 ---
 
-### [路线图2026 (2026-02-04) | webpack](https://webpack.js.org/blog/2026-04-02-roadmap-2026/)
+### [路线图 2026 (2026-02-04) | webpack](https://webpack.js.org/blog/2026-04-02-roadmap-2026/)
 
 **原文标题**: [Roadmap 2026 (2026-02-04) | webpack](https://webpack.js.org/blog/2026-04-02-roadmap-2026/)
 
-webpack 团队公布了2026年路线图，重点在于提升开发体验、扩展跨运行时支持、简化配置并加强社区与项目可持续性。核心目标包括让 webpack 更易用、更高效，并为其长远发展奠定基础。
+webpack 团队公布了 2026 年路线图，重点在于提升开发体验、扩展跨运行时支持、简化配置并加强社区与项目可持续性。核心目标包括让 webpack 更易用、更高效，并为其长远发展奠定基础。
 
 - 🎯 **增强开发体验**：计划整合 CSS 模块和 HTML 入口点支持到核心功能中，减少对插件的依赖，并简化资源压缩与 CLI 工具。
 - 🌐 **实现跨运行时支持**：致力于新增“universal”目标，使代码能在 Node.js、Deno、Bun 及 Web 等不同环境中无缝运行。

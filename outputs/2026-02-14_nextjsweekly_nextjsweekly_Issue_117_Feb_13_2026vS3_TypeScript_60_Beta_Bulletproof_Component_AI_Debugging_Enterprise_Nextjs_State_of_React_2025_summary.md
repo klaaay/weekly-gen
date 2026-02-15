@@ -1,32 +1,32 @@
-### [构建坚不可摧的React组件 - 舒丁](https://shud.in/thoughts/build-bulletproof-react-components)
+### [构建坚不可摧的 React 组件 - 舒丁](https://shud.in/thoughts/build-bulletproof-react-components)
 
 **原文标题**: [Building Bulletproof React Components - Shu Ding](https://shud.in/thoughts/build-bulletproof-react-components)
 
-构建健壮的React组件意味着确保它们能在各种复杂环境下稳定工作，包括服务器渲染、并发渲染、异步子组件等场景。文章通过一系列具体示例，展示了如何逐步优化组件，使其具备更强的适应性和鲁棒性。
+构建健壮的 React 组件意味着确保它们能在各种复杂环境下稳定工作，包括服务器渲染、并发渲染、异步子组件等场景。文章通过一系列具体示例，展示了如何逐步优化组件，使其具备更强的适应性和鲁棒性。
 
-- 🛡️ **服务器端渲染安全**：避免在服务器端访问浏览器API（如`localStorage`），应将其移至`useEffect`中执行，防止构建时崩溃。
+- 🛡️ **服务器端渲染安全**：避免在服务器端访问浏览器 API（如`localStorage`），应将其移至`useEffect`中执行，防止构建时崩溃。
 - 💧 **水合过程安全**：通过内联脚本在浏览器绘制前同步设置初始状态，避免因客户端水合导致的界面闪烁问题。
-- 🔢 **多实例安全**：使用`useId`生成唯一标识符，确保多个组件实例不会因ID冲突而相互干扰。
+- 🔢 **多实例安全**：使用`useId`生成唯一标识符，确保多个组件实例不会因 ID 冲突而相互干扰。
 - ⚡ **并发渲染安全**：利用`React.cache`对服务器组件中的异步请求进行去重，避免同一请求在并发场景下被重复执行。
-- 🧩 **组合安全**：使用Context而非`cloneElement`传递数据，以兼容服务器组件、懒加载等现代React特性。
-- 🪟 **门户安全**：通过`ownerDocument.defaultView`获取正确的窗口上下文，确保事件监听在iframe或portal中正常工作。
+- 🧩 **组合安全**：使用 Context 而非`cloneElement`传递数据，以兼容服务器组件、懒加载等现代 React 特性。
+- 🪟 **门户安全**：通过`ownerDocument.defaultView`获取正确的窗口上下文，确保事件监听在 iframe 或 portal 中正常工作。
 - 🎬 **过渡动画安全**：使用`startTransition`包裹状态更新，以支持平滑的视图过渡动画。
 - 🎭 **活动状态安全**：通过动态修改`<style>`标签的`media`属性，确保隐藏组件不会残留全局样式影响。
 - 🔒 **数据泄漏防护**：使用`taintUniqueValue`标记敏感数据，防止其意外序列化并发送到客户端。
-- 🚀 **未来兼容性**：优先使用`useState`而非`useMemo`来保证数据的持久性，避免因React内部优化导致状态丢失。
+- 🚀 **未来兼容性**：优先使用`useState`而非`useMemo`来保证数据的持久性，避免因 React 内部优化导致状态丢失。
 
 ---
 
-### [AI调试：能否替代经验丰富的开发者？](https://www.developerway.com/posts/debugging-with-ai)
+### [AI 调试：能否替代经验丰富的开发者？](https://www.developerway.com/posts/debugging-with-ai)
 
 **原文标题**: [Debugging with AI: Can It Replace an Experienced Developer?](https://www.developerway.com/posts/debugging-with-ai)
 
-本文通过三个真实案例测试了AI在调试React/Next.js应用中的能力，发现AI能有效解决简单问题（如数据验证错误），但在复杂场景（如加载状态管理、重定向错误）中常给出错误或片面的解决方案，无法替代开发者对系统原理的深入理解。
+本文通过三个真实案例测试了 AI 在调试 React/Next.js 应用中的能力，发现 AI 能有效解决简单问题（如数据验证错误），但在复杂场景（如加载状态管理、重定向错误）中常给出错误或片面的解决方案，无法替代开发者对系统原理的深入理解。
 
-- 🐛 **用户页面数据验证错误**：AI成功识别并修复了因Zod schema字段缺失导致的页面崩溃，但修复方案（补全模拟数据）并非最佳实践，更合理的做法是调整schema为可选字段。
-- 🔄 **双加载骨架问题**：AI提出了多种矛盾的根本原因，最终建议使用`useSuspenseQuery`虽能临时解决问题，但会引发控制台错误，并非正确方案。实际应通过服务端数据获取或优化加载状态设计来解决。
-- 🚫 **重定向错误**：AI完全失败，给出多个错误方案。实际原因是服务端重定向与Suspense中的Server Action冲突，需移除或重构Action才能修复。
-- 🤖 **AI调试局限性**：AI擅长模式识别和常见错误修复，但在需要理解系统行为、权衡未来影响或涉及复杂交互时容易产生幻觉，无法替代开发者的深度思考和系统知识。
+- 🐛 **用户页面数据验证错误**：AI 成功识别并修复了因 Zod schema 字段缺失导致的页面崩溃，但修复方案（补全模拟数据）并非最佳实践，更合理的做法是调整 schema 为可选字段。
+- 🔄 **双加载骨架问题**：AI 提出了多种矛盾的根本原因，最终建议使用`useSuspenseQuery`虽能临时解决问题，但会引发控制台错误，并非正确方案。实际应通过服务端数据获取或优化加载状态设计来解决。
+- 🚫 **重定向错误**：AI 完全失败，给出多个错误方案。实际原因是服务端重定向与 Suspense 中的 Server Action 冲突，需移除或重构 Action 才能修复。
+- 🤖 **AI 调试局限性**：AI 擅长模式识别和常见错误修复，但在需要理解系统行为、权衡未来影响或涉及复杂交互时容易产生幻觉，无法替代开发者的深度思考和系统知识。
 
 ---
 
@@ -34,33 +34,33 @@
 
 **原文标题**: [Pricing](https://clerk.com/pricing?utm_source=nextjs-weekly&utm_medium=newsletter&utm_campaign=pricing-rollout&utm_content=02-13-26&dub_id=xgdykH1kspYaF6r5)
 
-Clerk提供从免费到企业级的身份验证服务，支持无限应用，定价透明且按需扩展，并包含B2B认证、管理和计费等附加功能。
+Clerk 提供从免费到企业级的身份验证服务，支持无限应用，定价透明且按需扩展，并包含 B2B 认证、管理和计费等附加功能。
 
-- 🆓 **免费Hobby计划**：无需信用卡，包含5万月留存用户、3个仪表板席位及基本认证功能，适合入门开发。
-- 💼 **Pro计划（20美元/月）**：增加无品牌展示、多因素认证、企业连接等高级功能，适合规模扩展。
-- 🏢 **Business计划（250美元/月）**：提供SOC2/HIPAA合规、优先支持、审计日志等，满足合规与团队增长需求。
-- 🏛️ **企业定制计划**：含高可用性SLA、专属支持及迁移协助，提供定制化解决方案。
-- 🔗 **B2B认证附加功能**：基础免费版支持20成员/组织，增强版（100美元/月）提供无限成员和高级角色管理。
-- 👥 **管理附加功能**：基础版含5次用户模拟，增强版（100美元/月）提供无限模拟次数。
-- 💳 **计费功能**：按账单金额的0.7%收费，集成Stripe，支持订阅管理和预建组件。
-- 🎓 **初创企业折扣**：通过与Stripe Atlas等合作伙伴提供优惠，适用于成立一年内或融资500万美元以下的公司。
+- 🆓 **免费 Hobby 计划**：无需信用卡，包含 5 万月留存用户、3 个仪表板席位及基本认证功能，适合入门开发。
+- 💼 **Pro 计划（20 美元/月）**：增加无品牌展示、多因素认证、企业连接等高级功能，适合规模扩展。
+- 🏢 **Business 计划（250 美元/月）**：提供 SOC2/HIPAA 合规、优先支持、审计日志等，满足合规与团队增长需求。
+- 🏛️ **企业定制计划**：含高可用性 SLA、专属支持及迁移协助，提供定制化解决方案。
+- 🔗 **B2B 认证附加功能**：基础免费版支持 20 成员/组织，增强版（100 美元/月）提供无限成员和高级角色管理。
+- 👥 **管理附加功能**：基础版含 5 次用户模拟，增强版（100 美元/月）提供无限模拟次数。
+- 💳 **计费功能**：按账单金额的 0.7% 收费，集成 Stripe，支持订阅管理和预建组件。
+- 🎓 **初创企业折扣**：通过与 Stripe Atlas 等合作伙伴提供优惠，适用于成立一年内或融资 500 万美元以下的公司。
 
 ---
 
-### [企业级Next.js应用](https://techhub.iodigital.com/articles/nextjs-at-enterprise-level)
+### [企业级 Next.js 应用](https://techhub.iodigital.com/articles/nextjs-at-enterprise-level)
 
 **原文标题**: [Next.js at Enterprise Level](https://techhub.iodigital.com/articles/nextjs-at-enterprise-level)
 
-本文探讨了如何将Next.js应用从中小规模扩展到企业级，涵盖从性能监控、缓存策略到水平扩展和架构优化的完整方案，旨在构建高性能、可维护且能应对高流量与复杂性的系统。
+本文探讨了如何将 Next.js 应用从中小规模扩展到企业级，涵盖从性能监控、缓存策略到水平扩展和架构优化的完整方案，旨在构建高性能、可维护且能应对高流量与复杂性的系统。
 
-- 🎯 **定义服务质量指标**：在部署前明确SLA（服务等级协议）和SLO（服务等级目标），确保工程与业务目标对齐，并通过监控与负载测试持续验证。
-- 🔄 **理解Next.js生命周期**：掌握SSR/ISR动态请求流程与SSG静态生成的区别，利用缓存机制（如PPR、RSC负载）提升响应效率。
-- ⚡ **优先采用“简易优化”策略**：通过CDN缓存、垂直扩展、代码最佳实践（如异步组件、DOM优化）及框架新特性（React Compiler、use cache）显著提升性能，避免过早进行复杂水平扩展。
-- 🔁 **实施水平扩展与负载均衡**：部署多副本应用，结合负载均衡器（如Nginx）分配流量，并解决无状态化、分布式缓存（如Redis集群）等架构挑战。
-- 🏗️ **引入高级架构模式**：采用领域驱动设计划分微前端，利用Kubernetes实现自动扩缩容，通过API网关集中处理认证等跨领域关注点，提升系统可维护性。
-- 📁 **优化文件上传与存储**：使用Blob存储（如S3）和签名URL实现直接上传，避免本地存储的持久性、可扩展性及基础设施压力问题。
-- 🚀 **采用事件驱动架构**：通过消息队列（如Kafka）解耦高吞吐量交互（如“加入购物车”），实现异步处理，增强系统响应能力与韧性。
-- 📡 **升级通信协议**：利用HTTP/2的多路复用、头部压缩等特性提升网络效率，并在内部服务间采用gRPC替代REST，以获得更高效的二进制传输与强类型契约。
+- 🎯 **定义服务质量指标**：在部署前明确 SLA（服务等级协议）和 SLO（服务等级目标），确保工程与业务目标对齐，并通过监控与负载测试持续验证。
+- 🔄 **理解 Next.js 生命周期**：掌握 SSR/ISR 动态请求流程与 SSG 静态生成的区别，利用缓存机制（如 PPR、RSC 负载）提升响应效率。
+- ⚡ **优先采用“简易优化”策略**：通过 CDN 缓存、垂直扩展、代码最佳实践（如异步组件、DOM 优化）及框架新特性（React Compiler、use cache）显著提升性能，避免过早进行复杂水平扩展。
+- 🔁 **实施水平扩展与负载均衡**：部署多副本应用，结合负载均衡器（如 Nginx）分配流量，并解决无状态化、分布式缓存（如 Redis 集群）等架构挑战。
+- 🏗️ **引入高级架构模式**：采用领域驱动设计划分微前端，利用 Kubernetes 实现自动扩缩容，通过 API 网关集中处理认证等跨领域关注点，提升系统可维护性。
+- 📁 **优化文件上传与存储**：使用 Blob 存储（如 S3）和签名 URL 实现直接上传，避免本地存储的持久性、可扩展性及基础设施压力问题。
+- 🚀 **采用事件驱动架构**：通过消息队列（如 Kafka）解耦高吞吐量交互（如“加入购物车”），实现异步处理，增强系统响应能力与韧性。
+- 📡 **升级通信协议**：利用 HTTP/2 的多路复用、头部压缩等特性提升网络效率，并在内部服务间采用 gRPC 替代 REST，以获得更高效的二进制传输与强类型契约。
 
 ---
 
@@ -72,22 +72,22 @@ Clerk提供从免费到企业级的身份验证服务，支持无限应用，定
 
 ---
 
-### [Go 1.22、SQLite与Next.js：穆罕默德·埃萨姆的“平淡”后端](https://mohammedeabdelaziz.github.io/articles/go-next-pt-2)
+### [Go 1.22、SQLite 与 Next.js：穆罕默德·埃萨姆的“平淡”后端](https://mohammedeabdelaziz.github.io/articles/go-next-pt-2)
 
 **原文标题**: [Go 1.22, SQLite, and Next.js: The "Boring" Backend - Mohammed Essam](https://mohammedeabdelaziz.github.io/articles/go-next-pt-2)
 
-作者选择Go、SQLite和Next.js构建“无趣”但稳定的后端，强调技术栈的可靠性和开发效率。
+作者选择 Go、SQLite 和 Next.js 构建“无趣”但稳定的后端，强调技术栈的可靠性和开发效率。
 
-- 🛠️ Go语言以其稳定性和简洁性成为后端首选，使用标准库`net/http`和Go 1.22+的`ServeMux`处理路由，避免复杂框架
-- 🗄️ SQLite作为轻量级数据库，通过WAL模式支持并发，并需手动启用外键约束以确保数据完整性
-- 🌐 开发中遇到CORS问题，通过编写中间件处理跨域请求，使API可被不同客户端访问
-- 🔗 Next.js前端使用简单的`fetch`客户端与Go后端通信，避免过早引入复杂库，保持代码可读性
-- ⚡ 开发体验上，Go编译快速、错误清晰，SQLite无需Docker简化部署，但Next.js开发服务器启动较慢
-- 📈 项目后续计划集成GitHub，实现issue同步功能，涉及webhook和API轮询等复杂操作
+- 🛠️ Go 语言以其稳定性和简洁性成为后端首选，使用标准库`net/http`和 Go 1.22+ 的`ServeMux`处理路由，避免复杂框架
+- 🗄️ SQLite 作为轻量级数据库，通过 WAL 模式支持并发，并需手动启用外键约束以确保数据完整性
+- 🌐 开发中遇到 CORS 问题，通过编写中间件处理跨域请求，使 API 可被不同客户端访问
+- 🔗 Next.js 前端使用简单的`fetch`客户端与 Go 后端通信，避免过早引入复杂库，保持代码可读性
+- ⚡ 开发体验上，Go 编译快速、错误清晰，SQLite 无需 Docker 简化部署，但 Next.js 开发服务器启动较慢
+- 📈 项目后续计划集成 GitHub，实现 issue 同步功能，涉及 webhook 和 API 轮询等复杂操作
 
 ---
 
-### [React的ViewTransition元素 – Frontend Masters博客](https://frontendmasters.com/blog/reacts-viewtransition-element/)
+### [React 的 ViewTransition 元素 – Frontend Masters 博客](https://frontendmasters.com/blog/reacts-viewtransition-element/)
 
 **原文标题**: [React’s ViewTransition Element – Frontend Masters Blog](https://frontendmasters.com/blog/reacts-viewtransition-element/)
 
@@ -128,16 +128,16 @@ TypeScript 6.0 Beta 版本发布，这是基于当前 JavaScript 代码库的最
 
 **原文标题**: [GitHub - slick-enterprises/accept-md: Serve clean Markdown representations of any Next.js page when clients request Accept: text/markdown](https://github.com/slick-enterprises/accept-md)
 
-这是一个用于Next.js项目的工具，当客户端请求头包含`Accept: text/markdown`时，它能自动将任何页面转换为简洁的Markdown格式返回，无需修改现有页面代码，支持App Router、Pages Router及各种渲染策略。
+这是一个用于 Next.js 项目的工具，当客户端请求头包含`Accept: text/markdown`时，它能自动将任何页面转换为简洁的 Markdown 格式返回，无需修改现有页面代码，支持 App Router、Pages Router 及各种渲染策略。
 
-- 🚀 **核心功能**：通过`next.config`重写或中间件拦截请求，将HTML页面实时转换为Markdown，并自动剥离导航、页脚等无关元素。
-- 📄 **丰富输出**：生成的Markdown包含从HTML提取的YAML Frontmatter（如标题、描述、OpenGraph标签）和JSON-LD结构化数据代码块，便于AI解析和SEO。
-- ⚙️ **简易安装**：推荐使用`npx --yes accept-md@latest init`命令一键初始化，自动配置重写规则、API处理器和配置文件。
+- 🚀 **核心功能**：通过`next.config`重写或中间件拦截请求，将 HTML 页面实时转换为 Markdown，并自动剥离导航、页脚等无关元素。
+- 📄 **丰富输出**：生成的 Markdown 包含从 HTML 提取的 YAML Frontmatter（如标题、描述、OpenGraph 标签）和 JSON-LD 结构化数据代码块，便于 AI 解析和 SEO。
+- ⚙️ **简易安装**：推荐使用`npx --yes accept-md@latest init`命令一键初始化，自动配置重写规则、API 处理器和配置文件。
 - 🧩 **灵活配置**：通过`accept-md.config.js`文件可自定义包含/排除的路由、清理的选择器、缓存、后处理转换器等。
-- 🔄 **智能缓存**：内置缓存机制，能感知Next.js构建ID变化并尊重ISR重新验证周期，优化性能。
-- 🛠️ **配套工具**：提供`doctor`命令检查项目状态，`fix-routes`命令修复Next.js 15+的路由清单问题，`version-check`确保CLI与运行时版本一致。
-- 📦 **版本管理**：CLI与`accept-md-runtime`包采用精确版本匹配，确保兼容性，建议始终使用最新版本。
-- ⚠️ **注意事项**：默认排除API路由，优先使用`next.config`重写而非中间件以获得更好性能，需注意自定义服务器或i18n场景下的配置调整。
+- 🔄 **智能缓存**：内置缓存机制，能感知 Next.js 构建 ID 变化并尊重 ISR 重新验证周期，优化性能。
+- 🛠️ **配套工具**：提供`doctor`命令检查项目状态，`fix-routes`命令修复 Next.js 15+ 的路由清单问题，`version-check`确保 CLI 与运行时版本一致。
+- 📦 **版本管理**：CLI 与`accept-md-runtime`包采用精确版本匹配，确保兼容性，建议始终使用最新版本。
+- ⚠️ **注意事项**：默认排除 API 路由，优先使用`next.config`重写而非中间件以获得更好性能，需注意自定义服务器或 i18n 场景下的配置调整。
 
 ---
 
@@ -155,7 +155,7 @@ vS3 是一个专为 Web 设计的 S3 存储工具库，旨在简化 S3 访问流
 
 ---
 
-### [GitHub - mertcreates/eslint-plugin-next-pages-router: 用于验证Next.js Pages Router路由比较和导航目标与页面清单的ESLint规则。通过“您是否指的是？”建议防止运行时404错误。](https://github.com/mertcreates/eslint-plugin-next-pages-router)
+### [GitHub - mertcreates/eslint-plugin-next-pages-router: 用于验证 Next.js Pages Router 路由比较和导航目标与页面清单的 ESLint 规则。通过“您是否指的是？”建议防止运行时 404 错误。](https://github.com/mertcreates/eslint-plugin-next-pages-router)
 
 **原文标题**: [GitHub - mertcreates/eslint-plugin-next-pages-router: ESLint rules to validate Next.js Pages Router route comparisons and navigation targets against your pages manifest. Prevents runtime 404s with 'Did you mean?' suggestions.](https://github.com/mertcreates/eslint-plugin-next-pages-router)
 
@@ -171,17 +171,17 @@ vS3 是一个专为 Web 设计的 S3 存储工具库，旨在简化 S3 访问流
 
 ---
 
-### [从Web到原生：React的跨越之旅](https://expo.dev/blog/from-web-to-native-with-react?utm_source=Nextjsweekly&utm_medium=newsletter&utm_campaign=33087804-React%20to%20Native&utm_content=react_to_native_blog)
+### [从 Web 到原生：React 的跨越之旅](https://expo.dev/blog/from-web-to-native-with-react?utm_source=Nextjsweekly&utm_medium=newsletter&utm_campaign=33087804-React%20to%20Native&utm_content=react_to_native_blog)
 
 **原文标题**: [From Web to Native with React](https://expo.dev/blog/from-web-to-native-with-react?utm_source=Nextjsweekly&utm_medium=newsletter&utm_campaign=33087804-React%20to%20Native&utm_content=react_to_native_blog)
 
-该网站为Expo平台官方页面，提供React Native应用开发相关产品、服务、资源及公司信息。
+该网站为 Expo 平台官方页面，提供 React Native 应用开发相关产品、服务、资源及公司信息。
 
 - 📄 核心导航：包含文档、产品、解决方案、企业服务、定价及博客等主要栏目
-- 🛠️ 开发工具：提供Expo CLI、EAS应用服务、Expo Go、Snack等开发与测试工具
-- 📚 资源支持：设有更新日志、通讯订阅、Discord社区及信任中心等支持渠道
+- 🛠️ 开发工具：提供 Expo CLI、EAS 应用服务、Expo Go、Snack 等开发与测试工具
+- 📚 资源支持：设有更新日志、通讯订阅、Discord 社区及信任中心等支持渠道
 - 🏢 公司信息：展示客户案例、顾问服务、品牌资料、招聘及法律政策文件
-- ⚙️ 运营状态：页面底部标注系统运行正常及650 Industries公司的版权信息
+- ⚙️ 运营状态：页面底部标注系统运行正常及 650 Industries 公司的版权信息
 
 ---
 
@@ -189,14 +189,14 @@ vS3 是一个专为 Web 设计的 S3 存储工具库，旨在简化 S3 访问流
 
 **原文标题**: [State of React 2025: Conclusion](https://2025.stateofreact.com/en-US/conclusion/)
 
-2025年是React生态充满变革与演进的一年，从React 19的发布到React Foundation的成立，从编译器的稳定到AI工具的兴起，React在客户端与服务器端持续发展，同时社区与工具链也在快速适应新的技术趋势。
+2025 年是 React 生态充满变革与演进的一年，从 React 19 的发布到 React Foundation 的成立，从编译器的稳定到 AI 工具的兴起，React 在客户端与服务器端持续发展，同时社区与工具链也在快速适应新的技术趋势。
 
-- 🚀 React 19于2024年底发布，React Foundation成立，为React提供跨公司支持
-- 🛠️ React Compiler 1.0稳定，减少手动优化代码；React 19.2新增useEffectEvent和<Activity>组件
-- 🌐 客户端React保持强势，SPA仍占主导，TanStack Start成为Next.js的客户端优先替代方案
-- 🔄 服务器端React发展分化，RSC引发讨论，Next.js推出Cache Components，RedwoodSDK全面投入RSC
-- 🤖 AI工具如v0、Cursor推动“氛围编程”，shadcn/ui成为UI组件首选，降低开发门槛
-- 📈 社区活跃，AI与React内容受到关注，开发者教育面临AI带来的学习方式变革
+- 🚀 React 19 于 2024 年底发布，React Foundation 成立，为 React 提供跨公司支持
+- 🛠️ React Compiler 1.0 稳定，减少手动优化代码；React 19.2 新增 useEffectEvent 和<Activity>组件
+- 🌐 客户端 React 保持强势，SPA 仍占主导，TanStack Start 成为 Next.js 的客户端优先替代方案
+- 🔄 服务器端 React 发展分化，RSC 引发讨论，Next.js 推出 Cache Components，RedwoodSDK 全面投入 RSC
+- 🤖 AI 工具如 v0、Cursor 推动“氛围编程”，shadcn/ui 成为 UI 组件首选，降低开发门槛
+- 📈 社区活跃，AI 与 React 内容受到关注，开发者教育面临 AI 带来的学习方式变革
 
 ---
 
@@ -204,14 +204,14 @@ vS3 是一个专为 Web 设计的 S3 存储工具库，旨在简化 S3 访问流
 
 **原文标题**: [Radix UI vs Base UI - Detailed Guide](https://shadcnspace.com/blog/radix-ui-vs-base-ui)
 
-本文对比了Radix UI和Base UI这两个无头UI库，分析了它们的设计哲学、核心特性、适用场景及优缺点，并解释了为何Shadcn Space选择Base UI作为基础。
+本文对比了 Radix UI 和 Base UI 这两个无头 UI 库，分析了它们的设计哲学、核心特性、适用场景及优缺点，并解释了为何 Shadcn Space 选择 Base UI 作为基础。
 
-- 🎯 **Radix UI提供预定义结构**：强调开箱即用的可访问性、稳定API，适合快速构建产品界面。
-- 🛠️ **Base UI注重行为与灵活性**：提供底层行为模块，允许完全自定义结构和样式，适合构建设计系统或组件库。
-- ⚖️ **核心差异在于控制度**：Radix UI提供结构化组件，Base UI则提供行为逻辑，由开发者决定布局。
-- 🚀 **Radix UI适合产品开发**：适用于SaaS、管理后台等需要快速上线且重视可访问性的项目。
-- 🔧 **Base UI适合高度定制场景**：适合组件注册平台、动画密集型界面及需要避免依赖锁定的团队。
-- 📦 **Shadcn Space选择Base UI的原因**：为确保开发者能自由复制、修改组件代码，避免框架约束，实现真正的代码所有权。
+- 🎯 **Radix UI 提供预定义结构**：强调开箱即用的可访问性、稳定 API，适合快速构建产品界面。
+- 🛠️ **Base UI 注重行为与灵活性**：提供底层行为模块，允许完全自定义结构和样式，适合构建设计系统或组件库。
+- ⚖️ **核心差异在于控制度**：Radix UI 提供结构化组件，Base UI 则提供行为逻辑，由开发者决定布局。
+- 🚀 **Radix UI 适合产品开发**：适用于 SaaS、管理后台等需要快速上线且重视可访问性的项目。
+- 🔧 **Base UI 适合高度定制场景**：适合组件注册平台、动画密集型界面及需要避免依赖锁定的团队。
+- 📦 **Shadcn Space 选择 Base UI 的原因**：为确保开发者能自由复制、修改组件代码，避免框架约束，实现真正的代码所有权。
 
 ---
 

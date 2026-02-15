@@ -2,13 +2,13 @@
 
 **原文标题**: [@sebastienlorber.com on Bluesky](https://bsky.app/profile/sebastienlorber.com/post/3memaznqbp222)
 
-这是一个高度交互的网络应用，需要JavaScript支持。内容主要介绍了《This Week In React 268》的更新摘要，涵盖React和React Native的最新动态、工具和资源。
+这是一个高度交互的网络应用，需要 JavaScript 支持。内容主要介绍了《This Week In React 268》的更新摘要，涵盖 React 和 React Native 的最新动态、工具和资源。
 
-- ⚛️ React核心更新：包括组件优化、渲染类型、React编译器进展及动画处理
-- 🔧 开发工具：提及Tambo、Logo Soup、React2AWS和Ink等工具更新
-- 📱 React Native 0.84发布：包含手势处理、Storybook集成和JSON渲染等移动端改进
-- 🌐 资源推荐：提供Bluesky和ATProto相关技术链接，以及完整通讯订阅入口
-- 📅 时效信息：更新发布于2026年2月11日，保持技术资讯的时效性
+- ⚛️ React 核心更新：包括组件优化、渲染类型、React 编译器进展及动画处理
+- 🔧 开发工具：提及 Tambo、Logo Soup、React2AWS 和 Ink 等工具更新
+- 📱 React Native 0.84 发布：包含手势处理、Storybook 集成和 JSON 渲染等移动端改进
+- 🌐 资源推荐：提供 Bluesky 和 ATProto 相关技术链接，以及完整通讯订阅入口
+- 📅 时效信息：更新发布于 2026 年 2 月 11 日，保持技术资讯的时效性
 
 ---
 
@@ -16,17 +16,17 @@
 
 **原文标题**: [No title found](https://x.com/sebastienlorber/status/2021674306238030043)
 
-该页面提示用户浏览器中JavaScript功能未启用或受阻，导致无法正常使用X平台（原Twitter），并提供了相应的解决方案和支持信息。
+该页面提示用户浏览器中 JavaScript 功能未启用或受阻，导致无法正常使用 X 平台（原 Twitter），并提供了相应的解决方案和支持信息。
 
-- 🔐 检测到浏览器已禁用JavaScript，影响X平台正常使用
-- 🌐 建议启用JavaScript或切换至受支持的浏览器版本
+- 🔐 检测到浏览器已禁用 JavaScript，影响 X 平台正常使用
+- 🌐 建议启用 JavaScript 或切换至受支持的浏览器版本
 - 📖 可访问帮助中心查看支持的浏览器列表
 - 🛡️ 部分隐私扩展可能导致加载异常，建议暂时禁用后重试
 - 🔄 页面提供手动重试功能及平台服务条款等法律文件入口
 
 ---
 
-### [LinkedIn登录，登录 | LinkedIn](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsebastienlorber%2Frecent-activity%2Fall%2F)
+### [LinkedIn 登录，登录 | LinkedIn](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsebastienlorber%2Frecent-activity%2Fall%2F)
 
 **原文标题**: [
             
@@ -34,14 +34,14 @@
       
         ](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsebastienlorber%2Frecent-activity%2Fall%2F)
 
-本文介绍了LinkedIn的登录方式、相关协议以及账户安全提示。
+本文介绍了 LinkedIn 的登录方式、相关协议以及账户安全提示。
 
-- 🔐 支持多种登录方式：包括Apple账号登录、密钥登录以及传统的邮箱或手机号密码登录
-- 📜 用户需同意协议：登录即代表同意LinkedIn的用户协议、隐私政策和Cookie政策
+- 🔐 支持多种登录方式：包括 Apple 账号登录、密钥登录以及传统的邮箱或手机号密码登录
+- 📜 用户需同意协议：登录即代表同意 LinkedIn 的用户协议、隐私政策和 Cookie 政策
 - ✉️ 提供一次性链接登录：系统会向用户主邮箱发送一次性链接，点击即可快速登录
 - 📂 邮件接收提示：若收件箱未见邮件，建议检查垃圾邮件文件夹
 - 🔄 可重新发送邮件：用户可选择重新发送登录邮件
-- 👥 新用户引导：未注册用户可选择加入LinkedIn平台
+- 👥 新用户引导：未注册用户可选择加入 LinkedIn 平台
 - 🔒 账户安全设置：提供“保持登录状态”选项和密码找回功能
 
 ---
@@ -50,13 +50,13 @@
 
 **原文标题**: [Reddit - The heart of the internet](https://www.reddit.com/user/sebastienlorber/submitted/?rdt=51965)
 
-本期《This Week In React》及《This Week In React Native》汇总了React生态的最新动态，涵盖核心框架更新、工具库发布、开发工具优化及社区资源。
+本期《This Week In React》及《This Week In React Native》汇总了 React 生态的最新动态，涵盖核心框架更新、工具库发布、开发工具优化及社区资源。
 
-- 📰 第268期React周报重点介绍了React Native 0.84版本发布、手势处理库、Rozenite工具、Storybook集成、JSON渲染优化、多平台目标支持以及TrueSheet组件
-- 🔧 同期React周报还涉及Bulletproof组件模式、渲染类型优化、Tambo工具、Logo Soup资源、React编译器进展、Ink CLI框架及Streamdown库
-- 🛠️ 开发工具链更新包括TypeScript、ESLint、Webpack、Vitest和VSCode的最新生态进展
-- 📱 第267期React Native周报聚焦Worklets线程模型、Teleport组件、Voltra状态管理、AI SDK集成、屏幕管理、Tamagui跨平台UI及Xcode开发环境优化
-- 🌐 两期内容均来自reactjs和reactnative官方社区，提供每周技术精选和Discord讨论渠道
+- 📰 第 268 期 React 周报重点介绍了 React Native 0.84 版本发布、手势处理库、Rozenite 工具、Storybook 集成、JSON 渲染优化、多平台目标支持以及 TrueSheet 组件
+- 🔧 同期 React 周报还涉及 Bulletproof 组件模式、渲染类型优化、Tambo 工具、Logo Soup 资源、React 编译器进展、Ink CLI 框架及 Streamdown 库
+- 🛠️ 开发工具链更新包括 TypeScript、ESLint、Webpack、Vitest 和 VSCode 的最新生态进展
+- 📱 第 267 期 React Native 周报聚焦 Worklets 线程模型、Teleport 组件、Voltra 状态管理、AI SDK 集成、屏幕管理、Tamagui 跨平台 UI 及 Xcode 开发环境优化
+- 🌐 两期内容均来自 reactjs 和 reactnative 官方社区，提供每周技术精选和 Discord 讨论渠道
 
 ---
 
@@ -64,9 +64,9 @@
 
 **原文标题**: [No title found](https://x.com/wcandillon/status/1263825118557593600)
 
-该页面提示用户浏览器中JavaScript功能未启用或存在兼容性问题，导致无法正常使用X平台（原Twitter）的各项功能。
+该页面提示用户浏览器中 JavaScript 功能未启用或存在兼容性问题，导致无法正常使用 X 平台（原 Twitter）的各项功能。
 
-- 🔧 检测到JavaScript被禁用，需在浏览器设置中启用或更换受支持的浏览器
+- 🔧 检测到 JavaScript 被禁用，需在浏览器设置中启用或更换受支持的浏览器
 - 🌐 可访问帮助中心查看支持的浏览器列表，确保平台兼容性
 - 🛡️ 部分隐私扩展可能造成访问异常，建议暂时禁用后重试
 - 📜 页脚包含服务条款、隐私政策等法律文件链接及版权信息
@@ -78,9 +78,9 @@
 
 **原文标题**: [No title found](https://x.com/wcandillon)
 
-该页面提示JavaScript功能未启用，导致无法正常使用X平台，并提供了相应的解决建议与支持信息。
+该页面提示 JavaScript 功能未启用，导致无法正常使用 X 平台，并提供了相应的解决建议与支持信息。
 
-- 🔧 检测到浏览器中JavaScript被禁用，需启用或更换受支持的浏览器
+- 🔧 检测到浏览器中 JavaScript 被禁用，需启用或更换受支持的浏览器
 - 🌐 可访问帮助中心查看支持的浏览器列表
 - 🛡️ 隐私相关扩展程序可能造成访问问题，建议暂时禁用后重试
 - 📄 页面底部包含服务条款、隐私政策及版权声明等常规信息
@@ -92,53 +92,53 @@
 
 **原文标题**: [Seer: Debug faster at every stage of development | Sentry](https://sentry.io/product/seer/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=seer-fy27q1-seerlaunch&utm_content=newsletter-product-trysentry)
 
-Seer是Sentry推出的AI调试助手，它利用Sentry的上下文数据（如错误、追踪、日志、回放和提交历史）来加速开发各阶段的调试过程，自动识别破坏性变更、定位生产环境问题的根本原因，并修复遗漏的问题。
+Seer 是 Sentry 推出的 AI 调试助手，它利用 Sentry 的上下文数据（如错误、追踪、日志、回放和提交历史）来加速开发各阶段的调试过程，自动识别破坏性变更、定位生产环境问题的根本原因，并修复遗漏的问题。
 
-- 🐛 **开发阶段即时调试**：通过Sentry的MCP将Seer集成到本地环境，在问题出现时即时调试，防止其进入生产环境。
-- 🔍 **代码审查自动查错**：在GitHub中自动检查PR，识别可能导致严重问题（如安全漏洞、错误和性能问题）的代码变更。
-- 🎯 **自动定位根本原因**：分析Sentry收集的完整上下文（堆栈追踪、事件历史、日志、回放等），精准定位问题根源，并可建议修复方案。
-- 🌐 **广泛的技术栈支持**：兼容几乎所有编程语言和框架（从Assembly到Zig），支持Web、移动和桌面应用。
+- 🐛 **开发阶段即时调试**：通过 Sentry 的 MCP 将 Seer 集成到本地环境，在问题出现时即时调试，防止其进入生产环境。
+- 🔍 **代码审查自动查错**：在 GitHub 中自动检查 PR，识别可能导致严重问题（如安全漏洞、错误和性能问题）的代码变更。
+- 🎯 **自动定位根本原因**：分析 Sentry 收集的完整上下文（堆栈追踪、事件历史、日志、回放等），精准定位问题根源，并可建议修复方案。
+- 🌐 **广泛的技术栈支持**：兼容几乎所有编程语言和框架（从 Assembly 到 Zig），支持 Web、移动和桌面应用。
 - 🔗 **分布式系统调试**：利用分布式追踪数据理解跨多个系统的解决方案，并能提出涉及多仓库的修复建议。
-- 🛡️ **隐私保护设计**：默认不将用户数据用于训练AI模型，AI生成结果仅对用户可见，确保数据隐私和安全。
-- 💰 **付费计划提供**：适用于Sentry付费计划用户，按活跃贡献者每月$40计费，提供试用和演示选项。
+- 🛡️ **隐私保护设计**：默认不将用户数据用于训练 AI 模型，AI 生成结果仅对用户可见，确保数据隐私和安全。
+- 💰 **付费计划提供**：适用于 Sentry 付费计划用户，按活跃贡献者每月$40 计费，提供试用和演示选项。
 
 ---
 
-### [哨兵先知：在开发的每个阶段用AI进行调试 | Sentry](https://blog.sentry.io/seer-debug-with-ai-at-every-stage-of-development/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=seer-fy27q1-seerlaunch&utm_content=newsletter-blog-launch-learnmore)
+### [哨兵先知：在开发的每个阶段用 AI 进行调试 | Sentry](https://blog.sentry.io/seer-debug-with-ai-at-every-stage-of-development/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=seer-fy27q1-seerlaunch&utm_content=newsletter-blog-launch-learnmore)
 
 **原文标题**: [Seer by Sentry: debug with AI at every stage of development | Sentry](https://blog.sentry.io/seer-debug-with-ai-at-every-stage-of-development/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=seer-fy27q1-seerlaunch&utm_content=newsletter-blog-launch-learnmore)
 
-Seer是一款集成AI的调试工具，旨在通过全流程覆盖（本地开发、代码审查、生产环境）帮助开发者更高效地识别和修复问题，其核心优势在于利用Sentry收集的运行时遥测数据进行精准根因分析，并推出统一价格的无限制使用方案。
+Seer 是一款集成 AI 的调试工具，旨在通过全流程覆盖（本地开发、代码审查、生产环境）帮助开发者更高效地识别和修复问题，其核心优势在于利用 Sentry 收集的运行时遥测数据进行精准根因分析，并推出统一价格的无限制使用方案。
 
-- 🔍 **利用生产环境上下文精准调试**：Seer基于Sentry收集的错误、日志、指标等关联遥测数据，能确定性地追踪问题根因，避免依赖不精确的时间范围搜索。
-- 💻 **本地开发即时调试**：通过Sentry MCP服务器连接本地编码代理，可在编写代码时实时捕获并修复问题，防止缺陷进入后续流程。
+- 🔍 **利用生产环境上下文精准调试**：Seer 基于 Sentry 收集的错误、日志、指标等关联遥测数据，能确定性地追踪问题根因，避免依赖不精确的时间范围搜索。
+- 💻 **本地开发即时调试**：通过 Sentry MCP 服务器连接本地编码代理，可在编写代码时实时捕获并修复问题，防止缺陷进入后续流程。
 - 📋 **代码审查阶段缺陷检测**：在拉取请求中自动识别可能影响生产的实际缺陷，减少低级错误提示，提升发布效率与稳定性。
 - ⚙️ **生产环境自动根因分析**：对进入生产环境的问题自动分析根因，并在高置信度时直接生成修复代码或委托给编码代理处理。
-- 🔬 **开放式问题调查功能**：支持通过自然语言描述异常现象，Seer可跨遥测数据查询相关模式与异常，帮助探索未明确标记的问题。
-- 💰 **统一价格无限制使用**：定价简化为每月每位活跃贡献者40美元，自动统计GitHub仓库中的活跃人员，无需管理席位或担心超额费用。
+- 🔬 **开放式问题调查功能**：支持通过自然语言描述异常现象，Seer 可跨遥测数据查询相关模式与异常，帮助探索未明确标记的问题。
+- 💰 **统一价格无限制使用**：定价简化为每月每位活跃贡献者 40 美元，自动统计 GitHub 仓库中的活跃人员，无需管理席位或担心超额费用。
 
 ---
 
-### [构建坚不可摧的React组件 - 舒丁](https://shud.in/thoughts/build-bulletproof-react-components)
+### [构建坚不可摧的 React 组件 - 舒丁](https://shud.in/thoughts/build-bulletproof-react-components)
 
 **原文标题**: [Building Bulletproof React Components - Shu Ding](https://shud.in/thoughts/build-bulletproof-react-components)
 
-构建健壮的React组件需要预见并适应各种复杂场景，确保组件在服务器渲染、并发模式、组合使用等条件下都能稳定工作。以下是关键策略的总结：
+构建健壮的 React 组件需要预见并适应各种复杂场景，确保组件在服务器渲染、并发模式、组合使用等条件下都能稳定工作。以下是关键策略的总结：
 
-- 🛡️ **服务器端安全**：避免在服务器端使用浏览器API（如localStorage），应将其移至useEffect中，防止构建时崩溃。
+- 🛡️ **服务器端安全**：避免在服务器端使用浏览器 API（如 localStorage），应将其移至 useEffect 中，防止构建时崩溃。
 - 🌊 **水合安全**：通过内联脚本在浏览器绘制前设置正确状态，避免因客户端水合导致的界面闪烁。
-- 🔢 **多实例安全**：使用useId生成唯一标识符，确保多个组件实例不会相互冲突。
-- ⚡ **并发安全**：利用React.cache对服务器组件中的重复查询进行去重，提升性能。
-- 🧩 **组合安全**：使用Context而非cloneElement传递数据，以兼容服务器组件和异步子组件。
-- 🪟 **门户安全**：通过ownerDocument.defaultView绑定事件，确保组件在iframe或弹窗中正常工作。
-- 🎭 **过渡安全**：使用startTransition包装状态更新，实现平滑的视图过渡动画。
-- 🎨 **活动状态安全**：通过动态修改style标签的media属性，控制组件隐藏时的样式副作用。
-- 🔒 **防泄漏安全**：使用taintUniqueValue标记敏感数据，防止其意外传递到客户端。
-- 🚀 **未来兼容安全**：优先使用useState而非useMemo来保证数据的持久性，适应React未来的优化变化。
+- 🔢 **多实例安全**：使用 useId 生成唯一标识符，确保多个组件实例不会相互冲突。
+- ⚡ **并发安全**：利用 React.cache 对服务器组件中的重复查询进行去重，提升性能。
+- 🧩 **组合安全**：使用 Context 而非 cloneElement 传递数据，以兼容服务器组件和异步子组件。
+- 🪟 **门户安全**：通过 ownerDocument.defaultView 绑定事件，确保组件在 iframe 或弹窗中正常工作。
+- 🎭 **过渡安全**：使用 startTransition 包装状态更新，实现平滑的视图过渡动画。
+- 🎨 **活动状态安全**：通过动态修改 style 标签的 media 属性，控制组件隐藏时的样式副作用。
+- 🔒 **防泄漏安全**：使用 taintUniqueValue 标记敏感数据，防止其意外传递到客户端。
+- 🚀 **未来兼容安全**：优先使用 useState 而非 useMemo 来保证数据的持久性，适应 React 未来的优化变化。
 
 ---
 
-### [FormEngine - 适用于React的开源拖放式表单构建库](https://formengine.io/lightweight-react-json-schema-form-builder-library-for-mui/?utm_source=thisweekinreact&utm_medium=link&utm_campaign=mui&utm_content=lightweight&utm_term=nodeepreactknowledgerequired)
+### [FormEngine - 适用于 React 的开源拖放式表单构建库](https://formengine.io/lightweight-react-json-schema-form-builder-library-for-mui/?utm_source=thisweekinreact&utm_medium=link&utm_campaign=mui&utm_content=lightweight&utm_term=nodeepreactknowledgerequired)
 
 **原文标题**: [FormEngine - Open-Source Drag & Drop Form Builder Library for React](https://formengine.io/lightweight-react-json-schema-form-builder-library-for-mui/?utm_source=thisweekinreact&utm_medium=link&utm_campaign=mui&utm_content=lightweight&utm_term=nodeepreactknowledgerequired)
 
@@ -157,39 +157,39 @@ FormEngine Core 是一个免费开源的 React 表单库，提供核心渲染引
 
 ---
 
-### [提升退出动画效果的React技巧](https://barvian.me/react-exit-animations)
+### [提升退出动画效果的 React 技巧](https://barvian.me/react-exit-animations)
 
 **原文标题**: [A React trick to improve exit animations](https://barvian.me/react-exit-animations)
 
-本文介绍了一种利用React的Suspense特性来优化组件退出动画的方法，通过“冻结”组件在退出过程中的DOM更新，避免内容变化干扰动画效果。
+本文介绍了一种利用 React 的 Suspense 特性来优化组件退出动画的方法，通过“冻结”组件在退出过程中的 DOM 更新，避免内容变化干扰动画效果。
 
-- 🐛 **问题**：在React中，触发退出动画的更新常同时改变退出组件的内容，导致动画期间内容闪烁，分散注意力。
-- 🔍 **探索**：尝试过保存状态或延迟更新等方法，但要么太繁琐，要么处理动画中断时较复杂；理想方案是让React停止提交退出组件的DOM更改。
-- 💡 **解决方案**：利用Suspense在挂起时暂停DOM提交的特性，创建`Freeze`组件包裹退出内容，并移除其默认的`display: none`样式，实现“冻结”效果。
-- ⚙️ **实现**：通过自定义`ElementsObserver`捕获DOM节点，在`useInsertionEffect`中恢复显示，配合无限Promise触发Suspense挂起。
-- 🚀 **应用**：与React Aria Components等库结合良好，能冻结包括交互状态在内的所有更新，提升动画体验。
-- ⚠️ **注意**：当前方案属于技巧性实现，可能随React版本更新失效，但已在React 18和19.2测试通过；未来或有望被React官方Activity模式原生支持。
+- 🐛 **问题**：在 React 中，触发退出动画的更新常同时改变退出组件的内容，导致动画期间内容闪烁，分散注意力。
+- 🔍 **探索**：尝试过保存状态或延迟更新等方法，但要么太繁琐，要么处理动画中断时较复杂；理想方案是让 React 停止提交退出组件的 DOM 更改。
+- 💡 **解决方案**：利用 Suspense 在挂起时暂停 DOM 提交的特性，创建`Freeze`组件包裹退出内容，并移除其默认的`display: none`样式，实现“冻结”效果。
+- ⚙️ **实现**：通过自定义`ElementsObserver`捕获 DOM 节点，在`useInsertionEffect`中恢复显示，配合无限 Promise 触发 Suspense 挂起。
+- 🚀 **应用**：与 React Aria Components 等库结合良好，能冻结包括交互状态在内的所有更新，提升动画体验。
+- ⚠️ **注意**：当前方案属于技巧性实现，可能随 React 版本更新失效，但已在 React 18 和 19.2 测试通过；未来或有望被 React 官方 Activity 模式原生支持。
 
 ---
 
-### [近期React与Node.js中的CVE漏洞由AI发现 | winfunc](https://winfunc.com/blog/recent-0-days-in-nodejs-and-react-were-found-by-an-ai)
+### [近期 React 与 Node.js 中的 CVE 漏洞由 AI 发现 | winfunc](https://winfunc.com/blog/recent-0-days-in-nodejs-and-react-were-found-by-an-ai)
 
 **原文标题**: [The Recent CVEs in React and Node.js Were Found by an AI | winfunc](https://winfunc.com/blog/recent-0-days-in-nodejs-and-react-were-found-by-an-ai)
 
-2025年12月至2026年1月期间，一个AI系统自主发现了Node.js和React中的零日漏洞，并完成了从发现、验证到负责任披露的全过程。这标志着AI在安全研究领域实现了质的飞跃，能够理解代码语义、进行威胁建模并生成有效攻击载荷，超越了传统静态扫描工具的局限性。
+2025 年 12 月至 2026 年 1 月期间，一个 AI 系统自主发现了 Node.js 和 React 中的零日漏洞，并完成了从发现、验证到负责任披露的全过程。这标志着 AI 在安全研究领域实现了质的飞跃，能够理解代码语义、进行威胁建模并生成有效攻击载荷，超越了传统静态扫描工具的局限性。
 
-- 🔍 **AI自主发现关键漏洞**：AI系统在无人工干预下，发现了Node.js权限模型绕过和React服务器组件拒绝服务两个零日漏洞，并完成了漏洞验证与报告。
-- 🚨 **Node.js权限模型绕过（CVE-2026-21636）**：当启用权限模型但未允许网络访问时，攻击者可通过Unix域套接字连接本地特权服务（如Docker守护进程、数据库），完全绕过沙箱限制。
-- ⚡ **React服务器组件DoS（CVE-2026-23864）**：恶意客户端可向服务器组件端点发送特制载荷，触发解码器中的无限循环或内存耗尽，导致服务器崩溃，影响Next.js等多个流行框架。
-- 🧠 **超越传统扫描的AI方法**：系统通过构建代码语义图、自动威胁建模、生成对抗性载荷和实际漏洞利用，实现了类似人类安全研究员的深度分析能力，而非简单的模式匹配。
-- 🤖 **克服“AI幻觉”实现精准发现**：通过精心设计的系统架构（包括代码索引、威胁建模、攻击模拟和验证环节），将LLM的“创造性”转化为实际漏洞发现，同时保持极低的误报率。
+- 🔍 **AI 自主发现关键漏洞**：AI 系统在无人工干预下，发现了 Node.js 权限模型绕过和 React 服务器组件拒绝服务两个零日漏洞，并完成了漏洞验证与报告。
+- 🚨 **Node.js 权限模型绕过（CVE-2026-21636）**：当启用权限模型但未允许网络访问时，攻击者可通过 Unix 域套接字连接本地特权服务（如 Docker 守护进程、数据库），完全绕过沙箱限制。
+- ⚡ **React 服务器组件 DoS（CVE-2026-23864）**：恶意客户端可向服务器组件端点发送特制载荷，触发解码器中的无限循环或内存耗尽，导致服务器崩溃，影响 Next.js 等多个流行框架。
+- 🧠 **超越传统扫描的 AI 方法**：系统通过构建代码语义图、自动威胁建模、生成对抗性载荷和实际漏洞利用，实现了类似人类安全研究员的深度分析能力，而非简单的模式匹配。
+- 🤖 **克服“AI 幻觉”实现精准发现**：通过精心设计的系统架构（包括代码索引、威胁建模、攻击模拟和验证环节），将 LLM 的“创造性”转化为实际漏洞发现，同时保持极低的误报率。
 - 🔧 **全自动化技术架构**：系统采用语言无关的代码图分析、蒙特卡洛树自优化等先进技术，能够自动追踪代码路径、生成攻击载荷并在沙箱中验证漏洞可利用性。
-- 🤝 **负责任的漏洞披露**：所有发现均遵循负责任的披露流程，及时报告给Node.js和React安全团队，相关漏洞已获得官方修复和致谢。
-- 🌐 **广泛的应用证明**：同一系统还在Supabase、Bun、Gumroad等不同技术栈中发现了SQL注入、YAML解析DoS和授权绕过等多种类型漏洞，展示了其跨领域适应性。
+- 🤝 **负责任的漏洞披露**：所有发现均遵循负责任的披露流程，及时报告给 Node.js 和 React 安全团队，相关漏洞已获得官方修复和致谢。
+- 🌐 **广泛的应用证明**：同一系统还在 Supabase、Bun、Gumroad 等不同技术栈中发现了 SQL 注入、YAML 解析 DoS 和授权绕过等多种类型漏洞，展示了其跨领域适应性。
 
 ---
 
-### [React编译器与为何类对象可能不利于记忆化](https://anita-app.com/blog/articles/react-compiler-and-why-class-objects-work-against-memoization.html)
+### [React 编译器与为何类对象可能不利于记忆化](https://anita-app.com/blog/articles/react-compiler-and-why-class-objects-work-against-memoization.html)
 
 **原文标题**: [React Compiler and why class objects can work against memoization](https://anita-app.com/blog/articles/react-compiler-and-why-class-objects-work-against-memoization.html)
 
@@ -222,19 +222,19 @@ React Compiler 通过静态分析和启发式方法自动优化组件和值的�
 
 ---
 
-### [企业级Next.js应用](https://techhub.iodigital.com/articles/nextjs-at-enterprise-level)
+### [企业级 Next.js 应用](https://techhub.iodigital.com/articles/nextjs-at-enterprise-level)
 
 **原文标题**: [Next.js at Enterprise Level](https://techhub.iodigital.com/articles/nextjs-at-enterprise-level)
 
-本文探讨了如何将Next.js应用从基础配置扩展至企业级规模，涵盖性能优化、架构设计及关键技术策略，以确保在高流量和复杂场景下的高效稳定运行。
+本文探讨了如何将 Next.js 应用从基础配置扩展至企业级规模，涵盖性能优化、架构设计及关键技术策略，以确保在高流量和复杂场景下的高效稳定运行。
 
-- 🎯 **明确服务目标**：定义SLA（服务等级协议）和SLO（服务等级目标），确保系统性能符合业务与行业标准，并通过监控与负载测试持续验证。
-- 🔄 **理解渲染生命周期**：掌握Next.js的SSR/ISR动态请求流程与SSG静态生成机制，根据场景选择最优渲染策略以提升效率。
-- ⚡ **优先实施高效优化**：通过CDN缓存、垂直扩展、代码最佳实践（如PPR、DOM优化）及框架新特性（React 19+、Next.js 16+）快速提升性能。
-- 🔗 **水平扩展与负载均衡**：部署多实例并通过负载均衡器分配流量，同时解决无状态应用、分布式缓存（如Redis集群）等架构挑战。
-- 🏗️ **架构进阶策略**：采用领域驱动设计划分微前端、结合K8s实现自动扩缩容，并通过API网关集中处理认证等跨领域逻辑。
-- 📁 **优化文件上传**：使用Blob存储（如S3）和签名URL实现直接上传，避免本地存储带来的持久性、扩展性与带宽压力问题。
-- 🚀 **事件驱动与协议升级**：通过事件驱动架构（如Kafka）解耦高吞吐量任务，并采用HTTP/2与gRPC优化通信协议，提升系统吞吐量与响应速度。
+- 🎯 **明确服务目标**：定义 SLA（服务等级协议）和 SLO（服务等级目标），确保系统性能符合业务与行业标准，并通过监控与负载测试持续验证。
+- 🔄 **理解渲染生命周期**：掌握 Next.js 的 SSR/ISR 动态请求流程与 SSG 静态生成机制，根据场景选择最优渲染策略以提升效率。
+- ⚡ **优先实施高效优化**：通过 CDN 缓存、垂直扩展、代码最佳实践（如 PPR、DOM 优化）及框架新特性（React 19+、Next.js 16+）快速提升性能。
+- 🔗 **水平扩展与负载均衡**：部署多实例并通过负载均衡器分配流量，同时解决无状态应用、分布式缓存（如 Redis 集群）等架构挑战。
+- 🏗️ **架构进阶策略**：采用领域驱动设计划分微前端、结合 K8s 实现自动扩缩容，并通过 API 网关集中处理认证等跨领域逻辑。
+- 📁 **优化文件上传**：使用 Blob 存储（如 S3）和签名 URL 实现直接上传，避免本地存储带来的持久性、扩展性与带宽压力问题。
+- 🚀 **事件驱动与协议升级**：通过事件驱动架构（如 Kafka）解耦高吞吐量任务，并采用 HTTP/2 与 gRPC 优化通信协议，提升系统吞吐量与响应速度。
 
 ---
 
@@ -252,8 +252,8 @@ React Compiler 通过静态分析和启发式方法自动优化组件和值的�
 
 作者分享了一套获取高质量建议的系统性方法，强调主动、有准备地向经验丰富者寻求指导是一门技能。
 
-- 🎯 **明确目标并广泛接触**：每半年花两周时间，针对特定主题向四位在该领域有成功经验的人士寻求建议，通过熟人介绍或LinkedIn冷接触。
-- 👥 **选择“对”的人**：优先选择在优秀公司有5年以上经验、担任领导职务的人士，他们的长期实践和可能犯过的错误都能提供宝贵参考。
+- 🎯 **明确目标并广泛接触**：每半年花两周时间，针对特定主题向四位在该领域有成功经验的人士寻求建议，通过熟人介绍或 LinkedIn 冷接触。
+- 👥 **选择“对”的人**：优先选择在优秀公司有 5 年以上经验、担任领导职务的人士，他们的长期实践和可能犯过的错误都能提供宝贵参考。
 - 📝 **充分准备**：通话前准备一份一页纸摘要，清晰说明现状、团队情况和具体问题，这能节省时间、聚焦重点并展现诚意。
 - 🔍 **聚焦问题而非解决方案**：更应关注对方对问题的诊断，而非具体解决方案，因为问题往往具有共性，而解决方案需结合自身实际。
 - 🧠 **辨别智慧与运气**：评估建议者的成功有多少源于个人能力，多少源于环境运气，可通过直观感受判断其建议的普适价值。
@@ -267,14 +267,14 @@ React Compiler 通过静态分析和启发式方法自动优化组件和值的�
 
 本文介绍了人工智能在医疗领域的应用现状与前景，重点探讨了其在疾病诊断、药物研发和个性化治疗方面的突破性进展，同时简要提及了相关的伦理挑战。
 
-- 🤖 AI辅助诊断系统能通过分析医学影像快速识别病灶，提升早期癌症等疾病的检出率
+- 🤖 AI 辅助诊断系统能通过分析医学影像快速识别病灶，提升早期癌症等疾病的检出率
 - 🔬 机器学习加速了新药研发流程，大幅缩短化合物筛选与临床试验设计周期
-- 🧬 基于患者基因组数据的AI模型可为慢性病患者提供个性化治疗方案
-- ⚖️ 医疗AI面临数据隐私、算法透明度及责任认定等伦理监管问题
+- 🧬 基于患者基因组数据的 AI 模型可为慢性病患者提供个性化治疗方案
+- ⚖️ 医疗 AI 面临数据隐私、算法透明度及责任认定等伦理监管问题
 
 ---
 
-### [GitHub - HorusGoul/eslint-plugin-react-render-types: 通过JSDoc将Flow的渲染类型引入TypeScript的ESLint插件。在代码检查时强制执行组件组合约束，例如`@renders {MenuItem}`。](https://github.com/HorusGoul/eslint-plugin-react-render-types)
+### [GitHub - HorusGoul/eslint-plugin-react-render-types: 通过 JSDoc 将 Flow 的渲染类型引入 TypeScript 的 ESLint 插件。在代码检查时强制执行组件组合约束，例如`@renders {MenuItem}`。](https://github.com/HorusGoul/eslint-plugin-react-render-types)
 
 **原文标题**: [GitHub - HorusGoul/eslint-plugin-react-render-types: ESLint plugin that brings Flow's Render Types to TypeScript via JSDoc. Enforce component composition constraints like `@renders {MenuItem}` at lint time.](https://github.com/HorusGoul/eslint-plugin-react-render-types)
 
@@ -296,16 +296,16 @@ React Compiler 通过静态分析和启发式方法自动优化组件和值的�
 
 **原文标题**: [GitHub - blazejkustra/react-compiler-marker: Universal IDE extension that shows which React components are optimized by the React Compiler ✨](https://github.com/blazejkustra/react-compiler-marker)
 
-这是一个通用的IDE扩展，用于可视化显示React组件是否被React编译器优化，支持VS Code、WebStorm/IntelliJ和Neovim等多种编辑器。
+这是一个通用的 IDE 扩展，用于可视化显示 React 组件是否被 React 编译器优化，支持 VS Code、WebStorm/IntelliJ 和 Neovim 等多种编辑器。
 
-- ✨ 在React组件旁显示表情符号标记，直观区分已优化和未优化的组件
+- ✨ 在 React 组件旁显示表情符号标记，直观区分已优化和未优化的组件
 - 🛠️ 提供悬停提示，展示优化详情和错误信息，并可预览编译后的代码
-- 📊 支持生成JSON报告，获取整个项目的编译快照
-- 🔌 可配置Babel插件路径，适应不同的项目设置
-- 🌐 支持多种IDE：VS Code/Cursor通过市场安装，WebStorm/IntelliJ需手动构建，Neovim通过插件管理器安装
-- 📁 项目采用monorepo结构，包含共享的LSP服务器和各编辑器的独立客户端
+- 📊 支持生成 JSON 报告，获取整个项目的编译快照
+- 🔌 可配置 Babel 插件路径，适应不同的项目设置
+- 🌐 支持多种 IDE：VS Code/Cursor通过市场安装，WebStorm/IntelliJ需手动构建，Neovim通过插件管理器安装
+- 📁 项目采用 monorepo 结构，包含共享的 LSP 服务器和各编辑器的独立客户端
 - ⚙️ 提供激活/停用扩展、检查当前文件、预览编译输出等命令
-- 📄 开源项目，采用MIT许可证，欢迎贡献代码
+- 📄 开源项目，采用 MIT 许可证，欢迎贡献代码
 
 ---
 
@@ -331,23 +331,23 @@ React2AWS 是一个开源工具，允许开发者使用类似 React 组件的 JS
 
 这是一个关于 Ink 库 v6.7.0 版本发布的 GitHub 页面内容，其中包含版本更新日志、错误信息以及用户互动反应。
 
-- 🚀 **版本发布**：v6.7.0 版本于 2024年2月10日发布，包含16次提交至主分支。
+- 🚀 **版本发布**：v6.7.0 版本于 2024 年 2 月 10 日发布，包含 16 次提交至主分支。
 - 🔧 **功能改进**：新增对 React 并发渲染（可选）和同步更新的支持，修复了许多现代终端中的闪烁问题。
 - 🖥️ **终端支持**：添加了 Kitty 键盘协议支持（可选）和 IME 光标定位 API，改进了管道进程的终端尺寸检测。
 - 🐛 **问题修复**：修复了初始渲染时的全屏尾随换行符、使用多个 `useInput` 钩子时的 `MaxListenersExceededWarning` 警告、卸载时未刷新待渲染内容及等待标准输出排空的问题，以及 macOS 上 Option+Return（软回车）的处理问题。
 - ❌ **加载错误**：页面多次出现加载错误提示，要求重新加载页面。
-- 👥 **用户互动**：发布获得了4次“欢呼”表情和5次“火箭”表情的反应。
+- 👥 **用户互动**：发布获得了 4 次“欢呼”表情和 5 次“火箭”表情的反应。
 
 ---
 
-### [2026年2月 - Radix与Base UI组件库 - shadcn/ui](https://ui.shadcn.com/docs/changelog/2026-02-blocks)
+### [2026 年 2 月 - Radix 与 Base UI 组件库 - shadcn/ui](https://ui.shadcn.com/docs/changelog/2026-02-blocks)
 
 **原文标题**: [February 2026 - Blocks for Radix and Base UI - shadcn/ui](https://ui.shadcn.com/docs/changelog/2026-02-blocks)
 
 本文介绍了 shadcn/ui 项目的最新更新，重点是其组件库现在同时支持 Radix 和 Base UI 两种底层库，并提供了完整的区块集合。
 
 - 🧩 **所有区块支持双库**：包括登录、注册、侧边栏和仪表盘在内的所有区块，现在都提供了 Radix 和 Base UI 两种变体。
-- ⚙️ **一致的CLI工作流**：运行 `npx shadcn add` 命令时，CLI 会根据项目配置自动拉取正确的区块变体。
+- ⚙️ **一致的 CLI 工作流**：运行 `npx shadcn add` 命令时，CLI 会根据项目配置自动拉取正确的区块变体。
 - 🔧 **自动配置**：如果已使用 `npx shadcn create` 初始化项目，区块将自动使用您选择的库，无需额外配置。
 - 🚀 **部署支持**：项目可轻松部署在 Vercel 上，并已被 OpenAI、Sonos、Adobe 等公司采用。
 
@@ -395,11 +395,11 @@ streamdown 2.2.0 版本发布，包含多项功能增强与问题修复，提升
 
 ---
 
-### [三个React Three Fiber错误，我绝不会再犯 - YouTube](https://www.youtube.com/watch?v=GlaFgKgtJM4)
+### [三个 React Three Fiber 错误，我绝不会再犯 - YouTube](https://www.youtube.com/watch?v=GlaFgKgtJM4)
 
 **原文标题**: [3 React Three Fiber Mistakes I'll Never Make Again - YouTube](https://www.youtube.com/watch?v=GlaFgKgtJM4)
 
-该文本为YouTube网站底部的通用信息与链接列表，概述了平台的功能、政策与公司信息。
+该文本为 YouTube 网站底部的通用信息与链接列表，概述了平台的功能、政策与公司信息。
 
 - 🏢 关于公司及创作者信息
 - 📰 新闻与媒体相关
@@ -412,20 +412,20 @@ streamdown 2.2.0 版本发布，包含多项功能增强与问题修复，提升
 
 ---
 
-### [TMiR 2026-01：哎呀，更多CVE漏洞。AI具备React“技能”，Astro退出，Tailwind陷入困境](https://www.reactiflux.com/transcripts/tmir-2026-01)
+### [TMiR 2026-01：哎呀，更多 CVE 漏洞。AI 具备 React“技能”，Astro 退出，Tailwind 陷入困境](https://www.reactiflux.com/transcripts/tmir-2026-01)
 
 **原文标题**: [TMiR 2026-01: Oops more CVEs. AI has React "skills", Astro exits and Tailwind struggles](https://www.reactiflux.com/transcripts/tmir-2026-01)
 
-本期节目回顾了2026年1月React生态的主要动态，涵盖安全更新、新工具发布、AI集成进展以及行业经济变化等多个方面。
+本期节目回顾了 2026 年 1 月 React 生态的主要动态，涵盖安全更新、新工具发布、AI 集成进展以及行业经济变化等多个方面。
 
-- 🔐 **安全更新频发**：React、Next.js、React Router等多个核心库发布安全补丁，修复了包括拒绝服务（DoS）和跨站脚本（XSS）在内的漏洞，敦促开发者及时更新版本。
-- 🛠️ **工具链革新**：Rolldown 1.0 RC和Yarn 6预览版发布，继续推动Rust构建工具的发展；Vite Plus作为付费统一工具链亮相；CSS Grid Masonry布局和Temporal API取得重要进展。
-- 🤖 **AI技能融入开发**：Anthropic的Claude Skills开放标准引发关注，Vercel、Expo、Remotion等项目发布了针对React和React Native的AI技能插件，旨在提升代码生成质量与效率。
-- 📉 **开源项目经济波动**：Tailwind CSS因AI冲击导致收入大幅下滑并裁员；与之相对，Astro被Cloudflare收购。这反映了当前开源商业模式面临的挑战与不确定性。
-- ⚛️ **React核心演进**：团队持续开发View Transitions、Fragment Refs等新特性；Jordan Eldridge提交了新的`useStore`并发存储API实现提案；同时，团队开始尝试使用Claude辅助改进官方文档。
-- 📱 **React Native生态更新**：React Navigation 8.0 alpha发布，默认采用原生底部标签；React Native Windows/macOS 0.81开始默认支持新架构（Fabric）；Callstack发布了用于Brownfield应用状态管理的Brownie和用于原生小部件的Voltra等新库。
-- ⚡ **技术深度文章**：社区产出了大量优质内容，包括RSC数据获取模式、React Compiler适配、URL参数性能优化、使用React Transitions优化文本编辑器，乃至“如何窃取React组件”和“一个月构建JS运行时”等深度技术探讨。
-- 🎤 **会议预告**：未来几个月全球将举办多场技术会议，包括CityJS（新德里、伦敦）、React Paris、React Native Connection（巴黎）、React Miami等。
+- 🔐 **安全更新频发**：React、Next.js、React Router 等多个核心库发布安全补丁，修复了包括拒绝服务（DoS）和跨站脚本（XSS）在内的漏洞，敦促开发者及时更新版本。
+- 🛠️ **工具链革新**：Rolldown 1.0 RC 和 Yarn 6 预览版发布，继续推动 Rust 构建工具的发展；Vite Plus 作为付费统一工具链亮相；CSS Grid Masonry 布局和 Temporal API 取得重要进展。
+- 🤖 **AI 技能融入开发**：Anthropic 的 Claude Skills 开放标准引发关注，Vercel、Expo、Remotion 等项目发布了针对 React 和 React Native 的 AI 技能插件，旨在提升代码生成质量与效率。
+- 📉 **开源项目经济波动**：Tailwind CSS 因 AI 冲击导致收入大幅下滑并裁员；与之相对，Astro 被 Cloudflare 收购。这反映了当前开源商业模式面临的挑战与不确定性。
+- ⚛️ **React 核心演进**：团队持续开发 View Transitions、Fragment Refs 等新特性；Jordan Eldridge 提交了新的`useStore`并发存储 API 实现提案；同时，团队开始尝试使用 Claude 辅助改进官方文档。
+- 📱 **React Native 生态更新**：React Navigation 8.0 alpha 发布，默认采用原生底部标签；React Native Windows/macOS 0.81 开始默认支持新架构（Fabric）；Callstack 发布了用于 Brownfield 应用状态管理的 Brownie 和用于原生小部件的 Voltra 等新库。
+- ⚡ **技术深度文章**：社区产出了大量优质内容，包括 RSC 数据获取模式、React Compiler 适配、URL 参数性能优化、使用 React Transitions 优化文本编辑器，乃至“如何窃取 React 组件”和“一个月构建 JS 运行时”等深度技术探讨。
+- 🎤 **会议预告**：未来几个月全球将举办多场技术会议，包括 CityJS（新德里、伦敦）、React Paris、React Native Connection（巴黎）、React Miami 等。
 
 ---
 
@@ -433,15 +433,15 @@ streamdown 2.2.0 版本发布，包含多项功能增强与问题修复，提升
 
 **原文标题**: [No title found](https://x.com/TkDodo/status/1661337628875137027)
 
-该页面提示用户浏览器中JavaScript功能未启用或存在兼容性问题，导致无法正常使用X平台（原Twitter）的各项功能。
+该页面提示用户浏览器中 JavaScript 功能未启用或存在兼容性问题，导致无法正常使用 X 平台（原 Twitter）的各项功能。
 
-- 🚫 JavaScript未启用：检测到当前浏览器禁用了JavaScript，这是导致页面功能受限的主要原因
-- 🌐 浏览器兼容建议：推荐用户启用JavaScript或切换至官方支持的浏览器版本
+- 🚫 JavaScript 未启用：检测到当前浏览器禁用了 JavaScript，这是导致页面功能受限的主要原因
+- 🌐 浏览器兼容建议：推荐用户启用 JavaScript 或切换至官方支持的浏览器版本
 - 📖 帮助中心指引：平台提供帮助中心页面，可查询具体支持的浏览器列表和技术解决方案
 - 🔧 扩展程序冲突：部分隐私保护类浏览器扩展可能与网站功能产生冲突，建议临时禁用后重试
 - ⚠️ 错误恢复机制：页面包含错误提示和“重试”功能按钮，引导用户自主尝试恢复访问
-- 📄 政策信息公示：页脚区域完整展示服务条款、隐私政策、Cookie政策等法律文件链接
-- ©️ 版权信息标注：明确标注2026年X公司版权所有，体现平台品牌升级后的法律主体信息
+- 📄 政策信息公示：页脚区域完整展示服务条款、隐私政策、Cookie 政策等法律文件链接
+- ©️ 版权信息标注：明确标注 2026 年 X 公司版权所有，体现平台品牌升级后的法律主体信息
 
 ---
 
@@ -449,10 +449,10 @@ streamdown 2.2.0 版本发布，包含多项功能增强与问题修复，提升
 
 **原文标题**: [No title found](https://x.com/TkDodo)
 
-该页面提示JavaScript功能未启用，导致无法正常使用X平台，并提供了相应的解决建议与支持信息。
+该页面提示 JavaScript 功能未启用，导致无法正常使用 X 平台，并提供了相应的解决建议与支持信息。
 
-- 🚫 检测到浏览器中JavaScript被禁用，影响X平台正常使用
-- 🔧 建议启用JavaScript或切换至受支持的浏览器
+- 🚫 检测到浏览器中 JavaScript 被禁用，影响 X 平台正常使用
+- 🔧 建议启用 JavaScript 或切换至受支持的浏览器
 - 📖 可在帮助中心查看受支持的浏览器列表
 - 🛡️ 部分隐私扩展可能导致问题，建议暂时禁用后重试
 - 🔄 页面提供“重试”功能以重新加载内容
@@ -460,26 +460,26 @@ streamdown 2.2.0 版本发布，包含多项功能增强与问题修复，提升
 
 ---
 
-### [构建高性能React应用 | 前端大师](https://frontendmasters.com/courses/react-performance-v2/?utm_source=reactweekly&utm_medium=email&utm_campaign=reactperf)
+### [构建高性能 React 应用 | 前端大师](https://frontendmasters.com/courses/react-performance-v2/?utm_source=reactweekly&utm_medium=email&utm_campaign=reactperf)
 
 **原文标题**: [Build High-Performance React Apps | Frontend Masters](https://frontendmasters.com/courses/react-performance-v2/?utm_source=reactweekly&utm_medium=email&utm_campaign=reactperf)
 
-本课程专注于教授如何构建高性能的React应用，涵盖React 19的性能策略、传统优化技巧及性能诊断方法，通过实际案例和练习帮助开发者识别并解决性能瓶颈。
+本课程专注于教授如何构建高性能的 React 应用，涵盖 React 19 的性能策略、传统优化技巧及性能诊断方法，通过实际案例和练习帮助开发者识别并解决性能瓶颈。
 
-- 🚀 课程重点介绍React 19的性能优化策略，包括水合、Suspense、资源加载和服务器操作
+- 🚀 课程重点介绍 React 19 的性能优化策略，包括水合、Suspense、资源加载和服务器操作
 - ⚡ 强化记忆化、虚拟化和代码分割等经时间验证的最佳实践
 - 🔍 教授快速诊断性能瓶颈和昂贵重渲染的技巧
 - 🛠️ 包含实际实验室练习，灵感来源于真实场景，帮助识别和解决性能问题
 - 📚 课程结构包含从高级摘要到详细代码示例的笔记，并提供额外附录材料
-- 🧩 深入讲解React Fiber架构、渲染阶段和车道优先级管理
-- 🧠 涵盖状态管理优化、记忆化（useMemo、useCallback、React.memo）和过渡API
-- ⏱️ 介绍乐观UI更新和延迟值处理以提升用户体验
+- 🧩 深入讲解 React Fiber 架构、渲染阶段和车道优先级管理
+- 🧠 涵盖状态管理优化、记忆化（useMemo、useCallback、React.memo）和过渡 API
+- ⏱️ 介绍乐观 UI 更新和延迟值处理以提升用户体验
 - 💬 包含问答环节，解答性能优化实际问题
 - 🎯 最后总结关键概念，强调关注真实瓶颈的实用优化方法
 
 ---
 
-### [React Native 0.84 - 默认启用Hermes V1 · React Native](https://reactnative.dev/blog/2026/02/11/react-native-0.84)
+### [React Native 0.84 - 默认启用 Hermes V1 · React Native](https://reactnative.dev/blog/2026/02/11/react-native-0.84)
 
 **原文标题**: [React Native 0.84 - Hermes V1 by Default · React Native](https://reactnative.dev/blog/2026/02/11/react-native-0.84)
 
@@ -521,17 +521,17 @@ Radon 是一款专为 React Native 和 Expo 开发者设计的 IDE 扩展，可�
 
 ---
 
-### [[实验性] - 通过intergalacticspacehighway支持Fabric的React Portal · Pull Request #55463 · facebook/react-native · GitHub](https://github.com/facebook/react-native/pull/55463)
+### [[实验性] - 通过 intergalacticspacehighway 支持 Fabric 的 React Portal · Pull Request #55463 · facebook/react-native · GitHub](https://github.com/facebook/react-native/pull/55463)
 
 **原文标题**: [[experimental] - Support React Portal with Fabric by intergalacticspacehighway · Pull Request #55463 · facebook/react-native · GitHub](https://github.com/facebook/react-native/pull/55463)
 
-该拉取请求旨在为React Native的Fabric渲染器添加对React Portal的实验性支持，通过修改底层渲染逻辑来存储和提交Portal子节点，并已包含测试用例和示例代码，但核心修改涉及React仓库的渲染器文件，因此无法直接合并到React Native主分支，同时社区对是否应将Portal功能纳入核心存在不同意见。
+该拉取请求旨在为 React Native 的 Fabric 渲染器添加对 React Portal 的实验性支持，通过修改底层渲染逻辑来存储和提交 Portal 子节点，并已包含测试用例和示例代码，但核心修改涉及 React 仓库的渲染器文件，因此无法直接合并到 React Native 主分支，同时社区对是否应将 Portal 功能纳入核心存在不同意见。
 
-- 🚀 实验性支持React Portal在Fabric渲染器中的实现，通过`mountPortalChildren`和`completeSurface`调用处理Portal子节点的存储与提交。
-- 🧪 已添加自动化测试（`Portal-itest.js`）和示例代码（`PortalExample.js`），验证Portal在不同目标间的动态切换功能。
-- ⚠️ 修改涉及React渲染器文件，需先上游合并至React仓库，当前无法直接并入React Native主分支。
-- 💬 社区讨论中，部分成员认为Portal对组件库（如模态框、适配组件）开发至关重要，应纳入核心功能；另一方则建议保持“精益核心”，通过第三方库（如`react-native-teleport`）或文档指引实现。
-- 🔧 实际用例包括Expo Router的模态框API和跨平台组件库（如Tamagui）的覆盖层控制，强调Portal在保持React上下文和声明式UI方面的优势。
+- 🚀 实验性支持 React Portal 在 Fabric 渲染器中的实现，通过`mountPortalChildren`和`completeSurface`调用处理 Portal 子节点的存储与提交。
+- 🧪 已添加自动化测试（`Portal-itest.js`）和示例代码（`PortalExample.js`），验证 Portal 在不同目标间的动态切换功能。
+- ⚠️ 修改涉及 React 渲染器文件，需先上游合并至 React 仓库，当前无法直接并入 React Native 主分支。
+- 💬 社区讨论中，部分成员认为 Portal 对组件库（如模态框、适配组件）开发至关重要，应纳入核心功能；另一方则建议保持“精益核心”，通过第三方库（如`react-native-teleport`）或文档指引实现。
+- 🔧 实际用例包括 Expo Router 的模态框 API 和跨平台组件库（如 Tamagui）的覆盖层控制，强调 Portal 在保持 React 上下文和声明式 UI 方面的优势。
 
 ---
 
@@ -539,10 +539,10 @@ Radon 是一款专为 React Native 和 Expo 开发者设计的 IDE 扩展，可�
 
 **原文标题**: [No title found](https://x.com/wcandillon/status/2020814389142605857)
 
-该页面提示JavaScript功能未启用，导致无法正常使用X平台，并提供了相应的解决建议与支持信息。
+该页面提示 JavaScript 功能未启用，导致无法正常使用 X 平台，并提供了相应的解决建议与支持信息。
 
-- 🚫 检测到浏览器中JavaScript被禁用，影响X平台正常使用
-- 🔧 建议启用JavaScript或切换至受支持的浏览器
+- 🚫 检测到浏览器中 JavaScript 被禁用，影响 X 平台正常使用
+- 🔧 建议启用 JavaScript 或切换至受支持的浏览器
 - 📖 可在帮助中心查看受支持的浏览器列表
 - 🛡️ 部分隐私扩展可能导致问题，建议暂时禁用后重试
 - 🔄 页面提供“重试”功能以重新加载内容
@@ -556,7 +556,7 @@ Radon 是一款专为 React Native 和 Expo 开发者设计的 IDE 扩展，可�
 
 App.js Conf 是专注于 React Native 和 Expo 的最大型会议，将于 2026 年 5 月 27 日至 29 日在波兰克拉科夫举行。会议提供早鸟票优惠，并包含多个深度工作坊，涵盖原生模块开发、动画交互、性能优化及跨平台开发等主题。活动由 Software Mansion 组织，社区驱动，旨在汇聚开发者、贡献者和行业专家，共同探讨和塑造移动开发的未来。
 
-- 🎫 **早鸟票开放**：使用代码 “early30” 可享 30% 折扣。
+- 🎫 **早鸟票开放**：使用代码“early30”可享 30% 折扣。
 - 📅 **会议时间与地点**：2026 年 5 月 27 日至 29 日，在波兰克拉科夫举行。
 - 🎤 **招募演讲者**：演讲提案提交截止日期为 2 月 28 日。
 - 🛠️ **深度工作坊**：
@@ -576,41 +576,41 @@ App.js Conf 是专注于 React Native 和 Expo 的最大型会议，将于 2026 
 
 **原文标题**: [Building Rozenite: The injection | Szymon Chmal](https://www.chmal.it/blog/building-rozenite-the-injection/)
 
-本文介绍了如何通过拦截和修改React Native调试器的前端资源请求，实现向调试器界面注入自定义面板的方法。作者通过分析调试器前端的工作原理，发现其本质是一个本地服务器提供的静态网页，从而设计了一套绕过默认中间件、重定向请求并注入自定义代码的方案。
+本文介绍了如何通过拦截和修改 React Native 调试器的前端资源请求，实现向调试器界面注入自定义面板的方法。作者通过分析调试器前端的工作原理，发现其本质是一个本地服务器提供的静态网页，从而设计了一套绕过默认中间件、重定向请求并注入自定义代码的方案。
 
-- 🔍 **发现调试器前端本质**：React Native调试器前端是一个由本地服务器提供的静态网页，可通过拦截请求进行修改。
-- 🏃 **解决中间件竞争问题**：通过猴子补丁修改CLI函数，将调试器请求重定向到自定义路径，从而绕过默认中间件。
-- 🛠️ **拦截并重写请求**：在Metro配置中增强中间件，监听自定义路径并重写请求，实现对HTML入口文件的拦截。
-- 💉 **注入自定义代码**：在HTML中插入带有唯一nonce的脚本标签，以绕过内容安全策略，确保自定义脚本能够执行。
-- 🧩 **运行时共享模块**：自定义脚本作为模块运行，可直接导入调试器的内部UI和SDK实例，实现无缝集成。
+- 🔍 **发现调试器前端本质**：React Native 调试器前端是一个由本地服务器提供的静态网页，可通过拦截请求进行修改。
+- 🏃 **解决中间件竞争问题**：通过猴子补丁修改 CLI 函数，将调试器请求重定向到自定义路径，从而绕过默认中间件。
+- 🛠️ **拦截并重写请求**：在 Metro 配置中增强中间件，监听自定义路径并重写请求，实现对 HTML 入口文件的拦截。
+- 💉 **注入自定义代码**：在 HTML 中插入带有唯一 nonce 的脚本标签，以绕过内容安全策略，确保自定义脚本能够执行。
+- 🧩 **运行时共享模块**：自定义脚本作为模块运行，可直接导入调试器的内部 UI 和 SDK 实例，实现无缝集成。
 - ⚙️ **优雅的黑客方案**：该方法虽然依赖内部路径，但通过尊重宿主架构实现了稳定扩展，即使在新版调试器中仍能正常工作。
 
 ---
 
-### [《卫报》工程博客 - 更快、更便宜、更混乱：我们转向自托管GitHub Actions的经验教训](https://theguardian.engineering/blog/faster-cheaper-messier-lessons-from-switch-to-self-hosted-github-actions)
+### [《卫报》工程博客 - 更快、更便宜、更混乱：我们转向自托管 GitHub Actions 的经验教训](https://theguardian.engineering/blog/faster-cheaper-messier-lessons-from-switch-to-self-hosted-github-actions)
 
 **原文标题**: [The Guardian Engineering Blog - Faster, cheaper, messier: lessons from our switch to self-hosted GitHub Actions](https://theguardian.engineering/blog/faster-cheaper-messier-lessons-from-switch-to-self-hosted-github-actions)
 
-《卫报》团队分享了从GitHub托管Runner切换至自托管Runner的经验，主要出于成本、速度和可控性考虑，最终在提升构建速度和控制力的同时降低了费用，但也增加了维护负担。
+《卫报》团队分享了从 GitHub 托管 Runner 切换至自托管 Runner 的经验，主要出于成本、速度和可控性考虑，最终在提升构建速度和控制力的同时降低了费用，但也增加了维护负担。
 
-- 💰 **成本驱动**：因iOS开发需使用高价macOS Runner，月费高昂，自托管后每月节省约400英镑。
-- ⚡ **速度提升**：自托管Runner使构建速度显著加快，单元测试提速50%，应用上传提速60%，平均任务运行时间缩短超120%。
-- 🛠️ **控制增强**：摆脱GitHub上游更新不可控问题，可自主升级macOS版本并直接调试机器，提升稳定性。
-- 🔧 **维护挑战**：需定期清理Xcode缓存、旧模拟器及磁盘空间，并确保物理硬件（如Mac Mini）的持续供电和远程管理。
-- 📊 **并发与可靠性**：配置4个并发Runner偶有短暂队列，但硬件依赖带来重启风险，需保障服务器环境稳定。
+- 💰 **成本驱动**：因 iOS 开发需使用高价 macOS Runner，月费高昂，自托管后每月节省约 400 英镑。
+- ⚡ **速度提升**：自托管 Runner 使构建速度显著加快，单元测试提速 50%，应用上传提速 60%，平均任务运行时间缩短超 120%。
+- 🛠️ **控制增强**：摆脱 GitHub 上游更新不可控问题，可自主升级 macOS 版本并直接调试机器，提升稳定性。
+- 🔧 **维护挑战**：需定期清理 Xcode 缓存、旧模拟器及磁盘空间，并确保物理硬件（如 Mac Mini）的持续供电和远程管理。
+- 📊 **并发与可靠性**：配置 4 个并发 Runner 偶有短暂队列，但硬件依赖带来重启风险，需保障服务器环境稳定。
 - 🧹 **经验总结**：建议使用单台高性能机器集中管理，提前规划清理策略，并确保不间断电源和远程访问支持。
 
 ---
 
-### [如何利用Expo现代化移动零售应用](https://expo.dev/blog/how-to-modernize-mobile-retail-apps-with-expo)
+### [如何利用 Expo 现代化移动零售应用](https://expo.dev/blog/how-to-modernize-mobile-retail-apps-with-expo)
 
 **原文标题**: [How to modernize mobile retail apps with Expo](https://expo.dev/blog/how-to-modernize-mobile-retail-apps-with-expo)
 
-Expo是一个为React Native开发者提供工具和服务的平台，旨在简化移动应用的开发、构建和部署流程。
+Expo 是一个为 React Native 开发者提供工具和服务的平台，旨在简化移动应用的开发、构建和部署流程。
 
 - 📚 提供全面的文档、博客和更新日志，帮助开发者学习和跟进最新功能
-- 🛠️ 包含多种开发工具，如Expo CLI、EAS（Expo应用服务）和Expo Go应用，支持快速原型设计和测试
-- 🤝 拥有活跃的社区支持，包括Discord讨论和GitHub开源项目，鼓励协作与反馈
+- 🛠️ 包含多种开发工具，如 Expo CLI、EAS（Expo 应用服务）和 Expo Go 应用，支持快速原型设计和测试
+- 🤝 拥有活跃的社区支持，包括 Discord 讨论和 GitHub 开源项目，鼓励协作与反馈
 - 🏢 提供企业级解决方案，包括定价选项、客户案例和咨询服务，满足商业需求
 - ⚖️ 强调法律与合规，涵盖服务条款、隐私政策和安全信任中心，确保用户数据保护
 
@@ -620,15 +620,15 @@ Expo是一个为React Native开发者提供工具和服务的平台，旨在简�
 
 **原文标题**: [GitHub - dannyhw/react-native-storybook-tools](https://github.com/dannyhw/react-native-storybook-tools)
 
-这是一个用于React Native Storybook的开发者工具集，包含VS Code扩展和Rozenite插件，支持通过WebSocket实时浏览、搜索和控制Storybook中的故事。
+这是一个用于 React Native Storybook 的开发者工具集，包含 VS Code 扩展和 Rozenite 插件，支持通过 WebSocket 实时浏览、搜索和控制 Storybook 中的故事。
 
-- 🛠️ **项目概述**：包含VS Code扩展和Rozenite插件，为React Native Storybook提供开发工具
-- 🔌 **连接方式**：通过WebSocket（默认端口7007）与运行的Storybook实例实时通信
-- 📱 **Rozenite插件**：在应用内提供开发工具面板，可直接在模拟器/设备上浏览和选择故事
-- 💻 **VS Code扩展**：在侧边栏显示故事树，点击即可在设备上选择故事，支持跳转到源文件
-- 🚀 **快速开始**：使用Bun管理，提供示例应用展示两种集成方式
+- 🛠️ **项目概述**：包含 VS Code 扩展和 Rozenite 插件，为 React Native Storybook 提供开发工具
+- 🔌 **连接方式**：通过 WebSocket（默认端口 7007）与运行的 Storybook 实例实时通信
+- 📱 **Rozenite 插件**：在应用内提供开发工具面板，可直接在模拟器/设备上浏览和选择故事
+- 💻 **VS Code 扩展**：在侧边栏显示故事树，点击即可在设备上选择故事，支持跳转到源文件
+- 🚀 **快速开始**：使用 Bun 管理，提供示例应用展示两种集成方式
 - ⚙️ **技术栈**：TypeScript、React Native 0.81、Expo 54、Storybook 10
-- 📂 **项目结构**：采用monorepo结构，包含插件、扩展和示例应用三个主要部分
+- 📂 **项目结构**：采用 monorepo 结构，包含插件、扩展和示例应用三个主要部分
 
 ---
 
@@ -653,9 +653,9 @@ json-render 框架发布了 0.5.0 版本，这是一个用于构建用户生成�
 
 **原文标题**: [No title found](https://x.com/ctatedev/status/2020767354108453020)
 
-该页面提示用户浏览器中JavaScript功能未启用或存在兼容性问题，导致无法正常使用X平台（原Twitter），并提供了相应的解决建议。
+该页面提示用户浏览器中 JavaScript 功能未启用或存在兼容性问题，导致无法正常使用 X 平台（原 Twitter），并提供了相应的解决建议。
 
-- 🔧 检测到浏览器已禁用JavaScript，需启用该功能或更换受支持的浏览器
+- 🔧 检测到浏览器已禁用 JavaScript，需启用该功能或更换受支持的浏览器
 - 🌐 可访问帮助中心查看支持的浏览器列表及相关服务条款
 - 🛡️ 部分隐私扩展可能导致加载异常，建议暂时禁用后重试
 - 🔄 页面提供“重试”功能供用户手动刷新尝试
@@ -672,7 +672,7 @@ json-render 框架发布了 0.5.0 版本，这是一个用于构建用户生成�
 - 📱 **项目简介**：一个基于 React Native Video v7 和 @legendapp/list 构建的 TikTok 风格垂直视频流演示，支持 iOS 和 Android。
 - ⭐ **项目状态**：在 GitHub 上获得 66 个星标和 4 个分支，提供商业支持与定制服务。
 - 🎬 **核心功能**：支持 HLS 流播放、滑动时一次切换一个视频、点击暂停/播放、预加载和虚拟化列表以优化性能。
-- ⚙️ **性能优化**：采用非对称预加载策略（后1前5）、基于可视性播放、仅窗口内加载源，并提供开发环境下的性能指标监控。
+- ⚙️ **性能优化**：采用非对称预加载策略（后 1 前 5）、基于可视性播放、仅窗口内加载源，并提供开发环境下的性能指标监控。
 - 🔧 **技术栈**：主要依赖 react-native-video、@legendapp/list 和 Expo，配置针对不同平台进行了调优。
 - 🛠️ **使用与配置**：提供详细的安装步骤、平台特定的预加载和滚动参数配置，便于集成到生产环境。
 - 📄 **附加资源**：包含扩展功能文档、性能研究文档和许可证信息，项目完全开源。
@@ -683,20 +683,20 @@ json-render 框架发布了 0.5.0 版本，这是一个用于构建用户生成�
 
 **原文标题**: [GitHub - EvanBacon/expo-apple-targets: Config Plugin to setup Apple targets](https://github.com/EvanBacon/expo-apple-targets)
 
-这是一个用于Expo框架的配置插件，用于在iOS项目中创建和管理Apple原生扩展目标（如Widgets、App Clips等），允许开发者在`/targets`目录下开发这些目标，并利用Expo的持续原生生成功能。
+这是一个用于 Expo 框架的配置插件，用于在 iOS 项目中创建和管理 Apple 原生扩展目标（如 Widgets、App Clips 等），允许开发者在`/targets`目录下开发这些目标，并利用 Expo 的持续原生生成功能。
 
-- 🚀 **快速开始**：通过`npx create-target`命令生成目标，支持Widget、App Clip等多种类型，并自动配置项目。
-- ⚙️ **工作原理**：插件将`/targets`目录下的子文件夹链接到Xcode项目中，每个目标通过`expo-target.config.js`文件定义设置和资源。
+- 🚀 **快速开始**：通过`npx create-target`命令生成目标，支持 Widget、App Clip 等多种类型，并自动配置项目。
+- ⚙️ **工作原理**：插件将`/targets`目录下的子文件夹链接到 Xcode 项目中，每个目标通过`expo-target.config.js`文件定义设置和资源。
 - 🔧 **配置灵活**：支持自定义目标名称、图标、颜色、框架、权限和部署目标，可通过函数动态生成配置以同步主应用设置。
-- 🔗 **共享资源**：通过`_shared`目录在目标和主应用之间共享文件，使用App Groups和`ExtensionStorage`模块实现数据共享。
-- 📦 **多目标支持**：目前支持超过30种扩展类型，包括Widget、Action、Spotlight、Safari扩展等，部分类型尚待支持。
-- 🛠️ **开发提示**：修改配置后需重新运行`npx expo prebuild --clean`同步，可使用空白模板加速不含React Native的构建。
-- 🧩 **高级功能**：提供Control Widgets示例、App Clips深度链接配置指南，以及通过CocoaPods脚本自定义目标设置。
-- ⚠️ **实验性警告**：此为实验性插件，非官方Expo工作流，自动化测试困难，可能存在意外回归问题。
+- 🔗 **共享资源**：通过`_shared`目录在目标和主应用之间共享文件，使用 App Groups 和`ExtensionStorage`模块实现数据共享。
+- 📦 **多目标支持**：目前支持超过 30 种扩展类型，包括 Widget、Action、Spotlight、Safari 扩展等，部分类型尚待支持。
+- 🛠️ **开发提示**：修改配置后需重新运行`npx expo prebuild --clean`同步，可使用空白模板加速不含 React Native 的构建。
+- 🧩 **高级功能**：提供 Control Widgets 示例、App Clips 深度链接配置指南，以及通过 CocoaPods 脚本自定义目标设置。
+- ⚠️ **实验性警告**：此为实验性插件，非官方 Expo 工作流，自动化测试困难，可能存在意外回归问题。
 
 ---
 
-### [GitHub - callstack/react-native-material-palette：将Material Palette API引入React Native](https://github.com/callstack/react-native-material-palette)
+### [GitHub - callstack/react-native-material-palette：将Material Palette API 引入 React Native](https://github.com/callstack/react-native-material-palette)
 
 **原文标题**: [GitHub - callstack/react-native-material-palette: Bringing Material Palette API to React Native](https://github.com/callstack/react-native-material-palette)
 
@@ -715,15 +715,15 @@ json-render 框架发布了 0.5.0 版本，这是一个用于构建用户生成�
 
 **原文标题**: [Release v0.7.0 · software-mansion/react-native-executorch · GitHub](https://github.com/software-mansion/react-native-executorch/releases/tag/v0.7.0)
 
-React Native ExecuTorch v0.7.0 版本发布，引入文本转语音支持、显著减少包体积与OCR文件大小，并改进错误处理与LLM API。
+React Native ExecuTorch v0.7.0 版本发布，引入文本转语音支持、显著减少包体积与 OCR 文件大小，并改进错误处理与 LLM API。
 
-- 🌟 新增文本转语音功能，支持使用Kokoro生成更自然的语音
-- 📦 通过更换分词库，将包体积减少了64%
-- 📄 优化OCR流程，模型文件从4个减少至1个，总大小从313MB降至101MB
+- 🌟 新增文本转语音功能，支持使用 Kokoro 生成更自然的语音
+- 📦 通过更换分词库，将包体积减少了 64%
+- 📄 优化 OCR 流程，模型文件从 4 个减少至 1 个，总大小从 313MB 降至 101MB
 - 🐛 改进错误处理，为库抛出的错误添加代码属性，便于精细处理
-- 🤖 LLM新增统计API（如getPromptTokenCount）并调整generate()返回字符串
-- 📚 文档新增API参考部分，并修复一般性错误
-- ⚠️ 包含多项破坏性变更，如移除LLM的responseCallback()、OCR参数简化等
+- 🤖 LLM 新增统计 API（如 getPromptTokenCount）并调整 generate() 返回字符串
+- 📚 文档新增 API 参考部分，并修复一般性错误
+- ⚠️ 包含多项破坏性变更，如移除 LLM 的 responseCallback()、OCR 参数简化等
 
 ---
 
@@ -734,7 +734,7 @@ React Native ExecuTorch v0.7.0 版本发布，引入文本转语音支持、显�
 React Native ExecuTorch 项目公布了从 v0.7.0 到 v1.0.0 的路线图，旨在通过一系列版本迭代逐步增强库的功能、性能和易用性，最终实现稳定版本。路线图涵盖了语言支持扩展、视觉能力引入、性能优化、模块化拆分以及未来如云推理回退等高级功能，并鼓励社区通过反馈、报告问题和贡献代码参与共建。
 
 - 🗺️ **路线图概述**：项目计划通过 v0.7.0 至 v1.0.0 等多个版本逐步实现功能增强，最终达到稳定版本，这是一个会根据社区反馈和上游发展动态调整的“活文档”。
-- 🗣️ **v0.7.0 重点**：扩展语言支持并引入视觉语言能力，包括文本转语音支持、OCR改进、内存优化、分词器迁移以及更健壮的错误处理。
+- 🗣️ **v0.7.0 重点**：扩展语言支持并引入视觉语言能力，包括文本转语音支持、OCR 改进、内存优化、分词器迁移以及更健壮的错误处理。
 - 👁️ **v0.8.0 重点**：增加视觉相机支持、扩展文本转语音的语言覆盖、支持液态基础模型，并引入计算机视觉模型的量化和扩展支持。
 - ⚡ **v0.9.0 重点**：计划支持 GPU/NPU 硬件加速、语音转语音功能、Segment Anything 模型，并改进基于 Transformer 的模型。
 - 🧩 **v1.0.0 核心目标**：实现库的模块化以减小捆绑包体积，建立全面的测试体系，添加模型使用遥测（不涉及个人数据），支持 Web 推理，移除 Expo 依赖，并改善日志与内存管理。
@@ -743,34 +743,34 @@ React Native ExecuTorch 项目公布了从 v0.7.0 到 v1.0.0 的路线图，旨�
 
 ---
 
-### [GitHub - arunabhverma/expo-paste-input：适用于React Native的跨平台原生粘贴处理。](https://github.com/arunabhverma/expo-paste-input)
+### [GitHub - arunabhverma/expo-paste-input：适用于React Native 的跨平台原生粘贴处理。](https://github.com/arunabhverma/expo-paste-input)
 
 **原文标题**: [GitHub - arunabhverma/expo-paste-input: Cross-platform native paste handling for React Native.](https://github.com/arunabhverma/expo-paste-input)
 
-这是一个用于React Native的跨平台原生粘贴处理库，允许用户直接从系统剪贴板粘贴图片和GIF。
+这是一个用于 React Native 的跨平台原生粘贴处理库，允许用户直接从系统剪贴板粘贴图片和 GIF。
 
-- 📦 轻量级封装，围绕React Native的TextInput组件，支持iOS和Android平台
-- 🖼️ 可粘贴文本、图片和多个GIF，返回本地文件URI
-- 🔧 作为包装器设计，不重新实现TextInput，保持对输入控件的完全控制
-- 📱 原生级别拦截粘贴事件，支持Expo SwiftUI TextField
-- 🌐 安全导入Web端（无崩溃，无操作实现）
+- 📦 轻量级封装，围绕 React Native 的 TextInput 组件，支持 iOS 和 Android 平台
+- 🖼️ 可粘贴文本、图片和多个 GIF，返回本地文件 URI
+- 🔧 作为包装器设计，不重新实现 TextInput，保持对输入控件的完全控制
+- 📱 原生级别拦截粘贴事件，支持 Expo SwiftUI TextField
+- 🌐 安全导入 Web 端（无崩溃，无操作实现）
 - 📄 临时文件处理，需要持久化时应移动文件
 - 🔄 文本粘贴事件在文本插入后触发，图片粘贴事件阻止默认粘贴行为
-- 📚 采用MIT许可证，灵感来源于Fernando Rojo和v0.dev的实际应用
+- 📚 采用 MIT 许可证，灵感来源于 Fernando Rojo 和 v0.dev 的实际应用
 
 ---
 
-### [iPad与平板侧边栏 | 原生底部面板](https://sheet.lodev09.com/blog/side-sheets)
+### [iPad 与平板侧边栏 | 原生底部面板](https://sheet.lodev09.com/blog/side-sheets)
 
 **原文标题**: [Side Sheets for iPad and Tablets | True Native Bottom Sheet](https://sheet.lodev09.com/blog/side-sheets)
 
-TrueSheet 3.9版本发布，为iPad和平板设备提供原生支持，引入侧边栏功能，允许将面板固定在屏幕左右边缘，并新增maxContentWidth属性以控制大屏幕上的面板宽度，同时将maxHeight重命名为maxContentHeight以保持一致性。
+TrueSheet 3.9 版本发布，为 iPad 和平板设备提供原生支持，引入侧边栏功能，允许将面板固定在屏幕左右边缘，并新增 maxContentWidth 属性以控制大屏幕上的面板宽度，同时将 maxHeight 重命名为 maxContentHeight 以保持一致性。
 
-- 📱 TrueSheet 3.9版本为iPad和平板提供原生支持，新增侧边栏功能
-- 📐 新增anchor属性，可将面板固定在屏幕左右边缘，优化平板布局
-- 🖥️ 通过maxContentWidth属性控制大屏幕上面板的宽度，提升用户体验
-- ⚠️ 将maxHeight重命名为maxContentHeight，以与maxContentWidth保持一致
-- 📦 可通过yarn add @lodev09/react-native-true-sheet@next安装更新版本
+- 📱 TrueSheet 3.9 版本为 iPad 和平板提供原生支持，新增侧边栏功能
+- 📐 新增 anchor 属性，可将面板固定在屏幕左右边缘，优化平板布局
+- 🖥️ 通过 maxContentWidth 属性控制大屏幕上面板的宽度，提升用户体验
+- ⚠️ 将 maxHeight 重命名为 maxContentHeight，以与 maxContentWidth 保持一致
+- 📦 可通过 yarn add @lodev09/react-native-true-sheet@next 安装更新版本
 
 ---
 
@@ -778,15 +778,15 @@ TrueSheet 3.9版本发布，为iPad和平板设备提供原生支持，引入侧
 
 **原文标题**: [GitHub - brunobar79/expo-openclaw-chat](https://github.com/brunobar79/expo-openclaw-chat)
 
-这是一个用于Expo应用的轻量级聊天SDK，用于连接OpenClaw网关，提供快速集成聊天功能的能力。
+这是一个用于 Expo 应用的轻量级聊天 SDK，用于连接 OpenClaw 网关，提供快速集成聊天功能的能力。
 
-- 🦞 项目为开源聊天SDK，支持Expo应用与OpenClaw网关的WebSocket连接
-- 📦 通过npm安装，提供简单API创建聊天实例并集成到React Native应用中
+- 🦞 项目为开源聊天 SDK，支持 Expo 应用与 OpenClaw 网关的 WebSocket 连接
+- 📦 通过 npm 安装，提供简单 API 创建聊天实例并集成到 React Native 应用中
 - 🔧 支持多种认证方式（令牌、密码、设备令牌）和可配置选项（标题、占位符等）
-- 🖼️ 可选依赖支持图片附件、Markdown渲染和安全密钥存储功能
-- 🔐 自动生成Ed25519密钥对，支持安全存储和跨会话设备身份持久化
-- ⚙️ 提供高级使用方式，可单独使用客户端、聊天引擎和UI组件
-- 📱 包含演示应用示例，采用MIT开源协议
+- 🖼️ 可选依赖支持图片附件、Markdown 渲染和安全密钥存储功能
+- 🔐 自动生成 Ed25519 密钥对，支持安全存储和跨会话设备身份持久化
+- ⚙️ 提供高级使用方式，可单独使用客户端、聊天引擎和 UI 组件
+- 📱 包含演示应用示例，采用 MIT 开源协议
 
 ---
 
@@ -808,13 +808,13 @@ react-native-iap 14.7.9 版本正式新增了对 tvOS、macOS 和 watchOS 平台
 
 **原文标题**: [agent-skills/skills/upgrading-react-native at main · callstackincubator/agent-skills · GitHub](https://github.com/callstackincubator/agent-skills/tree/main/skills/upgrading-react-native)
 
-这是一个名为“agent-skills”的开源项目仓库，由callstackincubator组织维护，用于开发和共享智能体相关技能。
+这是一个名为“agent-skills”的开源项目仓库，由 callstackincubator 组织维护，用于开发和共享智能体相关技能。
 
-- 🚀 **项目状态活跃** - 拥有857个星标和44个分支，显示社区关注度较高
-- 🔧 **协作开发中** - 当前有2个议题和2个拉取请求待处理
-- 📁 **标准仓库结构** - 包含代码、议题、拉取请求、操作等标准GitHub功能模块
+- 🚀 **项目状态活跃** - 拥有 857 个星标和 44 个分支，显示社区关注度较高
+- 🔧 **协作开发中** - 当前有 2 个议题和 2 个拉取请求待处理
+- 📁 **标准仓库结构** - 包含代码、议题、拉取请求、操作等标准 GitHub 功能模块
 - 🔐 **安全功能就绪** - 设有独立安全板块，但当前无公开安全问题
-- 👥 **团队维护项目** - 由callstackincubator组织孵化，属于多成员协作项目
+- 👥 **团队维护项目** - 由 callstackincubator 组织孵化，属于多成员协作项目
 
 ---
 
@@ -822,7 +822,7 @@ react-native-iap 14.7.9 版本正式新增了对 tvOS、macOS 和 watchOS 平台
 
 **原文标题**: [Expo Router iOS 26 Tutorial: Native Tabs, Toolbars, Zoom Transitions (SDK 55) - YouTube](https://www.youtube.com/watch?v=_XGlN4jvIaA)
 
-该内容为YouTube平台页脚导航链接，介绍了网站的基本信息、用户指南及法律条款。
+该内容为 YouTube 平台页脚导航链接，介绍了网站的基本信息、用户指南及法律条款。
 
 - ℹ️ 关于平台的基本信息和公司背景
 - 📰 新闻与媒体相关资源
@@ -830,13 +830,13 @@ react-native-iap 14.7.9 版本正式新增了对 tvOS、macOS 和 watchOS 平台
 - 📞 联系客服与反馈渠道
 - 🎨 内容创作者专属资源
 - 📢 广告合作与商业推广
-- 💻 开发者工具与API接口
+- 💻 开发者工具与 API 接口
 - ⚖️ 服务条款与使用规范
 - 🔒 隐私政策与数据保护
 - 🛡️ 平台安全与社区准则
-- ⚙️ YouTube功能运作机制
+- ⚙️ YouTube 功能运作机制
 - 🧪 新功能测试与体验计划
-- ⏳ 2026年谷歌所有权声明
+- ⏳ 2026 年谷歌所有权声明
 
 ---
 
@@ -844,7 +844,7 @@ react-native-iap 14.7.9 版本正式新增了对 tvOS、macOS 和 watchOS 平台
 
 **原文标题**: [Radon | An IDE for React Native & Expo by Software Mansion - YouTube](https://www.youtube.com/watch?v=CIlrfQSSkyc)
 
-该页面为YouTube平台的政策与信息说明页，列出了其核心服务条款、用户指南及公司信息。
+该页面为 YouTube 平台的政策与信息说明页，列出了其核心服务条款、用户指南及公司信息。
 
 - 📄 关于平台的基本介绍与背景
 - 📰 新闻发布与媒体相关资源
@@ -852,13 +852,13 @@ react-native-iap 14.7.9 版本正式新增了对 tvOS、macOS 和 watchOS 平台
 - 📞 用户联系与反馈渠道
 - 🧑‍🎨 内容创作者相关资源与支持
 - 📢 广告合作与商业推广信息
-- 👨‍💻 开发者工具与API资源
+- 👨‍💻 开发者工具与 API 资源
 - 📜 平台使用条款与协议
 - 🔒 隐私保护政策与数据安全
 - ⚖️ 平台政策与安全指南
-- 🔧 YouTube功能运作机制说明
+- 🔧 YouTube 功能运作机制说明
 - 🆕 新功能测试与更新信息
-- 🏢 谷歌公司版权声明（至2026年）
+- 🏢 谷歌公司版权声明（至 2026 年）
 
 ---
 
@@ -866,7 +866,7 @@ react-native-iap 14.7.9 版本正式新增了对 tvOS、macOS 和 watchOS 平台
 
 **原文标题**: [What Is the React Native AI SDK? A Complete Intro & Quickstart - YouTube](https://www.youtube.com/watch?v=7EaQlJaFV4I)
 
-该页面为YouTube平台的政策与信息页面，列出了其核心服务条款、功能及公司信息。
+该页面为 YouTube 平台的政策与信息页面，列出了其核心服务条款、功能及公司信息。
 
 - 📄 关于平台的基本介绍与背景信息
 - 📰 新闻发布与媒体相关资源
@@ -874,13 +874,13 @@ react-native-iap 14.7.9 版本正式新增了对 tvOS、macOS 和 watchOS 平台
 - 📞 用户联系与反馈渠道
 - 🧑‍🎨 内容创作者相关资源
 - 💼 广告合作与商业推广
-- 👩‍💻 开发者工具与API信息
+- 👩‍💻 开发者工具与 API 信息
 - ⚖️ 服务条款与使用协议
 - 🔒 隐私保护政策与数据安全
 - 🛡️ 平台安全政策与使用规范
-- ⚙️ YouTube功能运作机制说明
+- ⚙️ YouTube 功能运作机制说明
 - 🆕 新功能测试与更新信息
-- 🏢 谷歌公司版权声明（至2026年）
+- 🏢 谷歌公司版权声明（至 2026 年）
 
 ---
 
@@ -888,25 +888,25 @@ react-native-iap 14.7.9 版本正式新增了对 tvOS、macOS 和 watchOS 平台
 
 **原文标题**: [React Native Radio - RNR 353 - Node-API Support for React Native with Kræn Hansen](https://infinite.red/react-native-radio/rnr-353-node-api-support-for-react-native-with-krn-hansen)
 
-本期React Native Radio播客讨论了Node-API在React Native中的应用前景，重点探讨了其作为跨平台原生模块开发解决方案的潜力，旨在帮助库作者实现“一次编写，到处运行”的目标。
+本期 React Native Radio 播客讨论了 Node-API 在 React Native 中的应用前景，重点探讨了其作为跨平台原生模块开发解决方案的潜力，旨在帮助库作者实现“一次编写，到处运行”的目标。
 
-- 🎯 **Node-API的核心定位**：作为底层抽象层，可替代JSI和Turbo Modules，为库作者提供跨引擎（如Hermes、Node.js）的统一开发接口。
-- 🔗 **跨语言兼容性**：基于C API设计，支持Rust、Zig、C++、Swift、Kotlin等多种语言调用，尤其适合希望用Rust开发原生模块的开发者。
-- 🛡️ **ABI稳定性优势**：通过预编译二进制文件减少依赖冲突和构建错误，提升库的可靠性和开发者体验。
-- ⚙️ **当前进展与挑战**：需要等待Hermes引擎合并Node-API支持，并完善React Native宿主包实现和测试套件。
-- 🚀 **未来生态影响**：可能加速React Native与Node.js、Bun、Deno等生态的模块共享，并为Lynx、BegaOS等跨平台框架提供互操作性。
-- 📦 **开发者工具链**：推荐使用cmake-rn等工具简化构建流程，示例项目可在CallStack孵化器GitHub仓库查看。
-- 💡 **适用场景提醒**：目前主要适用于非UI原生模块（如数据库），视图组件支持尚不成熟，传统Turbo/Nitro模块方案更成熟。
+- 🎯 **Node-API 的核心定位**：作为底层抽象层，可替代 JSI 和 Turbo Modules，为库作者提供跨引擎（如 Hermes、Node.js）的统一开发接口。
+- 🔗 **跨语言兼容性**：基于 C API 设计，支持 Rust、Zig、C++、Swift、Kotlin 等多种语言调用，尤其适合希望用 Rust 开发原生模块的开发者。
+- 🛡️ **ABI 稳定性优势**：通过预编译二进制文件减少依赖冲突和构建错误，提升库的可靠性和开发者体验。
+- ⚙️ **当前进展与挑战**：需要等待 Hermes 引擎合并 Node-API 支持，并完善 React Native 宿主包实现和测试套件。
+- 🚀 **未来生态影响**：可能加速 React Native 与 Node.js、Bun、Deno 等生态的模块共享，并为 Lynx、BegaOS 等跨平台框架提供互操作性。
+- 📦 **开发者工具链**：推荐使用 cmake-rn 等工具简化构建流程，示例项目可在 CallStack 孵化器 GitHub 仓库查看。
+- 💡 **适用场景提醒**：目前主要适用于非 UI 原生模块（如数据库），视图组件支持尚不成熟，传统 Turbo/Nitro 模块方案更成熟。
 
 ---
 
-### [火箭飞船 | 091 - 手势处理器v3、无处不在的AI代理、动画组件与微小收获势头](https://share.transistor.fm/s/41aa2d87)
+### [火箭飞船 | 091 - 手势处理器 v3、无处不在的 AI 代理、动画组件与微小收获势头](https://share.transistor.fm/s/41aa2d87)
 
 **原文标题**: [Rocket Ship | 091 - Gesture Handler v3, AI Agents Everywhere, Animated Components & Tiny Harvest Momentum](https://share.transistor.fm/s/41aa2d87)
 
 该内容为播客平台的功能与操作选项列表，展示了可用的播放、订阅及分享等工具。
 
-- 📱 播客平台列表（如Apple Podcasts、Spotify等）
+- 📱 播客平台列表（如 Apple Podcasts、Spotify 等）
 - 🔗 分享与嵌入功能选项
 - 📥 下载与订阅播客剧集
 - 🎧 额外内容如预告片、花絮和完整文稿
@@ -920,10 +920,10 @@ react-native-iap 14.7.9 版本正式新增了对 tvOS、macOS 和 watchOS 平台
 
 TypeScript 6.0 迭代计划概述了该版本的主要发布时间表、编译器与语言特性更新、重大变更与弃用项，以及默认设置与行为调整。
 
-- 📅 **发布时间表**：从2026年2月6日的Beta测试构建开始，到3月17日最终版本发布，共包含多个关键里程碑。
+- 📅 **发布时间表**：从 2026 年 2 月 6 日的 Beta 测试构建开始，到 3 月 17 日最终版本发布，共包含多个关键里程碑。
 - 🔧 **编译器与语言更新**：包括减少无`this`函数的上下文敏感性、更精确的类型检查、支持`#/`开头的子路径导入等新特性。
-- ⚠️ **重大变更与弃用**：计划弃用`--target es5`、`--outFile`、`baseUrl`等多项旧功能，并调整最低目标至ES2015。
-- ⚙️ **默认设置调整**：将默认启用`--strict`模式、全局假设`"use strict"`、调整默认`--target`至最新ECMAScript版本等行为变更。
+- ⚠️ **重大变更与弃用**：计划弃用`--target es5`、`--outFile`、`baseUrl`等多项旧功能，并调整最低目标至 ES2015。
+- ⚙️ **默认设置调整**：将默认启用`--strict`模式、全局假设`"use strict"`、调整默认`--target`至最新 ECMAScript 版本等行为变更。
 
 ---
 
@@ -950,19 +950,19 @@ TypeScript 6.0 Beta 版本已发布，这是基于当前 JavaScript 代码库的
 
 ---
 
-### [2026年路线图 (2026-02-04) | webpack](https://webpack.js.org/blog/2026-04-02-roadmap-2026/)
+### [2026 年路线图 (2026-02-04) | webpack](https://webpack.js.org/blog/2026-04-02-roadmap-2026/)
 
 **原文标题**: [Roadmap 2026 (2026-02-04) | webpack](https://webpack.js.org/blog/2026-04-02-roadmap-2026/)
 
-webpack 团队公布了2026年的发展路线图，重点在于提升工具的多平台兼容性、开发体验和性能，同时加强社区建设和项目可持续性。
+webpack 团队公布了 2026 年的发展路线图，重点在于提升工具的多平台兼容性、开发体验和性能，同时加强社区建设和项目可持续性。
 
-- 🎯 **增强多平台支持**：计划推出“universal”构建目标，使代码能在Node.js、Deno、Bun和Web等不同运行时中运行，并致力于减少对Node.js内部模块的依赖。
-- 🧩 **简化配置与依赖**：将原生支持CSS模块和HTML入口文件，无需额外插件；同时探索无需loader直接构建TypeScript，以减少项目依赖。
-- ⚡ **性能与优化探索**：评估引入类似Rspack的“惰性桶优化”以提升大型项目构建速度，并计划整合各类资源压缩插件为一个统一解决方案。
-- 🛠️ **改进开发体验**：优化CLI工具和开发服务器，合并中间件，并计划为开发服务器增加插件支持以提升可扩展性和维护性。
-- 📚 **文档与社区建设**：计划基于代码类型和模式自动生成准确、最新的API文档；并通过博客、会议等方式加强社区互动与推广。
-- 👥 **贡献者发展与可持续性**：通过GSoC项目培养新的维护者，并积极寻求捐赠和赞助，以确保项目有足够资源支持持续开发和维护。
-- 🔮 **为webpack 6做准备**：上述所有工作都在为webpack 6奠定基础，包括核心代码改进、增加测试与类型覆盖，以及建立性能基准测试。
+- 🎯 **增强多平台支持**：计划推出“universal”构建目标，使代码能在 Node.js、Deno、Bun 和 Web 等不同运行时中运行，并致力于减少对 Node.js 内部模块的依赖。
+- 🧩 **简化配置与依赖**：将原生支持 CSS 模块和 HTML 入口文件，无需额外插件；同时探索无需 loader 直接构建 TypeScript，以减少项目依赖。
+- ⚡ **性能与优化探索**：评估引入类似 Rspack 的“惰性桶优化”以提升大型项目构建速度，并计划整合各类资源压缩插件为一个统一解决方案。
+- 🛠️ **改进开发体验**：优化 CLI 工具和开发服务器，合并中间件，并计划为开发服务器增加插件支持以提升可扩展性和维护性。
+- 📚 **文档与社区建设**：计划基于代码类型和模式自动生成准确、最新的 API 文档；并通过博客、会议等方式加强社区互动与推广。
+- 👥 **贡献者发展与可持续性**：通过 GSoC 项目培养新的维护者，并积极寻求捐赠和赞助，以确保项目有足够资源支持持续开发和维护。
+- 🔮 **为 webpack 6 做准备**：上述所有工作都在为 webpack 6 奠定基础，包括核心代码改进、增加测试与类型覆盖，以及建立性能基准测试。
 
 ---
 
@@ -970,16 +970,16 @@ webpack 团队公布了2026年的发展路线图，重点在于提升工具的�
 
 **原文标题**: [Test Tags | Guide | Vitest](https://main.vitest.dev/guide/test-tags.html)
 
-本文介绍了Vitest测试框架中标签（Tags）的功能，包括如何定义标签、在测试中使用标签、通过标签筛选测试用例，以及标签的优先级和继承规则。
+本文介绍了 Vitest 测试框架中标签（Tags）的功能，包括如何定义标签、在测试中使用标签、通过标签筛选测试用例，以及标签的优先级和继承规则。
 
 - 🏷️ **标签定义**：标签必须在配置文件中定义，未定义的标签会引发错误，可通过`strictTags`选项禁用检查。每个标签可设置名称、描述及测试选项（如超时、重试次数）。
 - ⚙️ **标签配置示例**：配置文件中可定义多个标签（如`frontend`、`backend`），并为标签指定超时、重试等选项。标签优先级通过`priority`属性控制，数值越低优先级越高。
 - 🔀 **标签优先级规则**：当多个标签应用于同一测试时，选项按优先级合并（无优先级标签先合并，高优先级标签覆盖低优先级）。测试自身定义的选项具有最高优先级。
-- 🛠️ **TypeScript支持**：可通过增强`TestTags`类型来强制可用标签的字符串联合，确保类型安全。
-- 📋 **标签列表查看**：使用`--list-tags`命令可查看所有已定义标签及其详情，支持JSON格式输出。
-- 🧪 **测试中使用标签**：可通过`tags`选项为单个测试或测试套件添加标签，标签会从父套件继承。也可使用JSDoc的`@module-tag`为文件内所有测试添加标签。
+- 🛠️ **TypeScript 支持**：可通过增强`TestTags`类型来强制可用标签的字符串联合，确保类型安全。
+- 📋 **标签列表查看**：使用`--list-tags`命令可查看所有已定义标签及其详情，支持 JSON 格式输出。
+- 🧪 **测试中使用标签**：可通过`tags`选项为单个测试或测试套件添加标签，标签会从父套件继承。也可使用 JSDoc 的`@module-tag`为文件内所有测试添加标签。
 - ⚠️ **模块标签注意事项**：`@module-tag`会应用于文件内所有测试，而非仅相邻测试。建议使用选项参数为单个测试添加标签。
-- 🔍 **标签筛选测试**：通过`--tags-filter`CLI选项可运行特定标签的测试，支持逻辑运算符（`and`、`or`、`not`）、通配符（`*`）和括号分组。
+- 🔍 **标签筛选测试**：通过`--tags-filter`CLI 选项可运行特定标签的测试，支持逻辑运算符（`and`、`or`、`not`）、通配符（`*`）和括号分组。
 - 🚫 **保留名称限制**：标签名不能使用保留关键字（如`and`、`or`、`not`）或包含特殊字符（如括号、空格）。
 - 🌐 **通配符与排除**：支持使用通配符匹配标签模式，并通过`!`或`not`排除特定标签。
 - 📊 **筛选示例**：提供了多种常见筛选模式示例，如运行前端非脆弱测试、排除慢速测试等，支持复杂表达式和多个筛选标志组合。
@@ -990,14 +990,14 @@ webpack 团队公布了2026年的发展路线图，重点在于提升工具的�
 
 **原文标题**: [The Wrong Work, Done Beautifully | Domenic Denicola](https://domenic.me/jsdom-claude-code/)
 
-作者回顾了自己维护jsdom开源项目超过十年的心路历程，从最初作为业余爱好，到疫情期间热情减退，再到如今借助AI工具重新投入修复工作，同时反思了项目的实际价值与个人时间投入的意义。
+作者回顾了自己维护 jsdom 开源项目超过十年的心路历程，从最初作为业余爱好，到疫情期间热情减退，再到如今借助 AI 工具重新投入修复工作，同时反思了项目的实际价值与个人时间投入的意义。
 
-- 🕰️ 作者维护jsdom项目已超十年，曾作为业余爱好，但疫情期间热情减退，转为被动维护
-- 🌐 jsdom是Node.js中的部分浏览器实现，但作者逐渐认为其价值有限，建议真实浏览器或轻量工具替代
+- 🕰️ 作者维护 jsdom 项目已超十年，曾作为业余爱好，但疫情期间热情减退，转为被动维护
+- 🌐 jsdom 是 Node.js 中的部分浏览器实现，但作者逐渐认为其价值有限，建议真实浏览器或轻量工具替代
 - 📉 项目面临底层子系统陈旧、功能需求庞大等挑战，而作者空闲时间并未增加
-- 🤖 近期借助Claude等AI工具，作者重新投入修复积压问题，高效重写了资源加载子系统
-- 🎯 AI编码虽提升效率，但可能使人沉迷于低优先级任务，而非聚焦核心目标
-- ❤️ 作者对jsdom仍有感情，但承认项目已进入维护模式，并反思个人时间应投向更有意义的方向
+- 🤖 近期借助 Claude 等 AI 工具，作者重新投入修复积压问题，高效重写了资源加载子系统
+- 🎯 AI 编码虽提升效率，但可能使人沉迷于低优先级任务，而非聚焦核心目标
+- ❤️ 作者对 jsdom 仍有感情，但承认项目已进入维护模式，并反思个人时间应投向更有意义的方向
 
 ---
 
@@ -1005,7 +1005,7 @@ webpack 团队公布了2026年的发展路线图，重点在于提升工具的�
 
 **原文标题**: [How Rolldown Works: High-Performance Code Splitting with Bitset Logic | Atriiy](https://www.atriiy.dev/blog/rolldown-high-performance-code-splitting)
 
-Rolldown作为一款高性能JavaScript打包工具，其代码生成阶段通过位集逻辑实现智能代码分割，以优化加载速度和包体积。该过程分为手动与自动分割两阶段，结合用户配置与算法效率，最终生成结构清晰、性能优越的打包输出。
+Rolldown 作为一款高性能 JavaScript 打包工具，其代码生成阶段通过位集逻辑实现智能代码分割，以优化加载速度和包体积。该过程分为手动与自动分割两阶段，结合用户配置与算法效率，最终生成结构清晰、性能优越的打包输出。
 
 - 🧩 **位集指纹建立**：通过广度优先搜索为每个模块创建位集标识，记录其可被哪些入口点访问，作为代码分割的基础依据。
 - 🛠️ **用户驱动的手动分割**：优先处理用户定义的匹配规则，将特定模块及其依赖树分配到指定组，确保开发者的意图得到优先满足。
@@ -1015,7 +1015,7 @@ Rolldown作为一款高性能JavaScript打包工具，其代码生成阶段通�
 
 ---
 
-### [almostnode — 浏览器中的Node.js](https://almostnode.dev/)
+### [almostnode — 浏览器中的 Node.js](https://almostnode.dev/)
 
 **原文标题**: [almostnode — Node.js in your browser](https://almostnode.dev/)
 
@@ -1031,14 +1031,14 @@ Next.js 应用在浏览器中完全客户端运行，通过文件路由系统实
 
 **原文标题**: [Chrome 145  |  Release notes  |  Chrome for Developers](https://developer.chrome.com/release-notes/145)
 
-Chrome 145 稳定版于2026年2月10日发布，带来了多项CSS、JavaScript、安全、多媒体、性能等方面的功能更新与改进，旨在提升开发者体验、网页性能与安全性。
+Chrome 145 稳定版于 2026 年 2 月 10 日发布，带来了多项 CSS、JavaScript、安全、多媒体、性能等方面的功能更新与改进，旨在提升开发者体验、网页性能与安全性。
 
-- 🎨 **CSS与UI增强**：新增`text-justify`属性控制文本对齐，支持`letter-spacing`和`word-spacing`的百分比值，优化高`border-radius`的阴影渲染，并引入多列布局的列包裹功能。
-- 🔧 **JavaScript新特性**：为`Map`和`WeakMap`新增`upsert`方法，引入`window.crashReport`API辅助崩溃报告，并默认启用精简版User-Agent字符串以增强隐私保护。
+- 🎨 **CSS 与 UI 增强**：新增`text-justify`属性控制文本对齐，支持`letter-spacing`和`word-spacing`的百分比值，优化高`border-radius`的阴影渲染，并引入多列布局的列包裹功能。
+- 🔧 **JavaScript 新特性**：为`Map`和`WeakMap`新增`upsert`方法，引入`window.crashReport`API 辅助崩溃报告，并默认启用精简版 User-Agent 字符串以增强隐私保护。
 - 🛡️ **安全与权限升级**：推出设备绑定会话凭证（DBSC）和`Origin`对象以强化安全边界，并将本地网络访问权限拆分为更细粒度的`local-network`和`loopback-network`。
-- 🖥️ **图形与多媒体**：WebGPU新增`subgroup_uniformity`功能，WebRTC视频帧暴露`rtpTimestamp`元数据，并为`AudioContext`提供可配置的渲染量子大小。
-- ⚡ **性能与存储优化**：IndexedDB后端在隐身模式下改用SQLite提升可靠性，性能API新增`confidence`字段及`paintTime`等计时数据，布局偏移API改用CSS像素单位。
-- 🗑️ **废弃与移除**：移除了macOS上过时的虚拟摄像头支持以及BMP格式中嵌入JPEG/PNG的扩展功能。
+- 🖥️ **图形与多媒体**：WebGPU 新增`subgroup_uniformity`功能，WebRTC 视频帧暴露`rtpTimestamp`元数据，并为`AudioContext`提供可配置的渲染量子大小。
+- ⚡ **性能与存储优化**：IndexedDB 后端在隐身模式下改用 SQLite 提升可靠性，性能 API 新增`confidence`字段及`paintTime`等计时数据，布局偏移 API 改用 CSS 像素单位。
+- 🗑️ **废弃与移除**：移除了 macOS 上过时的虚拟摄像头支持以及 BMP 格式中嵌入 JPEG/PNG 的扩展功能。
 
 ---
 
@@ -1046,12 +1046,12 @@ Chrome 145 稳定版于2026年2月10日发布，带来了多项CSS、JavaScript�
 
 **原文标题**: [WebMCP is available for early preview  |  Blog  |  Chrome for Developers](https://developer.chrome.com/blog/webmcp-epp)
 
-WebMCP 是一项旨在帮助网站与AI代理进行结构化交互的新标准，通过提供声明式和命令式API，使网站能够更高效、可靠地支持AI代理执行各种任务，如客户支持、电商购物和旅行预订等。
+WebMCP 是一项旨在帮助网站与 AI 代理进行结构化交互的新标准，通过提供声明式和命令式 API，使网站能够更高效、可靠地支持 AI 代理执行各种任务，如客户支持、电商购物和旅行预订等。
 
-- 🚀 **WebMCP 早期预览发布**：提供结构化工具标准，使AI代理能更快速、可靠地与网站交互。
-- 🔧 **两大API支持**：声明式API用于HTML表单标准操作，命令式API处理复杂动态交互。
+- 🚀 **WebMCP 早期预览发布**：提供结构化工具标准，使 AI 代理能更快速、可靠地与网站交互。
+- 🔧 **两大 API 支持**：声明式 API 用于 HTML 表单标准操作，命令式 API 处理复杂动态交互。
 - 🛒 **应用场景广泛**：涵盖客户支持自动填单、电商精准购物导航、旅行搜索预订等。
-- 📅 **加入早期预览计划**：可获取文档、演示案例，并持续了解API更新动态。
+- 📅 **加入早期预览计划**：可获取文档、演示案例，并持续了解 API 更新动态。
 
 ---
 
@@ -1078,40 +1078,40 @@ ESLint v10.0.0 是一个主要版本发布，引入了新功能、修复了错�
 
 **原文标题**: [Bun v1.3.9 | Bun Blog](https://bun.com/blog/bun-v1.3.9)
 
-本文介绍了Bun的安装方法、升级方式、并行与顺序运行脚本功能，以及多项性能优化和错误修复。
+本文介绍了 Bun 的安装方法、升级方式、并行与顺序运行脚本功能，以及多项性能优化和错误修复。
 
-- 🚀 **安装Bun**：支持多种安装方式，包括curl、npm、PowerShell、Scoop、Homebrew和Docker。
-- 🔄 **升级Bun**：使用`bun upgrade`命令可轻松升级Bun版本。
-- ⚙️ **并行与顺序运行脚本**：新增`--parallel`和`--sequential`选项，支持并发或顺序运行package.json脚本，并带有前缀输出。
-- 🔗 **HTTP/2连接升级**：修复了`net.Server`到`Http2SecureServer`的连接升级模式，适用于HTTP/2代理服务器。
+- 🚀 **安装 Bun**：支持多种安装方式，包括 curl、npm、PowerShell、Scoop、Homebrew 和 Docker。
+- 🔄 **升级 Bun**：使用`bun upgrade`命令可轻松升级 Bun 版本。
+- ⚙️ **并行与顺序运行脚本**：新增`--parallel`和`--sequential`选项，支持并发或顺序运行 package.json 脚本，并带有前缀输出。
+- 🔗 **HTTP/2连接升级**：修复了`net.Server`到`Http2SecureServer`的连接升级模式，适用于 HTTP/2 代理服务器。
 - 🧪 **自动恢复模拟和监视**：`mock()`和`spyOn()`支持`Symbol.dispose`，使用`using`关键字可自动恢复模拟，无需手动清理。
-- 🚫 **NO_PROXY支持**：修复了`NO_PROXY`环境变量在显式代理设置中被忽略的问题，现在始终有效。
-- 📊 **CPU性能分析**：新增`--cpu-prof-interval`标志，可配置CPU分析器的采样间隔。
-- 📦 **ESM字节码编译**：`--compile`现在支持ESM格式的字节码，修复了之前的不兼容问题。
-- 🛠️ **ARMv8.0兼容性**：修复了在ARMv8.0 aarch64 CPU上的崩溃问题，确保在旧ARM64处理器上稳定运行。
-- ⚡ **Markdown渲染加速**：`Bun.Markdown`通过SIMD加速扫描，提升3-15%的渲染速度；`Bun.markdown.react()`缓存常用HTML标签，减少内存分配。
-- 🚦 **AbortSignal优化**：`AbortSignal.abort()`在没有监听器时跳过事件对象创建，提升约6%的性能。
-- 🔧 **JavaScriptCore升级**：正则表达式通过SIMD加速前缀搜索，提升性能；优化了`String#startsWith`、`Set#size`、`Map#size`、`String#trim`等方法。
-- 🐛 **错误修复**：包括Node.js兼容性改进、Bun API修复（如`Bun.stringWidth`对泰文字符的宽度计算）、Web API问题（如WebSocket崩溃和HTTP请求挂起）以及TypeScript类型定义更新。
+- 🚫 **NO_PROXY 支持**：修复了`NO_PROXY`环境变量在显式代理设置中被忽略的问题，现在始终有效。
+- 📊 **CPU 性能分析**：新增`--cpu-prof-interval`标志，可配置 CPU 分析器的采样间隔。
+- 📦 **ESM 字节码编译**：`--compile`现在支持 ESM 格式的字节码，修复了之前的不兼容问题。
+- 🛠️ **ARMv8.0 兼容性**：修复了在 ARMv8.0 aarch64 CPU 上的崩溃问题，确保在旧 ARM64 处理器上稳定运行。
+- ⚡ **Markdown 渲染加速**：`Bun.Markdown`通过 SIMD 加速扫描，提升 3-15% 的渲染速度；`Bun.markdown.react()`缓存常用 HTML 标签，减少内存分配。
+- 🚦 **AbortSignal 优化**：`AbortSignal.abort()`在没有监听器时跳过事件对象创建，提升约 6% 的性能。
+- 🔧 **JavaScriptCore 升级**：正则表达式通过 SIMD 加速前缀搜索，提升性能；优化了`String#startsWith`、`Set#size`、`Map#size`、`String#trim`等方法。
+- 🐛 **错误修复**：包括 Node.js 兼容性改进、Bun API 修复（如`Bun.stringWidth`对泰文字符的宽度计算）、Web API 问题（如 WebSocket 崩溃和 HTTP 请求挂起）以及 TypeScript 类型定义更新。
 
 ---
 
-### [2026年1月（版本1.109）](https://code.visualstudio.com/updates/v1_109)
+### [2026 年 1 月（版本 1.109）](https://code.visualstudio.com/updates/v1_109)
 
 **原文标题**: [January 2026 (version 1.109)](https://code.visualstudio.com/updates/v1_109)
 
-Visual Studio Code 2026年1月发布（版本1.109）聚焦于将编辑器打造为多智能体开发平台，全面增强了聊天体验、智能体管理、定制化、扩展性、安全性及核心编辑器功能。
+Visual Studio Code 2026 年 1 月发布（版本 1.109）聚焦于将编辑器打造为多智能体开发平台，全面增强了聊天体验、智能体管理、定制化、扩展性、安全性及核心编辑器功能。
 
-- 🚀 **聊天体验升级**：支持消息引导与队列、Claude思考令牌可视化、Mermaid图表渲染及问答工具，提升交互流畅度与信息呈现。
+- 🚀 **聊天体验升级**：支持消息引导与队列、Claude 思考令牌可视化、Mermaid 图表渲染及问答工具，提升交互流畅度与信息呈现。
 - 🤖 **智能体会话管理**：新增会话类型选择器、智能体状态指示器、并行子智能体及云端/后台智能体配置优化，便于多任务并行与监控。
 - 🛠️ **智能体定制化**：引入智能体钩子（hooks）、技能作为斜杠命令、组织级指令支持及多模型配置，实现工作流自动化与团队一致性。
-- 🔌 **智能体扩展性**：兼容Claude配置文件、支持智能体编排、集成Claude智能体SDK及MCP应用，扩展AI工具生态与协作能力。
-- ⚡ **智能体性能优化**：新增Copilot记忆功能、非GitHub工作区外部索引及外部文件读取权限控制，提升上下文管理与搜索效率。
+- 🔌 **智能体扩展性**：兼容 Claude 配置文件、支持智能体编排、集成 Claude 智能体 SDK 及 MCP 应用，扩展 AI 工具生态与协作能力。
+- ⚡ **智能体性能优化**：新增 Copilot 记忆功能、非 GitHub 工作区外部索引及外部文件读取权限控制，提升上下文管理与搜索效率。
 - 🔒 **智能体安全与信任**：推出终端沙箱（实验性）、终端自动批准规则及生命周期工具改进，增强命令执行的安全性与可控性。
-- 💻 **终端增强**：丰富命令详情显示、支持Kitty键盘协议、允许受限工作区终端打开，优化命令行交互体验。
-- ✏️ **编辑器改进**：支持双击选择括号/字符串内容、自定义括号匹配颜色、片段文件模式限定及TypeScript shebang检测，提升编码效率。
-- 🌐 **工作区与生产力**：新增集成浏览器（预览版）、编辑器恢复控制、高级设置常显及Git工作树文件包含，简化开发流程。
-- 📦 **扩展与API**：完善快速输入按钮API、提出聊天模型提供者配置与聊天资源提供者API，赋能扩展开发者构建丰富功能。
+- 💻 **终端增强**：丰富命令详情显示、支持 Kitty 键盘协议、允许受限工作区终端打开，优化命令行交互体验。
+- ✏️ **编辑器改进**：支持双击选择括号/字符串内容、自定义括号匹配颜色、片段文件模式限定及 TypeScript shebang 检测，提升编码效率。
+- 🌐 **工作区与生产力**：新增集成浏览器（预览版）、编辑器恢复控制、高级设置常显及 Git 工作树文件包含，简化开发流程。
+- 📦 **扩展与 API**：完善快速输入按钮 API、提出聊天模型提供者配置与聊天资源提供者 API，赋能扩展开发者构建丰富功能。
 
 ---
 
@@ -1119,14 +1119,14 @@ Visual Studio Code 2026年1月发布（版本1.109）聚焦于将编辑器打造
 
 **原文标题**: [No title found](https://x.com/addyosmani)
 
-该页面提示用户浏览器中JavaScript功能未启用或存在兼容性问题，导致无法正常使用X平台（原Twitter），并提供了相应的解决建议与支持资源。
+该页面提示用户浏览器中 JavaScript 功能未启用或存在兼容性问题，导致无法正常使用 X 平台（原 Twitter），并提供了相应的解决建议与支持资源。
 
-- 🔧 检测到浏览器禁用JavaScript，需启用该功能或更换受支持的浏览器
+- 🔧 检测到浏览器禁用 JavaScript，需启用该功能或更换受支持的浏览器
 - 🌐 可访问帮助中心查看支持的浏览器列表
 - 🛡️ 部分隐私扩展可能造成访问问题，建议暂时禁用后重试
 - 🔄 页面提供“重试”功能供用户再次尝试加载
-- 📄 页脚包含服务条款、隐私政策、Cookie政策等法律文件链接
-- ©️ 标注版权归属为2026年X公司（原Twitter公司）
+- 📄 页脚包含服务条款、隐私政策、Cookie 政策等法律文件链接
+- ©️ 标注版权归属为 2026 年 X 公司（原 Twitter 公司）
 
 ---
 

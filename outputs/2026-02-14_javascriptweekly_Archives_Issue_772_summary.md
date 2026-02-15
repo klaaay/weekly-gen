@@ -1,19 +1,19 @@
-### [JavaScript周刊第772期：2026年2月10日](https://javascriptweekly.com/issues/772)
+### [JavaScript 周刊第 772 期：2026 年 2 月 10 日](https://javascriptweekly.com/issues/772)
 
 **原文标题**: [JavaScript Weekly Issue 772: February 10, 2026](https://javascriptweekly.com/issues/772)
 
-本期JavaScript周刊主要介绍了npmx新包浏览器、State of JS 2025调查结果、ESLint v10.0.0发布等工具更新，以及关于JavaScript资源清理新特性、Vite创始人访谈等技术内容，同时涵盖多个框架和库的最新发布与实用工具推荐。
+本期 JavaScript 周刊主要介绍了 npmx 新包浏览器、State of JS 2025 调查结果、ESLint v10.0.0 发布等工具更新，以及关于 JavaScript 资源清理新特性、Vite 创始人访谈等技术内容，同时涵盖多个框架和库的最新发布与实用工具推荐。
 
-- 📦 **npmx新包浏览器**：提供流畅快速的npm包浏览体验，支持包比较功能。
-- 📊 **State of JS 2025调查结果**：汇总超过1.2万名开发者意见，涵盖框架选择、构建工具使用等主题。
-- 🛠️ **ESLint v10.0.0发布**：移除旧配置系统，改进配置查找算法，增强JSX范围分析。
-- 🔄 **JavaScript资源清理新特性**：介绍Symbol.dispose和using语法，简化资源管理。
-- 🎙️ **Vite创始人访谈**：Evan You讨论Vite发展历程及Rust工具链的未来。
-- 🤖 **AI调试React的局限性**：实验显示AI在复杂调试场景中仍难以替代经验丰富的开发者。
-- ⚡ **Bun v1.3.9更新**：支持并行运行脚本、优化Markdown渲染和正则表达式性能。
-- 📄 **技术文章精选**：涵盖Next.js调试、Angular 22预期特性、Solid.js最佳实践等内容。
-- 🛠️ **开发工具推荐**：包括Shovel.js全栈框架、VerifyFetch增强下载库、OTPAuth双因素认证工具等。
-- 📰 **行业动态**：Notion等公司采用Meticulous进行前端测试，Heroku进入维护模式引发迁移讨论。
+- 📦 **npmx 新包浏览器**：提供流畅快速的 npm 包浏览体验，支持包比较功能。
+- 📊 **State of JS 2025 调查结果**：汇总超过 1.2 万名开发者意见，涵盖框架选择、构建工具使用等主题。
+- 🛠️ **ESLint v10.0.0 发布**：移除旧配置系统，改进配置查找算法，增强 JSX 范围分析。
+- 🔄 **JavaScript 资源清理新特性**：介绍 Symbol.dispose 和 using 语法，简化资源管理。
+- 🎙️ **Vite 创始人访谈**：Evan You 讨论 Vite 发展历程及 Rust 工具链的未来。
+- 🤖 **AI 调试 React 的局限性**：实验显示 AI 在复杂调试场景中仍难以替代经验丰富的开发者。
+- ⚡ **Bun v1.3.9 更新**：支持并行运行脚本、优化 Markdown 渲染和正则表达式性能。
+- 📄 **技术文章精选**：涵盖 Next.js 调试、Angular 22 预期特性、Solid.js 最佳实践等内容。
+- 🛠️ **开发工具推荐**：包括 Shovel.js 全栈框架、VerifyFetch 增强下载库、OTPAuth 双因素认证工具等。
+- 📰 **行业动态**：Notion 等公司采用 Meticulous 进行前端测试，Heroku 进入维护模式引发迁移讨论。
 
 ---
 
@@ -59,31 +59,31 @@ Axios 是一个基于 Promise 的 HTTP 客户端，适用于浏览器和 Node.js
 
 **原文标题**: [Compare nitro vs h3 - npmx](https://npmx.dev/compare?packages=nitro,h3)
 
-该工具用于并排比较npm软件包，帮助开发者根据性能、包大小、健康状况、兼容性及安全合规性等关键维度选择合适依赖。
+该工具用于并排比较 npm 软件包，帮助开发者根据性能、包大小、健康状况、兼容性及安全合规性等关键维度选择合适依赖。
 
 - 📊 **性能与包大小** – 支持评估性能指标、安装大小、直接与总依赖数量
 - 📈 **健康状况分析** – 提供每周下载量、点赞数、发布时间及是否弃用状态
-- 🔧 **兼容性检查** – 涵盖引擎支持、TypeScript类型和模块格式适配性
+- 🔧 **兼容性检查** – 涵盖引擎支持、TypeScript 类型和模块格式适配性
 - 🛡️ **安全合规** – 检测许可证类型与已知漏洞，确保代码合规安全
-- 🔍 **智能筛选** – 可通过多维度筛选器（如Facets）快速缩小包选择范围
+- 🔍 **智能筛选** – 可通过多维度筛选器（如 Facets）快速缩小包选择范围
 
 ---
 
-### [闭包、异步与面向对象：JavaScript的难点解析 | 前端大师](https://frontendmasters.com/courses/javascript-hard-parts-v3/?utm_source=email&utm_medium=javascriptweekly&utm_content=jshardpartsv3)
+### [闭包、异步与面向对象：JavaScript 的难点解析 | 前端大师](https://frontendmasters.com/courses/javascript-hard-parts-v3/?utm_source=email&utm_medium=javascriptweekly&utm_content=jshardpartsv3)
 
 **原文标题**: [Closure, Async, and OOP: The Hard Parts of JavaScript | Frontend Masters](https://frontendmasters.com/courses/javascript-hard-parts-v3/?utm_source=email&utm_medium=javascriptweekly&utm_content=jshardpartsv3)
 
-本课程深入讲解JavaScript中的高阶函数、闭包、异步编程、面向对象编程和元编程等核心难点，帮助开发者建立扎实的思维模型，提升代码复用和复杂问题解决能力，适合希望深化JavaScript理解的中高级开发者。
+本课程深入讲解 JavaScript 中的高阶函数、闭包、异步编程、面向对象编程和元编程等核心难点，帮助开发者建立扎实的思维模型，提升代码复用和复杂问题解决能力，适合希望深化 JavaScript 理解的中高级开发者。
 
 - 🧠 掌握高阶函数与闭包，编写可复用函数，避免重复逻辑
-- ⏳ 深入异步代码机制，理解Promise、调用栈和事件循环
-- 🏗️ 学习面向对象编程，掌握类、静态属性等现代JavaScript特性
-- 🔧 探索类型强制转换与元编程，使用Symbol自定义类型行为
-- 📚 包含54节课程、9.7小时内容，提供结业证书
-- 🧑🏫 由Codesmith创始人Will Sentance授课，融合十年教育经验
+- ⏳ 深入异步代码机制，理解 Promise、调用栈和事件循环
+- 🏗️ 学习面向对象编程，掌握类、静态属性等现代 JavaScript 特性
+- 🔧 探索类型强制转换与元编程，使用 Symbol 自定义类型行为
+- 📚 包含 54 节课程、9.7 小时内容，提供结业证书
+- 🧑🏫 由 Codesmith 创始人 Will Sentance 授课，融合十年教育经验
 - 🎯 通过逐行代码跟踪、比喻教学和练习强化理解
 - 📝 支持笔记、测验和闪卡功能，助力学习巩固
-- 🌟 受到50万+开发者好评，被誉为重塑JavaScript思维的高质量课程
+- 🌟 受到 50 万 + 开发者好评，被誉为重塑 JavaScript 思维的高质量课程
 
 ---
 
@@ -91,12 +91,12 @@ Axios 是一个基于 Promise 的 HTTP 客户端，适用于浏览器和 Node.js
 
 **原文标题**: [State of JavaScript 2025](https://2025.stateofjs.com/en-US/)
 
-2025年JavaScript生态持续快速演进，为开发者带来新工具与挑战，反映了技术社区的活跃与创新。
+2025 年 JavaScript 生态持续快速演进，为开发者带来新工具与挑战，反映了技术社区的活跃与创新。
 
-- 🎮 类比游戏行业，强调JavaScript生态变化迅速，与八年未换代的游戏平台形成鲜明对比
-- 📊 介绍2025年State of JS调查结果，总结年度技术趋势与创新
+- 🎮 类比游戏行业，强调 JavaScript 生态变化迅速，与八年未换代的游戏平台形成鲜明对比
+- 📊 介绍 2025 年 State of JS 调查结果，总结年度技术趋势与创新
 - 📧 提供订阅渠道，邀请读者参与未来调查
-- 🤝 列出合作伙伴，包括Google Chrome团队及多家技术服务平台
+- 🤝 列出合作伙伴，包括 Google Chrome 团队及多家技术服务平台
 - 🌍 展示多语言翻译贡献者，体现社区国际化协作
 - 🔗 包含就业推荐、技能提升课程及开发工具等资源链接
 
@@ -106,18 +106,18 @@ Axios 是一个基于 Promise 的 HTTP 客户端，适用于浏览器和 Node.js
 
 **原文标题**: [State of JavaScript 2025: Features](https://2025.stateofjs.com/en-US/features/#language_pain_points)
 
-这份JavaScript社区调查报告揭示了开发者对语言特性、浏览器API、痛点及未来提案的看法，同时反映了学习趋势和热门工具。
+这份 JavaScript 社区调查报告揭示了开发者对语言特性、浏览器 API、痛点及未来提案的看法，同时反映了学习趋势和热门工具。
 
-- 📊 **语法特性使用率**：空值合并运算符（Nullish Coalescing）以10,717票成为最常用语法特性，动态导入（Dynamic Import）和私有字段（Private Fields）紧随其后。
+- 📊 **语法特性使用率**：空值合并运算符（Nullish Coalescing）以 10,717 票成为最常用语法特性，动态导入（Dynamic Import）和私有字段（Private Fields）紧随其后。
 - 🔤 **字符串与数组特性**：`string.replaceAll()`和`array.toSorted()`分别是字符串和数组中最受欢迎的新方法。
-- 🧩 **集合与对象特性**：多数开发者未使用新的Set方法（如`set.union()`），而`Object.groupBy()`是对象特性中使用最广泛的。
-- ⚡ **异步与浏览器API**：`Promise.allSettled()`和WebSocket API在各自类别中领先，显示异步处理和实时通信的重要性。
-- 😫 **主要痛点**：缺乏静态类型（1,102票）是JavaScript语言的最大痛点，浏览器兼容性（725票）则是浏览器API的主要问题。
-- 🚀 **期待的新提案**：Temporal（5,614票）和装饰器（Decorators，3,672票）是开发者最期待的JavaScript新特性。
-- ❓ **缺失功能需求**：静态类型（6,177票）和标准库（5,441票）被广泛认为是JavaScript当前最需要补充的功能。
-- 📈 **类型实现偏好**：多数开发者希望通过类型注解（5,380票）在JavaScript中实现原生类型支持。
-- 📚 **学习进度**：平均分2.5（满分5）表明大多数开发者难以跟上所有新特性，仅部分学习并尝试。
-- 📖 **热门学习资源**：Svelte、Solid和Astro是阅读列表中最受关注的工具，反映现代前端框架的学习趋势。
+- 🧩 **集合与对象特性**：多数开发者未使用新的 Set 方法（如`set.union()`），而`Object.groupBy()`是对象特性中使用最广泛的。
+- ⚡ **异步与浏览器 API**：`Promise.allSettled()`和 WebSocket API 在各自类别中领先，显示异步处理和实时通信的重要性。
+- 😫 **主要痛点**：缺乏静态类型（1,102 票）是 JavaScript 语言的最大痛点，浏览器兼容性（725 票）则是浏览器 API 的主要问题。
+- 🚀 **期待的新提案**：Temporal（5,614 票）和装饰器（Decorators，3,672 票）是开发者最期待的 JavaScript 新特性。
+- ❓ **缺失功能需求**：静态类型（6,177 票）和标准库（5,441 票）被广泛认为是 JavaScript 当前最需要补充的功能。
+- 📈 **类型实现偏好**：多数开发者希望通过类型注解（5,380 票）在 JavaScript 中实现原生类型支持。
+- 📚 **学习进度**：平均分 2.5（满分 5）表明大多数开发者难以跟上所有新特性，仅部分学习并尝试。
+- 📖 **热门学习资源**：Svelte、Solid 和 Astro 是阅读列表中最受关注的工具，反映现代前端框架的学习趋势。
 
 ---
 
@@ -125,15 +125,15 @@ Axios 是一个基于 Promise 的 HTTP 客户端，适用于浏览器和 Node.js
 
 **原文标题**: [State of JavaScript 2025: Front-end Frameworks](https://2025.stateofjs.com/en-US/libraries/front-end-frameworks/)
 
-尽管Solid框架的使用率仅为10%，但已连续五年获得最高满意度，其创建者Ryan Carniato推动了signals等概念的普及，并擅长解析前端框架的复杂原理。
+尽管 Solid 框架的使用率仅为 10%，但已连续五年获得最高满意度，其创建者 Ryan Carniato 推动了 signals 等概念的普及，并擅长解析前端框架的复杂原理。
 
-- 🏆 **Solid框架满意度领先**：尽管用户基数较小，但连续五年在满意度调查中名列前茅
-- 🧠 **创新概念推动者**：创始人Ryan Carniato积极推广signals等前沿技术理念
-- 📊 **开发者使用习惯稳定**：调查显示平均每位开发者仅使用2.6个框架，颠覆了频繁切换技术的刻板印象
-- 😊 **整体满意度中等偏上**：前端框架满意度平均得分3.7（满分5），92%受访者参与评价
-- ⚡ **主要痛点集中**：React相关问题、过度复杂性、性能优化成为开发者最常遇到的挑战
-- 🌟 **年度技术推荐**：社区成员推荐RSC Explorer工具，帮助理解React Server Components的序列化机制
-- 📈 **生态多样性丰富**：Astro、Ember、TanStack Start等框架在特定场景中受到关注
+- 🏆 **Solid 框架满意度领先**：尽管用户基数较小，但连续五年在满意度调查中名列前茅
+- 🧠 **创新概念推动者**：创始人 Ryan Carniato 积极推广 signals 等前沿技术理念
+- 📊 **开发者使用习惯稳定**：调查显示平均每位开发者仅使用 2.6 个框架，颠覆了频繁切换技术的刻板印象
+- 😊 **整体满意度中等偏上**：前端框架满意度平均得分 3.7（满分 5），92% 受访者参与评价
+- ⚡ **主要痛点集中**：React 相关问题、过度复杂性、性能优化成为开发者最常遇到的挑战
+- 🌟 **年度技术推荐**：社区成员推荐 RSC Explorer 工具，帮助理解 React Server Components 的序列化机制
+- 📈 **生态多样性丰富**：Astro、Ember、TanStack Start 等框架在特定场景中受到关注
 
 ---
 
@@ -141,13 +141,13 @@ Axios 是一个基于 Promise 的 HTTP 客户端，适用于浏览器和 Node.js
 
 **原文标题**: [State of JavaScript 2025: Build Tools](https://2025.stateofjs.com/en-US/libraries/build-tools/)
 
-Vite团队开发的Rust打包工具Rolldown正成为构建工具生态的核心，社区调查显示开发者对构建工具的多样性和满意度存在不同看法，同时配置复杂性和性能是主要痛点。
+Vite 团队开发的 Rust 打包工具 Rolldown 正成为构建工具生态的核心，社区调查显示开发者对构建工具的多样性和满意度存在不同看法，同时配置复杂性和性能是主要痛点。
 
-- 🚀 Vite团队开发的Rolldown是基于Rust的快速打包工具，已被Vite采用
-- 📊 社区调查显示开发者平均使用4.1种构建工具，Vite可能改变这一现状
-- 😊 构建工具满意度平均为3.6分（满分5分），82%受访者参与评价
-- ⚠️ 主要痛点包括配置复杂（289人提及）、性能问题（147人提及）和文档缺乏
-- 🎯 推荐资源包括Vite学习指南和Web性能优化课程
+- 🚀 Vite 团队开发的 Rolldown 是基于 Rust 的快速打包工具，已被 Vite 采用
+- 📊 社区调查显示开发者平均使用 4.1 种构建工具，Vite 可能改变这一现状
+- 😊 构建工具满意度平均为 3.6 分（满分 5 分），82% 受访者参与评价
+- ⚠️ 主要痛点包括配置复杂（289 人提及）、性能问题（147 人提及）和文档缺乏
+- 🎯 推荐资源包括 Vite 学习指南和 Web 性能优化课程
 
 ---
 
@@ -155,16 +155,16 @@ Vite团队开发的Rust打包工具Rolldown正成为构建工具生态的核心�
 
 **原文标题**: [State of JavaScript 2025: Usage](https://2025.stateofjs.com/en-US/usage/#ai_generated_code_balance)
 
-这份调查报告揭示了JavaScript社区在2025年的使用趋势和开发者态度，涵盖了编程语言偏好、工具链、AI辅助编程及行业应用等多个维度。
+这份调查报告揭示了 JavaScript 社区在 2025 年的使用趋势和开发者态度，涵盖了编程语言偏好、工具链、AI 辅助编程及行业应用等多个维度。
 
-- 📈 使用TypeScript的开发者比例持续上升，平均77%的代码为TypeScript，完全使用TypeScript的开发者可能很快成为多数
-- 🔧 86%的浏览器端JavaScript代码会经过构建步骤，主要优势包括静态类型支持、更好的开发体验和代码优化
-- 🤖 AI生成代码的比例从20%增至29%，但完全依赖AI的开发者仍占极少数
-- 🌐 前端开发仍是JavaScript最主要的应用场景，其次是后端开发和移动应用
+- 📈 使用 TypeScript 的开发者比例持续上升，平均 77% 的代码为 TypeScript，完全使用 TypeScript 的开发者可能很快成为多数
+- 🔧 86% 的浏览器端 JavaScript 代码会经过构建步骤，主要优势包括静态类型支持、更好的开发体验和代码优化
+- 🤖 AI 生成代码的比例从 20% 增至 29%，但完全依赖 AI 的开发者仍占极少数
+- 🌐 前端开发仍是 JavaScript 最主要的应用场景，其次是后端开发和移动应用
 - 🏢 开发者主要集中在编程与技术工具、咨询服务和电子商务零售等行业
 - 🏗️ 单页面应用（SPA）是最流行的架构模式，服务器端渲染（SSR）和静态站点生成（SSG）也广泛使用
 - 🧩 开发者面临的主要挑战包括代码架构、状态管理和依赖管理
-- 😊 对Web技术和JavaScript的整体满意度平均为3.8分（满分5分），保持稳定
+- 😊 对 Web 技术和 JavaScript 的整体满意度平均为 3.8 分（满分 5 分），保持稳定
 
 ---
 
@@ -172,20 +172,20 @@ Vite团队开发的Rust打包工具Rolldown正成为构建工具生态的核心�
 
 **原文标题**: [State of JavaScript 2025: Other Tools](https://2025.stateofjs.com/en-US/other-tools/#non_js_languages)
 
-这份内容总结了JavaScript社区对各类工具、库和技术的使用情况调查结果，涵盖了多个类别中最受欢迎和增长最快的选项。
+这份内容总结了 JavaScript 社区对各类工具、库和技术的使用情况调查结果，涵盖了多个类别中最受欢迎和增长最快的选项。
 
-- 📈 **库类**：Zod增长显著，日期管理库如date-fns、Day.js等广泛使用，而Moment虽仍有人用但呈下降趋势。
-- 📊 **图形与动画**：Chart.js今年跃居第一，Three.js和D3紧随其后，Motion（原Framer Motion）和GSAP也较受欢迎。
-- 🛠️ **工具类**：ESLint和Prettier几乎成为开发者标配，nvm、Babel和新兴的Biome使用率也较高。
-- 🖥️ **JavaScript运行时**：Node.js和浏览器环境占据主导，Bun表现突出升至第三，Cloudflare Workers增长明显。
-- ☁️ **托管服务**：AWS和Vercel是最常用的托管平台，GitHub Pages、Netlify和Cloudflare也广泛使用。
-- ⚡ **边缘/无服务器运行时**：AWS Lambda和Cloudflare Workers领先，但“无使用”选项占比最高，反映该领域仍在普及中。
-- ✏️ **文本编辑器**：VS Code保持绝对优势，Cursor凭借AI功能快速崛起，WebStorm和Vim稳定在第二梯队。
-- 🤖 **AI工具**：ChatGPT和GitHub Copilot最受欢迎，Claude和Google Gemini紧随其后，Cursor也进入前五。
-- 📱 **移动与桌面框架**：React Native领先，Electron和Expo次之，Tauri作为新兴框架值得关注。
-- 📦 **Monorepo工具**：pnpm明显领先，Turborepo和Nx竞争激烈，npm Workspaces仍有不少用户。
-- 🐍 **非JavaScript语言**：Python和PHP最常用，Bash、Java和Go也较受欢迎，Rust和Lua呈现增长趋势。
-- 💡 **期望功能**：开发者最希望JavaScript/TypeScript加入模式匹配、静态类型和管道操作符等功能。
+- 📈 **库类**：Zod 增长显著，日期管理库如 date-fns、Day.js 等广泛使用，而 Moment 虽仍有人用但呈下降趋势。
+- 📊 **图形与动画**：Chart.js 今年跃居第一，Three.js 和 D3 紧随其后，Motion（原 Framer Motion）和 GSAP 也较受欢迎。
+- 🛠️ **工具类**：ESLint 和 Prettier 几乎成为开发者标配，nvm、Babel 和新兴的 Biome 使用率也较高。
+- 🖥️ **JavaScript 运行时**：Node.js 和浏览器环境占据主导，Bun 表现突出升至第三，Cloudflare Workers 增长明显。
+- ☁️ **托管服务**：AWS 和 Vercel 是最常用的托管平台，GitHub Pages、Netlify 和 Cloudflare 也广泛使用。
+- ⚡ **边缘/无服务器运行时**：AWS Lambda 和 Cloudflare Workers 领先，但“无使用”选项占比最高，反映该领域仍在普及中。
+- ✏️ **文本编辑器**：VS Code 保持绝对优势，Cursor 凭借 AI 功能快速崛起，WebStorm 和 Vim 稳定在第二梯队。
+- 🤖 **AI 工具**：ChatGPT 和 GitHub Copilot 最受欢迎，Claude 和 Google Gemini 紧随其后，Cursor 也进入前五。
+- 📱 **移动与桌面框架**：React Native 领先，Electron 和 Expo 次之，Tauri 作为新兴框架值得关注。
+- 📦 **Monorepo 工具**：pnpm 明显领先，Turborepo 和 Nx 竞争激烈，npm Workspaces 仍有不少用户。
+- 🐍 **非 JavaScript 语言**：Python 和 PHP 最常用，Bash、Java 和 Go 也较受欢迎，Rust 和 Lua 呈现增长趋势。
+- 💡 **期望功能**：开发者最希望 JavaScript/TypeScript 加入模式匹配、静态类型和管道操作符等功能。
 
 ---
 
@@ -207,11 +207,11 @@ ESLint v10.0.0 是一个主要版本发布，引入了新功能、修复了错�
 
 ---
 
-### [2026年路线图 (2026-02-04) | webpack](https://webpack.js.org/blog/2026-04-02-roadmap-2026/)
+### [2026 年路线图 (2026-02-04) | webpack](https://webpack.js.org/blog/2026-04-02-roadmap-2026/)
 
 **原文标题**: [Roadmap 2026 (2026-02-04) | webpack](https://webpack.js.org/blog/2026-04-02-roadmap-2026/)
 
-webpack 2026年路线图聚焦于提升开发体验、扩展跨运行时支持、优化性能与构建流程，并加强社区与项目可持续性。
+webpack 2026 年路线图聚焦于提升开发体验、扩展跨运行时支持、优化性能与构建流程，并加强社区与项目可持续性。
 
 - 🎯 **增强跨平台兼容性**：推出 universal 目标，使代码能在 Node.js、Deno、Bun 及 Web 等多运行时环境中无缝运行。
 - 🛠️ **简化配置与依赖**：计划内置支持 CSS Modules、TypeScript 编译和 HTML 入口，减少对第三方插件和加载器的依赖。
@@ -222,19 +222,19 @@ webpack 2026年路线图聚焦于提升开发体验、扩展跨运行时支持�
 
 ---
 
-### [ViteLand 2026年1月新动态回顾 | VoidZero](https://voidzero.dev/posts/whats-new-jan-2026)
+### [ViteLand 2026 年 1 月新动态回顾 | VoidZero](https://voidzero.dev/posts/whats-new-jan-2026)
 
 **原文标题**: [What’s New in ViteLand: January 2026 Recap | VoidZero](https://voidzero.dev/posts/whats-new-jan-2026)
 
-ViteLand 2026年1月更新回顾了VoidZero旗下工具链的统一视觉设计、各项目的技术进展及社区动态。
+ViteLand 2026 年 1 月更新回顾了 VoidZero 旗下工具链的统一视觉设计、各项目的技术进展及社区动态。
 
-- 🎨 **统一视觉设计**：VoidZero为旗下所有项目（Vite、Vitest、Rolldown、Oxc）推出全新网站和标识，强化品牌一致性。
-- 📈 **Vite里程碑**：Vite累计npm下载量突破30亿次，React Server Components插件优化提升框架集成体验。
-- 🧪 **Vitest 4.1测试版**：引入测试标签筛选、构建器模式等新功能，支持脱离Vite环境运行测试。
-- ⚡ **Rolldown发布候选版**：新增惰性桶优化技术，编译效率提升2倍，模块数量减少92%。
-- 🔧 **Oxc工具增强**：Oxlint支持动态配置并新增规则，Oxfmt实现与Prettier 100%兼容并集成Tailwind CSS排序。
-- 🌍 **社区生态活跃**：Turborepo、Hugging Face等知名项目迁移至Oxc工具链，JavaScript新星榜单中多款工具上榜。
-- 📅 **技术会议预告**：团队将在CityJS新加坡、Laravel Live日本等国际会议分享工具链统一愿景。
+- 🎨 **统一视觉设计**：VoidZero 为旗下所有项目（Vite、Vitest、Rolldown、Oxc）推出全新网站和标识，强化品牌一致性。
+- 📈 **Vite 里程碑**：Vite 累计 npm 下载量突破 30 亿次，React Server Components 插件优化提升框架集成体验。
+- 🧪 **Vitest 4.1 测试版**：引入测试标签筛选、构建器模式等新功能，支持脱离 Vite 环境运行测试。
+- ⚡ **Rolldown 发布候选版**：新增惰性桶优化技术，编译效率提升 2 倍，模块数量减少 92%。
+- 🔧 **Oxc 工具增强**：Oxlint 支持动态配置并新增规则，Oxfmt 实现与 Prettier 100% 兼容并集成 Tailwind CSS 排序。
+- 🌍 **社区生态活跃**：Turborepo、Hugging Face 等知名项目迁移至 Oxc 工具链，JavaScript 新星榜单中多款工具上榜。
+- 📅 **技术会议预告**：团队将在 CityJS 新加坡、Laravel Live 日本等国际会议分享工具链统一愿景。
 
 ---
 
@@ -261,11 +261,11 @@ Deno Deploy 现已全面开放，提供最简单的方式将任何 JavaScript �
 
 本文介绍了人工智能在医疗领域的应用现状与前景，重点探讨了其在疾病诊断、治疗方案优化及医疗管理效率提升方面的作用，并简要提及了相关的技术挑战和伦理考量。
 
-- 🤖 AI辅助诊断系统能通过分析医学影像快速识别病灶，提高早期疾病检出率
+- 🤖 AI 辅助诊断系统能通过分析医学影像快速识别病灶，提高早期疾病检出率
 - 💊 基于机器学习的个性化治疗方案可结合患者数据优化用药与治疗路径
 - 📊 智能医疗管理平台整合临床数据，显著降低医院运营成本并减少人为失误
 - ⚠️ 数据隐私保护与算法透明度仍是当前技术落地面临的主要伦理挑战
-- 🔮 未来AI或将成为远程医疗和预防性医疗体系的核心支撑技术
+- 🔮 未来 AI 或将成为远程医疗和预防性医疗体系的核心支撑技术
 
 ---
 
@@ -273,14 +273,14 @@ Deno Deploy 现已全面开放，提供最简单的方式将任何 JavaScript �
 
 **原文标题**: [Transformers.js v4 Preview: Now Available on NPM!](https://huggingface.co/blog/transformersjs-v4)
 
-Transformers.js v4预览版现已发布，带来WebGPU运行时、性能优化、代码库重构、新模型支持及独立分词库等重大更新。
+Transformers.js v4 预览版现已发布，带来 WebGPU 运行时、性能优化、代码库重构、新模型支持及独立分词库等重大更新。
 
-- 🚀 **性能与运行时改进**：采用全新C++编写的WebGPU运行时，支持浏览器、Node.js等多种环境，实现离线运行与4倍速度提升。
-- 🏗️ **代码库重构**：使用PNPM工作区改造为monorepo，模块化类结构提升可维护性，示例项目移至独立仓库。
-- 🎨 **开发体验优化**：统一Prettier代码格式化，迁移至esbuild构建系统使构建速度提升10倍、包体积减小10%。
-- 🤖 **新模型与架构**：新增GPT-OSS、Mamba、MoE等先进模型支持，全部兼容WebGPU硬件加速。
-- 📦 **独立分词库**：推出轻量级@huggingface/tokenizers库（仅8.8kB），支持跨平台零依赖分词。
-- 🔧 **其他改进**：增强类型系统与日志功能，支持超过80亿参数的大模型运行。
+- 🚀 **性能与运行时改进**：采用全新 C++ 编写的 WebGPU 运行时，支持浏览器、Node.js 等多种环境，实现离线运行与 4 倍速度提升。
+- 🏗️ **代码库重构**：使用 PNPM 工作区改造为 monorepo，模块化类结构提升可维护性，示例项目移至独立仓库。
+- 🎨 **开发体验优化**：统一 Prettier 代码格式化，迁移至 esbuild 构建系统使构建速度提升 10 倍、包体积减小 10%。
+- 🤖 **新模型与架构**：新增 GPT-OSS、Mamba、MoE 等先进模型支持，全部兼容 WebGPU 硬件加速。
+- 📦 **独立分词库**：推出轻量级@huggingface/tokenizers 库（仅 8.8kB），支持跨平台零依赖分词。
+- 🔧 **其他改进**：增强类型系统与日志功能，支持超过 80 亿参数的大模型运行。
 
 ---
 
@@ -288,27 +288,27 @@ Transformers.js v4预览版现已发布，带来WebGPU运行时、性能优化�
 
 **原文标题**: [Bun v1.3.9 | Bun Blog](https://bun.sh/blog/bun-v1.3.9)
 
-本文介绍了Bun的安装方法、升级方式、并行与顺序运行脚本功能，以及多项性能优化和错误修复。
+本文介绍了 Bun 的安装方法、升级方式、并行与顺序运行脚本功能，以及多项性能优化和错误修复。
 
-- 🚀 **安装Bun**：支持多种安装方式，包括curl、npm、PowerShell、Scoop、Homebrew和Docker。
-- 🔄 **升级Bun**：使用`bun upgrade`命令可轻松升级Bun版本。
-- ⚙️ **并行与顺序运行脚本**：新增`--parallel`和`--sequential`选项，支持并发或顺序运行package.json脚本，并带有前缀输出。
-- 🔗 **HTTP/2连接升级**：修复了`net.Server`到`Http2SecureServer`的连接升级模式，适用于HTTP/2代理服务器。
+- 🚀 **安装 Bun**：支持多种安装方式，包括 curl、npm、PowerShell、Scoop、Homebrew 和 Docker。
+- 🔄 **升级 Bun**：使用`bun upgrade`命令可轻松升级 Bun 版本。
+- ⚙️ **并行与顺序运行脚本**：新增`--parallel`和`--sequential`选项，支持并发或顺序运行 package.json 脚本，并带有前缀输出。
+- 🔗 **HTTP/2连接升级**：修复了`net.Server`到`Http2SecureServer`的连接升级模式，适用于 HTTP/2 代理服务器。
 - 🧪 **自动恢复模拟和监视**：`mock()`和`spyOn()`支持`Symbol.dispose`，使用`using`关键字可自动恢复模拟，无需手动清理。
-- 🛡️ **NO_PROXY支持**：修复了显式代理选项中`NO_PROXY`环境变量被忽略的问题，确保代理绕过规则生效。
-- 📊 **CPU性能分析**：新增`--cpu-prof-interval`标志，可配置CPU分析器的采样间隔，提高性能分析精度。
-- 📦 **ESM字节码支持**：`--compile`命令现在支持ESM格式的字节码，提升了编译灵活性。
-- 🐛 **ARMv8.0兼容性修复**：解决了在ARMv8.0 aarch64 CPU上的崩溃问题，确保在旧ARM64处理器上的稳定运行。
-- ⚡ **Markdown渲染加速**：`Bun.Markdown`通过SIMD加速扫描，提升HTML转义速度，渲染性能提高3-15%。
-- 🏷️ **React渲染优化**：`Bun.markdown.react()`缓存常用HTML标签字符串，减少内存分配，提升渲染速度。
-- 🚫 **AbortSignal性能提升**：`AbortSignal.abort()`在没有监听器时跳过事件对象创建，性能提升约6%。
-- 🔍 **正则表达式优化**：JavaScriptCore升级引入SIMD加速前缀搜索，大幅提升正则表达式匹配性能。
-- 📏 **字符串和集合方法优化**：`String#startsWith`、`Set#size`、`Map#size`、`String#trim`等方法在JIT编译层得到优化，性能显著提升。
-- 🐞 **错误修复**：包括Node.js兼容性改进、Bun API修复、Web API问题解决和TypeScript类型修正，提升了整体稳定性和开发体验。
+- 🛡️ **NO_PROXY 支持**：修复了显式代理选项中`NO_PROXY`环境变量被忽略的问题，确保代理绕过规则生效。
+- 📊 **CPU 性能分析**：新增`--cpu-prof-interval`标志，可配置 CPU 分析器的采样间隔，提高性能分析精度。
+- 📦 **ESM 字节码支持**：`--compile`命令现在支持 ESM 格式的字节码，提升了编译灵活性。
+- 🐛 **ARMv8.0 兼容性修复**：解决了在 ARMv8.0 aarch64 CPU 上的崩溃问题，确保在旧 ARM64 处理器上的稳定运行。
+- ⚡ **Markdown 渲染加速**：`Bun.Markdown`通过 SIMD 加速扫描，提升 HTML 转义速度，渲染性能提高 3-15%。
+- 🏷️ **React 渲染优化**：`Bun.markdown.react()`缓存常用 HTML 标签字符串，减少内存分配，提升渲染速度。
+- 🚫 **AbortSignal 性能提升**：`AbortSignal.abort()`在没有监听器时跳过事件对象创建，性能提升约 6%。
+- 🔍 **正则表达式优化**：JavaScriptCore 升级引入 SIMD 加速前缀搜索，大幅提升正则表达式匹配性能。
+- 📏 **字符串和集合方法优化**：`String#startsWith`、`Set#size`、`Map#size`、`String#trim`等方法在 JIT 编译层得到优化，性能显著提升。
+- 🐞 **错误修复**：包括 Node.js 兼容性改进、Bun API 修复、Web API 问题解决和 TypeScript 类型修正，提升了整体稳定性和开发体验。
 
 ---
 
-### [GitHub - vadimdemedes/ink：🌈 用于交互式命令行应用的React](https://github.com/vadimdemedes/ink)
+### [GitHub - vadimdemedes/ink：🌈 用于交互式命令行应用的 React](https://github.com/vadimdemedes/ink)
 
 **原文标题**: [GitHub - vadimdemedes/ink: 🌈 React for interactive command-line apps](https://github.com/vadimdemedes/ink)
 
@@ -329,40 +329,40 @@ Ink 是一个基于 React 的命令行界面（CLI）渲染器，允许开发者
 
 **原文标题**: [Ember 6.10 Released](https://blog.emberjs.com/ember-released-6-10/)
 
-Ember 6.10版本发布，这是一个标准的小版本更新，主要聚焦于清理新生成应用的蓝图，包括更新废弃依赖、升级WarpDrive和Glint的使用，并移除不再需要的默认包。
+Ember 6.10 版本发布，这是一个标准的小版本更新，主要聚焦于清理新生成应用的蓝图，包括更新废弃依赖、升级 WarpDrive 和 Glint 的使用，并移除不再需要的默认包。
 
-- 🎉 Ember.js 6.10未新增功能，但弃用了旧版AMD捆绑包，未来将不再发布包含这些捆绑包的ember-source包
-- 🛠️ Ember CLI v6.10减少了包弃用警告，更新了应用蓝图，默认使用WarpDrive包和Glint 2，并移除了tracked-built-ins和ember-auto-import
-- 📦 依赖包全面更新，包括broccoli的新主版本，提升了ember-cli的现代性和稳定性
-- 🚀 新应用默认直接使用现代WarpDrive包替代旧版ember-data，目前仍以兼容模式运行
-- 🔍 Glint升级至v2，基于Volar.js框架，提供更强大的模板类型检查支持
-- 🧹 tracked-built-ins功能已内置至ember-source，不再作为独立插件默认安装
-- 📤 移除ember-auto-import，避免不必要的webpack依赖，简化项目结构
+- 🎉 Ember.js 6.10 未新增功能，但弃用了旧版 AMD 捆绑包，未来将不再发布包含这些捆绑包的 ember-source 包
+- 🛠️ Ember CLI v6.10 减少了包弃用警告，更新了应用蓝图，默认使用 WarpDrive 包和 Glint 2，并移除了 tracked-built-ins 和 ember-auto-import
+- 📦 依赖包全面更新，包括 broccoli 的新主版本，提升了 ember-cli 的现代性和稳定性
+- 🚀 新应用默认直接使用现代 WarpDrive 包替代旧版 ember-data，目前仍以兼容模式运行
+- 🔍 Glint 升级至 v2，基于 Volar.js 框架，提供更强大的模板类型检查支持
+- 🧹 tracked-built-ins 功能已内置至 ember-source，不再作为独立插件默认安装
+- 📤 移除 ember-auto-import，避免不必要的 webpack 依赖，简化项目结构
 
 ---
 
-### [JavaScript自我清理即将变得更加轻松 - Piccalilli](https://piccalil.li/blog/its-about-to-get-a-lot-easier-for-your-javascript-to-clean-up-after-itself/)
+### [JavaScript 自我清理即将变得更加轻松 - Piccalilli](https://piccalil.li/blog/its-about-to-get-a-lot-easier-for-your-javascript-to-clean-up-after-itself/)
 
 **原文标题**: [
   It’s about to get a lot easier for your JavaScript to clean up after itself - Piccalilli
 ](https://piccalil.li/blog/its-about-to-get-a-lot-easier-for-your-javascript-to-clean-up-after-itself/)
 
-JavaScript即将通过“显式资源管理”提案，让开发者能更轻松地管理资源清理，提升代码的整洁性和可预测性。
+JavaScript 即将通过“显式资源管理”提案，让开发者能更轻松地管理资源清理，提升代码的整洁性和可预测性。
 
 - 🧹 提案引入`using`关键字，声明块作用域变量，在变量离开作用域时自动调用`[Symbol.dispose]()`方法进行资源清理
-- 🔗 标准化`[Symbol.dispose]()`方法，为各种资源（如文件、WebSocket连接等）提供一致的清理接口
-- 🗑️ 解释“隐式资源管理”，如WeakSet和WeakMap的弱引用机制，允许垃圾回收自动清理不再使用的对象
+- 🔗 标准化`[Symbol.dispose]()`方法，为各种资源（如文件、WebSocket 连接等）提供一致的清理接口
+- 🗑️ 解释“隐式资源管理”，如 WeakSet 和 WeakMap 的弱引用机制，允许垃圾回收自动清理不再使用的对象
 - ⏳ 强调垃圾回收的不可预测性，显式资源管理让开发者能主动控制清理时机
-- 🛠️ 提案已进入标准第三阶段，主流浏览器（除Safari外）已实现，可用于实验环境
-- 🎭 作者以“混乱木偶”自喻，但在JavaScript中追求秩序，凸显该提案对代码整洁性的重要性
+- 🛠️ 提案已进入标准第三阶段，主流浏览器（除 Safari 外）已实现，可用于实验环境
+- 🎭 作者以“混乱木偶”自喻，但在 JavaScript 中追求秩序，凸显该提案对代码整洁性的重要性
 
 ---
 
-### [Vite、Rust与JavaScript工具的未来 | Better Stack播客第11集 - YouTube](https://www.youtube.com/watch?v=LSGZtHafiM4)
+### [Vite、Rust 与 JavaScript 工具的未来 | Better Stack 播客第 11 集 - YouTube](https://www.youtube.com/watch?v=LSGZtHafiM4)
 
 **原文标题**: [Vite, Rust & The Future of JavaScript Tooling | Better Stack Podcast Ep. 11 - YouTube](https://www.youtube.com/watch?v=LSGZtHafiM4)
 
-该页面为YouTube平台的政策与信息索引，列出了用户服务相关的核心条款、功能说明及联系渠道。
+该页面为 YouTube 平台的政策与信息索引，列出了用户服务相关的核心条款、功能说明及联系渠道。
 
 - 📄 关于平台的基本介绍与背景信息
 - 📢 媒体与新闻发布相关内容
@@ -374,72 +374,72 @@ JavaScript即将通过“显式资源管理”提案，让开发者能更轻松�
 - ⚖️ 服务条款与使用协议
 - 🔒 隐私政策与数据保护措施
 - ⚙️ 平台政策与安全规范
-- ▶️ YouTube功能运作机制说明
+- ▶️ YouTube 功能运作机制说明
 - 🧪 新功能测试与更新公告
-- ™️ 谷歌公司版权标识（截至2026年）
+- ™️ 谷歌公司版权标识（截至 2026 年）
 
 ---
 
-### [无错调试Next.js：日志如何揭示生产环境中的Bug | Sentry](https://blog.sentry.io/not-everything-that-breaks-is-an-error-a-logs-and-next-js-story/?utm_source=javascriptweekly&utm_medium=paid-community&utm_campaign=nextjs-fy27q1-nextjs&utm_content=newsletter-sponsored-link-learnmore)
+### [无错调试 Next.js：日志如何揭示生产环境中的 Bug | Sentry](https://blog.sentry.io/not-everything-that-breaks-is-an-error-a-logs-and-next-js-story/?utm_source=javascriptweekly&utm_medium=paid-community&utm_campaign=nextjs-fy27q1-nextjs&utm_content=newsletter-sponsored-link-learnmore)
 
 **原文标题**: [Debugging Next.js without errors: how Logs revealed a production bug | Sentry](https://blog.sentry.io/not-everything-that-breaks-is-an-error-a-logs-and-next-js-story/?utm_source=javascriptweekly&utm_medium=paid-community&utm_campaign=nextjs-fy27q1-nextjs&utm_content=newsletter-sponsored-link-learnmore)
 
-本文讲述了作者在开发一个AI驱动的Next.js应用时，如何通过日志而非仅依赖错误堆栈，成功诊断并解决了一个仅影响Firefox和Safari浏览器的生产环境bug。
+本文讲述了作者在开发一个 AI 驱动的 Next.js 应用时，如何通过日志而非仅依赖错误堆栈，成功诊断并解决了一个仅影响 Firefox 和 Safari 浏览器的生产环境 bug。
 
-- 🔍 **错误堆栈仅显示“什么”出错，而日志能揭示“为什么”出错**：作者遇到一个API端点在生产环境中拒绝Firefox和Safari请求的问题，错误堆栈无法提供足够上下文。
-- 🤖 **使用Vercel的`checkBotId`函数进行机器人防护**：为保护需要调用付费AI服务的API端点，作者引入了该功能以阻止恶意请求。
-- 🐛 **一个仅影响特定浏览器的生产Bug**：在Chrome上运行正常的请求，在Firefox和Safari上却返回“访问被拒绝”，且错误反复出现。
+- 🔍 **错误堆栈仅显示“什么”出错，而日志能揭示“为什么”出错**：作者遇到一个 API 端点在生产环境中拒绝 Firefox 和 Safari 请求的问题，错误堆栈无法提供足够上下文。
+- 🤖 **使用 Vercel 的`checkBotId`函数进行机器人防护**：为保护需要调用付费 AI 服务的 API 端点，作者引入了该功能以阻止恶意请求。
+- 🐛 **一个仅影响特定浏览器的生产 Bug**：在 Chrome 上运行正常的请求，在 Firefox 和 Safari 上却返回“访问被拒绝”，且错误反复出现。
 - 📝 **通过添加日志捕获关键上下文**：作者在`checkBotId`检查处添加了日志，记录检查结果和`User-Agent`请求头，以获取决策依据。
-- 🔎 **利用Sentry日志的高基数属性定位根源**：通过筛选日志发现，失败的请求其`User-Agent`显示为`ai-sdk`而非浏览器本身，这导致被误判为机器人。
-- 🔗 **利用追踪关联功能确认问题场景**：Sentry的追踪功能确认了带有`ai-sdk`用户代理的请求确实来自Firefox，从而锁定了问题。
-- 🛠️ **通过防火墙规则快速解决问题**：在Vercel防火墙设置中添加规则，允许用户代理包含`ai-sdk`的请求绕过机器人检查，问题得以解决。
+- 🔎 **利用 Sentry 日志的高基数属性定位根源**：通过筛选日志发现，失败的请求其`User-Agent`显示为`ai-sdk`而非浏览器本身，这导致被误判为机器人。
+- 🔗 **利用追踪关联功能确认问题场景**：Sentry 的追踪功能确认了带有`ai-sdk`用户代理的请求确实来自 Firefox，从而锁定了问题。
+- 🛠️ **通过防火墙规则快速解决问题**：在 Vercel 防火墙设置中添加规则，允许用户代理包含`ai-sdk`的请求绕过机器人检查，问题得以解决。
 - 💡 **关于日志与调试的关键启示**：日志提供了错误堆栈无法提供的上下文；高基数属性便于灵活分析；追踪关联能呈现完整画面，三者结合是强大的调试工具。
 
 ---
 
-### [AI调试：能否替代经验丰富的开发者？](https://www.developerway.com/posts/debugging-with-ai)
+### [AI 调试：能否替代经验丰富的开发者？](https://www.developerway.com/posts/debugging-with-ai)
 
 **原文标题**: [Debugging with AI: Can It Replace an Experienced Developer?](https://www.developerway.com/posts/debugging-with-ai)
 
-本文探讨了AI在调试React/Next.js应用中的实际能力，通过三个真实bug案例测试了AI的修复效果，并与人工调试过程进行对比，最终评估AI能否替代经验丰富的开发者。
+本文探讨了 AI 在调试 React/Next.js 应用中的实际能力，通过三个真实 bug 案例测试了 AI 的修复效果，并与人工调试过程进行对比，最终评估 AI 能否替代经验丰富的开发者。
 
-- 🐛 **用户页面崩溃问题**：AI成功修复了因Zod模式验证失败导致的页面错误，通过补充缺失字段数据解决了问题，准确识别了根本原因。
-- 🔄 **双重加载器问题**：AI提出了使用`useSuspenseQuery`的解决方案，虽然暂时有效但可能引发水合不匹配问题，未能正确识别根本原因且修复方案存在缺陷。
-- 🚫 **奇怪的重定向错误**：AI完全未能解决因服务器操作与Suspense边界冲突导致的钩子计数错误问题，所有尝试方案均无效且解释具有误导性。
-- 🤖 **AI调试能力评估**：AI擅长处理模式化问题（如数据验证、常见运行时错误），但在需要深入理解系统行为、考虑未来影响或用户体验的复杂场景中表现不佳。
-- 💡 **关键结论**：AI可作为调试的辅助起点，但开发者必须亲自验证修复方案的正确性；核心技能在于知道何时停止依赖AI并开始自主思考。
+- 🐛 **用户页面崩溃问题**：AI 成功修复了因 Zod 模式验证失败导致的页面错误，通过补充缺失字段数据解决了问题，准确识别了根本原因。
+- 🔄 **双重加载器问题**：AI 提出了使用`useSuspenseQuery`的解决方案，虽然暂时有效但可能引发水合不匹配问题，未能正确识别根本原因且修复方案存在缺陷。
+- 🚫 **奇怪的重定向错误**：AI 完全未能解决因服务器操作与 Suspense 边界冲突导致的钩子计数错误问题，所有尝试方案均无效且解释具有误导性。
+- 🤖 **AI 调试能力评估**：AI 擅长处理模式化问题（如数据验证、常见运行时错误），但在需要深入理解系统行为、考虑未来影响或用户体验的复杂场景中表现不佳。
+- 💡 **关键结论**：AI 可作为调试的辅助起点，但开发者必须亲自验证修复方案的正确性；核心技能在于知道何时停止依赖 AI 并开始自主思考。
 
 ---
 
-### [将本地开发时间减少83%：我们为何从Next.js迁移——Inngest博客](https://www.inngest.com/blog/migrating-off-nextjs-tanstack-start)
+### [将本地开发时间减少 83%：我们为何从 Next.js 迁移——Inngest 博客](https://www.inngest.com/blog/migrating-off-nextjs-tanstack-start)
 
 **原文标题**: [Reducing local dev time by 83%: Why we migrated off Next.js - Inngest Blog](https://www.inngest.com/blog/migrating-off-nextjs-tanstack-start)
 
-Inngest团队为提高开发体验，将前端框架从Next.js迁移至Tanstack Start，使本地开发页面加载时间从10-12秒缩短至2-3秒，效率提升显著。
+Inngest 团队为提高开发体验，将前端框架从 Next.js 迁移至 Tanstack Start，使本地开发页面加载时间从 10-12 秒缩短至 2-3 秒，效率提升显著。
 
-- 🚀 **迁移动机**：Next.js在本地开发中加载缓慢（10-12秒），认知开销大，影响小团队效率。
-- 🔄 **尝试优化**：升级Next.js并试用Turbopack，但效果有限，仅减少几秒加载时间。
-- ⚖️ **框架选型**：评估Tanstack Start、Deno Fresh和React Router v7后，选择Tanstack Start，因其明确的路由配置和数据加载方式。
+- 🚀 **迁移动机**：Next.js 在本地开发中加载缓慢（10-12 秒），认知开销大，影响小团队效率。
+- 🔄 **尝试优化**：升级 Next.js 并试用 Turbopack，但效果有限，仅减少几秒加载时间。
+- ⚖️ **框架选型**：评估 Tanstack Start、Deno Fresh 和 React Router v7 后，选择 Tanstack Start，因其明确的路由配置和数据加载方式。
 - 🩹 **迁移策略**：采用“快速切换”方式，先转换开发服务器路由（约一周），再处理更复杂的仪表板（数周）。
-- ⏱️ **效果提升**：迁移后本地加载时间降至2-3秒，后续路由几乎瞬时加载，开发体验大幅改善。
-- 🤖 **AI辅助**：利用AI处理重复代码转换和调试，加速迁移过程，减少对日常开发的影响。
+- ⏱️ **效果提升**：迁移后本地加载时间降至 2-3 秒，后续路由几乎瞬时加载，开发体验大幅改善。
+- 🤖 **AI 辅助**：利用 AI 处理重复代码转换和调试，加速迁移过程，减少对日常开发的影响。
 - 📚 **经验总结**：频繁构建检查、不依赖开发模式测试，大版本迁移需依赖全面测试而非代码审查。
 - 🔗 **开源参考**：迁移代码已开源，供其他团队参考决策。
 
 ---
 
-### [在JavaScriptCore中实现Temporal提案](https://blogs.igalia.com/compilers/2026/02/02/implementing-the-temporal-proposal-in-javascriptcore/)
+### [在 JavaScriptCore 中实现 Temporal 提案](https://blogs.igalia.com/compilers/2026/02/02/implementing-the-temporal-proposal-in-javascriptcore/)
 
 **原文标题**: [Implementing the Temporal proposal in JavaScriptCore](https://blogs.igalia.com/compilers/2026/02/02/implementing-the-temporal-proposal-in-javascriptcore/)
 
-过去一年，作者在JavaScriptCore（JSC）中实现了JavaScript的Temporal提案，以改进日期和时间处理。初始时仅部分支持Duration、PlainDate、PlainDateTime和Instant类型，且许多测试未通过。现已完成Duration精度优化、新增日期类型（如PlainMonthDay和ZonedDateTime），并实现了relativeTo参数支持。非ISO8601日历支持仍在进行中，测试覆盖大幅提升。所有工作已在JSC技术预览版中通过标志启用，预计提交更多代码以完成剩余功能。
+过去一年，作者在 JavaScriptCore（JSC）中实现了 JavaScript 的 Temporal 提案，以改进日期和时间处理。初始时仅部分支持 Duration、PlainDate、PlainDateTime 和 Instant 类型，且许多测试未通过。现已完成 Duration 精度优化、新增日期类型（如 PlainMonthDay 和 ZonedDateTime），并实现了 relativeTo 参数支持。非 ISO8601 日历支持仍在进行中，测试覆盖大幅提升。所有工作已在 JSC 技术预览版中通过标志启用，预计提交更多代码以完成剩余功能。
 
-- 🗓️ Temporal提案在JSC中已实现Duration、PlainDate等基础类型，并优化了精度处理以支持大数值计算。
-- 📅 新增了PlainMonthDay和PlainYearMonth等部分日期类型，以及带时区的ZonedDateTime类型。
-- ⏱️ 实现了relativeTo参数，允许基于起始点转换时间单位（如年转天），解决日历差异问题。
-- 🌍 非ISO8601日历支持仍在开发中，依赖ICU库和未来Intl提案。
-- ✅ 通过大量测试（test262）提升覆盖率，当前非intl402测试全部通过，远优于原版本。
-- 🚧 所有功能已在JSC技术预览版中通过--useTemporal=1标志启用，代码以渐进方式提交，预计完成剩余类型和参数支持。
+- 🗓️ Temporal 提案在 JSC 中已实现 Duration、PlainDate 等基础类型，并优化了精度处理以支持大数值计算。
+- 📅 新增了 PlainMonthDay 和 PlainYearMonth 等部分日期类型，以及带时区的 ZonedDateTime 类型。
+- ⏱️ 实现了 relativeTo 参数，允许基于起始点转换时间单位（如年转天），解决日历差异问题。
+- 🌍 非 ISO8601 日历支持仍在开发中，依赖 ICU 库和未来 Intl 提案。
+- ✅ 通过大量测试（test262）提升覆盖率，当前非 intl402 测试全部通过，远优于原版本。
+- 🚧 所有功能已在 JSC 技术预览版中通过--useTemporal=1 标志启用，代码以渐进方式提交，预计完成剩余类型和参数支持。
 
 ---
 
@@ -447,15 +447,15 @@ Inngest团队为提高开发体验，将前端框架从Next.js迁移至Tanstack 
 
 **原文标题**: [What to Expect in Angular 22 | MESCIUS](https://developer.mescius.com/blogs/what-to-expect-in-angular-22)
 
-Angular v22 预计将巩固其信号驱动的响应式架构，提升开发体验，并优化与第三方工具（如MESCIUS产品）的集成，以支持更高效、可维护的企业级应用开发。
+Angular v22 预计将巩固其信号驱动的响应式架构，提升开发体验，并优化与第三方工具（如 MESCIUS 产品）的集成，以支持更高效、可维护的企业级应用开发。
 
-- 🚀 **信号驱动的响应式架构**：信号成为核心响应式原语，表单等子系统将基于信号实现细粒度更新，提升性能并与无Zone变更检测更好对齐。
+- 🚀 **信号驱动的响应式架构**：信号成为核心响应式原语，表单等子系统将基于信号实现细粒度更新，提升性能并与无 Zone 变更检测更好对齐。
 - 🧩 **组件与模板优化**：引入无选择器组件和模板导入功能，简化组件使用、增强重构能力，并改善工具支持。
-- ⚡ **默认变更检测策略**：计划将OnPush设为默认策略，鼓励显式性能优化，减少意外性能问题。
+- ⚡ **默认变更检测策略**：计划将 OnPush 设为默认策略，鼓励显式性能优化，减少意外性能问题。
 - 🛠️ **开发体验提升**：改进热模块替换（HMR）和语言服务，加速开发反馈循环，增强对信号和现代模板语法的支持。
-- 🧪 **测试与工具现代化**：推动测试运行器和工具链的现代化，提升与CI/CD流程的集成效率。
-- 🤖 **AI工具集成**：通过MCP等工具增强AI辅助开发能力，提高代码生成和建议的准确性。
-- 📊 **MESCIUS产品集成**：Wijmo、SpreadJS和ActiveReportsJS等JavaScript产品将受益于Angular v22的响应式改进，实现更高效的数据可视化、表格和报表功能集成。
+- 🧪 **测试与工具现代化**：推动测试运行器和工具链的现代化，提升与 CI/CD 流程的集成效率。
+- 🤖 **AI 工具集成**：通过 MCP 等工具增强 AI 辅助开发能力，提高代码生成和建议的准确性。
+- 📊 **MESCIUS 产品集成**：Wijmo、SpreadJS 和 ActiveReportsJS 等 JavaScript 产品将受益于 Angular v22 的响应式改进，实现更高效的数据可视化、表格和报表功能集成。
 
 ---
 
@@ -463,18 +463,18 @@ Angular v22 预计将巩固其信号驱动的响应式架构，提升开发体�
 
 **原文标题**: [Solid.js Best Practices](https://www.brenelz.com/posts/solid-js-best-practices/)
 
-本文介绍了Solid.js框架的最佳实践，涵盖核心概念如信号传递、属性处理、响应式编程、控制流组件、副作用管理、数据派生、复杂状态管理以及SolidStart中的预加载和服务器数据交互策略，旨在帮助开发者更高效地利用Solid的响应式特性。
+本文介绍了 Solid.js 框架的最佳实践，涵盖核心概念如信号传递、属性处理、响应式编程、控制流组件、副作用管理、数据派生、复杂状态管理以及 SolidStart 中的预加载和服务器数据交互策略，旨在帮助开发者更高效地利用 Solid 的响应式特性。
 
-- 🚀 在JSX属性中传递信号时调用函数，确保组件不依赖信号类型，保持响应性
-- 🧩 避免直接解构props，以保留响应式getter，或使用`splitProps`处理
+- 🚀 在 JSX 属性中传递信号时调用函数，确保组件不依赖信号类型，保持响应性
+- 🧩 避免直接解构 props，以保留响应式 getter，或使用`splitProps`处理
 - 🔄 使用函数包装器或`createMemo`使派生值在响应式作用域内更新
-- 🎛️ 优先使用Solid控制流组件如`<Show>`和`<For>`，而非JavaScript条件或数组方法
+- 🎛️ 优先使用 Solid 控制流组件如`<Show>`和`<For>`，而非 JavaScript 条件或数组方法
 - ⚠️ 谨慎使用`createEffect`，避免用于数据获取或状态同步，推荐`createResource`或派生值
-- 📊 尽量派生值而非同步状态，利用Solid的依赖图优化更新
-- 🗃️ 处理复杂对象时使用store而非signal，实现细粒度响应式更新
-- ⏱️ SolidStart中预加载函数不等待，仅启动工作，让组件处理挂起和解析
-- 🔍 使用query/server函数获取服务器数据，利用缓存和去重优化
-- ✏️ 通过actions变更服务器数据，并自动重新验证相关查询
+- 📊 尽量派生值而非同步状态，利用 Solid 的依赖图优化更新
+- 🗃️ 处理复杂对象时使用 store 而非 signal，实现细粒度响应式更新
+- ⏱️ SolidStart 中预加载函数不等待，仅启动工作，让组件处理挂起和解析
+- 🔍 使用 query/server 函数获取服务器数据，利用缓存和去重优化
+- ✏️ 通过 actions 变更服务器数据，并自动重新验证相关查询
 
 ---
 
@@ -552,16 +552,16 @@ VerifyFetch 是一个用于浏览器中大型文件下载的 JavaScript 库，�
 
 ---
 
-### [AI代理文员技能](https://clerk.com/changelog/2026-01-29-clerk-skills?utm_source=cooper_press&utm_medium=newsletter&utm_campaign=skills&utm_content=02-10-26&dub_id=FKDaesWKu6v6oe5l)
+### [AI 代理文员技能](https://clerk.com/changelog/2026-01-29-clerk-skills?utm_source=cooper_press&utm_medium=newsletter&utm_campaign=skills&utm_content=02-10-26&dub_id=FKDaesWKu6v6oe5l)
 
 **原文标题**: [Clerk Skills for AI Agents](https://clerk.com/changelog/2026-01-29-clerk-skills?utm_source=cooper_press&utm_medium=newsletter&utm_campaign=skills&utm_content=02-10-26&dub_id=FKDaesWKu6v6oe5l)
 
-Clerk推出可安装技能包，使AI编程助手获得关于Clerk身份验证的专门知识，帮助开发者快速集成认证功能。
+Clerk 推出可安装技能包，使 AI 编程助手获得关于 Clerk 身份验证的专门知识，帮助开发者快速集成认证功能。
 
 - 🔧 通过单一命令安装所有技能：`npx skills add clerk/skills`
-- 🧠 赋予AI助手专业身份验证知识，支持多种框架和自定义流程
-- 💬 示例应用场景：添加Next.js应用认证、构建自定义登录表单、设置B2B SaaS组织架构
-- 🤖 兼容主流AI编程助手：Claude Code、Cursor、Windsurf、GitHub Copilot等
+- 🧠 赋予 AI 助手专业身份验证知识，支持多种框架和自定义流程
+- 💬 示例应用场景：添加 Next.js 应用认证、构建自定义登录表单、设置 B2B SaaS 组织架构
+- 🤖 兼容主流 AI 编程助手：Claude Code、Cursor、Windsurf、GitHub Copilot 等
 - 📚 详细技能列表和安装指南可查阅官方技能文档
 
 ---
@@ -570,20 +570,20 @@ Clerk推出可安装技能包，使AI编程助手获得关于Clerk身份验证�
 
 **原文标题**: [GitHub - hectorm/otpauth: One Time Password (HOTP/TOTP) library for Node.js, Deno, Bun and browsers.](https://github.com/hectorm/otpauth)
 
-这是一个用于生成和验证一次性密码（HOTP/TOTP）的JavaScript库，支持Node.js、Deno、Bun和浏览器环境，遵循RFC 4226和RFC 6238标准，常用于多因素身份验证系统。
+这是一个用于生成和验证一次性密码（HOTP/TOTP）的 JavaScript 库，支持 Node.js、Deno、Bun 和浏览器环境，遵循 RFC 4226 和 RFC 6238 标准，常用于多因素身份验证系统。
 
-- 🔐 支持HOTP和TOTP协议，适用于双因素身份验证
-- 🌐 兼容多种运行环境：Node.js、Deno、Bun和浏览器
+- 🔐 支持 HOTP 和 TOTP 协议，适用于双因素身份验证
+- 🌐 兼容多种运行环境：Node.js、Deno、Bun 和浏览器
 - 📦 提供完整版、精简版和无依赖版三种构建版本
-- 🔑 可生成安全随机密钥并支持自定义HMAC算法
+- 🔑 可生成安全随机密钥并支持自定义 HMAC 算法
 - 🔄 包含令牌生成、验证、剩余时间计算等完整功能
-- 🔗 支持Google Authenticator密钥URI格式的转换
+- 🔗 支持 Google Authenticator 密钥 URI 格式的转换
 - 📚 提供详细文档和在线演示应用
-- ⚖️ 采用MIT开源许可证
+- ⚖️ 采用 MIT 开源许可证
 
 ---
 
-### [GitHub - shaka-project/shaka-player: JavaScript播放器库 / DASH与HLS客户端 / MSE-EME播放器](https://github.com/shaka-project/shaka-player)
+### [GitHub - shaka-project/shaka-player: JavaScript 播放器库 / DASH 与 HLS 客户端 / MSE-EME 播放器](https://github.com/shaka-project/shaka-player)
 
 **原文标题**: [GitHub - shaka-project/shaka-player: JavaScript player library / DASH & HLS client / MSE-EME player](https://github.com/shaka-project/shaka-player)
 
@@ -602,14 +602,14 @@ Shaka Player 是一个开源的 JavaScript 媒体播放库，支持 DASH 和 HLS
 
 ---
 
-### [Shaka播放器演示](https://shaka-project.github.io/shaka-player/demo/)
+### [Shaka 播放器演示](https://shaka-project.github.io/shaka-player/demo/)
 
 **原文标题**: [Shaka Player Demo](https://shaka-project.github.io/shaka-player/demo/)
 
-该项目提供了jQuery相关的资源链接、许可证信息、浏览器支持测试以及多种使用模式。
+该项目提供了 jQuery 相关的资源链接、许可证信息、浏览器支持测试以及多种使用模式。
 
-- 📚 文档与许可证：提供项目文档和Apache许可证信息
-- 🔗 代码与分发：源代码托管于GitHub，可通过NPM获取包，并支持CDN及多个托管库
+- 📚 文档与许可证：提供项目文档和 Apache 许可证信息
+- 🔗 代码与分发：源代码托管于 GitHub，可通过 NPM 获取包，并支持 CDN 及多个托管库
 - 🌐 兼容性测试：包含浏览器支持测试链接
 - 🛠️ 使用模式：提供编译版（含发布和调试版本）及未编译版本供不同开发需求使用
 
@@ -637,10 +637,10 @@ Meriyah 是一个完全符合标准、自托管的 JavaScript 解析器，专注
 
 本文介绍了人工智能在医疗领域的应用现状与前景，重点探讨了其在疾病诊断、药物研发和个性化治疗方面的突破性进展，同时简要提及了相关的伦理挑战。
 
-- 🏥 AI辅助诊断系统能通过分析医学影像快速识别病灶，提升早期癌症等疾病的检出率
+- 🏥 AI 辅助诊断系统能通过分析医学影像快速识别病灶，提升早期癌症等疾病的检出率
 - 🔬 机器学习加速了新药研发过程，大幅缩短化合物筛选与临床试验周期
 - 📊 基于患者基因数据的人工智能模型可为慢性病患者提供个性化治疗方案
-- ⚖️ 医疗AI面临数据隐私、算法透明度及责任认定等伦理监管问题
+- ⚖️ 医疗 AI 面临数据隐私、算法透明度及责任认定等伦理监管问题
 
 ---
 
@@ -672,7 +672,7 @@ React Grab 现已升级为可直接与 AI 编程助手交互，在浏览器内�
 
 ---
 
-### [GitHub - downshift-js/downshift: 🏎 一套用于构建简单、灵活且符合WAI-ARIA标准的React自动完成、组合框或选择下拉组件的原语。](https://github.com/downshift-js/downshift)
+### [GitHub - downshift-js/downshift: 🏎 一套用于构建简单、灵活且符合 WAI-ARIA 标准的 React 自动完成、组合框或选择下拉组件的原语。](https://github.com/downshift-js/downshift)
 
 **原文标题**: [GitHub - downshift-js/downshift: 🏎 A set of primitives to build simple, flexible, WAI-ARIA compliant React autocomplete, combobox or select dropdown components.](https://github.com/downshift-js/downshift)
 
@@ -722,7 +722,7 @@ VuePDF 是一个用于 Vue 3 的客户端 PDF 渲染组件，基于 pdf.js 库�
 
 ---
 
-### [Lume，专为Deno打造的静态网站生成器 - Lume](https://lume.land/)
+### [Lume，专为 Deno 打造的静态网站生成器 - Lume](https://lume.land/)
 
 **原文标题**: [Lume, the static site generator for Deno - Lume](https://lume.land/)
 
@@ -735,7 +735,7 @@ VuePDF 是一个用于 Vue 3 的客户端 PDF 渲染组件，基于 pdf.js 库�
 
 ---
 
-### [精密AI - 无需编写测试的自动化前端测试](https://www.meticulous.ai?utm_source=jsweekly&utm_medium=referral&utm_campaign=26q1&utm_content=classified)
+### [精密 AI - 无需编写测试的自动化前端测试](https://www.meticulous.ai?utm_source=jsweekly&utm_medium=referral&utm_campaign=26q1&utm_content=classified)
 
 **原文标题**: [Meticulous AI - Automated Frontend Testing Without Writing Tests](https://www.meticulous.ai?utm_source=jsweekly&utm_medium=referral&utm_campaign=26q1&utm_content=classified)
 
@@ -743,10 +743,10 @@ Meticulous AI 是一款创新的自动化测试工具，通过记录用户与应
 
 - 🚀 无需编写测试：通过记录开发、预演和生产环境中的用户交互，自动生成覆盖所有代码分支和边缘情况的测试
 - 🔄 测试自动演进：随着应用更新，测试套件自动添加新测试并淘汰过时部分，保持测试的时效性和完整性
-- ⚡ 高速并行测试：利用计算集群并行执行测试，可在120秒内完成数千个屏幕的测试
-- 🛡️ 消除测试波动：基于Chromium构建的确定性调度引擎，从根本上消除测试的不稳定性，确保结果可靠
-- 🔗 灵活集成：支持与现有测试套件结合使用或完全替代，提供与主流前端框架（如React、Vue、Angular等）的集成
-- 📈 提升开发效率：被Dropbox、Notion等超过100家组织信任，显著加快代码发布速度，减少回归错误
+- ⚡ 高速并行测试：利用计算集群并行执行测试，可在 120 秒内完成数千个屏幕的测试
+- 🛡️ 消除测试波动：基于 Chromium 构建的确定性调度引擎，从根本上消除测试的不稳定性，确保结果可靠
+- 🔗 灵活集成：支持与现有测试套件结合使用或完全替代，提供与主流前端框架（如 React、Vue、Angular 等）的集成
+- 📈 提升开发效率：被 Dropbox、Notion 等超过 100 家组织信任，显著加快代码发布速度，减少回归错误
 
 ---
 
@@ -770,13 +770,13 @@ STRICH 是一款用于网页应用的 JavaScript 库，支持在浏览器中实�
 
 **原文标题**: [Shades of Halftone - The Blog of Maxime Heckel](https://blog.maximeheckel.com/posts/shades-of-halftone/)
 
-本文深入探讨了半色调（halftone）效果的历史、原理及其在现代数字设计中的多样化实现方式，从基础的网格圆点到复杂的多通道CMYK模拟，展示了如何通过GLSL着色器创造丰富的视觉纹理和艺术风格。
+本文深入探讨了半色调（halftone）效果的历史、原理及其在现代数字设计中的多样化实现方式，从基础的网格圆点到复杂的多通道 CMYK 模拟，展示了如何通过 GLSL 着色器创造丰富的视觉纹理和艺术风格。
 
-- 🎨 **半色调的复兴与艺术应用**：半色调作为一种经典的点阵图案，最初用于有限墨色的印刷，现已成为跨媒体和网页设计的艺术工具，通过软件如Paper、Efecto等普及，赋予数字输出独特的纹理感。
-- 🔍 **光学原理与实现基础**：半色调通过高频点阵模拟连续色调，利用人眼的空间分辨率限制，使大脑对图案进行空间平均，从而感知平滑渐变。其GLSL实现核心包括绘制圆形距离场和网格生成（使用`fract`函数）。
+- 🎨 **半色调的复兴与艺术应用**：半色调作为一种经典的点阵图案，最初用于有限墨色的印刷，现已成为跨媒体和网页设计的艺术工具，通过软件如 Paper、Efecto 等普及，赋予数字输出独特的纹理感。
+- 🔍 **光学原理与实现基础**：半色调通过高频点阵模拟连续色调，利用人眼的空间分辨率限制，使大脑对图案进行空间平均，从而感知平滑渐变。其 GLSL 实现核心包括绘制圆形距离场和网格生成（使用`fract`函数）。
 - ⚙️ **基础到高级的实现步骤**：从单一圆形的渲染出发，结合网格化和像素化纹理，通过调整点的大小（基于亮度值）和网格偏移，实现经典半色调效果，并引入抗锯齿（如`smoothstep`）优化显示。
-- 🌈 **多通道与颜色混合**：探索RGB和CMYK多通道半色调，通过叠加不同颜色的网格层模拟物理印刷中的颜色混合。CMYK版本需转换颜色空间并旋转各层以减少莫尔条纹（Moiré）干扰。
-- 🌀 **突破网格的创新变体**：通过采样邻近单元格（3x3内核）消除点阵的“裁剪”限制，实现点的溢出与融合，创造出液态（gooey）效果和动态位移（如跟随光标轨迹），增强有机感和交互性。
+- 🌈 **多通道与颜色混合**：探索 RGB 和 CMYK 多通道半色调，通过叠加不同颜色的网格层模拟物理印刷中的颜色混合。CMYK 版本需转换颜色空间并旋转各层以减少莫尔条纹（Moiré）干扰。
+- 🌀 **突破网格的创新变体**：通过采样邻近单元格（3x3 内核）消除点阵的“裁剪”限制，实现点的溢出与融合，创造出液态（gooey）效果和动态位移（如跟随光标轨迹），增强有机感和交互性。
 - 🚀 **性能与艺术扩展**：较大内核虽提升效果真实性但增加性能开销；半色调作为模块化着色器的基础，可扩展至实时绘画风格模拟（如点彩、水彩），展示了其持续的艺术与技术潜力。
 
 ---
@@ -800,14 +800,14 @@ React-three-fiber 是一个用于 three.js 的 React 渲染器，允许开发者
 
 **原文标题**: [The AI PaaS for Deploying, Managing, and Scaling Apps](https://www.heroku.com/)
 
-Heroku是一个全托管云应用平台，专注于简化AI应用和智能体开发，让开发者无需管理底层基础设施，从而更专注于构建数据驱动的应用程序。
+Heroku 是一个全托管云应用平台，专注于简化 AI 应用和智能体开发，让开发者无需管理底层基础设施，从而更专注于构建数据驱动的应用程序。
 
-- 🚀 **简化AI开发**：提供托管推理和智能体服务，可快速接入领先AI模型，通过Model Context Protocol（MCP）轻松扩展工具与API集成。
-- 🗄️ **集成向量数据库**：Heroku Postgres支持pgvector，便于构建RAG应用或执行向量相似性搜索，实现嵌入数据与业务数据的统一存储查询。
-- 🌐 **丰富生态系统**：拥有150多个第三方插件和380多个开源构建包，支持Node.js、Ruby、Java、Python等主流语言，并可灵活扩展其他语言。
-- ⚙️ **强大功能集**：包括智能容器运行环境、全托管PostgreSQL数据库、Redis键值存储、弹性扩展、团队协作、快速回滚、应用监控及持续交付等核心功能。
-- 🔒 **安全合规**：平台定期接受审计，符合PCI、HIPAA、ISO、SOC等合规标准，提供Heroku Shield等高合规性解决方案。
-- 🏢 **企业级支持**：提供私有空间、单点登录（SSO）、Heroku Connect数据同步及企业级SLA支持，满足大型组织的安全和协作需求。
+- 🚀 **简化 AI 开发**：提供托管推理和智能体服务，可快速接入领先 AI 模型，通过 Model Context Protocol（MCP）轻松扩展工具与 API 集成。
+- 🗄️ **集成向量数据库**：Heroku Postgres 支持 pgvector，便于构建 RAG 应用或执行向量相似性搜索，实现嵌入数据与业务数据的统一存储查询。
+- 🌐 **丰富生态系统**：拥有 150 多个第三方插件和 380 多个开源构建包，支持 Node.js、Ruby、Java、Python 等主流语言，并可灵活扩展其他语言。
+- ⚙️ **强大功能集**：包括智能容器运行环境、全托管 PostgreSQL 数据库、Redis 键值存储、弹性扩展、团队协作、快速回滚、应用监控及持续交付等核心功能。
+- 🔒 **安全合规**：平台定期接受审计，符合 PCI、HIPAA、ISO、SOC 等合规标准，提供 Heroku Shield 等高合规性解决方案。
+- 🏢 **企业级支持**：提供私有空间、单点登录（SSO）、Heroku Connect 数据同步及企业级 SLA 支持，满足大型组织的安全和协作需求。
 - 📈 **广泛适用性**：服务于开发者、CTO、初创公司至大型企业等各类用户，提供从原型验证到关键业务系统的全场景支持。
 
 ---
@@ -816,26 +816,26 @@ Heroku是一个全托管云应用平台，专注于简化AI应用和智能体开
 
 **原文标题**: [An Update on Heroku](https://www.heroku.com/blog/an-update-on-heroku/)
 
-Heroku将转向以稳定性、安全性和可靠性为核心的维护模式，现有服务与价格保持不变，但不再为新客户提供企业合同，以集中资源发展企业级AI等长期价值领域。
+Heroku 将转向以稳定性、安全性和可靠性为核心的维护模式，现有服务与价格保持不变，但不再为新客户提供企业合同，以集中资源发展企业级 AI 等长期价值领域。
 
-- 🛠️ Heroku进入维护模式，专注稳定性、安全与支持，而非新增功能
+- 🛠️ Heroku 进入维护模式，专注稳定性、安全与支持，而非新增功能
 - 💳 现有及新个人客户（信用卡支付）的服务、价格与使用均无变化
 - 📝 企业合同不再对新客户开放，现有合约继续履行并可续约
-- 🎯 公司将资源集中于企业级AI等能创造长期价值的领域
+- 🎯 公司将资源集中于企业级 AI 等能创造长期价值的领域
 
 ---
 
-### [Heroku最新动态 | 黑客新闻](https://news.ycombinator.com/item?id=46913903)
+### [Heroku 最新动态 | 黑客新闻](https://news.ycombinator.com/item?id=46913903)
 
 **原文标题**: [An Update on Heroku | Hacker News](https://news.ycombinator.com/item?id=46913903)
 
-Heroku宣布将转向“持续工程模式”，重点维持现有服务质量和运营稳定，而非推出新功能。企业版合同将不再向新客户开放，但现有客户服务暂时不变。公司表示此举是为了更专注于企业级AI等新兴领域。
+Heroku 宣布将转向“持续工程模式”，重点维持现有服务质量和运营稳定，而非推出新功能。企业版合同将不再向新客户开放，但现有客户服务暂时不变。公司表示此举是为了更专注于企业级 AI 等新兴领域。
 
-- 🛠️ **技术债务与扩展挑战**：前员工指出，Heroku在2011-2012年因快速增长面临严重技术债务和扩展压力，尽管团队规模扩大，仍难以跟上需求。
-- 🚀 **简单部署体验**：用户怀念Heroku“git push”一键部署的极致简洁性，认为当前市场仍缺乏完全媲美的平台即服务（PaaS）产品。
-- 📉 **收购后逐渐停滞**：Salesforce于2010年收购Heroku，初期给予资金支持，但随后创始人淡出、领导力缺失，产品创新逐渐停滞。
-- 🔄 **市场竞争与替代方案**：用户讨论Render、Fly.io、Railway等替代平台，部分肯定其易用性，但也指出在功能或定价方面与Heroku存在差距。
-- 💡 **工程文化与影响**：前员工赞扬Heroku早期的工程团队和创新文化，其设计理念（如“输入-过滤-输出”模式）对行业影响深远。
+- 🛠️ **技术债务与扩展挑战**：前员工指出，Heroku 在 2011-2012 年因快速增长面临严重技术债务和扩展压力，尽管团队规模扩大，仍难以跟上需求。
+- 🚀 **简单部署体验**：用户怀念 Heroku“git push”一键部署的极致简洁性，认为当前市场仍缺乏完全媲美的平台即服务（PaaS）产品。
+- 📉 **收购后逐渐停滞**：Salesforce 于 2010 年收购 Heroku，初期给予资金支持，但随后创始人淡出、领导力缺失，产品创新逐渐停滞。
+- 🔄 **市场竞争与替代方案**：用户讨论 Render、Fly.io、Railway 等替代平台，部分肯定其易用性，但也指出在功能或定价方面与 Heroku 存在差距。
+- 💡 **工程文化与影响**：前员工赞扬 Heroku 早期的工程团队和创新文化，其设计理念（如“输入 - 过滤 - 输出”模式）对行业影响深远。
 - 🏢 **企业决策与沟通模糊**：官方公告被批评为“企业废话”，模糊的表述引发用户对服务即将关闭的担忧和不满。
 
 ---
@@ -849,19 +849,19 @@ Remotion 是一个基于 React 的程序化视频创作平台，允许开发者�
 - 🎬 使用 React 技术栈编写代码来创建和参数化视频内容
 - 🖥️ 提供 Remotion Studio、Player 和 Editor Starter 等工具支持动态编辑
 - ⚙️ 支持本地、服务器或无服务器环境渲染 MP4 等多种格式视频
-- 💼 提供免费许可（3人以下团队）和公司许可（4人以上团队）两种方案
+- 💼 提供免费许可（3 人以下团队）和公司许可（4 人以上团队）两种方案
 - 🏢 企业版包含优先支持、定制条款和每月咨询会议等高级服务
-- 🤝 拥有活跃社区，每月90万次安装、6000多名 Discord 成员和300多名贡献者
+- 🤝 拥有活跃社区，每月 90 万次安装、6000 多名 Discord 成员和 300 多名贡献者
 - 🛠️ 可通过 Editor Starter 模板构建自定义视频编辑应用程序
 - 📈 适用于音乐可视化、字幕生成、屏幕录制和年度回顾等多种用例
 
 ---
 
-### [用AI创建动态图形——初学者简易教程 - YouTube](https://www.youtube.com/watch?v=5NRAOnKc3c8)
+### [用 AI 创建动态图形——初学者简易教程 - YouTube](https://www.youtube.com/watch?v=5NRAOnKc3c8)
 
 **原文标题**: [Create motion graphics with AI – Simple tutorial for beginners - YouTube](https://www.youtube.com/watch?v=5NRAOnKc3c8)
 
-该页面为YouTube平台的官方信息与政策说明区域，涵盖服务条款、隐私政策及功能说明等内容。
+该页面为 YouTube 平台的官方信息与政策说明区域，涵盖服务条款、隐私政策及功能说明等内容。
 
 - 📄 关于平台的基本信息与介绍
 - 📢 新闻发布与媒体资源
@@ -869,7 +869,7 @@ Remotion 是一个基于 React 的程序化视频创作平台，允许开发者�
 - 📞 联系与反馈渠道
 - 🧑‍🎨 创作者相关资源与支持
 - 💼 广告合作与商业推广
-- 👨‍💻 开发者工具与API资源
+- 👨‍💻 开发者工具与 API 资源
 - ⚖️ 服务条款与使用协议
 - 🔒 隐私政策与数据保护
 - 🛡️ 平台安全与使用规范

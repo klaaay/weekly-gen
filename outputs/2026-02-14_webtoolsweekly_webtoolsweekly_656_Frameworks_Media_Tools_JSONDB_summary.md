@@ -9,7 +9,7 @@ DebugBear 是一个全面的网站性能监控平台，专注于帮助用户优�
 - 📊 **持续监控页面速度** – 确认优化效果，并在性能下降时获得警报。
 - 🧪 **综合监控方案** – 包括合成监控（定期实验室测试）、真实用户监控（实时追踪实际用户体验）和谷歌 CrUX 数据监控。
 - 🎯 **优化核心网页指标** – 深入分析访客体验，自动识别问题并提供详细建议。
-- ⚙️ **深入技术分析** – 提供网络请求瀑布图等调试数据，关联网络活动与CPU任务。
+- ⚙️ **深入技术分析** – 提供网络请求瀑布图等调试数据，关联网络活动与 CPU 任务。
 - 🛠️ **改善交互性能** – 专门针对交互到下次绘制（INP）等核心网页指标进行优化，识别导致慢交互的页面元素和脚本。
 - 🔔 **自动变更通知** – 通过零配置警报或自定义阈值，及时捕捉并修复性能回归。
 - 📹 **团队协作与沟通** – 支持视频导出、图表注释和数据共享（PDF/CSV），便于与客户和团队沟通。
@@ -37,29 +37,29 @@ DebugBear 是一个全面的网站性能监控平台，专注于帮助用户优�
 
 **原文标题**: [solid-ui](https://www.solid-ui.com/)
 
-该内容展示了一个基于SolidJS构建的组件库SolidUI的示例界面，模拟了一个邮件收件箱的仪表盘，包含多个邮件预览和交互功能。
+该内容展示了一个基于 SolidJS 构建的组件库 SolidUI 的示例界面，模拟了一个邮件收件箱的仪表盘，包含多个邮件预览和交互功能。
 
 - 📧 **邮件列表预览**：展示了多个邮件条目，包括发件人、时间、主题和标签（如工作、个人、重要等）。
-- 🔧 **组件库介绍**：SolidUI是一个基于shadcn/ui和tremor-raw设计的SolidJS组件库，提供可直接复用的UI组件。
+- 🔧 **组件库介绍**：SolidUI 是一个基于 shadcn/ui 和 tremor-raw 设计的 SolidJS 组件库，提供可直接复用的 UI 组件。
 - 📁 **邮件分类与筛选**：左侧导航栏支持按收件箱、草稿、已发送等分类查看邮件，并显示未读邮件数量。
-- 📝 **详细邮件查看**：点击邮件可展开查看完整内容，如William Smith关于项目会议的邮件，包含具体时间和讨论要点。
+- 📝 **详细邮件查看**：点击邮件可展开查看完整内容，如 William Smith 关于项目会议的邮件，包含具体时间和讨论要点。
 - 🛠️ **交互功能**：界面提供归档、移至垃圾箱、回复、转发等邮件操作按钮，支持用户管理邮件。
-- 🌐 **开源与设计**：项目由Stefan E-K和Michael Essiet移植到SolidJS，设计灵感来源于shadcn和tremorlabs，代码托管于GitHub。
+- 🌐 **开源与设计**：项目由 Stefan E-K 和 Michael Essiet 移植到 SolidJS，设计灵感来源于 shadcn 和 tremorlabs，代码托管于 GitHub。
 
 ---
 
-### [GitHub - michaeltroya/supa-next-starter: ⚡️Next.js、Supabase、Tailwind、shadcn⚡️ 你唯一需要的终极Next.js与Supabase启动模板](https://github.com/michaeltroya/supa-next-starter)
+### [GitHub - michaeltroya/supa-next-starter: ⚡️Next.js、Supabase、Tailwind、shadcn⚡️ 你唯一需要的终极 Next.js 与 Supabase 启动模板](https://github.com/michaeltroya/supa-next-starter)
 
 **原文标题**: [GitHub - michaeltroya/supa-next-starter: ⚡️Next.js, Supabase, Tailwind, shadcn⚡️The Last Next.js and Supabase Starter You Will Ever Need](https://github.com/michaeltroya/supa-next-starter)
 
-这是一个名为“SupaNext Starter Kit”的Next.js与Supabase集成启动模板，由Michael Troya创建，旨在提供一套功能全面、开箱即用的现代Web开发基础框架。
+这是一个名为“SupaNext Starter Kit”的 Next.js 与 Supabase 集成启动模板，由 Michael Troya 创建，旨在提供一套功能全面、开箱即用的现代 Web 开发基础框架。
 
-- ⚡️ 基于Next.js 16（App Router）、React 19、TypeScript和Supabase构建，支持全栈开发
-- 🛠️ 集成多种开发工具：Tailwind CSS、shadcn/ui组件库、TanStack Query、Vitest测试框架等
-- 🔧 包含完整的开发工作流支持：ESLint、Prettier、Husky、GitHub Actions等
-- 🚀 提供详细的本地运行指南，包括环境变量配置和Supabase项目对接
+- ⚡️ 基于 Next.js 16（App Router）、React 19、TypeScript 和 Supabase 构建，支持全栈开发
+- 🛠️ 集成多种开发工具：Tailwind CSS、shadcn/ui 组件库、TanStack Query、Vitest 测试框架等
+- 🔧 包含完整的开发工作流支持：ESLint、Prettier、Husky、GitHub Actions 等
+- 🚀 提供详细的本地运行指南，包括环境变量配置和 Supabase 项目对接
 - 📚 附有项目文档，涵盖脚本说明、路径映射、许可证信息等内容
-- 🌟 已在GitHub上获得355个星标和65个分支，采用MIT开源许可证
+- 🌟 已在 GitHub 上获得 355 个星标和 65 个分支，采用 MIT 开源许可证
 
 ---
 
@@ -67,15 +67,15 @@ DebugBear 是一个全面的网站性能监控平台，专注于帮助用户优�
 
 **原文标题**: [Bundui: Tailwind CSS & shadcn/ui components, UI blocks, examples and more.](https://bundui.io/)
 
-本文介绍了一个名为Bundui的UI组件库，它提供超过100个精心设计的Tailwind CSS组件和区块，旨在帮助开发者快速构建美观、生产就绪的界面，并获得了来自多个行业团队的高度评价。
+本文介绍了一个名为 Bundui 的 UI 组件库，它提供超过 100 个精心设计的 Tailwind CSS 组件和区块，旨在帮助开发者快速构建美观、生产就绪的界面，并获得了来自多个行业团队的高度评价。
 
-- 🧩 提供超过100个精心制作的UI组件和区块，基于Tailwind CSS、React和shadcn/ui构建
+- 🧩 提供超过 100 个精心制作的 UI 组件和区块，基于 Tailwind CSS、React 和 shadcn/ui 构建
 - ⚡ 设计注重无缝集成、美观且开发友好，旨在加速生产级界面的开发
-- 📦 包含98个预制的“区块”，适用于营销、电商、房地产和仪表板等项目，涵盖页头、行动号召、定价等多个部分
-- 🔧 提供95个基础“组件”，如按钮、输入框、表格等，作为构建页面和区块的基石
+- 📦 包含 98 个预制的“区块”，适用于营销、电商、房地产和仪表板等项目，涵盖页头、行动号召、定价等多个部分
+- 🔧 提供 95 个基础“组件”，如按钮、输入框、表格等，作为构建页面和区块的基石
 - 💰 部分高级区块（如定价区块）需付费购买，原价$29，现价$19
 - 🌍 获得全球多个团队好评，用户称赞其节省开发时间、设计精美、功能强大且文档优秀
-- ✅ 特别强调了其出色的无障碍访问功能、响应式设计、TypeScript支持以及提升的用户参与度和转化率
+- ✅ 特别强调了其出色的无障碍访问功能、响应式设计、TypeScript 支持以及提升的用户参与度和转化率
 
 ---
 
@@ -100,20 +100,20 @@ Reshaped 是一个专业的设计系统，提供完全对齐的 React 和 Figma 
 
 **原文标题**: [ChatKit.js | OpenAI ChatKit](https://openai.github.io/chatkit-js/)
 
-ChatKit.js 是一个用于快速构建高质量AI聊天体验的开发框架，提供开箱即用的完整聊天界面，支持深度定制和多种高级功能，并兼容托管与自托管后端部署。
+ChatKit.js 是一个用于快速构建高质量 AI 聊天体验的开发框架，提供开箱即用的完整聊天界面，支持深度定制和多种高级功能，并兼容托管与自托管后端部署。
 
-- 🚀 **快速入门**：几分钟内即可构建首个聊天应用，支持React和原生JavaScript集成
-- 🛠️ **核心特性**：提供深度UI定制、响应流式传输、工具集成、富交互组件等生产级功能
-- 🔄 **框架无关**：作为即插即用解决方案，无需构建自定义UI或管理底层聊天状态
-- 🌐 **部署灵活**：支持OpenAI托管后端（快速部署）或自托管后端（完全控制数据与工作流）
+- 🚀 **快速入门**：几分钟内即可构建首个聊天应用，支持 React 和原生 JavaScript 集成
+- 🛠️ **核心特性**：提供深度 UI 定制、响应流式传输、工具集成、富交互组件等生产级功能
+- 🔄 **框架无关**：作为即插即用解决方案，无需构建自定义 UI 或管理底层聊天状态
+- 🌐 **部署灵活**：支持 OpenAI 托管后端（快速部署）或自托管后端（完全控制数据与工作流）
 - 📁 **附件支持**：内置文件/图片上传处理能力和对话线程管理功能
 - 🔗 **透明化设计**：支持来源标注和实体标记，增强对话可追溯性
-- 🧩 **扩展能力**：可通过自定义fetch方法集成身份验证，支持客户端工具调用和数据检索
+- 🧩 **扩展能力**：可通过自定义 fetch 方法集成身份验证，支持客户端工具调用和数据检索
 - 📚 **学习资源**：提供入门模板和示例代码库，帮助开发者快速上手实践
 
 ---
 
-### [GitHub - firecrawl/firegeo: 🔥 基于Firecrawl构建的GEO驱动SaaS启动器，用于品牌监控、认证与计费](https://github.com/firecrawl/firegeo)
+### [GitHub - firecrawl/firegeo: 🔥 基于 Firecrawl 构建的 GEO 驱动 SaaS 启动器，用于品牌监控、认证与计费](https://github.com/firecrawl/firegeo)
 
 **原文标题**: [GitHub - firecrawl/firegeo: 🔥 GEO-powered SaaS starter built with Firecrawl for brand monitoring, auth, and billing](https://github.com/firecrawl/firegeo)
 
@@ -133,35 +133,35 @@ FireGEO 是一个基于 Next.js 15 的开源 SaaS 启动模板，集成了品牌
 
 **原文标题**: [GitHub - webdevcody/ppai-next-starter](https://github.com/webdevcody/ppai-next-starter)
 
-这是一个基于Next.js 14的SaaS项目启动模板，集成了多种现代技术栈，旨在帮助开发者快速构建功能完整的应用程序。
+这是一个基于 Next.js 14 的 SaaS 项目启动模板，集成了多种现代技术栈，旨在帮助开发者快速构建功能完整的应用程序。
 
-- 🚀 **项目模板**：提供完整的SaaS启动套件，包含认证、支付、数据库等核心功能
-- 🔧 **技术栈**：基于Next.js 14应用路由、TypeScript、Drizzle ORM、Stripe和Shadcn UI
+- 🚀 **项目模板**：提供完整的 SaaS 启动套件，包含认证、支付、数据库等核心功能
+- 🔧 **技术栈**：基于 Next.js 14 应用路由、TypeScript、Drizzle ORM、Stripe 和 Shadcn UI
 - 📦 **功能特性**：包含用户认证、订阅管理、待办事项、主题切换、数据分析等模块
-- 🐳 **开发环境**：使用Docker Compose运行PostgreSQL数据库，简化本地开发配置
-- 🔐 **第三方集成**：支持Google OAuth身份验证和Stripe支付系统集成
+- 🐳 **开发环境**：使用 Docker Compose 运行 PostgreSQL 数据库，简化本地开发配置
+- 🔐 **第三方集成**：支持 Google OAuth 身份验证和 Stripe 支付系统集成
 - 📝 **详细文档**：提供完整的环境配置指南和部署说明
-- 📄 **开源许可**：采用MIT许可证，允许自由使用和修改
-- 🌟 **社区活跃**：拥有370个星标和46个分支，显示项目受欢迎程度
+- 📄 **开源许可**：采用 MIT 许可证，允许自由使用和修改
+- 🌟 **社区活跃**：拥有 370 个星标和 46 个分支，显示项目受欢迎程度
 
 ---
 
-### [GitHub - naomiaro/waveform-playlist: 多轨网络音频编辑器与播放器，带画布波形预览。设置提示点、淡入淡出及时间轴上的多轨位移。录制音轨或提供音频注释。将混音导出为AudioBuffer或WAV格式！添加来自Tone.js的效果。项目灵感源自Audacity。](https://github.com/naomiaro/waveform-playlist)
+### [GitHub - naomiaro/waveform-playlist: 多轨网络音频编辑器与播放器，带画布波形预览。设置提示点、淡入淡出及时间轴上的多轨位移。录制音轨或提供音频注释。将混音导出为 AudioBuffer 或 WAV 格式！添加来自 Tone.js 的效果。项目灵感源自 Audacity。](https://github.com/naomiaro/waveform-playlist)
 
 **原文标题**: [GitHub - naomiaro/waveform-playlist: Multitrack Web Audio editor and player with canvas waveform preview. Set cues, fades and shift multiple tracks in time. Record audio tracks or provide audio annotations. Export your mix to AudioBuffer or WAV! Add effects from Tone.js. Project inspired by Audacity.](https://github.com/naomiaro/waveform-playlist)
 
-这是一个基于Web Audio API的多轨音频编辑器与播放器，提供波形可视化、录音、效果处理和导出功能。
+这是一个基于 Web Audio API 的多轨音频编辑器与播放器，提供波形可视化、录音、效果处理和导出功能。
 
 - 🎵 **多轨音频编辑** – 支持多轨道、多片段，可拖拽移动和修剪音频片段。
-- 📊 **波形可视化** – 基于Canvas渲染波形，支持缩放控制。
-- 🎛️ **音频效果** – 集成Tone.js，提供混响、延迟、滤波、失真等20多种效果。
-- 🎤 **录音功能** – 基于AudioWorklet实现录音，并带有实时波形预览。
-- 💾 **导出选项** – 支持将混音或单轨导出为WAV格式，效果可一并渲染。
+- 📊 **波形可视化** – 基于 Canvas 渲染波形，支持缩放控制。
+- 🎛️ **音频效果** – 集成 Tone.js，提供混响、延迟、滤波、失真等 20 多种效果。
+- 🎤 **录音功能** – 基于 AudioWorklet 实现录音，并带有实时波形预览。
+- 💾 **导出选项** – 支持将混音或单轨导出为 WAV 格式，效果可一并渲染。
 - 📝 **时间标注** – 支持时间同步的文字标注，并可用键盘导航。
 - 🎨 **主题定制** – 提供完整的主题定制，支持深色/浅色模式。
-- ⚙️ **技术栈** – 使用React、TypeScript构建，代码完全类型化。
-- 🚀 **快速开始** – 通过npm安装，提供详细的示例和文档。
-- 📄 **开源许可** – 项目基于MIT许可证开源，灵感来源于Audacity。
+- ⚙️ **技术栈** – 使用 React、TypeScript 构建，代码完全类型化。
+- 🚀 **快速开始** – 通过 npm 安装，提供详细的示例和文档。
+- 📄 **开源许可** – 项目基于 MIT 许可证开源，灵感来源于 Audacity。
 
 ---
 
@@ -169,11 +169,11 @@ FireGEO 是一个基于 Next.js 15 的开源 SaaS 启动模板，集成了品牌
 
 **原文标题**: [PasteResize — Free Online Image Resizer & Editor](https://pasteresize.online/)
 
-PasteResize是一款免费、无需注册的在线图像编辑器，提供便捷的图像调整、裁剪和优化功能，支持多种上传方式和格式，所有操作均在浏览器中完成，确保用户隐私。
+PasteResize 是一款免费、无需注册的在线图像编辑器，提供便捷的图像调整、裁剪和优化功能，支持多种上传方式和格式，所有操作均在浏览器中完成，确保用户隐私。
 
 - 🖼️ 支持多种上传方式：可通过拖放、粘贴剪贴板或文件浏览上传图像
 - ✂️ 提供智能编辑工具：包括智能调整尺寸、按比例裁剪和实时预览效果
-- 📥 即时下载多种格式：可导出PNG、JPG等格式，优化网络或打印质量
+- 📥 即时下载多种格式：可导出 PNG、JPG 等格式，优化网络或打印质量
 - 🔒 注重隐私安全：图像处理在本地进行，无需下载软件或注册账户
 - 📱 跨平台兼容：适配各种设备和现代浏览器，支持移动端使用
 - 💡 包含实用指南：提供编辑步骤、常见问题解答和图像优化建议
@@ -188,35 +188,35 @@ PasteResize是一款免费、无需注册的在线图像编辑器，提供便捷
 
 ---
 
-### [免费SVG转换器 - 支持颜色](https://svgconverter.online/)
+### [免费 SVG 转换器 - 支持颜色](https://svgconverter.online/)
 
 **原文标题**: [Free SVG Converter - With Color](https://svgconverter.online/)
 
-本文介绍了一个免费的在线SVG转换工具，支持将PNG和JPG转换为SVG，并提供自定义颜色、编辑透明度等功能，适用于图形、图标等平面设计。
+本文介绍了一个免费的在线 SVG 转换工具，支持将 PNG 和 JPG 转换为 SVG，并提供自定义颜色、编辑透明度等功能，适用于图形、图标等平面设计。
 
-- 🖼️ 支持将PNG和JPG图像转换为可缩放的SVG矢量图形，转换前可调整图像分辨率以优化细节效果
-- 🎨 自动生成颜色调色板，允许通过取色器或手动输入Hex代码添加和删除颜色，实现自定义配色
+- 🖼️ 支持将 PNG 和 JPG 图像转换为可缩放的 SVG 矢量图形，转换前可调整图像分辨率以优化细节效果
+- 🎨 自动生成颜色调色板，允许通过取色器或手动输入 Hex 代码添加和删除颜色，实现自定义配色
 - 🔲 提供两种转换模式：堆叠模式（颜色形状分层叠加）和剪裁模式（颜色形状像拼图一样拼接，避免重叠）
-- 🧹 可调整噪点级别以清理转换后SVG中的杂质或保留精细细节，通常推荐设置为2以达到最佳平衡
-- ✏️ 转换后可编辑SVG颜色和背景透明度，支持隐藏图层或统一修改相同颜色图层，背景可设置为透明
+- 🧹 可调整噪点级别以清理转换后 SVG 中的杂质或保留精细细节，通常推荐设置为 2 以达到最佳平衡
+- ✏️ 转换后可编辑 SVG 颜色和背景透明度，支持隐藏图层或统一修改相同颜色图层，背景可设置为透明
 - 🔒 工具完全免费且无需注册，所有图像数据仅在转换过程中临时处理，完成后立即丢弃，确保隐私安全
 - ⚠️ 该工具最适合平面图形、徽标和图标，不建议用于照片转换，以避免生成过于复杂的大文件
 
 ---
 
-### [所有SVG图标 - 免费开源SVG矢量图标 | 所有SVG图标](https://allsvgicons.com/)
+### [所有 SVG 图标 - 免费开源 SVG 矢量图标 | 所有 SVG 图标](https://allsvgicons.com/)
 
 **原文标题**: [All SVG Icons - Free and Open Source SVG Vector Icons | All SVG Icons](https://allsvgicons.com/)
 
-该网站提供超过25万个免费SVG图标，涵盖220多个精选图标库，支持自定义、复制和多种格式下载，包括PNG、SVG、JSX和Base64。
+该网站提供超过 25 万个免费 SVG 图标，涵盖 220 多个精选图标库，支持自定义、复制和多种格式下载，包括 PNG、SVG、JSX 和 Base64。
 
-- 📚 **海量图标资源** – 提供超过250,000个免费SVG图标，来自220多个精选图标库。
-- 🛠️ **多功能使用** – 支持图标自定义、复制原始SVG代码，并可以下载为PNG、SVG、JSX和Base64格式。
-- 🏷️ **图标库丰富** – 包含Material Symbols、Phosphor、Font Awesome、Bootstrap Icons等多个热门图标系列。
+- 📚 **海量图标资源** – 提供超过 250,000 个免费 SVG 图标，来自 220 多个精选图标库。
+- 🛠️ **多功能使用** – 支持图标自定义、复制原始 SVG 代码，并可以下载为 PNG、SVG、JSX 和 Base64 格式。
+- 🏷️ **图标库丰富** – 包含 Material Symbols、Phosphor、Font Awesome、Bootstrap Icons 等多个热门图标系列。
 - 🎨 **多样化分类** – 涵盖通用图标、品牌标识、表情符号、旗帜、地图、游戏、天气、医疗等多种类别。
 - 🔄 **格式兼容** – 提供多种下载格式，方便在不同项目和开发环境中使用。
-- 🌐 **开源免费** – 所有图标均可免费使用，是Flaticon、Iconmonstr等平台的替代选择。
-- 📱 **附加项目** – 网站还提供其他工具和项目，如计算器、在线笔记、AI提示工作室等。
+- 🌐 **开源免费** – 所有图标均可免费使用，是 Flaticon、Iconmonstr 等平台的替代选择。
+- 📱 **附加项目** – 网站还提供其他工具和项目，如计算器、在线笔记、AI 提示工作室等。
 
 ---
 
@@ -228,10 +228,10 @@ PasteResize是一款免费、无需注册的在线图像编辑器，提供便捷
 
 - 🛠️ 提供便捷工具，可在视频中显示基线状态
 - 📹 支持录制视频功能
-- 👨💻 由Zoran Jambor开发，CSS Weekly支持
-- 🌐 提供多种社交媒体关注渠道（YouTube、Bluesky、X等）
-- 💝 支持通过Patreon、Buy Me a Coffee等方式赞助
-- 🎓 可购买CSS贴纸包或参加相关课程
+- 👨💻 由 Zoran Jambor 开发，CSS Weekly 支持
+- 🌐 提供多种社交媒体关注渠道（YouTube、Bluesky、X 等）
+- 💝 支持通过 Patreon、Buy Me a Coffee 等方式赞助
+- 🎓 可购买 CSS 贴纸包或参加相关课程
 
 ---
 
@@ -241,15 +241,15 @@ PasteResize是一款免费、无需注册的在线图像编辑器，提供便捷
 
 本文介绍了人工智能在医疗领域的应用现状与前景，重点探讨了其在疾病诊断、治疗方案优化及医疗管理效率提升方面的作用，并简要提及了相关的技术挑战和伦理考量。
 
-- 🏥 AI辅助诊断系统能通过分析医学影像快速识别病灶，提高早期疾病检出率
+- 🏥 AI 辅助诊断系统能通过分析医学影像快速识别病灶，提高早期疾病检出率
 - 💊 基于机器学习的个性化治疗方案可结合患者数据优化用药与治疗路径
 - 📊 智能医疗管理平台能整合临床数据，减少行政负荷，提升医疗机构运营效率
-- ⚠️ 数据隐私保护与算法透明度仍是当前AI医疗应用需要突破的关键挑战
-- 🔮 未来AI将与人类医生协同工作，推动精准医疗和远程医疗的创新发展
+- ⚠️ 数据隐私保护与算法透明度仍是当前 AI 医疗应用需要突破的关键挑战
+- 🔮 未来 AI 将与人类医生协同工作，推动精准医疗和远程医疗的创新发展
 
 ---
 
-### [GitHub - image-js/image-js: JavaScript中的图像处理与操作](https://github.com/image-js/image-js)
+### [GitHub - image-js/image-js: JavaScript 中的图像处理与操作](https://github.com/image-js/image-js)
 
 **原文标题**: [GitHub - image-js/image-js: Image processing and manipulation in JavaScript](https://github.com/image-js/image-js)
 
@@ -272,12 +272,12 @@ image-js 是一个用于 JavaScript 的图像处理和操作库，提供完整�
 一款免费在线工具，可将任意图片快速裁剪为完美的圆形，适用于头像、社交媒体和设计项目，无需注册，保障隐私安全。
 
 - 🖼️ **免费在线圆形裁剪工具**：无需注册或付费，直接在浏览器中完成图片裁剪，确保隐私安全。
-- 🔄 **简单三步操作**：上传图片、调整位置、下载圆形图片，支持JPG、PNG、WEBP、GIF格式（最大10MB）。
+- 🔄 **简单三步操作**：上传图片、调整位置、下载圆形图片，支持 JPG、PNG、WEBP、GIF 格式（最大 10MB）。
 - 🌟 **高质量输出**：保持原始画质，背景透明，适用于各类设计场景。
 - 📱 **多设备兼容**：可在电脑、平板或手机上使用，界面友好易操作。
 - 🛠️ **更多图像工具**：提供图像增强、背景移除、压缩、模糊及调整尺寸等附加功能。
 - 💡 **使用建议**：使用高分辨率图片，将主体置于中心，预览后下载以获得最佳效果。
-- ❓ **常见问题解答**：工具不存储上传图片，支持多种格式，输出为透明背景的PNG文件。
+- ❓ **常见问题解答**：工具不存储上传图片，支持多种格式，输出为透明背景的 PNG 文件。
 
 ---
 
@@ -285,15 +285,15 @@ image-js 是一个用于 JavaScript 的图像处理和操作库，提供完整�
 
 **原文标题**: [Visual Proof That Your UI Works | Vizzly](https://vizzly.dev/?utm_source=webtoolsweekly&utm_medium=newsletter&utm_campaign=2026q1&utm_content=feb12-reviewui)
 
-Vizzly是一个视觉测试平台，帮助开发团队在代码部署前快速识别和验证UI变化，尤其适用于AI生成代码的视觉验证，通过智能差异比较确保界面准确无误。
+Vizzly 是一个视觉测试平台，帮助开发团队在代码部署前快速识别和验证 UI 变化，尤其适用于 AI 生成代码的视觉验证，通过智能差异比较确保界面准确无误。
 
-- 🚀 **快速验证AI生成代码**：提供视觉证据，确保每次PR的UI表现符合预期，避免视觉错误漏网
-- 💰 **高性价比测试方案**：每美元可生成66,000张截图，性价比远超竞争对手的165张，实现无预算压力的全面测试
-- 🔧 **无缝集成现有工具**：支持Playwright、Cypress等常用测试工具，无需改变现有工作流程
-- 🧠 **智能差异检测**：采用Honeydiff引擎，能自动忽略时间戳、广告等动态内容，精准识别真实UI变化
-- ⚡ **本地即时反馈**：通过`vizzly tdd`命令实现本地实时测试，无需等待CI构建，支持完全离线操作
+- 🚀 **快速验证 AI 生成代码**：提供视觉证据，确保每次 PR 的 UI 表现符合预期，避免视觉错误漏网
+- 💰 **高性价比测试方案**：每美元可生成 66,000 张截图，性价比远超竞争对手的 165 张，实现无预算压力的全面测试
+- 🔧 **无缝集成现有工具**：支持 Playwright、Cypress 等常用测试工具，无需改变现有工作流程
+- 🧠 **智能差异检测**：采用 Honeydiff 引擎，能自动忽略时间戳、广告等动态内容，精准识别真实 UI 变化
+- ⚡ **本地即时反馈**：通过`vizzly tdd`命令实现本地实时测试，无需等待 CI 构建，支持完全离线操作
 - 📊 **团队协作仪表板**：提供可视化比较界面，方便团队共同审查、批准变更，确保无误后合并
-- 📦 **灵活部署选项**：提供npm包（@vizzly-testing/honeydiff）和云端服务，起价为12美元/用户/月
+- 📦 **灵活部署选项**：提供 npm 包（@vizzly-testing/honeydiff）和云端服务，起价为 12 美元/用户/月
 
 ---
 
@@ -301,18 +301,18 @@ Vizzly是一个视觉测试平台，帮助开发团队在代码部署前快速�
 
 **原文标题**: [Visual Proof That Your UI Works | Vizzly](https://vizzly.dev/?utm_source=webtoolsweekly&utm_medium=newsletter&utm_campaign=2026q1&utm_content=feb12-reviewui)
 
-Vizzly是一个可视化测试平台，专注于帮助开发者验证UI变更，特别是针对AI生成代码或手动修改，确保在发布前准确识别视觉变化，并提供高效、经济的测试解决方案。
+Vizzly 是一个可视化测试平台，专注于帮助开发者验证 UI 变更，特别是针对 AI 生成代码或手动修改，确保在发布前准确识别视觉变化，并提供高效、经济的测试解决方案。
 
-- 🖼️ **可视化验证** – 提供视觉证据，确保每次代码变更（无论是AI生成还是手动修改）在发布前都按预期工作，避免视觉错误。
-- ⚡ **智能差异检测** – 使用Honeydiff引擎，能自动忽略时间戳、广告和动态内容等干扰，精准识别真实UI变化，速度比传统工具快12倍。
-- 💰 **成本效益高** – 价格优势明显，每美元可处理66,000张截图，远超竞争对手的165张，支持无预算压力的全面测试。
-- 🛠️ **无缝集成** – 兼容Playwright、Cypress等现有测试工具，无需更改现有设置，支持本地离线测试和即时反馈。
-- 🚀 **即时反馈与本地测试** – 通过`vizzly tdd`提供实时视觉反馈，支持本地测试和团队基线对比，无需等待CI构建。
-- 📈 **透明定价与免费层** – 起价为每月12美元/用户，提供永久免费层且无需信用卡，按团队规模付费，无按截图收费的隐藏费用。
+- 🖼️ **可视化验证** – 提供视觉证据，确保每次代码变更（无论是 AI 生成还是手动修改）在发布前都按预期工作，避免视觉错误。
+- ⚡ **智能差异检测** – 使用 Honeydiff 引擎，能自动忽略时间戳、广告和动态内容等干扰，精准识别真实 UI 变化，速度比传统工具快 12 倍。
+- 💰 **成本效益高** – 价格优势明显，每美元可处理 66,000 张截图，远超竞争对手的 165 张，支持无预算压力的全面测试。
+- 🛠️ **无缝集成** – 兼容 Playwright、Cypress 等现有测试工具，无需更改现有设置，支持本地离线测试和即时反馈。
+- 🚀 **即时反馈与本地测试** – 通过`vizzly tdd`提供实时视觉反馈，支持本地测试和团队基线对比，无需等待 CI 构建。
+- 📈 **透明定价与免费层** – 起价为每月 12 美元/用户，提供永久免费层且无需信用卡，按团队规模付费，无按截图收费的隐藏费用。
 
 ---
 
-### [GitHub - boringSQL/regresql: SQL查询的回归测试](https://github.com/boringSQL/regresql)
+### [GitHub - boringSQL/regresql: SQL 查询的回归测试](https://github.com/boringSQL/regresql)
 
 **原文标题**: [GitHub - boringSQL/regresql: Regression Testing your SQL queries](https://github.com/boringSQL/regresql)
 
@@ -336,21 +336,21 @@ RegreSQL 是一个用于对 SQL 查询进行回归测试的工具，它通过运
 
 本文介绍了人工智能在医疗领域的应用现状与前景，重点探讨了其在疾病诊断、药物研发和个性化治疗方面的突破性进展，同时提及了相关的伦理挑战和未来发展趋势。
 
-- 🤖 AI辅助诊断系统能通过分析医学影像快速识别病变，提升早期癌症等疾病的检出率
+- 🤖 AI 辅助诊断系统能通过分析医学影像快速识别病变，提升早期癌症等疾病的检出率
 - 🔬 机器学习加速了新药研发过程，大幅缩短化合物筛选与临床试验设计周期
 - 🧬 基于患者基因组数据的个性化治疗方案正成为精准医疗的核心发展方向
-- ⚖️ 数据隐私保护与算法透明度是医疗AI推广过程中亟待解决的伦理难题
+- ⚖️ 数据隐私保护与算法透明度是医疗 AI 推广过程中亟待解决的伦理难题
 - 🌐 跨机构医疗数据共享平台的建立将推动下一代智能医疗系统的进化
 
 ---
 
-### [pgfeaturediff - PostgreSQL版本特性对比](https://pgfeaturediff.com/)
+### [pgfeaturediff - PostgreSQL 版本特性对比](https://pgfeaturediff.com/)
 
 **原文标题**: [pgfeaturediff - PostgreSQL Version Feature Comparison](https://pgfeaturediff.com/)
 
 本文介绍了人工智能在医疗领域的应用现状与前景，重点探讨了其在疾病诊断、治疗方案优化及医疗管理效率提升方面的作用，并简要提及了相关的伦理挑战。
 
-- 🏥 AI辅助诊断系统能通过分析医学影像快速识别病灶，提高早期疾病检出率
+- 🏥 AI 辅助诊断系统能通过分析医学影像快速识别病灶，提高早期疾病检出率
 - 💊 基于机器学习的个性化治疗方案可结合患者数据优化用药与治疗路径
 - 📊 智能医疗管理平台能整合医院资源，减少行政负荷并改善患者就诊体验
 - ⚖️ 数据隐私与算法透明度等伦理问题仍需在技术发展中同步完善规范
@@ -361,19 +361,19 @@ RegreSQL 是一个用于对 SQL 查询进行回归测试的工具，它通过运
 
 **原文标题**: [StackRender – Visual-First Database Migration Tool](https://www.stackrender.io/)
 
-StackRender是一款可视化优先的数据库迁移工具，通过直观的图表设计数据库，并直接从图表变更生成适用于PostgreSQL、MySQL和MariaDB的生产级数据库迁移脚本。
+StackRender 是一款可视化优先的数据库迁移工具，通过直观的图表设计数据库，并直接从图表变更生成适用于 PostgreSQL、MySQL 和 MariaDB 的生产级数据库迁移脚本。
 
 - 🎨 可视化设计数据库，交互式图表实时反映真实架构
 - 🔄 从图表变更自动生成准确、可投入生产的数据库迁移脚本
 - 🛡️ 安全演进架构，支持可靠迁移、回滚和历史追踪
-- 🤖 内置AI助手，提供架构设计建议和文档生成
+- 🤖 内置 AI 助手，提供架构设计建议和文档生成
 - 📊 支持导入现有数据库，在沙盒环境中预览迁移
 - 🔧 完整迁移历史记录，确保脚本按序执行避免冲突
-- ⭐ 已获400多名工程师信任，用户评分4.5/5
+- ⭐ 已获 400 多名工程师信任，用户评分 4.5/5
 
 ---
 
-### [GitHub - json-editor/json-editor: 基于JSON Schema的编辑器](https://github.com/json-editor/json-editor)
+### [GitHub - json-editor/json-editor: 基于 JSON Schema 的编辑器](https://github.com/json-editor/json-editor)
 
 **原文标题**: [GitHub - json-editor/json-editor: JSON Schema Based Editor](https://github.com/json-editor/json-editor)
 
@@ -394,15 +394,15 @@ JSON Editor 是一个基于 JSON Schema 生成 HTML 表单的 JavaScript 库，�
 
 **原文标题**: [Free offline database schema designer](https://relatedb.com/)
 
-RelateDB是一款基于浏览器的离线优先数据库模式设计工具，提供可视化ERD画布，支持本地无限项目、导入导出SQL/DBML、版本快照和迁移SQL生成等功能，无需账户即可使用。
+RelateDB 是一款基于浏览器的离线优先数据库模式设计工具，提供可视化 ERD 画布，支持本地无限项目、导入导出 SQL/DBML、版本快照和迁移 SQL 生成等功能，无需账户即可使用。
 
-- 🖥️ 可视化ERD设计：通过拖拽节点和边的关系，直观设计数据库表结构，支持多模式跨视图展示
-- 📴 离线优先工作：基于IndexedDB本地存储，刷新或重启浏览器后数据不丢失，无需服务器支持
-- 🔄 灵活导入导出：支持DBML和SQL CREATE TABLE导入，可导出Postgres/MySQL SQL语句及DBML格式
-- 🗂️ 工作区管理：可按业务逻辑划分不同模式（如public、billing、analytics），保持结构清晰
+- 🖥️ 可视化 ERD 设计：通过拖拽节点和边的关系，直观设计数据库表结构，支持多模式跨视图展示
+- 📴 离线优先工作：基于 IndexedDB 本地存储，刷新或重启浏览器后数据不丢失，无需服务器支持
+- 🔄 灵活导入导出：支持 DBML 和 SQL CREATE TABLE 导入，可导出 Postgres/MySQL SQL 语句及 DBML 格式
+- 🗂️ 工作区管理：可按业务逻辑划分不同模式（如 public、billing、analytics），保持结构清晰
 - 📸 版本快照功能：保存设计历史版本，支持版本对比并生成可视化差异报告
-- 🚀 迁移SQL生成：自动生成Postgres/MySQL的迁移SQL语句，方便数据库版本升级
-- 🌐 分享与协作：生成只读分享链接（含快照版本），支持PNG/JPG/SVG格式图表导出
+- 🚀 迁移 SQL 生成：自动生成 Postgres/MySQL 的迁移 SQL 语句，方便数据库版本升级
+- 🌐 分享与协作：生成只读分享链接（含快照版本），支持 PNG/JPG/SVG 格式图表导出
 - 💾 本地无限使用：完全免费本地版本，无工作区、模式和数量限制，支持完整功能集
 
 ---
@@ -423,7 +423,7 @@ Onedump 是一款数据库管理工具，专注于简化跨多种数据库和存
 
 ---
 
-### [MessagePack：类似JSON，但更快更小。](https://msgpack.org/)
+### [MessagePack：类似 JSON，但更快更小。](https://msgpack.org/)
 
 **原文标题**: [MessagePack: It's like JSON. but fast and small.](https://msgpack.org/)
 
@@ -435,7 +435,7 @@ Onedump 是一款数据库管理工具，专注于简化跨多种数据库和存
 
 **原文标题**: [Contact Web Tools Weekly](https://webtoolsweekly.com/contact?opt=classifieds)
 
-如需在《Web Tools Weekly》投放广告，请查看广告计划页面了解选项，并通过下方表单咨询当前可预订时段及具体安排。此表单仅用于广告咨询，其他事宜可通过X私信、Bluesky聊天或订阅后回复邮件联系。
+如需在《Web Tools Weekly》投放广告，请查看广告计划页面了解选项，并通过下方表单咨询当前可预订时段及具体安排。此表单仅用于广告咨询，其他事宜可通过 X 私信、Bluesky 聊天或订阅后回复邮件联系。
 
 - 📄 查看广告计划页面了解投放选项
 - 📩 通过表单咨询可预订时段及具体安排
@@ -444,20 +444,20 @@ Onedump 是一款数据库管理工具，专注于简化跨多种数据库和存
 
 ---
 
-### [DDL转数据——停止将生产数据复制到开发环境](https://ddltodata.com/)
+### [DDL 转数据——停止将生产数据复制到开发环境](https://ddltodata.com/)
 
 **原文标题**: [DDL to Data - Stop Copying Production Data Into Dev](https://ddltodata.com/)
 
 该平台提供了一种安全、便捷的解决方案，用于生成逼真的测试数据，无需复制生产数据，支持多种数据库，并提供免费和付费的灵活选项。
 
 - 🚫 停止将生产数据复制到开发环境，避免安全风险
-- 🛠️ 支持 PostgreSQL、MySQL、SQLite 等多种数据库，无需注册或API密钥
+- 🛠️ 支持 PostgreSQL、MySQL、SQLite 等多种数据库，无需注册或 API 密钥
 - 🧪 通过上传 schema.sql 文件，可即时生成符合表结构和外键约束的测试数据
 - 📊 提供 JSON、CSV、SQL 等多种数据导出格式，支持多表生成和参照完整性
-- 🤖 推出“故事模式”，基于自定义提示用 AI 生成上下文连贯、逼真的数据，每日免费5次
+- 🤖 推出“故事模式”，基于自定义提示用 AI 生成上下文连贯、逼真的数据，每日免费 5 次
 - 💼 适用于数据库填充、单元测试和演示环境等开发场景
-- 💰 提供免费及分级付费计划，免费版每月5万行数据，付费版增加更多功能和容量
-- 🔑 可获取免费API密钥，支持REST API调用，生成速度快，兼容企业级需求
+- 💰 提供免费及分级付费计划，免费版每月 5 万行数据，付费版增加更多功能和容量
+- 🔑 可获取免费 API 密钥，支持 REST API 调用，生成速度快，兼容企业级需求
 
 ---
 
@@ -469,7 +469,7 @@ Onedump 是一款数据库管理工具，专注于简化跨多种数据库和存
 
 ---
 
-### [SATIS UI - 专为shadcn/ui设计的精美工程组件](https://www.satisui.xyz/)
+### [SATIS UI - 专为 shadcn/ui 设计的精美工程组件](https://www.satisui.xyz/)
 
 **原文标题**: [SATIS UI - Beautifully Engineered Components for shadcn/ui](https://www.satisui.xyz/)
 
@@ -484,7 +484,7 @@ SATIS UI 是一个不断增长的 React 组件库，旨在通过提供具备 Aww
 
 ---
 
-### [免费Shadcn仪表板，基于React与Tailwind构建 - Tailwindadmin](https://tailwind-admin.com/)
+### [免费 Shadcn 仪表板，基于 React 与 Tailwind 构建 - Tailwindadmin](https://tailwind-admin.com/)
 
 **原文标题**: [Free Shadcn Dashboard built with React and Tailwind - Tailwindadmin](https://tailwind-admin.com/)
 
@@ -502,43 +502,43 @@ Tailwindadmin 是一款基于 React 和 Tailwind CSS 构建的现代化 Shadcn �
 
 ---
 
-### [VSCode.Email | 一份聚焦VS Code应用、新闻、技巧与窍门的通讯](https://vscode.email/)
+### [VSCode.Email | 一份聚焦 VS Code 应用、新闻、技巧与窍门的通讯](https://vscode.email/)
 
 **原文标题**: [VSCode.Email | A Newsletter featuring apps, news, tips, and tricks for VS Code](https://vscode.email/)
 
-这是一个关于Visual Studio Code（VS Code）及相关IDE的新闻和技巧订阅服务。  
+这是一个关于 Visual Studio Code（VS Code）及相关 IDE 的新闻和技巧订阅服务。  
 - 📧 每周最多一封邮件，无垃圾信息  
 - 🔒 订阅即同意隐私政策及数据收集使用条款  
-- 📈 目前已有2,103名订阅者
+- 📈 目前已有 2,103 名订阅者
 
 ---
 
-### [AI线框图生成器与UX/UI原型生成器 | UXMagic.ai](https://uxmagic.ai/)
+### [AI 线框图生成器与 UX/UI 原型生成器 | UXMagic.ai](https://uxmagic.ai/)
 
 **原文标题**: [AI Wireframe Generator & UX/UI Mockup Generator | UXMagic.ai](https://uxmagic.ai/)
 
 本文介绍了人工智能在医疗领域的应用现状与前景，重点探讨了其在疾病诊断、治疗方案优化及医疗管理效率提升方面的作用，并简要提及了相关的技术挑战与伦理考量。
 
-- 🤖 AI辅助诊断系统能通过分析医学影像快速识别病灶，提升早期疾病检出率
+- 🤖 AI 辅助诊断系统能通过分析医学影像快速识别病灶，提升早期疾病检出率
 - 💊 基于机器学习的个性化治疗方案可结合患者数据优化用药与治疗路径
 - 📊 智能医疗管理平台整合临床数据，助力医院资源调度与远程医疗服务
 - ⚠️ 数据隐私保护与算法透明度仍是当前技术落地面临的主要挑战
-- 🔮 未来AI或将在预防医学与基因分析领域发挥更深远的革新作用
+- 🔮 未来 AI 或将在预防医学与基因分析领域发挥更深远的革新作用
 
 ---
 
-### [TinyFast - MacOS快速文件压缩工具](https://tinyfast.app/)
+### [TinyFast - MacOS 快速文件压缩工具](https://tinyfast.app/)
 
 **原文标题**: [TinyFast - Fast File Compressor Tool for MacOS](https://tinyfast.app/)
 
-TinyFast是一款专为MacOS设计的本地文件压缩应用，支持图像、视频和文档的快速压缩，无需上传文件至云端，保障隐私安全。
+TinyFast 是一款专为 MacOS 设计的本地文件压缩应用，支持图像、视频和文档的快速压缩，无需上传文件至云端，保障隐私安全。
 
 - 🚀 **快速本地压缩**：文件在设备上即时处理，无需上传下载等待  
 - 🔒 **隐私保护**：所有文件保留在本地，避免云端泄露风险  
-- 📁 **多格式支持**：支持PNG、JPG、PDF、MP4等常见图像、视频、文档格式  
+- 📁 **多格式支持**：支持 PNG、JPG、PDF、MP4 等常见图像、视频、文档格式  
 - 📦 **批量处理**：可拖拽整个文件夹进行批量压缩  
 - 🖼️ **分辨率调整**：支持自动调整图像/视频分辨率  
-- 💰 **灵活定价**：提供免费版（每日5文件）、买断制（17.99欧元）和订阅制（2.99欧元/月）  
+- 💰 **灵活定价**：提供免费版（每日 5 文件）、买断制（17.99 欧元）和订阅制（2.99 欧元/月）  
 - 🎯 **开发者初衷**：为解决敏感文件上传至第三方网站的安全隐患而设计
 
 ---
@@ -547,13 +547,13 @@ TinyFast是一款专为MacOS设计的本地文件压缩应用，支持图像、�
 
 **原文标题**: [No title found](https://x.com/TheCineprism/status/2021486991540617721)
 
-该页面提示用户浏览器中JavaScript功能未启用或存在兼容性问题，导致无法正常使用X平台（原Twitter），并提供了相应的解决建议。
+该页面提示用户浏览器中 JavaScript 功能未启用或存在兼容性问题，导致无法正常使用 X 平台（原 Twitter），并提供了相应的解决建议。
 
-- 🔧 检测到浏览器已禁用JavaScript，需启用该功能或更换受支持的浏览器
+- 🔧 检测到浏览器已禁用 JavaScript，需启用该功能或更换受支持的浏览器
 - 🌐 可访问帮助中心查看支持的浏览器列表及相关服务条款
 - 🛡️ 部分隐私扩展可能导致加载异常，建议暂时禁用后重试
 - 🔄 页面提供“重试”功能供用户再次尝试加载
-- ©️ 页面底部包含X公司版权信息及隐私政策等法律文件链接
+- ©️ 页面底部包含 X 公司版权信息及隐私政策等法律文件链接
 
 ---
 
@@ -561,12 +561,12 @@ TinyFast是一款专为MacOS设计的本地文件压缩应用，支持图像、�
 
 **原文标题**: [No title found](https://x.com/LouisLazaris)
 
-该页面提示用户浏览器中JavaScript功能未启用或存在兼容性问题，导致无法正常使用X平台（原Twitter），并提供了相应的解决建议。
+该页面提示用户浏览器中 JavaScript 功能未启用或存在兼容性问题，导致无法正常使用 X 平台（原 Twitter），并提供了相应的解决建议。
 
-- 🔐 检测到浏览器已禁用JavaScript，需手动启用该功能或更换受支持的浏览器
+- 🔐 检测到浏览器已禁用 JavaScript，需手动启用该功能或更换受支持的浏览器
 - 🌐 可访问帮助中心查询官方支持的浏览器列表及相关使用条款
 - 🛡️ 页面同时提示隐私扩展插件可能造成访问异常，建议临时禁用后重试
-- 📜 页脚区域包含服务条款、隐私政策、Cookie政策等法律文件链接
+- 📜 页脚区域包含服务条款、隐私政策、Cookie 政策等法律文件链接
 - 🔄 提供“重试”按钮供用户在排除问题后重新加载页面
 
 ---
@@ -575,25 +575,25 @@ TinyFast是一款专为MacOS设计的本地文件压缩应用，支持图像、�
 
 **原文标题**: [@louislazaris.com on Bluesky](https://bsky.app/profile/louislazaris.com)
 
-这是一个高度交互的网络应用，需要JavaScript支持。它并非简单的HTML界面，而是基于Bluesky和ATProto技术构建的动态平台。
+这是一个高度交互的网络应用，需要 JavaScript 支持。它并非简单的 HTML 界面，而是基于 Bluesky 和 ATProto 技术构建的动态平台。
 
-- 🌐 这是一个依赖JavaScript的高度交互式网络应用，不支持简单HTML界面
-- 🔗 平台基于Bluesky（bsky.social）和ATProto（atproto.com）技术构建
-- 👤 用户Louis Lazaris是前端开发者和新闻简报策划人
-- 📧 运营多个专业平台：WebTools周刊、TechProductivity、VSCode邮件资讯
-- 🎸 同时运营吉他教学YouTube频道@tunejotter
+- 🌐 这是一个依赖 JavaScript 的高度交互式网络应用，不支持简单 HTML 界面
+- 🔗 平台基于 Bluesky（bsky.social）和 ATProto（atproto.com）技术构建
+- 👤 用户 Louis Lazaris 是前端开发者和新闻简报策划人
+- 📧 运营多个专业平台：WebTools 周刊、TechProductivity、VSCode 邮件资讯
+- 🎸 同时运营吉他教学 YouTube 频道@tunejotter
 
 ---
 
-### [提交工具至Web工具周刊](https://webtoolsweekly.com/submit)
+### [提交工具至 Web 工具周刊](https://webtoolsweekly.com/submit)
 
 **原文标题**: [Submit a Tool to Web Tools Weekly](https://webtoolsweekly.com/submit)
 
 本文邀请前端开发者提交各类实用工具，以丰富开发资源库。
 
-- 📦 可提交工具类型包括库、框架、插件、脚本、Web应用、桌面应用、移动应用、API/服务及编辑器等
+- 📦 可提交工具类型包括库、框架、插件、脚本、Web 应用、桌面应用、移动应用、API/服务及编辑器等
 - 🚫 不接受文章或教程类内容，生产力工具需转投另一通讯《Tech Productivity》
-- 📮 提交途径：通过X平台私信@LouisLazaris或Bluesky平台联系@LouisLazaris.com
+- 📮 提交途径：通过 X 平台私信@LouisLazaris 或 Bluesky 平台联系@LouisLazaris.com
 
 ---
 
@@ -601,7 +601,7 @@ TinyFast是一款专为MacOS设计的本地文件压缩应用，支持图像、�
 
 **原文标题**: [Atomix - Interactive Periodic Table of Elements](https://independent-coder.github.io/Atomix/)
 
-Atomix是一个交互式元素周期表，提供详细的元素信息、可视化展示和搜索功能，帮助用户探索物质的基本构成。
+Atomix 是一个交互式元素周期表，提供详细的元素信息、可视化展示和搜索功能，帮助用户探索物质的基本构成。
 
 - 🔍 交互式元素图块，包含详细信息
 - 🔎 支持按元素名称、符号或原子序数搜索
@@ -617,9 +617,9 @@ Atomix是一个交互式元素周期表，提供详细的元素信息、可视�
 
 《Web Tools Weekly》是一份面向前端开发者的每周通讯，提供最新的网络工具和库信息，深受订阅者好评。
 
-- 📧 每周一封邮件，无垃圾内容，订阅人数超过13,000人
+- 📧 每周一封邮件，无垃圾内容，订阅人数超过 13,000 人
 - ⭐ 读者评价极高，被誉为“最实用的技术简报之一”
-- 🛠️ 专注于前端开发工具和JavaScript技巧分享
+- 🛠️ 专注于前端开发工具和 JavaScript 技巧分享
 - 🔒 注重隐私保护，明确数据收集和使用条款
 - 💌 长期订阅者众多，许多人已阅读多年且每期必看
 
