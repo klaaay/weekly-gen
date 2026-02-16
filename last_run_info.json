@@ -46,5 +46,17 @@
     "link_url": "issues/772",
     "timestamp": "2026-02-14T15:33:23.894752",
     "full_url": "https://javascriptweekly.com/issues/772"
+  },
+  "programmingdigest": {
+    "issue_title": "one weekly email",
+    "link_url": "newsletters/2214-my-ai-adoption-journey",
+    "timestamp": "2026-02-16T15:16:02.615573",
+    "full_url": "https://programmingdigest.net/newsletters/2214-my-ai-adoption-journey"
+  },
+  "leadershipintech": {
+    "issue_title": "one email",
+    "link_url": "newsletters/2216-how-to-run-a-technical-due-diligence",
+    "timestamp": "2026-02-16T15:16:02.697325",
+    "full_url": "https://leadershipintech.com/newsletters/2216-how-to-run-a-technical-due-diligence"
   }
 }
