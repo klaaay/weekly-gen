@@ -15,8 +15,10 @@ from typing import List, Tuple, Dict, Any
 try:
     from src.frontendfoc import scrape_frontendfoc
     from src.javascriptweekly import scrape_javascriptweekly
+    from src.leadershipintech import scrape_leadershipintech
     from src.nextjsweekly import scrape_nextjsweekly
     from src.nodeweekly import scrape_nodeweekly
+    from src.programmingdigest import scrape_programmingdigest
     from src.reactweekly import scrape_reactweekly
     from src.reactdigest import scrape_reactdigest
     from src.thisweekinreact import scrape_thisweekinreact
@@ -38,6 +40,11 @@ SCRAPERS = {
         'function': scrape_javascriptweekly,
         'description': 'JavaScript 开发周刊'
     },
+    'leadershipintech': {
+        'name': 'Leadership in Tech',
+        'function': scrape_leadershipintech,
+        'description': '技术领导力周刊'
+    },
     'nextjsweekly': {
         'name': 'Next.js Weekly',
         'function': scrape_nextjsweekly,
@@ -47,6 +54,11 @@ SCRAPERS = {
         'name': 'Node Weekly',
         'function': scrape_nodeweekly,
         'description': 'Node.js 开发周刊'
+    },
+    'programmingdigest': {
+        'name': 'Programming Digest',
+        'function': scrape_programmingdigest,
+        'description': '编程技术文摘'
     },
     'reactweekly': {
         'name': 'React Weekly',
