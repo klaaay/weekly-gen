@@ -1,9 +1,9 @@
 {
   "thisweekinreact": {
-    "issue_title": "📨 #268: Bulletproof Comps, Render Types, Tambo, Logo Soup, React Compiler, Ink, Streamdown | RN 0.84, Gestures, Rozenite, Storybook, JSON Render, Targets, TrueSheet | TypeScript, ESLint, Webpack, Vitest, VSCode",
-    "link_url": "/newsletter/268",
-    "timestamp": "2026-02-14T15:33:21.978413",
-    "full_url": "https://thisweekinreact.com//newsletter/268"
+    "issue_title": "📨 #269: State of React, TanStack, Next.js, Tailwind, Base UI, Doctor | Hermes, Sparkling, Yoga, Enriched, Voltra, AI | Interop, Electrobun, Module Federation, Biome, pnpm",
+    "link_url": "/newsletter/269",
+    "timestamp": "2026-02-20T00:29:54.578800",
+    "full_url": "https://thisweekinreact.com//newsletter/269"
   },
   "nextjsweekly": {
     "issue_title": "Issue #117 Feb 13, 2026vS3, TypeScript 6.0 Beta, Bulletproof Component, AI Debugging, Enterprise Next.js, State of React 2025",
@@ -13,27 +13,27 @@
   },
   "reactdigest": {
     "issue_title": "one weekly email",
-    "link_url": "/newsletters/2210-debugging-react-with-ai",
-    "timestamp": "2026-02-09T10:39:03.500549",
-    "full_url": "https://reactdigest.net//newsletters/2210-debugging-react-with-ai"
+    "link_url": "/newsletters/2215-a-broken-heart",
+    "timestamp": "2026-02-20T00:29:53.900118",
+    "full_url": "https://reactdigest.net//newsletters/2215-a-broken-heart"
   },
   "webtoolsweekly": {
-    "issue_title": "#656\nFrameworks, Media Tools, JSON/DB",
-    "link_url": "archives/issue-656/",
-    "timestamp": "2026-02-14T15:33:23.532335",
-    "full_url": "https://webtoolsweekly.com/archives/issue-656/"
+    "issue_title": "#657\nCrowdstake Review, CSS/HTML, Testing, Vue Tools",
+    "link_url": "archives/issue-657/",
+    "timestamp": "2026-02-20T00:29:55.411293",
+    "full_url": "https://webtoolsweekly.com/archives/issue-657/"
   },
   "nodeweekly": {
-    "issue_title": "Issue #611",
-    "link_url": "issues/611",
-    "timestamp": "2026-02-14T15:33:26.080013",
-    "full_url": "https://nodeweekly.com/issues/611"
+    "issue_title": "Issue #612",
+    "link_url": "issues/612",
+    "timestamp": "2026-02-20T02:50:50.843401",
+    "full_url": "https://nodeweekly.com/issues/612"
   },
   "frontendfoc": {
-    "issue_title": "Issue #728",
-    "link_url": "issues/728",
-    "timestamp": "2026-02-14T15:33:23.590161",
-    "full_url": "https://frontendfoc.us/issues/728"
+    "issue_title": "Issue #729",
+    "link_url": "issues/729",
+    "timestamp": "2026-02-20T00:29:55.129724",
+    "full_url": "https://frontendfoc.us/issues/729"
   },
   "reactweekly": {
     "issue_title": "Issue #462",
@@ -42,10 +42,10 @@
     "full_url": "https://react.statuscode.com/issues/462"
   },
   "javascriptweekly": {
-    "issue_title": "Issue #772",
-    "link_url": "issues/772",
-    "timestamp": "2026-02-14T15:33:23.894752",
-    "full_url": "https://javascriptweekly.com/issues/772"
+    "issue_title": "Issue #773",
+    "link_url": "issues/773",
+    "timestamp": "2026-02-20T00:29:55.003890",
+    "full_url": "https://javascriptweekly.com/issues/773"
   },
   "programmingdigest": {
     "issue_title": "one weekly email",
@@ -55,8 +55,8 @@
   },
   "leadershipintech": {
     "issue_title": "one email",
-    "link_url": "newsletters/2216-how-to-run-a-technical-due-diligence",
-    "timestamp": "2026-02-16T15:16:02.697325",
-    "full_url": "https://leadershipintech.com/newsletters/2216-how-to-run-a-technical-due-diligence"
+    "link_url": "newsletters/2217-the-secret-to-getting-promoted",
+    "timestamp": "2026-02-20T00:29:54.075542",
+    "full_url": "https://leadershipintech.com/newsletters/2217-the-secret-to-getting-promoted"
   }
 }
