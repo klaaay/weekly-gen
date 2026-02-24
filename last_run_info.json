@@ -6,16 +6,16 @@
     "full_url": "https://thisweekinreact.com//newsletter/269"
   },
   "nextjsweekly": {
-    "issue_title": "Issue #117 Feb 13, 2026vS3, TypeScript 6.0 Beta, Bulletproof Component, AI Debugging, Enterprise Next.js, State of React 2025",
-    "link_url": "/issues/117",
-    "timestamp": "2026-02-14T15:33:23.254044",
-    "full_url": "https://nextjsweekly.com//issues/117"
+    "issue_title": "Issue #118 Feb 20, 2026Agentic Future, Portless, Virtual Scrolling, Geist Pixel, React’s useTransition, next-mdx-remote-client",
+    "link_url": "/issues/118",
+    "timestamp": "2026-02-23T21:22:40.422439",
+    "full_url": "https://nextjsweekly.com//issues/118"
   },
   "reactdigest": {
     "issue_title": "one weekly email",
-    "link_url": "/newsletters/2215-a-broken-heart",
-    "timestamp": "2026-02-20T00:29:53.900118",
-    "full_url": "https://reactdigest.net//newsletters/2215-a-broken-heart"
+    "link_url": "/newsletters/2220-virtual-scrolling-for-billions-of-rows",
+    "timestamp": "2026-02-23T21:22:40.704804",
+    "full_url": "https://reactdigest.net//newsletters/2220-virtual-scrolling-for-billions-of-rows"
   },
   "webtoolsweekly": {
     "issue_title": "#657\nCrowdstake Review, CSS/HTML, Testing, Vue Tools",
@@ -36,10 +36,10 @@
     "full_url": "https://frontendfoc.us/issues/729"
   },
   "reactweekly": {
-    "issue_title": "Issue #462",
-    "link_url": "issues/462",
-    "timestamp": "2026-02-15T23:57:23.286849",
-    "full_url": "https://react.statuscode.com/issues/462"
+    "issue_title": "Issue #463",
+    "link_url": "issues/463",
+    "timestamp": "2026-02-23T21:22:41.149223",
+    "full_url": "https://react.statuscode.com/issues/463"
   },
   "javascriptweekly": {
     "issue_title": "Issue #773",
@@ -49,14 +49,14 @@
   },
   "programmingdigest": {
     "issue_title": "one weekly email",
-    "link_url": "newsletters/2214-my-ai-adoption-journey",
-    "timestamp": "2026-02-16T15:16:02.615573",
-    "full_url": "https://programmingdigest.net/newsletters/2214-my-ai-adoption-journey"
+    "link_url": "newsletters/2218-how-programmers-spend-their-time",
+    "timestamp": "2026-02-23T21:22:40.743942",
+    "full_url": "https://programmingdigest.net/newsletters/2218-how-programmers-spend-their-time"
   },
   "leadershipintech": {
     "issue_title": "one email",
-    "link_url": "newsletters/2217-the-secret-to-getting-promoted",
-    "timestamp": "2026-02-20T00:29:54.075542",
-    "full_url": "https://leadershipintech.com/newsletters/2217-the-secret-to-getting-promoted"
+    "link_url": "newsletters/2221-the-shift-to-managing-managers",
+    "timestamp": "2026-02-23T21:22:40.682671",
+    "full_url": "https://leadershipintech.com/newsletters/2221-the-shift-to-managing-managers"
   }
 }
