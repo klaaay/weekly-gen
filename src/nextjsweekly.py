@@ -147,8 +147,8 @@ def scrape_nextjsweekly():
             # 检查是否与上次抓取的 issue_title 相同
             script_name = os.path.basename(__file__).replace('.py', '')  # 获取脚本名称（不含.py 扩展名）
             
-            # 如果检测到相同的 link_url，则跳过执行
-            if check_and_skip_if_same_issue(script_name, link_url):
+            # 如果检测到相同的 full_url，则跳过执行
+            if check_and_skip_if_same_issue(script_name, link_url, "https://nextjsweekly.com"):
                 return
             
             # 记录上次运行抓取的 issue_link 信息

@@ -140,7 +140,7 @@ def scrape_programmingdigest():
     print(f"Found newsletter link: {link_text} - {link_url}")
 
     script_name = os.path.basename(__file__).replace(".py", "")
-    if check_and_skip_if_same_issue(script_name, link_url):
+    if check_and_skip_if_same_issue(script_name, link_url, base_url):
         return
 
     issue_info = create_issue_info(link_text, link_url, base_url)
