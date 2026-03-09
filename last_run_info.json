@@ -13,9 +13,9 @@
   },
   "reactdigest": {
     "issue_title": "one weekly email",
-    "link_url": "/newsletters/2225-how-we-rebuilt-next-js-in-one-week",
-    "timestamp": "2026-03-02T10:47:22.424785",
-    "full_url": "https://reactdigest.net//newsletters/2225-how-we-rebuilt-next-js-in-one-week"
+    "link_url": "/newsletters/2230-frontend-memory-leaks",
+    "timestamp": "2026-03-09T17:00:11.762277",
+    "full_url": "https://reactdigest.net//newsletters/2230-frontend-memory-leaks"
   },
   "webtoolsweekly": {
     "issue_title": "#659\nFrameworks, AI Tools, Git/CLI",
@@ -49,14 +49,14 @@
   },
   "programmingdigest": {
     "issue_title": "one weekly email",
-    "link_url": "newsletters/2224-what-is-oauth",
-    "timestamp": "2026-03-02T10:47:22.622189",
-    "full_url": "https://programmingdigest.net/newsletters/2224-what-is-oauth"
+    "link_url": "newsletters/2228-the-two-kinds-of-error",
+    "timestamp": "2026-03-09T16:58:21.255778",
+    "full_url": "https://programmingdigest.net/newsletters/2228-the-two-kinds-of-error"
   },
   "leadershipintech": {
     "issue_title": "one email",
-    "link_url": "newsletters/2227-don-t-become-an-engineering-manager",
-    "timestamp": "2026-03-06T14:18:18.245358",
-    "full_url": "https://leadershipintech.com/newsletters/2227-don-t-become-an-engineering-manager"
+    "link_url": "newsletters/2231-nobody-gets-promoted-for-simplicity",
+    "timestamp": "2026-03-09T16:54:00.565561",
+    "full_url": "https://leadershipintech.com/newsletters/2231-nobody-gets-promoted-for-simplicity"
   }
 }
