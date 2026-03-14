@@ -1,9 +1,9 @@
 {
   "thisweekinreact": {
-    "issue_title": "📨 #271: Vinext, RSC, Activity, Async React, Next.js, TanStack | Expo 55, Router, Survey, Enriched, Maestro, Metro, Sparkling, Grab, Brownfield | TC39, Temporal, Navigation, npmx, Bun, Deno, Solid",
-    "link_url": "/newsletter/271",
-    "timestamp": "2026-03-05T10:01:16.756133",
-    "full_url": "https://thisweekinreact.com//newsletter/271"
+    "issue_title": "📨 #272: Astro, Compiler, Next.js, shadcn, Aria, Helmet, Preact | Navigation, Expo Agent, Observe, Widgets, Activity, Evals, MMKV, Hermes | Node.js, Source Maps, TanStack Intent, TypeGPU, TypeScript",
+    "link_url": "/newsletter/272",
+    "timestamp": "2026-03-12T14:13:28.335813",
+    "full_url": "https://thisweekinreact.com//newsletter/272"
   },
   "nextjsweekly": {
     "issue_title": "Issue #120 Mar 6, 2026Drizzle joins PlanetScale, Prisma Next, Better Auth 1.5, react-doctor, next-md-negotiate, Vercel Queues, Activity Component",
@@ -18,22 +18,22 @@
     "full_url": "https://reactdigest.net//newsletters/2230-frontend-memory-leaks"
   },
   "webtoolsweekly": {
-    "issue_title": "#659\nFrameworks, AI Tools, Git/CLI",
-    "link_url": "archives/issue-659/",
-    "timestamp": "2026-03-05T13:50:12.469375",
-    "full_url": "https://webtoolsweekly.com/archives/issue-659/"
+    "issue_title": "#660\nJS Utils, Vue Tools, Mobile",
+    "link_url": "archives/issue-660/",
+    "timestamp": "2026-03-12T16:47:05.697420",
+    "full_url": "https://webtoolsweekly.com/archives/issue-660/"
   },
   "nodeweekly": {
-    "issue_title": "Issue #614",
-    "link_url": "issues/614",
-    "timestamp": "2026-03-06T14:18:19.247650",
-    "full_url": "https://nodeweekly.com/issues/614"
+    "issue_title": "Issue #615",
+    "link_url": "issues/615",
+    "timestamp": "2026-03-13T14:07:19.707201",
+    "full_url": "https://nodeweekly.com/issues/615"
   },
   "frontendfoc": {
-    "issue_title": "Issue #731",
-    "link_url": "issues/731",
-    "timestamp": "2026-03-05T10:01:16.856641",
-    "full_url": "https://frontendfoc.us/issues/731"
+    "issue_title": "Issue #732",
+    "link_url": "issues/732",
+    "timestamp": "2026-03-12T14:04:12.747920",
+    "full_url": "https://frontendfoc.us/issues/732"
   },
   "reactweekly": {
     "issue_title": "Issue #465",
@@ -55,8 +55,8 @@
   },
   "leadershipintech": {
     "issue_title": "one email",
-    "link_url": "newsletters/2231-nobody-gets-promoted-for-simplicity",
-    "timestamp": "2026-03-09T16:54:00.565561",
-    "full_url": "https://leadershipintech.com/newsletters/2231-nobody-gets-promoted-for-simplicity"
+    "link_url": "newsletters/2232-the-structure-of-engineering-revolutions",
+    "timestamp": "2026-03-12T16:45:20.501283",
+    "full_url": "https://leadershipintech.com/newsletters/2232-the-structure-of-engineering-revolutions"
   }
 }
