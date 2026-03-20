@@ -1,9 +1,9 @@
 {
   "thisweekinreact": {
-    "issue_title": "📨 #272: Astro, Compiler, Next.js, shadcn, Aria, Helmet, Preact | Navigation, Expo Agent, Observe, Widgets, Activity, Evals, MMKV, Hermes | Node.js, Source Maps, TanStack Intent, TypeGPU, TypeScript",
-    "link_url": "/newsletter/272",
-    "timestamp": "2026-03-12T14:13:28.335813",
-    "full_url": "https://thisweekinreact.com//newsletter/272"
+    "issue_title": "📨 #273: ⚛️ RedwoodSDK, Next.js, TanStack, RSC, Async React, SSR, Base UI, AI | 📱 Expo UI, Ease, Expo APIs, Keyboard, Flow, DnD, AI | 🔀 TC39, Temporal, Vite, Vite+, Vitest, Oxlint, Node.js, Bun",
+    "link_url": "/newsletter/273",
+    "timestamp": "2026-03-20T00:34:13.267889",
+    "full_url": "https://thisweekinreact.com//newsletter/273"
   },
   "nextjsweekly": {
     "issue_title": "Issue #121 Mar 13, 2026Ship 26, shadcn/cli v4, Portless v0.6, Experimental Markdown Output, Akira, Dynamic Forms, Next.js on VPS",
@@ -18,22 +18,22 @@
     "full_url": "https://reactdigest.net//newsletters/2235-feature-based-react-architecture"
   },
   "webtoolsweekly": {
-    "issue_title": "#660\nJS Utils, Vue Tools, Mobile",
-    "link_url": "archives/issue-660/",
-    "timestamp": "2026-03-12T16:47:05.697420",
-    "full_url": "https://webtoolsweekly.com/archives/issue-660/"
+    "issue_title": "#661\nVizzly Review, CSS/HTML, AI Tools, Media",
+    "link_url": "archives/issue-661/",
+    "timestamp": "2026-03-20T00:34:14.588827",
+    "full_url": "https://webtoolsweekly.com/archives/issue-661/"
   },
   "nodeweekly": {
-    "issue_title": "Issue #615",
-    "link_url": "issues/615",
-    "timestamp": "2026-03-13T14:07:19.707201",
-    "full_url": "https://nodeweekly.com/issues/615"
+    "issue_title": "Issue #616",
+    "link_url": "issues/616",
+    "timestamp": "2026-03-20T00:34:12.478008",
+    "full_url": "https://nodeweekly.com/issues/616"
   },
   "frontendfoc": {
-    "issue_title": "Issue #732",
-    "link_url": "issues/732",
-    "timestamp": "2026-03-12T14:04:12.747920",
-    "full_url": "https://frontendfoc.us/issues/732"
+    "issue_title": "Issue #733",
+    "link_url": "issues/733",
+    "timestamp": "2026-03-19T01:25:13.181778",
+    "full_url": "https://frontendfoc.us/issues/733"
   },
   "reactweekly": {
     "issue_title": "Issue #466",
@@ -55,8 +55,8 @@
   },
   "leadershipintech": {
     "issue_title": "one email",
-    "link_url": "newsletters/2236-how-do-you-know-if-you-re-a-good-leader",
-    "timestamp": "2026-03-16T14:39:55.188866",
-    "full_url": "https://leadershipintech.com/newsletters/2236-how-do-you-know-if-you-re-a-good-leader"
+    "link_url": "newsletters/2237-management-in-the-age-of-ai",
+    "timestamp": "2026-03-20T00:34:08.081377",
+    "full_url": "https://leadershipintech.com/newsletters/2237-management-in-the-age-of-ai"
   }
 }
