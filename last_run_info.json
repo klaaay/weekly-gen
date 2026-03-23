@@ -13,9 +13,9 @@
   },
   "reactdigest": {
     "issue_title": "one weekly email",
-    "link_url": "/newsletters/2235-feature-based-react-architecture",
-    "timestamp": "2026-03-16T14:45:02.568917",
-    "full_url": "https://reactdigest.net//newsletters/2235-feature-based-react-architecture"
+    "link_url": "/newsletters/2240-18-months-of-code-gone",
+    "timestamp": "2026-03-23T10:26:00.136063",
+    "full_url": "https://reactdigest.net//newsletters/2240-18-months-of-code-gone"
   },
   "webtoolsweekly": {
     "issue_title": "#661\nVizzly Review, CSS/HTML, AI Tools, Media",
@@ -49,14 +49,14 @@
   },
   "programmingdigest": {
     "issue_title": "one weekly email",
-    "link_url": "newsletters/2233-a-decade-of-docker-containers",
-    "timestamp": "2026-03-16T14:43:09.396119",
-    "full_url": "https://programmingdigest.net/newsletters/2233-a-decade-of-docker-containers"
+    "link_url": "newsletters/2238-warranty-void-if-regenerated",
+    "timestamp": "2026-03-23T10:25:58.527033",
+    "full_url": "https://programmingdigest.net/newsletters/2238-warranty-void-if-regenerated"
   },
   "leadershipintech": {
     "issue_title": "one email",
-    "link_url": "newsletters/2237-management-in-the-age-of-ai",
-    "timestamp": "2026-03-20T00:34:08.081377",
-    "full_url": "https://leadershipintech.com/newsletters/2237-management-in-the-age-of-ai"
+    "link_url": "newsletters/2241-interviewing-tactics-for-a-post-llm-world",
+    "timestamp": "2026-03-23T10:25:56.597480",
+    "full_url": "https://leadershipintech.com/newsletters/2241-interviewing-tactics-for-a-post-llm-world"
   }
 }
