@@ -1,9 +1,9 @@
 {
   "thisweekinreact": {
-    "issue_title": "📨 #273: ⚛️ RedwoodSDK, Next.js, TanStack, RSC, Async React, SSR, Base UI, AI | 📱 Expo UI, Ease, Expo APIs, Keyboard, Flow, DnD, AI | 🔀 TC39, Temporal, Vite, Vite+, Vitest, Oxlint, Node.js, Bun",
-    "link_url": "/newsletter/273",
-    "timestamp": "2026-03-20T00:34:13.267889",
-    "full_url": "https://thisweekinreact.com//newsletter/273"
+    "issue_title": "📨 #274: ⚛️ Next.js, React Router, Storybook, HeroUI, Remotion, Lucide, useEffect | 📱 Reanimated, Worklets, Nitro Fetch, Navigation, Rozenite, MMKV, Windows, Swift | 🔀 TypeScript, Signals, Zero, Valibot",
+    "link_url": "/newsletter/274",
+    "timestamp": "2026-03-26T23:17:03.746617",
+    "full_url": "https://thisweekinreact.com//newsletter/274"
   },
   "nextjsweekly": {
     "issue_title": "Issue #122 Mar 20, 2026Next.js 16.2, unstable_catchError, next-forge 6, React's Rust Compiler, AI Elements 1.9, Banning useEffect",
@@ -18,22 +18,22 @@
     "full_url": "https://reactdigest.net//newsletters/2240-18-months-of-code-gone"
   },
   "webtoolsweekly": {
-    "issue_title": "#661\nVizzly Review, CSS/HTML, AI Tools, Media",
-    "link_url": "archives/issue-661/",
-    "timestamp": "2026-03-20T00:34:14.588827",
-    "full_url": "https://webtoolsweekly.com/archives/issue-661/"
+    "issue_title": "#662\nReact, AI Tools, Testing",
+    "link_url": "archives/issue-662/",
+    "timestamp": "2026-03-26T23:18:19.712681",
+    "full_url": "https://webtoolsweekly.com/archives/issue-662/"
   },
   "nodeweekly": {
-    "issue_title": "Issue #616",
-    "link_url": "issues/616",
-    "timestamp": "2026-03-20T00:34:12.478008",
-    "full_url": "https://nodeweekly.com/issues/616"
+    "issue_title": "Issue #617",
+    "link_url": "issues/617",
+    "timestamp": "2026-03-26T23:16:58.892058",
+    "full_url": "https://nodeweekly.com/issues/617"
   },
   "frontendfoc": {
-    "issue_title": "Issue #733",
-    "link_url": "issues/733",
-    "timestamp": "2026-03-19T01:25:13.181778",
-    "full_url": "https://frontendfoc.us/issues/733"
+    "issue_title": "Issue #734",
+    "link_url": "issues/734",
+    "timestamp": "2026-03-26T23:16:59.462341",
+    "full_url": "https://frontendfoc.us/issues/734"
   },
   "reactweekly": {
     "issue_title": "Issue #467",
@@ -55,8 +55,8 @@
   },
   "leadershipintech": {
     "issue_title": "one email",
-    "link_url": "newsletters/2241-interviewing-tactics-for-a-post-llm-world",
-    "timestamp": "2026-03-23T10:25:56.597480",
-    "full_url": "https://leadershipintech.com/newsletters/2241-interviewing-tactics-for-a-post-llm-world"
+    "link_url": "newsletters/2242-when-should-a-manager-step-in",
+    "timestamp": "2026-03-26T23:16:57.619093",
+    "full_url": "https://leadershipintech.com/newsletters/2242-when-should-a-manager-step-in"
   }
 }
