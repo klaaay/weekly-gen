@@ -6,16 +6,16 @@
     "full_url": "https://thisweekinreact.com//newsletter/274"
   },
   "nextjsweekly": {
-    "issue_title": "Issue #122 Mar 20, 2026Next.js 16.2, unstable_catchError, next-forge 6, React's Rust Compiler, AI Elements 1.9, Banning useEffect",
-    "link_url": "/issues/122",
-    "timestamp": "2026-03-20T21:29:24.894775",
-    "full_url": "https://nextjsweekly.com//issues/122"
+    "issue_title": "Issue #123 Mar 27, 2026Stable Next.js Adapters, WebSocket in App Router, AI Improvements, Error Handling, Sugar High, transitionType prop",
+    "link_url": "/issues/123",
+    "timestamp": "2026-03-27T23:40:07.280194",
+    "full_url": "https://nextjsweekly.com//issues/123"
   },
   "reactdigest": {
     "issue_title": "one weekly email",
-    "link_url": "/newsletters/2240-18-months-of-code-gone",
-    "timestamp": "2026-03-23T10:26:00.136063",
-    "full_url": "https://reactdigest.net//newsletters/2240-18-months-of-code-gone"
+    "link_url": "/newsletters/2245-the-hook-that-breaks-the-rules",
+    "timestamp": "2026-03-30T09:04:33.905432",
+    "full_url": "https://reactdigest.net//newsletters/2245-the-hook-that-breaks-the-rules"
   },
   "webtoolsweekly": {
     "issue_title": "#662\nReact, AI Tools, Testing",
@@ -36,10 +36,10 @@
     "full_url": "https://frontendfoc.us/issues/734"
   },
   "reactweekly": {
-    "issue_title": "Issue #467",
-    "link_url": "issues/467",
-    "timestamp": "2026-03-21T01:05:43.470811",
-    "full_url": "https://react.statuscode.com/issues/467"
+    "issue_title": "Issue #468",
+    "link_url": "issues/468",
+    "timestamp": "2026-03-27T23:40:10.248804",
+    "full_url": "https://react.statuscode.com/issues/468"
   },
   "javascriptweekly": {
     "issue_title": "Issue #778",
@@ -49,14 +49,14 @@
   },
   "programmingdigest": {
     "issue_title": "one weekly email",
-    "link_url": "newsletters/2238-warranty-void-if-regenerated",
-    "timestamp": "2026-03-23T10:25:58.527033",
-    "full_url": "https://programmingdigest.net/newsletters/2238-warranty-void-if-regenerated"
+    "link_url": "newsletters/2244-quantization-from-the-ground-up",
+    "timestamp": "2026-03-30T09:03:27.652304",
+    "full_url": "https://programmingdigest.net/newsletters/2244-quantization-from-the-ground-up"
   },
   "leadershipintech": {
     "issue_title": "one email",
-    "link_url": "newsletters/2242-when-should-a-manager-step-in",
-    "timestamp": "2026-03-26T23:16:57.619093",
-    "full_url": "https://leadershipintech.com/newsletters/2242-when-should-a-manager-step-in"
+    "link_url": "newsletters/2246-how-to-measure-r-d-investment",
+    "timestamp": "2026-03-30T09:00:30.008842",
+    "full_url": "https://leadershipintech.com/newsletters/2246-how-to-measure-r-d-investment"
   }
 }
