@@ -1,9 +1,9 @@
 {
   "thisweekinreact": {
-    "issue_title": "📨 #274: ⚛️ Next.js, React Router, Storybook, HeroUI, Remotion, Lucide, useEffect | 📱 Reanimated, Worklets, Nitro Fetch, Navigation, Rozenite, MMKV, Windows, Swift | 🔀 TypeScript, Signals, Zero, Valibot",
-    "link_url": "/newsletter/274",
-    "timestamp": "2026-03-26T23:17:03.746617",
-    "full_url": "https://thisweekinreact.com//newsletter/274"
+    "issue_title": "📨 #275: ⚛️ Next.js, TanStack RSC, React Compiler, Inertia, Astro, Trusted Types, Signals | 📱 ExecuTorch, Unistyles, RN.run, Preflight, Confetti, AI, Lynx | 🔀 Pretext, Axios, Node, Playwright, Turborepo",
+    "link_url": "/newsletter/275",
+    "timestamp": "2026-04-02T09:09:00.408333",
+    "full_url": "https://thisweekinreact.com//newsletter/275"
   },
   "nextjsweekly": {
     "issue_title": "Issue #123 Mar 27, 2026Stable Next.js Adapters, WebSocket in App Router, AI Improvements, Error Handling, Sugar High, transitionType prop",
@@ -30,10 +30,10 @@
     "full_url": "https://nodeweekly.com/issues/617"
   },
   "frontendfoc": {
-    "issue_title": "Issue #734",
-    "link_url": "issues/734",
-    "timestamp": "2026-03-26T23:16:59.462341",
-    "full_url": "https://frontendfoc.us/issues/734"
+    "issue_title": "Issue #735",
+    "link_url": "issues/735",
+    "timestamp": "2026-04-02T09:00:36.090793",
+    "full_url": "https://frontendfoc.us/issues/735"
   },
   "reactweekly": {
     "issue_title": "Issue #468",
