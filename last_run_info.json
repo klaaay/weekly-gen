@@ -13,9 +13,9 @@
   },
   "reactdigest": {
     "issue_title": "one weekly email",
-    "link_url": "/newsletters/2245-the-hook-that-breaks-the-rules",
-    "timestamp": "2026-03-30T09:04:33.905432",
-    "full_url": "https://reactdigest.net//newsletters/2245-the-hook-that-breaks-the-rules"
+    "link_url": "/newsletters/2250-how-to-be-a-web-developer",
+    "timestamp": "2026-04-06T09:04:45.835232",
+    "full_url": "https://reactdigest.net//newsletters/2250-how-to-be-a-web-developer"
   },
   "webtoolsweekly": {
     "issue_title": "#663\nJS Libs, Git/CLI, Uncats",
@@ -49,14 +49,14 @@
   },
   "programmingdigest": {
     "issue_title": "one weekly email",
-    "link_url": "newsletters/2244-quantization-from-the-ground-up",
-    "timestamp": "2026-03-30T09:03:27.652304",
-    "full_url": "https://programmingdigest.net/newsletters/2244-quantization-from-the-ground-up"
+    "link_url": "newsletters/2249-every-layer-of-review-makes-you-10x-slower",
+    "timestamp": "2026-04-06T09:03:30.676219",
+    "full_url": "https://programmingdigest.net/newsletters/2249-every-layer-of-review-makes-you-10x-slower"
   },
   "leadershipintech": {
     "issue_title": "one email",
-    "link_url": "newsletters/2247-which-future",
-    "timestamp": "2026-04-02T18:28:51.382823",
-    "full_url": "https://leadershipintech.com/newsletters/2247-which-future"
+    "link_url": "newsletters/2251-nobody-is-coming-to-save-your-career",
+    "timestamp": "2026-04-06T09:00:25.812149",
+    "full_url": "https://leadershipintech.com/newsletters/2251-nobody-is-coming-to-save-your-career"
   }
 }
