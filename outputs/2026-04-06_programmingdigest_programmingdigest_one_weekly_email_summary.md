@@ -15,37 +15,37 @@
 
 ---
 
-### [推送-等待-猜测式持续集成的终结](https://depot.dev/blog/the-end-of-push-wait-guess-ci?utm_source=fnf&utm_medium=newsletter&utm_campaign=depot-april&utm_term=programming-digest&utm_content=depot-ci-blog)
+### [推送 - 等待 - 猜测式持续集成的终结](https://depot.dev/blog/the-end-of-push-wait-guess-ci?utm_source=fnf&utm_medium=newsletter&utm_campaign=depot-april&utm_term=programming-digest&utm_content=depot-ci-blog)
 
 **原文标题**: [The end of push-wait-guess CI](https://depot.dev/blog/the-end-of-push-wait-guess-ci?utm_source=fnf&utm_medium=newsletter&utm_campaign=depot-april&utm_term=programming-digest&utm_content=depot-ci-blog)
 
-Depot CI 通过本地化、可交互的调试循环彻底改变了传统CI的等待与猜测模式，使开发者能够直接控制、实时调试并自动化修复流程。
+Depot CI 通过本地化、可交互的调试循环彻底改变了传统 CI 的等待与猜测模式，使开发者能够直接控制、实时调试并自动化修复流程。
 
-- 🚀 **传统CI调试低效**：依赖提交、推送、长时间等待日志，过程充满猜测与不确定性。
-- 🔄 **Depot CI本地闭环调试**：通过CLI直接运行本地未提交更改，无需污染Git历史，实现快速验证。
+- 🚀 **传统 CI 调试低效**：依赖提交、推送、长时间等待日志，过程充满猜测与不确定性。
+- 🔄 **Depot CI 本地闭环调试**：通过 CLI 直接运行本地未提交更改，无需污染 Git 历史，实现快速验证。
 - 🔍 **实时状态与日志检查**：使用`depot ci status`和`depot ci logs`即时获取运行状态与详细输出。
-- 🛠️ **SSH直接介入调试**：通过`--ssh-after-step`在特定步骤暂停并SSH进入运行环境，直接检查文件、路径等实际状态。
-- 🤖 **自动化代理调试**：AI代理可接管调试循环，自动执行检查、修复与重试，解放开发者精力。
-- ⏱️ **提升效率与专注度**：将CI从繁琐的配置与调试转变为可靠的结果验证，节省时间并减少认知负担。
+- 🛠️ **SSH 直接介入调试**：通过`--ssh-after-step`在特定步骤暂停并 SSH 进入运行环境，直接检查文件、路径等实际状态。
+- 🤖 **自动化代理调试**：AI 代理可接管调试循环，自动执行检查、修复与重试，解放开发者精力。
+- ⏱️ **提升效率与专注度**：将 CI 从繁琐的配置与调试转变为可靠的结果验证，节省时间并减少认知负担。
 - 📚 **简易上手体验**：建议从故意破坏的小型工作流开始，亲身体验本地运行、调试到修复的完整流程。
 
 ---
 
-### [真正让生活更轻松（并拯救你的理智）的Shell技巧 | Larvitz博客](https://blog.hofstede.it/shell-tricks-that-actually-make-life-easier-and-save-your-sanity/)
+### [真正让生活更轻松（并拯救你的理智）的 Shell 技巧 | Larvitz 博客](https://blog.hofstede.it/shell-tricks-that-actually-make-life-easier-and-save-your-sanity/)
 
 **原文标题**: [  Shell Tricks That Actually Make Life Easier (And Save Your Sanity) | Larvitz Blog
 ](https://blog.hofstede.it/shell-tricks-that-actually-make-life-easier-and-save-your-sanity/)
 
-本文介绍了提高终端使用效率的实用技巧，分为适用于几乎所有POSIX兼容Shell的通用技巧和针对Bash或Zsh等交互式Shell的增强功能，帮助用户减少重复操作、提升命令行体验。
+本文介绍了提高终端使用效率的实用技巧，分为适用于几乎所有 POSIX 兼容 Shell 的通用技巧和针对 Bash 或 Zsh 等交互式 Shell 的增强功能，帮助用户减少重复操作、提升命令行体验。
 
 - ⌨️ **通用编辑快捷键**：使用`CTRL+W`删除光标前单词、`CTRL+U/K`剪切整行内容、`CTRL+A/E`跳转行首尾，以及`ALT+B/F`按单词移动光标，大幅减少退格键使用。
 - 🧹 **终端状态管理**：`reset`命令可修复因显示二进制文件导致的终端乱码；`CTRL+L`快速清屏而不中断当前输入。
 - 🔄 **目录快速切换**：`cd -`在两个目录间来回切换；`pushd`和`popd`用堆栈管理多个目录路径。
-- ⚠️ **紧急控制操作**：`CTRL+C`立即终止当前命令；`CTRL+D`发送EOF信号（空命令行时退出Shell）。
+- ⚠️ **紧急控制操作**：`CTRL+C`立即终止当前命令；`CTRL+D`发送 EOF 信号（空命令行时退出 Shell）。
 - 📁 **文件与变量技巧**：`> file.txt`清空文件并保留权限；`$_`变量引用上一条命令的最后一个参数，避免重复输入长路径。
 - 🛡️ **脚本安全设置**：在脚本开头使用`set -e`（出错即退出）和`set -u`（防止未定义变量误操作），提升脚本健壮性。
 - 🔍 **历史命令搜索**：`CTRL+R`反向搜索历史命令，快速找回过往操作。
-- ⚡ **权限与编辑增强**：`sudo !!`直接重用上条命令并添加sudo权限；`CTRL+X CTRL+E`或`fc`命令在编辑器中修改复杂命令。
+- ⚡ **权限与编辑增强**：`sudo !!`直接重用上条命令并添加 sudo 权限；`CTRL+X CTRL+E`或`fc`命令在编辑器中修改复杂命令。
 - 🔄 **参数复用技巧**：`ESC+.`或`ALT+.`插入上条命令的末参数；`!$`在执行时自动替换为末参数。
 - 🧙 **批量操作魔法**：使用花括号扩展快速备份（`cp file{,.bak}`）或重命名（`mv file.{txt,md}`），以及创建多个目录。
 - 📂 **高级文件处理**：进程替换`<(command)`将命令输出视为文件；启用`**`通配符递归匹配文件；`|& tee file.log`同时捕获标准输出和错误并保存日志。
@@ -96,19 +96,19 @@ Simon Willison 使用 Claude 工具创建了交互式排序算法动画演示，
 
 ---
 
-### [架构图中7个更常见的错误 | Ilograph 博客](https://www.ilograph.com/blog/posts/more-common-diagram-mistakes/)
+### [架构图中 7 个更常见的错误 | Ilograph 博客](https://www.ilograph.com/blog/posts/more-common-diagram-mistakes/)
 
 **原文标题**: [7 More Common Mistakes in Architecture Diagrams | Ilograph Blog](https://www.ilograph.com/blog/posts/more-common-diagram-mistakes/)
 
 系统架构图是记录复杂系统的重要工具，但图中常见的错误会导致观看者困惑、误解和沮丧。以下是七个常见错误及其避免方法。
 
 - 🏷️ 未标注资源名称：图中资源仅标注类型而缺少具体名称，导致无法区分同类资源。建议同时标注名称和类型，如“订单表”。
-- 🔗 存在未连接资源：图中出现与其他资源完全无关联的孤岛资源（如示例中的Route 53），使系统角色不明确，违背了展示资源关系的初衷。
-- 🧩 试图制作“万能图”：试图在一张图中展示整个系统（如运行依赖、DNS配置、代码部署等），会导致信息过载。应拆分为多个视角图，各讲述一个连贯故事。
+- 🔗 存在未连接资源：图中出现与其他资源完全无关联的孤岛资源（如示例中的 Route 53），使系统角色不明确，违背了展示资源关系的初衷。
+- 🧩 试图制作“万能图”：试图在一张图中展示整个系统（如运行依赖、DNS 配置、代码部署等），会导致信息过载。应拆分为多个视角图，各讲述一个连贯故事。
 - 🎢 传送带综合征：在行为图中过度简化交互，将系统描绘成单向流水线，掩盖了实际的往返协调过程。应改用序列图来准确展示资源间的详细交互。
 - 🌀 无意义的动画：在图中添加冗余且分散注意力的动画（如社交平台上常见的闪烁箭头），这些动画仅用于营销，无实际技术价值，应避免在技术图中使用。
 - 🎯 扇形陷阱：当多个边缘资源通过同一中间资源（如消息代理）通信时，具体关系信息会丢失。可通过在中间资源内添加更具体的子资源（如主题）来恢复可见路径。
-- 🤖 依赖AI从源代码生成图表：AI虽能在构思阶段辅助，但直接从源代码生成架构图时，常出现模糊、幻觉及上述各类问题，因缺乏训练数据、难以解析密集代码且无法战略性地取舍内容。目前详细系统绘图仍需人工主导。
+- 🤖 依赖 AI 从源代码生成图表：AI 虽能在构思阶段辅助，但直接从源代码生成架构图时，常出现模糊、幻觉及上述各类问题，因缺乏训练数据、难以解析密集代码且无法战略性地取舍内容。目前详细系统绘图仍需人工主导。
 
 ---
 
