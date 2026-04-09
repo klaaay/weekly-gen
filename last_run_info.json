@@ -1,9 +1,9 @@
 {
   "thisweekinreact": {
-    "issue_title": "📨 #275: ⚛️ Next.js, TanStack RSC, React Compiler, Inertia, Astro, Trusted Types, Signals | 📱 ExecuTorch, Unistyles, RN.run, Preflight, Confetti, AI, Lynx | 🔀 Pretext, Axios, Node, Playwright, Turborepo",
-    "link_url": "/newsletter/275",
-    "timestamp": "2026-04-02T09:09:00.408333",
-    "full_url": "https://thisweekinreact.com//newsletter/275"
+    "issue_title": "📨 #276: Boneyard, Ink, MUI, React Router, Next.js, shadcn, Docusaurus, Comark, Forms, Shaders | RN 0.85, ViewTransition, Skia, Windows, CRNL, Maestro, True Sheet, Nitro Player, RNGH | JSIR, Security, esbuild, Ky, Intl",
+    "link_url": "/newsletter/276",
+    "timestamp": "2026-04-09T23:06:42.385087",
+    "full_url": "https://thisweekinreact.com//newsletter/276"
   },
   "nextjsweekly": {
     "issue_title": "Issue #124 Apr 3, 2026Turborepo 2.9, React Fiber explained, jal-co/ui, Next.js Mental Model, useOffline, Debug React with AI",
@@ -18,22 +18,22 @@
     "full_url": "https://reactdigest.net//newsletters/2250-how-to-be-a-web-developer"
   },
   "webtoolsweekly": {
-    "issue_title": "#663\nJS Libs, Git/CLI, Uncats",
-    "link_url": "archives/issue-663/",
-    "timestamp": "2026-04-02T18:30:39.085981",
-    "full_url": "https://webtoolsweekly.com/archives/issue-663/"
+    "issue_title": "#664\nFrameworks, AI Tools, Build Tools",
+    "link_url": "archives/issue-664/",
+    "timestamp": "2026-04-09T23:18:12.662571",
+    "full_url": "https://webtoolsweekly.com/archives/issue-664/"
   },
   "nodeweekly": {
-    "issue_title": "Issue #618",
-    "link_url": "issues/618",
-    "timestamp": "2026-04-03T09:00:33.441504",
-    "full_url": "https://nodeweekly.com/issues/618"
+    "issue_title": "Issue #619",
+    "link_url": "issues/619",
+    "timestamp": "2026-04-09T23:49:40.184967",
+    "full_url": "https://nodeweekly.com/issues/619"
   },
   "frontendfoc": {
-    "issue_title": "Issue #735",
-    "link_url": "issues/735",
-    "timestamp": "2026-04-02T09:00:36.090793",
-    "full_url": "https://frontendfoc.us/issues/735"
+    "issue_title": "Issue #736",
+    "link_url": "issues/736",
+    "timestamp": "2026-04-09T22:54:43.581683",
+    "full_url": "https://frontendfoc.us/issues/736"
   },
   "reactweekly": {
     "issue_title": "Issue #468",
@@ -55,8 +55,8 @@
   },
   "leadershipintech": {
     "issue_title": "one email",
-    "link_url": "newsletters/2251-nobody-is-coming-to-save-your-career",
-    "timestamp": "2026-04-06T09:00:25.812149",
-    "full_url": "https://leadershipintech.com/newsletters/2251-nobody-is-coming-to-save-your-career"
+    "link_url": "newsletters/2252-what-i-learned-from-nearly-1-000-interviews-at-amazon",
+    "timestamp": "2026-04-09T23:05:05.765454",
+    "full_url": "https://leadershipintech.com/newsletters/2252-what-i-learned-from-nearly-1-000-interviews-at-amazon"
   }
 }
