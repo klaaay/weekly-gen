@@ -189,6 +189,9 @@ cat last_run_info.json
 - 服务：基于 FastAPI，默认会在 `Asia/Shanghai` 时区下每天 `09:00` 在后台执行一次 `python main.py -w 8 --all`（避免并发重叠）。
 - 依赖管理：通过 `uv` 按 `pyproject.toml` 同步安装。
 - 日志：运行日志保存至 `outputs/service_logs/`，最近一次运行日志路径会在 `/status` 返回。
+- 调度器状态会持久化到 `outputs/service_state.json`，保存最近一次执行信息和下一次计划时间。
+- 服务重启后，`/status` 仍然可以读取上一次执行结果。
+- 该持久化机制不会补跑停机期间错过的计划任务。
 - 调度模式：
   - `SCHEDULE_MODE=daily` 时，按 `SCHEDULE_TZ` 和 `SCHEDULE_TIME` 固定时刻执行
   - `SCHEDULE_MODE=interval` 时，按 `TASK_INTERVAL_SECONDS` 固定间隔执行

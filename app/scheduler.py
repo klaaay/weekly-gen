@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import asyncio
 import contextlib
+import json
 import os
 import sys
 from dataclasses import dataclass, asdict
@@ -46,6 +47,7 @@ class JobScheduler:
         schedule_mode: str = "interval",
         schedule_time: str = "09:00",
         schedule_timezone: str = "Asia/Shanghai",
+        state_file_path: Optional[str] = None,
     ) -> None:
         if schedule_mode not in {"interval", "daily"}:
             raise ValueError(f"Invalid schedule mode: {schedule_mode}")
@@ -56,6 +58,7 @@ class JobScheduler:
         self.schedule_mode = schedule_mode
         self.schedule_time = schedule_time
         self.schedule_timezone = schedule_timezone
+        self.state_file_path = state_file_path or os.path.join(self.workdir, "outputs", "service_state.json")
         # Default to running the module from src
         self.command = command or [sys.executable, "-m", "src.main", "-w", "8", "--all"]
 
@@ -80,7 +83,13 @@ class JobScheduler:
         # ensure dirs exist
         ensure_dir(self.log_dir)
         ensure_dir(os.path.join(self.workdir, "outputs"))
-        self._refresh_next_scheduled_at()
+        self._load_persisted_state()
+        self._state.running = False
+        self._state.schedule_mode = schedule_mode
+        self._state.schedule_time = schedule_time if schedule_mode == "daily" else None
+        self._state.schedule_timezone = schedule_timezone if schedule_mode == "daily" else None
+        self._refresh_next_scheduled_at(persist=False)
+        self._persist_state()
 
     @property
     def state(self) -> RunState:
@@ -106,11 +115,49 @@ class JobScheduler:
             candidate = candidate + timedelta(days=1)
         return candidate
 
-    def _refresh_next_scheduled_at(self, now: datetime | None = None) -> None:
+    def _append_scheduler_error(self, message: str) -> None:
+        try:
+            ensure_dir(self.log_dir)
+            with open(os.path.join(self.log_dir, "scheduler-errors.log"), "a", encoding="utf-8") as ef:
+                ef.write(f"[{utcnow_iso()}] {message}\n")
+        except Exception:
+            pass
+
+    def _load_persisted_state(self) -> None:
+        if not os.path.exists(self.state_file_path):
+            return
+
+        try:
+            with open(self.state_file_path, "r", encoding="utf-8") as f:
+                payload = json.load(f)
+        except Exception as exc:
+            self._append_scheduler_error(f"state load error: {exc}")
+            return
+
+        if not isinstance(payload, dict):
+            self._append_scheduler_error("state load error: payload is not an object")
+            return
+
+        for key, value in payload.items():
+            if hasattr(self._state, key):
+                setattr(self._state, key, value)
+
+    def _persist_state(self) -> None:
+        try:
+            os.makedirs(os.path.dirname(self.state_file_path), exist_ok=True)
+            with open(self.state_file_path, "w", encoding="utf-8") as f:
+                json.dump(self._state.to_dict(), f, ensure_ascii=False, indent=2)
+        except Exception as exc:
+            self._append_scheduler_error(f"state persist error: {exc}")
+
+    def _refresh_next_scheduled_at(self, now: datetime | None = None, persist: bool = True) -> None:
         if self.schedule_mode != "daily":
             self._state.next_scheduled_at = None
-            return
-        self._state.next_scheduled_at = self._compute_next_run_at(now).isoformat()
+        else:
+            self._state.next_scheduled_at = self._compute_next_run_at(now).isoformat()
+
+        if persist:
+            self._persist_state()
 
     async def run_once(self) -> Dict[str, Any]:
         if self._lock.locked():
@@ -126,6 +173,7 @@ class JobScheduler:
             self._state.last_duration_sec = None
             log_path = os.path.join(self.log_dir, f"run-{datetime.now().strftime('%Y%m%d-%H%M%S')}.log")
             self._state.last_log_file = log_path
+            self._persist_state()
 
             start = asyncio.get_event_loop().time()
 
@@ -163,29 +211,20 @@ class JobScheduler:
                 try:
                     next_run_at = self._compute_next_run_at()
                     self._state.next_scheduled_at = next_run_at.isoformat()
+                    self._persist_state()
                     delay = max((next_run_at - datetime.now(self._tz)).total_seconds(), 0)
                     await asyncio.wait_for(self._stop_event.wait(), timeout=delay)
                     break
                 except asyncio.TimeoutError:
                     pass
                 except Exception as e:  # keep loop alive
-                    try:
-                        ensure_dir(self.log_dir)
-                        with open(os.path.join(self.log_dir, "scheduler-errors.log"), "a", encoding="utf-8") as ef:
-                            ef.write(f"[{utcnow_iso()}] loop error: {e}\n")
-                    except Exception:
-                        pass
+                    self._append_scheduler_error(f"loop error: {e}")
                     continue
 
                 try:
                     await self.run_once()
                 except Exception as e:  # keep loop alive
-                    try:
-                        ensure_dir(self.log_dir)
-                        with open(os.path.join(self.log_dir, "scheduler-errors.log"), "a", encoding="utf-8") as ef:
-                            ef.write(f"[{utcnow_iso()}] loop error: {e}\n")
-                    except Exception:
-                        pass
+                    self._append_scheduler_error(f"loop error: {e}")
             return
 
         # staggered, interval measured from end of run
@@ -193,13 +232,7 @@ class JobScheduler:
             try:
                 await self.run_once()
             except Exception as e:  # keep loop alive
-                # best-effort logging to a daily file
-                try:
-                    ensure_dir(self.log_dir)
-                    with open(os.path.join(self.log_dir, "scheduler-errors.log"), "a", encoding="utf-8") as ef:
-                        ef.write(f"[{utcnow_iso()}] loop error: {e}\n")
-                except Exception:
-                    pass
+                self._append_scheduler_error(f"loop error: {e}")
 
             try:
                 await asyncio.wait_for(self._stop_event.wait(), timeout=self.interval_seconds)

@@ -1,3 +1,4 @@
+import json
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
@@ -55,3 +56,56 @@ def test_status_exposes_daily_schedule_config(monkeypatch):
     assert payload["schedule_time"] == "09:00"
     assert payload["schedule_timezone"] == "Asia/Shanghai"
     assert payload["next_scheduled_at"]
+
+
+def test_run_state_is_persisted_to_json(tmp_path):
+    state_file = tmp_path / "service_state.json"
+    scheduler = JobScheduler(
+        schedule_mode="daily",
+        schedule_time="09:00",
+        schedule_timezone="Asia/Shanghai",
+        state_file_path=str(state_file),
+    )
+
+    scheduler._state.last_started_at = "2026-04-11T09:00:00+08:00"
+    scheduler._state.last_finished_at = "2026-04-11T09:02:00+08:00"
+    scheduler._state.last_returncode = 0
+    scheduler._state.last_duration_sec = 120.0
+    scheduler._persist_state()
+
+    payload = json.loads(state_file.read_text(encoding="utf-8"))
+    assert payload["last_returncode"] == 0
+    assert payload["last_duration_sec"] == 120.0
+
+
+def test_scheduler_loads_persisted_state_and_recomputes_next_run(tmp_path):
+    state_file = tmp_path / "service_state.json"
+    state_file.write_text(
+        json.dumps(
+            {
+                "running": True,
+                "last_started_at": "2026-04-10T09:00:00+08:00",
+                "last_finished_at": "2026-04-10T09:05:00+08:00",
+                "last_returncode": 0,
+                "last_duration_sec": 300.0,
+                "last_log_file": "outputs/service_logs/run-20260410-090000.log",
+                "schedule_mode": "daily",
+                "schedule_time": "09:00",
+                "schedule_timezone": "Asia/Shanghai",
+                "next_scheduled_at": "2099-01-01T09:00:00+08:00",
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    scheduler = JobScheduler(
+        schedule_mode="daily",
+        schedule_time="09:00",
+        schedule_timezone="Asia/Shanghai",
+        state_file_path=str(state_file),
+    )
+
+    assert scheduler.state.running is False
+    assert scheduler.state.last_returncode == 0
+    assert scheduler.state.last_log_file == "outputs/service_logs/run-20260410-090000.log"
+    assert scheduler.state.next_scheduled_at != "2099-01-01T09:00:00+08:00"

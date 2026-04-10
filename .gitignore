@@ -3,4 +3,5 @@
 .DS_Store
 __pycache__
 outputs/service_logs
+outputs/service_state.json
 .worktrees/
