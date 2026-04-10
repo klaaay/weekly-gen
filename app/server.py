@@ -16,6 +16,10 @@ class StatusModel(BaseModel):
     last_returncode: int | None
     last_duration_sec: float | None
     last_log_file: str | None
+    schedule_mode: str | None
+    schedule_time: str | None
+    schedule_timezone: str | None
+    next_scheduled_at: str | None
 
 
 def create_app() -> FastAPI:
@@ -24,12 +28,22 @@ def create_app() -> FastAPI:
     # config via env
     interval = int(os.getenv("TASK_INTERVAL_SECONDS", "300"))
     workdir = os.getenv("WORKDIR", ".")
+    schedule_mode = os.getenv("SCHEDULE_MODE", "interval")
+    schedule_time = os.getenv("SCHEDULE_TIME", "09:00")
+    schedule_timezone = os.getenv("SCHEDULE_TZ", "Asia/Shanghai")
 
     # Allow overriding the run command via env (string)
     run_cmd_env = os.getenv("RUN_CMD")
     run_cmd = shlex.split(run_cmd_env) if run_cmd_env else None
 
-    scheduler = JobScheduler(interval_seconds=interval, workdir=workdir, command=run_cmd)
+    scheduler = JobScheduler(
+        interval_seconds=interval,
+        workdir=workdir,
+        command=run_cmd,
+        schedule_mode=schedule_mode,
+        schedule_time=schedule_time,
+        schedule_timezone=schedule_timezone,
+    )
 
     @app.on_event("startup")
     async def _on_startup() -> None:

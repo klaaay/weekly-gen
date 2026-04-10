@@ -9,6 +9,9 @@ services:
     container_name: weekly-gen
     restart: unless-stopped
     environment:
+      - SCHEDULE_MODE=daily
+      - SCHEDULE_TIME=09:00
+      - SCHEDULE_TZ=Asia/Shanghai
       - TASK_INTERVAL_SECONDS=1200
       - WORKDIR=/app
       - RUNNING_IN_CONTAINER=1

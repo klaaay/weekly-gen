@@ -186,9 +186,12 @@ cat last_run_info.json
 
 ## 服务化与部署（FastAPI + uv + Docker）
 
-- 服务：基于 FastAPI，启动后会在后台每 5 分钟尝试执行 `python main.py -w 8 --all`（避免并发重叠）。
+- 服务：基于 FastAPI，默认会在 `Asia/Shanghai` 时区下每天 `09:00` 在后台执行一次 `python main.py -w 8 --all`（避免并发重叠）。
 - 依赖管理：通过 `uv` 按 `pyproject.toml` 同步安装。
 - 日志：运行日志保存至 `outputs/service_logs/`，最近一次运行日志路径会在 `/status` 返回。
+- 调度模式：
+  - `SCHEDULE_MODE=daily` 时，按 `SCHEDULE_TZ` 和 `SCHEDULE_TIME` 固定时刻执行
+  - `SCHEDULE_MODE=interval` 时，按 `TASK_INTERVAL_SECONDS` 固定间隔执行
 
 ### 本地运行（uv）
 
@@ -199,8 +202,12 @@ uv sync
 # 启动服务（默认 8111 端口），内部调度执行 src.main
 uv run uvicorn app.server:app --host 0.0.0.0 --port 8111
 
-# 环境变量可配置间隔（默认 300 秒）
+# interval 模式：每 10 分钟执行一次
 TASK_INTERVAL_SECONDS=600 uv run uvicorn app.server:app --host 0.0.0.0 --port 8111
+
+# daily 模式：每天 09:00（Asia/Shanghai）执行一次
+SCHEDULE_MODE=daily SCHEDULE_TIME=09:00 SCHEDULE_TZ=Asia/Shanghai \
+uv run uvicorn app.server:app --host 0.0.0.0 --port 8111
 ```
 
 接口：
@@ -213,7 +220,9 @@ TASK_INTERVAL_SECONDS=600 uv run uvicorn app.server:app --host 0.0.0.0 --port 81
 ```bash
 docker build -t weekly-gen:latest .
 docker run --rm -p 8111:8111 \
-  -e TASK_INTERVAL_SECONDS=300 \
+  -e SCHEDULE_MODE=daily \
+  -e SCHEDULE_TIME=09:00 \
+  -e SCHEDULE_TZ=Asia/Shanghai \
   -e RUN_CMD="python -m src.main -w 8 --all" \
   -e RUNNING_IN_CONTAINER=1 \
   -v "$(pwd)/outputs:/app/outputs" \
@@ -246,6 +255,7 @@ make push IMAGE_NAME=yourrepo/weekly-gen IMAGE_TAG=$(git rev-parse --short HEAD)
 ### docker-compose 部署
 
 项目已提供 `docker-compose.yml`，默认将容器内的 `/app/outputs` 映射到宿主机 `./outputs`。
+默认调度模式为每天 `09:00`（`Asia/Shanghai`）。
 
 ```bash
 docker compose up -d --build
