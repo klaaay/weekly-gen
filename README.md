@@ -8,7 +8,7 @@
 - 📊 **并行执行**: 支持多线程并行抓取，提高效率
 - 🔄 **状态跟踪**: 记录每次运行的状态，支持断点续传
 - 📝 **内容总结**: 使用 AI 自动生成中文摘要
-- 🎯 **精准抓取**: 支持 8 个主流技术周刊
+- 🎯 **精准抓取**: 支持多个主流技术周刊
 
 ## 支持的周刊
 
@@ -18,6 +18,7 @@
 | `javascriptweekly.py` | JavaScript Weekly  | JavaScript 开发周刊   |
 | `nextjsweekly.py`     | Next.js Weekly     | Next.js 框架周刊      |
 | `nodeweekly.py`       | Node Weekly        | Node.js 开发周刊      |
+| `pythonweekly.py`     | Python Weekly      | Python 开发周刊       |
 | `reactweekly.py`      | React Weekly       | React 开发周刊        |
 | `reactdigest.py`      | React Digest       | React 技术文摘        |
 | `thisweekinreact.py`  | This Week in React | React 生态系统周刊    |

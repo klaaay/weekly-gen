@@ -19,6 +19,7 @@ try:
     from src.nextjsweekly import scrape_nextjsweekly
     from src.nodeweekly import scrape_nodeweekly
     from src.programmingdigest import scrape_programmingdigest
+    from src.pythonweekly import scrape_pythonweekly
     from src.reactweekly import scrape_reactweekly
     from src.reactdigest import scrape_reactdigest
     from src.thisweekinreact import scrape_thisweekinreact
@@ -59,6 +60,11 @@ SCRAPERS = {
         'name': 'Programming Digest',
         'function': scrape_programmingdigest,
         'description': '编程技术文摘'
+    },
+    'pythonweekly': {
+        'name': 'Python Weekly',
+        'function': scrape_pythonweekly,
+        'description': 'Python 开发周刊'
     },
     'reactweekly': {
         'name': 'React Weekly',
