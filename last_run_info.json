@@ -43,21 +43,21 @@
   },
   "leadershipintech": {
     "issue_title": "one email",
-    "link_url": "newsletters/2256-the-economics-of-software-teams",
-    "timestamp": "2026-04-13T09:00:01.609080",
-    "full_url": "https://leadershipintech.com/newsletters/2256-the-economics-of-software-teams"
+    "link_url": "newsletters/2257-encoding-team-standards",
+    "timestamp": "2026-04-18T02:49:41.870227",
+    "full_url": "https://leadershipintech.com/newsletters/2257-encoding-team-standards"
   },
   "nextjsweekly": {
-    "issue_title": "Issue #125 Apr 10, 2026React2DoS - CVE-2026-23869, The Precompute Pattern, Boneyard, use cache migration, RSC Boundary, What To Know in JavaScript (2026 Edition)",
-    "link_url": "/issues/125",
-    "timestamp": "2026-04-12T09:00:01.373715",
-    "full_url": "https://nextjsweekly.com//issues/125"
+    "issue_title": "Issue #126 Apr 17, 2026Instant Navigations, Bye Vendor Lock-in, Ultracite, Blocking Bots, Distributed 'use cache', varlock, Vertical Codebase",
+    "link_url": "/issues/126",
+    "timestamp": "2026-04-18T02:49:42.302117",
+    "full_url": "https://nextjsweekly.com//issues/126"
   },
   "reactweekly": {
-    "issue_title": "Issue #469",
-    "link_url": "issues/469",
-    "timestamp": "2026-04-11T02:31:41.467692",
-    "full_url": "https://react.statuscode.com/issues/469"
+    "issue_title": "Issue #470",
+    "link_url": "issues/470",
+    "timestamp": "2026-04-18T02:49:42.927058",
+    "full_url": "https://react.statuscode.com/issues/470"
   },
   "pythonweekly": {
     "issue_title": "10 hours ago Python Weekly (Issue 741 April 16 2026)",

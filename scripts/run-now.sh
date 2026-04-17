@@ -1,9 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Trigger an immediate background run via FastAPI endpoint.
+# Trigger an immediate background run via FastAPI POST /run-now.
+#
 # Config:
-#   BASE_URL: service base URL (default: http://localhost:8111)
+#   BASE_URL — service base URL (default: http://localhost:8111)
+#
+# Manual curl（请求体与下方脚本一致；可改主机/端口）:
+#   curl -sS -X POST 'http://localhost:8111/run-now' \
+#     -H 'Content-Type: application/json' \
+#     -d '{}'
 
 BASE_URL=${BASE_URL:-http://localhost:8111}
 
