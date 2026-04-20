@@ -7,9 +7,9 @@
   },
   "reactdigest": {
     "issue_title": "one weekly email",
-    "link_url": "/newsletters/2255-how-does-react-fiber-render-your-ui",
-    "timestamp": "2026-04-13T09:00:02.352416",
-    "full_url": "https://reactdigest.net//newsletters/2255-how-does-react-fiber-render-your-ui"
+    "link_url": "/newsletters/2260-under-the-hood-of-mdn-s-new-frontend",
+    "timestamp": "2026-04-20T13:01:00.808802",
+    "full_url": "https://reactdigest.net//newsletters/2260-under-the-hood-of-mdn-s-new-frontend"
   },
   "webtoolsweekly": {
     "issue_title": "#665\nDebugBear Review, JS Utils, Media, AI Tools",
@@ -37,15 +37,15 @@
   },
   "programmingdigest": {
     "issue_title": "one weekly email",
-    "link_url": "newsletters/2254-how-to-build-a-gpu",
-    "timestamp": "2026-04-13T09:00:01.594575",
-    "full_url": "https://programmingdigest.net/newsletters/2254-how-to-build-a-gpu"
+    "link_url": "newsletters/2258-good-apis-age-slowly",
+    "timestamp": "2026-04-20T13:00:59.674780",
+    "full_url": "https://programmingdigest.net/newsletters/2258-good-apis-age-slowly"
   },
   "leadershipintech": {
     "issue_title": "one email",
-    "link_url": "newsletters/2257-encoding-team-standards",
-    "timestamp": "2026-04-18T02:49:41.870227",
-    "full_url": "https://leadershipintech.com/newsletters/2257-encoding-team-standards"
+    "link_url": "newsletters/2261-learning-from-competition",
+    "timestamp": "2026-04-20T13:00:59.694312",
+    "full_url": "https://leadershipintech.com/newsletters/2261-learning-from-competition"
   },
   "nextjsweekly": {
     "issue_title": "Issue #126 Apr 17, 2026Instant Navigations, Bye Vendor Lock-in, Ultracite, Blocking Bots, Distributed 'use cache', varlock, Vertical Codebase",
