@@ -23,6 +23,7 @@ try:
     from src.reactweekly import scrape_reactweekly
     from src.reactdigest import scrape_reactdigest
     from src.thisweekinreact import scrape_thisweekinreact
+    from src.tailwindweekly import scrape_tailwindweekly
     from src.webtoolsweekly import scrape_webtoolsweekly
 except ImportError as e:
     print(f"导入错误：{e}")
@@ -80,6 +81,11 @@ SCRAPERS = {
         'name': 'This Week in React',
         'function': scrape_thisweekinreact,
         'description': 'React 生态系统周刊'
+    },
+    'tailwindweekly': {
+        'name': 'Tailwind Weekly',
+        'function': scrape_tailwindweekly,
+        'description': 'Tailwind CSS 与前端开发周刊'
     },
     'webtoolsweekly': {
         'name': 'Web Tools Weekly',
