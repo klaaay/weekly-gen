@@ -12,16 +12,16 @@
     "full_url": "https://reactdigest.net//newsletters/2260-under-the-hood-of-mdn-s-new-frontend"
   },
   "webtoolsweekly": {
-    "issue_title": "#665\nDebugBear Review, JS Utils, Media, AI Tools",
-    "link_url": "archives/issue-665/",
-    "timestamp": "2026-04-17T09:00:01.815255",
-    "full_url": "https://webtoolsweekly.com/archives/issue-665/"
+    "issue_title": "#666\nCSS/HTML, Testing, React",
+    "link_url": "archives/issue-666/",
+    "timestamp": "2026-04-24T09:00:03.310785",
+    "full_url": "https://webtoolsweekly.com/archives/issue-666/"
   },
   "nodeweekly": {
-    "issue_title": "Issue #620",
-    "link_url": "issues/620",
-    "timestamp": "2026-04-18T12:59:43.376895",
-    "full_url": "https://nodeweekly.com/issues/620"
+    "issue_title": "Issue #621",
+    "link_url": "issues/621",
+    "timestamp": "2026-04-24T09:00:02.212579",
+    "full_url": "https://nodeweekly.com/issues/621"
   },
   "frontendfoc": {
     "issue_title": "Issue #738",
@@ -43,26 +43,26 @@
   },
   "leadershipintech": {
     "issue_title": "one email",
-    "link_url": "newsletters/2261-learning-from-competition",
-    "timestamp": "2026-04-20T13:00:59.694312",
-    "full_url": "https://leadershipintech.com/newsletters/2261-learning-from-competition"
+    "link_url": "newsletters/2262-the-critical-shift-in-what-differentiates-great-leaders",
+    "timestamp": "2026-04-24T09:00:01.655361",
+    "full_url": "https://leadershipintech.com/newsletters/2262-the-critical-shift-in-what-differentiates-great-leaders"
   },
   "nextjsweekly": {
-    "issue_title": "Issue #126 Apr 17, 2026Instant Navigations, Bye Vendor Lock-in, Ultracite, Blocking Bots, Distributed 'use cache', varlock, Vertical Codebase",
-    "link_url": "/issues/126",
-    "timestamp": "2026-04-18T02:49:42.302117",
-    "full_url": "https://nextjsweekly.com//issues/126"
+    "issue_title": "Latest Apr 24, 2026React Email 6.0, Vercel got hacked, Prevent flash before hydration, Logging in Next.js, shader-lab, TypeScript 7.0, nextmap",
+    "link_url": "/issues/127",
+    "timestamp": "2026-04-24T09:00:02.419463",
+    "full_url": "https://nextjsweekly.com//issues/127"
   },
   "reactweekly": {
-    "issue_title": "Issue #470",
-    "link_url": "issues/470",
-    "timestamp": "2026-04-18T02:49:42.927058",
-    "full_url": "https://react.statuscode.com/issues/470"
+    "issue_title": "Issue #471",
+    "link_url": "issues/471",
+    "timestamp": "2026-04-25T09:00:03.261563",
+    "full_url": "https://react.statuscode.com/issues/471"
   },
   "pythonweekly": {
-    "issue_title": "10 hours ago Python Weekly (Issue 741 April 16 2026)",
-    "link_url": "p/python-weekly-issue-741-april-16-2026",
-    "timestamp": "2026-04-17T09:00:02.398642",
-    "full_url": "https://www.pythonweekly.com/p/python-weekly-issue-741-april-16-2026"
+    "issue_title": "10 hours ago Python Weekly (Issue 742 April 23 2026)",
+    "link_url": "p/python-weekly-issue-742-april-23-2026",
+    "timestamp": "2026-04-24T09:00:02.008777",
+    "full_url": "https://www.pythonweekly.com/p/python-weekly-issue-742-april-23-2026"
   }
 }
