@@ -22,6 +22,7 @@
 | `reactweekly.py`      | React Weekly       | React 开发周刊        |
 | `reactdigest.py`      | React Digest       | React 技术文摘        |
 | `thisweekinreact.py`  | This Week in React | React 生态系统周刊    |
+| `tailwindweekly.py`   | Tailwind Weekly    | Tailwind CSS 与前端开发周刊 |
 | `webtoolsweekly.py`   | Web Tools Weekly   | Web 开发工具周刊      |
 
 ## 安装依赖
@@ -122,6 +123,7 @@ weekly-gen/
 │   ├── reactweekly.py      # React Weekly 爬虫
 │   ├── reactdigest.py      # React Digest 爬虫
 │   ├── thisweekinreact.py  # This Week in React 爬虫
+│   ├── tailwindweekly.py   # Tailwind Weekly 爬虫
 │   ├── webtoolsweekly.py   # Web Tools Weekly 爬虫
 │   └── utils/
 │       ├── __init__.py
