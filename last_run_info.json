@@ -7,9 +7,9 @@
   },
   "reactdigest": {
     "issue_title": "one weekly email",
-    "link_url": "/newsletters/2260-under-the-hood-of-mdn-s-new-frontend",
-    "timestamp": "2026-04-20T13:01:00.808802",
-    "full_url": "https://reactdigest.net//newsletters/2260-under-the-hood-of-mdn-s-new-frontend"
+    "link_url": "/newsletters/2265-react-compiler-at-eighteen-months",
+    "timestamp": "2026-04-29T15:20:08.632925",
+    "full_url": "https://reactdigest.net//newsletters/2265-react-compiler-at-eighteen-months"
   },
   "webtoolsweekly": {
     "issue_title": "#666\nCSS/HTML, Testing, React",
@@ -30,22 +30,22 @@
     "full_url": "https://frontendfoc.us/issues/738"
   },
   "javascriptweekly": {
-    "issue_title": "Issue #782",
-    "link_url": "issues/782",
-    "timestamp": "2026-04-22T09:00:02.291048",
-    "full_url": "https://javascriptweekly.com/issues/782"
+    "issue_title": "Issue #783",
+    "link_url": "issues/783",
+    "timestamp": "2026-04-29T15:20:08.778472",
+    "full_url": "https://javascriptweekly.com/issues/783"
   },
   "programmingdigest": {
     "issue_title": "one weekly email",
-    "link_url": "newsletters/2258-good-apis-age-slowly",
-    "timestamp": "2026-04-20T13:00:59.674780",
-    "full_url": "https://programmingdigest.net/newsletters/2258-good-apis-age-slowly"
+    "link_url": "newsletters/2264-floating-point-from-scratch",
+    "timestamp": "2026-04-29T15:20:07.753733",
+    "full_url": "https://programmingdigest.net/newsletters/2264-floating-point-from-scratch"
   },
   "leadershipintech": {
     "issue_title": "one email",
-    "link_url": "newsletters/2262-the-critical-shift-in-what-differentiates-great-leaders",
-    "timestamp": "2026-04-24T09:00:01.655361",
-    "full_url": "https://leadershipintech.com/newsletters/2262-the-critical-shift-in-what-differentiates-great-leaders"
+    "link_url": "newsletters/2266-how-to-hire-people-who-are-better-than-you",
+    "timestamp": "2026-04-29T15:20:08.084894",
+    "full_url": "https://leadershipintech.com/newsletters/2266-how-to-hire-people-who-are-better-than-you"
   },
   "nextjsweekly": {
     "issue_title": "Latest Apr 24, 2026React Email 6.0, Vercel got hacked, Prevent flash before hydration, Logging in Next.js, shader-lab, TypeScript 7.0, nextmap",
