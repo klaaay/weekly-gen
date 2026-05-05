@@ -7,9 +7,9 @@
   },
   "reactdigest": {
     "issue_title": "one weekly email",
-    "link_url": "/newsletters/2265-react-compiler-at-eighteen-months",
-    "timestamp": "2026-04-29T15:20:08.632925",
-    "full_url": "https://reactdigest.net//newsletters/2265-react-compiler-at-eighteen-months"
+    "link_url": "/newsletters/2270-3-ways-to-store-variables-in-react",
+    "timestamp": "2026-05-04T09:00:02.107948",
+    "full_url": "https://reactdigest.net//newsletters/2270-3-ways-to-store-variables-in-react"
   },
   "webtoolsweekly": {
     "issue_title": "#667\nJS Utils, AI Tools, Build Tools",
@@ -37,15 +37,15 @@
   },
   "programmingdigest": {
     "issue_title": "one weekly email",
-    "link_url": "newsletters/2264-floating-point-from-scratch",
-    "timestamp": "2026-04-29T15:20:07.753733",
-    "full_url": "https://programmingdigest.net/newsletters/2264-floating-point-from-scratch"
+    "link_url": "newsletters/2269-high-performance-git",
+    "timestamp": "2026-05-04T09:00:01.397382",
+    "full_url": "https://programmingdigest.net/newsletters/2269-high-performance-git"
   },
   "leadershipintech": {
     "issue_title": "one email",
-    "link_url": "newsletters/2267-how-to-be-direct-and-strategic",
-    "timestamp": "2026-04-30T14:44:45.589436",
-    "full_url": "https://leadershipintech.com/newsletters/2267-how-to-be-direct-and-strategic"
+    "link_url": "newsletters/2271-measure-less-to-learn-more",
+    "timestamp": "2026-05-04T09:00:01.368241",
+    "full_url": "https://leadershipintech.com/newsletters/2271-measure-less-to-learn-more"
   },
   "nextjsweekly": {
     "issue_title": "Latest May 1, 2026How React streams UI, React Compiler Rendering, dev3000 CLI, TSRX, Replay, Scroll-Driven Animations, Ship 26 tickets",
