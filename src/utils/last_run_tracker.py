@@ -6,7 +6,10 @@
 """
 import os
 import json
+import contextlib
 import datetime
+import shutil
+import tempfile
 import threading
 
 # 用于 last_run_info.json 读写锁，避免并行执行时竞态导致 key 丢失
@@ -25,23 +28,105 @@ def _resolve_json_file_path(json_file_path=_DEFAULT_JSON_FILE_PATH):
 def _candidate_read_paths(json_file_path):
     """返回读取状态时的候选路径，支持从旧默认路径迁移到新路径。"""
     resolved_path = _resolve_json_file_path(json_file_path)
-    paths = [resolved_path]
+    paths = [resolved_path, f"{resolved_path}.bak"]
     if resolved_path != _DEFAULT_JSON_FILE_PATH:
-        paths.append(_DEFAULT_JSON_FILE_PATH)
+        paths.extend([_DEFAULT_JSON_FILE_PATH, f"{_DEFAULT_JSON_FILE_PATH}.bak"])
     return paths
+
+
+def _load_json_file(path):
+    """读取并校验状态 JSON，文件不存在或损坏时返回 None。"""
+    if not os.path.exists(path):
+        return None
+
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    except Exception as e:
+        print(f"读取上次运行信息失败：{path}: {e}")
+        return None
+
+    if not isinstance(data, dict):
+        print(f"读取上次运行信息失败：{path}: 内容不是 JSON 对象")
+        return None
+    return data
+
+
+def _sync_parent_dir(path):
+    """尽量同步父目录元数据；部分平台不支持时忽略。"""
+    parent_dir = os.path.dirname(path) or "."
+    try:
+        dir_fd = os.open(parent_dir, os.O_DIRECTORY)
+        try:
+            os.fsync(dir_fd)
+        finally:
+            os.close(dir_fd)
+    except Exception:
+        pass
+
+
+def _write_json_atomic(path, data):
+    """原子写入 JSON，避免进程中断留下半个状态文件。"""
+    parent_dir = os.path.dirname(path)
+    if parent_dir:
+        os.makedirs(parent_dir, exist_ok=True)
+    else:
+        parent_dir = "."
+
+    fd, temp_path = tempfile.mkstemp(
+        prefix=f".{os.path.basename(path)}.",
+        suffix=".tmp",
+        dir=parent_dir,
+        text=True,
+    )
+    try:
+        with os.fdopen(fd, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(temp_path, path)
+        _sync_parent_dir(path)
+    except Exception:
+        with contextlib.suppress(Exception):
+            os.unlink(temp_path)
+        raise
+
+
+def _backup_current_file(path):
+    """写入新状态前保存当前有效状态。"""
+    data = _load_json_file(path)
+    if data is None:
+        return
+    backup_path = f"{path}.bak"
+    parent_dir = os.path.dirname(backup_path)
+    if parent_dir:
+        os.makedirs(parent_dir, exist_ok=True)
+    shutil.copy2(path, backup_path)
+
+
+def _maybe_migrate_last_run_info(target_path, source_path, data):
+    """从旧位置或备份读到状态后，补写到目标位置完成自愈。"""
+    if source_path == target_path:
+        return
+    if _load_json_file(target_path) is not None:
+        return
+    try:
+        _write_json_atomic(target_path, data)
+        print(f"已迁移上次运行信息：{source_path} -> {target_path}")
+    except Exception as e:
+        print(f"迁移上次运行信息失败：{e}")
 
 
 def _load_last_run_info_unsafe(json_file_path=_DEFAULT_JSON_FILE_PATH):
     """内部使用：无锁读取 JSON（调用方需持有 _file_lock）"""
-    try:
-        for candidate_path in _candidate_read_paths(json_file_path):
-            if os.path.exists(candidate_path):
-                with open(candidate_path, 'r', encoding='utf-8') as f:
-                    return json.load(f)
-        return {}
-    except Exception as e:
-        print(f"读取上次运行信息失败：{e}")
-        return {}
+    resolved_path = _resolve_json_file_path(json_file_path)
+    for candidate_path in _candidate_read_paths(json_file_path):
+        data = _load_json_file(candidate_path)
+        if data is not None:
+            _maybe_migrate_last_run_info(resolved_path, candidate_path, data)
+            return data
+    return {}
 
 
 def load_last_run_info(json_file_path=_DEFAULT_JSON_FILE_PATH):
@@ -60,12 +145,9 @@ def update_last_run_info(script_name, issue_link_info, json_file_path=_DEFAULT_J
             # 更新当前脚本的信息
             data[script_name] = issue_link_info
             
-            # 保存到文件
-            parent_dir = os.path.dirname(resolved_path)
-            if parent_dir:
-                os.makedirs(parent_dir, exist_ok=True)
-            with open(resolved_path, 'w', encoding='utf-8') as f:
-                json.dump(data, f, ensure_ascii=False, indent=2)
+            # 保存到文件：写前备份，随后原子替换，避免状态文件损坏导致下次全量抓取
+            _backup_current_file(resolved_path)
+            _write_json_atomic(resolved_path, data)
         
         print(f"已更新 {script_name} 的运行信息到 {resolved_path}")
         

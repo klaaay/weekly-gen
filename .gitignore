@@ -4,4 +4,7 @@
 __pycache__
 outputs/service_logs
 outputs/service_state.json
+outputs/last_run_info.json
+outputs/last_run_info.json.bak
+outputs/.last_run_info.json.*.tmp
 .worktrees/
