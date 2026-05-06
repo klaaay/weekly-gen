@@ -11,41 +11,63 @@ import threading
 
 # 用于 last_run_info.json 读写锁，避免并行执行时竞态导致 key 丢失
 _file_lock = threading.Lock()
+_DEFAULT_JSON_FILE_PATH = "last_run_info.json"
+_LAST_RUN_INFO_PATH_ENV = "LAST_RUN_INFO_PATH"
 
 
-def _load_last_run_info_unsafe(json_file_path="last_run_info.json"):
+def _resolve_json_file_path(json_file_path=_DEFAULT_JSON_FILE_PATH):
+    """解析状态文件路径，默认允许通过环境变量覆盖。"""
+    if json_file_path == _DEFAULT_JSON_FILE_PATH:
+        return os.getenv(_LAST_RUN_INFO_PATH_ENV) or json_file_path
+    return json_file_path
+
+
+def _candidate_read_paths(json_file_path):
+    """返回读取状态时的候选路径，支持从旧默认路径迁移到新路径。"""
+    resolved_path = _resolve_json_file_path(json_file_path)
+    paths = [resolved_path]
+    if resolved_path != _DEFAULT_JSON_FILE_PATH:
+        paths.append(_DEFAULT_JSON_FILE_PATH)
+    return paths
+
+
+def _load_last_run_info_unsafe(json_file_path=_DEFAULT_JSON_FILE_PATH):
     """内部使用：无锁读取 JSON（调用方需持有 _file_lock）"""
     try:
-        if os.path.exists(json_file_path):
-            with open(json_file_path, 'r', encoding='utf-8') as f:
-                return json.load(f)
-        else:
-            return {}
+        for candidate_path in _candidate_read_paths(json_file_path):
+            if os.path.exists(candidate_path):
+                with open(candidate_path, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+        return {}
     except Exception as e:
         print(f"读取上次运行信息失败：{e}")
         return {}
 
 
-def load_last_run_info(json_file_path="last_run_info.json"):
+def load_last_run_info(json_file_path=_DEFAULT_JSON_FILE_PATH):
     """加载上次运行信息的 JSON 文件（线程安全）"""
     with _file_lock:
         return _load_last_run_info_unsafe(json_file_path)
 
-def update_last_run_info(script_name, issue_link_info, json_file_path="last_run_info.json"):
+def update_last_run_info(script_name, issue_link_info, json_file_path=_DEFAULT_JSON_FILE_PATH):
     """更新上次运行信息到 JSON 文件（线程安全，避免并行执行时竞态导致其他 key 丢失）"""
     try:
+        resolved_path = _resolve_json_file_path(json_file_path)
         with _file_lock:
             # 加载现有数据（已持有锁，用无锁版本避免死锁）
-            data = _load_last_run_info_unsafe(json_file_path)
+            data = _load_last_run_info_unsafe(resolved_path)
             
             # 更新当前脚本的信息
             data[script_name] = issue_link_info
             
             # 保存到文件
-            with open(json_file_path, 'w', encoding='utf-8') as f:
+            parent_dir = os.path.dirname(resolved_path)
+            if parent_dir:
+                os.makedirs(parent_dir, exist_ok=True)
+            with open(resolved_path, 'w', encoding='utf-8') as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
         
-        print(f"已更新 {script_name} 的运行信息到 {json_file_path}")
+        print(f"已更新 {script_name} 的运行信息到 {resolved_path}")
         
     except Exception as e:
         print(f"保存运行信息失败：{e}")
@@ -57,7 +79,7 @@ def _normalize_url_for_comparison(url):
     return url.rstrip("/")
 
 
-def check_and_skip_if_same_issue(script_name, link_url, base_url, json_file_path="last_run_info.json"):
+def check_and_skip_if_same_issue(script_name, link_url, base_url, json_file_path=_DEFAULT_JSON_FILE_PATH):
     """
     检查当前 full_url 是否与上次运行相同（忽略尾部斜杠差异）
     
