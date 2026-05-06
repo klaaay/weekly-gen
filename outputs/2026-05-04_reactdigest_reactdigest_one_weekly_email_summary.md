@@ -2,14 +2,14 @@
 
 **原文标题**: [React Digest: Email Newsletter](https://reactdigest.net/)
 
-React Digest 是一份专为 React 开发者精心策划的每周通讯，已吸引超过22,660名前端工程师订阅，旨在通过精选文章和简短摘要帮助读者节省时间、每周学到新知识。
+React Digest 是一份专为 React 开发者精心策划的每周通讯，已吸引超过 22,660 名前端工程师订阅，旨在通过精选文章和简短摘要帮助读者节省时间、每周学到新知识。
 
 - 📧 每周一封邮件，精选 React 相关文章并附简短摘要
 - ⏱️ 帮助开发者节省筛选优质内容的时间
 - 🧠 每周都能学到新知识，保持技术更新
 - 👍 读者反馈积极，称赞文章实用且紧跟技术演进
 - 🌐 读者来自全球各大公司，覆盖面广
-- 📅 服务持续运营至2026年，提供通讯、隐私及广告选项
+- 📅 服务持续运营至 2026 年，提供通讯、隐私及广告选项
 
 ---
 
@@ -29,19 +29,19 @@ React Digest 是一份专为 React 开发者精心策划的每周通讯，已吸
 
 ---
 
-### [AI可观测性](https://www.telerik.com/webinars/progress-telerik/ai-observability?utm_medium=cpm&utm_source=reactdigest&utm_campaign=dt_ai_observability_webinar)
+### [AI 可观测性](https://www.telerik.com/webinars/progress-telerik/ai-observability?utm_medium=cpm&utm_source=reactdigest&utm_campaign=dt_ai_observability_webinar)
 
 **原文标题**: [
 	AI Observability
 ](https://www.telerik.com/webinars/progress-telerik/ai-observability?utm_medium=cpm&utm_source=reactdigest&utm_campaign=dt_ai_observability_webinar)
 
-本网络研讨会将探讨AI系统在生产环境中的可观测性挑战，并介绍如何有效追踪和调试AI行为。
+本网络研讨会将探讨 AI 系统在生产环境中的可观测性挑战，并介绍如何有效追踪和调试 AI 行为。
 
-- 🤖 传统可观测性工具无法解释AI行为，即使系统运行正常，AI也可能产生错误答案、调用错误工具或增加Token成本
-- ⚠️ AI系统故障会导致调试周期延长、提示和检索过程不透明、生产事故难以定位根因，以及代理工作流成本上升
-- 🔍 研讨会将讲解AI系统需要不同于传统APM的可观测性模型，涵盖系统输出与AI行为的区别、多步骤代理工作流的常见故障场景
-- 📊 重点介绍哪些生产信号真正重要（从提示到Token使用），以及现代AI可观测性如何帮助团队更快追踪、诊断和修复问题
-- 🎤 演讲嘉宾包括Progress首席开发者倡导者Ed Charbeneau和产品经理Lyubomir Atanasov，他们将提供工程优先的AI可观测性方法
+- 🤖 传统可观测性工具无法解释 AI 行为，即使系统运行正常，AI 也可能产生错误答案、调用错误工具或增加 Token 成本
+- ⚠️ AI 系统故障会导致调试周期延长、提示和检索过程不透明、生产事故难以定位根因，以及代理工作流成本上升
+- 🔍 研讨会将讲解 AI 系统需要不同于传统 APM 的可观测性模型，涵盖系统输出与 AI 行为的区别、多步骤代理工作流的常见故障场景
+- 📊 重点介绍哪些生产信号真正重要（从提示到 Token 使用），以及现代 AI 可观测性如何帮助团队更快追踪、诊断和修复问题
+- 🎤 演讲嘉宾包括 Progress 首席开发者倡导者 Ed Charbeneau 和产品经理 Lyubomir Atanasov，他们将提供工程优先的 AI 可观测性方法
 
 ---
 
@@ -53,19 +53,19 @@ React Digest 是一份专为 React 开发者精心策划的每周通讯，已吸
 
 ---
 
-### [生产环境中真正重要的React Flow技巧 | Roman Fedytskyi | 2026年4月 | Medium](https://medium.com/@roman_fedyskyi/react-flow-tips-that-actually-matter-in-production-db7c093932f6)
+### [生产环境中真正重要的 React Flow 技巧 | Roman Fedytskyi | 2026 年 4 月 | Medium](https://medium.com/@roman_fedyskyi/react-flow-tips-that-actually-matter-in-production-db7c093932f6)
 
 **原文标题**: [React Flow Tips That Actually Matter in Production | by Roman Fedytskyi | Apr, 2026 | Medium](https://medium.com/@roman_fedyskyi/react-flow-tips-that-actually-matter-in-production-db7c093932f6)
 
 ### 概述总结
-本文提供了在生产环境中使用React Flow的实用技巧，强调将其视为系统而非UI组件，通过早期架构决策避免性能退化、状态混乱和导出问题。
+本文提供了在生产环境中使用 React Flow 的实用技巧，强调将其视为系统而非 UI 组件，通过早期架构决策避免性能退化、状态混乱和导出问题。
 
-- 🧠 **将图表视为状态而非UI**：使用受控状态管理节点和边，引入存储层以支持日志、验证、持久化和撤销功能。
+- 🧠 **将图表视为状态而非 UI**：使用受控状态管理节点和边，引入存储层以支持日志、验证、持久化和撤销功能。
 - 🧩 **保持节点简单**：节点仅渲染数据，不包含本地状态、副作用或业务逻辑，避免系统碎片化。
 - 🖥️ **将编辑移至节点外部**：使用侧边栏编辑模式分离渲染与配置，集中控制更新逻辑。
 - 🔗 **尽早验证连接**：通过`isValidConnection`函数定义域规则，防止无效连接导致系统错误。
 - ⚡ **性能依赖结构**：使用`React.memo`优化节点，但真正性能提升来自控制更新传播范围，而非单纯优化。
-- 📤 **导出需要管道处理**：导出不是简单截图，需通过计算边界和视口生成干净输出，避免UI伪影。
+- 📤 **导出需要管道处理**：导出不是简单截图，需通过计算边界和视口生成干净输出，避免 UI 伪影。
 - 💾 **尽早实现持久化**：即使基础本地存储也能强制状态一致性，改善整体架构。
 - 📝 **记录交互日志**：通过`track`函数记录拖拽等操作，便于调试和追踪用户行为。
 - 🏗️ **早期组织应用结构**：按功能划分目录（如/nodes、/store、/export），保持系统可维护性。
@@ -78,14 +78,14 @@ React Digest 是一份专为 React 开发者精心策划的每周通讯，已吸
 **原文标题**: [Build your own shimmer skeleton that never goes out of sync — Neciu Dan](https://neciudan.dev/lets-build-dynamic-shimmer-skeletons)
 
 概述摘要
-- 📰 本文介绍了一种自同步的骨架屏构建方法，通过测量真实组件的DOM元素位置和尺寸，自动生成与UI一致的闪烁占位块，避免手动维护骨架组件的同步问题。
-- 🔧 传统骨架屏需要为每个组件创建独立的骨架组件，手动硬编码尺寸和圆角，导致UI变更时容易不同步。
-- 📏 通过`getBoundingClientRect()`测量DOM中文本、图片等叶子元素的位置和尺寸，并利用`getComputedStyle()`获取圆角，实现精准定位。
-- 🎨 使用`color: transparent`隐藏真实文本但保留容器背景和阴影，配合CSS渐变动画实现闪烁效果，无需额外布局代码。
+- 📰 本文介绍了一种自同步的骨架屏构建方法，通过测量真实组件的 DOM 元素位置和尺寸，自动生成与 UI 一致的闪烁占位块，避免手动维护骨架组件的同步问题。
+- 🔧 传统骨架屏需要为每个组件创建独立的骨架组件，手动硬编码尺寸和圆角，导致 UI 变更时容易不同步。
+- 📏 通过`getBoundingClientRect()`测量 DOM 中文本、图片等叶子元素的位置和尺寸，并利用`getComputedStyle()`获取圆角，实现精准定位。
+- 🎨 使用`color: transparent`隐藏真实文本但保留容器背景和阴影，配合 CSS 渐变动画实现闪烁效果，无需额外布局代码。
 - ⚡ 利用`useLayoutEffect`在浏览器绘制前完成测量，避免用户看到透明文本的闪烁，并通过`React.cloneElement`注入模拟数据以渲染完整结构。
-- 🖼️ 处理边缘情况：跳过隐藏元素、处理无尺寸图片、限制SVG测量范围、应对窗口缩放等，确保稳定性。
+- 🖼️ 处理边缘情况：跳过隐藏元素、处理无尺寸图片、限制 SVG 测量范围、应对窗口缩放等，确保稳定性。
 - 📊 模拟数据需合理设计（如名字长度、列表项数），以生成与实际内容大小匹配的占位块。
-- ⚖️ 运行时测量有轻微性能开销，但对大多数组件影响极小；组件需支持模拟数据渲染，避免复杂初始化或API调用。
+- ⚖️ 运行时测量有轻微性能开销，但对大多数组件影响极小；组件需支持模拟数据渲染，避免复杂初始化或 API 调用。
 - 🛠️ 推荐使用`shimmer-from-structure`库实现此模式，或参考`react-loading-skeleton`、`react-content-loader`等现有方案。
 
 ---
@@ -94,17 +94,17 @@ React Digest 是一份专为 React 开发者精心策划的每周通讯，已吸
 
 **原文标题**: [How React streams UI out of order and still manages to keep order | Inside React](https://inside-react.vercel.app/blog/how-react-streams-ui-out-of-order)
 
-React通过Suspense边界实现无序流式渲染，但依然能保持UI正确顺序。核心机制是：先发送已就绪的HTML和占位标记，待数据就绪后通过JavaScript将内容替换到正确位置。
+React 通过 Suspense 边界实现无序流式渲染，但依然能保持 UI 正确顺序。核心机制是：先发送已就绪的 HTML 和占位标记，待数据就绪后通过 JavaScript 将内容替换到正确位置。
 
-- 🚀 **流式渲染基础**：React 18已支持`renderToPipeableStream()`和`renderToReadableStream()`，浏览器原生支持HTML流式传输，可边接收边渲染。
-- ⚠️ **传统SSR问题**：即使并行请求数据，页面仍会等待所有数据就绪后才发送HTML，导致无关组件（如Footer）被阻塞。
-- 🔄 **有序流式限制**：虽然流式传输允许组件逐步呈现，但Footer仍会被慢组件（如Recommendations）阻塞，因为HTML按顺序解析。
-- 🎯 **无序流式核心**：通过Suspense包裹慢组件，立即发送Navbar和Footer，用`<template id="B:0">`占位，待数据就绪后用JavaScript替换。
+- 🚀 **流式渲染基础**：React 18 已支持`renderToPipeableStream()`和`renderToReadableStream()`，浏览器原生支持 HTML 流式传输，可边接收边渲染。
+- ⚠️ **传统 SSR 问题**：即使并行请求数据，页面仍会等待所有数据就绪后才发送 HTML，导致无关组件（如 Footer）被阻塞。
+- 🔄 **有序流式限制**：虽然流式传输允许组件逐步呈现，但 Footer 仍会被慢组件（如 Recommendations）阻塞，因为 HTML 按顺序解析。
+- 🎯 **无序流式核心**：通过 Suspense 包裹慢组件，立即发送 Navbar 和 Footer，用`<template id="B:0">`占位，待数据就绪后用 JavaScript 替换。
 - 🧩 **内部实现机制**：服务器发送隐藏的`<div hidden id="S:0">`包含真实内容，随后紧跟`<script>$RC("B:0", "S:0")</script>`触发替换。
-- 📦 **关键函数**：`$RC`查找占位和内容元素，推入`$RB`队列；`$RV`通过`requestAnimationFrame`执行DOM替换，清除fallback UI。
-- 🔄 **生命周期标记**：Suspense边界经历`$?`（待定）→`$~`（排队）→`$`（完成）三个阶段，确保替换时机正确。
+- 📦 **关键函数**：`$RC`查找占位和内容元素，推入`$RB`队列；`$RV`通过`requestAnimationFrame`执行 DOM 替换，清除 fallback UI。
+- 🔄 **生命周期标记**：Suspense 边界经历`$?`（待定）→`$~`（排队）→`$`（完成）三个阶段，确保替换时机正确。
 - ⚡ **性能优势**：组件完全独立加载，无需等待其他组件，用户可立即看到已就绪内容，提升感知性能。
-- ⚠️ **安全边界**：React仅通过`document.getElementById`查找占位元素，若手动插入相同ID的`<template>`，可能导致替换错误。
+- ⚠️ **安全边界**：React 仅通过`document.getElementById`查找占位元素，若手动插入相同 ID 的`<template>`，可能导致替换错误。
 
 ---
 
@@ -141,7 +141,7 @@ Prompt API 允许开发者通过自然语言请求在浏览器中调用 Gemini N
 - 🚫 **控制权让渡**：浏览器拥有更多上下文信息（如带宽、缓存、用户偏好），手动控制反而导致性能灾难，故采用“实现定义”的模糊算法。
 - 🛠️ **实用方案**：对首屏关键图片（如全幅英雄图）仍可手动写`sizes="100vw"`，其余所有图片统一使用`loading="lazy" sizes="auto"`。
 - 🔄 **兼容性**：旧浏览器忽略`auto`值并回退到后续`sizes`描述，新浏览器直接接管，无任何风险。
-- 🎉 **行业应用**：WordPress已通过补丁支持该特性，标志着手动`sizes`时代的终结。
+- 🎉 **行业应用**：WordPress 已通过补丁支持该特性，标志着手动`sizes`时代的终结。
 
 ---
 
@@ -151,7 +151,7 @@ Prompt API 允许开发者通过自然语言请求在浏览器中调用 Gemini N
 
 以下是您提供的文本的摘要：
 
-概述摘要：本文介绍了CSS动画时间线API，该API允许开发者使用原生CSS创建基于滚动的动画，无需JavaScript。文章涵盖了核心概念、定时函数、动画范围、入口和出口效果、范围百分比、滚动进度时间线以及链接时间线等高级功能。
+概述摘要：本文介绍了 CSS 动画时间线 API，该 API 允许开发者使用原生 CSS 创建基于滚动的动画，无需 JavaScript。文章涵盖了核心概念、定时函数、动画范围、入口和出口效果、范围百分比、滚动进度时间线以及链接时间线等高级功能。
 
 - 🎯 **核心概念**：将关键帧动画映射到滚动距离而非时间，通过`animation-timeline: view()`实现元素在视口中的进度驱动动画。
 - ⏱️ **定时函数**：支持自定义缓动曲线（如`cubic-bezier`和弹簧效果`linear()`），增强动画的流畅性和自然感。
@@ -167,33 +167,33 @@ Prompt API 允许开发者通过自然语言请求在浏览器中调用 Gemini N
 
 **原文标题**: [Six levels of dark mode - CSSence.com](https://cssence.com/2024/six-levels-of-dark-mode/)
 
-本文探讨了实现网页深色模式的六个层级，从最简单的HTML标签到高级的CSS和JavaScript技术，并附带评论区的讨论。
+本文探讨了实现网页深色模式的六个层级，从最简单的 HTML 标签到高级的 CSS 和 JavaScript 技术，并附带评论区的讨论。
 
-- 🖥️ **第一层：基础标签** - 使用`<meta name="color-scheme" content="light dark">`让浏览器自动适配用户偏好，无需CSS。
-- 🎨 **第二层：基本CSS** - 通过`color-scheme: light dark`声明实现类似效果，但可局部应用，建议优先使用HTML标签。
+- 🖥️ **第一层：基础标签** - 使用`<meta name="color-scheme" content="light dark">`让浏览器自动适配用户偏好，无需 CSS。
+- 🎨 **第二层：基本 CSS** - 通过`color-scheme: light dark`声明实现类似效果，但可局部应用，建议优先使用 HTML 标签。
 - 🌗 **第三层：温和调整** - 利用`light-dark()`颜色函数轻松切换颜色，但浏览器支持尚不完善。
 - 💪 **第四层：强力媒体查询** - 使用`@media (prefers-color-scheme: dark)`实现完全自定义，可改变颜色、滤镜等。
-- 📁 **第五层：分文件管理** - 在HTML中用`<link media="...">`为明暗模式加载不同CSS文件，减少下载量。
-- ⚡ **第六层：JavaScript介入** - 通过`matchMedia`查询用户偏好，动态执行操作，实际开发中常混合使用各层级技术。
+- 📁 **第五层：分文件管理** - 在 HTML 中用`<link media="...">`为明暗模式加载不同 CSS 文件，减少下载量。
+- ⚡ **第六层：JavaScript 介入** - 通过`matchMedia`查询用户偏好，动态执行操作，实际开发中常混合使用各层级技术。
 - 🚀 **第七层：超越偏好** - 构建颜色方案切换器，提供“自动”“亮色”“暗色”三种选项，不局限于系统默认。
 - ✨ **第八层：巧妙选择器** - 使用`:has()`直接查询`<meta>`标签的`content`属性，无需额外类名或属性。
 
 ---
 
-### [让您的网站对LLM可见：6种有效技巧与8种无效方法——火星编年史，邪恶火星人团队博客](https://evilmartians.com/chronicles/how-to-make-your-website-visible-to-llms)
+### [让您的网站对 LLM 可见：6 种有效技巧与 8 种无效方法——火星编年史，邪恶火星人团队博客](https://evilmartians.com/chronicles/how-to-make-your-website-visible-to-llms)
 
 **原文标题**: [Making your site visible to LLMs: 6 techniques that work, 8 that don't—Martian Chronicles, Evil Martians’ team blog](https://evilmartians.com/chronicles/how-to-make-your-website-visible-to-llms)
 
-概述：本文介绍了六种有效提升网站在LLM中可见性的技术，以及八种无效的方法，强调使用干净、结构化的内容，并指出当前标准尚未成熟，但实施成本低、潜在收益大。
+概述：本文介绍了六种有效提升网站在 LLM 中可见性的技术，以及八种无效的方法，强调使用干净、结构化的内容，并指出当前标准尚未成熟，但实施成本低、潜在收益大。
 
-- 📄 **/llms.txt**：在网站根目录提供Markdown文件，作为AI系统的内容地图，是优先级最高的技术，创建仅需5分钟。
-- 📝 **.md路由**：为每个页面提供Markdown版本，显著减少内容噪音（从15,000令牌降至3,000令牌），提升LLM理解效率。
-- 🔗 **<link>标签 + HTTP Link头**：通过HTML和HTTP协议双重广告Markdown版本，覆盖不同客户端（如爬虫和自主代理）。
-- 🕵️ **隐藏<div>提示**：在页面中嵌入对LLM可见的文本提示，引导其找到Markdown版本，适用于用户粘贴URL到AI工具的场景。
-- 📚 **/llms-full.txt**：提供完整网站内容的单一文件，尤其适合文档站点，实际使用频率可能高于/llms.txt（如Mintlify数据显示3-4倍访问量）。
-- 🔄 **Accept: text/markdown内容协商**：基于HTTP标准，让客户端请求Markdown版本，无需站点特定知识，是未来最可能成为默认的技术。
-- ❌ **无效技术**：包括<meta name="ai-content-url">、<meta name="llms">、/.well-known/ai.txt、HTML注释、人/AI切换按钮、User-Agent嗅探、专用AI信息页、Schema.org/JSON-LD，均缺乏证据或已被证明无效。
-- 📊 **测量与实施**：通过服务器端日志追踪AI端点流量（如User-Agent和来源主机），建议从/llms.txt和.md路由开始，逐步添加其他技术。
+- 📄 **/llms.txt**：在网站根目录提供 Markdown 文件，作为 AI 系统的内容地图，是优先级最高的技术，创建仅需 5 分钟。
+- 📝 **.md 路由**：为每个页面提供 Markdown 版本，显著减少内容噪音（从 15,000 令牌降至 3,000 令牌），提升 LLM 理解效率。
+- 🔗 **<link>标签 + HTTP Link 头**：通过 HTML 和 HTTP 协议双重广告 Markdown 版本，覆盖不同客户端（如爬虫和自主代理）。
+- 🕵️ **隐藏<div>提示**：在页面中嵌入对 LLM 可见的文本提示，引导其找到 Markdown 版本，适用于用户粘贴 URL 到 AI 工具的场景。
+- 📚 **/llms-full.txt**：提供完整网站内容的单一文件，尤其适合文档站点，实际使用频率可能高于/llms.txt（如 Mintlify 数据显示 3-4 倍访问量）。
+- 🔄 **Accept: text/markdown内容协商**：基于 HTTP 标准，让客户端请求 Markdown 版本，无需站点特定知识，是未来最可能成为默认的技术。
+- ❌ **无效技术**：包括<meta name="ai-content-url">、<meta name="llms">、/.well-known/ai.txt、HTML 注释、人/AI 切换按钮、User-Agent 嗅探、专用 AI 信息页、Schema.org/JSON-LD，均缺乏证据或已被证明无效。
+- 📊 **测量与实施**：通过服务器端日志追踪 AI 端点流量（如 User-Agent 和来源主机），建议从/llms.txt 和.md 路由开始，逐步添加其他技术。
 
 ---
 
@@ -201,15 +201,15 @@ Prompt API 允许开发者通过自然语言请求在浏览器中调用 Gemini N
 
 **原文标题**: [The React Compiler at Eighteen Months: The Arc, the Debates, and What's Next | Sascha Becker](https://saschb2b.com/blog/react-compiler-year-in-review)
 
-React 编译器在发布18个月后，已从初期炒作进入务实整合阶段，其最大价值在于消除了手动记忆化导致的bug类别，但生态系统的老旧库仍需适应新规则。
+React 编译器在发布 18 个月后，已从初期炒作进入务实整合阶段，其最大价值在于消除了手动记忆化导致的 bug 类别，但生态系统的老旧库仍需适应新规则。
 
-- 📅 **发展历程**：2024年底随React 19公测，2025年10月达1.0版本。经历了框架集成、工具成熟和社区辩论三阶段，当前状态为"新项目已解决，旧项目是工程任务"。
+- 📅 **发展历程**：2024 年底随 React 19 公测，2025 年 10 月达 1.0 版本。经历了框架集成、工具成熟和社区辩论三阶段，当前状态为"新项目已解决，旧项目是工程任务"。
 - ⚙️ **核心功能**：编译时自动插入记忆化，消除`useMemo`/`useCallback`/`memo`。可优化到子表达式级别，但构建时间增加数十个百分点，包体积微增。
-- ❌ **失败场景**：渲染期间修改props/闭包、读取ref、类组件、以及`"use no memo"`逃逸机制。最后一种需谨慎使用，应视为技术债务。
-- 🛠️ **推荐迁移路径**：先升级React→安装ESLint插件修复违规→注解模式测试→推理模式全量开启→批量删除手动记忆化。跳过前两步会导致巨大PR。
-- 🔥 **三大争议**：1) 编译器将"React规则"从建议变为强制合约 2) `"use no memo"`可能成为永久技术债务 3) 编译器与运行时优化器（如Million.js）的互补关系尚未明确。
-- 🚀 **未来方向**：更细粒度的编译控制、编译器感知的服务端组件、`useEvent`收敛、React Native优化、以及可视化DevTools面板。
-- 💡 **作者观点**：编译器最大遗产是消除了"忘记useCallback依赖"这类bug。对于新项目应直接启用；旧项目需权衡修复旧代码与使用逃逸机制。2026年看到手动记忆化代码应视为"过时工具痕迹"。
+- ❌ **失败场景**：渲染期间修改 props/闭包、读取 ref、类组件、以及`"use no memo"`逃逸机制。最后一种需谨慎使用，应视为技术债务。
+- 🛠️ **推荐迁移路径**：先升级 React→安装 ESLint 插件修复违规→注解模式测试→推理模式全量开启→批量删除手动记忆化。跳过前两步会导致巨大 PR。
+- 🔥 **三大争议**：1) 编译器将"React 规则"从建议变为强制合约 2) `"use no memo"`可能成为永久技术债务 3) 编译器与运行时优化器（如 Million.js）的互补关系尚未明确。
+- 🚀 **未来方向**：更细粒度的编译控制、编译器感知的服务端组件、`useEvent`收敛、React Native 优化、以及可视化 DevTools 面板。
+- 💡 **作者观点**：编译器最大遗产是消除了"忘记 useCallback 依赖"这类 bug。对于新项目应直接启用；旧项目需权衡修复旧代码与使用逃逸机制。2026 年看到手动记忆化代码应视为"过时工具痕迹"。
 
 ---
 
@@ -219,12 +219,12 @@ React 编译器在发布18个月后，已从初期炒作进入务实整合阶段
 
 概述摘要  
 - 📬 每周为软件工程师精心策划的编程文摘邮件  
-- 👥 已有超过22,724名软件工程师订阅，每周一封邮件  
+- 👥 已有超过 22,724 名软件工程师订阅，每周一封邮件  
 - 📖 精选文章并附简短摘要，节省寻找优质内容的时间  
 - 🎓 每周学习新知识，持续提升技能  
-- 💬 读者反馈：内容切合实际（如API设计）、推荐优质文章（如“Moving Faster”）、每期都有收获  
+- 💬 读者反馈：内容切合实际（如 API 设计）、推荐优质文章（如“Moving Faster”）、每期都有收获  
 - 🏢 读者来自全球知名软件公司  
-- 📅 覆盖2013-2026年，提供新闻通讯、隐私及广告服务
+- 📅 覆盖 2013-2026 年，提供新闻通讯、隐私及广告服务
 
 ---
 
@@ -232,9 +232,9 @@ React 编译器在发布18个月后，已从初期炒作进入务实整合阶段
 
 **原文标题**: [Leadership in Tech: Email Newsletter](https://leadershipintech.com/?utm_source=web-archive&utm_campaign=react)
 
-这是一份为CTO、工程经理及资深工程师精心策划的新闻通讯，每周一和周四发送，旨在帮助技术领导者节省时间并持续学习。
+这是一份为 CTO、工程经理及资深工程师精心策划的新闻通讯，每周一和周四发送，旨在帮助技术领导者节省时间并持续学习。
 
-- 📬 每周两封邮件，为超过28,735名工程领导者提供精选内容
+- 📬 每周两封邮件，为超过 28,735 名工程领导者提供精选内容
 - ⏱️ 阅读手选文章及简短摘要，节省寻找有价值内容的时间
 - 📚 每周学习新知识，聚焦领导力提升
 - 💬 读者盛赞：领导力文章无人能及，涵盖架构、会议、沟通等关键主题
@@ -246,14 +246,14 @@ React 编译器在发布18个月后，已从初期炒作进入务实整合阶段
 
 **原文标题**: [C# Digest: Email Newsletter](https://csharpdigest.net/?utm_source=web-archive&utm_campaign=react)
 
-本内容介绍了C# Digest，一个为.NET开发者精心策划的每周邮件通讯，拥有超过20,255名订阅者，旨在帮助工程师节省时间、学习新知识。
+本内容介绍了 C# Digest，一个为.NET 开发者精心策划的每周邮件通讯，拥有超过 20,255 名订阅者，旨在帮助工程师节省时间、学习新知识。
 
-- 📬 每周一封邮件，精选.NET相关文章并附简短摘要
+- 📬 每周一封邮件，精选.NET 相关文章并附简短摘要
 - ⏱️ 节省寻找优质内容的时间
 - 🧠 每周学习新知识
-- 💬 读者反馈：实际工作中使用了推荐内容，如LINQ、操作结果模式等
-- 🌍 读者来自全球.NET工程师社区
-- 📅 通讯由Bonobo Press运营（2013-2026）
+- 💬 读者反馈：实际工作中使用了推荐内容，如 LINQ、操作结果模式等
+- 🌍 读者来自全球.NET 工程师社区
+- 📅 通讯由 Bonobo Press 运营（2013-2026）
 
 ---
 
@@ -261,22 +261,22 @@ React 编译器在发布18个月后，已从初期炒作进入务实整合阶段
 
 **原文标题**: [Keeping developers up to date â Bonobo Press](https://bonobopress.com/)
 
-Bonobo Press 自2013年起，通过简洁的软件新闻通讯，服务超过8万名开发者、IT专家和技术人员，并提供广告合作机会。
+Bonobo Press 自 2013 年起，通过简洁的软件新闻通讯，服务超过 8 万名开发者、IT 专家和技术人员，并提供广告合作机会。
 
-- 📰 发布面向开发者、技术主管和CTO的精选新闻通讯，内容简洁高效，深受技术人员喜爱
-- 👥 覆盖超过80,000名软件工程师、团队领导、工程经理和IT决策者，精准触达技术受众
+- 📰 发布面向开发者、技术主管和 CTO 的精选新闻通讯，内容简洁高效，深受技术人员喜爱
+- 👥 覆盖超过 80,000 名软件工程师、团队领导、工程经理和 IT 决策者，精准触达技术受众
 - 📢 提供广告服务，帮助将产品或服务展示给合适的专业技术人员
 - 📋 可通过媒体工具包了解详情，并联系团队开始广告合作
 - 📧 支持通过联系页面提出问题、建议或广告咨询
-- ©️ 版权归属Bonobo Press，涵盖2013至2026年，并附有服务条款
+- ©️ 版权归属 Bonobo Press，涵盖 2013 至 2026 年，并附有服务条款
 
 ---
 
-### [过往通讯：第1页](https://reactdigest.net/newsletters)
+### [过往通讯：第 1 页](https://reactdigest.net/newsletters)
 
 **原文标题**: [Past Newsletters: Page 1](https://reactdigest.net/newsletters)
 
-以下是您提供的React Digest内容摘要：
+以下是您提供的 React Digest 内容摘要：
 
 React Digest 是一份聚焦 React 生态的新闻通讯，涵盖了从 React 19 新钩子、性能优化、架构设计到调试技巧的广泛主题，同时包含社区实践和工具更新。
 
@@ -312,25 +312,25 @@ React Digest 是一份聚焦 React 生态的新闻通讯，涵盖了从 React 19
 - 🛡️ 采取合理安全措施防止信息丢失、盗窃或未经授权访问
 - 📧 仅收集邮箱地址用于发送新闻通讯，不用于其他用途
 - 🚫 严格遵守反垃圾邮件政策，提供一键退订功能
-- 👶 不故意收集13岁以下儿童信息，网站不针对儿童设计
+- 👶 不故意收集 13 岁以下儿童信息，网站不针对儿童设计
 - 📋 用户可依据英国《数据保护法》请求访问或删除存储的个人数据
 
 ---
 
-### [媒体资料包 – Bonobo出版社](https://bonobopress.com/media-kit/)
+### [媒体资料包 – Bonobo 出版社](https://bonobopress.com/media-kit/)
 
 **原文标题**: [Media Kit â Bonobo Press](https://bonobopress.com/media-kit/)
 
-本媒体包介绍了Bonobo Press旗下四份面向技术人员的新闻通讯的订阅数据、广告价格与合作流程。
+本媒体包介绍了 Bonobo Press 旗下四份面向技术人员的新闻通讯的订阅数据、广告价格与合作流程。
 
 - 📊 **高互动率受众**：新闻通讯的打开率与点击率均高于行业基准，且通过严格清理列表优先保证读者质量。
-- 🚀 **Leadership in Tech**：面向技术管理层，订阅者22,325人，打开率57.95%，每期赞助费$2,235，预计点击365-585次。
-- 💻 **Programming Digest**：面向软件工程师，订阅者20,032人，打开率50.41%，每期赞助费$985，预计点击273-493次。
+- 🚀 **Leadership in Tech**：面向技术管理层，订阅者 22,325 人，打开率 57.95%，每期赞助费$2,235，预计点击 365-585 次。
+- 💻 **Programming Digest**：面向软件工程师，订阅者 20,032 人，打开率 50.41%，每期赞助费$985，预计点击 273-493 次。
 - 🎯 **C# Digest**：专注.NET/C#开发者，订阅者17,098人，打开率54.92%，每期赞助费$1,220，预计点击411-631次。
-- ⚛️ **React Digest**：面向前端React开发者，订阅者20,075人，打开率54.06%，每期赞助费$1,375，预计点击303-523次。
-- 📝 **纯文本广告格式**：赞助内容以文字形式嵌入新闻通讯，需提供链接、标题（<100字）和描述（<400字），截止日为发布前4天。
+- ⚛️ **React Digest**：面向前端 React 开发者，订阅者 20,075 人，打开率 54.06%，每期赞助费$1,375，预计点击 303-523 次。
+- 📝 **纯文本广告格式**：赞助内容以文字形式嵌入新闻通讯，需提供链接、标题（<100 字）和描述（<400 字），截止日为发布前 4 天。
 - 🤝 **合作流程**：需提前数周预约，流程包括产品介绍、排期确认、发票锁定、素材交付、广告上线及效果报告。
-- 🏢 **典型合作伙伴**：涵盖Okta、GitLab、Datadog、MongoDB、Pluralsight等知名科技公司，且常获重复赞助。
+- 🏢 **典型合作伙伴**：涵盖 Okta、GitLab、Datadog、MongoDB、Pluralsight 等知名科技公司，且常获重复赞助。
 
 ---
 
