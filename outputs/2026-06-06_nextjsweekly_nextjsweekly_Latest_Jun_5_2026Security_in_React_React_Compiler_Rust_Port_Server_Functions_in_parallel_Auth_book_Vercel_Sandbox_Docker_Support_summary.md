@@ -2,14 +2,14 @@
 
 **原文标题**: [Security in React Applications - Certificates.dev](https://certificates.dev/blog/security-in-react-applications)
 
-本篇文章详细介绍了React应用中的安全实践，涵盖XSS防护、安全认证、服务端输入验证及内容安全策略。
+本篇文章详细介绍了 React 应用中的安全实践，涵盖 XSS 防护、安全认证、服务端输入验证及内容安全策略。
 
-- 🛡️ **React内置XSS防护**：React默认通过JSX自动转义特殊字符（如`<`、`>`），防止恶意脚本注入，用户输入渲染为纯文本。
-- ⚠️ **dangerouslySetInnerHTML风险**：使用此属性会绕过React的自动防护，直接解析HTML，可能导致XSS攻击。必须先用DOMPurify库净化内容。
-- 🔐 **安全认证与CSRF防护**：避免将令牌存储在`localStorage`或`sessionStorage`中，改用`HttpOnly`、`Secure`、`SameSite=Strict`属性的Cookie。同时使用CSRF令牌保护状态变更请求。
-- ✅ **服务端输入验证**：使用Zod库在服务端进行类型安全的模式验证，结合参数化查询防止SQL注入，并确保用户授权。
-- 🚫 **内容安全策略（CSP）**：通过HTTP头限制资源加载，如`script-src 'self'`阻止内联脚本。对必要的内联脚本使用Nonce，并用`Content-Security-Policy-Report-Only`测试策略。
-- 🔄 **综合安全措施**：React应用需结合内置防护、安全认证模式、服务端验证和浏览器级策略，形成多层防御体系。
+- 🛡️ **React 内置 XSS 防护**：React 默认通过 JSX 自动转义特殊字符（如`<`、`>`），防止恶意脚本注入，用户输入渲染为纯文本。
+- ⚠️ **dangerouslySetInnerHTML 风险**：使用此属性会绕过 React 的自动防护，直接解析 HTML，可能导致 XSS 攻击。必须先用 DOMPurify 库净化内容。
+- 🔐 **安全认证与 CSRF 防护**：避免将令牌存储在`localStorage`或`sessionStorage`中，改用`HttpOnly`、`Secure`、`SameSite=Strict`属性的 Cookie。同时使用 CSRF 令牌保护状态变更请求。
+- ✅ **服务端输入验证**：使用 Zod 库在服务端进行类型安全的模式验证，结合参数化查询防止 SQL 注入，并确保用户授权。
+- 🚫 **内容安全策略（CSP）**：通过 HTTP 头限制资源加载，如`script-src 'self'`阻止内联脚本。对必要的内联脚本使用 Nonce，并用`Content-Security-Policy-Report-Only`测试策略。
+- 🔄 **综合安全措施**：React 应用需结合内置防护、安全认证模式、服务端验证和浏览器级策略，形成多层防御体系。
 
 ---
 
@@ -29,7 +29,7 @@ React 编译器正被移植到 Rust，这是一个实验性项目，旨在提升
 
 ---
 
-### [一个功能完备的TypeScript存储SDK——跨不同提供商的统一便携接口](https://storagesdk.dev/?utm_source=nextjs-weekly&utm_medium=newsletter&utm_date=2026-06-05)
+### [一个功能完备的 TypeScript 存储 SDK——跨不同提供商的统一便携接口](https://storagesdk.dev/?utm_source=nextjs-weekly&utm_medium=newsletter&utm_date=2026-06-05)
 
 **原文标题**: [A fully-featured TypeScript SDK for storage — one portable interface across different providers](https://storagesdk.dev/?utm_source=nextjs-weekly&utm_medium=newsletter&utm_date=2026-06-05)
 
@@ -68,36 +68,36 @@ StorageSDK 是一个跨提供商统一存储的 TypeScript SDK，核心特色是
 
 **原文标题**: [A Guide to React Compiler Rendering - Mark Erikson - YouTube](https://www.youtube.com/watch?v=WsAmM-sx9kA)
 
-本頁面概述了YouTube平台的各項基本資訊與政策。
-- 📰 新聞中心：提供YouTube官方新聞與公告。
+本頁面概述了 YouTube 平台的各項基本資訊與政策。
+- 📰 新聞中心：提供 YouTube 官方新聞與公告。
 - ©️ 版權：說明版權相關規範與保護機制。
-- 📞 聯絡我們：提供用戶與YouTube聯繫的管道。
+- 📞 聯絡我們：提供用戶與 YouTube 聯繫的管道。
 - 🎨 創作者：為內容創作者提供的資源與支援。
 - 📢 刊登廣告：說明廣告投放選項與合作方式。
-- 👨‍💻 開發人員：提供API與開發工具資訊。
-- 📄 條款：列舉使用YouTube服務的條款與條件。
+- 👨‍💻 開發人員：提供 API 與開發工具資訊。
+- 📄 條款：列舉使用 YouTube 服務的條款與條件。
 - 🔒 私隱：說明用戶資料的收集與使用政策。
 - 🛡️ 政策及安全：涵蓋社群規範與安全措施。
 - ⚙️ YouTube 的運作方式：解釋平台推薦與內容管理機制。
-- 🧪 測試新功能：介紹YouTube正在測試的新功能。
+- 🧪 測試新功能：介紹 YouTube 正在測試的新功能。
 - ©️ 2026 Google LLC：版權歸屬與法律聲明。
 
 ---
 
-### [React性能优化：停止记忆化，开始优化——Depender Sethi](https://www.sethi.io/blog/react-performance-from-sluggish-to-lightning)
+### [React 性能优化：停止记忆化，开始优化——Depender Sethi](https://www.sethi.io/blog/react-performance-from-sluggish-to-lightning)
 
 **原文标题**: [React Performance: Stop Memoizing, Start Optimizing — Depender Sethi](https://www.sethi.io/blog/react-performance-from-sluggish-to-lightning)
 
 ### 概述总结
-React性能优化的核心在于减少不必要的工作，而非盲目添加记忆化。通过状态下移、并发特性、代码分割和合理分析，可以显著提升应用性能。
+React 性能优化的核心在于减少不必要的工作，而非盲目添加记忆化。通过状态下移、并发特性、代码分割和合理分析，可以显著提升应用性能。
 
 - 🚗 **状态下移是首要优化**：将状态放在实际使用的组件中，避免整个子树不必要的重新渲染，这是最有效的性能改进方法。
 - 🧒 **子组件模式**：通过将子组件作为`children`传递，避免父组件状态更新时子组件重新渲染，无需记忆化。
-- 🛑 **停止滥用记忆化**：`useMemo`和`useCallback`有额外开销，React编译器（React 19+）已自动处理大部分记忆化，手动添加只在真正必要时进行。
-- 🚀 **使用并发特性**：`useTransition`和`useDeferredValue`可让非紧急更新在后台处理，保持用户输入流畅，是2026年最被低估的性能工具。
+- 🛑 **停止滥用记忆化**：`useMemo`和`useCallback`有额外开销，React 编译器（React 19+）已自动处理大部分记忆化，手动添加只在真正必要时进行。
+- 🚀 **使用并发特性**：`useTransition`和`useDeferredValue`可让非紧急更新在后台处理，保持用户输入流畅，是 2026 年最被低估的性能工具。
 - 🧩 **代码分割与懒加载**：通过`lazy()`和`Suspense`按需加载页面和重型组件，但避免过度分割。
-- 📊 **先分析再优化**：使用React DevTools分析器、Chrome性能标签和Core Web Vitals指标，找到真正的瓶颈（如16ms以上渲染或50ms以上长任务）。
-- ⚠️ **避免常见陷阱**：不要在组件内定义组件、使用稳定key、拆分上下文、合并`useEffect`链、将静态JSX对象移出组件。
+- 📊 **先分析再优化**：使用 React DevTools 分析器、Chrome 性能标签和 Core Web Vitals 指标，找到真正的瓶颈（如 16ms 以上渲染或 50ms 以上长任务）。
+- ⚠️ **避免常见陷阱**：不要在组件内定义组件、使用稳定 key、拆分上下文、合并`useEffect`链、将静态 JSX 对象移出组件。
 
 ---
 
@@ -105,10 +105,10 @@ React性能优化的核心在于减少不必要的工作，而非盲目添加记
 
 **原文标题**: [No title found](https://x.com/aidenybai/status/2062202659143115216)
 
-本页提示浏览器未启用JavaScript，需启用或更换支持的浏览器才能正常使用x.com。
+本页提示浏览器未启用 JavaScript，需启用或更换支持的浏览器才能正常使用 x.com。
 
-- 🔒 检测到浏览器中JavaScript被禁用
-- 🌐 请启用JavaScript或切换到支持的浏览器
+- 🔒 检测到浏览器中 JavaScript 被禁用
+- 🌐 请启用 JavaScript 或切换到支持的浏览器
 - 📋 支持浏览器列表可在帮助中心查看
 - ⚠️ 隐私相关扩展可能导致问题，建议禁用后重试
 - 🔄 页面提供“重试”选项以应对临时错误
@@ -117,22 +117,22 @@ React性能优化的核心在于减少不必要的工作，而非盲目添加记
 
 ---
 
-### [Pilcrow的认证手册](https://auth.pilcrowonpaper.com/)
+### [Pilcrow 的认证手册](https://auth.pilcrowonpaper.com/)
 
 **原文标题**: [Pilcrow's auth book](https://auth.pilcrowonpaper.com/)
 
-这本个人编写的认证书籍专注于Web应用的身份验证与登录系统，提供免费、无广告的实用指南与示例。
+这本个人编写的认证书籍专注于 Web 应用的身份验证与登录系统，提供免费、无广告的实用指南与示例。
 
-- 📘 概述：这是一本聚焦Web应用认证与登录系统的免费个人技术书籍，包含指南、建议和代码示例
-- 🔐 核心主题涵盖：认证方法、会话管理、邮箱地址、密码、浏览器客户端存储、CSRF防护等
-- 🛠️ 技术细节包括：Argon2/Bcrypt加密算法、WebAuthn API、ECDSA/EdDSA/RSA签名方案
-- 📂 提供完整开源示例：Go语言编写的密码认证示例（含邮箱验证和密码重置）和无密码认证示例（含Passkey和邮箱验证码）
-- 🌐 支持资源：Discord服务器和GitHub Discussions可提问，GitHub Sponsors可赞助
-- 👤 作者：Pilcrow，源码托管于GitHub
+- 📘 概述：这是一本聚焦 Web 应用认证与登录系统的免费个人技术书籍，包含指南、建议和代码示例
+- 🔐 核心主题涵盖：认证方法、会话管理、邮箱地址、密码、浏览器客户端存储、CSRF 防护等
+- 🛠️ 技术细节包括：Argon2/Bcrypt 加密算法、WebAuthn API、ECDSA/EdDSA/RSA 签名方案
+- 📂 提供完整开源示例：Go 语言编写的密码认证示例（含邮箱验证和密码重置）和无密码认证示例（含 Passkey 和邮箱验证码）
+- 🌐 支持资源：Discord 服务器和 GitHub Discussions 可提问，GitHub Sponsors 可赞助
+- 👤 作者：Pilcrow，源码托管于 GitHub
 
 ---
 
-### [在Vercel沙箱中运行Docker容器 - Vercel](https://vercel.com/changelog/run-docker-containers-inside-vercel-sandbox)
+### [在 Vercel 沙箱中运行 Docker 容器 - Vercel](https://vercel.com/changelog/run-docker-containers-inside-vercel-sandbox)
 
 **原文标题**: [Run Docker containers inside Vercel Sandbox - Vercel](https://vercel.com/changelog/run-docker-containers-inside-vercel-sandbox)
 
@@ -196,43 +196,43 @@ Legend List 是一款高性能虚拟化列表组件，支持 React Native 和 Re
 
 ---
 
-### [导致60帧卡顿的DOM操作：基于275个代码仓库的布局抖动与反模式基准测试研究](https://stackinsight.dev/blog/dom-manipulation-empirical-study/)
+### [导致 60 帧卡顿的 DOM 操作：基于 275 个代码仓库的布局抖动与反模式基准测试研究](https://stackinsight.dev/blog/dom-manipulation-empirical-study/)
 
 **原文标题**: [DOM Manipulation That Kills Your 60fps: A Benchmarked Study of Layout Thrashing and Anti-Patterns Across 275 Repositories](https://stackinsight.dev/blog/dom-manipulation-empirical-study/)
 
-本研究报告对275个开源仓库中常见的DOM操作反模式进行了基准测试和实证分析，揭示了导致60fps卡顿的关键瓶颈。
+本研究报告对 275 个开源仓库中常见的 DOM 操作反模式进行了基准测试和实证分析，揭示了导致 60fps 卡顿的关键瓶颈。
 
-- 📊 **54.9%的仓库存在反模式**：在275个高DOM活动仓库中，超过一半（151个）至少存在一种反模式，总计发现2789个问题。
-- 🔥 **innerHTML循环是最严重的性能杀手**：在1000个节点时，反模式比优化版本慢570倍（223ms vs 0.39ms），10000个节点时差距达7955倍（24.8秒 vs 3.12ms），呈O(n²)复杂度。
-- ⚡ **强制同步布局是常见高严重性问题**：861个发现（高严重性），在10000个节点时基线耗时4.25ms vs 优化后1.89ms，每秒60帧下累计消耗255ms。
-- 🎨 **循环中样式突变影响显著**：691个发现，10000个节点时基线15.18ms接近16.67ms帧预算，优化后降至4.72ms（3.2倍加速）。
-- 🔍 **循环中DOM查询影响最小**：1110个发现（最多），但现代浏览器缓存使10000个节点时仅差0.69ms，优化效果有限。
-- 🧩 **appendChild循环已非问题**：现代浏览器自动批处理，DocumentFragment反而可能稍慢（0.8-1.0倍），无需为性能使用。
-- 🏢 **Vanilla JS仓库问题最多**：平均每个仓库38.9个发现，React为7.1个，Angular仅0.7个（因框架抽象）。
-- 🚨 **顶级问题仓库**：Three.js（195个）、Highcharts（156个）、SortableJS（134个）、AG Grid（133个）等流行库存在大量反模式。
-- 💡 **核心建议**：永远不要在循环中使用innerHTML +=；读写布局属性分离；批量样式变更用CSS类；无需为性能使用DocumentFragment；扫描依赖库。
+- 📊 **54.9% 的仓库存在反模式**：在 275 个高 DOM 活动仓库中，超过一半（151 个）至少存在一种反模式，总计发现 2789 个问题。
+- 🔥 **innerHTML 循环是最严重的性能杀手**：在 1000 个节点时，反模式比优化版本慢 570 倍（223ms vs 0.39ms），10000 个节点时差距达 7955 倍（24.8 秒 vs 3.12ms），呈 O(n²) 复杂度。
+- ⚡ **强制同步布局是常见高严重性问题**：861 个发现（高严重性），在 10000 个节点时基线耗时 4.25ms vs 优化后 1.89ms，每秒 60 帧下累计消耗 255ms。
+- 🎨 **循环中样式突变影响显著**：691 个发现，10000 个节点时基线 15.18ms 接近 16.67ms 帧预算，优化后降至 4.72ms（3.2 倍加速）。
+- 🔍 **循环中 DOM 查询影响最小**：1110 个发现（最多），但现代浏览器缓存使 10000 个节点时仅差 0.69ms，优化效果有限。
+- 🧩 **appendChild 循环已非问题**：现代浏览器自动批处理，DocumentFragment 反而可能稍慢（0.8-1.0 倍），无需为性能使用。
+- 🏢 **Vanilla JS 仓库问题最多**：平均每个仓库 38.9 个发现，React 为 7.1 个，Angular 仅 0.7 个（因框架抽象）。
+- 🚨 **顶级问题仓库**：Three.js（195 个）、Highcharts（156 个）、SortableJS（134 个）、AG Grid（133 个）等流行库存在大量反模式。
+- 💡 **核心建议**：永远不要在循环中使用 innerHTML +=；读写布局属性分离；批量样式变更用 CSS 类；无需为性能使用 DocumentFragment；扫描依赖库。
 
 ---
 
-### [我的2026年前端技术栈 - T型开发者](https://thetshaped.dev/p/my-frontend-stack-in-2026-react-nextjs-pnpm-vite-ts-tailwind-storybook-tanstack-zustand-zod-oxlint-oxfmt-msw-vitest-playright-sentry)
+### [我的 2026 年前端技术栈 - T 型开发者](https://thetshaped.dev/p/my-frontend-stack-in-2026-react-nextjs-pnpm-vite-ts-tailwind-storybook-tanstack-zustand-zod-oxlint-oxfmt-msw-vitest-playright-sentry)
 
 **原文标题**: [My Frontend Stack In 2026 - The T-Shaped Dev](https://thetshaped.dev/p/my-frontend-stack-in-2026-react-nextjs-pnpm-vite-ts-tailwind-storybook-tanstack-zustand-zod-oxlint-oxfmt-msw-vitest-playright-sentry)
 
-本文介绍了作者在2026年实际用于构建生产级应用的前端技术栈，强调工具应简洁、协作良好且能节省时间，而非追求最新。
+本文介绍了作者在 2026 年实际用于构建生产级应用的前端技术栈，强调工具应简洁、协作良好且能节省时间，而非追求最新。
 
-- 🚀 **基础框架**：根据场景选择——内容型网站用Next.js，内部工具和SPA用Vite 8 + React + TypeScript，搭配pnpm实现快速安装与磁盘节省。
-- 🎨 **样式与组件**：Tailwind CSS处理样式，shadcn/ui提供可复用的组件原语，无需npm依赖，直接拥有代码所有权。
-- 📚 **组件文档**：Storybook用于组件库的开发和文档，尤其适合组件数量超过20个的团队，但小项目可能过度。
-- 🔄 **状态管理**：TanStack Query处理服务器状态（缓存、后台刷新），TanStack Router提供全类型安全路由；Zustand用于客户端共享状态，但简单状态仍用useState。
-- 🛡️ **运行时验证**：Zod用于所有跨信任边界的验证（API响应、表单输入、环境变量），弥补TypeScript运行时缺失。
-- ⚡ **代码质量工具**：Oxlint和Oxfmt基于Rust，速度比ESLint快50-100倍，改变开发者习惯，实现即时检查。
-- 🧪 **测试体系**：Vitest用于单元测试，Playwright用于端到端测试，MSW作为网络模拟层，三者协同工作。
-- 🔍 **生产监控**：Sentry提供错误监控和会话回放，AI摘要可快速定位问题，尤其适合排查用户实际遇到的bug。
+- 🚀 **基础框架**：根据场景选择——内容型网站用 Next.js，内部工具和 SPA 用 Vite 8 + React + TypeScript，搭配 pnpm 实现快速安装与磁盘节省。
+- 🎨 **样式与组件**：Tailwind CSS 处理样式，shadcn/ui 提供可复用的组件原语，无需 npm 依赖，直接拥有代码所有权。
+- 📚 **组件文档**：Storybook 用于组件库的开发和文档，尤其适合组件数量超过 20 个的团队，但小项目可能过度。
+- 🔄 **状态管理**：TanStack Query 处理服务器状态（缓存、后台刷新），TanStack Router 提供全类型安全路由；Zustand 用于客户端共享状态，但简单状态仍用 useState。
+- 🛡️ **运行时验证**：Zod 用于所有跨信任边界的验证（API 响应、表单输入、环境变量），弥补 TypeScript 运行时缺失。
+- ⚡ **代码质量工具**：Oxlint 和 Oxfmt 基于 Rust，速度比 ESLint 快 50-100 倍，改变开发者习惯，实现即时检查。
+- 🧪 **测试体系**：Vitest 用于单元测试，Playwright 用于端到端测试，MSW 作为网络模拟层，三者协同工作。
+- 🔍 **生产监控**：Sentry 提供错误监控和会话回放，AI 摘要可快速定位问题，尤其适合排查用户实际遇到的 bug。
 - 💡 **核心理念**：每个工具专注单一功能且能良好协作，不试图成为平台或锁定用户，最终目标是让工具“隐形”并随时待命。
 
 ---
 
-### [从Radix UI迁移到Base UI的9个简单步骤](https://shadcnstudio.com/blog/migrate-from-radix-ui-to-base-ui)
+### [从 Radix UI 迁移到 Base UI 的 9 个简单步骤](https://shadcnstudio.com/blog/migrate-from-radix-ui-to-base-ui)
 
 **原文标题**: [Migrate from Radix UI to Base UI in 9 Easy Steps](https://shadcnstudio.com/blog/migrate-from-radix-ui-to-base-ui)
 
@@ -246,7 +246,7 @@ Legend List 是一款高性能虚拟化列表组件，支持 React Native 和 Re
 
 ---
 
-### [深入解析新版Raycast的技术细节 - Raycast博客](https://www.raycast.com/blog/a-technical-deep-dive-into-the-new-raycast)
+### [深入解析新版 Raycast 的技术细节 - Raycast 博客](https://www.raycast.com/blog/a-technical-deep-dive-into-the-new-raycast)
 
 **原文标题**: [A Technical Deep Dive Into the New Raycast - Raycast Blog](https://www.raycast.com/blog/a-technical-deep-dive-into-the-new-raycast)
 
