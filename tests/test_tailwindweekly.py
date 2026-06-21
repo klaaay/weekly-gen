@@ -32,6 +32,35 @@ def test_parse_latest_issue_info_picks_first_issue_card_link():
     assert link_url == "issue-212/"
 
 
+def test_parse_latest_issue_info_accepts_current_tailwind_weekly_slug():
+    soup = BeautifulSoup(
+        """
+        <html>
+          <body>
+            <section class="section-posts">
+              <article class="card-post">
+                <h2 class="card-title">
+                  <a href="/tailwind-weekly-21/">Tailwind Weekly #219: ui.sh goes local-first</a>
+                </h2>
+              </article>
+              <article class="card-post">
+                <h2 class="card-title">
+                  <a href="/issue-218/">Tailwind Weekly #218: Maizzle 6 Goes Big</a>
+                </h2>
+              </article>
+            </section>
+          </body>
+        </html>
+        """,
+        "html.parser",
+    )
+
+    issue_title, link_url = parse_latest_issue_info(soup)
+
+    assert issue_title == "Tailwind Weekly #219: ui.sh goes local-first"
+    assert link_url == "tailwind-weekly-21/"
+
+
 def test_collect_issue_article_links_keeps_content_links_and_filters_chrome():
     soup = BeautifulSoup(
         """

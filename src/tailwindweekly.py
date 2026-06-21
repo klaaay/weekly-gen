@@ -59,7 +59,14 @@ TRACKING_QUERY_PARAMS = {"ref", "ref_src", "utm_source", "utm_medium", "utm_camp
 
 def parse_latest_issue_info(soup: BeautifulSoup):
     """从首页 Latest 卡片中提取最新一期标题和链接。"""
-    issue_link = soup.select_one('article.card-post h2.card-title a[href^="/issue-"]')
+    issue_link = None
+    for candidate in soup.select("article.card-post h2.card-title a[href]"):
+        title = candidate.get_text(" ", strip=True)
+        href = candidate.get("href", "").strip()
+        if re.search(r"Tailwind Weekly #\d+", title) and href.startswith("/"):
+            issue_link = candidate
+            break
+
     if not issue_link:
         issue_link = soup.find("a", href=re.compile(r"^/issue-\d+/$"))
 
