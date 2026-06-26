@@ -17,6 +17,72 @@ load_dotenv()
 # 初始化 OpenAI 客户端，指向 DeepSeek API
 client = OpenAI(api_key=os.getenv("DEEPSEEK_API_KEY"), base_url=os.getenv("DEEPSEEK_BASE_URL"))
 
+
+def parse_latest_issue_info(soup):
+    """从归档页提取最新一期 Node Weekly 信息，兼容新版 issue-card 结构。"""
+    for issue_card in soup.select(".issue-card"):
+        issue_link = issue_card.select_one(".issue-subject a[href]")
+        if not issue_link:
+            continue
+
+        issue_ref = issue_card.select_one(".issue-ref")
+        issue_number = ""
+        if issue_ref:
+            issue_number = issue_ref.get_text(" ", strip=True).lstrip("#").strip()
+        if not issue_number:
+            match = re.search(r"/?issues/(\d+)$", issue_link["href"])
+            issue_number = match.group(1) if match else ""
+
+        issue_title = f"Issue #{issue_number}" if issue_number else issue_link.get_text(" ", strip=True)
+        return issue_title, issue_link["href"].lstrip("/")
+
+    issue_link = soup.find("a", href=re.compile(r"^/?issues/\d+$"))
+    if not issue_link or "href" not in issue_link.attrs:
+        return None, None
+
+    match = re.search(r"/?issues/(\d+)$", issue_link["href"])
+    issue_title = f"Issue #{match.group(1)}" if match else issue_link.get_text(" ", strip=True)
+    return issue_title, issue_link["href"].lstrip("/")
+
+
+def collect_issue_article_links(soup):
+    """收集 Node Weekly 期刊正文链接，兼容直接外链与旧版 /link 跳转。"""
+    content = soup.find(id="content") or soup
+    candidate_links = content.select(
+        ".el-item .desc a[href], "
+        ".miniitem .desc a[href], "
+        ".content.el-md a[href]"
+    )
+    collected_links = []
+    seen_urls = set()
+
+    for link in candidate_links:
+        href = link.get("href", "").strip()
+        text = link.get_text(" ", strip=True)
+        if not href or not text:
+            continue
+
+        parsed = urlparse(href)
+        domain = parsed.netloc.lower()
+        path = parsed.path
+        is_nodeweekly_redirect = domain in {"nodeweekly.com", "www.nodeweekly.com"} and path.startswith("/link")
+        is_relative_redirect = href.startswith("/link")
+        if domain in {"nodeweekly.com", "www.nodeweekly.com"} and not is_nodeweekly_redirect:
+            continue
+
+        if not href.startswith(("http://", "https://", "/link")) and not is_relative_redirect:
+            continue
+
+        normalized_url = href.rstrip("/")
+        if normalized_url in seen_urls:
+            continue
+
+        seen_urls.add(normalized_url)
+        collected_links.append(link)
+
+    return collected_links
+
+
 def fetch_page_content(url, headers, proxies):
     """Fetch content from a URL, following redirects."""
     try:
@@ -139,13 +205,10 @@ def scrape_nodeweekly():
         content_file = os.path.join(outputs_dir, f"{safe_title}_content.txt")
         summary_file = os.path.join(outputs_dir, f"{safe_title}_summary.md")  # Markdown 格式
         
-        # Find the first issue link - looking for links with href="issues/*" and text containing "Issue #"
-        issue_link = soup.find('a', href=re.compile(r'^issues/\d+$'), string=re.compile(r'Issue #\d+'))
-        
-        if issue_link and 'href' in issue_link.attrs:
-            link_url = issue_link['href']
-            issue_title = issue_link.text
-            print(f"Found issue link: {issue_link.text} - {link_url}")
+        issue_title, link_url = parse_latest_issue_info(soup)
+
+        if link_url:
+            print(f"Found issue link: {issue_title} - {link_url}")
             
             # 检查是否与上次抓取的 link_url 相同
             script_name = os.path.basename(__file__).replace('.py', '')  # 获取脚本名称（不含.py 扩展名）
@@ -183,7 +246,9 @@ def scrape_nodeweekly():
                     re.compile(r'^https://nodeweekly\.com/link'),  # 绝对 URL 模式
                     re.compile(r'^/link')                          # 相对 URL 模式
                 ]
-                
+                filtered_links = collect_issue_article_links(link_soup)
+                print(f"Found {len(filtered_links)} article links in issue page")
+
                 # 使用提取的函数来处理链接
                 extract_links_and_summarize(
                     soup=link_soup,
@@ -193,7 +258,8 @@ def scrape_nodeweekly():
                     summary_file=summary_file,
                     summary_title_prefix="nodeweekly",
                     base_url="https://nodeweekly.com",
-                    fetch_content_func=fetch_page_content
+                    fetch_content_func=fetch_page_content,
+                    pre_filtered_links=filtered_links
                 )
             else:
                 print(f"Failed to retrieve the linked page. Status code: {link_response.status_code}")
