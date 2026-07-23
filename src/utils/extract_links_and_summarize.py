@@ -4,8 +4,20 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import os
-from typing import List, Dict, Any, Optional, Tuple, Pattern
+from dataclasses import dataclass
 from datetime import datetime
+from typing import Callable, List, Dict, Any, Optional, Tuple, Pattern
+from zoneinfo import ZoneInfo
+
+
+@dataclass(frozen=True)
+class ExtractionCompletion:
+    processed_count: int
+    summary_file: Optional[str]
+    completed_at: datetime
+
+
+CompletionCallback = Callable[[ExtractionCompletion], None]
 
 def extract_links_and_summarize(
     soup: BeautifulSoup, 
@@ -17,7 +29,8 @@ def extract_links_and_summarize(
     base_url: str = None,
     fetch_content_func = None,
     use_patterns: bool = True,  # 控制是否使用模式匹配
-    pre_filtered_links = None   # 新增参数：预先筛选好的链接
+    pre_filtered_links = None,  # 新增参数：预先筛选好的链接
+    on_complete: Optional[CompletionCallback] = None,
 ) -> List[Dict[str, Any]]:
     """
     从 BeautifulSoup 对象中提取符合指定模式的链接，获取这些链接的内容并生成总结
@@ -153,13 +166,24 @@ def extract_links_and_summarize(
         
         if summary_file:
             print(f"\n所有 {processed_articles} 篇文章总结已保存到 {summary_file}")
+
+        if processed_articles > 0 and on_complete is not None:
+            completion = ExtractionCompletion(
+                processed_count=processed_articles,
+                summary_file=summary_file,
+                completed_at=datetime.now(ZoneInfo("Asia/Shanghai")),
+            )
+            try:
+                on_complete(completion)
+            except Exception as exc:
+                print(f"完成回调执行失败：{type(exc).__name__}")
     else:
         print("\n没有找到符合指定模式的链接。")
     
     return processed_articles_data
 
 # 使用示例：
-"""
+r"""
 # 使用方法：
 from extract_links_and_summarize import extract_links_and_summarize
 from bs4 import BeautifulSoup
