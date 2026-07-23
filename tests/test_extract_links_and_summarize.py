@@ -1,5 +1,6 @@
 from pathlib import Path
 
+import pytest
 from bs4 import BeautifulSoup
 
 from src.utils.extract_links_and_summarize import extract_links_and_summarize
@@ -69,6 +70,66 @@ def test_no_links_does_not_trigger_completion_callback(monkeypatch, tmp_path):
     )
 
     assert articles == []
+    assert completions == []
+
+
+def test_empty_pre_filtered_links_do_not_fall_back_to_page_links(
+    monkeypatch,
+    tmp_path,
+):
+    monkeypatch.chdir(tmp_path)
+    soup = BeautifulSoup(
+        '<body><a href="https://example.com/navigation">导航链接</a></body>',
+        "html.parser",
+    )
+    completions = []
+
+    def unexpected_fetch(*_args, **_kwargs):
+        raise AssertionError("不应处理未通过筛选的页面链接")
+
+    articles = extract_links_and_summarize(
+        soup=soup,
+        summary_file="empty.md",
+        fetch_content_func=unexpected_fetch,
+        use_patterns=False,
+        pre_filtered_links=[],
+        on_complete=completions.append,
+    )
+
+    assert articles == []
+    assert completions == []
+
+
+def test_link_processing_error_does_not_trigger_completion_callback(
+    monkeypatch,
+    tmp_path,
+):
+    monkeypatch.chdir(tmp_path)
+    soup = BeautifulSoup(
+        """
+        <body>
+          <a href="https://example.com/one">One</a>
+          <a href="https://example.com/two">Two</a>
+        </body>
+        """,
+        "html.parser",
+    )
+    completions = []
+
+    def fail_on_second_link(url, _headers, _proxies):
+        if url.endswith("/two"):
+            raise RuntimeError("second link failed")
+        return _article(url, "One")
+
+    with pytest.raises(RuntimeError, match="second link failed"):
+        extract_links_and_summarize(
+            soup=soup,
+            summary_file="issue.md",
+            fetch_content_func=fail_on_second_link,
+            use_patterns=False,
+            on_complete=completions.append,
+        )
+
     assert completions == []
 
 

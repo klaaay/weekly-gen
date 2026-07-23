@@ -80,7 +80,7 @@ def extract_links_and_summarize(
     processed_articles_data = []
     
     # 优先使用预先筛选好的链接
-    if pre_filtered_links:
+    if pre_filtered_links is not None:
         matched_links = pre_filtered_links
         print(f"\n使用预先筛选好的 {len(matched_links)} 个链接：")
     # 如果没有预先筛选的链接，则根据 use_patterns 参数决定如何获取链接
