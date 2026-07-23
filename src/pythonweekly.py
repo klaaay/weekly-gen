@@ -15,6 +15,7 @@ from src.utils.last_run_tracker import (
     update_last_run_info,
 )
 from src.utils.proxy import get_proxies, proxy_for_log
+from src.utils.telegram_notifier import create_telegram_completion_callback
 
 # 加载.env 文件中的环境变量
 load_dotenv()
@@ -211,6 +212,7 @@ def scrape_pythonweekly():
         base_url=BASE_URL,
         fetch_content_func=fetch_page_content,
         pre_filtered_links=pre_filtered_links,
+        on_complete=create_telegram_completion_callback("Python Weekly"),
     )
 
 

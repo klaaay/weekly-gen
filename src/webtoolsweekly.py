@@ -10,6 +10,7 @@ from src.utils.proxy import get_proxies, proxy_for_log
 from src.utils.extract_links_and_summarize import extract_links_and_summarize
 from src.utils.deepseek_api import translate_title_to_chinese, summarize_with_deepseek
 from src.utils.last_run_tracker import check_and_skip_if_same_issue, create_issue_info, update_last_run_info
+from src.utils.telegram_notifier import create_telegram_completion_callback
 
 # 加载.env 文件中的环境变量
 load_dotenv()
@@ -192,7 +193,8 @@ def scrape_webtoolsweekly():
                         summary_title_prefix="webtoolsweekly",
                         base_url="https://webtoolsweekly.com",
                         fetch_content_func=fetch_page_content,
-                        use_patterns=False  # 设置为 False，使用新的提取方式
+                        use_patterns=False,  # 设置为 False，使用新的提取方式
+                        on_complete=create_telegram_completion_callback("Web Tools Weekly"),
                     )
                 else:
                     print(f"Failed to retrieve the linked page. Status code: {link_response.status_code}")

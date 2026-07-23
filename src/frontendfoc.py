@@ -9,6 +9,7 @@ from src.utils.proxy import get_proxies, proxy_for_log
 from src.utils.deepseek_api import translate_title_to_chinese, summarize_with_deepseek
 from src.utils.extract_links_and_summarize import extract_links_and_summarize
 from src.utils.last_run_tracker import check_and_skip_if_same_issue, create_issue_info, update_last_run_info
+from src.utils.telegram_notifier import create_telegram_completion_callback
 
 # 加载.env 文件中的环境变量
 load_dotenv()
@@ -254,7 +255,8 @@ def scrape_frontendfoc():
                     summary_title_prefix=f"frontendfoc",
                     base_url="https://frontendfoc.us",
                     fetch_content_func=fetch_page_content,
-                    pre_filtered_links=filtered_links
+                    pre_filtered_links=filtered_links,
+                    on_complete=create_telegram_completion_callback("Frontend Focus"),
                 )
             else:
                 print(f"Failed to retrieve the linked page. Status code: {link_response.status_code}")

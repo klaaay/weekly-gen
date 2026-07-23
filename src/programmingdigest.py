@@ -16,6 +16,7 @@ from src.utils.last_run_tracker import (
     update_last_run_info,
 )
 from src.utils.proxy import get_proxies, proxy_for_log
+from src.utils.telegram_notifier import create_telegram_completion_callback
 
 # 加载.env 文件中的环境变量
 load_dotenv()
@@ -195,6 +196,7 @@ def scrape_programmingdigest():
         fetch_content_func=fetch_page_content,
         use_patterns=False,
         pre_filtered_links=filtered_links,
+        on_complete=create_telegram_completion_callback("Programming Digest"),
     )
 
 
