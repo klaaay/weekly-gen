@@ -9,6 +9,7 @@
 - 🔄 **状态跟踪**: 记录每次运行的状态，支持断点续传
 - 📝 **内容总结**: 使用 AI 自动生成中文摘要
 - 🎯 **精准抓取**: 支持多个主流技术周刊
+- 📣 **完成通知**: 每个周刊处理完全部文章链接后发送 Telegram 消息
 
 ## 支持的周刊
 
@@ -39,6 +40,10 @@ pip install requests beautifulsoup4 openai python-dotenv
 # DeepSeek API 配置
 DEEPSEEK_API_KEY=your_deepseek_api_key_here
 DEEPSEEK_BASE_URL=https://api.deepseek.com
+
+# Telegram 完成通知
+TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
+TELEGRAM_CHAT_ID=your_telegram_chat_id_here
 ```
 
 ## 使用方法
@@ -169,6 +174,7 @@ cat last_run_info.json
 2. **API 限制**: 注意 DeepSeek API 的调用频率限制
 3. **超时设置**: 单个脚本执行超时时间为 5 分钟
 4. **错误处理**: 系统具有完善的错误处理和重试机制
+5. **Telegram 通知**: 只有找到并处理至少一个文章链接后才发送。通知失败只写入日志，不改变抓取任务的成功状态
 
 ## 故障排除
 
