@@ -10,6 +10,9 @@ load_dotenv()
 # 初始化 OpenAI 客户端，指向 DeepSeek API
 client = OpenAI(api_key=os.getenv("DEEPSEEK_API_KEY"), base_url=os.getenv("DEEPSEEK_BASE_URL"))
 
+# 当前 API 网关仅支持 deepseek-v4-pro 与 deepseek-v4-flash；周刊抓取优先使用更快的 Flash 模型。
+DEEPSEEK_MODEL = "deepseek-v4-flash"
+
 def translate_title_to_chinese(title):
     """使用 DeepSeek API 将标题翻译为中文"""
     try:
@@ -18,7 +21,7 @@ def translate_title_to_chinese(title):
         
         # 调用 API
         response = client.chat.completions.create(
-            model="deepseek-chat",
+            model=DEEPSEEK_MODEL,
             messages=[
                 {"role": "system", "content": "You are a helpful assistant that translates English to Chinese."},
                 {"role": "user", "content": prompt}
@@ -48,7 +51,7 @@ Please summarize the text I provide by creating a concise list of bullet points.
         
         # 调用 API
         response = client.chat.completions.create(
-            model="deepseek-chat",
+            model=DEEPSEEK_MODEL,
             messages=[
                 {"role": "system", "content": "You are a helpful assistant that summarizes content."},
                 {"role": "user", "content": prompt}
