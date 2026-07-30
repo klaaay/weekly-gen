@@ -87,6 +87,20 @@ def fetch_page_content(url, headers, proxies):
     try:
         # Set allow_redirects to True to follow redirects
         response = requests.get(url, headers=headers, proxies=proxies, allow_redirects=True)
+
+        # 个别站点会拒绝较具体但缺少完整浏览器请求头的 UA。对于 403，
+        # 使用更通用的 UA 再请求一次，避免将可访问文章误记为抓取失败。
+        if response.status_code == 403:
+            fallback_headers = dict(headers or {})
+            fallback_headers["User-Agent"] = "Mozilla/5.0"
+            fallback_response = requests.get(
+                url,
+                headers=fallback_headers,
+                proxies=proxies,
+                allow_redirects=True,
+            )
+            if fallback_response.status_code == 200:
+                response = fallback_response
         
         if response.status_code == 200:
             # Get the final URL after redirects

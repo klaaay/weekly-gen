@@ -31,7 +31,10 @@ def translate_title_to_chinese(title):
         )
         
         # 返回翻译内容
-        translated_title = response.choices[0].message.content.strip()
+        translated_title = (response.choices[0].message.content or "").strip()
+        if not translated_title:
+            print("  Translation returned an empty result; using the original title")
+            return title
         print(f"  Translated title: {translated_title}")
         return translated_title
     except Exception as e:
