@@ -23,7 +23,7 @@ GitHub Copilot 将其智能体运行时从 TypeScript/Node.js/V8 就地迁移为
 - 🛡️ 全运行时有 158 个 unsafe 块，集中在 C ABI、Windows/POSIX、SQLite、动态库加载等互操作边界；没有已知回归来自 unsafe。
 - 🐞 发现并修复数十个回归，主要家族：语义模糊、环境隐式行为、成对操作遗漏、阻塞主线程、Windows 弹窗、生命周期/所有权、遗漏功能、库行为差异、rebase 漂移、性能退化。
 - 🧪 “能编译就正确”不成立：所有回归都成功编译；编译器无法验证序列化契约、事件顺序、宿主未写要求、遗漏代码或运行成本。
-- ⚡ 性能提升显著：客户端+会话+一轮 5.25s → 1.33s 进程外、292ms 进程内；恢复 32 轮 5.64s → 1.52s/264ms；1000 个单轮生命周期 132.52s → 22.53s/20.93s。
+- ⚡ 性能提升显著：客户端 + 会话 + 一轮 5.25s → 1.33s 进程外、292ms 进程内；恢复 32 轮 5.64s → 1.52s/264ms；1000 个单轮生命周期 132.52s → 22.53s/20.93s。
 - 💰 成本约 136.3B tokens，账单约 12 万美元；按 PR 占比估算约 3 周开发者时间，另有团队支持 napi-oop、SDK FFI、打包、拆 crate、审查等。
 - 🧭 经验：目标要完整明确；E2E 测试绝对关键且不能由移植代理改写；保护正确性判据；先翻译后重设计；重复失败要变成指令/技能/eval/护栏；智能体循环中开发者内环更重要。
 - 🔮 下一步：运行时已 100% Rust 且临时内部 TypeScript/N-API 接缝已移除；继续优化构建/内环、清理翻译结构、围绕 Rust 所有权与并发重设计、追求更多性能；重点是可进程内嵌入六种 SDK、去掉 Node/V8，并支持云到桌面到设备到嵌入式。
@@ -76,7 +76,7 @@ Tiger Data 提供适用于任意规模时序工作负载的 Postgres 服务；Ti
 
 该 PR 为 Node.js 内置 util 模块新增 `util.debounce` 和 `util.throttle`，作者 jasnell 从实际测试需求出发推动内置实现，经过 AbortSignal 语义、leading 选项、覆盖率和 CI 测试讨论后合入 main。
 
-- 🧩 PR 编号 #65899，标题为 “util: implement debounce”，目标分支为 `nodejs:main`，来源分支为 `jasnell:jasnell/util-debounce`。
+- 🧩 PR 编号 #65899，标题为“util: implement debounce”，目标分支为 `nodejs:main`，来源分支为 `jasnell:jasnell/util-debounce`。
 - ⚙️ 新增 `util.debounce(fn, wait)`，用于在重复调用时重置定时器，仅在停止调用达到等待时间后执行函数。
 - 🕒 示例：`const fn = util.debounce(() => console.log(123), 1000); fn();` 500ms 后再次调用 `fn()` 会重置计时器。
 - 🚦 后续加入 `util.throttle`，用于限制函数并发调用次数，与 debounce 的使用场景密切相关。
@@ -86,7 +86,7 @@ Tiger Data 提供适用于任意规模时序工作负载的 Postgres 服务；Ti
 - ⚠️ bakkot 指出 AbortSignal 只能从未中止变为中止一次，若使用它应取消所有未来调用；`p-debounce` 符合这一点，而 Deno 的实现不符合。
 - ➕ bakkot 还建议加入 `leading`/`immediate` 选项，让首次调用立即执行，后续突发调用才延迟；jasnell 采纳并更新实现。
 - ✅ mcollina 批准该 PR，并评论 `lgtm`，称自己几乎每个应用都会用到这些工具函数。
-- 🧪 后续提交 #66034 “test: deflake util.throttle tests” 修复 throttle 测试时序不稳定问题，使用模拟计时器和匹配的 libuv 时钟。
+- 🧪 后续提交 #66034“test: deflake util.throttle tests”修复 throttle 测试时序不稳定问题，使用模拟计时器和匹配的 libuv 时钟。
 - 🚀 该 PR 已合入，提交范围为 `312db1e...c081d10`，并于 2026 年 9 月 15 日关闭。
 - 👥 共有 6 位参与者，包括 jasnell、ljharb、bakkot、bricss、mcollina、panva 等。
 
@@ -169,7 +169,7 @@ Moment 库存在路径遍历漏洞（GHSA-4p3w-j4w9-5jqw），攻击者可通过
 - 🧪 测试移除：删除 `test-make-doc`，因为新生成器会压缩 HTML，旧正则难以解析，且 `doc-kit` 中已有相关测试。
 - 🔗 预览地址：`https://beta.docs.nodejs.org`，正式文档入口为 `https://nodejs.org/api`。
 - 🚧 CI 与平台：曾标记 `wip`、`blocked`、`needs-ci`、`windows`；多数 CI 机器可运行，但 macOS 在限制 6GB/8GB 内存时 OOM，实际占用约 4–5GB。
-- 💬 反馈要点：panva 提到脚注不工作、方法参数标为 “Attributes” 奇怪、方法列表 TOC 难读、正文 14px/16px 混用、表格宽度不足、`[C]`/`[P]` 列表区分度低。
+- 💬 反馈要点：panva 提到脚注不工作、方法参数标为“Attributes”奇怪、方法列表 TOC 难读、正文 14px/16px 混用、表格宽度不足、`[C]`/`[P]` 列表区分度低。
 - 🛠️ 作者回应：`Attributes` 是为统一描述 typed lists；完整参数 TOC 更精确；正文 16px，typed lists 14px；大表格应拆分；`[C]`/`[P]` 表示条目类型。
 - 📄 文档文件：讨论过移除 `documentation.md`，但因稳定性级别说明和 `/about` 概览页仍需保留，后续再议。
 - ✅ 评审结果：经多轮 review 后，获 panva、jasnell、pimterry、bmuenzenmeyer、aymen94 等批准；Copilot 也参与评审。
@@ -184,7 +184,7 @@ Moment 库存在路径遍历漏洞（GHSA-4p3w-j4w9-5jqw），攻击者可通过
 
 Node.js 的 nodejs/node 仓库合并 PR #65010，将 HTTP 客户端在响应头超过 request.maxHeadersCount 时的行为从静默截断改为直接拒绝，并返回 HPE_HEADER_OVERFLOW；该变更属于 semver-major，已在 2026-09-14 合并到 main。
 
-- 🚀 PR #65010 标题为 “http: reject responses exceeding header limit”，作者为 Matteo Collina（mcollina）。
+- 🚀 PR #65010 标题为“http: reject responses exceeding header limit”，作者为 Matteo Collina（mcollina）。
 - ⚠️ 此前 ClientRequest 会静默截断超出 maxHeadersCount 的响应，而 llhttp 仍继续使用被省略的头，可能导致解析器状态与暴露头不一致。
 - ✅ 现在改为以 HPE_HEADER_OVERFLOW 拒绝响应，防止解析器状态与暴露头分歧。
 - 💥 这是 semver-major 破坏性变更，应随下一个主版本发布。
@@ -227,11 +227,11 @@ Node.js 26.9.0（Current）于 2026 年 9 月 16 日发布，由 Antoine du Hame
 
 **原文标题**: [Build Better With AI Sale | Master.dev](https://master.dev/sale/?utm_source=nodeweekly&utm_medium=newsletter&utm_campaign=buildersale)
 
-秋季促销提供100美元优惠，主打掌握基础知识并用AI更好地构建，活动仅剩数天，可立即领取折扣。
+秋季促销提供 100 美元优惠，主打掌握基础知识并用 AI 更好地构建，活动仅剩数天，可立即领取折扣。
 
-- 🍂 秋季促销：立减100美元
+- 🍂 秋季促销：立减 100 美元
 - 📚 掌握基础知识
-- 🤖 借助AI构建得更好
+- 🤖 借助 AI 构建得更好
 - ⏳ 促销仅剩数天
 - 🛒 立即获取折扣
 
@@ -424,13 +424,13 @@ Eraser Diagrams 是一个 AI 原生、坐标感知的图表格式，已在 MIT �
 
 ---
 
-### [Platformatic Memcached：](https://blog.platformatic.dev/introducing-platformatic-memcached)
+### [Platformatic Memcached:](https://blog.platformatic.dev/introducing-platformatic-memcached)
 
 **原文标题**: [Platformatic Memcached: A Faster Client for Node.js](https://blog.platformatic.dev/introducing-platformatic-memcached)
 
 Platformatic 推出 @platformatic/memcached，一个面向 Node.js 的高性能、零依赖 memcached 客户端，基于 meta 协议并支持完整请求流水线，目标是解决现有 Node.js 客户端老旧、慢且维护不足的问题。
 
-- 🚀 性能突出：单连接可达 35 万+ SET/s、36.9 万+ GET/s，约为对比中最快客户端的 3 倍。
+- 🚀 性能突出：单连接可达 35 万 + SET/s、36.9 万 + GET/s，约为对比中最快客户端的 3 倍。
 - ⚡ 采用 meta 协议：替代冗长易错的经典文本协议和已弃用的二进制协议，使用紧凑命令、明确标志、长度前缀数据块与 CAS 支持。
 - 🧩 设计继承 @platformatic/kafka：单连接全流水线、FIFO 响应匹配、增量 Buffer 解析、writev 合并写、零运行时依赖，仅使用 node:net。
 - 🛡 通过 opaque token 校验响应：每次响应都验证不透明令牌，避免协议失步导致错误数据。
@@ -527,7 +527,7 @@ officeParser 是一个严格类型、支持 Node.js 与浏览器的 Office 文�
 - ⚙️ 安装：npm i officeparser；要求 Node.js >= 22.13。
 - 💻 CLI：npx officeparser file --to=text/md/html/csv/epub/docx/odt/chunks 等，支持 --output、--ocr、--password、--extractAttachments。
 - 🧠 核心 API：parseOffice、OfficeConverter.convert、OfficeGenerator.generate、ast.to(format)。
-- 🔄 OfficeConverter.convert() 一步完成解析+生成，并自动同步 extractAttachments；配置使用嵌套 parseConfig/generatorConfig。
+- 🔄 OfficeConverter.convert() 一步完成解析 + 生成，并自动同步 extractAttachments；配置使用嵌套 parseConfig/generatorConfig。
 - 📥 输入支持路径、Buffer、ArrayBuffer、Uint8Array、Blob/File；md/html/csv 等无魔数格式从缓冲区解析需 fileType。
 - 🛑 支持 AbortSignal 取消；OCR worker 会自动清理，并可配置 workerLoad/recognition/autoTerminate 超时。
 - 👁️ OCR 基于 Tesseract，需 extractAttachments；默认 preserveLayout 保留二维布局，适合扫描表格、表单和发票。
@@ -594,7 +594,7 @@ pg-boss 12.33.0 发布，核心是引入可注入时钟，让测试无需真实�
 overview summary
 Aedes 是 Mosca 的继任者，一个基于 Node.js 的轻量级 MQTT broker，可在任意流式服务器上运行；它强调 MQTT 兼容性、可扩展性、集群能力和高并发性能，并拥有丰富的持久化、消息发射器、中间件与扩展插件生态。
 
-- 📌 项目定位：moscajs/aedes 是“barebone” MQTT 服务器，可在任意 stream server 上运行，旨在解决 Mosca 在生产环境中的性能与稳定性问题。
+- 📌 项目定位：moscajs/aedes 是“barebone”MQTT 服务器，可在任意 stream server 上运行，旨在解决 Mosca 在生产环境中的性能与稳定性问题。
 - ⭐ 项目热度：约 2k stars、241 forks、48 watchers、75 issues、18 PR、861 commits；采用 MIT 许可证。
 - 📦 安装方式：使用 `npm install aedes`，同时提供 Docker 支持。
 - 🔌 API：主要提供 `Aedes` class 与 `Client` class。
@@ -691,7 +691,7 @@ Supabase Select 26 是由 Supabase 主办、联合业界顶尖构建者的一日
 
 ---
 
-### [npm图表](https://www.npmchart.com/)
+### [npm 图表](https://www.npmchart.com/)
 
 **原文标题**: [npmchart](https://www.npmchart.com/)
 

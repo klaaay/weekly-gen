@@ -1,11 +1,11 @@
-### [快速扩展在线存储，为超过10亿ChatGPT用户提供服务 | OpenAI](https://openai.com/index/scaling-storage-one-billion-users-part-one/?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-763-september-17-2026)
+### [快速扩展在线存储，为超过 10 亿 ChatGPT 用户提供服务 | OpenAI](https://openai.com/index/scaling-storage-one-billion-users-part-one/?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-763-september-17-2026)
 
 **原文标题**: [Rapidly scaling online storage to serve over 1 billion ChatGPT users | OpenAI](https://openai.com/index/scaling-storage-one-billion-users-part-one/?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-763-september-17-2026)
 
-OpenAI 的 Habitat 在线存储平台为 ChatGPT、API、Codex 等产品提供快速可靠的数据访问，并经历从 Python 客户端库到独立服务，再到 Rust 重写的演进。它当前支撑 7000 万+ 请求/秒、10 亿+ 周用户和 500PB+ 数据，以应对连续三年超 10 倍增长；文章还分享了 Python 尾延迟、连接池、下游洪泛和受限 API 等关键工程取舍。
+OpenAI 的 Habitat 在线存储平台为 ChatGPT、API、Codex 等产品提供快速可靠的数据访问，并经历从 Python 客户端库到独立服务，再到 Rust 重写的演进。它当前支撑 7000 万 + 请求/秒、10 亿 + 周用户和 500PB+ 数据，以应对连续三年超 10 倍增长；文章还分享了 Python 尾延迟、连接池、下游洪泛和受限 API 等关键工程取舍。
 
 - 🏗️ Habitat 是 OpenAI 的在线存储平台，让产品无需关心底层数据库、缓存、路由、授权、加密和序列化等细节。
-- 📊 规模已超过 7000 万请求/秒、10 亿+ 周用户、500PB+ 数据，覆盖近 40 个地理区域。
+- 📊 规模已超过 7000 万请求/秒、10 亿 + 周用户、500PB+ 数据，覆盖近 40 个地理区域。
 - 🧩 2023 年 DevDay 首次推出时，Habitat 只是连接 Azure Cosmos DB 的 Python 客户端库。
 - 🔄 到 2025 年中，客户端库因跨数十个服务协调部署而变得脆弱，Habitat 被拆分为独立服务。
 - 🎛️ 服务化带来部署、可观测性和平台增强的单一控制点，也能集中执行安全、审计和存储访问控制。
@@ -35,11 +35,11 @@ OpenAI 的 Habitat 在线存储平台为 ChatGPT、API、Codex 等产品提供�
 - 🕳️ 关键缺口：Pandas 瓶颈与真正需要分布式系统的约 100GB 门槛之间存在空白，Polars 和 DuckDB 正好可以填补。
 - ⚡ Polars：Rust 编写，API 类似 Pandas，但采用惰性求值、查询优化、流式分块和多线程，像数据库一样构建优化执行计划。
 - 🦆 DuckDB：面向分析的嵌入式内存数据库，类似“分析版 SQLite”，提供 SQL 接口，可直接查询 CSV、Parquet 和内存中的 Python 对象。
-- 🏁 1 Billion Row Challenge 结果：Pandas 中位耗时 4分28秒、内存 38.12GB；Polars 5.04秒、18.02GB；DuckDB 5.19秒、1.93GB。
-- 💻 本地开发性能：同一笔记本上 Pandas 耗时 12分15秒，Polars 39秒，DuckDB 47秒；DuckDB 内存占用约 547MB。
+- 🏁 1 Billion Row Challenge 结果：Pandas 中位耗时 4 分 28 秒、内存 38.12GB；Polars 5.04 秒、18.02GB；DuckDB 5.19 秒、1.93GB。
+- 💻 本地开发性能：同一笔记本上 Pandas 耗时 12 分 15 秒，Polars 39 秒，DuckDB 47 秒；DuckDB 内存占用约 547MB。
 - 🧵 免费收益：自动多线程、内存高效与流式处理、惰性求值、谓词下推，以及必要时智能溢写磁盘。
 - 🏹 Apache Arrow：Polars 和 DuckDB 原生支持 Arrow，Pandas 2.0 起也支持；可在框架间近乎零拷贝迁移，但 Pandas 默认不是 Arrow-backed。
-- 🚕 NYC 出租车案例：处理约 3GB Parquet 数据，纯 DuckDB 21.70秒、216.76MB；纯 Pandas 41.88秒、14.52GB；混合方案性能仍较差。
+- 🚕 NYC 出租车案例：处理约 3GB Parquet 数据，纯 DuckDB 21.70 秒、216.76MB；纯 Pandas 41.88 秒、14.52GB；混合方案性能仍较差。
 - 🧐 作者承认局限：基准测试不完美、切换成本可能存在、Pandas 也在改进；但 DuckDB/Polars API 更清晰，DuckDB 的 SQL 技能可迁移性强。
 - 🧭 Polars 与 DuckDB 选择：取决于工作负载、经验和偏好；数据工程师常爱 SQL，软件工程师常爱 Polars，最好都试一试。
 - 🚫 最终建议：不要仅因 Pandas 性能差就盲目采用分布式系统；多数人长期并不需要，性能如今更易获得，应多比较再决定。
@@ -282,7 +282,7 @@ Cayu 是一个用 Python 构建和运行 AI 代理的生产级代理运行时，
 
 **原文标题**: [GitHub - moio9/NFS-Online-Server: NFS MW, UG2 and Carbon online server emulator. · GitHub](https://github.com/moio9/NFS-Online-Server?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-763-september-17-2026)
 
-这是一个面向《极品飞车：地下狂飙2》《极品飞车：最高通缉（2005）》和《极品飞车：碳化》的非官方社区联机服务器项目，同时提供 Windows x86 客户端插件；服务器用 Python 编写，客户端 ASI 插件由 Zig 源码构建，不包含原版游戏文件。
+这是一个面向《极品飞车：地下狂飙 2》《极品飞车：最高通缉（2005）》和《极品飞车：碳化》的非官方社区联机服务器项目，同时提供 Windows x86 客户端插件；服务器用 Python 编写，客户端 ASI 插件由 Zig 源码构建，不包含原版游戏文件。
 
 - 🎮 为《Need for Speed: Underground 2》《Most Wanted (2005)》《Carbon》提供非官方在线服务器和客户端插件。
 - 🐍 服务器基于 Linux、Python 3.10+ 和 sqlite3，使用单一 TOML 配置文件。
@@ -308,7 +308,7 @@ Cayu 是一个用 Python 构建和运行 AI 代理的生产级代理运行时，
 
 Engrim 是面向 AI 编码代理的通用跨模型、跨代理情景记忆标准，以本地优先、项目级 SQLite 数据库（~/.engrim/memory.db）保存架构决策、事实、反馈、状态等，让开发者在 Google Antigravity、Claude Code、Cursor、Codex CLI、OpenCode、Windsurf 之间自由切换而不丢失项目上下文。
 
-- 🧠 核心价值：用约 4,000 字符（<1,000 token，<1% 上下文）的高精度记忆包，替代每轮重放 15 万+ token 原始对话，缓解注意力稀释与 token 膨胀。
+- 🧠 核心价值：用约 4,000 字符（<1,000 token，<1% 上下文）的高精度记忆包，替代每轮重放 15 万 + token 原始对话，缓解注意力稀释与 token 膨胀。
 - 🔄 Continue-as-Clear：可随时 `/clear`，下一次会话从 `memory.db` 恢复决策、活跃状态和 `[▶ RESUME HERE]` 指针，实现零上下文丢失。
 - 🗄️ 架构：包含适配器与生命周期钩子、健康诊断、来源追踪、混合检索；存储使用 SQLite WAL、FTS5 全文搜索、model2vec 静态向量嵌入和 flight recorder 日志。
 - 🤝 多代理支持：通过 hooks、MCP stdio、插件等集成 Antigravity、Claude Code、Cursor/Windsurf、Codex CLI、OpenCode；`engrim setup` 可自动检测并配置。
@@ -592,9 +592,9 @@ PyData Helsinki 将于 9 月 22 日（星期二）17:30–20:30 EEST 在赫尔�
 
 **原文标题**: [SDPy Monthly Meetup, Thu, Sep 24, 2026, 7:00 PM   | Meetup](https://www.meetup.com/pythonsd/events/312775789/?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-763-september-17-2026)
 
-本次为 San Diego Python 用户组（SDPy）月度聚会，由 David F. 和 Diane C. 主办，9月24日周四 19:00–21:00 PDT 在 Qualcomm Building Q 举行，并同步 YouTube 直播；Qualcomm 提供场地，Cloudflare 提供披萨。活动包含 5–7 分钟闪电演讲，以及 Python 类和 AI 数据主题分享。
+本次为 San Diego Python 用户组（SDPy）月度聚会，由 David F. 和 Diane C. 主办，9 月 24 日周四 19:00–21:00 PDT 在 Qualcomm Building Q 举行，并同步 YouTube 直播；Qualcomm 提供场地，Cloudflare 提供披萨。活动包含 5–7 分钟闪电演讲，以及 Python 类和 AI 数据主题分享。
 
-- 📅 时间：9月24日周四，19:00–21:00 PDT
+- 📅 时间：9 月 24 日周四，19:00–21:00 PDT
 - 📍 地点：Qualcomm Building Q，6455 Lusk Blvd, San Diego, CA
 - 🎙️ 主办：San Diego Python Users Group，David F. 和 Diane C.
 - 🏢 赞助：Qualcomm 提供场地；Cloudflare 提供披萨；Ansir Innovation Center 曾承办聚会
@@ -612,13 +612,13 @@ PyData Helsinki 将于 9 月 22 日（星期二）17:30–20:30 EEST 在赫尔�
 
 **原文标题**: [PyData Southampton - 26th Meetup, Tue, Sep 22, 2026, 7:00 PM   | Meetup](https://www.meetup.com/pydata-southampton/events/316271029/?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-763-september-17-2026)
 
-PyData Southampton 第26次聚会将于9月22日星期二19:00–21:00 BST在 Network Eagle Lab 举行，场地已变更。活动由 Sam M. 等5人主办，包含两场主演讲、闪电演讲、茶歇和会后交流，需提前 RSVP 并遵守入场与行为准则。
+PyData Southampton 第 26 次聚会将于 9 月 22 日星期二 19:00–21:00 BST 在 Network Eagle Lab 举行，场地已变更。活动由 Sam M. 等 5 人主办，包含两场主演讲、闪电演讲、茶歇和会后交流，需提前 RSVP 并遵守入场与行为准则。
 
-- 🗓️ 时间：9月22日星期二，19:00–21:00 BST；18:30 开门。
+- 🗓️ 时间：9 月 22 日星期二，19:00–21:00 BST；18:30 开门。
 - 📍 地点：Network Eagle Lab，Portland Terrace, Southampton, SO14 7SJ，注意场地已更换。
-- 👥 主办：PyData Southampton，Sam M. 和其他4人。
-- 🎤 主演讲1：Hugh Evans 分享用 Python 和网络爬虫从 Meetup 数据绘制 PyData 社区地图，涉及地理编码、Folium 地图制作，并呼吁支持本地 PyData 小组。
-- 🤖 主演讲2：Damian Bemben 介绍“City Dreams”装置，结合语音识别、3D 捕捉和生成式 AI，让公众描绘并生成理想中的南安普顿城市愿景。
+- 👥 主办：PyData Southampton，Sam M. 和其他 4 人。
+- 🎤 主演讲 1：Hugh Evans 分享用 Python 和网络爬虫从 Meetup 数据绘制 PyData 社区地图，涉及地理编码、Folium 地图制作，并呼吁支持本地 PyData 小组。
+- 🤖 主演讲 2：Damian Bemben 介绍“City Dreams”装置，结合语音识别、3D 捕捉和生成式 AI，让公众描绘并生成理想中的南安普顿城市愿景。
 - ⚡ 闪电演讲：两场，讲者与主题待定（TBA）。
 - 🪪 入场要求：建筑安保要求有效带照片身份证件；Meetup 资料必须使用名/首名和姓氏，否则无法列入宾客名单。
 - ✅ RSVP：状态为“You're going”即可入场，无需额外确认；如不能参加请尽快取消，以便把名额让给候补者。
@@ -686,7 +686,7 @@ PyData Leeds 将第四次参加 Leeds Digital Festival，于 2026 年 9 月 22 �
 - 👥 主办：由 Edward H. 与 Adam E. 主持，PyData Leeds 组织。
 - 🤝 目的：连接数据与软件工程爱好者，进行社交、学习和交流，融入 Leeds 科技生态与数字文化节。
 - 🗣️ 议程：17:30 到达、社交与茶点；18:10 欢迎与破冰；18:30 活动与演讲；20:00 收尾与饮品。
-- 🎤 演讲：Lee Crossley 分享 “The Cloud won't die. It's monopoly on intelligence might”。
+- 🎤 演讲：Lee Crossley 分享“The Cloud won't die. It's monopoly on intelligence might”。
 - 🧠 核心观点：不要默认使用云；将每个任务路由到能通过验收测试的最小模型，考虑信任边界，有证据支持时再用云。
 - 🧪 案例：Overshow 内 4-bit Gemma 重打包、128 GB M5 Max 上运行 27B Qwen，以及消耗超 1400 万 tokens 仍引入 4 个回归的 agentic 实验。
 - 🗳️ 互动：包含快速投票、现场投票，并尽量留 10 分钟问答讨论。
@@ -699,9 +699,9 @@ PyData Leeds 将第四次参加 Leeds Digital Festival，于 2026 年 9 月 22 �
 
 **原文标题**: [19th PyData Lisbon Meetup: Special on AI Infrastructure, Tue, Sep 22, 2026, 6:00 PM   | Meetup](https://www.meetup.com/pydata-lisbon/events/316579913/?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-763-september-17-2026)
 
-第19届 PyData Lisbon Meetup 将推出“AI 基础设施”特别场，并作为 Lisbon AI Week 的一部分举行。活动包含专题讨论、演讲、披萨饮料与社交，适合关注 LLM 部署、推理优化与自托管模型的开发者参加。
+第 19 届 PyData Lisbon Meetup 将推出“AI 基础设施”特别场，并作为 Lisbon AI Week 的一部分举行。活动包含专题讨论、演讲、披萨饮料与社交，适合关注 LLM 部署、推理优化与自托管模型的开发者参加。
 
-- 📅 时间：9月22日（周二）18:00–22:00 WEST
+- 📅 时间：9 月 22 日（周二）18:00–22:00 WEST
 - 📍 地点：IDEA Spaces - Saldanha，Av. Defensores de Chaves 4, 1000-117 Lisboa, Portugal
 - 🎯 主题：AI Infrastructure，聚焦 AI 基础设施与 LLM 技术栈
 - 🧑‍💻 主办与主持：PyData Lisbon，主持人 Telmo F.
