@@ -31,7 +31,7 @@ PostHog 团队总结编写 agent skills 的经验：agent 每次对话都会“�
 - 🎯 技能不是纯代码：应精确目标、完成标准、约束和不可推导上下文；对步骤、失败处理、运行时细节保持模糊，避免过度规定。
 - 🔗 防止腐烂：稳定结构手写，易变内容引用单一事实源（如 docs/URL）；从稳定基础重新生成，而不是不断打补丁。
 - 🏭 可规模化：PostHog 用 context mill 做来源、组装、交付流水线，生成 120+ 个集成与使用技能。
-- ❓ 多问少命令：问 agent “能帮什么/需要什么/上次运行如何改进”，利用它掌握的工具体系与失败信息提升技能。
+- ❓ 多问少命令：问 agent“能帮什么/需要什么/上次运行如何改进”，利用它掌握的工具体系与失败信息提升技能。
 - 🧹 不是一切都值得技能：优先重复、默认做不好、需模型外上下文、可自动运行的任务；先用 agent 试做，避免不必要的上下文与维护成本。
 - 📝 实践提示：可让 agent 扫描过去 30 天工作，找出值得打包的重复手动流程并生成候选清单。
 
@@ -58,7 +58,7 @@ PostHog 团队总结编写 agent skills 的经验：agent 每次对话都会“�
 
 **原文标题**: [Next.js Security Update for Upstream Vulnerabilities | Next.js](https://nextjs.org/blog/nextjs-security-update-october-14-2026)
 
-2026年10月14日，Next.js 发布安全更新，修复来自上游依赖的多个漏洞，涉及远程代码执行和拒绝服务风险。官方已在 v16.4.1（Active LTS）和 v15.5.28（Maintenance LTS）中提供修复，建议所有用户尽快升级依赖。
+2026 年 10 月 14 日，Next.js 发布安全更新，修复来自上游依赖的多个漏洞，涉及远程代码执行和拒绝服务风险。官方已在 v16.4.1（Active LTS）和 v15.5.28（Maintenance LTS）中提供修复，建议所有用户尽快升级依赖。
 
 - 🚨 **严重漏洞一**：使用 App Router 与 Cache Components 时，若 `use cache` 函数返回多个 typed arrays，可能导致未认证远程代码执行；无已知缓解措施，应立即升级。
 - 🖼️ **严重漏洞二**：Image Optimization API 处理 SVG 时，因上游库内存相关问题，在 glibc Linux 上可能导致远程代码执行；临时缓解措施是确保 Next.js 使用的 `sharp` 版本为 0.35.5 或更高。
@@ -78,9 +78,9 @@ React Foundation 将在伦敦 Meta Kings Cross 举办 React & React Native 社�
 - 📍 活动地点：Meta Kings Cross，地址为 11-22 Canal Reach, London N1C 4DB, UK。
 - 🤝 主办与合作方：React Foundation、Expo、React Native London、Software Mansion、Callstack、Amazon Developer 等；合作伙伴还包括 Meta、Microsoft、Vercel、Huawei。
 - 🍕 18:00 开门，18:00-18:45 提供披萨与饮品。
-- 🎤 18:45 Tomasz Zawadzki（Software Mansion）分享 “What a Time to Be Alive!”
-- 🎤 19:10 Szymon Chmal（Callstack）分享 “The React Native Software Factory”；19:10-19:20 休息。
-- 🎤 19:20 Tomasz Sapeta（Expo）分享 “Expo Modules 2.0”。
+- 🎤 18:45 Tomasz Zawadzki（Software Mansion）分享“What a Time to Be Alive!”
+- 🎤 19:10 Szymon Chmal（Callstack）分享“The React Native Software Factory”；19:10-19:20 休息。
+- 🎤 19:20 Tomasz Sapeta（Expo）分享“Expo Modules 2.0”。
 - 🌐 19:40 开始 Networking 社交环节。
 - 👥 已有 65 人报名参加，包括 Luke Howsam、Ayo Ahmed 等；需在活动页面注册加入。
 
@@ -90,18 +90,18 @@ React Foundation 将在伦敦 Meta Kings Cross 举办 React & React Native 社�
 
 **原文标题**: [This Week In React #300: Next.js, TanStack, React Foundation, Compiler, Ink, Streamdown, Shaders | Skia, Live Activities, Lucent, Voltra, Apex, Coinbase, Stim Desktop, Unistyles | TC39, e2e, Effect, Remix, h3, SvelteKit, TypeScript | This Week In React](https://thisweekinreact.com/newsletter/300#react:~:text=React%20Foundation%20news)
 
-本期《This Week In React》迎来第300期，重点覆盖 Next.js 16.4 与 TanStack 多个 1.0 发布、React Foundation 最新动态，以及 React Native 生态的重大变化：Skia 3.0 发布，Shopify 与 Coinbase 相继宣布迁离 React Native；同时还有 e2e、Effect 4.0、Remix v3 等框架与工具更新。
+本期《This Week In React》迎来第 300 期，重点覆盖 Next.js 16.4 与 TanStack 多个 1.0 发布、React Foundation 最新动态，以及 React Native 生态的重大变化：Skia 3.0 发布，Shopify 与 Coinbase 相继宣布迁离 React Native；同时还有 e2e、Effect 4.0、Remix v3 等框架与工具更新。
 
-- 🎉 第300期里程碑：感谢读者长期支持；本周重点包括 Next.js、TanStack 大版本、React Foundation 动态和移动端重大发布。
+- 🎉 第 300 期里程碑：感谢读者长期支持；本周重点包括 Next.js、TanStack 大版本、React Foundation 动态和移动端重大发布。
 - ⚛️ Next.js 16.4：Cache Components 日趋成熟并推荐所有应用使用，create-next-app 默认启用，v17 将成为默认；新增 Partial Prefetching、ensureStatic、navigation() 预取控制及 Agent 辅助升级；React 19.3 带来稳定 View Transitions、Fragment Refs 和 browser() API。
 - 📊 TanStack：Charts 1.0 正式稳定，主打小体积、快速更新、可组合和类型安全；Markdown + Highlight 1.0 提供轻量快速的 Markdown 渲染与语法高亮。
-- 🏛️ React Foundation：Barbara Markiewicz 出任社区总监；11月10–12日将在伦敦举办 Contributors Summit，邀请制但生态贡献者可自荐；11月4–5日加纳 React Conf 被文中称为首个由基金会官方组织的 React 大会。
+- 🏛️ React Foundation：Barbara Markiewicz 出任社区总监；11 月 10–12 日将在伦敦举办 Contributors Summit，邀请制但生态贡献者可自荐；11 月 4–5 日加纳 React Conf 被文中称为首个由基金会官方组织的 React 大会。
 - 🔐 TanStack Start 安全更新：修复 CVE-2026-102989，涉及评分 9.3 的 XSS 漏洞。
 - 📱 React Native Skia 3.0：基于 Skia Graphite 重构，支持默认多线程、与 WebGPU 对称、Three.js 零拷贝互操作、视频/摄像头 GPU 导入和 WebGPU Lottie；Android minSDK 提升至 26，且仅支持 Vulkan。
 - 🚀 Shopify 与 Coinbase 相继宣布迁移离开 React Native；Shopify 仍将在年底前赞助 Skia；相关讨论聚焦新架构迁移不足、双端原生同步变易等趋势。
 - 🧠 Callstack 推出 Apex：面向 React、React Native 和 Next.js 的代理式编码模型，现已正式可用。
 - 🧪 测试与框架：e2e 推出自然语言与确定性 API 混合的代理式端到端测试框架；Effect 4.0 核心重建、无依赖、包体更小并获得长期支持。
-- 🧰 其他发布：Remix v3 首个稳定版及 Remix Jam 2026；h3 2.0、SvelteKit 3.0、pnpm 12.9/12.10；TC39 第116次会议推进 Composites、Iterator 新方法、export defer 等；TypeScript 7.1 迭代计划支持 LSP 等。
+- 🧰 其他发布：Remix v3 首个稳定版及 Remix Jam 2026；h3 2.0、SvelteKit 3.0、pnpm 12.9/12.10；TC39 第 116 次会议推进 Composites、Iterator 新方法、export defer 等；TypeScript 7.1 迭代计划支持 LSP 等。
 - 📦 移动与前端工具更新：Ink 8.0、Streamdown 2.7、Stim Desktop 0.1、Unistyles 3.5.0、Voltra 2.4、Maestro CLI 2.11、Nitro Markdown 0.14 等，覆盖 CLI、AI Markdown 流、设备调试、主题与原生能力。
 
 ---
@@ -260,7 +260,7 @@ Hydrogen 2026-10 已正式发布，核心变化是从专用框架转型为可接
 
 ---
 
-### [2026年10月 - Trace、代码块和 AI 元素 - shadcn/ui](https://ui.shadcn.com/docs/changelog/2026-10-ai-elements)
+### [2026 年 10 月 - Trace、代码块和 AI 元素 - shadcn/ui](https://ui.shadcn.com/docs/changelog/2026-10-ai-elements)
 
 **原文标题**: [October 2026 - Trace, Code Block and AI Elements - shadcn/ui](https://ui.shadcn.com/docs/changelog/2026-10-ai-elements)
 
@@ -287,7 +287,7 @@ Vinext 团队博客发布版本更新、深度解析与工程进展，核心项�
 - 📝 博客内容涵盖发布说明、技术深潜和工程更新，介绍 Vinext 在 Vite 上重建 Next.js API 表面的工作。
 - 🚀 2026-10-20 Vinext 1.3：减少每页请求数、加快冷启动并推出 Worker Previews；支持按路由分组客户端组件、按路由 SSR 预加载、仅哈希构建产物名、使用 path-to-regexp 做 next.config 路由匹配，阅读约 9 分钟。
 - 🛡️ 2026-10-14 Vinext 1.2：public/ 文件中间件可在 Workers 运行、缓存键更严格、生态兼容性更广；支持 Pages ISR 全文档再生和 next/dynamic 对齐，阅读约 6 分钟。
-- ⚡ 2026-10-08 Vinext 1.1：提升构建与开发启动速度；在 Cloudflare 上为 revalidateTag 和 “use cache” 提供后台再验证、压缩 RSC 响应、减少客户端导航时的服务器工作，阅读约 3 分钟。
+- ⚡ 2026-10-08 Vinext 1.1：提升构建与开发启动速度；在 Cloudflare 上为 revalidateTag 和“use cache”提供后台再验证、压缩 RSC 响应、减少客户端导航时的服务器工作，阅读约 3 分钟。
 - ✅ 2026-09-28 Vinext 1.0：稳定 API 与缓存预热；缓存遵循 Next.js 规则、为 Cloudflare Workers 提供持久缓存、类型化 Cloudflare 配置，并支持 OpenTelemetry 追踪，阅读约 3 分钟。
 
 ---
@@ -304,7 +304,7 @@ Mutative 2.0 保持 1.x 的 API，不重命名或删除函数与选项，但通�
 - 🛠️ **补丁行为更可靠**：补丁顺序对齐 Immer，修复排序、Set 变更、`-0`、数组伸缩等场景下的回放问题，并保留 Set 中多个变更。
 - 🔒 **`apply()` 更严格**：拒绝以 `__proto__` 结尾的路径，Set 项只能按索引读取，Map 键不做字符串转换；`mutable: true` 下替换根状态会抛错。
 - 🧊 **自动冻结变化**：启用 `enableAutoFreeze` 后会冻结 Map/Set 实例本身；返回的新状态若含草稿会被搜索处理，`rawReturn()` 可跳过搜索。
-- 📦 **构建更可预测**： bundler 与 Node.js 通过 `process.env.NODE_ENV` 选择开发/生产构建；目标语法升至 ES2018；生产错误使用编码提示。
+- 📦 **构建更可预测**：bundler 与 Node.js 通过 `process.env.NODE_ENV` 选择开发/生产构建；目标语法升至 ES2018；生产错误使用编码提示。
 - 🧪 **开发检查更多**：捕获草稿作 Map 键、非字符串路径键、大量未变更草稿搜索等问题；异步 recipe 类型改为 `Promise<State>`，`apply()` 支持 `enableAutoFreeze` 并返回 `Immutable<State>`。
 - 📉 **存在权衡**：`create()` 单独约 7.9 kB，比 1.3.0 增 2.1 kB；自动冻结下大量字段类实例更新可能慢于 Immer，手写 reducer 多数仍更快。
 - 🔄 **升级注意**：1.3.0 是最后 1.x 版本；需同时用开发/生产构建测试，定义 `NODE_ENV`，更新补丁快照、自动冻结、草稿生命周期、数组 getter 与类型检查相关代码。
@@ -651,7 +651,7 @@ Maestro MCP Server 将 Maestro 的移动端与 Web UI 测试能力接入支持 M
 - ⬆️ Maestro MCP 随 Maestro CLI 捆绑发布，升级 CLI 即升级 MCP；升级后需在编码代理中重连 MCP 或重启代理。
 - 🧰 核心工具包括 `list_devices`、`inspect_screen`、`take_screenshot`、`run`、`cheat_sheet`；其中 `run` 支持内联 YAML、指定 `.yaml` 文件或目录/标签过滤。
 - ☁️ 云相关工具包括 `list_cloud_devices`、`run_on_cloud`、`get_cloud_run_status`，使用前需通过 `maestro login` 或设置 `MAESTRO_CLOUD_API_KEY` 完成 Maestro Cloud 认证。
-- 📚 MCP 是开放标准，采用客户端-服务器架构，通过标准化接口让 LLM 连接外部数据源、工具和服务，传输层使用 JSON-RPC 2.0，支持 stdio、HTTP SSE 或 WebSocket。
+- 📚 MCP 是开放标准，采用客户端 - 服务器架构，通过标准化接口让 LLM 连接外部数据源、工具和服务，传输层使用 JSON-RPC 2.0，支持 stdio、HTTP SSE 或 WebSocket。
 
 ---
 
@@ -810,7 +810,7 @@ react-native-better-pdf 发布 v1.1.0，重点新增“将多个 PDF 作为单�
 - ⚡ iOS 性能优化：搜索高亮不再阻塞主线程，528,449 个匹配时上/下一页从 1.23–1.34 秒降至 10–19 毫秒；5000 页长文档表单读取/编辑/导出保持主线程外，编辑后 `getFormFields` 从 3.24 秒降至 <0.1 毫秒。
 - 🧱 破坏性变更：要求 React Native 0.83+（Expo SDK 55+）；RN 0.81 的 iOS 关闭查看器不释放内存，Expo SDK 54 应用可继续用 1.0.1；`PdfLoadEvent` 新增必需 `sources` 数组。
 - 🔄 行为调整：iOS 在 `onLoad` 中且视图无尺寸时调用 `goToPage`/`goToViewport`/`zoomTo` 会等布局后应用；Android 小数页码四舍五入，`onLoad` 前 `search()` 被忽略，页面渲染失败仅在立即重试也失败时上报。
-- 🧩 Android 稳定性/一致性：`renderPage`、`getOutline`、`getPageSizes` 按调用顺序串行执行，导出使用独立线程；关闭/替换文档时排队调用以 “The document was closed” 拒绝；畸形文件解析有时间上限，超时整体失败。
+- 🧩 Android 稳定性/一致性：`renderPage`、`getOutline`、`getPageSizes` 按调用顺序串行执行，导出使用独立线程；关闭/替换文档时排队调用以“The document was closed”拒绝；畸形文件解析有时间上限，超时整体失败。
 - 🛡️ 其他修复：导出到下载缓存目录会被拒绝；iOS 打印在视图关闭或 `source` 变化时拒绝；AES-128 文档打印不再二次询问密码；iOS 受保护文档填写导出会重新加密；负值/无限 `pageSpacing` 回退 8；iOS `getStats` 不可测计数返回 -1；iOS 17+ 保留已有 `%XX` 转义。
 
 ---
@@ -910,7 +910,7 @@ Chrome 在 CrUX 中推出实验性“软导航”Core Web Vitals 指标，将单
 
 **原文标题**: [PHP: News Archive - 2026](https://www.php.net/archive/2026.php#2026-10-21-5)
 
-2026年10月21日，PHP 发布安全公告，警告两个可导致未认证远程代码执行的关键漏洞，影响所有处理 Web 请求的 PHP 安装；官方强烈建议立即升级至 PHP 8.5.12、8.4.27、8.3.36 或 8.2.35。
+2026 年 10 月 21 日，PHP 发布安全公告，警告两个可导致未认证远程代码执行的关键漏洞，影响所有处理 Web 请求的 PHP 安装；官方强烈建议立即升级至 PHP 8.5.12、8.4.27、8.3.36 或 8.2.35。
 
 - 🚨 **风险范围**：所有处理 Web 请求的 PHP 安装均受影响，包括 PHP-FPM、Apache mod_php、php-cgi、FrankenPHP 和 LiteSpeed；mod_php 风险最高，已演示未认证请求可在应用代码运行前触发攻击。
 - 🛠️ **漏洞一 CVE-2026-109618**：内存耗尽（OOM）处理可能在内部请求数据仅部分初始化时中断 PHP，随后请求清理可能将无效数据当作有效数据处理，导致 RCE。
@@ -1025,7 +1025,7 @@ Cloudflare 与 VoidZero 及 Max Schwenk 合作推出 tsrs，将 TypeScript 编�
 - 📐 移植规则强调“同一切”：同算法、函数结构、求值顺序和诊断，并固定上游提交；每个 Go package 对应一个 Rust crate，先定义函数签名，再并行实现。
 - 🧪 测试即规范：TypeScript 团队留下 15,197 个 conformance 用例，帮助团队对 Rust 移植的正确性建立信心。
 - 🧠 内存优化包括停止复制源文本、惰性成员解析、更小对象布局、指针压缩、释放被检查叶子文件、重复推断 memo 和 work stealing。
-- ⚖️ 优化准入门槛严格：单线程指令至少降 1%、墙钟至少降 2%或峰值内存至少降 5%，且输出必须逐字节一致。
+- ⚖️ 优化准入门槛严格：单线程指令至少降 1%、墙钟至少降 2% 或峰值内存至少降 5%，且输出必须逐字节一致。
 - 🧵 并行检查按导入模块分组以减少重复库类型，并支持空闲 checker 从最忙 checker 取任务；默认保证确定性，另设 Go 兼容模式和 CI determinism gate。
 - ✅ 正确性验证覆盖 TypeScript conformance suite、故障注入、shadow mode 缓存校验、Olympus CI 双编译器对比，以及 Miri 检查 unsafe arena 代码。
 - 📉 Olympus 基准：4 checkers 从 61.4 秒/36.0 GiB 降至 8.75 秒/6.1 GiB（7.0 倍更快、5.9 倍更省内存）；8 checkers 从 56.6 秒/49.8 GiB 降至 5.8 秒/7.5 GiB（9.8 倍、6.6 倍）；默认 16 checkers 为 4.24 秒/9.5 GiB。
