@@ -7,11 +7,11 @@ from dotenv import load_dotenv
 # 加载.env 文件中的环境变量
 load_dotenv()
 
-# 初始化 OpenAI 客户端，指向 DeepSeek API
+# 初始化 OpenAI 兼容客户端，支持 DeepSeek 或自定义网关。
 client = OpenAI(api_key=os.getenv("DEEPSEEK_API_KEY"), base_url=os.getenv("DEEPSEEK_BASE_URL"))
 
-# 当前 API 网关仅支持 deepseek-v4-pro 与 deepseek-v4-flash；周刊抓取优先使用更快的 Flash 模型。
-DEEPSEEK_MODEL = "deepseek-v4-flash"
+# 按网关配置模型；未配置时保持原有 DeepSeek 默认值。
+DEEPSEEK_MODEL = os.getenv("DEEPSEEK_MODEL", "").strip() or "deepseek-v4-flash"
 
 def translate_title_to_chinese(title):
     """使用 DeepSeek API 将标题翻译为中文"""

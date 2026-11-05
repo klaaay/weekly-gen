@@ -37,14 +37,17 @@ pip install requests beautifulsoup4 openai python-dotenv
 创建 `.env` 文件并配置以下环境变量：
 
 ```env
-# DeepSeek API 配置
-DEEPSEEK_API_KEY=your_deepseek_api_key_here
-DEEPSEEK_BASE_URL=https://api.deepseek.com
+# OpenAI 兼容网关配置（通用示例）
+DEEPSEEK_API_KEY=your_gateway_token_here
+DEEPSEEK_BASE_URL=https://gateway.example/v1
+DEEPSEEK_MODEL=custom-model
 
 # Telegram 完成通知
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
 TELEGRAM_CHAT_ID=your_telegram_chat_id_here
 ```
+
+`DEEPSEEK_BASE_URL` 填 API 基础地址，不包含 `/chat/completions`；`DEEPSEEK_MODEL` 填网关提供的模型名称。未配置模型时保持原有 `deepseek-v4-flash` 默认值。修改 `.env` 后，Docker 部署需执行 `docker compose up -d --build --force-recreate weekly-gen`，以重新加载容器环境；仅重启进程不会刷新 Compose 注入的环境变量。
 
 ## 使用方法
 
