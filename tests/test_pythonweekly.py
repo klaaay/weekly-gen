@@ -27,7 +27,8 @@ def test_parse_latest_issue_info_picks_first_textual_archive_link():
     assert link_url == "p/python-weekly-issue-740-april-9-2026"
 
 
-def test_collect_issue_article_links_only_keeps_h6_content_links():
+def test_collect_issue_article_links_keeps_h5_and_h6_content_links():
+    # Issue 770 起标题层级由 h6 变为 h5，两种都要能识别
     soup = BeautifulSoup(
         """
         <html>
@@ -37,14 +38,18 @@ def test_collect_issue_article_links_only_keeps_h6_content_links():
             <h6>
               <a href="https://example.com/article-1">Article One</a>
             </h6>
-            <h6>
-              <a href="https://www.pythonweekly.com/internal">Internal Link</a>
-            </h6>
-            <h6>
+            <h5>
               <a href="https://example.com/article-2">Article Two</a>
-            </h6>
-            <h6>
+            </h5>
+            <h5>Section Heading Without Link</h5>
+            <h5>
+              <a href="https://www.pythonweekly.com/internal">Internal Link</a>
+            </h5>
+            <h5>
               <a href="mailto:test@example.com">Mail</a>
+            </h5>
+            <h6>
+              <a href="https://example.com/article-3">Article Three</a>
             </h6>
           </body>
         </html>
@@ -54,8 +59,13 @@ def test_collect_issue_article_links_only_keeps_h6_content_links():
 
     links = collect_issue_article_links(soup)
 
-    assert [link.get_text(strip=True) for link in links] == ["Article One", "Article Two"]
+    assert [link.get_text(strip=True) for link in links] == [
+        "Article One",
+        "Article Two",
+        "Article Three",
+    ]
     assert [link["href"] for link in links] == [
         "https://example.com/article-1",
         "https://example.com/article-2",
+        "https://example.com/article-3",
     ]

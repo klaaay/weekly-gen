@@ -55,11 +55,16 @@ def parse_latest_issue_info(soup: BeautifulSoup):
 
 
 def collect_issue_article_links(soup: BeautifulSoup):
-    """只保留正文区块中的内容链接，排除分享、订阅和站内链接。"""
+    """只保留正文区块中的内容链接，排除分享、订阅和站内链接。
+
+    文章标题的标题级别由 beehiiv 编辑器决定，并非固定值：
+    截至 Issue 769 均为 h6，Issue 770 起改为 h5。这里同时扫描两级，
+    避免再次因编辑器换级导致「抓到 0 条链接却报成功」。
+    """
     collected_links = []
     seen_urls = set()
 
-    for heading in soup.find_all("h6"):
+    for heading in soup.find_all(["h5", "h6"]):
         link = heading.find("a", href=True)
         if not link:
             continue
