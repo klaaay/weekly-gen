@@ -1,4 +1,4 @@
-### [赫利奥波利斯中心——2026年Python性能分析现状](https://p403n1x87.github.io/the-state-of-python-profiling-in-2026.html?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-770-november-5-2026)
+### [赫利奥波利斯中心——2026 年 Python 性能分析现状](https://p403n1x87.github.io/the-state-of-python-profiling-in-2026.html?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-770-november-5-2026)
 
 **原文标题**: [The Hub of Heliopolis - The State of Python Profiling in 2026](https://p403n1x87.github.io/the-state-of-python-profiling-in-2026.html?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-770-november-5-2026)
 
@@ -126,11 +126,11 @@ overview summary
 
 ---
 
-### [基于NFL体测数据的Sklearn线性回归（分步详解）](https://my-space.io/blog/sklearn-linear-regression/?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-770-november-5-2026)
+### [基于 NFL 体测数据的 Sklearn 线性回归（分步详解）](https://my-space.io/blog/sklearn-linear-regression/?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-770-november-5-2026)
 
 **原文标题**: [Sklearn Linear Regression on NFL Combine Data (Step by Step)](https://my-space.io/blog/sklearn-linear-regression/?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-770-november-5-2026)
 
-这篇教程以 NFL Combine 数据为例，分 12 步演示 scikit-learn 线性回归从数据加载、清洗、特征工程、训练测试拆分、Pipeline、交叉验证到新秀预测的完整流程；最终“体重+身高+位置”模型在未见数据上达到 R²=0.809，并有意复现数据泄漏与错误缩放两个课堂错误，强调基线比较和防泄漏。
+这篇教程以 NFL Combine 数据为例，分 12 步演示 scikit-learn 线性回归从数据加载、清洗、特征工程、训练测试拆分、Pipeline、交叉验证到新秀预测的完整流程；最终“体重 + 身高 + 位置”模型在未见数据上达到 R²=0.809，并有意复现数据泄漏与错误缩放两个课堂错误，强调基线比较和防泄漏。
 
 - 📈 核心方法：`LinearRegression().fit(X, y)` 训练、`predict()` 预测；模型用最小二乘拟合直线或平面，并可读取 `coef_` 与 `intercept_`。
 - 🏈 任务与数据：用 nflverse 的 NFL Combine CSV 预测 40 码冲刺时间；原始数据 8,968 行×18 列，清洗缺失值并去掉 K/P/LS 后剩 7,826 名球员。
@@ -148,7 +148,7 @@ overview summary
 
 ---
 
-### [用Python打造你自己的Jarvis（实时语音助手）- YouTube](https://www.youtube.com/watch?v=hhym040zsBI&utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-770-november-5-2026)
+### [用 Python 打造你自己的 Jarvis（实时语音助手）- YouTube](https://www.youtube.com/watch?v=hhym040zsBI&utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-770-november-5-2026)
 
 **原文标题**: [Build Your Own Jarvis in Python (Real-Time Voice Assistant) - YouTube](https://www.youtube.com/watch?v=hhym040zsBI&utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-770-november-5-2026)
 
@@ -382,7 +382,7 @@ Django 团队于 2026 年 11 月 3 日发布 Django 6.1.3、6.0.10 和 5.2.19 �
 
 ---
 
-### [Python 3.15 有哪些新特性，2026年11月12日星期四 下午6:30 | Meetup](https://www.meetup.com/madison-python/events/317147553/?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-770-november-5-2026)
+### [Python 3.15 有哪些新特性，2026 年 11 月 12 日星期四 下午 6:30 | Meetup](https://www.meetup.com/madison-python/events/317147553/?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-770-november-5-2026)
 
 **原文标题**: [What's New in Python 3.15, Thu, Nov 12, 2026, 6:30 PM   | Meetup](https://www.meetup.com/madison-python/events/317147553/?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-770-november-5-2026)
 
@@ -398,7 +398,7 @@ Django 团队于 2026 年 11 月 3 日发布 Django 6.1.3、6.0.10 和 5.2.19 �
 
 ---
 
-### [AI系统如何泄露其构建所依据的数据，2026](https://www.meetup.com/charlottesvilledatascience/events/317269604/?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-770-november-5-2026)
+### [AI 系统如何泄露其构建所依据的数据，2026](https://www.meetup.com/charlottesvilledatascience/events/317269604/?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-770-november-5-2026)
 
 **原文标题**: [How AI Systems Leak the Data They're Built On, Wed, Nov 11, 2026, 6:00 PM   | Meetup](https://www.meetup.com/charlottesvilledatascience/events/317269604/?utm_source=www.pythonweekly.com&utm_medium=newsletter&utm_campaign=python-weekly-issue-770-november-5-2026)
 
