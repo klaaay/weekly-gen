@@ -123,7 +123,7 @@ Math.sumPrecise() 是 JavaScript 中用于更精确求和数字可迭代对象�
 概述：Node.js 主仓库的 PR #66601 将 V8 升级至 15.6.75.13，为 Node.js 27 做准备，涉及 ABI/模块版本、Rust 依赖、多平台编译修复及多项 V8 cherry-pick，最终已合入。
 
 - 🚀 由 Joyee Cheung 发起，目标是将 V8 从 14.6 更新到 15.6，包含 13 个提交，并标记为 semver-major。
-- 🧩 核心变更包括升级 V8 至 15.6.75.13、同步更新 Rust crates、将 embedder string 重置为 “-node.0”。
+- 🧩 核心变更包括升级 V8 至 15.6.75.13、同步更新 Rust crates、将 embedder string 重置为“-node.0”。
 - 🔢 由于 V8 大版本通常存在 API/ABI 不兼容，NODE_MODULE_VERSION 更新为 153。
 - 🛠️ 包含多个 V8 cherry-pick，用于修复 illumos 的 madvise/sandbox、MSVC ABI/STL、GCC 16 arm64 编译、Torque 对象布局断言等问题。
 - 🧪 CI 与 Codecov 通过，覆盖率约 90.48%；Loong64 测试确认修复 #66633 的构建失败。
@@ -304,7 +304,7 @@ Node.js 27 Alpha 将 V8 从 14.6 升级到 15.6，带来一批默认启用的 Ja
 
 ---
 
-### [2026年10月安全版本发布 · Express.js](https://expressjs.com/en/blog/2026-10-31-security-releases/)
+### [2026 年 10 月安全版本发布 · Express.js](https://expressjs.com/en/blog/2026-10-31-security-releases/)
 
 **原文标题**: [October 2026 Security Releases · Express.js](https://expressjs.com/en/blog/2026-10-31-security-releases/)
 
@@ -721,26 +721,26 @@ Fingerprint 的设备智能方案旨在阻止 AI token 欺诈：攻击者通过�
 
 ---
 
-### [加拿大11月1日时间变更后时间错误：Java、Go、PHP、Node.js、Kubernetes CronJobs 和 MySQL 仍差一小时，以及经过测试的修复方案](https://cybernative.ai/guides/canada-time-zone-change-2026-runtimes/?utm_source=nodeweekly&utm_medium=classified&utm_campaign=paid1-canada-node)
+### [加拿大 11 月 1 日时间变更后时间错误：Java、Go、PHP、Node.js、Kubernetes CronJobs 和 MySQL 仍差一小时，以及经过测试的修复方案](https://cybernative.ai/guides/canada-time-zone-change-2026-runtimes/?utm_source=nodeweekly&utm_medium=classified&utm_campaign=paid1-canada-node)
 
 **原文标题**: [Wrong time after Canada's November 1 time change: Java, Go, PHP, Node.js, Kubernetes CronJobs and MySQL still an hour off, and tested fixes — CyberNative](https://cybernative.ai/guides/canada-time-zone-change-2026-runtimes/?utm_source=nodeweekly&utm_medium=classified&utm_campaign=paid1-canada-node)
 
-2026年11月1日02:00起，加拿大不列颠哥伦比亚省、阿尔伯塔省、西北地区和曼尼托巴省停止季节性调钟；使用旧时区规则的软件会把温哥华、埃德蒙顿、伊努维克、温尼伯的时间显示慢1小时。核心修复是 IANA 时区数据库 2026e，但许多运行时自带时区数据，更新操作系统并不够，且已运行进程可能需要重启。
+2026 年 11 月 1 日 02:00 起，加拿大不列颠哥伦比亚省、阿尔伯塔省、西北地区和曼尼托巴省停止季节性调钟；使用旧时区规则的软件会把温哥华、埃德蒙顿、伊努维克、温尼伯的时间显示慢 1 小时。核心修复是 IANA 时区数据库 2026e，但许多运行时自带时区数据，更新操作系统并不够，且已运行进程可能需要重启。
 
-- 🕒 **变更范围**：11月1日02:00后，旧数据会让卡尔加里、埃德蒙顿、伊努维克、温尼伯慢1小时；比2026年4月更旧的数据还会弄错温哥华。
+- 🕒 **变更范围**：11 月 1 日 02:00 后，旧数据会让卡尔加里、埃德蒙顿、伊努维克、温尼伯慢 1 小时；比 2026 年 4 月更旧的数据还会弄错温哥华。
 - 🧭 **版本对应**：2026b 修不列颠哥伦比亚省，2026c 修阿尔伯塔省，2026d 修伊努维克，2026e 修温尼伯；目标版本是 2026e 或更新。
 - ⚠️ **仍可能出错**：Java/Temurin、PHP 8.2/8.3、Go 内置数据、旧版 Node.js、Rust chrono-tz、Kubernetes CronJob、MySQL/MariaDB 命名时区、Windows 新时区映射等。
-- ☕ **Java 修复**：Temurin 8/11 及部分 17/镜像仍带旧数据；可替换 `tzdb.dat`。Temurin 17.0.21、21.0.13、25.0.5 和 Corretto 10月版、Debian 12 的 openjdk-17 已带 2026e。
+- ☕ **Java 修复**：Temurin 8/11 及部分 17/镜像仍带旧数据；可替换 `tzdb.dat`。Temurin 17.0.21、21.0.13、25.0.5 和 Corretto 10 月版、Debian 12 的 openjdk-17 已带 2026e。
 - 🐘 **PHP 修复**：8.3.36 和 8.2.35 不会在这些分支修复；用 PECL `timezonedb-2026.5`。PHP 8.4.27 和 8.5.12 已带 2026e。
-- 🐹 **Go 修复**：Go 1.27.3 内置 2026c，正式修复要到 Go 1.28（2027年2月）；scratch 和 `static-debian12` 镜像需注入当前 zoneinfo，当前 distroless static 镜像已修。
+- 🐹 **Go 修复**：Go 1.27.3 内置 2026c，正式修复要到 Go 1.28（2027 年 2 月）；scratch 和 `static-debian12` 镜像需注入当前 zoneinfo，当前 distroless static 镜像已修。
 - 🟢 **Node.js 修复**：官方 24.22.1 和 22.23.4 已带 2026e；旧版或发行版包可用 `ICU_TIMEZONE_FILES_DIR` 指向四个 2026e `.res` 文件，注意文件权限。
 - 🦀 **Rust 修复**：chrono-tz 0.10.4 仍是 2025b，且项目已软弃用；jiff 在 Unix 上读系统 zoneinfo，并自带 2026e 备用数据。
 - ☸️ **Kubernetes 修复**：设置 `timeZone` 的 CronJob 由 `kube-controller-manager` 镜像决定，支持版本多为 2026b；可挂载 2026e zoneinfo，或改用 `Etc/UTC` 并按 UTC 写计划。
 - 🐬 **MySQL/MariaDB 修复**：命名时区表只初始化一次，升级或更新 OS `tzdata` 不会刷新；用 `mysql_tzinfo_to_sql` / `mariadb-tzinfo-to-sql` 载入 2026e 并重启服务器。
 - 🪟 **Windows 修复**：新增 `British Columbia Standard Time`、`Alberta Standard Time`、`Manitoba Standard Time`；自动时区会迁移，手动设置需用 `Set-TimeZone`，映射表需 CLDR 49、ICU 79.1、TimeZoneConverter 8.0.0、tzlocal 5.4.5。
-- 🐳 **基础镜像**：Ubuntu 22.04/24.04/26.04 于10月14日、Debian 13 于10月22日、Debian 12 于10月23日、Amazon Linux 2023 release 2023.12.20261013 已带 2026e；安装 `tzdata` 后要重启服务。
+- 🐳 **基础镜像**：Ubuntu 22.04/24.04/26.04 于 10 月 14 日、Debian 13 于 10 月 22 日、Debian 12 于 10 月 23 日、Amazon Linux 2023 release 2023.12.20261013 已带 2026e；安装 `tzdata` 后要重启服务。
 - ✅ **检查方法**：Java 查 `tzdb.dat`；PHP 查 `timezone_version_get()` ≥ 2026.5；Node 查 `process.versions.tz` ≥ 2026e；2026-12-15 偏移应为 Edmonton `-06:00`、Inuvik `-06:00`、Winnipeg `-05:00`。
-- 💼 **付费检查**：CyberNative 提供每镜像/技术栈 99 美元的检查，邮件 `hello@cybernative.ai`，主题 “Canada check”，结果交付后付款。
+- 💼 **付费检查**：CyberNative 提供每镜像/技术栈 99 美元的检查，邮件 `hello@cybernative.ai`，主题“Canada check”，结果交付后付款。
 
 ---
 
