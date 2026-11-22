@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 import os
 import re
+from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
+from xml.etree import ElementTree
 
 import requests
 from bs4 import BeautifulSoup
@@ -21,6 +23,8 @@ load_dotenv()
 
 BASE_URL = "https://tailwindweekly.com"
 ARCHIVE_URL = f"{BASE_URL}/"
+RSS_URL = f"{BASE_URL}/rss/"
+RSS_CONTENT = "{http://purl.org/rss/1.0/modules/content/}encoded"
 SITE_TITLE = "Tailwind Weekly"
 SAFE_TITLE = "tailwindweekly"
 REQUEST_HEADERS = {
@@ -77,6 +81,46 @@ def parse_latest_issue_info(soup: BeautifulSoup):
     issue_title = issue_link.get_text(" ", strip=True)
     link_url = issue_link.get("href", "").strip().lstrip("/")
     return issue_title, link_url
+
+
+def _fetch_weekly_source(url, proxies):
+    try:
+        response = requests.get(url, headers=REQUEST_HEADERS, proxies=proxies, timeout=30)
+    except requests.RequestException as exc:
+        print(f"Tailwind Weekly 来源请求失败：{url}（{type(exc).__name__}）")
+        return None
+
+    if response.status_code != 200 or response.headers.get("CF-Mitigated") == "challenge":
+        print(f"Tailwind Weekly 来源不可用：{url}（HTTP {response.status_code}）")
+        return None
+    return response
+
+
+def _fetch_rss_issue(proxies, link_url=None):
+    """读取 RSS 最新一期，或按网页选出的链接查找同一期正文。"""
+    response = _fetch_weekly_source(RSS_URL, proxies)
+    if response is None:
+        return None
+
+    try:
+        feed = ElementTree.fromstring(response.content)
+    except ElementTree.ParseError:
+        print("Tailwind Weekly RSS 返回了无法解析的 XML")
+        return None
+
+    expected_path = urlparse(link_url).path.strip("/") if link_url else None
+    for item in feed.findall("./channel/item"):
+        title = item.findtext("title", "").strip()
+        if not re.match(r"Tailwind Weekly #\d+\b", title):
+            continue
+        url = urlparse(urljoin(ARCHIVE_URL, item.findtext("link", "").strip()))
+        path = url.path.lstrip("/")
+        if url.hostname not in {"tailwindweekly.com", "www.tailwindweekly.com"} or not path:
+            continue
+        if expected_path is not None and path.rstrip("/") != expected_path:
+            continue
+        return title, path, item.findtext(RSS_CONTENT, "")
+    return None
 
 
 def _normalized_url_for_dedupe(url: str) -> str:
@@ -203,49 +247,51 @@ def fetch_page_content(url, headers, proxies):
 
 
 def scrape_tailwindweekly():
-    outputs_dir = "outputs"
-    if not os.path.exists(outputs_dir):
-        os.makedirs(outputs_dir)
-        print(f"创建输出目录：{outputs_dir}")
-
     proxies = get_proxies()
     print(f"Using proxy: {proxy_for_log()}")
-    response = requests.get(ARCHIVE_URL, headers=REQUEST_HEADERS, proxies=proxies, timeout=30)
-
-    if response.status_code != 200:
-        print(f"Failed to retrieve the page. Status code: {response.status_code}")
-        return
-
-    soup = BeautifulSoup(response.text, "html.parser")
-    issue_title, link_url = parse_latest_issue_info(soup)
+    response = _fetch_weekly_source(ARCHIVE_URL, proxies)
+    issue_title, link_url = (None, None)
+    rss_issue = None
+    if response is not None:
+        issue_title, link_url = parse_latest_issue_info(BeautifulSoup(response.text, "html.parser"))
 
     if not link_url:
-        print("No issue links matching the pattern found on the page.")
-        return
+        print("Tailwind Weekly 首页未能定位最新一期，改用官方 RSS")
+        rss_issue = _fetch_rss_issue(proxies)
+        if rss_issue is None:
+            raise RuntimeError("首页和 RSS 均未能定位 Tailwind Weekly 最新一期")
+        issue_title, link_url, _ = rss_issue
 
     print(f"Title: {SITE_TITLE}\n")
     print(f"Found issue link: {issue_title} - {link_url}")
 
-    script_name = os.path.basename(__file__).replace(".py", "")
-    if check_and_skip_if_same_issue(script_name, link_url, BASE_URL):
-        return
-
-    issue_info = create_issue_info(issue_title, link_url, BASE_URL)
-    update_last_run_info(script_name, issue_info)
-
     safe_issue_title = re.sub(r"[^\w\s-]", "", issue_title).strip().replace(" ", "_")
     summary_file = f"{SAFE_TITLE}_{safe_issue_title}_summary.md"
-    issue_url = urljoin(f"{BASE_URL}/", link_url)
-
-    print(f"Fetching content from: {issue_url}")
-    issue_response = requests.get(issue_url, headers=REQUEST_HEADERS, proxies=proxies, timeout=30)
-    if issue_response.status_code != 200:
-        print(f"Failed to retrieve the linked page. Status code: {issue_response.status_code}")
+    existing_summaries = Path("outputs").glob(f"????-??-??_{SAFE_TITLE}_{summary_file}")
+    if any(existing_summaries) and check_and_skip_if_same_issue(SAFE_TITLE, link_url, BASE_URL):
         return
 
-    issue_soup = BeautifulSoup(issue_response.text, "html.parser")
+    issue_soup = BeautifulSoup("", "html.parser")
+    if rss_issue is None:
+        issue_url = urljoin(ARCHIVE_URL, link_url)
+        print(f"Fetching content from: {issue_url}")
+        issue_response = _fetch_weekly_source(issue_url, proxies)
+        if issue_response is not None:
+            issue_soup = BeautifulSoup(issue_response.text, "html.parser")
     pre_filtered_links = collect_issue_article_links(issue_soup)
-    print(f"Found {len(pre_filtered_links)} article links in issue page")
+
+    if not pre_filtered_links:
+        if rss_issue is None:
+            print("Tailwind Weekly 网页正文缺少可用外链，改用官方 RSS 查找同一期")
+            rss_issue = _fetch_rss_issue(proxies, link_url)
+        if rss_issue is not None:
+            issue_soup = BeautifulSoup(rss_issue[2], "html.parser")
+            pre_filtered_links = collect_issue_article_links(issue_soup)
+            print(f"Tailwind Weekly RSS 正文提取到 {len(pre_filtered_links)} 个外链")
+        if not pre_filtered_links:
+            raise RuntimeError(f"Tailwind Weekly 本期正文缺少可用外链：{link_url}")
+    else:
+        print(f"Found {len(pre_filtered_links)} article links in issue page")
 
     extract_links_and_summarize(
         soup=issue_soup,
@@ -257,7 +303,9 @@ def scrape_tailwindweekly():
         fetch_content_func=fetch_page_content,
         pre_filtered_links=pre_filtered_links,
         on_complete=create_telegram_completion_callback("Tailwind Weekly"),
+        atomic_summary=True,
     )
+    update_last_run_info(SAFE_TITLE, create_issue_info(issue_title, link_url, BASE_URL))
 
 
 if __name__ == "__main__":

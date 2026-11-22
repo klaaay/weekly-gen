@@ -100,9 +100,11 @@ def test_empty_pre_filtered_links_do_not_fall_back_to_page_links(
     assert completions == []
 
 
+@pytest.mark.parametrize("atomic_summary", [False, True])
 def test_link_processing_error_does_not_trigger_completion_callback(
     monkeypatch,
     tmp_path,
+    atomic_summary,
 ):
     monkeypatch.chdir(tmp_path)
     soup = BeautifulSoup(
@@ -128,9 +130,12 @@ def test_link_processing_error_does_not_trigger_completion_callback(
             fetch_content_func=fail_on_second_link,
             use_patterns=False,
             on_complete=completions.append,
+            atomic_summary=atomic_summary,
         )
 
     assert completions == []
+    if atomic_summary:
+        assert list((tmp_path / "outputs").iterdir()) == []
 
 
 def test_completion_callback_error_does_not_change_articles(

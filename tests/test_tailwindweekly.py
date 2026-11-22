@@ -1,6 +1,12 @@
+from types import SimpleNamespace
+
+import pytest
+import requests
 from bs4 import BeautifulSoup
 
+from src import tailwindweekly
 from src.tailwindweekly import collect_issue_article_links, parse_latest_issue_info
+from src.utils.last_run_tracker import load_last_run_info, update_last_run_info
 
 
 def test_parse_latest_issue_info_picks_first_issue_card_link():
@@ -114,3 +120,91 @@ def test_collect_issue_article_links_keeps_content_links_and_filters_chrome():
         "https://frontendmasters.com/blog/js?ref=tailwindweekly.com",
         "https://windybase.com/?ref=tailwindweekly.com",
     ]
+
+
+@pytest.fixture
+def scrape_sources(monkeypatch, tmp_path):
+    monkeypatch.chdir(tmp_path)
+    monkeypatch.setenv("LAST_RUN_INFO_PATH", str(tmp_path / "last_run_info.json"))
+    sources = {}
+    requests_seen = []
+    articles_seen = []
+
+    def get(url, **kwargs):
+        requests_seen.append(url)
+        result = sources[url]
+        if isinstance(result, requests.RequestException):
+            raise result
+        status, text = result
+        return SimpleNamespace(status_code=status, headers={}, text=text, content=text.encode())
+
+    def summarize(url, _headers, _proxies):
+        articles_seen.append(url)
+        return dict(url=url, title="Article", chinese_title="文章", summary="文章摘要")
+
+    monkeypatch.setattr(tailwindweekly.requests, "get", get)
+    monkeypatch.setattr(tailwindweekly, "fetch_page_content", summarize)
+    monkeypatch.setattr(tailwindweekly, "create_telegram_completion_callback", lambda _name: None)
+    return sources, requests_seen, articles_seen
+
+
+def _rss(*issues):
+    items = "".join(
+        f"<item><title>Tailwind Weekly #{issue}</title>"
+        f"<link>https://tailwindweekly.com/issue-{issue}/</link>"
+        f'<content:encoded><![CDATA[<a href="https://example.com/{issue}">Article</a>]]>'
+        "</content:encoded></item>"
+        for issue in issues
+    )
+    return f'<rss xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel>{items}</channel></rss>'
+
+
+@pytest.mark.parametrize("homepage", [(403, "Challenge"), (200, "No issue"), requests.Timeout()])
+def test_scrape_uses_rss_when_homepage_cannot_locate_latest(scrape_sources, homepage, tmp_path):
+    sources, requests_seen, articles_seen = scrape_sources
+    sources[tailwindweekly.ARCHIVE_URL] = homepage
+    sources[tailwindweekly.RSS_URL] = (200, _rss(240, 239))
+    update_last_run_info("tailwindweekly", {"full_url": f"{tailwindweekly.BASE_URL}/issue-240/"})
+
+    tailwindweekly.scrape_tailwindweekly()
+    tailwindweekly.scrape_tailwindweekly()
+
+    assert requests_seen == [tailwindweekly.ARCHIVE_URL, tailwindweekly.RSS_URL] * 2
+    assert articles_seen == ["https://example.com/240"]
+    summary, = (tmp_path / "outputs").glob("*_240_summary.md")
+    assert summary.read_text().count("文章摘要") == 1
+    assert load_last_run_info()["tailwindweekly"]["link_url"] == "issue-240/"
+
+
+@pytest.mark.parametrize("issue_status", [200, 403])
+def test_scrape_prefers_webpage_then_uses_rss_for_same_issue(scrape_sources, issue_status):
+    sources, requests_seen, articles_seen = scrape_sources
+    issue_url = f"{tailwindweekly.BASE_URL}/issue-240/"
+    sources[tailwindweekly.ARCHIVE_URL] = (200, '<a href="/issue-240/">Tailwind Weekly #240</a>')
+    sources[issue_url] = (issue_status, '<a href="https://example.com/web">Article</a>')
+    sources[tailwindweekly.RSS_URL] = (200, _rss(241, 240))
+
+    tailwindweekly.scrape_tailwindweekly()
+
+    assert requests_seen[:2] == [tailwindweekly.ARCHIVE_URL, issue_url]
+    if issue_status == 200:
+        assert len(requests_seen) == 2
+        assert articles_seen == ["https://example.com/web"]
+    else:
+        assert requests_seen[2:] == [tailwindweekly.RSS_URL]
+        assert articles_seen == ["https://example.com/240"]
+
+
+def test_scrape_failed_issue_leaves_last_run_unchanged(scrape_sources):
+    sources, _, articles_seen = scrape_sources
+    sources[tailwindweekly.ARCHIVE_URL] = (200, '<a href="/issue-240/">Tailwind Weekly #240</a>')
+    sources[f"{tailwindweekly.BASE_URL}/issue-240/"] = (200, "No article links")
+    sources[tailwindweekly.RSS_URL] = (200, _rss(239))
+    previous = {"full_url": f"{tailwindweekly.BASE_URL}/issue-239/"}
+    update_last_run_info("tailwindweekly", previous)
+
+    with pytest.raises(RuntimeError, match="issue-240/"):
+        tailwindweekly.scrape_tailwindweekly()
+
+    assert articles_seen == []
+    assert load_last_run_info()["tailwindweekly"] == previous

@@ -4,6 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import os
+import tempfile
 from dataclasses import dataclass
 from datetime import datetime
 from typing import Callable, List, Dict, Any, Optional, Tuple, Pattern
@@ -31,6 +32,7 @@ def extract_links_and_summarize(
     use_patterns: bool = True,  # 控制是否使用模式匹配
     pre_filtered_links = None,  # 新增参数：预先筛选好的链接
     on_complete: Optional[CompletionCallback] = None,
+    atomic_summary: bool = False,
 ) -> List[Dict[str, Any]]:
     """
     从 BeautifulSoup 对象中提取符合指定模式的链接，获取这些链接的内容并生成总结
@@ -46,6 +48,7 @@ def extract_links_and_summarize(
         fetch_content_func: 可选，获取内容的函数，如果为 None 则使用内部默认函数
         use_patterns: 是否使用 link_patterns 模式匹配，如果为 False 则获取 body 下所有链接
         pre_filtered_links: 可选，预先筛选好的链接列表，如果提供则直接使用而不再从 soup 中搜索
+        atomic_summary: 全部处理完毕后原子写入摘要，重试时覆盖当天同名文件
         
     返回：
         已处理的文章数据列表
@@ -106,6 +109,7 @@ def extract_links_and_summarize(
         # 记录成功获取的文章数
         processed_articles = 0
         processed_urls = set()
+        summary_sections = []
         
         for link in matched_links:
             if 'href' not in link.attrs:
@@ -156,14 +160,28 @@ def extract_links_and_summarize(
                 article_summary += f"{article_data['summary']}\n\n"
                 article_summary += f"---\n\n"  # 使用 Markdown 分隔符
                 
-                # 写入到文件
-                with open(summary_file, 'a', encoding='utf-8') as summary_f:
-                    summary_f.write(article_summary)
+                if atomic_summary:
+                    summary_sections.append(article_summary)
+                else:
+                    with open(summary_file, 'a', encoding='utf-8') as summary_f:
+                        summary_f.write(article_summary)
             
             processed_articles += 1
-            print(f"文章 {processed_articles} 已写入总结文件")
+            print(f"文章 {processed_articles} 已处理")
             print("---")
-        
+
+        if summary_sections:
+            with tempfile.NamedTemporaryFile(
+                mode="w", encoding="utf-8", dir=outputs_dir, prefix=".summary-", delete=False
+            ) as pending_summary:
+                try:
+                    pending_summary.writelines(summary_sections)
+                    pending_summary.close()
+                    os.replace(pending_summary.name, summary_file)
+                finally:
+                    if os.path.exists(pending_summary.name):
+                        os.unlink(pending_summary.name)
+
         if summary_file:
             print(f"\n所有 {processed_articles} 篇文章总结已保存到 {summary_file}")
 
