@@ -155,7 +155,6 @@ def scrape_webtoolsweekly():
             
             # 记录上次运行抓取的 issue_link 信息
             issue_info = create_issue_info(issue_title, link_url, "https://webtoolsweekly.com")
-            update_last_run_info(script_name, issue_info)
             
             # Sanitize issue title for filename - 确保移除换行符和其他无效字符
             issue_title = issue_title.replace('\n', ' ').replace('\r', ' ')
@@ -185,7 +184,7 @@ def scrape_webtoolsweekly():
                     link_soup = BeautifulSoup(link_response.text, 'html.parser')
                     
                     # 使用修改后的提取链接方式，直接获取所有链接而不是使用模式匹配
-                    extract_links_and_summarize(
+                    articles = extract_links_and_summarize(
                         soup=link_soup,
                         headers=headers,
                         proxies=proxies,
@@ -194,8 +193,11 @@ def scrape_webtoolsweekly():
                         base_url="https://webtoolsweekly.com",
                         fetch_content_func=fetch_page_content,
                         use_patterns=False,  # 设置为 False，使用新的提取方式
+                        issue_info={**issue_info, "full_url": link_url},
                         on_complete=create_telegram_completion_callback("Web Tools Weekly"),
                     )
+                    if articles:
+                        update_last_run_info(script_name, issue_info)
                 else:
                     print(f"Failed to retrieve the linked page. Status code: {link_response.status_code}")
             else:

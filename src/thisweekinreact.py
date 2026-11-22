@@ -322,7 +322,6 @@ def scrape_thisweekinreact():
                 
                 # 记录上次运行抓取的 newsletter 信息
                 issue_info = create_issue_info(issue_title, newsletter_url, BASE_URL)
-                update_last_run_info(script_name, issue_info)
                 
                 # 确保链接是绝对路径
                 if not newsletter_url.startswith('http'):
@@ -345,7 +344,7 @@ def scrape_thisweekinreact():
                     print(f"\n在 newsletter 页面找到 {len(filtered_links)} 个符合条件的链接")
                     
                     # 4. 使用预先筛选好的链接集合
-                    extract_links_and_summarize(
+                    articles = extract_links_and_summarize(
                         soup=newsletter_soup,  # 传递 newsletter 页面的 soup 对象
                         headers=REQUEST_HEADERS,
                         proxies=proxies,
@@ -355,8 +354,11 @@ def scrape_thisweekinreact():
                         fetch_content_func=fetch_page_content,
                         use_patterns=False,  # 不使用模式匹配
                         pre_filtered_links=filtered_links,  # 使用预先筛选好的链接
+                        issue_info={**issue_info, "full_url": newsletter_url},
                         on_complete=create_telegram_completion_callback("This Week in React"),
                     )
+                    if articles:
+                        update_last_run_info(script_name, issue_info)
                     
                     print(f"\n文章总结已保存到：{os.path.join(outputs_dir, summary_file)}")
                 else:

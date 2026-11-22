@@ -11,14 +11,17 @@ def _article(url: str, title: str) -> dict[str, str]:
         "url": url,
         "title": title,
         "chinese_title": f"中文 {title}",
-        "summary": f"摘要 {title}",
+        "summary": f"摘要 {title}\n\n- 🧩 **机制**：测试用要点。",
     }
 
 
-def test_all_articles_are_written_before_completion_callback(monkeypatch, tmp_path):
+@pytest.mark.parametrize("page_title", [None, "示例周刊第 42 期"])
+def test_issue_document_contains_title_and_ordered_article_sections(monkeypatch, tmp_path, page_title):
     monkeypatch.chdir(tmp_path)
+    head = f"<head><title>{page_title}</title></head>" if page_title else ""
     soup = BeautifulSoup(
-        """
+        f"""
+        {head}
         <body>
           <a href="https://example.com/one">One</a>
           <a href="https://example.com/two">Two</a>
@@ -46,6 +49,7 @@ def test_all_articles_are_written_before_completion_callback(monkeypatch, tmp_pa
         fetch_content_func=fetch,
         use_patterns=False,
         on_complete=on_complete,
+        issue_info={"issue_title": "第 42 期", "full_url": "https://example.com/issue-42/"},
     )
 
     assert len(articles) == 2
@@ -53,8 +57,11 @@ def test_all_articles_are_written_before_completion_callback(monkeypatch, tmp_pa
     assert completions[0].processed_count == 2
     assert completions[0].summary_file.startswith("outputs/")
     assert completions[0].completed_at.utcoffset().total_seconds() == 8 * 60 * 60
-    assert "摘要 One" in callback_file_contents[0]
-    assert "摘要 Two" in callback_file_contents[0]
+    assert callback_file_contents == [
+        f"# [{page_title or '第 42 期'}](https://example.com/issue-42/)\n\n"
+        "### [中文 One](https://example.com/one)\n\n摘要 One\n\n- 🧩 **机制**：测试用要点。\n\n"
+        "### [中文 Two](https://example.com/two)\n\n摘要 Two\n\n- 🧩 **机制**：测试用要点。\n"
+    ]
 
 
 def test_no_links_does_not_trigger_completion_callback(monkeypatch, tmp_path):

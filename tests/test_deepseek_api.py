@@ -1,4 +1,5 @@
 from importlib.util import module_from_spec, spec_from_file_location
+import json
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -9,10 +10,17 @@ import pytest
 def test_gateway_and_model_config_apply_to_translation_and_summary(monkeypatch, model, expected):
     calls = []
     initialization = []
+    points = [
+        {"emoji": "🚀", "label": "正式发布", "detail": "版本 1.0 已发布。"},
+        {"emoji": "🧩", "label": "核心机制", "detail": "用 `render()` 渲染组件。"},
+    ]
+    invalid = json.dumps({"overview": "概述总结：项目推出首个稳定版本。", "points": points})
+    valid = json.dumps({"overview": "项目推出首个稳定版本。", "points": points})
+    replies = iter(["", "测试标题", invalid, f"```json\n{valid}\n```", "", "overview summary"])
 
     def create(**kwargs):
         calls.append(kwargs)
-        return SimpleNamespace(choices=[SimpleNamespace(message=SimpleNamespace(content="测试回答"))])
+        return SimpleNamespace(choices=[SimpleNamespace(message=SimpleNamespace(content=next(replies)))])
 
     def client(**kwargs):
         initialization.append(kwargs)
@@ -32,7 +40,14 @@ def test_gateway_and_model_config_apply_to_translation_and_summary(monkeypatch, 
     spec.loader.exec_module(module)
 
     assert initialization == [{"api_key": "test-only-token", "base_url": "https://gateway.example/v1"}]
-    assert module.translate_title_to_chinese("Example title") == "测试回答"
-    assert module.summarize_with_deepseek("Example content") == "测试回答"
-    assert [call["model"] for call in calls] == [expected, expected]
-    assert [call["max_tokens"] for call in calls] == [200, 8000]
+    assert module.translate_title_to_chinese("Example title") == "测试标题"
+    assert module.summarize_with_deepseek("Example content") == (
+        "项目推出首个稳定版本。\n\n"
+        "- 🚀 **正式发布**：版本 1.0 已发布。\n"
+        "- 🧩 **核心机制**：用 `render()` 渲染组件。"
+    )
+    assert module.summarize_with_deepseek("Example content") == "总结失败：模型未返回符合格式的摘要。"
+    assert [call["model"] for call in calls] == [expected] * 6
+    assert [call["max_tokens"] for call in calls] == [1024, 1024, 8000, 8000, 8000, 8000]
+    assert calls[2]["messages"][1] == {"role": "user", "content": "Example content"}
+    assert "上一份回复格式不符合要求" in calls[3]["messages"][0]["content"]

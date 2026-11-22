@@ -230,7 +230,6 @@ def scrape_frontendfoc():
             
             # 记录上次运行抓取的 issue_link 信息
             issue_info = create_issue_info(issue_title, link_url, "https://frontendfoc.us")
-            update_last_run_info(script_name, issue_info)
             
             # Sanitize issue title for filename
             safe_issue_title = re.sub(r'[^\w\s-]', '', issue_title).strip().replace(' ', '_')
@@ -260,7 +259,7 @@ def scrape_frontendfoc():
                 print(f"Found {len(filtered_links)} article links in issue page")
                 
                 # 使用提取的函数来处理链接
-                extract_links_and_summarize(
+                articles = extract_links_and_summarize(
                     soup=link_soup,
                     link_patterns=link_patterns,
                     headers=headers,
@@ -270,8 +269,11 @@ def scrape_frontendfoc():
                     base_url="https://frontendfoc.us",
                     fetch_content_func=fetch_page_content,
                     pre_filtered_links=filtered_links,
+                    issue_info=issue_info,
                     on_complete=create_telegram_completion_callback("Frontend Focus"),
                 )
+                if articles:
+                    update_last_run_info(script_name, issue_info)
             else:
                 print(f"Failed to retrieve the linked page. Status code: {link_response.status_code}")
         else:

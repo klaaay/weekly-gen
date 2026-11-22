@@ -20,6 +20,13 @@ class ExtractionCompletion:
 
 CompletionCallback = Callable[[ExtractionCompletion], None]
 
+
+def _linked_heading(level: str, title: str, url: str) -> str:
+    title = re.sub(r"([\\\[\]<>*_`&])", r"\\\1", " ".join(title.split()))
+    url = re.sub(r"([\\()])", r"\\\1", url.replace(" ", "%20"))
+    return f"{level} [{title}]({url})"
+
+
 def extract_links_and_summarize(
     soup: BeautifulSoup, 
     link_patterns: List[Pattern] = None, 
@@ -33,6 +40,7 @@ def extract_links_and_summarize(
     pre_filtered_links = None,  # 新增参数：预先筛选好的链接
     on_complete: Optional[CompletionCallback] = None,
     atomic_summary: bool = False,
+    issue_info: Optional[Dict[str, str]] = None,
 ) -> List[Dict[str, Any]]:
     """
     从 BeautifulSoup 对象中提取符合指定模式的链接，获取这些链接的内容并生成总结
@@ -49,6 +57,7 @@ def extract_links_and_summarize(
         use_patterns: 是否使用 link_patterns 模式匹配，如果为 False 则获取 body 下所有链接
         pre_filtered_links: 可选，预先筛选好的链接列表，如果提供则直接使用而不再从 soup 中搜索
         atomic_summary: 全部处理完毕后原子写入摘要，重试时覆盖当天同名文件
+        issue_info: 提供期标题及链接时，将摘要一次写成带原刊标题的整期文档
         
     返回：
         已处理的文章数据列表
@@ -110,6 +119,7 @@ def extract_links_and_summarize(
         processed_articles = 0
         processed_urls = set()
         summary_sections = []
+        write_whole_issue = atomic_summary or issue_info is not None
         
         for link in matched_links:
             if 'href' not in link.attrs:
@@ -154,13 +164,12 @@ def extract_links_and_summarize(
             
             # 如果提供了 summary_file，则写入总结
             if summary_file:
-                # 构建文章总结
-                article_summary = f"### [{article_data['chinese_title']}]({article_data['url']})\n\n"
-                article_summary += f"**原文标题**: [{article_data['title']}]({article_data['url']})\n\n"
-                article_summary += f"{article_data['summary']}\n\n"
-                article_summary += f"---\n\n"  # 使用 Markdown 分隔符
+                title = article_data.get("chinese_title") or article_data.get("title") or link_text
+                heading = _linked_heading("###", title, article_data["url"])
+                summary = (article_data["summary"] or "").strip() or "总结失败：未返回摘要。"
+                article_summary = f"{heading}\n\n{summary}\n\n"
                 
-                if atomic_summary:
+                if write_whole_issue:
                     summary_sections.append(article_summary)
                 else:
                     with open(summary_file, 'a', encoding='utf-8') as summary_f:
@@ -171,11 +180,16 @@ def extract_links_and_summarize(
             print("---")
 
         if summary_sections:
+            if issue_info is not None:
+                page_title = soup.select_one("head > title")
+                issue_title = (page_title.get_text(" ", strip=True) if page_title else "") or issue_info["issue_title"]
+                issue_heading = _linked_heading("#", issue_title, issue_info["full_url"])
+                summary_sections.insert(0, f"{issue_heading}\n\n")
             with tempfile.NamedTemporaryFile(
                 mode="w", encoding="utf-8", dir=outputs_dir, prefix=".summary-", delete=False
             ) as pending_summary:
                 try:
-                    pending_summary.writelines(summary_sections)
+                    pending_summary.write("".join(summary_sections).rstrip() + "\n")
                     pending_summary.close()
                     os.replace(pending_summary.name, summary_file)
                 finally:

@@ -293,6 +293,7 @@ def scrape_tailwindweekly():
     else:
         print(f"Found {len(pre_filtered_links)} article links in issue page")
 
+    issue_info = create_issue_info(issue_title, link_url, BASE_URL)
     extract_links_and_summarize(
         soup=issue_soup,
         headers=REQUEST_HEADERS,
@@ -302,10 +303,10 @@ def scrape_tailwindweekly():
         base_url=BASE_URL,
         fetch_content_func=fetch_page_content,
         pre_filtered_links=pre_filtered_links,
+        issue_info=issue_info,
         on_complete=create_telegram_completion_callback("Tailwind Weekly"),
-        atomic_summary=True,
     )
-    update_last_run_info(SAFE_TITLE, create_issue_info(issue_title, link_url, BASE_URL))
+    update_last_run_info(SAFE_TITLE, issue_info)
 
 
 if __name__ == "__main__":

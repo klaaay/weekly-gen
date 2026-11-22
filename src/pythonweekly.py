@@ -192,7 +192,6 @@ def scrape_pythonweekly():
         return
 
     issue_info = create_issue_info(issue_title, link_url, BASE_URL)
-    update_last_run_info(script_name, issue_info)
 
     safe_issue_title = re.sub(r"[^\w\s-]", "", issue_title).strip().replace(" ", "_")
     summary_file = f"{SAFE_TITLE}_{safe_issue_title}_summary.md"
@@ -208,7 +207,7 @@ def scrape_pythonweekly():
     pre_filtered_links = collect_issue_article_links(issue_soup)
     print(f"Found {len(pre_filtered_links)} article links in issue page")
 
-    extract_links_and_summarize(
+    articles = extract_links_and_summarize(
         soup=issue_soup,
         headers=REQUEST_HEADERS,
         proxies=proxies,
@@ -217,8 +216,11 @@ def scrape_pythonweekly():
         base_url=BASE_URL,
         fetch_content_func=fetch_page_content,
         pre_filtered_links=pre_filtered_links,
+        issue_info=issue_info,
         on_complete=create_telegram_completion_callback("Python Weekly"),
     )
+    if articles:
+        update_last_run_info(script_name, issue_info)
 
 
 if __name__ == "__main__":

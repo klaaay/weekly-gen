@@ -145,7 +145,6 @@ def scrape_leadershipintech():
         return
 
     issue_info = create_issue_info(link_text, link_url, base_url)
-    update_last_run_info(script_name, issue_info)
 
     safe_link_text = re.sub(r"[^\w\s-]", "", link_text).strip().replace(" ", "_")
     summary_file = f"{safe_title}_{safe_link_text}_summary.md"
@@ -186,7 +185,7 @@ def scrape_leadershipintech():
         print("No external article links found in campaign section.")
         return
 
-    extract_links_and_summarize(
+    articles = extract_links_and_summarize(
         soup=link_soup,
         headers=headers,
         proxies=proxies,
@@ -196,8 +195,11 @@ def scrape_leadershipintech():
         fetch_content_func=fetch_page_content,
         use_patterns=False,
         pre_filtered_links=filtered_links,
+        issue_info=issue_info,
         on_complete=create_telegram_completion_callback("Leadership in Tech"),
     )
+    if articles:
+        update_last_run_info(script_name, issue_info)
 
 
 if __name__ == "__main__":

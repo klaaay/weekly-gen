@@ -37,6 +37,7 @@ def test_scraper_passes_named_telegram_completion_callback(
 
     assert extraction_calls, f"{filename} 没有链接处理调用"
     for call in extraction_calls:
+        assert any(item.arg == "issue_info" for item in call.keywords), f"{filename} 缺少期刊标题和链接"
         keyword = next(
             (item for item in call.keywords if item.arg == "on_complete"),
             None,

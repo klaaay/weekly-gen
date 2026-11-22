@@ -162,7 +162,6 @@ def scrape_reactweekly():
             
             # 记录上次运行抓取的 issue_link 信息
             issue_info = create_issue_info(issue_title, link_url, "https://react.statuscode.com")
-            update_last_run_info(script_name, issue_info)
             
             # Sanitize issue title for filename
             safe_issue_title = re.sub(r'[^\w\s-]', '', issue_title).strip().replace(' ', '_')
@@ -208,7 +207,7 @@ def scrape_reactweekly():
                     pre_filtered_links.append(a)
                 
                 # 使用提取的函数来处理链接
-                extract_links_and_summarize(
+                articles = extract_links_and_summarize(
                     soup=link_soup,
                     headers=headers,
                     proxies=proxies,
@@ -217,8 +216,11 @@ def scrape_reactweekly():
                     base_url="https://react.statuscode.com",
                     fetch_content_func=fetch_page_content,
                     pre_filtered_links=pre_filtered_links,
+                    issue_info=issue_info,
                     on_complete=create_telegram_completion_callback("React Weekly"),
                 )
+                if articles:
+                    update_last_run_info(script_name, issue_info)
             else:
                 print(f"Failed to retrieve the linked page. Status code: {link_response.status_code}")
         else:

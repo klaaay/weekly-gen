@@ -152,7 +152,6 @@ def scrape_reactdigest():
             
             # 记录上次运行抓取的 link 信息
             issue_info = create_issue_info(link_text, link_url, "https://reactdigest.net")
-            update_last_run_info(script_name, issue_info)
             
             # Sanitize link text for filename
             safe_link_text = re.sub(r'[^\w\s-]', '', link_text).strip().replace(' ', '_')
@@ -175,7 +174,7 @@ def scrape_reactdigest():
                     link_soup = BeautifulSoup(link_response.text, 'html.parser')
                     
                     # 使用提取链接方式处理这些链接
-                    extract_links_and_summarize(
+                    articles = extract_links_and_summarize(
                         soup=link_soup,
                         headers=headers,
                         proxies=proxies,
@@ -184,8 +183,11 @@ def scrape_reactdigest():
                         base_url="https://reactdigest.net",
                         fetch_content_func=fetch_page_content,
                         use_patterns=False,  # 不使用模式匹配
+                        issue_info={**issue_info, "full_url": link_url},
                         on_complete=create_telegram_completion_callback("React Digest"),
                     )
+                    if articles:
+                        update_last_run_info(script_name, issue_info)
                 else:
                     print(f"Failed to retrieve the linked page. Status code: {link_response.status_code}")
             else:
