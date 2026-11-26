@@ -32,7 +32,7 @@ Meticulous 提供面向复杂代码库的自动化端到端视觉回归测试方
 
 ### [jQuery 4.1.0 与 3.8.0 发布：薪火相传 | jQuery 官方博客](https://blog.jquery.com/2026/11/17/jquery-4-1-0-and-3-8-0-released-passing-the-torch/)
 
-2026 年 11 月 17 日，jQuery 发布 4.1.0 与 3.8.0：4.1.0 延续 4.x 活跃开发，带来 AJAX transport 回调、jqXHR responseURL、选择器安全与性能、XML/CSS、表单关联自定义元素序列化等改进；3.8.0 作为 3.x 最后一个计划内功能版本，集中交付待处理修复和弃用提醒。此后 3.x 仅接收关键安全与缺陷修复，官方建议借助升级指南和 jQuery Migrate 迁移到 4.x。
+2026 年 11 月 17 日，jQuery 发布 4.1.0 与 3.8.0:4.1.0 延续 4.x 活跃开发，带来 AJAX transport 回调、jqXHR responseURL、选择器安全与性能、XML/CSS、表单关联自定义元素序列化等改进；3.8.0 作为 3.x 最后一个计划内功能版本，集中交付待处理修复和弃用提醒。此后 3.x 仅接收关键安全与缺陷修复，官方建议借助升级指南和 jQuery Migrate 迁移到 4.x。
 
 - 🚀 **正式发布**：两个版本均通过 jQuery CDN 和 npm 提供完整版与 slim 构建；3.8.0 是 3.x 最后计划内的功能版本，不是 3.x 回归，后续只处理关键安全与 bug 修复。
 - 🧩 **AJAX 回调**：自定义 AJAX transport 的 completeCallback 除原有位置参数外，现可接收单个对象 { status, statusText, responses, headers }，便于未来新增字段和按需提供参数；4.1.0 已利用该机制暴露 responseURL。
@@ -62,7 +62,7 @@ Meticulous 提供面向复杂代码库的自动化端到端视觉回归测试方
 - 🔄 **非 JavaScript 语言**：Python 4,319（+0.16）居首，PHP 2,808（-0.23）、Bash 2,316（+0.22）、Java 2,223（+0.21）、Go 2,143（+0.19）、C# 2,009（+0.26）、Rust 1,682（+0.34），None 1,461（-0.16）。
 - 💡 **语言特性诉求**：Pattern matching 620（+0.58）是最希望 JS/TS 引入的特性，Static typing 387（+0.22）、Error handling 123（+0.17）、Standard Library 102、Enums 96（+0.21）、Structs 53（+0.31）。
 
-### [2026年11月网站jQuery使用统计与市场份额](https://w3techs.com/technologies/details/js-jquery)
+### [2026 年 11 月网站 jQuery 使用统计与市场份额](https://w3techs.com/technologies/details/js-jquery)
 
 W3Techs 于 2026 年 11 月 24 日发布的统计显示，jQuery 仍是使用最广泛的 JavaScript 库之一：在已知 JavaScript 库的网站中占 84.7%，相当于全部网站的 62.7%；版本主要集中在 `3`，同时保留历史趋势、市场位置和典型站点示例，反映大量存量网站和大型站点仍在使用 jQuery。
 
@@ -93,19 +93,19 @@ Chrome DevTools 2026 年 12 月版汇总了 Chrome 157 与 Chrome 158 在 11 月
 
 ### [agendas/2026/11.md 位于 main 分支 · tc39/agendas · GitHub](https://github.com/tc39/agendas/blob/main/2026/11.md)
 
-Ecma TC39 第117次会议定于2026年11月30日至12月3日远程举行，每日10:00—15:00 EASST（Pacific/Easter），预计会议容量16:00h；议程覆盖ECMA262/402/404/Test262与任务组报告、多项Web兼容性与共识PR，以及从Stage 0到Stage 4的提案推进和调度约束。
+Ecma TC39 第 117 次会议定于 2026 年 11 月 30 日至 12 月 3 日远程举行，每日 10:00—15:00 EASST（Pacific/Easter），预计会议容量 16:00h；议程覆盖 ECMA262/402/404/Test262 与任务组报告、多项 Web 兼容性与共识 PR，以及从 Stage 0 到 Stage 4 的提案推进和调度约束。
 
-- 🗓️ **会议安排**：Ecma TC39 第117次会议于2026-11-30至2026-12-03远程举行，每日10:00—15:00 EASST（Pacific/Easter），预计会议容量16:00h，参会信息见Reflector issue 591。
-- ✅ **提案截止与排序**：提案推进截止为2026-11-20 10:00 Pacific/Easter，调度约束截止为2026-11-27 10:00；Stage 4须链接spec PR，Stage 2/2.7/3/4等需提前附支持材料，提案项按stage降序、timebox升序、插入日期排序。
-- 📊 **组织与报告**：议程包含主席开场与行为准则、秘书报告（15m，Samina Husain）、ECMA262/402/404/Test262编辑报告，以及TG3安全、TG4 Source Maps、TG5编程语言标准化实验和CoC委员会更新。
-- ⚙️ **Web兼容与共识PR**：将处理多项Needs Consensus PR：放宽HostGetSupportedImportAttributes返回列表身份要求、移除yield*返回路径中的双重await、接受WSpace作为Unicode White_Space别名、长度为1时跳过Array.prototype.sort的索引[[Has]]/[[Get]]/[[Set]]、BuiltInRegExpExec的Web现实与规范缺陷、Atomics.notify中的RevalidateAtomicAccess。
-- 🐛 **兼容性遗留修正**：继续讨论Un-Annex-B String.prototype.substr（30m，PR）和async generator中yield nonthenable快速路径（45m，PR/slides），并处理上一会议溢出项。
-- 🚀 **Stage 3提案**：Stage 3议程包括Import defer在循环与top-level await下的缺陷（PR tc39/proposal-defer-import-eval#97）、Import Text争取Stage 4（需spec PR）、Thenable Curtailment基于实现反馈的规范性PR #22和#26。
-- 🔄 **Stage 2.7提案**：Stage 2.7讨论Export defer解析破坏性变更（issue tc39/proposal-deferred-reexports#98）、JSON.parse Options重命名preferNullPrototype（PR#27）、ESM Phase Imports从transfer-gated改为import()-gated安全模型（PR tc39/proposal-esm-phase-imports#65），以及Immutable ArrayBuffers争取Stage 3。
-- 🧩 **Stage 2提案**：Stage 2议程含Error code property争取Stage 2.7、Intl Sequence Units更新、Math.fusedMultiplyAdd争取Stage 2.7、eraDisplay/yearStyle更新，以及Composite sorting讨论（60m）。
-- 🧪 **Stage 1/0提案**：低阶段提案包括AbortController（Cancellation）争取Stage 2（slides/spec draft）、Iterator transfer、Trim Specific Characters争取Stage 1或2、Intl Supported Time Zone Options争取Stage 1、Bitwise counting争取Stage 1或2。
-- 💡 **开放讨论**：另设45m讨论Making spec.html executable（James M Snell/Dan Carney），以及timeboxed议程溢出按插入顺序处理。
-- ⚠️ **调度限制**：Nicolò Ribaudo周四不可用；Jordan Harband在11:30前和周四大部分时间不可用，并希望参加Thenable Curtailment、Error code property、Math.fma和Iterator transfer；Eemeli Aro每日13:00后不能演讲且周四全天不可用；James Snell在12月3日不可用。
+- 🗓️ **会议安排**：Ecma TC39 第 117 次会议于 2026-11-30 至 2026-12-03 远程举行，每日 10:00—15:00 EASST（Pacific/Easter），预计会议容量 16:00h，参会信息见 Reflector issue 591。
+- ✅ **提案截止与排序**：提案推进截止为 2026-11-20 10:00 Pacific/Easter，调度约束截止为2026-11-27 10:00；Stage 4 须链接 spec PR，Stage 2/2.7/3/4 等需提前附支持材料，提案项按 stage 降序、timebox 升序、插入日期排序。
+- 📊 **组织与报告**：议程包含主席开场与行为准则、秘书报告（15m，Samina Husain）、ECMA262/402/404/Test262 编辑报告，以及 TG3 安全、TG4 Source Maps、TG5 编程语言标准化实验和 CoC 委员会更新。
+- ⚙️ **Web 兼容与共识 PR**：将处理多项 Needs Consensus PR：放宽 HostGetSupportedImportAttributes 返回列表身份要求、移除 yield*返回路径中的双重 await、接受 WSpace 作为 Unicode White_Space 别名、长度为 1 时跳过 Array.prototype.sort 的索引[[Has]]/[[Get]]/[[Set]]、BuiltInRegExpExec 的 Web 现实与规范缺陷、Atomics.notify 中的 RevalidateAtomicAccess。
+- 🐛 **兼容性遗留修正**：继续讨论 Un-Annex-B String.prototype.substr（30m，PR）和 async generator 中 yield nonthenable 快速路径（45m，PR/slides），并处理上一会议溢出项。
+- 🚀 **Stage 3 提案**：Stage 3 议程包括 Import defer 在循环与 top-level await 下的缺陷（PR tc39/proposal-defer-import-eval#97）、Import Text 争取 Stage 4（需 spec PR）、Thenable Curtailment 基于实现反馈的规范性 PR #22 和#26。
+- 🔄 **Stage 2.7 提案**：Stage 2.7 讨论 Export defer 解析破坏性变更（issue tc39/proposal-deferred-reexports#98）、JSON.parse Options 重命名 preferNullPrototype（PR#27）、ESM Phase Imports 从 transfer-gated 改为 import()-gated 安全模型（PR tc39/proposal-esm-phase-imports#65），以及Immutable ArrayBuffers 争取 Stage 3。
+- 🧩 **Stage 2 提案**：Stage 2 议程含 Error code property 争取 Stage 2.7、Intl Sequence Units 更新、Math.fusedMultiplyAdd 争取 Stage 2.7、eraDisplay/yearStyle 更新，以及 Composite sorting 讨论（60m）。
+- 🧪 **Stage 1/0 提案**：低阶段提案包括 AbortController（Cancellation）争取 Stage 2（slides/spec draft）、Iterator transfer、Trim Specific Characters 争取 Stage 1 或 2、Intl Supported Time Zone Options 争取 Stage 1、Bitwise counting 争取 Stage 1 或 2。
+- 💡 **开放讨论**：另设 45m 讨论 Making spec.html executable（James M Snell/Dan Carney），以及 timeboxed 议程溢出按插入顺序处理。
+- ⚠️ **调度限制**：Nicolò Ribaudo 周四不可用；Jordan Harband 在 11:30 前和周四大部分时间不可用，并希望参加 Thenable Curtailment、Error code property、Math.fma 和 Iterator transfer；Eemeli Aro 每日 13:00 后不能演讲且周四全天不可用；James Snell 在 12 月 3 日不可用。
 
 ### [GitHub - tc39/proposal-import-text：一项用于导入文本的 TC39 提案 · GitHub](https://github.com/tc39/proposal-import-text)
 
@@ -172,15 +172,15 @@ Ladybird 于 2026 年 11 月 23 日发布 alpha 版，面向 macOS 和 Linux 提
 
 ### [Ladybird 首个 alpha 版本发布](https://simonwillison.net/2026/Nov/23/ladybird/)
 
-2026年11月23日，Ladybird 发布首个 alpha 版，首次提供 macOS 和 Linux 可安装包，用户无需自行编译；这个独立浏览器项目自研 HTML 解析、CSS 引擎、布局、JavaScript 和 WebAssembly 等关键组件，并在今年大量借助 AI 编码代理推进 Rust 移植、Web 平台测试兼容性和引擎性能优化，但其 alpha 阶段仍存在兼容性、稳定性和安全性限制。
+2026 年 11 月 23 日，Ladybird 发布首个 alpha 版，首次提供 macOS 和 Linux 可安装包，用户无需自行编译；这个独立浏览器项目自研 HTML 解析、CSS 引擎、布局、JavaScript 和 WebAssembly 等关键组件，并在今年大量借助 AI 编码代理推进 Rust 移植、Web 平台测试兼容性和引擎性能优化，但其 alpha 阶段仍存在兼容性、稳定性和安全性限制。
 
 - 🚀 **首个 alpha**：Ladybird 发布首个 alpha 版，提供 macOS 和 Linux 安装包；官方提醒部分网站不可用且可能崩溃，用户可在浏览器内报告故障站点。
 - 🧩 **自研浏览器栈**：Ladybird 自研 HTML 解析、CSS 引擎、布局、JavaScript 和 WebAssembly 等关键组件，仍使用 HarfBuzz 文本整形、Skia 2D 图形、ffmpeg 视频和 SQLite，部分代码来自 SerenityOS。
 - ⚙️ **多进程隔离**：不同标签页运行在独立进程中；实测打开多个标签页时出现 Hub、Compositor、RequestServer、WebContent、MediaServer 等进程，作者指出多数浏览器采用类似隔离机制，Chrome 实际为 process-per-site。
 - 🧪 **兼容性实测**：Simon Willison 测试由 ffmpeg 编译的 WebAssembly 视频压缩、图片缩放和 `Pyodide` REPL 均可运行；`Datasette Lite` 因 service worker 与 web worker 组合报错 `undefined is not a function (evaluated from 'navigator.serviceWorker.startMessages')`，已提交 issue 并在源码发现 FIXME。
-- 🛠️ **AI 编码代理**：项目今年大量使用编码代理；2026年2月23日 Andreas Kling 称借助 `Claude Code` 和 `Codex`，两周内将 `LibJS` 部分代码从 C++ 移植为 25,000 行 Rust。
-- 📈 **WPT 提升**：2026年10月通过让 AI 编码代理针对 `web-platform-tests` 补齐缺失功能，在该约 225 万子测试的套件上新增 75,650 个通过项并超过 Safari；多数增长集中在10月22日至27日，从约 212 万升至 218 万。
-- ⚡ **引擎优化**：10月更新还包括将样式和布局移至独立线程、引入新的 JavaScript JIT，并用新代码替换 C++ `Cranelift` WebAssembly 引擎，在 `JetStream 3` WASM 基准上取得 7 倍提升。
+- 🛠️ **AI 编码代理**：项目今年大量使用编码代理；2026 年 2 月 23 日 Andreas Kling 称借助 `Claude Code` 和 `Codex`，两周内将 `LibJS` 部分代码从 C++ 移植为 25,000 行 Rust。
+- 📈 **WPT 提升**：2026 年 10 月通过让 AI 编码代理针对 `web-platform-tests` 补齐缺失功能，在该约 225 万子测试的套件上新增 75,650 个通过项并超过 Safari；多数增长集中在 10 月 22 日至 27 日，从约 212 万升至 218 万。
+- ⚡ **引擎优化**：10 月更新还包括将样式和布局移至独立线程、引入新的 JavaScript JIT，并用新代码替换 C++ `Cranelift` WebAssembly 引擎，在 `JetStream 3` WASM 基准上取得 7 倍提升。
 - 🛡️ **安全定位**：官方明确 alpha 阶段不对安全性作承诺，欢迎安全研究者攻击并报告；Simon 不会用其登录 GitHub、Gmail 等敏感账户，仅保留用于匿名浏览和参与测试。
 
 ### [Webpack 5.113 | webpack](https://webpack.js.org/blog/2026-11-19-webpack-5-113/)
@@ -188,14 +188,14 @@ Ladybird 于 2026 年 11 月 23 日发布 alpha 版，面向 macOS 和 Linux 提
 Webpack 5.113.0 于 2026-11-19 发布，核心是为原生 HTML 页面引入 CSS Modules 作用域类名连接，同时新增 SVG 资源压缩、loader 的 sourceTest 跳过机制、改进 CommonJS tree shaking 与热更新可靠性，并加入 output.allowOutside 等输出控制及多项修复，目标是减少样式冲突、缩小构建产物并提升开发时稳定性。
 
 - 🚀 **版本发布**：发布 webpack 5.113.0，现有项目可通过 npm install --save-dev webpack@5.113.0 升级。
-- 🧩 **HTML 内 CSS Modules**：在 HTML 的 <style module> 中使用原始类名，webpack 会为 .button 生成作用域名并同步到标记的 class；HTML 可作为 entry，链接的 .module.css 同样生效，未由 CSS Module 声明的类保持不变。
-- 🎯 **模块消歧**：多个模块都声明 .button 时，可用 <style module=card> 配合 class 中的 card.button 指定模块；作用域 ID 仍会同步到 label、ARIA 引用和页内链接，但 document.querySelector('.button') 等 JavaScript 选择器不会被重写，应改用 data-action 等独立属性。
+- 🧩 **HTML 内 CSS Modules**：在 HTML 的 <`style module>` 中使用原始类名，webpack 会为 .button 生成作用域名并同步到标记的 class；HTML 可作为 entry，链接的 .module.css 同样生效，未由 CSS Module 声明的类保持不变。
+- 🎯 **模块消歧**：多个模块都声明 .button 时，可用 `<style module=card>` 配合 class 中的 card.button 指定模块；作用域 ID 仍会同步到 label、ARIA 引用和页内链接，但 document.querySelector('.button') 等 JavaScript 选择器不会被重写，应改用 data-action 等独立属性。
 - 🎨 **SVG 优化**：通过 optimization.minimizeOptions.xml:{} 对输出的 .svg 和 .xml 资源启用优化，缩短数字、颜色和路径数据，移除未使用命名空间并清理不渲染的空白；removeMetadata、precision、cleanupIds 默认关闭，因元数据可能含许可信息、取整会移动点、ID 可能被外部引用，且除 experiments.futureDefaults 外需显式启用，xml:false 可关闭。
 - ⚙️ **按需运行 loader**：新增 sourceTest 条件，使匹配 .js 文件的 loader 仅在当前输入满足 /@instrument/ 等条件时执行；检查包含右侧 loader 已做的修改，pitch 函数仍运行，非 UTF-8 输入按正常流程处理。
 - 🔄 **CommonJS tree shaking**：exports.answer = 42 这类简单导出不再让未使用模块被视为有副作用，webpack 还能在引用模块无副作用时移除未使用的 require() 调用；执行初始化的模块仍会运行。
 - ⚡ **热更新修复**：修复模块在 chunk 间移动或更新需要浏览器尚未加载的 chunk 时热更新中止的问题；新 chunk 加载其样式表、移除的 chunk 移除样式，现有样式表保留属性与 disabled 状态，watch 模式也能发现递归上下文子目录中新加入的文件。
 - 📦 **输出路径控制**：output.allowOutside 控制 webpack 在 output.path 之外写入、复制和清理文件：false 限制在输出目录内，绝对目录数组允许指定位置，true 允许任意位置；配合 experiments.futureDefaults 默认 false，否则保持现有行为，即输出目录外的 asset 仍可写入而复制和清理留在目录内。
-- 🛠️ **其他改进**：内置 TypeScript 解析改为一次解析且无需额外配置；experiments.cacheUnaffected 可与 optimization.usedExports、optimization.mangleExports 配合；HTML 中 <style lang=scss> 或 <script lang=ts> 会按对应语言类型供 mimetype 规则匹配，并新增 transport、updateManifest、chunkHashDependencies 等插件钩子；MultiCompiler done 支持异步 tap，同步 .call() 已弃用。
+- 🛠️ **其他改进**：内置 TypeScript 解析改为一次解析且无需额外配置；experiments.cacheUnaffected 可与 optimization.usedExports、optimization.mangleExports 配合；HTML 中 `<style lang=scss> 或 <script lang=ts> 会按对应语言类型供 mimetype 规则匹配，并新增 transport、updateManifest、chunkHashDependencies 等插件钩子；MultiCompiler done 支持异步 tap，同步 .call() 已弃用`。
 - 🐛 **问题修复**：修复 WebAssembly 在 runtime chunk 位于子目录或 universal 构建使用完整 hash 时的加载；HTML 对远程资源、编码后的 asset 路径和 <base href> 保持正确 URL，内联资源保留许可横幅；改进 CommonJS 与 ES 模块互操作、CSS 顺序与层/媒体条件、异步收集顺序、@value URL 相对解析和 composes 链。
 
 ### [CSS 和 HTML 是内置的 | webpack](https://webpack.js.org/blog/2026-11-16-css-and-html-are-built-in/)
@@ -291,7 +291,7 @@ Redux Toolkit 发布 v2.15.0 功能版本，重点改进 RTK Query 在多 store�
 - 🧭 **startReason**：BaseQueryApi、fetchBaseQuery 的 prepareHeaders、onQueryStarted、onCacheEntryAdded 等新增 startReason，QueryStartReason 包含 initial、refetch、invalidation、poll、focus、reconnect、upsert、hydrate、nextPage、previousPage；mutation 为 undefined，hydrate 暂未设置。
 - ⚙️ **函数式轮询**：pollingInterval 现在可为函数，接收缓存项并返回毫秒数，适用于 query hooks、initiate() 和 updateSubscriptionOptions；多个订阅者轮询同一 key 时取最低结果，返回 0、负数或非数字表示不轮询，负数数值现在也表示不轮询。
 - 🔍 **查询与订阅 API**：新增 endpoint.getRunningQuery(arg) 返回运行中请求的 Promise 或 undefined；initiate() 新增 retainFor 秒数选项，最后订阅者离开后保留 Math.max(keepUnusedDataFor, retainFor) 秒；api.util.getMiddlewareState() 和 initiate() 结果上的 isSubscribed() 提供正式订阅状态 API，internal_getRTKQSubscriptions 被弃用并将在 3.0 移除。
-- 🔑 **缓存移除原因**：onCacheEntryAdded 新增 getCacheEntryRemovedReason()，返回 reset 表示由 resetApiState 移除，removed 表示其它移除，undefined 表示条目仍在缓存；cacheEntryRemoved 仍保持 Promise<void> 类型。
+- 🔑 **缓存移除原因**：onCacheEntryAdded 新增 getCacheEntryRemovedReason()，返回 reset 表示由 resetApiState 移除，removed 表示其它移除，undefined 表示条目仍在缓存；cacheEntryRemoved 仍保持 Promise`<void>` 类型。
 - 🛠️ **嵌套 fork**：Listener Middleware 的 ForkedTaskAPI 新增 getState、dispatch 和 fork，支持嵌套 fork；嵌套 fork 随父任务结束或取消而取消，autoJoin true 会让父任务等待；State 和 DispatchType 泛型贯穿 startListening、addListener 及 withTypes()。
 - 💻 **类型提示可读性**：新增 FetchBaseQueryFn、ApiUtil、ListenerMiddlewareDispatch、AsyncThunkPromise、ReactApiModules 等命名类型，并重写 query、mutation、infinite query selector 结果类型以保留名称；例如 useMutation 悬停从 2508 字符降至 386，api.util 从 16102 降至 471，属于纯类型变更。
 - 🎯 **选项合并修复**：多订阅者共享查询时先解析各自选项再合并；refetchOnMountOrArgChange: 0 和 forceRefetch: 0 现在总会重取；任一订阅者自身或继承的 refetchOnFocus、refetchOnReconnect 为 true 即会重取；只有所有轮询订阅者都设置 skipPollingIfUnfocused 才在失焦时跳过轮询。
@@ -617,7 +617,7 @@ OpenSheetMusicDisplay 发布 3.0.0，版本号主要标志破坏性变更与 API
 - 🛡️ **全局副作用清理**：OSMD 不再向 Array.prototype 添加 last()、contains()、clear()，应改用 array[array.length - 1]、array.includes()、array.length = 0；setLogLevel() 只设置 OSMD 自己的 logger，不再修改 loglevel 根 logger 或写入 localStorage。
 - 🛡️ **加载错误处理**：load() 失败时总是以原因 reject，格式错误的 XML 会带解析器行列号；无法读取的单个元素只跳过自身并以警告标明小节、声部和元素，不再丢弃该声部该小节剩余内容；XML 字符串错误改为 rejected promise 而非同步抛出；非 MusicXML 内容报 The file is not MusicXML，只有传给 load() 的字符串才可能被当作 URL。
 - 🛡️ **资源限制**：恶意或异常小文件不能再用巨大数值耗尽内存：每声部超过 100 个谱表会加载失败，超过 100 条谱线被忽略，超过 8 个颤音记号被截为 8，均带警告；对应限制为 EngravingRules.MaxStavesPerPart、MaxStaffLines、MaxTremoloStrokes。Fraction 中 309 位以上数字导致的 Infinity 或相距很远的非整数也不再冻结页面，相关音符或 forward/backup 会跳过并警告。
-- 🎨 **排版改进**：新增按 MusicXML <dashes> 在 cresc.、rit. 等文字后绘制虚线并跨系统换行；修复多声部休止符按声部放置、琶音与移位音符头的重叠、延音线进入第二结尾、装饰音连线、复拍子自动连桁 6/8 按 3+3、隐藏谱表时的力度位置等排版问题。
+- 🎨 **排版改进**：新增按 MusicXML `<dashes>` 在 cresc.、rit. 等文字后绘制虚线并跨系统换行；修复多声部休止符按声部放置、琶音与移位音符头的重叠、延音线进入第二结尾、装饰音连线、复拍子自动连桁 6/8 按 3+3、隐藏谱表时的力度位置等排版问题。
 - 📦 **安装体积与依赖**：vexflow 和 loglevel 被打入 OSMD 构建并改为 devDependencies，node_modules 体积从 21 MB 降至 7.3 MB；直接 import vexflow 或 loglevel 的应用需自行在 package.json 中添加依赖。npm 包同时补发 bundle 的 LICENSE 文件。
 - ⚡ **性能提升**：load() 通过省略 MusicXML 元素间空白解析，加载速度提升 12%；已显示的光标图像在重新渲染时复用，不再每次重绘。
 - 🔄 **选项与缩放行为**：load() 和 clear() 保留 osmd.Zoom，不再重置为 1.0；setOptions() 可以把所有选项重新打开，例如 drawFingerings: true、disableCursor: false。依赖缩放重置的应用需要自行设置 osmd.Zoom = 1。
@@ -643,7 +643,7 @@ Svelte Flow 2 在 v1 发布约一年半后推出，重点是把节点和边的�
 - 📦 **生态整合**：Vue Flow 加入 xyflow 并发布 Vue Flow 2，xyflow 表示已与 Vue Flow 创建者密切合作一段时间，此次将合作正式化。
 - 📚 **迁移与支持**：Svelte Flow 2 迁移指南覆盖破坏性变更和更新步骤；Svelte Flow Pro 提供高级、可直接使用的 Pro 示例，订阅可支持 Svelte Flow 持续开发。
 
-### [用于Web应用的JavaScript条形码和二维码扫描器SDK](https://strich.io/?ref=js-weekly)
+### [用于 Web 应用的 JavaScript 条形码和二维码扫描器 SDK](https://strich.io/?ref=js-weekly)
 
 Pixelverse 的 STRICH 是面向 Web 应用的 JavaScript 条码扫描 SDK，让用户在浏览器中直接调用摄像头实时读取 1D/2D 码，主打完全客户端处理、无需后端、零依赖和低端设备性能，并通过预制扫描 UI 把集成简化为少量代码；其订阅定价按扫描量或按应用年费计算，强调离线隐私、真实设备测试和商业支持。
 
@@ -734,7 +734,7 @@ OpenSourceMalware 将一套以公开 GitHub 仓库为载体、利用 GitHub Acti
 
 ### [React2STEAL：它是什么以及需要检查什么](https://www.chainguard.dev/unchained/react2steal-what-it-is-and-what-to-check)
 
-2026年11月18日，OpenSourceMalware 披露 React2STEAL 自动化利用活动：攻击者利用被劫持的 GitHub 账号及其 Actions 运行器，扫描互联网上的 React/Next.js 服务器，并利用两个已修补漏洞 CVE-2025-55182 React2Shell 与 CVE-2025-29927 Next.js 中间件绕过，窃取环境变量、配置文件、云凭证和 API 密钥后提交到公开 GitHub 仓库；这不是供应链攻击，暴露规模至少 1,281 个主机名，凸显补丁滞后与令牌治理问题。
+2026 年 11 月 18 日，OpenSourceMalware 披露 React2STEAL 自动化利用活动：攻击者利用被劫持的 GitHub 账号及其 Actions 运行器，扫描互联网上的 React/Next.js 服务器，并利用两个已修补漏洞 CVE-2025-55182 React2Shell 与 CVE-2025-29927 Next.js 中间件绕过，窃取环境变量、配置文件、云凭证和 API 密钥后提交到公开 GitHub 仓库；这不是供应链攻击，暴露规模至少 1,281 个主机名，凸显补丁滞后与令牌治理问题。
 
 - 🚀 **活动定性**：React2STEAL 是自动化利用活动，不是供应链攻击；没有 npm 包、GitHub Action 或维护者账号被篡改，攻击者只是把 GitHub 托管运行器当免费算力，报告时间为 2026 年 11 月 18 日。
 - 🧩 **两个已修补漏洞**：CVE-2025-55182 React2Shell 是 React Server Components 预认证 RCE，CVSS 10.0，影响 React 19.0.0/19.1.0/19.1.1/19.2.0 及基于它们的框架；修复版本包括 React 19.0.1、19.1.2、19.2.1 和 Next.js 15.0.5、15.1.9、15.2.6、15.3.6、15.4.8、15.5.7、16.0.7。CVE-2025-29927 是 Next.js 中间件授权绕过，携带 `x-middleware-subrequest` 可跳过中间件，影响 11.1.4 至 15.2.2，修复于 15.2.3、14.2.25、13.5.9、12.3.5；另有 `/_next/image` 云元数据 SSRF 配置风险。
